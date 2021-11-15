@@ -20,8 +20,9 @@
                     ? 'hide'
                     : null
                 }`"
+                :data-itemid="drop.id"
               >
-                <button>{{ drop.name }}</button>
+                <button @click="getItem">{{ drop.name }}</button>
                 <span v-if="dropMats.dropMatObj[drop.id]">
                   {{
                     dropMats.dropMatObj[drop.id] &&
@@ -89,6 +90,10 @@
           this.$store.dispatch("addRoute", this.areaInfo[pickedArea].name);
         }
         console.log("customRoute", this.$store.state.customRoute);
+      },
+      getItem(e) {
+        this.$store.dispatch("getItem", e.target.closest("li").dataset.itemid);
+        this.$store.dispatch("updateAssemblable");
       },
     },
   };

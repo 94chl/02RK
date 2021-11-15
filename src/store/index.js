@@ -1,5 +1,6 @@
 import { createStore } from "vuex";
 import { disassembleGD, disassembleAllWD } from "~/utils/disassemble";
+import { searchById, equippable, weaponSort } from "~/utils/itemTable";
 
 const store = createStore({
   state() {
@@ -16,7 +17,6 @@ const store = createStore({
       greenMatArr: [],
       dropMatArr: [],
       bagSelect: {},
-      bagTotal: [],
       bagEquip: {
         weapon: { id: false },
         clothes: { id: false },
@@ -30,21 +30,41 @@ const store = createStore({
           id: "WF007",
           sort: "food",
           name: "빵",
-          img:
-            "https://lh3.google.com/u/0/d/180oAkY10VN8i1hjNW_O8BXo5A1R3d0-2=w1402-h253-iv1",
+          img: "https://lh3.google.com/u/0/d/180oAkY10VN8i1hjNW_O8BXo5A1R3d0-2=w1402-h253-iv1",
           count: 2,
           limit: 5,
           location: "pocket0",
+          tobe: [
+            "GF003",
+            "GF006",
+            "GF008",
+            "GF013",
+            "GF014",
+            "GF018",
+            "GF021",
+            "BF011",
+            "BF024",
+          ],
         },
         pocket1: {
           id: "WD002",
           sort: "drink",
           name: "물",
-          img:
-            "https://lh3.google.com/u/0/d/1PbX7TO3Fa0M11FB-aYqxNvoi_XStkvRF=w1402-h684-iv2",
+          img: "https://lh3.google.com/u/0/d/1PbX7TO3Fa0M11FB-aYqxNvoi_XStkvRF=w1402-h684-iv2",
           count: 2,
           limit: 5,
           location: "pocket1",
+          tobe: [
+            "GM005",
+            "BM002",
+            "GD001",
+            "GD003",
+            "GD005",
+            "GD014",
+            "GD015",
+            "BD011",
+            "BF027",
+          ],
         },
         pocket2: { id: false },
         pocket3: { id: false },
@@ -55,6 +75,7 @@ const store = createStore({
         pocket8: { id: false },
         pocket9: { id: false },
       },
+      assemblable: [],
       customRoute: [],
     };
   },
@@ -71,6 +92,35 @@ const store = createStore({
     },
     setRoute(state, newRoute) {
       state.customRoute = newRoute;
+    },
+    setEquip(state, newItem) {
+      const newBagEquip = { ...state.bagEquip, [newItem.location]: newItem };
+      state.bagEquip = newBagEquip;
+    },
+    dropEquip(state, droppedItem) {
+      const newBagEquip = {
+        ...state.bagEquip,
+        [droppedItem]: { id: false },
+      };
+      state.bagEquip = newBagEquip;
+    },
+    setInventory(state, newItem) {
+      console.log(newItem);
+      const newBagInventory = {
+        ...state.bagInventory,
+        [newItem.location]: newItem,
+      };
+      state.bagInventory = newBagInventory;
+    },
+    dropInventory(state, droppedItem) {
+      const newBagInventory = {
+        ...state.bagInventory,
+        [droppedItem]: { id: false },
+      };
+      state.bagInventory = newBagInventory;
+    },
+    updateAssemblable(state, newAssemblable) {
+      state.assemblable = newAssemblable;
     },
   },
   actions: {
@@ -94,6 +144,218 @@ const store = createStore({
     },
     removeRoute({ commit }, newRoute) {
       commit("setRoute", newRoute);
+    },
+    getItem({ commit, state }, newItemId) {
+      const newItemInfo = searchById(newItemId);
+      const newItem = {
+        id: newItemInfo.id,
+        sort: weaponSort.includes(newItemInfo.sort)
+          ? "weapon"
+          : newItemInfo.sort,
+        name: newItemInfo.name,
+        img: newItemInfo.img,
+        count: parseInt(newItemInfo.pickup),
+        limit: parseInt(newItemInfo.limit),
+        tobe: newItemInfo.tobe || false,
+      };
+
+      // 장비칸으로
+      if (
+        equippable.includes(newItem.sort) &&
+        !state.bagEquip[newItem.sort].id
+      ) {
+        newItem.location = newItem.sort;
+        commit("setEquip", newItem);
+
+        return;
+      }
+
+      // 가방으로
+      // 가방에 동일한 아이템을 겹칠 수 있는지 확인
+      let bagSpace = Object.keys(state.bagInventory).findIndex(
+        (pocket) =>
+          state.bagInventory[pocket].id === newItem.id &&
+          state.bagInventory[pocket].count < state.bagInventory[pocket].limit
+      );
+
+      // 가방에 동일한 아이템을 겹칠 수 없을 때
+      if (bagSpace < 0) {
+        // 빈 공간 있는지 확인
+        bagSpace = Object.keys(state.bagInventory).findIndex(
+          (pocket) => !state.bagInventory[pocket].id
+        );
+        // 가방에 빈 공간이 없을 때
+        if (bagSpace < 0) return;
+
+        newItem.location = `pocket${bagSpace}`;
+        commit("setInventory", newItem);
+      } else {
+        const targetPocket = state.bagInventory[`pocket${bagSpace}`];
+
+        // 최대 소지개수 초과 체크
+        if (targetPocket.count + newItem.count > targetPocket.limit) {
+          const remains = {
+            ...newItem,
+            count: targetPocket.count + newItem.count - targetPocket.limit,
+          };
+          targetPocket.count = targetPocket.limit;
+
+          // 빈 공간 있는지 확인
+          bagSpace = Object.keys(state.bagInventory).findIndex(
+            (pocket) => !state.bagInventory[pocket].id
+          );
+          // 가방에 빈 공간이 없을 때
+          if (bagSpace < 0) return;
+
+          remains.location = `pocket${bagSpace}`;
+          commit("setInventory", remains);
+        } else {
+          targetPocket.count += newItem.count;
+        }
+
+        commit("setInventory", targetPocket);
+      }
+    },
+    dropItem({ commit }, dropItem) {
+      if (!(parseInt(dropItem[dropItem.length - 1]) + 1)) {
+        commit("dropEquip", dropItem);
+      } else {
+        commit("dropInventory", dropItem);
+      }
+    },
+    updateAssemblable({ commit, state }) {
+      const bagTotal = Object.values(state.bagEquip)
+        .concat(Object.values(state.bagInventory))
+        .reduce(
+          (acc, bag) => {
+            if (bag.id) {
+              acc.id.push(bag.id);
+              const tobeArr = searchById(bag.id).tobe;
+              tobeArr ? (acc.tobe[bag.id] = tobeArr) : null;
+            }
+            return acc;
+          },
+          { id: [], tobe: {} }
+        );
+
+      const bagTotalId = bagTotal.id;
+      const bagTotalToBe = bagTotal.tobe;
+      const newAssemblable = {};
+      bagTotalId.forEach((matId) => {
+        if (bagTotalToBe[matId]) {
+          bagTotalToBe[matId].forEach((tobe) => {
+            if (!newAssemblable[tobe]) {
+              const tobeInfo = searchById(tobe);
+              if (
+                tobeInfo.material.every((needMat) =>
+                  bagTotalId.includes(needMat)
+                )
+              ) {
+                newAssemblable[tobeInfo.id] = tobeInfo;
+              }
+            }
+          });
+        }
+      });
+
+      commit("updateAssemblable", newAssemblable);
+    },
+    getAssemble({ commit, state }, newAssemble) {
+      console.log("assemble", newAssemble);
+
+      const bagInfo = {
+        Equip: { ...state.bagEquip },
+        Inventory: { ...state.bagInventory },
+      };
+
+      const needMat = [...newAssemble.material];
+
+      const assembledInfo = {
+        id: newAssemble.id,
+        sort: weaponSort.includes(newAssemble.sort)
+          ? "weapon"
+          : newAssemble.sort,
+        name: newAssemble.name,
+        img: newAssemble.img,
+        count: parseInt(newAssemble.pickup),
+        limit: parseInt(newAssemble.limit),
+        tobe: newAssemble.tobe || false,
+      };
+
+      // 조합 시 재료 소모 처리
+      for (const key of Object.keys(bagInfo)) {
+        Object.values(bagInfo[key]).forEach((bagItem) => {
+          if (needMat.includes(bagItem.id)) {
+            bagItem.count < 2
+              ? commit(`drop${key}`, bagItem.location)
+              : commit(`set${key}`, {
+                  ...bagItem,
+                  count: bagItem.count - 1,
+                });
+            needMat.splice(needMat.indexOf(bagItem.id), 1);
+          }
+        });
+      }
+
+      // if (needMat.length < 1) break;
+
+      // 장비칸으로
+      if (
+        equippable.includes(assembledInfo.sort) &&
+        !state.bagEquip[assembledInfo.sort].id
+      ) {
+        assembledInfo.location = assembledInfo.sort;
+        commit("setEquip", assembledInfo);
+
+        return;
+      }
+
+      // 가방
+      // 가방에 동일한 아이템을 겹칠 수 있는지 확인
+      let bagSpace = Object.keys(state.bagInventory).findIndex(
+        (pocket) =>
+          state.bagInventory[pocket].id === assembledInfo.id &&
+          state.bagInventory[pocket].count < state.bagInventory[pocket].limit
+      );
+
+      // 가방에 동일한 아이템을 겹칠 수 없을 때
+      if (bagSpace < 0) {
+        // 빈 공간 있는지 확인
+        bagSpace = Object.keys(state.bagInventory).findIndex(
+          (pocket) => !state.bagInventory[pocket].id
+        );
+        // 가방에 빈 공간이 없을 때
+        if (bagSpace < 0) return;
+
+        assembledInfo.location = `pocket${bagSpace}`;
+        commit("setInventory", assembledInfo);
+      } else {
+        const targetPocket = state.bagInventory[`pocket${bagSpace}`];
+
+        if (targetPocket.count + assembledInfo.count > targetPocket.limit) {
+          const remains = {
+            ...assembledInfo,
+            count:
+              targetPocket.count + assembledInfo.count - targetPocket.limit,
+          };
+          targetPocket.count = targetPocket.limit;
+
+          // 빈 공간 있는지 확인
+          bagSpace = Object.keys(state.bagInventory).findIndex(
+            (pocket) => !state.bagInventory[pocket].id
+          );
+
+          // 가방에 빈 공간이 없을 때
+          if (bagSpace < 0) return;
+
+          remains.location = `pocket${bagSpace}`;
+          commit("setInventory", remains);
+        } else {
+          targetPocket.count += assembledInfo.count;
+        }
+
+        commit("setInventory", targetPocket);
+      }
     },
   },
 });

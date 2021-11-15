@@ -1,4 +1,3 @@
-// import readJSON from "./readJSON";
 import area from "~/json/area.json";
 import equipData from "~/json/equip.json";
 import itemData from "~/json/item.json";
@@ -227,6 +226,15 @@ export const initialWeapon = [
 ];
 
 export const equippable = [
+  "clothes",
+  "helmet",
+  "bracelet",
+  "shoes",
+  "accessory",
+  "weapon",
+];
+
+export const weaponSort = [
   "dagger",
   "twoHand",
   "axe",
@@ -248,26 +256,9 @@ export const equippable = [
   "rapier",
   "guitar",
   "camera",
-  "clothes",
-  "helmet",
-  "bracelet",
-  "shoes",
-  "accessory",
 ];
 
-export const weaponSort = [...equippable.slice(0, 21)];
-
 export const areaData = area;
-
-// export const areaData = await readJSON("area");
-
-// export const weaponData = await readJSON("weapon");
-
-// export const equipData = await readJSON("equip");
-
-// export const itemData = await readJSON("item");
-
-// export const database = { weaponData, equipData, itemData };
 
 export const database = { weaponData, equipData, itemData };
 

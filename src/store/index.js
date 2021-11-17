@@ -30,7 +30,8 @@ const store = createStore({
           id: "WF007",
           sort: "food",
           name: "빵",
-          img: "https://lh3.google.com/u/0/d/180oAkY10VN8i1hjNW_O8BXo5A1R3d0-2=w1402-h253-iv1",
+          img:
+            "https://lh3.google.com/u/0/d/180oAkY10VN8i1hjNW_O8BXo5A1R3d0-2=w1402-h253-iv1",
           count: 2,
           limit: 5,
           location: "pocket0",
@@ -50,7 +51,8 @@ const store = createStore({
           id: "WD002",
           sort: "drink",
           name: "물",
-          img: "https://lh3.google.com/u/0/d/1PbX7TO3Fa0M11FB-aYqxNvoi_XStkvRF=w1402-h684-iv2",
+          img:
+            "https://lh3.google.com/u/0/d/1PbX7TO3Fa0M11FB-aYqxNvoi_XStkvRF=w1402-h684-iv2",
           count: 2,
           limit: 5,
           location: "pocket1",
@@ -97,30 +99,32 @@ const store = createStore({
       const newBagEquip = { ...state.bagEquip, [newItem.location]: newItem };
       state.bagEquip = newBagEquip;
     },
-    dropEquip(state, droppedItem) {
+    dropEquip(state, droppedBag) {
       const newBagEquip = {
         ...state.bagEquip,
-        [droppedItem]: { id: false },
+        [droppedBag]: { id: false },
       };
       state.bagEquip = newBagEquip;
     },
     setInventory(state, newItem) {
-      console.log(newItem);
       const newBagInventory = {
         ...state.bagInventory,
         [newItem.location]: newItem,
       };
       state.bagInventory = newBagInventory;
     },
-    dropInventory(state, droppedItem) {
+    dropInventory(state, droppedBag) {
       const newBagInventory = {
         ...state.bagInventory,
-        [droppedItem]: { id: false },
+        [droppedBag]: { id: false },
       };
       state.bagInventory = newBagInventory;
     },
     updateAssemblable(state, newAssemblable) {
       state.assemblable = newAssemblable;
+    },
+    setInitialWeapon(state, initialWeapon) {
+      state.bagEquip = { ...state.bagEquip, weapon: initialWeapon };
     },
   },
   actions: {
@@ -216,12 +220,47 @@ const store = createStore({
         commit("setInventory", targetPocket);
       }
     },
-    dropItem({ commit }, dropItem) {
-      if (!(parseInt(dropItem[dropItem.length - 1]) + 1)) {
-        commit("dropEquip", dropItem);
+    dropItem({ commit }, dropBag) {
+      if (!(parseInt(dropBag[dropBag.length - 1]) + 1)) {
+        commit("dropEquip", dropBag);
       } else {
-        commit("dropInventory", dropItem);
+        commit("dropInventory", dropBag);
       }
+    },
+    moveItem({ commit, state }, fromTo) {
+      const from = equippable.includes(fromTo.from.bag)
+        ? state.bagEquip[fromTo.from.bag]
+        : state.bagInventory[fromTo.from.bag];
+      const to = equippable.includes(fromTo.to.bag)
+        ? state.bagEquip[fromTo.to.bag]
+        : state.bagInventory[fromTo.to.bag];
+
+      from.location = fromTo.to.bag;
+      to.location = fromTo.from.bag;
+
+      // 옮길 아이템 사본
+      const newFromTo = [
+        JSON.parse(JSON.stringify(from)),
+        JSON.parse(JSON.stringify(to)),
+      ];
+      console.log("FROM TO", newFromTo);
+      // 기존 아이템 삭제
+      newFromTo.forEach((item) => {
+        if (!(parseInt(item.location[item.location.length - 1]) + 1)) {
+          commit("dropEquip", item.location);
+        } else {
+          commit("dropInventory", item.location);
+        }
+      });
+      // 사본을 가방에 배치
+      newFromTo.forEach((item) => {
+        if (!(parseInt(item.location[item.location.length - 1]) + 1)) {
+          commit("setEquip", item);
+        } else {
+          commit("setInventory", item);
+        }
+      });
+      console.log("MOVED!", state.bagEquip, state.bagInventory);
     },
     updateAssemblable({ commit, state }) {
       const bagTotal = Object.values(state.bagEquip)
@@ -356,6 +395,22 @@ const store = createStore({
 
         commit("setInventory", targetPocket);
       }
+    },
+    setInitialWeapon({ commit }, initialWeaponId) {
+      const initialWeaponInfo = searchById(initialWeaponId);
+
+      const initialWeapon = {
+        id: initialWeaponInfo.id,
+        sort: "weapon",
+        name: initialWeaponInfo.name,
+        img: initialWeaponInfo.img,
+        count: parseInt(initialWeaponInfo.pickup),
+        limit: parseInt(initialWeaponInfo.limit),
+        tobe: initialWeaponInfo.tobe || false,
+        location: "weapon",
+      };
+
+      commit("setInitialWeapon", initialWeapon);
     },
   },
 });

@@ -258,6 +258,18 @@ export const weaponSort = [
   "camera",
 ];
 
+export const categoryById = (itemId) => {
+  const category =
+    itemId[1] === "W"
+      ? "weapon"
+      : idToCategory.equip[itemId[1]]
+      ? idToCategory.equip[itemId[1]]
+      : idToCategory.item[itemId[1]]
+      ? idToCategory.item[itemId[1]]
+      : null;
+  return category;
+};
+
 export const areaData = area;
 
 export const database = { weaponData, equipData, itemData };

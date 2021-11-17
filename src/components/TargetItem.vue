@@ -29,7 +29,7 @@
     },
     methods: {
       removeTargetItem(e) {
-        if (window.confirm("remove?")) {
+        if (window.confirm("삭제하시겠습니까?")) {
           const newTargetItems = this.targetItems.filter(
             (_, index) => index != e.target.closest("li").dataset.index
           );
@@ -44,4 +44,8 @@
     },
   };
 </script>
+
+<style lang="scss" scoped>
+</style>
+
 

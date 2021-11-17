@@ -29,7 +29,16 @@ module.exports = {
       {
         test: /\.s?css$/,
         // loader가 여러개일때는 순서가 중요. 뒤에서 앞으로 구동
-        use: ["vue-style-loader", "css-loader", "sass-loader"],
+        use: [
+          "vue-style-loader",
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              additionalData: `@import "./src/scss/variables.scss";`,
+            },
+          },
+        ],
       },
       // 이미지 파일 로더
       {

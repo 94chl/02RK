@@ -1,0 +1,27 @@
+$color1: #0adb96;
+$color2: #ddfdf3;
+$color3: #255f4c;
+$color4: #e9ad7c;
+$color5: #a06536;
+
+@mixin active {
+  display: block;
+  position: fixed;
+  top: 70px;
+  width: 360px;
+  z-index: 5;
+}
+
+@mixin fasIcon($input) {
+  height: $input;
+  line-height: $input;
+  width: $input;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  .fas {
+    line-height: $input;
+    height: $input;
+  }
+}

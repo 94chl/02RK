@@ -79,12 +79,17 @@ const store = createStore({
       },
       assemblable: [],
       customRoute: [],
+      toggleModal: {
+        bag: false,
+        initialWeapon: false,
+      },
     };
   },
   getters: {},
   mutations: {
     setCart(state, item) {
       state.cart = item;
+      console.log("cart", state.cart);
     },
     setTargetItems(state, newTargetItems) {
       state.targetItems = newTargetItems;
@@ -126,10 +131,14 @@ const store = createStore({
     setInitialWeapon(state, initialWeapon) {
       state.bagEquip = { ...state.bagEquip, weapon: initialWeapon };
     },
+    onToggleModal(state, modalState) {
+      state.toggleModal = { ...state.toggleModal, ...modalState };
+    },
   },
   actions: {
     setCart({ commit }, item) {
-      commit("setCart", item);
+      const itemInfo = searchById(item.id);
+      commit("setCart", itemInfo);
     },
     addTargetItems({ commit, state }, newItem) {
       // 녹색, 흰색템 수준의 재료정보 추가(이후 중복재료 체크를 위해)
@@ -411,6 +420,10 @@ const store = createStore({
       };
 
       commit("setInitialWeapon", initialWeapon);
+    },
+    onToggleModal({ commit, state }, modal) {
+      const modalState = { [modal]: !state.toggleModal[modal] };
+      commit("onToggleModal", modalState);
     },
   },
 });

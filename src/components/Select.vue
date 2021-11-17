@@ -1,12 +1,6 @@
 <template>
   <div class="select">
-    <div class="tabName">
-      아이템 선택
-      <!-- <button class="toggleTabContentBtn">
-        <i class="fas fa-angle-double-down"></i>
-        <i class="fas fa-angle-double-up"></i>
-      </button> -->
-    </div>
+    <div class="tabName">아이템 선택</div>
 
     <div class="select_dept">
       <form @change="changeDept">
@@ -14,7 +8,7 @@
           type="radio"
           :value="dept"
           :id="`select${dept}`"
-          class="dept"
+          class="deptRadio"
           :name="dept"
           v-for="dept in deptArr"
           :key="dept"
@@ -26,17 +20,13 @@
           :key="`deptArr${dept}`"
           :class="`select${dept} ${dept == selectDept ? 'selected' : ''}`"
         >
-          [{{ dept }}]
+          {{ deptKor[dept] }}
         </label>
       </form>
     </div>
 
     <div class="select_category">
-      <select
-        data-name="selectCategory"
-        id="categoryList"
-        @change="changeCategory"
-      >
+      <select class="select_category_select" @change="changeCategory">
         <option
           v-for="category in categoryArr"
           :value="category.category"
@@ -49,7 +39,7 @@
     </div>
 
     <div class="select_item">
-      <select data-name="selectItem" id="categoryList" @change="changeItem">
+      <select class="select_item_select" @change="changeItem">
         <option
           v-for="item in itemArr"
           :value="item.id"
@@ -62,12 +52,12 @@
     </div>
 
     <div class="select_addItem">
-      <button class="addItemBtn" @click="addItem">add</button>
+      <button class="select_addItem_btn" @click="addItem">
+        <i class="fas fa-plus"></i>
+      </button>
     </div>
 
-    <div class="select_preview">
-      <ItemPreview></ItemPreview>
-    </div>
+    <ItemPreview></ItemPreview>
   </div>
 </template>
 
@@ -79,6 +69,7 @@
     data() {
       return {
         deptArr: ["weapon", "equip", "item"],
+        deptKor: { weapon: "무기", equip: "장비", item: "기타" },
         categoryArr: [],
         itemArr: [],
         selectDept: "",
@@ -138,4 +129,87 @@
 </script>
 
 <style lang="scss" scoped>
+  .select {
+    display: grid;
+    grid-template-columns: 25% auto 70px;
+    grid-template-rows: repeat(4, fit-content);
+    gap: 5px;
+    padding: 0 5px;
+
+    .tabName {
+      grid-column: 1 / 4;
+      text-indent: 0;
+    }
+
+    &_dept {
+      grid-column: 1 / 4;
+      height: 30px;
+      display: flex;
+
+      .deptRadio {
+        display: none;
+      }
+
+      label {
+        margin: 2.5px 5px;
+        box-shadow: 0 0 1px 1px $color1;
+        border-radius: 5px;
+        padding: 0 5px;
+        cursor: pointer;
+
+        &.selected {
+          background: $color3;
+          color: $color2;
+          box-shadow: 0 0 1px 1px $color3 inset;
+          border: 1px solid $color3;
+        }
+      }
+    }
+
+    &_category {
+      height: 30px;
+      &.hide {
+        display: none;
+      }
+
+      &_select {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+
+    &_item {
+      height: 30px;
+
+      &.hide {
+        display: none;
+      }
+
+      &_select {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+        option {
+        }
+      }
+    }
+
+    &_addItem {
+      height: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 1px 1px $color1;
+      &_btn {
+        width: 100%;
+        height: 100%;
+        background: $color2;
+
+        .fa-plus {
+          color: $color3;
+        }
+      }
+    }
+  }
 </style>

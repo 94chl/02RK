@@ -1,11 +1,12 @@
 <template>
   <div class="app">
     <Header></Header>
-    <Select></Select>
-    <TargetItem></TargetItem>
-    <NeedDrops></NeedDrops>
-    <Bag></Bag>
-    <Area></Area>
+    <div class="main">
+      <Select></Select>
+      <TargetItem></TargetItem>
+      <NeedDrops></NeedDrops>
+      <Area></Area>
+    </div>
   </div>
 </template>
 
@@ -13,12 +14,11 @@
   import Header from "~/components/Header";
   import Select from "~/components/Select";
   import TargetItem from "~/components/TargetItem";
-  import Bag from "~/components/Bag";
   import Area from "~/components/Area";
   import NeedDrops from "~/components/NeedDrops";
 
   export default {
-    components: { Header, Select, TargetItem, Bag, Area, NeedDrops },
+    components: { Header, Select, TargetItem, Area, NeedDrops },
     computed: {},
     methods: {},
   };
@@ -86,6 +86,45 @@
     }
     @media screen and (min-width: 721px) {
       width: 720px;
+    }
+
+    .main {
+      margin-top: 70px;
+      position: relative;
+
+      > div {
+        margin-bottom: 10px;
+        background: $color2;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px 0 $color1;
+      }
+
+      .tabName {
+        height: 30px;
+        line-height: 30px;
+        text-indent: 5px;
+        font-weight: bold;
+        color: $color3;
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+        .toggleTabContentBtn {
+          @include fasIcon(30px);
+          .fa-angle-double-down {
+            display: none;
+          }
+          .fa-angle-double-up {
+            display: block;
+          }
+          &.closed {
+            .fa-angle-double-down {
+              display: block;
+            }
+            .fa-angle-double-up {
+              display: none;
+            }
+          }
+        }
+      }
     }
   }
 </style>

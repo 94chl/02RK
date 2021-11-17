@@ -1,14 +1,15 @@
 <template>
   <div class="header">
     <div class="header_logo">
-      <!-- <img src="../img/ER_Logo_White.png" alt="logo" /> -->
-      logo
+      <img src="../img/ER_Logo_White.png" alt="logo" />
     </div>
     <div class="header_title">01RK</div>
-    <div class="header_Btns">
-      <button class="header_Btns__BagBtn">
-        <!-- <i class="fas fa-suitcase"></i> -->
-        가방
+    <div class="header_Btns" data-modal="bag">
+      <button
+        :class="`header_Btns__BagBtn ${toggleModal.bag ? 'openedBtn' : ''}`"
+        @click="onToggleModal"
+      >
+        <i class="fas fa-suitcase"></i>
       </button>
 
       <!-- <button class="header_Btns__allPathFinderBtn">
@@ -27,14 +28,28 @@
       </div>
       <div class="header_allPathFinderModal__itemPaths"></div>
     </div> -->
+    <Bag></Bag>
   </div>
 </template>
 
 <script>
+  import Bag from "~/components/Bag";
+
   export default {
-    components: {},
-    computed: {},
-    methods: {},
+    components: { Bag },
+    computed: {
+      toggleModal() {
+        return this.$store.state.toggleModal;
+      },
+    },
+    methods: {
+      onToggleModal(e) {
+        this.$store.dispatch(
+          "onToggleModal",
+          e.target.closest("div").dataset.modal
+        );
+      },
+    },
   };
 </script>
 
@@ -72,7 +87,7 @@
       text-align: center;
     }
 
-    #headerBtnBox {
+    &_Btns {
       height: 50px;
       min-width: 120px;
       line-height: 50px;
@@ -80,8 +95,10 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+
       button {
         @include fasIcon(30px);
+        background: $color1;
         color: $color2;
         border: 1px solid $color2;
         box-shadow: 0 0 1px 1px $color3;
@@ -89,13 +106,14 @@
           background: $color3;
           box-shadow: 0 0 1px 1px $color3 inset;
         }
-        &#headerBagBtn {
-          transition: all 0.3s linear;
-          &.gotDrops {
-            background: $color5;
-            .fas {
-              color: #ffff00;
-            }
+      }
+
+      &__BagBtn {
+        transition: all 0.3s linear;
+        &.gotDrops {
+          background: $color5;
+          .fas {
+            color: #ffff00;
           }
         }
       }

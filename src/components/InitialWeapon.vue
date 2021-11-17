@@ -1,13 +1,20 @@
 <template>
-  <div class="initialWeapon">
-    <p>Initial Weapon</p>
+  <div
+    :class="`initialWeapon ${toggleModal.initialWeapon ? 'active' : 'hide'}`"
+  >
     <ul>
       <li
         v-for="weapon in initialWeapon"
         :key="`initialWeapon${weapon.id}`"
         :data-item="weapon.id"
       >
-        <button @click="setInitialWeapon">{{ weapon.name }}</button>
+        <button @click="setInitialWeapon" class="selectBtn">
+          <img
+            :src="require(`~/img/WSicon/${weapon.sort}.png`).default"
+            :alt="`${weapon.sort}_icon`"
+            :class="JSON.stringify(require(`~/img/WSicon/${weapon.sort}.png`))"
+          />
+        </button>
       </li>
     </ul>
   </div>
@@ -23,7 +30,11 @@
       };
     },
     components: {},
-    computed: {},
+    computed: {
+      toggleModal() {
+        return this.$store.state.toggleModal;
+      },
+    },
     methods: {
       setInitialWeapon(e) {
         const target = e.target.closest("li").dataset.item;
@@ -41,4 +52,32 @@
 </script>
 
 <style lang="scss" scoped>
+  .initialWeapon {
+    background: $color4;
+    border-radius: 5px;
+
+    .tabName {
+      color: $color2;
+      .fas {
+        color: $color2;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 0 5px;
+      li {
+        height: 30px;
+        .selectBtn {
+          @include fasIcon(30px);
+          img {
+            height: 100%;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
 </style>

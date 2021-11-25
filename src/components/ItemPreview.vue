@@ -8,7 +8,9 @@
         <li class="itemOption nameInfo">
           <div>
             <span class="attrKey">이름 : </span>
-            <span class="attrValue">{{ cartItem.name }}</span>
+            <span :class="`attrValue value${cartItemId[0]}`">{{
+              cartItem.name
+            }}</span>
           </div>
         </li>
         <li class="itemOption sortInfo">
@@ -18,16 +20,22 @@
           </div>
         </li>
         <li
-          v-for="option in Object.keys(cartItem)"
-          :class="`itemOption ${option}Info`"
+          v-for="option in cartItemOptions"
           :key="`cartItemInfo${option}`"
+          :class="`itemOption ${option}Info`"
         >
-          <div v-if="!necessaryOptions.includes(option)">
-            <span v-if="korOption[option]" class="attrKey">
-              {{ `${korOption[option]} :` }}
+          <div>
+            <span class="attrKey">
+              {{
+                `${
+                  korOption[option]
+                    ? korOption[option]
+                    : option.replace(/[(%)]/g, "")
+                } : `
+              }}
             </span>
             <span
-              class="attrValue"
+              class="attrValue itemMaterial"
               v-if="['material', 'tobe'].includes(option)"
             >
               <button
@@ -35,23 +43,33 @@
                 :key="`${option}${item.id}`"
                 @click="changeItem"
                 :data-itemid="item.id"
+                :class="`matInfoBtn value${item.id[0]}`"
               >
-                {{ item.name }}
+                <span> {{ item.name }}</span>
               </button>
             </span>
             <span class="attrValue" v-else-if="option === 'location'">
-              <span v-for="areaId in cartItem[option]" :key="areaId">
+              <span
+                v-for="areaId in cartItem[option]"
+                :key="areaId"
+                class="dropArea"
+              >
                 {{ areaData[areaId].name }}
               </span>
             </span>
             <span v-else class="attrValue">
               <span>
-                {{ cartItem[option] }}
+                {{
+                  option.match(/[%]/g)
+                    ? `${parseInt(cartItem[option] * 100)}%`
+                    : cartItem[option]
+                }}
               </span>
             </span>
           </div>
         </li>
       </ul>
+      <div class="btns">btns</div>
     </div>
   </div>
 </template>
@@ -67,15 +85,18 @@
           img: "이미지",
           name: "이름",
           sort: "종류",
-          material: "하위 재료",
+          material: "재료",
           location: "드랍위치",
-          tobe: "조합가능",
+          tobe: "상위",
         },
         necessaryOptions: ["img", "name", "sort"],
       };
     },
     components: {},
     computed: {
+      cartItemId() {
+        return this.$store.state.cart.id;
+      },
       cartItem() {
         const cart = this.$store.state.cart;
         const cartKeys = Object.keys(cart);
@@ -103,10 +124,18 @@
 
         return itemInfo;
       },
+      cartItemOptions() {
+        return Object.keys(this.cartItem).filter(
+          (option) => !this.necessaryOptions.includes(option)
+        );
+      },
     },
     methods: {
       changeItem(e) {
-        const selectedItem = searchById(e.target.dataset.itemid);
+        console.log("MOVE TO", e.target.dataset.itemid);
+        const selectedItem = searchById(
+          e.target.closest(".matInfoBtn").dataset.itemid
+        );
         this.$store.dispatch("setCart", selectedItem);
       },
     },
@@ -120,7 +149,7 @@
 
     &_info {
       display: grid;
-      grid-template-columns: minmax(70px, 25%) auto;
+      grid-template-columns: minmax(70px, 25%) auto 70px;
       gap: 5px;
       position: relative;
 
@@ -140,22 +169,46 @@
         text-indent: 5px;
         background: #fff;
         border-bottom: 2px solid $color2;
+        > div {
+          display: flex;
+          column-gap: 5px;
+          text-indent: 0;
+          align-items: center;
+        }
 
         &.nameInfo {
           .attrValue {
-            border: none;
             padding: 0 5px;
+            border-radius: 5px;
+            border: none;
           }
         }
 
-        &#itemMaterial {
+        .itemMaterial {
+          display: flex;
           .matInfoBtn {
             padding: 0 5px;
-            background: #fff;
-            color: #000;
             box-shadow: 1px 0 1px 0 #999;
             box-sizing: border-box;
             border-radius: 5px;
+            margin-right: 5px;
+            height: 20px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+
+        .dropArea {
+          &::after {
+            content: ",";
+            margin-right: 3px;
+          }
+          &:last-child {
+            &::after {
+              content: none;
+              margin-right: 0;
+            }
           }
         }
       }

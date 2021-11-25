@@ -5,6 +5,7 @@ import { searchById, equippable, weaponSort } from "~/utils/itemTable";
 const store = createStore({
   state() {
     return {
+      showItemImg: true,
       targetItems: [],
       matGDs: {
         greenMatObj: {},
@@ -81,12 +82,16 @@ const store = createStore({
       customRoute: [],
       toggleModal: {
         bag: false,
-        initialWeapon: false,
+        initialWeapon: true,
       },
     };
   },
   getters: {},
   mutations: {
+    onChangeShowItemImg(state) {
+      console.log(state.showItemImg);
+      state.showItemImg = !state.showItemImg;
+    },
     setCart(state, item) {
       state.cart = item;
       console.log("cart", state.cart);
@@ -111,6 +116,16 @@ const store = createStore({
       };
       state.bagEquip = newBagEquip;
     },
+    clearEquip(state) {
+      state.bagEquip = {
+        weapon: { id: false },
+        clothes: { id: false },
+        helmet: { id: false },
+        bracelet: { id: false },
+        shoes: { id: false },
+        accessory: { id: false },
+      };
+    },
     setInventory(state, newItem) {
       const newBagInventory = {
         ...state.bagInventory,
@@ -125,6 +140,20 @@ const store = createStore({
       };
       state.bagInventory = newBagInventory;
     },
+    clearInventory(state) {
+      state.bagInventory = {
+        pocket0: { id: false },
+        pocket1: { id: false },
+        pocket2: { id: false },
+        pocket3: { id: false },
+        pocket4: { id: false },
+        pocket5: { id: false },
+        pocket6: { id: false },
+        pocket7: { id: false },
+        pocket8: { id: false },
+        pocket9: { id: false },
+      };
+    },
     updateAssemblable(state, newAssemblable) {
       state.assemblable = newAssemblable;
     },
@@ -136,6 +165,9 @@ const store = createStore({
     },
   },
   actions: {
+    onChangeShowItemImg({ commit }) {
+      commit("onChangeShowItemImg");
+    },
     setCart({ commit }, item) {
       const itemInfo = searchById(item.id);
       commit("setCart", itemInfo);
@@ -235,6 +267,9 @@ const store = createStore({
       } else {
         commit("dropInventory", dropBag);
       }
+    },
+    clearBag({ commit }, bag) {
+      bag === "equip" ? commit("clearEquip") : commit("clearInventory");
     },
     moveItem({ commit, state }, fromTo) {
       const from = equippable.includes(fromTo.from.bag)

@@ -7,13 +7,15 @@
         v-for="weapon in initialWeapon"
         :key="`initialWeapon${weapon.id}`"
         :data-item="weapon.id"
+        :class="`${showItemImg ? 'showItemImg' : ''}`"
       >
         <button @click="setInitialWeapon" class="selectBtn">
           <img
             :src="require(`~/img/WSicon/${weapon.sort}.png`).default"
             :alt="`${weapon.sort}_icon`"
-            :class="JSON.stringify(require(`~/img/WSicon/${weapon.sort}.png`))"
+            v-if="showItemImg"
           />
+          <span v-else>{{ weapon.name }}</span>
         </button>
       </li>
     </ul>
@@ -33,6 +35,9 @@
     computed: {
       toggleModal() {
         return this.$store.state.toggleModal;
+      },
+      showItemImg() {
+        return this.$store.state.showItemImg;
       },
     },
     methods: {
@@ -67,14 +72,21 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      gap: 0 5px;
+      gap: 3px 5px;
+      padding: 5px;
       li {
         height: 30px;
+        width: 15%;
+        &.showItemImg {
+          width: fit-content;
+        }
         .selectBtn {
           @include fasIcon(30px);
+          width: 100%;
           img {
             height: 100%;
             width: fit-content;
+            border-radius: 5px;
           }
         }
       }

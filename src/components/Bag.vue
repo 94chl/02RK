@@ -1,11 +1,35 @@
 <template>
   <div :class="`bag ${toggleModal.bag ? 'active' : 'hide'}`">
+    <h2 class="tabName">
+      가방
+      <button class="changeShowItemImgBtn" @click="onChangeShowItemImg">
+        <span v-if="!showItemImg"><i class="fas fa-font"></i></span>
+        <span v-if="showItemImg"><i class="far fa-images"></i></span>
+      </button>
+    </h2>
     <div data-modal="initialWeapon" class="bag_initialWeapon">
-      <button @click="onToggleModal">Initial Weapon</button>
+      <button @click="onToggleModal" class="tabName">
+        시작무기
+        <i
+          :class="`fas fa-angle-double-down ${
+            toggleModal.initialWeapon ? 'hide' : ''
+          }`"
+        ></i>
+        <i
+          :class="`fas fa-angle-double-up ${
+            toggleModal.initialWeapon ? '' : 'hide'
+          }`"
+        ></i>
+      </button>
       <InitialWeapon />
     </div>
     <div class="bag_equip">
-      <p class="tabName">equip</p>
+      <p class="tabName">
+        장비
+        <button class="clearBtn" @click="clearBag" data-bag="equip">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </p>
       <div>
         <ul>
           <li
@@ -20,9 +44,14 @@
                 @drop="onDrop"
                 @dragover="onDragOver"
                 draggable="true"
-                class="moveBtn"
+                class="itemInfo"
               >
-                {{ equip[pocket].name }}
+                <img
+                  :src="equip[pocket].img"
+                  :alt="`${equip[pocket].name}_img`"
+                  v-if="showItemImg"
+                />
+                <span v-else>{{ equip[pocket].name }}</span>
               </div>
               <button class="removeBtn" @click="dropItem">X</button>
             </span>
@@ -32,6 +61,7 @@
                 @drop="onDrop"
                 @dragover="onDragOver"
                 draggable="true"
+                class="empty"
               >
                 <span>{{ pocket }}</span>
               </div>
@@ -41,7 +71,12 @@
       </div>
     </div>
     <div class="bag_inventory">
-      <p class="tabName">inventory</p>
+      <p class="tabName">
+        가방
+        <button class="clearBtn" @click="clearBag" data-bag="inventory">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </p>
       <div>
         <ul>
           <li
@@ -57,11 +92,19 @@
                 @drop="onDrop"
                 @dragover="onDragOver"
                 draggable="true"
+                class="itemInfo"
               >
-                {{ inventory[pocket].name }}
+                <img
+                  :src="inventory[pocket].img"
+                  :alt="`${inventory[pocket].name}_img`"
+                  v-if="showItemImg"
+                />
+                <span v-else>{{ inventory[pocket].name }}</span>
               </div>
-              <span>{{ `(x${inventory[pocket].count})` }}</span>
-              <button @click="dropItem">X</button>
+              <span class="itemCount">{{
+                `(x${inventory[pocket].count})`
+              }}</span>
+              <button @click="dropItem" class="removeBtn">X</button>
             </span>
             <span v-else>
               <div
@@ -69,6 +112,7 @@
                 @drop="onDrop"
                 @dragover="onDragOver"
                 draggable="true"
+                class="empty"
               >
                 <span>{{ pocket }}</span>
               </div>
@@ -78,8 +122,8 @@
       </div>
     </div>
     <div class="bag_assembles">
-      <p>assembles</p>
-      <div>
+      <p class="tabName">assembles</p>
+      <div v-if="Object.values(assembles).length > 0">
         <ul>
           <li
             v-for="assemble in Object.values(assembles)"
@@ -87,7 +131,15 @@
             :data-assemble="assemble.id"
           >
             <button class="assembleBtn" @click="getAssemble">
-              {{ assemble.name }}
+              <img
+                :src="assemble.img"
+                :alt="`${assemble.name}_img`"
+                v-if="showItemImg"
+              />
+              <span v-else>{{ assemble.name }}</span>
+              <span class="itemCount">
+                {{ `(x${assemble.pickup})` }}
+              </span>
             </button>
           </li>
         </ul>
@@ -109,6 +161,9 @@
 
     components: { InitialWeapon },
     computed: {
+      showItemImg() {
+        return this.$store.state.showItemImg;
+      },
       toggleModal() {
         return this.$store.state.toggleModal;
       },
@@ -123,10 +178,19 @@
       },
     },
     methods: {
+      onChangeShowItemImg() {
+        this.$store.dispatch("onChangeShowItemImg");
+      },
       dropItem(e) {
         if (!window.confirm("버리시겠습니까?")) return;
 
         this.$store.dispatch("dropItem", e.target.closest("li").dataset.bag);
+        this.$store.dispatch("updateAssemblable");
+      },
+      clearBag(e) {
+        if (!window.confirm("전부 버리시겠습니까?")) return;
+
+        this.$store.dispatch("clearBag", e.target.closest("button").dataset.bag);
         this.$store.dispatch("updateAssemblable");
       },
       getAssemble(e) {
@@ -235,14 +299,37 @@
 
     &.active {
       @include active();
+      left: calc(50% - 180px);
     }
 
     .tabName {
       color: $color2;
+      height: 25px;
+      line-height: 25px;
+      margin: 5px 0;
+      padding: 0 5px;
+      .changeShowItemImgBtn {
+        background: none;
+        color: $color2;
+        border-radius: 5px;
+      }
+      .clearBtn {
+        background: none;
+        color: $color2;
+        height: 25px;
+        &:hover {
+          background: $color4;
+        }
+      }
+    }
+
+    &_initialWeapon {
+      button {
+        background: none;
+      }
     }
 
     &_equip {
-      margin: 5px 0;
       ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -253,11 +340,12 @@
         padding: 5px;
         li {
           height: 25px;
+          line-height: 25px;
           position: relative;
           background: #fff;
           border-radius: 5px;
 
-          .moveBtn {
+          .itemInfo {
             @include fasIcon(25px);
             width: 100%;
             overflow: hidden;
@@ -266,18 +354,23 @@
               height: 100%;
               width: fit-content;
             }
-
-            .empty {
-              color: #999;
-            }
           }
 
+          .empty {
+            color: #999;
+            font-size: 0.7em;
+            padding: 5px;
+          }
           .removeBtn {
+            background: none;
             @include fasIcon(25px);
             position: absolute;
             top: 0;
             right: 0;
             color: #ff0000;
+            &:hover {
+              font-weight: 700;
+            }
           }
         }
       }
@@ -295,6 +388,7 @@
         li {
           position: relative;
           height: 25px;
+          line-height: 25px;
           background: #fff;
           border-radius: 5px;
 
@@ -303,10 +397,63 @@
             box-shadow: 0 0 1px 1px $color1 inset;
           }
 
-          .moveBtn {
+          .itemInfo {
             height: 25px;
             width: 100%;
             text-align: center;
+            position: relative;
+
+            img {
+              height: 100%;
+              width: fit-content;
+            }
+          }
+
+          .empty {
+            color: #999;
+            font-size: 0.7em;
+            padding: 5px;
+          }
+          .removeBtn {
+            background: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #ff0000;
+            @include fasIcon(15px);
+          }
+          .itemCount {
+            color: $color3;
+            font-size: 0.5em;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: fit-content;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    &_assembles {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        background: $color4;
+        border-radius: 5px;
+        padding: 5px;
+
+        li {
+          .assembleBtn {
+            width: 100%;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 5px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px 1px #999;
             position: relative;
 
             img {
@@ -323,38 +470,6 @@
               height: fit-content;
               line-height: normal;
             }
-            .empty {
-              color: #999;
-            }
-          }
-          .removeBtn {
-            position: absolute;
-            top: 0;
-            right: 0;
-            color: #ff0000;
-            @include fasIcon(15px);
-          }
-        }
-      }
-    }
-
-    &_assembles {
-      ul {
-        display: flex;
-        background: $color4;
-        flex-wrap: wrap;
-        border-radius: 5px;
-        margin-bottom: 5px;
-        li {
-          .assembleBtn {
-            width: fit-content;
-            margin: 5px;
-            height: 25px;
-            line-height: 25px;
-            padding: 0 5px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 1px 1px 3px 1px #999;
           }
         }
       }

@@ -145,6 +145,7 @@
       grid-column: 1 / 4;
       height: 30px;
       display: flex;
+      align-items: center;
 
       .deptRadio {
         display: none;
@@ -162,6 +163,10 @@
           color: $color2;
           box-shadow: 0 0 1px 1px $color3 inset;
           border: 1px solid $color3;
+        }
+        &:hover {
+          background: $color3;
+          color: $color2;
         }
       }
     }
@@ -192,8 +197,6 @@
         height: 100%;
         border: none;
         border-radius: 5px;
-        option {
-        }
       }
     }
 
@@ -205,9 +208,11 @@
         width: 100%;
         height: 100%;
         background: $color2;
+        color: $color3;
 
-        .fa-plus {
-          color: $color3;
+        &:hover {
+          background: $color3;
+          color: $color2;
         }
       }
     }

@@ -4,14 +4,13 @@
       <img src="../img/ER_Logo_White.png" alt="logo" />
     </div>
     <div class="header_title">01RK</div>
-    <div class="header_Btns" data-modal="bag">
+    <div class="header_btns" data-modal="bag">
       <button
-        :class="`header_Btns__BagBtn ${toggleModal.bag ? 'openedBtn' : ''}`"
+        :class="`bagBtn ${toggleModal.bag ? 'openedBtn' : ''}`"
         @click="onToggleModal"
       >
         <i class="fas fa-suitcase"></i>
       </button>
-
       <!-- <button class="header_Btns__allPathFinderBtn">
         <i class="fas fa-map-marked-alt"></i>
         추천루트
@@ -87,7 +86,7 @@
       text-align: center;
     }
 
-    &_Btns {
+    &_btns {
       height: 50px;
       min-width: 120px;
       line-height: 50px;
@@ -108,7 +107,7 @@
         }
       }
 
-      &__BagBtn {
+      .bagBtn {
         transition: all 0.3s linear;
         &.gotDrops {
           background: $color5;

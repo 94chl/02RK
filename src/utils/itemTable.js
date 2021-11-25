@@ -25,6 +25,7 @@ export const eng2Kor = {
   nunchaku: "쌍절곤",
   whip: "채찍",
   camera: "카메라",
+  arcana: "아르카나",
   clothes: "옷",
   helmet: "머리",
   bracelet: "팔",
@@ -59,6 +60,7 @@ export const idToCategory = {
     S: "rapier",
     T: "guitar",
     U: "camera",
+    V: "arcana",
   },
   equip: {
     C: "clothes",
@@ -223,6 +225,13 @@ export const initialWeapon = [
     img:
       "https://lh3.google.com/u/0/d/1AX6l6JwCUJeXx8J3qXKhfiICHIRESI7j=w1402-h684-iv2",
   },
+  {
+    id: "WWV001",
+    sort: "arcana",
+    name: "유리구슬",
+    img:
+      "https://lh3.google.com/u/0/d/1UC1HgnNp04gFUjr9xb88zIfeayj6skXs=w1079-h665-iv1",
+  },
 ];
 
 export const equippable = [
@@ -256,6 +265,7 @@ export const weaponSort = [
   "rapier",
   "guitar",
   "camera",
+  "arcana",
 ];
 
 export const categoryById = (itemId) => {

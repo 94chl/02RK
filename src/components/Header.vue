@@ -8,26 +8,55 @@
       <button
         :class="`bagBtn ${toggleModal.bag ? 'openedBtn' : ''}`"
         @click="onToggleModal"
+        data-modal="bag"
       >
         <i class="fas fa-suitcase"></i>
       </button>
-      <!-- <button class="header_Btns__allPathFinderBtn">
+      <button
+        :class="`totalPathFinderBtn ${
+          toggleModal.totalPathFinder ? 'openedBtn' : ''
+        }`"
+        @click="onToggleModal"
+        data-modal="totalPathFinder"
+      >
         <i class="fas fa-map-marked-alt"></i>
-        추천루트
-      </button> -->
+      </button>
     </div>
 
-    <!-- <div class="header_allPathFinderModal">
-      <div class="header_allPathFinderModal__tabName">
+    <Bag></Bag>
+    <div
+      :class="`totalPathFinderModal ${
+        toggleModal.totalPathFinder ? 'active' : ''
+      }`"
+    >
+      <div class="tabName">
         추천 루트
-        <button class="rePathFinderBtn">
-          <i class="fas fa-redo"></i>
-          다시
+        <button class="pathFinderBtn" @click="pathFinder">
+          <i class="fas fa-map-marked-alt"></i>
         </button>
       </div>
-      <div class="header_allPathFinderModal__itemPaths"></div>
-    </div> -->
-    <Bag></Bag>
+      <div class="routesInfo">
+        <ul class="routes" v-if="totalRecommendRoutes.length > 0">
+          <li
+            class="route"
+            v-for="(route, index) in totalRecommendRoutes"
+            :key="`totalRoute${index}`"
+          >
+            <span class="route_index">
+              {{ `(${index + 1}) ` }}
+            </span>
+            <span
+              v-for="(area, areaIndex) in route"
+              :key="route + areaIndex"
+              class="route_area"
+            >
+              {{ area }}
+            </span>
+          </li>
+        </ul>
+        <div class="noRoutes" v-else>No Short Routes</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -40,13 +69,27 @@
       toggleModal() {
         return this.$store.state.toggleModal;
       },
+      dropMats() {
+        return this.$store.state.matGDs.dropMatArr.map((mat) => mat.id);
+      },
+      totalRecommendRoutes() {
+        return this.$store.state.totalRecommendRoutes;
+      },
     },
     methods: {
       onToggleModal(e) {
         this.$store.dispatch(
           "onToggleModal",
-          e.target.closest("div").dataset.modal
+          e.target.closest("button").dataset.modal
         );
+      },
+      pathFinder() {
+        const needDropsInfo = {
+          needDrops: this.dropMats,
+          total: true,
+        };
+        this.$store.dispatch("pathFinder", needDropsInfo);
+        console.log(this.$store.state);
       },
     },
   };
@@ -100,15 +143,16 @@
         background: $color1;
         color: $color2;
         border: 1px solid $color2;
-        box-shadow: 0 0 1px 1px $color3;
         &.openedBtn {
-          background: $color3;
-          box-shadow: 0 0 1px 1px $color3 inset;
+          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+        }
+        &:hover {
+          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
         }
       }
 
       .bagBtn {
-        transition: all 0.3s linear;
+        transition: background-color 0.3s linear;
         &.gotDrops {
           background: $color5;
           .fas {
@@ -118,7 +162,7 @@
       }
     }
 
-    #allItemPath {
+    .totalPathFinderModal {
       display: none;
       height: fit-content;
       background: #fff;
@@ -138,8 +182,7 @@
 
       &.active {
         @include active();
-        left: 50%;
-        margin-left: -180px;
+        left: calc(50% - 180px);
         z-index: 11;
       }
 
@@ -150,18 +193,43 @@
         border-bottom: 1px solid $color3;
         box-sizing: border-box;
         text-indent: 5px;
-        .rePathFinderBtn {
+        .pathFinderBtn {
+          background: none;
           @include fasIcon(30px);
+          &:hover {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+          }
         }
       }
 
-      .itemPaths {
+      .routesInfo {
         height: fit-content;
-        ul {
-          li {
-            height: 30px;
-            line-height: 30px;
+        .routes {
+          padding: 5px;
+          .route {
+            width: fit-content;
+            word-break: keep-all;
+            text-align: start;
+            margin: 3px 0;
+            &_index {
+            }
+            &_area {
+              padding: 3px;
+              &::after {
+                content: "-";
+                margin: 0 3px;
+              }
+              &:last-child {
+                &::after {
+                  content: none;
+                  margin: 0;
+                }
+              }
+            }
           }
+        }
+        .noRoutes {
+          padding: 5px;
         }
       }
     }

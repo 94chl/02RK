@@ -1,6 +1,7 @@
 import { createStore } from "vuex";
 import { disassembleGD, disassembleAllWD } from "~/utils/disassemble";
 import { searchById, equippable, weaponSort } from "~/utils/itemTable";
+import { pathFinder } from "~/utils/pathFinder";
 
 const store = createStore({
   state() {
@@ -12,7 +13,6 @@ const store = createStore({
         dropMatArr: [],
         dropMatObj: {},
       },
-      // targetItem: {},
       cart: {},
       selectItem: {},
       greenMatArr: [],
@@ -80,8 +80,11 @@ const store = createStore({
       },
       assemblable: [],
       customRoute: [],
+      recommendRoutes: [],
+      totalRecommendRoutes: [],
       toggleModal: {
         bag: false,
+        totalPathFinder: false,
         initialWeapon: true,
       },
     };
@@ -162,6 +165,12 @@ const store = createStore({
     },
     onToggleModal(state, modalState) {
       state.toggleModal = { ...state.toggleModal, ...modalState };
+    },
+    setRecommendRoutes(state, routesInfo) {
+      const { routes, total } = routesInfo;
+      total
+        ? (state.totalRecommendRoutes = routes)
+        : (state.recommendRoutes = routes);
     },
   },
   actions: {
@@ -459,6 +468,23 @@ const store = createStore({
     onToggleModal({ commit, state }, modal) {
       const modalState = { [modal]: !state.toggleModal[modal] };
       commit("onToggleModal", modalState);
+    },
+    pathFinder({ commit, state }, needDropsInfo) {
+      const { needDrops, total } = needDropsInfo;
+      const bagEquip = Object.values(state.bagEquip).reduce((acc, cur) => {
+        if (cur.id) acc.push(cur.id);
+        return acc;
+      }, []);
+      const bagInventory = Object.values(state.bagInventory).reduce(
+        (acc, cur) => {
+          if (cur.id) acc.push(cur.id);
+          return acc;
+        },
+        []
+      );
+      const bagTotal = bagEquip.concat(bagInventory);
+      const routes = pathFinder(state.customRoute, needDrops, bagTotal);
+      commit("setRecommendRoutes", { routes, total });
     },
   },
 });

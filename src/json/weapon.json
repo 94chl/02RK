@@ -26,7 +26,7 @@
         "sort": "dagger",
         "img": "https://lh3.google.com/u/0/d/1-thtb3zpwJfk7aOFG4b85EvrlvjTXiQu=w1402-h684-iv1",
         "location": ["A004", "A010", "A014"],
-        "tobe": ["GWA001", "GWD001", "BWQ001", "BA010", "GT007", "BWV003"],
+        "tobe": ["WWD001", "GWA001", "GWD001", "BWQ001", "BA010", "GT007", "BWV003"],
         "pickup": 1,
         "limit": 1,
         "name": "식칼"
@@ -218,7 +218,7 @@
         "sort": "twoHand",
         "img": "https://lh3.google.com/u/0/d/1DRGR0m_QAjMozo4naJ92rro0yeltJpmm=w1402-h684-iv2",
         "location": ["A009", "A010", "A016"],
-        "tobe": ["GWB001", "GWB002", "BWB001", "BWB004", "GWD001", "GA010"],
+        "tobe": ["WWD001", "GWB001", "GWB002", "BWB001", "BWB004", "GWD001", "GA010"],
         "pickup": 1,
         "limit": 1,
         "name": "녹슨 검"
@@ -640,6 +640,7 @@
         "limit": 1,
         "name": "쌍칼",
         "stack": 1,
+        "material": ["WWB001", "WWA003"],
         "공격력": 8
       }, {
         "id": "GWD001",

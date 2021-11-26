@@ -12,7 +12,8 @@
         <button @click="setInitialWeapon" class="selectBtn">
           <img
             :src="require(`~/img/WSicon/${weapon.sort}.png`).default"
-            :alt="`${weapon.sort}_icon`"
+            :alt="`${weapon.name}_icon`"
+            :title="`${weapon.name}_icon`"
             v-if="showItemImg"
           />
           <span v-else>{{ weapon.name }}</span>
@@ -77,12 +78,16 @@
       li {
         height: 30px;
         width: 15%;
+        font-size: 0.8em;
+
         &.showItemImg {
           width: fit-content;
         }
         .selectBtn {
           @include fasIcon(30px);
           width: 100%;
+          overflow: hidden;
+
           img {
             height: 100%;
             width: fit-content;

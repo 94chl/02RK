@@ -82,6 +82,7 @@
           width: 100%;
           &:hover {
             font-weight: 700;
+            background: rgba(0, 0, 0, 0.1);
           }
         }
       }
@@ -92,6 +93,9 @@
       background: none;
       .fas {
         color: $color3;
+      }
+      &:hover {
+        box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
       }
     }
   }

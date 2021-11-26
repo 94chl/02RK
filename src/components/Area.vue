@@ -8,7 +8,7 @@
     </div>
     <div class="customRoute">
       <div v-for="(area, index) in customRoute" :key="`route${index}`">
-        {{ area }}
+        {{ areaInfo[area].name }}
       </div>
     </div>
     <div>
@@ -16,11 +16,9 @@
         <li v-for="area in areaIds" :key="area" :data-areaid="area">
           <div>
             <button class="areaBtn" @click="setRoute">
-              <span
-                v-if="customRoute.includes(areaInfo[area].name)"
-                class="pickedArea"
-                >{{ customRoute.indexOf(areaInfo[area].name) + 1 }}</span
-              >
+              <span v-if="customRoute.includes(area)" class="pickedArea">
+                {{ customRoute.indexOf(area) + 1 }}
+              </span>
               <span class="areaName">{{ areaInfo[area].name }}</span>
               <span v-if="areaInfo[area].resurrection" class="resurrection">
                 <i class="fas fa-cross"></i>
@@ -31,7 +29,7 @@
               <button
                 @click="toggleArea"
                 :class="`toggleDropsBtn ${
-                  !areaInfo[area].show ? null : 'closed'
+                  !areaInfo[area].show ? '' : 'closed'
                 }`"
               >
                 <i class="fas fa-angle-double-down"></i>
@@ -114,21 +112,23 @@
       },
       setRoute(e) {
         const pickedArea = e.target.closest("li").dataset.areaid;
-        console.log(e.target.className);
         if (pickedArea === "A000" || e.target.className !== "areaBtn") return;
-        if (this.customRoute.includes(this.areaInfo[pickedArea].name)) {
-          const newRoute = this.customRoute.filter(
-            (area) => area !== this.areaInfo[pickedArea].name
-          );
+        if (this.customRoute.includes(pickedArea)) {
+          const newRoute = this.customRoute.filter((area) => area !== pickedArea);
           this.$store.dispatch("removeRoute", newRoute);
         } else {
-          this.$store.dispatch("addRoute", this.areaInfo[pickedArea].name);
+          this.$store.dispatch("addRoute", pickedArea);
         }
         console.log("customRoute", this.$store.state.customRoute);
       },
       getItem(e) {
         this.$store.dispatch("getItem", e.target.closest("li").dataset.itemid);
         this.$store.dispatch("updateAssemblable");
+        document.querySelector(".bagBtn").classList.toggle("gotDrops");
+        setTimeout(
+          () => document.querySelector(".bagBtn").classList.toggle("gotDrops"),
+          1000
+        );
       },
       removeAllRoute() {
         if (window.confirm("루트를 초기화하시겠습니까?"))
@@ -143,9 +143,15 @@
     .tabName {
       .removeAllBtn {
         background: none;
+        border-radius: 5px;
+        padding: 0;
+
         .fas {
           color: $color3;
           @include fasIcon(30px);
+        }
+        &:hover {
+          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
         }
       }
     }
@@ -215,6 +221,10 @@
             border-radius: 0;
             align-self: flex-end;
             @include fasIcon(25px);
+
+            &:hover {
+              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+            }
             .fa-angle-double-down {
               display: block;
             }

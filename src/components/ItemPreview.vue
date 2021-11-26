@@ -2,7 +2,11 @@
   <div class="itemPreview">
     <div class="itemPreview_info">
       <div class="imgInfo">
-        <img :src="cartItem.img" :alt="`${cartItem.name}_img`" />
+        <img
+          :src="cartItem.img"
+          :alt="`${cartItem.name}_img`"
+          :title="`${cartItem.name}_img`"
+        />
       </div>
       <ul>
         <li class="itemOption nameInfo">
@@ -69,13 +73,52 @@
           </div>
         </li>
       </ul>
-      <div class="btns">btns</div>
+      <div class="pathFinder">
+        <div class="btns">
+          <button @click="pathFinder" class="pathFinderBtn">
+            <i class="fas fa-map-marked-alt"></i>
+          </button>
+          <button @click="togglePath" class="togglePathBtn">
+            <i class="fas fa-toggle-on" v-if="isShowPath"></i>
+            <i class="fas fa-toggle-off" v-else></i>
+          </button>
+        </div>
+        <div v-if="recommendRoutes.length > 0" class="recommends">
+          <ul
+            v-if="isShowPath"
+            :class="`recommends_list ${isShowPath ? 'open' : ''}`"
+          >
+            <li
+              v-for="(route, index) in recommendRoutes"
+              :key="`itemRoute${index}`"
+              class="recommends_list__route"
+            >
+              <span class="recommends_list__route__index">
+                {{ `(${index + 1}) ` }}
+              </span>
+              <span
+                v-for="(area, areaIndex) in route"
+                :key="route + areaIndex"
+                class="recommends_list__route__area"
+              >
+                {{ area }}
+              </span>
+            </li>
+          </ul>
+          <div v-else class="recommendsCover">
+            <p>{{ routeItem }}</p>
+            <p class="routeCount">{{ recommendRoutes.length }}</p>
+            <p>Shortest Routes</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
   import { eng2Kor, searchById, areaData } from "~/utils/itemTable";
+  import { disassembleWD } from "~/utils/disassemble";
 
   export default {
     data() {
@@ -90,6 +133,7 @@
           tobe: "상위",
         },
         necessaryOptions: ["img", "name", "sort"],
+        isShowPath: false,
       };
     },
     components: {},
@@ -129,6 +173,9 @@
           (option) => !this.necessaryOptions.includes(option)
         );
       },
+      recommendRoutes() {
+        return this.$store.state.recommendRoutes;
+      },
     },
     methods: {
       changeItem(e) {
@@ -137,6 +184,16 @@
           e.target.closest(".matInfoBtn").dataset.itemid
         );
         this.$store.dispatch("setCart", selectedItem);
+      },
+      pathFinder() {
+        const needDropsInfo = {
+          needDrops: Object.keys(disassembleWD([this.cartItemId]).dropMatId),
+          total: false,
+        };
+        this.$store.dispatch("pathFinder", needDropsInfo);
+      },
+      togglePath() {
+        this.isShowPath = !this.isShowPath;
       },
     },
   };
@@ -165,15 +222,22 @@
 
       .itemOption {
         min-height: 25px;
-        line-height: 25px;
         text-indent: 5px;
         background: #fff;
         border-bottom: 2px solid $color2;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
         > div {
           display: flex;
           column-gap: 5px;
           text-indent: 0;
           align-items: center;
+          padding: 3px;
+          .attrKey {
+            display: block;
+            min-width: max-content;
+          }
         }
 
         &.nameInfo {
@@ -186,15 +250,18 @@
 
         .itemMaterial {
           display: flex;
+          flex-wrap: wrap;
+          gap: 3px 5px;
+
           .matInfoBtn {
             padding: 0 5px;
             box-shadow: 1px 0 1px 0 #999;
             box-sizing: border-box;
             border-radius: 5px;
-            margin-right: 5px;
             height: 20px;
-            &:last-child {
-              margin-right: 0;
+
+            &:hover {
+              margin-top: -1px;
             }
           }
         }
@@ -214,57 +281,76 @@
       }
     }
 
-    #itemPreviewBtnBox {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 25px;
-
-      .undoInfoBtn,
-      .pathFinderBtn {
-        @include fasIcon(25px);
-      }
-    }
-
-    #itemPathModal {
-      border: 1px solid $color3;
+    .pathFinder {
       border-radius: 5px;
       background: #fff;
-
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 5;
-      background: #fff;
-      min-width: 50px;
-      text-align: right;
-
-      overflow-y: scroll;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
-      }
-
-      &.hide {
-        display: none;
-      }
-      #itemPathModalBtnBox {
+      .btns {
         display: flex;
         justify-content: space-between;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        .removePathBtn,
-        .rePathFinderBtn {
+        .pathFinderBtn {
+          background: none;
           @include fasIcon(25px);
+          &:hover {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+          }
+          .fas {
+            color: $color3;
+          }
+        }
+        .togglePathBtn {
+          background: none;
+          @include fasIcon(25px);
+          .fas {
+            color: $color3;
+          }
         }
       }
-      .itemPaths {
-        margin-top: 25px;
-        ul {
-          li {
+
+      .recommends {
+        min-height: calc(100% - 30px);
+        display: flex;
+        align-items: center;
+        &_list {
+          overflow: hidden;
+          width: fit-content;
+          background: #fff;
+          border: 1px solid $color1;
+          padding: 3px;
+          border-radius: 5px;
+          &.open {
+            max-height: calc(100% - 30px);
+            position: absolute;
+            right: 0;
+            top: 25px;
+            overflow-y: scroll;
+          }
+          &__route {
+            width: max-content;
+            &__index {
+            }
+            &__area {
+              &::after {
+                content: "-";
+                margin: 0 3px;
+              }
+              &:last-child {
+                &::after {
+                  content: none;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .recommendsCover {
+          text-align: center;
+          width: 100%;
+          p {
+            word-break: keep-all;
+            &.routeCount {
+              font-weight: 700;
+              color: $color3;
+            }
           }
         }
       }

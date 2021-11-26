@@ -2,9 +2,21 @@
   <div :class="`bag ${toggleModal.bag ? 'active' : 'hide'}`">
     <h2 class="tabName">
       가방
-      <button class="changeShowItemImgBtn" @click="onChangeShowItemImg">
-        <span v-if="!showItemImg"><i class="fas fa-font"></i></span>
-        <span v-if="showItemImg"><i class="far fa-images"></i></span>
+      <button
+        :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
+        @click="onChangeShowItemImg"
+      >
+        <span>
+          <i class="fas fa-font"></i>
+        </span>
+      </button>
+      <button
+        :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
+        @click="onChangeShowItemImg"
+      >
+        <span>
+          <i class="far fa-images"></i>
+        </span>
       </button>
     </h2>
     <div data-modal="initialWeapon" class="bag_initialWeapon">
@@ -49,6 +61,7 @@
                 <img
                   :src="equip[pocket].img"
                   :alt="`${equip[pocket].name}_img`"
+                  :title="`${equip[pocket].name}_img`"
                   v-if="showItemImg"
                 />
                 <span v-else>{{ equip[pocket].name }}</span>
@@ -97,6 +110,7 @@
                 <img
                   :src="inventory[pocket].img"
                   :alt="`${inventory[pocket].name}_img`"
+                  :title="`${inventory[pocket].name}_img`"
                   v-if="showItemImg"
                 />
                 <span v-else>{{ inventory[pocket].name }}</span>
@@ -134,6 +148,7 @@
               <img
                 :src="assemble.img"
                 :alt="`${assemble.name}_img`"
+                :title="`${assemble.name}_img`"
                 v-if="showItemImg"
               />
               <span v-else>{{ assemble.name }}</span>
@@ -312,11 +327,21 @@
         background: none;
         color: $color2;
         border-radius: 5px;
+        @include fasIcon(25px);
+        margin-right: 5px;
+        &:last-child {
+          margin: 0;
+        }
+
+        &.selected {
+          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
+        }
       }
       .clearBtn {
         background: none;
         color: $color2;
         height: 25px;
+        border-radius: 5px;
         &:hover {
           background: $color4;
         }
@@ -349,6 +374,7 @@
             @include fasIcon(25px);
             width: 100%;
             overflow: hidden;
+            font-size: 0.8em;
 
             img {
               height: 100%;
@@ -402,6 +428,7 @@
             width: 100%;
             text-align: center;
             position: relative;
+            font-size: 0.8em;
 
             img {
               height: 100%;
@@ -421,6 +448,9 @@
             right: 0;
             color: #ff0000;
             @include fasIcon(15px);
+            &:hover {
+              font-weight: 700;
+            }
           }
           .itemCount {
             color: $color3;
@@ -431,6 +461,7 @@
             left: 0;
             height: fit-content;
             line-height: normal;
+            cursor: default;
           }
         }
       }
@@ -469,6 +500,7 @@
               left: 0;
               height: fit-content;
               line-height: normal;
+              cursor: default;
             }
           }
         }

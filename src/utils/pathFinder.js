@@ -49,19 +49,27 @@ function checkAreaDrop(area, needs) {
 
 //파라미터 = 아이템 아이디
 export function pathFinder(route, needsNow, bagNow) {
+  // 맵(이동가능 여부)
   const pathInfo = JSON.parse(JSON.stringify(areaPath));
+  // 맵(드랍테이블)
   let mapInfo = JSON.parse(JSON.stringify(areaData));
 
+  // 선점 지역 체크
   const routeStack = [...route];
   const finishedRoute = [];
 
+  // 현재 소지품 중 필요한 드랍템만 추림
   const bag = bagNow.filter((item) => needsNow.includes(item));
+
+  // 필요 재료중 소지템, 공통드랍템 제거
   const needs = needsNow.filter(
     (need) => !bag.includes(need) && !mapInfo.A000.drop.includes(need)
   );
 
+  // 맵(드랍테이블)에서 필요한 드랍템만 필터링
   mapInfo = checkAreaDrop(mapInfo, needs);
 
+  // 선점지역이 있으면, 해당지역 드랍템을 필요한 드랍템 목록에서 제거
   if (routeStack.length > 0) {
     routeStack.forEach((area) => {
       mapInfo[area].drop.forEach((drop) => {
@@ -70,11 +78,7 @@ export function pathFinder(route, needsNow, bagNow) {
     });
   }
 
-  if (needs.includes("WWD001")) {
-    alert("쌍칼은 시작무기로 미선택 시 획득할 수 없습니다.");
-    return [];
-  }
-
+  // 시작점 고르기 : 필요한 드랍템이 많이 나오는 지역순(1개 이상)
   const startPoint = Object.keys(mapInfo)
     .reduce((acc, areaId) => {
       if (mapInfo[areaId].point > 0) {
@@ -85,11 +89,11 @@ export function pathFinder(route, needsNow, bagNow) {
     .sort((a, b) => b.point - a.point);
 
   // 최단 경로 탐색
-  let maxLength = 10;
+  let shortestRoute = 10;
 
   function shortRoute(needs, bag, path, map, startPoint, route) {
     //긴 경로 제외
-    if (route.length > maxLength) return;
+    if (route.length > shortestRoute) return;
 
     // 출발지 [{id, name, drop, point}...]
     let startT = JSON.parse(JSON.stringify(startPoint));
@@ -138,15 +142,19 @@ export function pathFinder(route, needsNow, bagNow) {
       const routeT = [...route];
       if (needsT.length < 1) {
         routeT.push(startT[i].id);
-        if (maxLength >= routeT.length) {
-          maxLength = routeT.length;
+        if (shortestRoute > routeT.length) {
+          shortestRoute = routeT.length;
+          const routeName = routeT.map((areaId) => areaData[areaId].name);
+          finishedRoute.splice(0);
+          finishedRoute.push(routeName);
+        } else if (shortestRoute == routeT.length) {
           const routeName = routeT.map((areaId) => areaData[areaId].name);
           finishedRoute.push(routeName);
         }
       } else if (needsT.length > 0 && dest.length > 0) {
         routeT.push(startT[i].id);
         // 탐색 중인 루트 폐기, 다음 루트 탐색
-        if (routeT.length >= maxLength) {
+        if (routeT.length >= shortestRoute) {
           continue;
         } else {
           shortRoute(needsT, bagT, pathInfo, mapInfo, dest, routeT);
@@ -159,9 +167,5 @@ export function pathFinder(route, needsNow, bagNow) {
 
   shortRoute(needs, bag, pathInfo, mapInfo, startPoint, routeStack);
 
-  const shortestRoute = finishedRoute.filter(
-    (route) => route.length <= maxLength
-  );
-
-  return shortestRoute;
+  return finishedRoute;
 }

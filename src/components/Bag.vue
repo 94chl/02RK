@@ -231,7 +231,6 @@
           !this.moveItem.able ||
           (!this.moveItem.to.item && !this.moveItem.from.item)
         ) {
-          console.log("CANT MOVE");
           this.moveItem = {
             from: { item: false },
             to: { item: false },
@@ -293,17 +292,6 @@
         );
       },
     },
-    watch: {
-      equip() {
-        console.log("EQUIP", this.equip);
-      },
-      inventory() {
-        console.log("INVENTORY", this.inventory);
-      },
-      assembles() {
-        console.log("ASSEMBLES", this.assembles);
-      },
-    },
   };
 </script>
 
@@ -332,7 +320,9 @@
         &:last-child {
           margin: 0;
         }
-
+        &:hover {
+          box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
+        }
         &.selected {
           box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
         }
@@ -343,7 +333,7 @@
         height: 25px;
         border-radius: 5px;
         &:hover {
-          background: $color4;
+          box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
         }
       }
     }
@@ -351,6 +341,14 @@
     &_initialWeapon {
       button {
         background: none;
+        .fas {
+          @include fasIcon(25px);
+        }
+        &:hover {
+          .fas {
+            box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
+          }
+        }
       }
     }
 

@@ -110,7 +110,6 @@
       },
       addItem() {
         this.$store.dispatch("addTargetItems", this.$store.state.cart);
-        console.log("targetItems", this.$store.state.targetItems);
       },
     },
     created() {

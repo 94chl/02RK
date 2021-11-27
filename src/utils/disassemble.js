@@ -9,9 +9,8 @@ export function disassembleGD(materialArr) {
     greenMatId: {},
     greenMatName: {},
   };
-  console.log(need2Disassemble);
+
   for (let i = 0; i < need2Disassemble.length; ) {
-    console.log(need2Disassemble[i]);
     const result = searchById(need2Disassemble[i]);
 
     if (!result.location && result.material) {
@@ -82,7 +81,6 @@ export function disassembleWD(materialArr) {
 
 // 아이템정보 배열을 받아서 종합하여 드랍템 수준으로
 export function disassembleAllWD(itemArr) {
-  console.log(itemArr);
   const drops = {};
   const greens = {};
   itemArr.forEach((item) => {

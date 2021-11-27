@@ -62,7 +62,17 @@
               </span>
             </span>
             <span v-else class="attrValue">
-              <span>
+              <span v-if="option.match(/([고유])|([버프])/g)">
+                <ul>
+                  <li
+                    v-for="uniqueOption in cartItem[option]"
+                    :key="cartItem[option] + uniqueOption"
+                  >
+                    {{ `- ${uniqueOption}` }}
+                  </li>
+                </ul>
+              </span>
+              <span v-else>
                 {{
                   option.match(/[%]/g)
                     ? `${parseInt(cartItem[option] * 100)}%`
@@ -83,7 +93,13 @@
             <i class="fas fa-toggle-off" v-else></i>
           </button>
         </div>
-        <div v-if="recommendRoutes.length > 0" class="recommends">
+        <div v-if="isInitial" class="beforeRecommend">
+          <p>
+            click <span><i class="fas fa-map-marked-alt"></i></span> to find
+            shortest route
+          </p>
+        </div>
+        <div v-else class="recommends">
           <ul
             v-if="isShowPath"
             :class="`recommends_list ${isShowPath ? 'open' : ''}`"
@@ -108,7 +124,7 @@
           <div v-else class="recommendsCover">
             <p>{{ routeItem }}</p>
             <p class="routeCount">{{ recommendRoutes.length }}</p>
-            <p>Shortest Routes</p>
+            <p>shortest route</p>
           </div>
         </div>
       </div>
@@ -133,6 +149,7 @@
           tobe: "상위",
         },
         necessaryOptions: ["img", "name", "sort"],
+        isInitial: true,
         isShowPath: false,
       };
     },
@@ -164,8 +181,6 @@
         // 배열정보를 객체배열로 정리하는 김에 cart도 업데이트
         this.$store.dispatch("setCart", { ...cart, ...itemInfo });
 
-        console.log("cartItem", itemInfo);
-
         return itemInfo;
       },
       cartItemOptions() {
@@ -179,7 +194,6 @@
     },
     methods: {
       changeItem(e) {
-        console.log("MOVE TO", e.target.dataset.itemid);
         const selectedItem = searchById(
           e.target.closest(".matInfoBtn").dataset.itemid
         );
@@ -191,9 +205,15 @@
           total: false,
         };
         this.$store.dispatch("pathFinder", needDropsInfo);
+        this.isInitial = false;
       },
       togglePath() {
         this.isShowPath = !this.isShowPath;
+      },
+    },
+    watch: {
+      cartItemId() {
+        this.isInitial = true;
       },
     },
   };
@@ -306,6 +326,20 @@
         }
       }
 
+      .beforeRecommend {
+        min-height: calc(100% - 30px);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        p {
+          word-break: keep-all;
+          span .fas {
+            color: $color3;
+          }
+        }
+      }
+
       .recommends {
         min-height: calc(100% - 30px);
         display: flex;
@@ -326,8 +360,6 @@
           }
           &__route {
             width: max-content;
-            &__index {
-            }
             &__area {
               &::after {
                 content: "-";

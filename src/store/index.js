@@ -92,12 +92,10 @@ const store = createStore({
   getters: {},
   mutations: {
     onChangeShowItemImg(state) {
-      console.log(state.showItemImg);
       state.showItemImg = !state.showItemImg;
     },
     setCart(state, item) {
       state.cart = item;
-      console.log("cart", state.cart);
     },
     setTargetItems(state, newTargetItems) {
       state.targetItems = newTargetItems;
@@ -296,7 +294,7 @@ const store = createStore({
         JSON.parse(JSON.stringify(from)),
         JSON.parse(JSON.stringify(to)),
       ];
-      console.log("FROM TO", newFromTo);
+
       // 기존 아이템 삭제
       newFromTo.forEach((item) => {
         if (!(parseInt(item.location[item.location.length - 1]) + 1)) {
@@ -313,7 +311,6 @@ const store = createStore({
           commit("setInventory", item);
         }
       });
-      console.log("MOVED!", state.bagEquip, state.bagInventory);
     },
     updateAssemblable({ commit, state }) {
       const bagTotal = Object.values(state.bagEquip)
@@ -353,8 +350,6 @@ const store = createStore({
       commit("updateAssemblable", newAssemblable);
     },
     getAssemble({ commit, state }, newAssemble) {
-      console.log("assemble", newAssemble);
-
       const bagInfo = {
         Equip: { ...state.bagEquip },
         Inventory: { ...state.bagInventory },

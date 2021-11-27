@@ -21,11 +21,6 @@
       },
     },
     methods: {},
-    watch: {
-      dropMats() {
-        console.log("dropMats", this.dropMats);
-      },
-    },
   };
 </script>
 

@@ -89,7 +89,6 @@
           total: true,
         };
         this.$store.dispatch("pathFinder", needDropsInfo);
-        console.log(this.$store.state);
       },
     },
   };
@@ -155,9 +154,6 @@
         transition: background-color 0.3s linear;
         &.gotDrops {
           background: $color5;
-          .fas {
-            color: #ffff00;
-          }
         }
       }
     }
@@ -211,8 +207,6 @@
             word-break: keep-all;
             text-align: start;
             margin: 3px 0;
-            &_index {
-            }
             &_area {
               padding: 3px;
               &::after {

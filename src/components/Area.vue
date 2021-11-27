@@ -80,7 +80,6 @@
       };
     },
     created() {
-      console.log(this.dropMats);
       const keys = Object.keys(areaData);
       this.areaIds = keys.slice(2).concat(keys[0]);
 
@@ -91,7 +90,6 @@
         );
         newAreaData[areaId].show = false;
       });
-      console.log("newAreaData", newAreaData);
 
       this.areaInfo = newAreaData;
     },
@@ -106,7 +104,6 @@
     },
     methods: {
       toggleArea(e) {
-        console.log(e.target.closest("li").dataset.areaid);
         this.areaInfo[e.target.closest("li").dataset.areaid].show =
           !this.areaInfo[e.target.closest("li").dataset.areaid].show;
       },
@@ -119,7 +116,6 @@
         } else {
           this.$store.dispatch("addRoute", pickedArea);
         }
-        console.log("customRoute", this.$store.state.customRoute);
       },
       getItem(e) {
         this.$store.dispatch("getItem", e.target.closest("li").dataset.itemid);

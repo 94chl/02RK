@@ -41,7 +41,6 @@
           const newTargetItems = this.targetItems.filter(
             (_, index) => index != e.target.closest("li").dataset.index
           );
-          console.log("newTargetItems", newTargetItems);
           this.$store.dispatch("removeTargetItems", newTargetItems);
         }
       },

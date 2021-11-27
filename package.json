@@ -5,19 +5,13 @@
   "main": "main.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.15.8",
-    "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-links": "^6.3.12",
-    "@storybook/vue3": "^6.3.12",
     "@vue/compiler-sfc": "^3.2.19",
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^9.0.1",
@@ -35,10 +29,8 @@
     "webpack-dev-server": "^4.3.0"
   },
   "dependencies": {
-    "axios": "^0.23.0",
     "file-loader": "^6.2.0",
     "vue": "^3.2.19",
-    "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
   }
 }

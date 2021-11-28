@@ -217,6 +217,7 @@
         this.$store.dispatch("updateAssemblable");
       },
       onDrag(e) {
+        e.preventDefault();
         const target = e.target.closest("li");
         this.moveItem.from = {
           item: target.dataset.item,
@@ -225,7 +226,6 @@
       },
       onDrop(e) {
         e.preventDefault();
-
         if (
           this.moveItem.to.bag === this.moveItem.from.bag ||
           !this.moveItem.able ||

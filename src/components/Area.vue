@@ -109,7 +109,11 @@
       },
       setRoute(e) {
         const pickedArea = e.target.closest("li").dataset.areaid;
-        if (pickedArea === "A000" || e.target.className !== "areaBtn") return;
+        if (
+          pickedArea === "A000" ||
+          e.target.closest("button").className.includes("toggleDropsBtn")
+        )
+          return;
         if (this.customRoute.includes(pickedArea)) {
           const newRoute = this.customRoute.filter((area) => area !== pickedArea);
           this.$store.dispatch("removeRoute", newRoute);
@@ -247,9 +251,13 @@
               .getDropBtn {
                 padding: 5px;
                 background: none;
+                border-radius: 5px;
                 &:active {
                   box-shadow: 0px 0px 2px 1px #999 inset;
-                  border-radius: 5px;
+                }
+                &:hover {
+                  box-shadow: 0px 0px 2px 1px #999 inset;
+                  margin-left: 1px;
                 }
               }
               &.neededDrops {

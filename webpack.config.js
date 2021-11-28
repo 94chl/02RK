@@ -42,12 +42,18 @@ module.exports = {
       },
       // 이미지 파일 로더
       {
+        test: /\.(png|svg|jpe?g|gif)$/,
+        loader: "url-loader",
+        options: {
+          limit: 10000,
+        },
+      },
+      {
         test: /\.(png|jpe?g|gif|svg|webp)$/i,
         use: {
           loader: "file-loader",
           options: {
             name: "[name].[contenthash].[ext]",
-            outputPath: "img/",
           },
         },
       },
@@ -57,6 +63,7 @@ module.exports = {
     new VueLoaderPlugin(),
     new HtmlPlugIn({
       template: "./src/index.html",
+      favicon: "./static/favicon.ico",
     }),
     new CopyPlugin({
       patterns: [{ from: "static" }],

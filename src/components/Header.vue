@@ -1,7 +1,10 @@
 <template>
   <div class="header">
     <div class="header_logo">
-      <img src="../img/ER_Logo_White.png" alt="logo" />
+      <img
+        src="https://lh3.google.com/u/0/d/1-IhwTjnq5GwkY3Q6u7n80CDeO1-yorEl=w1168-h959-iv1"
+        alt="logo"
+      />
     </div>
     <div class="header_title">01RK</div>
     <div class="header_btns" data-modal="bag">

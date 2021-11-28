@@ -11,7 +11,7 @@
       >
         <button @click="setInitialWeapon" class="selectBtn">
           <img
-            :src="require(`~/img/WSicon/${weapon.sort}.png`).default"
+            :src="weapon.img"
             :alt="`${weapon.name}_icon`"
             :title="`${weapon.name}_icon`"
             v-if="showItemImg"
@@ -87,6 +87,10 @@
           @include fasIcon(30px);
           width: 100%;
           overflow: hidden;
+          background: #fff;
+          &:hover {
+            box-shadow: 0 0 7px 2px inset rgba(0, 0, 0, 0.2);
+          }
 
           img {
             height: 100%;

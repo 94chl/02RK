@@ -67,8 +67,9 @@
                   <li
                     v-for="uniqueOption in cartItem[option]"
                     :key="cartItem[option] + uniqueOption"
+                    class="uniqueOption"
                   >
-                    {{ `- ${uniqueOption}` }}
+                    {{ ` ${uniqueOption}` }}
                   </li>
                 </ul>
               </span>
@@ -95,8 +96,9 @@
         </div>
         <div v-if="isInitial" class="beforeRecommend">
           <p>
-            click <span><i class="fas fa-map-marked-alt"></i></span> to find
-            shortest route
+            <span><i class="fas fa-map-marked-alt"></i></span> 클릭시 최단루트를
+            탐색합니다 (드랍되지 않는 시작무기가 재료로 들어갈 경우, 가방에서
+            시작무기를 추가하세요.)
           </p>
         </div>
         <div v-else class="recommends">
@@ -258,6 +260,13 @@
             display: block;
             min-width: max-content;
           }
+
+          .attrValue {
+            .uniqueOption {
+              display: block;
+              word-break: keep-all;
+            }
+          }
         }
 
         &.nameInfo {
@@ -328,12 +337,16 @@
 
       .beforeRecommend {
         min-height: calc(100% - 30px);
-        display: flex;
-        align-items: center;
         text-align: center;
-        width: 100%;
+        padding: 2px;
+        margin: 0;
+
         p {
           word-break: keep-all;
+          font-size: 0.8rem;
+          padding: 0;
+          margin: 0;
+
           span .fas {
             color: $color3;
           }

@@ -96,7 +96,7 @@
   },
   "A016": {
     "name": "양궁장",
-    "drop": ["WM020", "WM004", "WM011", "WM015", "WM018", "WWB001", "WWF001", "WWI001", "WWK001", "WC002", "WC004", "WH002", "WS002", "WT001", "WT002", "WF009", "WF012"],
+    "drop": ["WM020", "WM004", "WM011", "WM015", "WM018", "WWB001", "WWF001", "WWI001", "WWK001", "WC002", "WC004", "WH002", "WS002", "WT001", "WT002", "WF012"],
     "resurrection": false,
     "hyperloop": false
   }

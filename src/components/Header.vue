@@ -6,7 +6,7 @@
         alt="logo"
       />
     </div>
-    <div class="header_title">01RK</div>
+    <div class="header_title">02RK</div>
     <div class="header_btns" data-modal="bag">
       <button
         :class="`bagBtn ${toggleModal.bag ? 'openedBtn' : ''}`"

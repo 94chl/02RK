@@ -455,7 +455,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1jai1w6D6dfuNarT6ytM-URMPc6AVqLY_=w1402-h253-iv1",
         "location": ["A002", "A008", "A011"],
-        "tobe": ["PWS005", "PC003", "PH001", "PB003", "PS002", "PA004", "YA003", "BT002", "PF004"],
+        "tobe": ["PWS005", "YWW002", "PC003", "PH001", "PB003", "PS002", "PA004", "YA003", "BT002", "PF004"],
         "pickup": 1,
         "limit": 3,
         "name": "미스릴"
@@ -465,7 +465,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/15NvN9WmHXtp6ihSa0dmdwGeY3lluwnp9=w1402-h253-iv1",
         "location": ["A002", "A004", "A005", "A008", "A015"],
-        "tobe": ["YWB003", "PWJ008", "PWM001", "PWS004", "PWT005", "YC002", "YH004", "BM001", "PM002"],
+        "tobe": ["YWB003", "YWW008", "PWJ008", "PWM001", "PWS004", "PWT005", "YC002", "YH004", "BM001", "PM002"],
         "pickup": 1,
         "limit": 3,
         "name": "운석"
@@ -475,7 +475,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1cjFqIxouRXxw6MEKh8SQ3HaLUz0lB5sO=w1402-h253-iv1",
         "location": ["A007", "A012", "A014", "A006"],
-        "tobe": ["YWD002", "PA001", "PA002", "PM002", "PF003"],
+        "tobe": ["YWD002", "YWW005", "PA001", "PA002", "PM002", "PF003"],
         "pickup": 1,
         "limit": 3,
         "name": "생명의 나무"
@@ -485,7 +485,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1YfrCYrU0AN00y2_U1TIjy4koir14vsc6=w1402-h253-iv1",
         "location": ["A000"],
-        "tobe": ["YWB002", "YWH001", "YWK001", "YWP001", "YWQ002", "YWR001", "YC003", "YC005", "YH003", "YB004", "YS004", "YA002"],
+        "tobe": ["YWB002", "YWH001", "YWK001", "YWP001", "YWQ002", "YWR001", "YWW001", "YWW004", "YWW007", "YC003", "YC005", "YH003", "YB004", "YS004", "YA002"],
         "pickup": 1,
         "limit": 3,
         "name": "VF 혈액 샘플"
@@ -495,7 +495,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1CCjIqDTFgfJOPf4U8Tp9b_UQyvlND9HH=w1402-h253-iv1",
         "location": false,
-        "tobe": ["YWA001", "YWK02", "YWM001", "YWJ001", "YWL001", "YWI001", "YWG001", "YWF001", "YWN002", "YWD001", "YH002", "YC004", "YS003", "YB003", "YB005", "YA001", "YT001"],
+        "tobe": ["YWA001", "YWK02", "YWM001", "YWJ001", "YWL001", "YWI001", "YWG001", "YWF001", "YWN002", "YWD001", "YWW003", "YWW006", "YWW009", "YH002", "YC004", "YS003", "YB003", "YB005", "YA001", "YT001"],
         "pickup": 1,
         "limit": 3,
         "name": "포스 코어",

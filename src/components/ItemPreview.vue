@@ -97,8 +97,7 @@
         <div v-if="isInitial" class="beforeRecommend">
           <p>
             <span><i class="fas fa-map-marked-alt"></i></span> 클릭시 최단루트를
-            탐색합니다 (드랍되지 않는 시작무기가 재료로 들어갈 경우, 가방에서
-            시작무기를 추가하세요.)
+            탐색합니다
           </p>
         </div>
         <div v-else class="recommends">
@@ -125,8 +124,14 @@
           </ul>
           <div v-else class="recommendsCover">
             <p>{{ routeItem }}</p>
-            <p class="routeCount">{{ recommendRoutes.length }}</p>
-            <p>shortest route</p>
+            <div v-if="recommendRoutes.length > 0" class="routeCount">
+              <p>{{ recommendRoutes.length }}</p>
+              <p>shortest route</p>
+            </div>
+            <p v-else class="noRouteCount">
+              드랍되지 않는 시작무기가 재료로 들어갈 경우, 가방에서 시작무기를
+              추가해주세요.
+            </p>
           </div>
         </div>
       </div>
@@ -182,7 +187,6 @@
 
         // 배열정보를 객체배열로 정리하는 김에 cart도 업데이트
         this.$store.dispatch("setCart", { ...cart, ...itemInfo });
-
         return itemInfo;
       },
       cartItemOptions() {
@@ -228,7 +232,7 @@
 
     &_info {
       display: grid;
-      grid-template-columns: minmax(70px, 25%) auto 70px;
+      grid-template-columns: minmax(70px, 25%) auto 100px;
       gap: 5px;
       position: relative;
 
@@ -395,6 +399,9 @@
             &.routeCount {
               font-weight: 700;
               color: $color3;
+            }
+            &.noRouteCount {
+              font-size: 0.8rem;
             }
           }
         }

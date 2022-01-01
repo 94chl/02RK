@@ -31,8 +31,7 @@ const store = createStore({
           id: "WF007",
           sort: "food",
           name: "빵",
-          img:
-            "https://lh3.google.com/u/0/d/180oAkY10VN8i1hjNW_O8BXo5A1R3d0-2=w1402-h253-iv1",
+          img: "https://lh3.google.com/u/0/d/1R2RdqGyS03hxwvBGEqab3q5yck1gtTgu=w1402-h253-iv1",
           count: 2,
           limit: 5,
           location: "pocket0",
@@ -52,8 +51,7 @@ const store = createStore({
           id: "WD002",
           sort: "drink",
           name: "물",
-          img:
-            "https://lh3.google.com/u/0/d/1PbX7TO3Fa0M11FB-aYqxNvoi_XStkvRF=w1402-h684-iv2",
+          img: "https://lh3.google.com/u/0/d/1PbX7TO3Fa0M11FB-aYqxNvoi_XStkvRF=w1402-h684-iv2",
           count: 2,
           limit: 5,
           location: "pocket1",
@@ -86,6 +84,7 @@ const store = createStore({
         bag: false,
         totalPathFinder: false,
         initialWeapon: true,
+        status: false,
       },
     };
   },

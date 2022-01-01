@@ -84,12 +84,12 @@
   }
 
   .app {
-    min-width: 360px;
+    min-width: 320px;
     margin: 0 auto;
     background: #ffffff;
     position: relative;
     @media screen and (max-width: 720px) {
-      width: 360px;
+      width: 320px;
     }
     @media screen and (min-width: 721px) {
       width: 720px;

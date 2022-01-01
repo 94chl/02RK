@@ -136,7 +136,7 @@
       </div>
     </div>
     <div class="bag_assembles">
-      <p class="tabName">assembles</p>
+      <p class="tabName">조합가능</p>
       <div v-if="Object.values(assembles).length > 0">
         <ul>
           <li
@@ -302,7 +302,7 @@
 
     &.active {
       @include active();
-      left: calc(50% - 180px);
+      left: calc(50% - 160px);
     }
 
     .tabName {

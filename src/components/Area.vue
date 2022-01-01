@@ -20,21 +20,23 @@
                 {{ customRoute.indexOf(area) + 1 }}
               </span>
               <span class="areaName">{{ areaInfo[area].name }}</span>
-              <span v-if="areaInfo[area].resurrection" class="resurrection">
-                <i class="fas fa-cross"></i>
-              </span>
-              <span v-if="areaInfo[area].hyperloop" class="hyperloop">
-                <i class="fas fa-angle-double-left"></i>
-              </span>
-              <button
-                @click="toggleArea"
-                :class="`toggleDropsBtn ${
-                  !areaInfo[area].show ? '' : 'closed'
-                }`"
-              >
-                <i class="fas fa-angle-double-down"></i>
-                <i class="fas fa-angle-double-up"></i>
-              </button>
+              <div class="areaInfoIcon">
+                <span v-if="areaInfo[area].resurrection" class="resurrection">
+                  <i class="fas fa-cross"></i>
+                </span>
+                <span v-if="areaInfo[area].hyperloop" class="hyperloop">
+                  <i class="fas fa-angle-double-left"></i>
+                </span>
+                <button
+                  @click="toggleArea"
+                  :class="`toggleDropsBtn ${
+                    !areaInfo[area].show ? '' : 'closed'
+                  }`"
+                >
+                  <i class="fas fa-angle-double-down"></i>
+                  <i class="fas fa-angle-double-up"></i>
+                </button>
+              </div>
             </button>
           </div>
           <div class="areaNeedDrops">
@@ -205,38 +207,43 @@
             height: 15px;
             line-height: 15px;
           }
-          .resurrection {
-            @include fasIcon(25px);
-            color: rgb(60, 202, 190);
-          }
-          .hyperloop {
-            @include fasIcon(25px);
-            color: rgb(31, 119, 252);
-          }
-          .toggleDropsBtn {
+
+          .areaInfoIcon {
             position: absolute;
             top: 0;
             right: 0;
-            background: #fff;
-            border-radius: 0;
-            align-self: flex-end;
-            @include fasIcon(25px);
+            .resurrection {
+              @include fasIcon(25px);
+              color: rgb(60, 202, 190);
+              background: #fff;
+            }
+            .hyperloop {
+              @include fasIcon(25px);
+              color: rgb(31, 119, 252);
+              background: #fff;
+            }
+            .toggleDropsBtn {
+              background: #fff;
+              border-radius: 0;
+              align-self: flex-end;
+              @include fasIcon(25px);
 
-            &:hover {
-              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
-            }
-            .fa-angle-double-down {
-              display: block;
-            }
-            .fa-angle-double-up {
-              display: none;
-            }
-            &.closed {
+              &:hover {
+                box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+              }
               .fa-angle-double-down {
-                display: none;
+                display: block;
               }
               .fa-angle-double-up {
-                display: block;
+                display: none;
+              }
+              &.closed {
+                .fa-angle-double-down {
+                  display: none;
+                }
+                .fa-angle-double-up {
+                  display: block;
+                }
               }
             }
           }

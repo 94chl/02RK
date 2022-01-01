@@ -16,6 +16,13 @@
         <i class="fas fa-suitcase"></i>
       </button>
       <button
+        :class="`statusBtn ${toggleModal.status ? 'openedBtn' : ''}`"
+        @click="onToggleModal"
+        data-modal="status"
+      >
+        <i class="fas fa-user"></i>
+      </button>
+      <button
         :class="`totalPathFinderBtn ${
           toggleModal.totalPathFinder ? 'openedBtn' : ''
         }`"
@@ -27,6 +34,7 @@
     </div>
 
     <Bag></Bag>
+    <Status></Status>
     <div
       :class="`totalPathFinderModal ${
         toggleModal.totalPathFinder ? 'active' : ''
@@ -65,9 +73,10 @@
 
 <script>
   import Bag from "~/components/Bag";
+  import Status from "~/components/Status";
 
   export default {
-    components: { Bag },
+    components: { Bag, Status },
     computed: {
       toggleModal() {
         return this.$store.state.toggleModal;
@@ -181,20 +190,20 @@
 
       &.active {
         @include active();
-        left: calc(50% - 180px);
+        left: calc(50% - 160px);
         z-index: 11;
       }
 
       .tabName {
-        height: 30px;
-        line-height: 30px;
         text-align: left;
         border-bottom: 1px solid $color3;
         box-sizing: border-box;
         text-indent: 5px;
+        padding: 2px 0;
         .pathFinderBtn {
           background: none;
           @include fasIcon(30px);
+          box-shadow: 1px 1px 1px 1px #999;
           &:hover {
             box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
           }

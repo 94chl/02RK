@@ -125,8 +125,11 @@
           <div v-else class="recommendsCover">
             <p>{{ routeItem }}</p>
             <div v-if="recommendRoutes.length > 0" class="routeCount">
-              <p>{{ recommendRoutes.length }}</p>
-              <p>shortest route</p>
+              <p>{{ `${recommendRoutes.length}개의` }}</p>
+              <p>루트를 찾았습니다</p>
+              <p>
+                <i class="fas fa-toggle-off"></i>을 클릭해서 루트를 확인하세요!
+              </p>
             </div>
             <p v-else class="noRouteCount">
               드랍되지 않는 시작무기가 재료로 들어갈 경우, 가방에서 시작무기를
@@ -232,7 +235,7 @@
 
     &_info {
       display: grid;
-      grid-template-columns: minmax(70px, 25%) auto 100px;
+      grid-template-columns: minmax(70px, 25%) auto minmax(70px, 25%);
       gap: 5px;
       position: relative;
 
@@ -300,6 +303,7 @@
         }
 
         .dropArea {
+          word-break: keep-all;
           &::after {
             content: ",";
             margin-right: 3px;
@@ -403,6 +407,9 @@
             &.noRouteCount {
               font-size: 0.8rem;
             }
+          }
+          i {
+            color: $color3;
           }
         }
       }

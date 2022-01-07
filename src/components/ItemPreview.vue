@@ -7,6 +7,9 @@
           :alt="`${cartItem.name}_img`"
           :title="`${cartItem.name}_img`"
         />
+        <button @click="setEquip" class="setEquipBtn">
+          <i class="fas fa-suitcase"></i>
+        </button>
       </div>
       <ul>
         <li class="itemOption nameInfo">
@@ -65,7 +68,7 @@
               <span v-if="option.match(/([고유])|([버프])/g)">
                 <ul>
                   <li
-                    v-for="uniqueOption in cartItem[option]"
+                    v-for="uniqueOption in cartItem[option].detail"
                     :key="cartItem[option] + uniqueOption"
                     class="uniqueOption"
                   >
@@ -132,8 +135,8 @@
               </p>
             </div>
             <p v-else class="noRouteCount">
-              드랍되지 않는 시작무기가 재료로 들어갈 경우, 가방에서 시작무기를
-              추가해주세요.
+              최단루트를 찾지 못했습니다. 드랍되지 않는 시작무기가 재료로 들어갈
+              경우, 가방에서 시작무기를 추가해주세요.
             </p>
           </div>
         </div>
@@ -161,6 +164,19 @@
         necessaryOptions: ["img", "name", "sort"],
         isInitial: true,
         isShowPath: false,
+        commonOptions: [
+          "id",
+          "sort",
+          "img",
+          "location",
+          "tobe",
+          "material",
+          "pickup",
+          "limit",
+          "stack",
+          "name",
+          "reload",
+        ],
       };
     },
     components: {},
@@ -183,7 +199,7 @@
             if (option === "tobe")
               itemInfo.tobe = cart[option].map((id) => searchById(id));
           }
-          if (index > 9) {
+          if (!this.commonOptions.includes(option)) {
             itemInfo[option] = cart[option];
           }
         });
@@ -219,6 +235,15 @@
       togglePath() {
         this.isShowPath = !this.isShowPath;
       },
+      setEquip() {
+        this.$store.dispatch("getItem", this.cartItemId);
+        this.$store.dispatch("updateAssemblable");
+        document.querySelector(".bagBtn").classList.toggle("gotDrops");
+        setTimeout(
+          () => document.querySelector(".bagBtn").classList.toggle("gotDrops"),
+          1000
+        );
+      },
     },
     watch: {
       cartItemId() {
@@ -235,7 +260,10 @@
 
     &_info {
       display: grid;
-      grid-template-columns: minmax(70px, 25%) auto minmax(70px, 25%);
+      grid-template-columns: 25% auto 25%;
+      @media screen and (max-width: 720px) {
+        grid-template-columns: 1fr;
+      }
       gap: 5px;
       position: relative;
 
@@ -243,9 +271,22 @@
         background: #fff;
         border-radius: 5px;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         img {
           height: fit-content;
+        }
+        .setEquipBtn {
+          @include fasIcon(30px);
+          border: none;
+          color: $color2;
+          background: $color5;
+          width: 100%;
+          &:hover {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+            color: $color1;
+          }
         }
       }
 
@@ -374,10 +415,7 @@
           border-radius: 5px;
           &.open {
             max-height: calc(100% - 30px);
-            position: absolute;
-            right: 0;
-            top: 25px;
-            overflow-y: scroll;
+            overflow: scroll;
           }
           &__route {
             width: max-content;

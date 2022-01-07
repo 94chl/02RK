@@ -298,6 +298,8 @@
   .bag {
     border-radius: 5px;
     background: $color5;
+    border: 2px solid $color5;
+    box-sizing: border-box;
 
     &.active {
       @include active();

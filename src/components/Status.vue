@@ -1,38 +1,192 @@
 <template>
   <div :class="`status ${toggleModal.status ? 'active' : 'hide'}`">
-    <h2 class="tabName">스테이터스(개발중)</h2>
-    <div data-modal="initialWeapon" class="status_initialWeapon"></div>
+    <div class="status_equip">
+      <h3 class="tabName">
+        <span>장비</span>
+        <button
+          :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
+          @click="onChangeShowItemImg"
+        >
+          <span>
+            <i class="fas fa-font"></i>
+          </span>
+        </button>
+        <button
+          :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
+          @click="onChangeShowItemImg"
+        >
+          <span>
+            <i class="far fa-images"></i>
+          </span>
+        </button>
+      </h3>
+      <div>
+        <ul>
+          <li
+            v-for="pocket in Object.keys(equip)"
+            :key="pocket"
+            :data-bag="pocket"
+            :data-item="`${equip[pocket].id ? equip[pocket].id : ''}`"
+          >
+            <span v-if="equip[pocket].id">
+              <div class="itemInfo">
+                <img
+                  :src="equip[pocket].img"
+                  :alt="`${equip[pocket].name}_img`"
+                  :title="`${equip[pocket].name}_img`"
+                  v-if="showItemImg"
+                />
+                <span v-else>{{ equip[pocket].name }}</span>
+              </div>
+              <button class="removeBtn" @click="dropItem">X</button>
+            </span>
+            <span v-else>
+              <div class="empty">
+                <span>{{ pocket }}</span>
+              </div>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="status_info">
+      <h3 class="tabName">스테이터스</h3>
+      <div class="optionBox">
+        <ul>
+          <li
+            v-for="[optionName, optionValue] in Object.entries(
+              equipOptions
+            ).sort()"
+            :key="optionName"
+            class="option"
+          >
+            <div
+              v-if="!optionName.match(/([고유])|([버프])/g)"
+              class="optionInfo"
+            >
+              <div class="optionInfo_name">
+                {{ `${optionName.replace(/[(%)]/g, "")}:` }}
+              </div>
+              <div class="optionInfo_value">
+                <span>{{
+                  optionName.match(/[%]/g)
+                    ? `${parseInt(optionValue * 100)}%`
+                    : optionValue
+                }}</span>
+              </div>
+            </div>
+          </li>
+          <li
+            v-for="[optionName, optionValue] in Object.entries(equipOptions)"
+            :key="optionName"
+            class="option"
+          >
+            <div
+              v-if="optionName.match(/([고유])|([버프])/g)"
+              class="optionInfo unique"
+            >
+              <div class="optionInfo_name">
+                {{ optionName.replace(/[(%)]/g, "") }}
+              </div>
+              <div class="optionInfo_values">
+                <ul class="uniqueOptions">
+                  <li
+                    v-for="uniqueOption in optionValue.detail"
+                    :key="optionValue + uniqueOption"
+                    class="uniqueOption"
+                  >
+                    {{ uniqueOption }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+  import { searchById } from "~/utils/itemTable";
+
   export default {
-    data() {},
+    data() {
+      return {
+        commonOptions: [
+          "id",
+          "sort",
+          "img",
+          "location",
+          "tobe",
+          "material",
+          "pickup",
+          "limit",
+          "stack",
+          "name",
+          "reload",
+        ],
+      };
+    },
     components: {},
     computed: {
-      showItemImg() {
-        return this.$store.state.showItemImg;
-      },
       toggleModal() {
         return this.$store.state.toggleModal;
       },
+      showItemImg() {
+        return this.$store.state.showItemImg;
+      },
       equip() {
-        return this.$store.state.statusEquip;
+        return this.$store.state.bagEquip;
       },
-      inventory() {
-        return this.$store.state.statusInventory;
-      },
-      assembles() {
-        return this.$store.state.assemblable;
+      equipOptions() {
+        const equipOptions = Object.values(this.$store.state.bagEquip).reduce(
+          (itemOptions, item) => {
+            if (item.id) {
+              const itemInfo = searchById(item.id);
+              Object.entries(itemInfo).forEach(([optionName, optionValue]) => {
+                if (!this.commonOptions.includes(optionName)) {
+                  if (optionName.match(/([고유])|([버프])/g)) {
+                    itemOptions[optionName] = !itemOptions[optionName]
+                      ? optionValue
+                      : optionValue > itemOptions[optionName]
+                      ? optionValue
+                      : itemOptions[optionName];
+                  } else {
+                    itemOptions[optionName] = !itemOptions[optionName]
+                      ? optionValue
+                      : itemOptions[optionName] + optionValue;
+                  }
+                }
+              });
+            }
+            return itemOptions;
+          },
+          {}
+        );
+        return equipOptions;
       },
     },
-    methods: {},
+    methods: {
+      onChangeShowItemImg() {
+        this.$store.dispatch("onChangeShowItemImg");
+      },
+      dropItem(e) {
+        if (!window.confirm("버리시겠습니까?")) return;
+
+        this.$store.dispatch("dropItem", e.target.closest("li").dataset.bag);
+        this.$store.dispatch("updateAssemblable");
+      },
+    },
   };
 </script>
 
 <style lang="scss" scoped>
   .status {
     border-radius: 5px;
+    border: 2px solid $color5;
+    box-sizing: border-box;
     background: $color5;
 
     &.active {
@@ -60,29 +214,6 @@
         }
         &.selected {
           box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
-        }
-      }
-      .clearBtn {
-        background: none;
-        color: $color2;
-        height: 25px;
-        border-radius: 5px;
-        &:hover {
-          box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
-        }
-      }
-    }
-
-    &_initialWeapon {
-      button {
-        background: none;
-        .fas {
-          @include fasIcon(25px);
-        }
-        &:hover {
-          .fas {
-            box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
-          }
         }
       }
     }
@@ -135,105 +266,29 @@
       }
     }
 
-    &_inventory {
-      ul {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 5px;
-        background: $color4;
+    &_info {
+      .optionBox {
         border-radius: 5px;
-        padding: 5px;
-        li {
-          position: relative;
-          height: 25px;
-          line-height: 25px;
-          background: #fff;
-          border-radius: 5px;
-
-          &.nowClicked {
-            background: $color2;
-            box-shadow: 0 0 1px 1px $color1 inset;
-          }
-
-          .itemInfo {
-            height: 25px;
-            width: 100%;
-            text-align: center;
-            position: relative;
-            font-size: 0.8em;
-
-            img {
-              height: 100%;
-              width: fit-content;
-            }
-          }
-
-          .empty {
-            color: #999;
-            font-size: 0.7em;
+        .option {
+          .optionInfo {
+            display: flex;
+            background: $color4;
             padding: 5px;
-          }
-          .removeBtn {
-            background: none;
-            position: absolute;
-            top: 0;
-            right: 0;
-            color: #ff0000;
-            @include fasIcon(15px);
-            &:hover {
+            &.unique {
+              display: block;
+            }
+            &_name {
               font-weight: 700;
             }
-          }
-          .itemCount {
-            color: $color3;
-            font-size: 0.5em;
-            font-weight: bold;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: fit-content;
-            line-height: normal;
-            cursor: default;
-          }
-        }
-      }
-    }
-
-    &_assembles {
-      ul {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 5px;
-        background: $color4;
-        border-radius: 5px;
-        padding: 5px;
-
-        li {
-          .assembleBtn {
-            width: 100%;
-            height: 25px;
-            line-height: 25px;
-            padding: 0 5px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 1px 1px 3px 1px #999;
-            position: relative;
-
-            img {
-              height: 100%;
-              width: fit-content;
+            &_value {
+              margin-left: 4px;
             }
-            .itemCount {
-              color: $color3;
-              font-size: 0.5em;
-              font-weight: bold;
-              position: absolute;
-              top: 0;
-              left: 0;
-              height: fit-content;
-              line-height: normal;
-              cursor: default;
+            &_values {
+              word-break: keep-all;
+
+              .uniqueOptions {
+                list-style: "\2981"inside;
+              }
             }
           }
         }

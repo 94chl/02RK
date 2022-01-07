@@ -1,10 +1,7 @@
 <template>
   <div class="header">
     <div class="header_logo">
-      <img
-        src="https://lh3.google.com/u/0/d/1-IhwTjnq5GwkY3Q6u7n80CDeO1-yorEl=w1168-h959-iv1"
-        alt="logo"
-      />
+      <img :src="logo" alt="logo" />
     </div>
     <div class="header_title">02RK</div>
     <div class="header_btns" data-modal="bag">
@@ -20,7 +17,7 @@
         @click="onToggleModal"
         data-modal="status"
       >
-        <i class="fas fa-user"></i>
+        <i class="fas fa-tshirt"></i>
       </button>
       <button
         :class="`totalPathFinderBtn ${
@@ -41,7 +38,7 @@
       }`"
     >
       <div class="tabName">
-        추천 루트
+        목표 아이템 추천 루트
         <button class="pathFinderBtn" @click="pathFinder">
           <i class="fas fa-map-marked-alt"></i>
         </button>
@@ -77,6 +74,9 @@
 
   export default {
     components: { Bag, Status },
+    data() {
+      return { logo: require("~/img/ER_Logo_White.png") };
+    },
     computed: {
       toggleModal() {
         return this.$store.state.toggleModal;

@@ -45,7 +45,9 @@ module.exports = {
         test: /\.(png|svg|jpe?g|gif)$/,
         loader: "url-loader",
         options: {
-          limit: 10000,
+          limit: 5000,
+          esModule: false,
+          name: "images/[name].[ext]",
         },
       },
       {
@@ -54,6 +56,7 @@ module.exports = {
           loader: "file-loader",
           options: {
             name: "[name].[contenthash].[ext]",
+            esModule: false,
           },
         },
       },

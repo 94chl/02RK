@@ -48,18 +48,18 @@
     color: #000;
   }
   .valueG {
-    border: 1px solid #0e970e;
-    background: #0e970e;
+    border: 1px solid #55dd55;
+    background: #55dd55;
     color: #fff;
   }
   .valueB {
-    border: 1px solid #0e3cb9;
-    background: #0e3cb9;
+    border: 1px solid #4c70d4;
+    background: #4c70d4;
     color: #fff;
   }
   .valueP {
-    border: 1px solid #7513c5;
-    background: #7513c5;
+    border: 1px solid #ba70f7;
+    background: #ba70f7;
     color: #ffee00;
   }
   .valueY {

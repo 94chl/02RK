@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header_logo">
-      <img :src="logo" alt="logo" />
+      <img src="../img/ER_Logo_White.png" alt="logo" />
     </div>
     <div class="header_title">02RK</div>
     <div class="header_btns" data-modal="bag">
@@ -74,9 +74,6 @@
 
   export default {
     components: { Bag, Status },
-    data() {
-      return { logo: require("~/img/ER_Logo_White.png") };
-    },
     computed: {
       toggleModal() {
         return this.$store.state.toggleModal;

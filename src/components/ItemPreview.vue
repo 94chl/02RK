@@ -321,7 +321,10 @@
           .attrValue {
             padding: 0 5px;
             border-radius: 5px;
+            height: 20px;
+            line-height: 20px;
             border: none;
+            font-size: 0.9em;
           }
         }
 
@@ -336,6 +339,8 @@
             box-sizing: border-box;
             border-radius: 5px;
             height: 20px;
+            line-height: 20px;
+            font-size: 0.8em;
 
             &:hover {
               margin-top: -1px;

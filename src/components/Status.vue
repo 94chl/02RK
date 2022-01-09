@@ -29,7 +29,7 @@
             :data-item="`${equip[pocket].id ? equip[pocket].id : ''}`"
           >
             <span v-if="equip[pocket].id">
-              <div class="itemInfo">
+              <div :class="`itemInfo value${equip[pocket].id[0]}`">
                 <img
                   :src="equip[pocket].img"
                   :alt="`${equip[pocket].name}_img`"

@@ -56,7 +56,7 @@
                 @drop="onDrop"
                 @dragover="onDragOver"
                 draggable="true"
-                class="itemInfo"
+                :class="`itemInfo value${equip[pocket].id[0]}`"
               >
                 <img
                   :src="equip[pocket].img"
@@ -105,7 +105,7 @@
                 @drop="onDrop"
                 @dragover="onDragOver"
                 draggable="true"
-                class="itemInfo"
+                :class="`itemInfo value${inventory[pocket].id[0]}`"
               >
                 <img
                   :src="inventory[pocket].img"
@@ -114,10 +114,10 @@
                   v-if="showItemImg"
                 />
                 <span v-else>{{ inventory[pocket].name }}</span>
+                <span class="itemCount">{{
+                  `(x${inventory[pocket].count})`
+                }}</span>
               </div>
-              <span class="itemCount">{{
-                `(x${inventory[pocket].count})`
-              }}</span>
               <button @click="dropItem" class="removeBtn">X</button>
             </span>
             <span v-else>
@@ -144,7 +144,10 @@
             :key="assemble.id"
             :data-assemble="assemble.id"
           >
-            <button class="assembleBtn" @click="getAssemble">
+            <button
+              :class="`assembleBtn value${assemble.id[0]}`"
+              @click="getAssemble"
+            >
               <img
                 :src="assemble.img"
                 :alt="`${assemble.name}_img`"
@@ -374,6 +377,7 @@
             width: 100%;
             overflow: hidden;
             font-size: 0.8em;
+            border: none;
 
             img {
               height: 100%;
@@ -417,17 +421,13 @@
           background: #fff;
           border-radius: 5px;
 
-          &.nowClicked {
-            background: $color2;
-            box-shadow: 0 0 1px 1px $color1 inset;
-          }
-
           .itemInfo {
             height: 25px;
             width: 100%;
             text-align: center;
             position: relative;
             font-size: 0.8em;
+            border: none;
 
             img {
               height: 100%;
@@ -452,7 +452,6 @@
             }
           }
           .itemCount {
-            color: $color3;
             font-size: 0.5em;
             font-weight: bold;
             position: absolute;
@@ -481,7 +480,6 @@
             height: 25px;
             line-height: 25px;
             padding: 0 5px;
-            background: #fff;
             border-radius: 5px;
             box-shadow: 1px 1px 3px 1px #999;
             position: relative;
@@ -491,7 +489,6 @@
               width: fit-content;
             }
             .itemCount {
-              color: $color3;
               font-size: 0.5em;
               font-weight: bold;
               position: absolute;

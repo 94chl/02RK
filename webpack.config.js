@@ -11,7 +11,7 @@ module.exports = {
     alias: {
       "~": path.resolve(__dirname, "src"),
       //여러개 사용가능
-      // "@": path.resolve(__dirname, "src"),
+      "@": path.resolve(__dirname, "src"),
     },
   },
   entry: "./src/main.js",
@@ -40,23 +40,14 @@ module.exports = {
           },
         ],
       },
-      // 이미지 파일 로더
-      {
-        test: /\.(png|svg|jpe?g|gif)$/,
-        loader: "url-loader",
-        options: {
-          limit: 5000,
-          esModule: false,
-          name: "images/[name].[ext]",
-        },
-      },
       {
         test: /\.(png|jpe?g|gif|svg|webp)$/i,
         use: {
           loader: "file-loader",
           options: {
-            name: "[name].[contenthash].[ext]",
+            name: "images/[name].[contenthash].[ext]",
             esModule: false,
+            publicPath: "./",
           },
         },
       },

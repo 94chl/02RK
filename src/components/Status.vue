@@ -241,6 +241,7 @@
             width: 100%;
             overflow: hidden;
             font-size: 0.8em;
+            border: none;
 
             img {
               height: 100%;

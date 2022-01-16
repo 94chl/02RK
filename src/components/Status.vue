@@ -38,7 +38,9 @@
                 />
                 <span v-else>{{ equip[pocket].name }}</span>
               </div>
-              <button class="removeBtn" @click="dropItem">X</button>
+              <button class="removeBtn" @click="dropItem">
+                <i class="fas fa-times"></i>
+              </button>
             </span>
             <span v-else>
               <div class="empty">

@@ -89,7 +89,7 @@
     background: #ffffff;
     position: relative;
     @media screen and (max-width: 720px) {
-      width: 320px;
+      width: 100%;
     }
     @media screen and (min-width: 721px) {
       width: 720px;
@@ -98,6 +98,7 @@
     .main {
       margin-top: 70px;
       position: relative;
+      height: fit-content;
 
       > div {
         margin-bottom: 10px;

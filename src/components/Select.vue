@@ -131,9 +131,9 @@
   .select {
     display: grid;
     grid-template-columns: 25% auto minmax(70px, 25%);
-    grid-template-rows: repeat(4, fit-content);
     gap: 5px;
     padding: 0 5px;
+    overflow: visible;
 
     .tabName {
       grid-column: 1 / 4;

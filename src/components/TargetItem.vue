@@ -18,7 +18,9 @@
           <button class="showItemInfoBtn" @click="showItemInfo">
             <img :src="item.img" :alt="item.name" class="itemInfo_img" />
           </button>
-          <button @click="removeTargetItem" class="removeBtn">X</button>
+          <button @click="removeTargetItem" class="removeBtn">
+            <i class="fas fa-times"></i>
+          </button>
         </li>
       </ul>
     </div>

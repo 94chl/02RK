@@ -93,8 +93,8 @@
             <i class="fas fa-map-marked-alt"></i>
           </button>
           <button @click="togglePath" class="togglePathBtn">
-            <i class="fas fa-toggle-on" v-if="isShowPath"></i>
-            <i class="fas fa-toggle-off" v-else></i>
+            <i v-if="!isShowPath" class="fas fa-toggle-off"></i>
+            <i v-else class="fas fa-toggle-on"></i>
           </button>
         </div>
         <div v-if="isInitial" class="beforeRecommend">
@@ -108,6 +108,11 @@
             v-if="isShowPath"
             :class="`recommends_list ${isShowPath ? 'open' : ''}`"
           >
+            <li class="recommends_list__buttonBox">
+              <button class="closeBtn" @click="closeRecommendsModal">
+                <i class="fas fa-times"></i>
+              </button>
+            </li>
             <li
               v-for="(route, index) in recommendRoutes"
               :key="`itemRoute${index}`"
@@ -126,7 +131,6 @@
             </li>
           </ul>
           <div v-else class="recommendsCover">
-            <p>{{ routeItem }}</p>
             <div v-if="recommendRoutes.length > 0" class="routeCount">
               <p>{{ `${recommendRoutes.length}개의` }}</p>
               <p>루트를 찾았습니다</p>
@@ -244,10 +248,14 @@
           1000
         );
       },
+      closeRecommendsModal() {
+        this.isShowPath = false;
+      },
     },
     watch: {
       cartItemId() {
         this.isInitial = true;
+        this.isShowPath = false;
       },
     },
   };
@@ -257,6 +265,7 @@
   .itemPreview {
     grid-column: 1 / 4;
     position: relative;
+    overflow: visible;
 
     &_info {
       display: grid;
@@ -266,6 +275,7 @@
       }
       gap: 5px;
       position: relative;
+      overflow: visible;
 
       .imgInfo {
         background: #fff;
@@ -367,6 +377,7 @@
     .pathFinder {
       border-radius: 5px;
       background: #fff;
+
       .btns {
         display: flex;
         justify-content: space-between;
@@ -411,16 +422,32 @@
         min-height: calc(100% - 30px);
         display: flex;
         align-items: center;
+
         &_list {
-          overflow: hidden;
           width: fit-content;
           background: #fff;
           border: 1px solid $color1;
-          padding: 3px;
           border-radius: 5px;
+
           &.open {
-            max-height: calc(100% - 30px);
-            overflow: scroll;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 5;
+          }
+
+          li {
+            padding: 3px;
+          }
+
+          &__buttonBox {
+            display: flex;
+            justify-content: flex-end;
+            background: $color1;
+            .closeBtn {
+              background: none;
+              color: $color2;
+            }
           }
           &__route {
             width: max-content;

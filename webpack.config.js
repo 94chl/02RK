@@ -2,6 +2,7 @@ const path = require("path");
 const { VueLoaderPlugin } = require("vue-loader");
 const HtmlPlugIn = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const Webpack = require("webpack");
 
 module.exports = {
   resolve: {
@@ -61,6 +62,10 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [{ from: "static" }],
+    }),
+    new Webpack.DefinePlugin({
+      __VUE_OPTIONS_API__: true,
+      __VUE_PROD_DEVTOOLS__: true,
     }),
   ],
   devServer: {

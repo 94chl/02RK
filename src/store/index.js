@@ -6,6 +6,7 @@ import { pathFinder } from "~/utils/pathFinder";
 const store = createStore({
   state() {
     return {
+      minHeight: 0,
       showItemImg: true,
       targetItems: [],
       matGDs: {
@@ -90,6 +91,9 @@ const store = createStore({
   },
   getters: {},
   mutations: {
+    changeMinHeight(state, newMinHeight) {
+      state.minHeight = newMinHeight;
+    },
     onChangeShowItemImg(state) {
       state.showItemImg = !state.showItemImg;
     },
@@ -171,6 +175,9 @@ const store = createStore({
     },
   },
   actions: {
+    onChangeMinHeight({ commit }, newMinHeight) {
+      commit("changeMinHeight", newMinHeight);
+    },
     onChangeShowItemImg({ commit }) {
       commit("onChangeShowItemImg");
     },

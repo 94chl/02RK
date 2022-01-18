@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <Header></Header>
-    <div class="main">
+    <div class="main" ref="main" :style="{ minHeight: `${200 + minHeight}px` }">
       <Select></Select>
       <TargetItem></TargetItem>
       <NeedDrops></NeedDrops>
@@ -26,8 +26,17 @@
 
   export default {
     components: { Header, Select, TargetItem, Area, NeedDrops },
-    computed: {},
+    computed: {
+      minHeight() {
+        return this.$store.state.minHeight;
+      },
+    },
     methods: {},
+    watch: {
+      height() {
+        console.log(this.$store.state.minHeight);
+      },
+    },
   };
 </script>
 

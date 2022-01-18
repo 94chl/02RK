@@ -107,6 +107,7 @@
           <ul
             v-if="isShowPath"
             :class="`recommends_list ${isShowPath ? 'open' : ''}`"
+            ref="recommendsModal"
           >
             <li class="recommends_list__buttonBox">
               <button class="closeBtn" @click="closeRecommendsModal">
@@ -152,8 +153,19 @@
 <script>
   import { eng2Kor, searchById, areaData } from "~/utils/itemTable";
   import { disassembleWD } from "~/utils/disassemble";
+  import { onUpdated, ref } from "vue";
+  import { useStore } from "vuex";
 
   export default {
+    setup() {
+      const recommendsModal = ref(null);
+      const store = useStore();
+      onUpdated(() => {
+        recommendsModal.value &&
+          store.dispatch("onChangeMinHeight", recommendsModal.value.offsetHeight);
+      });
+      return { recommendsModal };
+    },
     data() {
       return {
         areaData: areaData,
@@ -431,6 +443,7 @@
 
           &.open {
             position: absolute;
+            top: 0;
             right: 0;
             z-index: 5;
           }

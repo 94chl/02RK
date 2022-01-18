@@ -32,11 +32,6 @@
       },
     },
     methods: {},
-    watch: {
-      height() {
-        console.log(this.$store.state.minHeight);
-      },
-    },
   };
 </script>
 

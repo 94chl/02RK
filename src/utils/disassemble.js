@@ -2,6 +2,7 @@ import { searchById } from "./itemTable.js";
 
 // 녹색, 드랍 수준으로 분해
 export function disassembleGD(materialArr) {
+  console.log(materialArr);
   let need2Disassemble = [...materialArr];
   const materials = {
     dropMatId: {},

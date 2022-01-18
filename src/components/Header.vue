@@ -39,7 +39,7 @@
     >
       <div class="tabName">
         목표 아이템 추천 루트
-        <button class="pathFinderBtn" @click="pathFinder">
+        <button class="findRecommendPathBtn" @click="findRecommendPath">
           <i class="fas fa-map-marked-alt"></i>
         </button>
       </div>
@@ -92,12 +92,12 @@
           e.target.closest("button").dataset.modal
         );
       },
-      pathFinder() {
+      findRecommendPath() {
         const needDropsInfo = {
           needDrops: this.dropMats,
           total: true,
         };
-        this.$store.dispatch("pathFinder", needDropsInfo);
+        this.$store.dispatch("findRecommendPath", needDropsInfo);
       },
     },
   };
@@ -179,11 +179,11 @@
       box-sizing: border-box;
 
       overflow-y: scroll;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
-      }
+      /* -ms-overflow-style: none;
+              scrollbar-width: none;
+              &::-webkit-scrollbar {
+                display: none;
+              } */
 
       &.active {
         @include active();
@@ -197,7 +197,7 @@
         box-sizing: border-box;
         text-indent: 5px;
         padding: 2px 0;
-        .pathFinderBtn {
+        .findRecommendPathBtn {
           background: none;
           @include fasIcon(30px);
           box-shadow: 1px 1px 1px 1px #999;

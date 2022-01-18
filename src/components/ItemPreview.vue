@@ -87,9 +87,9 @@
           </div>
         </li>
       </ul>
-      <div class="pathFinder">
+      <div class="findRecommendPath">
         <div class="btns">
-          <button @click="pathFinder" class="pathFinderBtn">
+          <button @click="findRecommendPath" class="findRecommendPathBtn">
             <i class="fas fa-map-marked-alt"></i>
           </button>
           <button @click="togglePath" class="togglePathBtn">
@@ -240,12 +240,12 @@
         );
         this.$store.dispatch("setCart", selectedItem);
       },
-      pathFinder() {
+      findRecommendPath() {
         const needDropsInfo = {
           needDrops: Object.keys(disassembleWD([this.cartItemId]).dropMatId),
           total: false,
         };
-        this.$store.dispatch("pathFinder", needDropsInfo);
+        this.$store.dispatch("findRecommendPath", needDropsInfo);
         this.isInitial = false;
       },
       togglePath() {
@@ -386,14 +386,14 @@
       }
     }
 
-    .pathFinder {
+    .findRecommendPath {
       border-radius: 5px;
       background: #fff;
 
       .btns {
         display: flex;
         justify-content: space-between;
-        .pathFinderBtn {
+        .findRecommendPathBtn {
           background: none;
           @include fasIcon(25px);
           &:hover {

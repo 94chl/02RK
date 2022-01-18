@@ -1,5 +1,9 @@
 import { createStore } from "vuex";
-import { disassembleGD, disassembleAllWD } from "~/utils/disassemble";
+import {
+  disassembleGD,
+  disassembleWD,
+  disassembleAllWD,
+} from "~/utils/disassemble";
 import { searchById, equippable, weaponSort } from "~/utils/itemTable";
 import { pathFinder } from "~/utils/pathFinder";
 
@@ -470,7 +474,7 @@ const store = createStore({
       const modalState = { [modal]: !state.toggleModal[modal] };
       commit("onToggleModal", modalState);
     },
-    pathFinder({ commit, state }, needDropsInfo) {
+    findRecommendPath({ commit, state }, needDropsInfo) {
       const { needDrops, total } = needDropsInfo;
       const bagEquip = Object.values(state.bagEquip).reduce((acc, cur) => {
         if (cur.id) acc.push(cur.id);
@@ -483,7 +487,10 @@ const store = createStore({
         },
         []
       );
-      const bagTotal = bagEquip.concat(bagInventory);
+      // const bagTotal = bagEquip.concat(bagInventory);
+      const bagTotal = Object.keys(
+        disassembleWD(bagEquip.concat(bagInventory)).dropMatId
+      );
       const routes = pathFinder(state.customRoute, needDrops, bagTotal);
       commit("setRecommendRoutes", { routes, total });
     },

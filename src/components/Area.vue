@@ -250,12 +250,16 @@
       }
     }
     .customRoute {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(min-content, 1fr));
       border-radius: 5px;
       background: $color3;
+      @media screen and (max-width: 720px) {
+        grid-template-columns: repeat(3, minmax(min-content, 1fr));
+      }
       > div {
         display: flex;
+        justify-content: space-around;
         padding: 5px 0;
         color: $color2;
 
@@ -265,13 +269,16 @@
         }
         &:last-child {
           &::after {
-            content: none;
+            content: "";
           }
         }
         > div {
-          padding: 0 5px;
-          max-width: 133px;
+          width: fit-content;
+          > div {
+            width: fit-content;
+          }
           > ul {
+            max-width: 90px;
             margin-top: 5px;
             display: flex;
             flex-wrap: wrap;

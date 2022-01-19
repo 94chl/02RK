@@ -8,7 +8,19 @@
     </div>
     <div class="customRoute">
       <div v-for="(area, index) in customRoute" :key="`route${index}`">
-        {{ areaInfo[area].name }}
+        <div>
+          <div>{{ areaInfo[area].name }}</div>
+          <ul>
+            <li
+              v-for="item in areaWithTargetItems.filter(
+                (areaInfo) => areaInfo.area === area
+              )[0].targetItems"
+              :key="`complete${item.id}`"
+            >
+              <img :src="item.img" :alt="`${item.name}_img`" />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div>
@@ -73,6 +85,7 @@
 
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
+  import { disassembleWD } from "~/utils/disassemble";
 
   export default {
     data() {
@@ -102,6 +115,85 @@
       },
       customRoute() {
         return this.$store.state.customRoute;
+      },
+      bagDrops() {
+        const bagEquip = Object.values(this.$store.state.bagEquip).reduce(
+          (acc, cur) => {
+            if (cur.id) acc.push(cur.id);
+            return acc;
+          },
+          []
+        );
+        const bagInventory = Object.values(this.$store.state.bagInventory).reduce(
+          (acc, cur) => {
+            if (cur.id) acc.push(cur.id);
+            return acc;
+          },
+          []
+        );
+        const bagDrops = Object.keys(
+          disassembleWD(bagEquip.concat(bagInventory)).dropMatId
+        ).reduce((acc, cur) => {
+          if (!acc.includes(cur)) acc.push(cur);
+          return acc;
+        }, []);
+        return bagDrops;
+      },
+      customRouteDrops() {
+        const customRouteDrops = ["A000", ...this.customRoute].reduce(
+          (acc, areaId, index) => {
+            const newDrops =
+              index > 0
+                ? areaData[areaId].drop.filter(
+                    (item) => !acc[acc.length - 1].drops.includes(item)
+                  )
+                : areaData[areaId].drop;
+            acc.push({
+              area: areaId,
+              drops:
+                index > 0
+                  ? [...acc[acc.length - 1].drops, ...newDrops]
+                  : newDrops,
+            });
+            return acc;
+          },
+          []
+        );
+        return customRouteDrops;
+      },
+      areaWithTargetItems() {
+        let targetItems = JSON.parse(
+          JSON.stringify(this.$store.state.targetItems)
+        );
+
+        const areaWithTargetItems = this.customRouteDrops
+          .slice(1)
+          .map((areaInfo) => {
+            this.bagDrops.forEach((drop) => {
+              if (!areaInfo.drops.includes(drop)) areaInfo.drops.push(drop);
+            });
+            areaInfo.targetItems = [];
+            const remainTargetItems = [];
+
+            targetItems.forEach((item) => {
+              if (
+                item.totalDrops.every((dropId) => areaInfo.drops.includes(dropId))
+              ) {
+                areaInfo.targetItems.push({
+                  name: item.name,
+                  id: item.id,
+                  img: item.img,
+                });
+              } else {
+                remainTargetItems.push(item);
+              }
+            });
+            targetItems = remainTargetItems;
+
+            return areaInfo;
+          });
+
+        return areaWithTargetItems;
       },
     },
     methods: {
@@ -162,15 +254,37 @@
       flex-wrap: wrap;
       border-radius: 5px;
       background: $color3;
-      div {
+      > div {
+        display: flex;
         padding: 5px 0;
         color: $color2;
+
         &::after {
+          height: 100%;
           content: "->";
         }
         &:last-child {
           &::after {
             content: none;
+          }
+        }
+        > div {
+          padding: 0 5px;
+          max-width: 133px;
+          > ul {
+            margin-top: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+
+            li {
+              width: fit-content;
+              img {
+                width: 64px;
+                background: #fff;
+                border-radius: 5px;
+              }
+            }
           }
         }
       }

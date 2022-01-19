@@ -32,6 +32,26 @@
 
     <Bag></Bag>
     <Status></Status>
+    <!-- <div class="mapModal">
+      <div class="mapBox">
+        <div class="area area1"></div>
+        <div class="area area2"></div>
+        <div class="area area3"></div>
+        <div class="area area4"></div>
+        <div class="area area5"></div>
+        <div class="area area6"></div>
+        <div class="area area7"></div>
+        <div class="area area8"></div>
+        <div class="area area9"></div>
+        <div class="area area10"></div>
+        <div class="area area11"></div>
+        <div class="area area12"></div>
+        <div class="area area13"></div>
+        <div class="area area14"></div>
+        <div class="area area15"></div>
+        <div class="area area16"></div>
+      </div>
+    </div> -->
     <div
       :class="`totalPathFinderModal ${
         toggleModal.totalPathFinder ? 'active' : ''
@@ -180,10 +200,10 @@
 
       overflow-y: scroll;
       /* -ms-overflow-style: none;
-              scrollbar-width: none;
-              &::-webkit-scrollbar {
-                display: none;
-              } */
+                                scrollbar-width: none;
+                                &::-webkit-scrollbar {
+                                  display: none;
+                                } */
 
       &.active {
         @include active();
@@ -233,6 +253,21 @@
         }
         .noRoutes {
           padding: 5px;
+        }
+      }
+    }
+
+    .mapModal {
+      position: fixed;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      background: rgba(256, 256, 256, 0.5);
+      .mapBox {
+        .area {
+          width: 100px;
+          height: 50px;
+          border: 1px solid #000;
         }
       }
     }

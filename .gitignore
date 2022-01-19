@@ -19,3 +19,4 @@
 **/.firebaserc
 **/firebase.json
 
+dist/main.js

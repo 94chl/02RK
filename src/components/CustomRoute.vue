@@ -2,9 +2,14 @@
   <div class="customRoute">
     <div class="tabName">
       <h3>사용자 루트</h3>
-      <button class="removeAllBtn" @click="removeAllRoute">
-        <i class="fas fa-trash-alt"></i>
-      </button>
+      <div class="buttonBox">
+        <button class="removeAllBtn" @click="removeAllRoute">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+        <button class="craftBtn" @click="toggleCraftModal">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
     </div>
     <div class="routesBox">
       <div v-for="(area, index) in customRoute" :key="`route${index}`">
@@ -16,19 +21,23 @@
                 (areaInfo) => areaInfo.area === area
               )[0].targetItems"
               :key="`complete${item.id}`"
+              :class="`value${item.id[0]}`"
             >
               <img :src="item.img" :alt="`${item.name}_img`" />
             </li>
           </ul>
+          <ul></ul>
         </div>
       </div>
     </div>
+    <Craft></Craft>
   </div>
 </template>
 
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
   import { disassembleWD } from "~/utils/disassemble";
+  import Craft from "~/components/Craft";
 
   export default {
     data() {
@@ -51,7 +60,7 @@
 
       this.areaInfo = newAreaData;
     },
-    components: {},
+    components: { Craft },
     computed: {
       customRoute() {
         return this.$store.state.customRoute;
@@ -112,13 +121,14 @@
             this.bagDrops.forEach((drop) => {
               if (!areaInfo.drops.includes(drop)) areaInfo.drops.push(drop);
             });
+
             areaInfo.targetItems = [];
             const remainTargetItems = [];
 
             targetItems.forEach((item) => {
-              if (
-                item.totalDrops.every((dropId) => areaInfo.drops.includes(dropId))
-              ) {
+              const totalDrops = Object.keys(disassembleWD([item.id]).dropMatId);
+
+              if (totalDrops.every((dropId) => areaInfo.drops.includes(dropId))) {
                 areaInfo.targetItems.push({
                   name: item.name,
                   id: item.id,
@@ -141,6 +151,9 @@
         if (window.confirm("루트를 초기화하시겠습니까?"))
           this.$store.dispatch("removeRoute", []);
       },
+      toggleCraftModal() {
+        this.$store.dispatch("onToggleModal", "craft");
+      },
     },
   };
 </script>
@@ -149,7 +162,7 @@
   .customRoute {
     .tabName {
       display: flex;
-      .removeAllBtn {
+      .buttonBox > button {
         background: none;
         border-radius: 5px;
         padding: 0;
@@ -179,7 +192,7 @@
 
         &::after {
           height: 100%;
-          content: "->";
+          content: "\2192";
         }
         &:last-child {
           &::after {
@@ -200,10 +213,9 @@
 
             li {
               width: fit-content;
+              border-radius: 5px;
               img {
                 width: 64px;
-                background: #fff;
-                border-radius: 5px;
               }
             }
           }

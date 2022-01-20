@@ -90,6 +90,7 @@ const store = createStore({
         totalPathFinder: false,
         initialWeapon: true,
         status: false,
+        craft: false,
       },
     };
   },
@@ -192,10 +193,6 @@ const store = createStore({
     addTargetItems({ commit, state }, newItem) {
       // 녹색, 드랍템 수준의 재료정보 추가(이후 중복재료 체크를 위해)
       const newItemDetails = { ...newItem, ...disassembleGD([newItem.id]) };
-
-      // 드랍템 수준의 재료정보(개별 재료 체크를 위해)
-      const thisDropMatInfo = disassembleWD([newItem.id]);
-      newItemDetails.totalDrops = Object.keys(thisDropMatInfo.dropMatId);
 
       const newTargetItems = [...state.targetItems, newItemDetails];
       commit("setTargetItems", newTargetItems);

@@ -1,25 +1,34 @@
 <template>
   <div :class="`status ${toggleModal.status ? 'active' : 'hide'}`">
     <div class="status_equip">
-      <h3 class="tabName">
-        <span>장비</span>
-        <button
-          :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
-          @click="onChangeShowItemImg"
-        >
-          <span>
-            <i class="fas fa-font"></i>
-          </span>
-        </button>
-        <button
-          :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
-          @click="onChangeShowItemImg"
-        >
-          <span>
-            <i class="far fa-images"></i>
-          </span>
-        </button>
-      </h3>
+      <div class="tabName">
+        <h3>장비</h3>
+        <div class="buttonBox">
+          <div>
+            <button
+              :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
+              @click="onChangeShowItemImg"
+            >
+              <span>
+                <i class="fas fa-font"></i>
+              </span>
+            </button>
+            <button
+              :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
+              @click="onChangeShowItemImg"
+            >
+              <span>
+                <i class="far fa-images"></i>
+              </span>
+            </button>
+          </div>
+          <button @click="toggleStatusModal">
+            <span>
+              <i class="fas fa-times"></i>
+            </span>
+          </button>
+        </div>
+      </div>
       <div>
         <ul>
           <li
@@ -180,6 +189,9 @@
         this.$store.dispatch("dropItem", e.target.closest("li").dataset.bag);
         this.$store.dispatch("updateAssemblable");
       },
+      toggleStatusModal() {
+        this.$store.dispatch("onToggleModal", "status");
+      },
     },
   };
 </script>
@@ -202,25 +214,42 @@
       line-height: 25px;
       margin: 5px 0;
       padding: 0 5px;
-      .changeShowItemImgBtn {
-        background: none;
-        color: $color2;
-        border-radius: 5px;
-        @include fasIcon(25px);
-        margin-right: 5px;
-        &:last-child {
-          margin: 0;
-        }
-        &:hover {
-          box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
-        }
-        &.selected {
-          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
-        }
-      }
     }
 
     &_equip {
+      .tabName {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        h3 {
+          color: $color2;
+          height: 25px;
+          line-height: 25px;
+          padding: 0;
+          margin: 0;
+        }
+        .buttonBox {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          button {
+            background: none;
+            color: $color2;
+            border-radius: 5px;
+            @include fasIcon(25px);
+            margin-right: 5px;
+            &:last-child {
+              margin: 0;
+            }
+            &:hover {
+              box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
+            }
+            &.selected {
+              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
+            }
+          }
+        }
+      }
       ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

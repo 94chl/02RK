@@ -1,24 +1,33 @@
 <template>
   <div :class="`bag ${toggleModal.bag ? 'active' : 'hide'}`">
-    <h3 class="tabName">
-      가방
-      <button
-        :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
-        @click="onChangeShowItemImg"
-      >
-        <span>
-          <i class="fas fa-font"></i>
-        </span>
-      </button>
-      <button
-        :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
-        @click="onChangeShowItemImg"
-      >
-        <span>
-          <i class="far fa-images"></i>
-        </span>
-      </button>
-    </h3>
+    <div class="tabName">
+      <h3>가방</h3>
+      <div class="buttonBox">
+        <div>
+          <button
+            :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
+            @click="onChangeShowItemImg"
+          >
+            <span>
+              <i class="fas fa-font"></i>
+            </span>
+          </button>
+          <button
+            :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
+            @click="onChangeShowItemImg"
+          >
+            <span>
+              <i class="far fa-images"></i>
+            </span>
+          </button>
+        </div>
+        <button @click="toggleBagModal">
+          <span>
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+      </div>
+    </div>
     <div data-modal="initialWeapon" class="bag_initialWeapon">
       <button @click="onToggleModal" class="tabName">
         시작무기
@@ -296,6 +305,9 @@
           e.target.closest("div").dataset.modal
         );
       },
+      toggleBagModal() {
+        this.$store.dispatch("onToggleModal", "bag");
+      },
     },
   };
 </script>
@@ -318,22 +330,7 @@
       line-height: 25px;
       margin: 5px 0;
       padding: 0 5px;
-      .changeShowItemImgBtn {
-        background: none;
-        color: $color2;
-        border-radius: 5px;
-        @include fasIcon(25px);
-        margin-right: 5px;
-        &:last-child {
-          margin: 0;
-        }
-        &:hover {
-          box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
-        }
-        &.selected {
-          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
-        }
-      }
+
       .clearBtn {
         background: none;
         color: $color2;
@@ -341,6 +338,40 @@
         border-radius: 5px;
         &:hover {
           box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+
+    > .tabName {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      h3 {
+        color: $color2;
+        height: 25px;
+        line-height: 25px;
+        padding: 0;
+        margin: 0;
+      }
+      .buttonBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+          background: none;
+          color: $color2;
+          border-radius: 5px;
+          @include fasIcon(25px);
+          margin-right: 5px;
+          &:last-child {
+            margin: 0;
+          }
+          &:hover {
+            box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
+          }
+          &.selected {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
+          }
         }
       }
     }

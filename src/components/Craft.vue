@@ -100,14 +100,21 @@
               <li
                 v-for="item in areaWithTargetItems[index].targetItems"
                 :key="`canMake${item.id}`"
-                :class="`value${item.id[0]}`"
+                :data-itemid="item.id"
               >
-                <span :class="showItemImg ? 'hide' : ''">{{ item.name }}</span>
-                <img
-                  :class="showItemImg ? '' : 'hide'"
-                  :src="item.img"
-                  :alt="`${item.name}_img`"
-                />
+                <button
+                  :class="`showItemInfoBtn value${item.id[0]}`"
+                  @click="showItemInfo"
+                >
+                  <span :class="showItemImg ? 'hide' : ''">{{
+                    item.name
+                  }}</span>
+                  <img
+                    :class="showItemImg ? '' : 'hide'"
+                    :src="item.img"
+                    :alt="`${item.name}_img`"
+                  />
+                </button>
               </li>
             </ul>
           </div>
@@ -118,7 +125,7 @@
 </template>
 
 <script>
-  import { database, eng2Kor, areaData } from "~/utils/itemTable";
+  import { database, eng2Kor, areaData, searchById } from "~/utils/itemTable";
   import { disassembleWD } from "~/utils/disassemble";
 
   export default {
@@ -205,8 +212,9 @@
           .map((item) => {
             const thisDropMatInfo = disassembleWD([item.id]);
             // console.log(item.name);
-            item.totalDrops = Object.keys(thisDropMatInfo.dropMatId);
-            return item;
+            const itemInfo = JSON.parse(JSON.stringify(item));
+            itemInfo.totalDrops = Object.keys(thisDropMatInfo.dropMatId);
+            return itemInfo;
           });
         return targetPool;
       },
@@ -268,6 +276,10 @@
       toggleCraftModal() {
         this.$store.dispatch("onToggleModal", "craft");
       },
+      showItemInfo(e) {
+        const selectedItem = searchById(e.target.closest("li").dataset.itemid);
+        this.$store.dispatch("setCart", selectedItem);
+      },
     },
     created() {
       this.selectDept = "weapon";
@@ -324,10 +336,6 @@
           }
           &.selected {
             box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
-          }
-
-          &:last-child {
-            justify-self: end;
           }
         }
       }
@@ -470,18 +478,20 @@
                 width: fit-content;
                 border-radius: 5px;
 
-                span {
-                  display: block;
-                  padding: 5px;
-                }
+                .showItemInfoBtn {
+                  span {
+                    display: block;
+                    padding: 5px;
+                  }
 
-                img {
-                  width: 100%;
-                  max-width: 64px;
-                }
+                  img {
+                    width: 100%;
+                    max-width: 64px;
+                  }
 
-                .hide {
-                  display: none;
+                  .hide {
+                    display: none;
+                  }
                 }
               }
             }

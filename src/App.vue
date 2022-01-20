@@ -5,15 +5,16 @@
       <Select></Select>
       <TargetItem></TargetItem>
       <NeedDrops></NeedDrops>
+      <CustomRoute></CustomRoute>
       <Area></Area>
     </div>
-    <div class="footer">
-      <!-- <a href="https://hits.seeyoufarm.com">
+    <!-- <div class="footer">
+      <a href="https://hits.seeyoufarm.com">
         <img
           src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F94chl.github.io%2F02RK%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
         />
-      </a> -->
-    </div>
+      </a>
+    </div> -->
   </div>
 </template>
 
@@ -23,9 +24,10 @@
   import TargetItem from "~/components/TargetItem";
   import Area from "~/components/Area";
   import NeedDrops from "~/components/NeedDrops";
+  import CustomRoute from "~/components/CustomRoute";
 
   export default {
-    components: { Header, Select, TargetItem, Area, NeedDrops },
+    components: { Header, Select, TargetItem, CustomRoute, Area, NeedDrops },
     computed: {
       minHeight() {
         return this.$store.state.minHeight;

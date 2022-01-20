@@ -1,7 +1,7 @@
 <template>
   <div class="targetItems">
     <div class="tabName">
-      <span>목표 아이템</span>
+      <h3>목표 아이템</h3>
       <button class="reamoveAllBtn" @click="removeAllTargetItem">
         <i class="fas fa-trash-alt"></i>
       </button>

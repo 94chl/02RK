@@ -1,6 +1,6 @@
 <template>
   <div :class="`bag ${toggleModal.bag ? 'active' : 'hide'}`">
-    <h2 class="tabName">
+    <h3 class="tabName">
       가방
       <button
         :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
@@ -18,7 +18,7 @@
           <i class="far fa-images"></i>
         </span>
       </button>
-    </h2>
+    </h3>
     <div data-modal="initialWeapon" class="bag_initialWeapon">
       <button @click="onToggleModal" class="tabName">
         시작무기
@@ -180,7 +180,6 @@
         moveItem: { from: { item: false }, to: { item: false }, able: false },
       };
     },
-
     components: { InitialWeapon },
     computed: {
       showItemImg() {

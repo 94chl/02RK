@@ -1,6 +1,8 @@
 <template>
   <div class="needDrops">
-    <p class="tabName">필요한 드랍템</p>
+    <div class="tabName">
+      <h3>필요한 드랍템</h3>
+    </div>
     <div>
       <ul class="needDrops_list">
         <li v-for="mat in dropMats.dropMatArr" :key="`dropMats${mat.id}`">

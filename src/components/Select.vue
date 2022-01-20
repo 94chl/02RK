@@ -1,6 +1,8 @@
 <template>
   <div class="select">
-    <div class="tabName">아이템 선택</div>
+    <div class="tabName">
+      <h3>아이템 선택</h3>
+    </div>
 
     <div class="select_dept">
       <form @change="changeDept">

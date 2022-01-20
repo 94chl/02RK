@@ -1,27 +1,7 @@
 <template>
   <div class="area">
     <div class="tabName">
-      <span>지역</span>
-      <button class="removeAllBtn" @click="removeAllRoute">
-        <i class="fas fa-trash-alt"></i>
-      </button>
-    </div>
-    <div class="customRoute">
-      <div v-for="(area, index) in customRoute" :key="`route${index}`">
-        <div>
-          <div>{{ areaInfo[area].name }}</div>
-          <ul>
-            <li
-              v-for="item in areaWithTargetItems.filter(
-                (areaInfo) => areaInfo.area === area
-              )[0].targetItems"
-              :key="`complete${item.id}`"
-            >
-              <img :src="item.img" :alt="`${item.name}_img`" />
-            </li>
-          </ul>
-        </div>
-      </div>
+      <h3>지역</h3>
     </div>
     <div>
       <ul class="areaList">
@@ -85,7 +65,6 @@
 
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
-  import { disassembleWD } from "~/utils/disassemble";
 
   export default {
     data() {
@@ -116,85 +95,6 @@
       customRoute() {
         return this.$store.state.customRoute;
       },
-      bagDrops() {
-        const bagEquip = Object.values(this.$store.state.bagEquip).reduce(
-          (acc, cur) => {
-            if (cur.id) acc.push(cur.id);
-            return acc;
-          },
-          []
-        );
-        const bagInventory = Object.values(this.$store.state.bagInventory).reduce(
-          (acc, cur) => {
-            if (cur.id) acc.push(cur.id);
-            return acc;
-          },
-          []
-        );
-        const bagDrops = Object.keys(
-          disassembleWD(bagEquip.concat(bagInventory)).dropMatId
-        ).reduce((acc, cur) => {
-          if (!acc.includes(cur)) acc.push(cur);
-          return acc;
-        }, []);
-        return bagDrops;
-      },
-      customRouteDrops() {
-        const customRouteDrops = ["A000", ...this.customRoute].reduce(
-          (acc, areaId, index) => {
-            const newDrops =
-              index > 0
-                ? areaData[areaId].drop.filter(
-                    (item) => !acc[acc.length - 1].drops.includes(item)
-                  )
-                : areaData[areaId].drop;
-            acc.push({
-              area: areaId,
-              drops:
-                index > 0
-                  ? [...acc[acc.length - 1].drops, ...newDrops]
-                  : newDrops,
-            });
-            return acc;
-          },
-          []
-        );
-        return customRouteDrops;
-      },
-      areaWithTargetItems() {
-        let targetItems = JSON.parse(
-          JSON.stringify(this.$store.state.targetItems)
-        );
-
-        const areaWithTargetItems = this.customRouteDrops
-          .slice(1)
-          .map((areaInfo) => {
-            this.bagDrops.forEach((drop) => {
-              if (!areaInfo.drops.includes(drop)) areaInfo.drops.push(drop);
-            });
-            areaInfo.targetItems = [];
-            const remainTargetItems = [];
-
-            targetItems.forEach((item) => {
-              if (
-                item.totalDrops.every((dropId) => areaInfo.drops.includes(dropId))
-              ) {
-                areaInfo.targetItems.push({
-                  name: item.name,
-                  id: item.id,
-                  img: item.img,
-                });
-              } else {
-                remainTargetItems.push(item);
-              }
-            });
-            targetItems = remainTargetItems;
-
-            return areaInfo;
-          });
-
-        return areaWithTargetItems;
-      },
     },
     methods: {
       toggleArea(e) {
@@ -224,79 +124,12 @@
           1000
         );
       },
-      removeAllRoute() {
-        if (window.confirm("루트를 초기화하시겠습니까?"))
-          this.$store.dispatch("removeRoute", []);
-      },
     },
   };
 </script>
 
 <style lang="scss" scoped>
   .area {
-    .tabName {
-      .removeAllBtn {
-        background: none;
-        border-radius: 5px;
-        padding: 0;
-
-        .fas {
-          color: $color3;
-          @include fasIcon(30px);
-        }
-        &:hover {
-          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
-        }
-      }
-    }
-    .customRoute {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(min-content, 1fr));
-      border-radius: 5px;
-      background: $color3;
-      @media screen and (max-width: 720px) {
-        grid-template-columns: repeat(3, minmax(min-content, 1fr));
-      }
-      > div {
-        display: flex;
-        justify-content: space-around;
-        padding: 5px 0;
-        color: $color2;
-
-        &::after {
-          height: 100%;
-          content: "->";
-        }
-        &:last-child {
-          &::after {
-            content: "";
-          }
-        }
-        > div {
-          width: fit-content;
-          > div {
-            width: fit-content;
-          }
-          > ul {
-            max-width: 90px;
-            margin-top: 5px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-
-            li {
-              width: fit-content;
-              img {
-                width: 64px;
-                background: #fff;
-                border-radius: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
-
     .areaList {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

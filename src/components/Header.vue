@@ -58,7 +58,7 @@
       }`"
     >
       <div class="tabName">
-        목표 아이템 추천 루트
+        <h3>목표 아이템 추천 루트</h3>
         <button class="findRecommendPathBtn" @click="findRecommendPath">
           <i class="fas fa-map-marked-alt"></i>
         </button>
@@ -200,10 +200,10 @@
 
       overflow-y: scroll;
       /* -ms-overflow-style: none;
-                                scrollbar-width: none;
-                                &::-webkit-scrollbar {
-                                  display: none;
-                                } */
+                                  scrollbar-width: none;
+                                  &::-webkit-scrollbar {
+                                    display: none;
+                                  } */
 
       &.active {
         @include active();

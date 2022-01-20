@@ -66,6 +66,9 @@
     .targetItem {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
+      @media screen and (max-width: 720px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
 
       .itemInfo {
         background: #fff;

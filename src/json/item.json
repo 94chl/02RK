@@ -371,12 +371,12 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1T4nPDgwx_zkhG93jqDQy79cUhx2PTYgv=w1402-h253-iv1",
         "location": false,
-        "tobe": ["BB006"],
+        "tobe": ["BB006", "BS006"],
         "pickup": 3,
         "limit": 3,
         "name": "철사",
         "stack": 3,
-        "material": ["WM021", "WWP001", "BS006"]
+        "material": ["WM021", "WWP001"]
       },
       {
         "id": "BM001",
@@ -1590,12 +1590,12 @@
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/13y5XwsXOrA0vtZIUP6Dqd9cIBR_kHA6b=w1402-h684-iv2",
         "location": false,
-        "tobe": false,
+        "tobe": ["BF024"],
         "pickup": 2,
         "limit": 5,
         "name": "소주",
         "stack": 1,
-        "material": ["WM010", "WD002", "BF024"]
+        "material": ["WM010", "WD002"]
       },
       {
         "id": "GD006",

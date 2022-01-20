@@ -198,11 +198,13 @@
           category: this.selectCategory,
           grade: this.selectGrade,
         };
+
         const targetPool = database[`${selected.dept}Data`]
           .filter((category) => category.category === selected.category)[0]
           .items.filter((item) => item.id[0] === selected.grade)
           .map((item) => {
             const thisDropMatInfo = disassembleWD([item.id]);
+            // console.log(item.name);
             item.totalDrops = Object.keys(thisDropMatInfo.dropMatId);
             return item;
           });
@@ -235,7 +237,6 @@
       },
       searchItem() {
         let targetPool = JSON.parse(JSON.stringify(this.targetPool));
-
         const areaWithTargetItems = this.customRouteDrops
           .slice(1)
           .map((areaInfo) => {

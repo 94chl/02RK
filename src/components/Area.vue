@@ -223,8 +223,11 @@
               }
               &.neededDrops {
                 .getDropBtn {
-                  font-weight: 800;
+                  font-weight: 700;
                   color: red;
+                }
+                span {
+                  font-size: 0.8em;
                 }
               }
               &.noNeededDrops {

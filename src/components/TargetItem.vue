@@ -15,7 +15,10 @@
           :data-index="index"
           :data-itemid="item.id"
         >
-          <button class="showItemInfoBtn" @click="showItemInfo">
+          <button
+            :class="`showItemInfoBtn value${item.id[0]}`"
+            @click="showItemInfo"
+          >
             <img :src="item.img" :alt="item.name" class="itemInfo_img" />
           </button>
           <button @click="removeTargetItem" class="removeBtn">
@@ -63,6 +66,23 @@
   .targetItems {
     position: relative;
 
+    .tabName {
+      display: flex;
+      button {
+        background: none;
+        border-radius: 5px;
+        padding: 0;
+
+        .fas {
+          color: $color3;
+          @include fasIcon(30px);
+        }
+        &:hover {
+          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
     .targetItem {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -76,7 +96,10 @@
         margin: 5px;
 
         .showItemInfoBtn {
-          background: none;
+          border-radius: 5px;
+          &:hover {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+          }
         }
 
         .removeBtn {

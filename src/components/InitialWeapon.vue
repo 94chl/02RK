@@ -77,7 +77,7 @@
       padding: 5px;
       li {
         height: 30px;
-        width: 15%;
+        min-width: 15%;
         font-size: 0.8em;
 
         &.showItemImg {
@@ -88,6 +88,7 @@
           width: 100%;
           overflow: hidden;
           background: #fff;
+          padding: 0 5px;
           &:hover {
             box-shadow: 0 0 7px 2px inset rgba(0, 0, 0, 0.2);
           }

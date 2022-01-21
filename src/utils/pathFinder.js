@@ -69,11 +69,19 @@ export function pathFinder(route, needsNow, bagNow) {
   // 맵(드랍테이블)에서 필요한 드랍템만 필터링
   mapInfo = checkAreaDrop(mapInfo, needs);
 
+  const hadNeeds = [];
+
   // 선점지역이 있으면, 해당지역 드랍템을 필요한 드랍템 목록에서 제거
   if (routeStack.length > 0) {
     routeStack.forEach((area) => {
       mapInfo[area].drop.forEach((drop) => {
-        needs.includes(drop) ? needs.splice(needs.indexOf(drop), 1) : null;
+        if (needs.includes(drop)) {
+          needs.splice(needs.indexOf(drop), 1);
+          hadNeeds.push(drop);
+        }
+        if (hadNeeds.includes(drop)) {
+          mapInfo[area].point--;
+        }
       });
     });
   }

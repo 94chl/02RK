@@ -79,12 +79,16 @@
         return customRouteDrops;
       },
       totalDrops() {
-        const totalDrops = this.customRouteDrops.map((areaInfo) => {
+        const customRouteDrops = JSON.parse(
+          JSON.stringify(this.customRouteDrops)
+        );
+        const totalDrops = customRouteDrops.map((areaInfo) => {
           this.bagDrops.forEach((drop) => {
             if (!areaInfo.drops.includes(drop)) areaInfo.drops.push(drop);
           });
           return areaInfo;
         });
+        console.log(totalDrops[totalDrops.length - 1]);
         return totalDrops[totalDrops.length - 1].drops;
       },
     },

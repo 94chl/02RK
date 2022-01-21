@@ -114,34 +114,35 @@
         let targetItems = JSON.parse(
           JSON.stringify(this.$store.state.targetItems)
         );
+        const customRouteDrops = JSON.parse(
+          JSON.stringify(this.customRouteDrops)
+        );
 
-        const areaWithTargetItems = this.customRouteDrops
-          .slice(1)
-          .map((areaInfo) => {
-            this.bagDrops.forEach((drop) => {
-              if (!areaInfo.drops.includes(drop)) areaInfo.drops.push(drop);
-            });
-
-            areaInfo.targetItems = [];
-            const remainTargetItems = [];
-
-            targetItems.forEach((item) => {
-              const totalDrops = Object.keys(disassembleWD([item.id]).dropMatId);
-
-              if (totalDrops.every((dropId) => areaInfo.drops.includes(dropId))) {
-                areaInfo.targetItems.push({
-                  name: item.name,
-                  id: item.id,
-                  img: item.img,
-                });
-              } else {
-                remainTargetItems.push(item);
-              }
-            });
-            targetItems = remainTargetItems;
-
-            return areaInfo;
+        const areaWithTargetItems = customRouteDrops.slice(1).map((areaInfo) => {
+          this.bagDrops.forEach((drop) => {
+            if (!areaInfo.drops.includes(drop)) areaInfo.drops.push(drop);
           });
+
+          areaInfo.targetItems = [];
+          const remainTargetItems = [];
+
+          targetItems.forEach((item) => {
+            const totalDrops = Object.keys(disassembleWD([item.id]).dropMatId);
+
+            if (totalDrops.every((dropId) => areaInfo.drops.includes(dropId))) {
+              areaInfo.targetItems.push({
+                name: item.name,
+                id: item.id,
+                img: item.img,
+              });
+            } else {
+              remainTargetItems.push(item);
+            }
+          });
+          targetItems = remainTargetItems;
+
+          return areaInfo;
+        });
 
         return areaWithTargetItems;
       },

@@ -140,8 +140,7 @@
               </p>
             </div>
             <p v-else class="noRouteCount">
-              최단루트를 찾지 못했습니다. 드랍되지 않는 시작무기가 재료로 들어갈
-              경우, 가방에서 시작무기를 추가해주세요.
+              {{ errorMessage }}
             </p>
           </div>
         </div>
@@ -193,6 +192,7 @@
           "name",
           "reload",
         ],
+        errorMessage: "",
       };
     },
     components: {},
@@ -245,7 +245,11 @@
           needDrops: Object.keys(disassembleWD([this.cartItemId]).dropMatId),
           total: false,
         };
-        this.$store.dispatch("findRecommendPath", needDropsInfo);
+        try {
+          this.$store.dispatch("findRecommendPath", needDropsInfo);
+        } catch (e) {
+          this.errorMessage = e;
+        }
         this.isInitial = false;
       },
       togglePath() {

@@ -29,9 +29,9 @@ export function disassembleGD(materialArr) {
       ) {
         materials.greenMatId[result.id] = 1;
         materials.greenMatName[result.name] = 1;
-      } else if (result.id[0] == "W") {
-        materials.dropMatId[result.id] = 1;
-        materials.dropMatName[result.name] = 1;
+        // } else if (result.id[0] == "W") {
+        //   materials.dropMatId[result.id] = 1;
+        //   materials.dropMatName[result.name] = 1;
       } else {
         need2Disassemble = need2Disassemble.concat(result.material);
       }
@@ -61,7 +61,7 @@ export function disassembleWD(materialArr) {
 
   for (let i = 0; i < need2Disassemble.length; ) {
     const result = searchById(need2Disassemble[i]);
-    if (!result.location && result.id[0] !== "W") {
+    if (!result.location && result.material) {
       need2Disassemble = need2Disassemble.concat(result.material);
       need2Disassemble.splice(i, 1);
     } else {

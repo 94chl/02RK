@@ -94,6 +94,7 @@
     margin: 0 auto;
     background: #ffffff;
     position: relative;
+    word-break: keep-all;
     @media screen and (max-width: 720px) {
       width: 100%;
     }

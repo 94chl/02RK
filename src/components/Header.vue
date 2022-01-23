@@ -40,9 +40,11 @@
     >
       <div class="tabName">
         <h3>목표 아이템 추천 루트</h3>
-        <button class="findRecommendPathBtn" @click="findRecommendPath">
-          <i class="fas fa-map-marked-alt"></i>
-        </button>
+        <div class="buttonBox">
+          <button class="findRecommendPathBtn" @click="findRecommendPath">
+            <i class="fas fa-map-marked-alt"></i>
+          </button>
+        </div>
       </div>
       <div class="routesInfo">
         <ul class="routes" v-if="totalRecommendRoutes.length > 0">
@@ -63,7 +65,7 @@
             </span>
           </li>
         </ul>
-        <div class="noRoutes" v-else>No Short Routes</div>
+        <div class="noRoutes" v-else>{{ errorMessage }}</div>
       </div>
     </div>
   </div>
@@ -74,6 +76,11 @@
   import Status from "~/components/Status";
 
   export default {
+    data() {
+      return {
+        errorMessage: "",
+      };
+    },
     components: { Bag, Status },
     computed: {
       toggleModal() {
@@ -98,7 +105,11 @@
           needDrops: this.dropMats,
           total: true,
         };
-        this.$store.dispatch("findRecommendPath", needDropsInfo);
+        try {
+          this.$store.dispatch("findRecommendPath", needDropsInfo);
+        } catch (e) {
+          this.errorMessage = e;
+        }
       },
     },
   };
@@ -180,11 +191,11 @@
       box-sizing: border-box;
 
       overflow-y: scroll;
-      /* -ms-overflow-style: none;
-                                          scrollbar-width: none;
-                                          &::-webkit-scrollbar {
-                                            display: none;
-                                          } */
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       &.active {
         @include active();
@@ -193,17 +204,24 @@
       }
 
       .tabName {
-        text-align: left;
-        border-bottom: 1px solid $color3;
-        box-sizing: border-box;
-        text-indent: 5px;
-        padding: 2px 0;
-        .findRecommendPathBtn {
-          background: none;
-          @include fasIcon(30px);
-          box-shadow: 1px 1px 1px 1px #999;
-          &:hover {
-            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #000;
+        .buttonBox {
+          display: flex;
+          button {
+            background: none;
+            border-radius: 5px;
+            width: fit-content;
+            padding: 0;
+
+            .fas {
+              color: $color3;
+              @include fasIcon(30px);
+            }
+            &:hover {
+              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+            }
           }
         }
       }

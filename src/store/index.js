@@ -479,6 +479,15 @@ const store = createStore({
     },
     findRecommendPath({ commit, state }, needDropsInfo) {
       const { needDrops, total } = needDropsInfo;
+      const notDroppable = needDrops.filter((drop) => {
+        const dropInfo = searchById(drop);
+        return !dropInfo.location;
+      });
+      if (notDroppable.length > 0) {
+        throw `${
+          searchById(notDroppable[0]).name
+        }(은)는 드랍되지 않는 아이템입니다`;
+      }
       const bagEquip = Object.values(state.bagEquip).reduce((acc, cur) => {
         if (cur.id) acc.push(cur.id);
         return acc;
@@ -490,12 +499,15 @@ const store = createStore({
         },
         []
       );
-      // const bagTotal = bagEquip.concat(bagInventory);
       const bagTotal = Object.keys(
         disassembleWD(bagEquip.concat(bagInventory)).dropMatId
       );
       const routes = pathFinder(state.customRoute, needDrops, bagTotal);
-      commit("setRecommendRoutes", { routes, total });
+      if (routes.length > 0) {
+        commit("setRecommendRoutes", { routes, total });
+      } else {
+        throw "최단 루트를 발견하지 못했습니다";
+      }
     },
   },
 });

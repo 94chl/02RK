@@ -4673,34 +4673,9 @@
     "category": "VFProsthetic",
     "class": "W",
     "items": [{
-        "id": "WWW001",
-        "sort": "VFProsthetic",
-        "img": "https://lh3.google.com/u/0/d/1WvsHOSSIy6P7uiw9ddlwOMVlrfaFTa2N=w1058-h666-iv1",
-        "location": ["A000"],
-        "tobe": ["BWW001", "BWW002", "BWW003"],
-        "pickup": 1,
-        "limit": 1,
-        "name": "카드모스의 부름 LV.2",
-        "stack": 1,
-        "설명": "에키온의 패시브 스킬이 2레벨 이상일 경우"
-      },
-      {
-        "id": "WWW002",
-        "sort": "VFProsthetic",
-        "img": "https://lh3.google.com/u/0/d/1WvsHOSSIy6P7uiw9ddlwOMVlrfaFTa2N=w1058-h666-iv1",
-        "location": ["A000"],
-        "tobe": ["PWW001", "PWW002", "PWW003"],
-        "pickup": 1,
-        "limit": 1,
-        "name": "카드모스의 부름 LV.3",
-        "stack": 1,
-        "설명": "에키온의 패시브 스킬이 3레벨 이상일 경우"
-      },
-      {
         "id": "GWW001",
         "sort": "VFProsthetic",
         "img": "https://lh3.google.com/u/0/d/1Epzvd4nDtwOMIkxFeugbRSqh2AyvMjA7=w1058-h933-iv1",
-        "location": ["A000"],
         "tobe": ["BWW001", "BWW002", "BWW003"],
         "pickup": 1,
         "limit": 1,
@@ -5009,6 +4984,29 @@
           "detail": ["VF폭주 상태일 때, 스킬을 사용하면 의념을 충전", "3초 이내에 다음 기본 공격은 캐릭터 레벨*7의 추가 피해", "쿨다운 0.2초"],
           "value": 7
         }
+      }, {
+        "id": "WWW001",
+        "sort": "VFProsthetic",
+        "img": "https://lh3.google.com/u/0/d/1WvsHOSSIy6P7uiw9ddlwOMVlrfaFTa2N=w1058-h666-iv1",
+        "location": ["A000"],
+        "tobe": ["BWW001", "BWW002", "BWW003"],
+        "pickup": 1,
+        "limit": 1,
+        "name": "카드모스의 부름 LV.2",
+        "stack": 1,
+        "설명": "에키온의 패시브 스킬이 2레벨 이상일 경우"
+      },
+      {
+        "id": "WWW002",
+        "sort": "VFProsthetic",
+        "img": "https://lh3.google.com/u/0/d/1WvsHOSSIy6P7uiw9ddlwOMVlrfaFTa2N=w1058-h666-iv1",
+        "location": ["A000"],
+        "tobe": ["PWW001", "PWW002", "PWW003"],
+        "pickup": 1,
+        "limit": 1,
+        "name": "카드모스의 부름 LV.3",
+        "stack": 1,
+        "설명": "에키온의 패시브 스킬이 3레벨 이상일 경우"
       }
     ]
   }

@@ -7,9 +7,11 @@ $color5: #a06536;
 @mixin active {
   display: block;
   position: fixed;
-  top: 70px;
-  width: 320px;
-  z-index: 5;
+  top: 0;
+  max-width: 720px;
+  min-width: 320px;
+  width: 100%;
+  z-index: 10;
 }
 
 @mixin fasIcon($input) {

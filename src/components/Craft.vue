@@ -305,11 +305,12 @@
 
     &.active {
       @include active();
-      left: calc(50% - 160px);
     }
 
     .tabName {
-      display: flex;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
       h3 {
         color: $color3;
         height: 25px;

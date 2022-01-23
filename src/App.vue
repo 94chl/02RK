@@ -7,6 +7,7 @@
       <NeedDrops></NeedDrops>
       <CustomRoute></CustomRoute>
       <Area></Area>
+      <Modals></Modals>
     </div>
     <!-- <div class="footer">
       <a href="https://hits.seeyoufarm.com">
@@ -25,9 +26,18 @@
   import Area from "~/components/Area";
   import NeedDrops from "~/components/NeedDrops";
   import CustomRoute from "~/components/CustomRoute";
+  import Modals from "~/components/Modals";
 
   export default {
-    components: { Header, Select, TargetItem, CustomRoute, Area, NeedDrops },
+    components: {
+      Header,
+      Select,
+      TargetItem,
+      CustomRoute,
+      Area,
+      NeedDrops,
+      Modals,
+    },
     computed: {
       minHeight() {
         return this.$store.state.minHeight;

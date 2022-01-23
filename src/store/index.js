@@ -506,7 +506,7 @@ const store = createStore({
       if (routes.length > 0) {
         commit("setRecommendRoutes", { routes, total });
       } else {
-        throw "최단 루트를 발견하지 못했습니다";
+        throw "최단 루트를 발견하지 못했습니다. 혹은 이미 필요한 재료를 소지하고 있을 수도 있습니다.";
       }
     },
   },

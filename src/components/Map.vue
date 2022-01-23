@@ -302,11 +302,11 @@
   }
 
   .mapModal {
+    position: fixed;
     top: 0;
     max-width: 720px;
     min-width: fit-content;
     width: 100%;
-    position: fixed;
     z-index: 10;
     background: rgba(256, 256, 256, 0.7);
     display: flex;

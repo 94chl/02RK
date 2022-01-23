@@ -118,17 +118,20 @@
               v-for="(route, index) in recommendRoutes"
               :key="`itemRoute${index}`"
               class="recommends_list__route"
+              :data-route-index="index"
             >
-              <span class="recommends_list__route__index">
-                {{ `(${index + 1}) ` }}
-              </span>
-              <span
-                v-for="(area, areaIndex) in route"
-                :key="route + areaIndex"
-                class="recommends_list__route__area"
-              >
-                {{ area }}
-              </span>
+              <button class="routeButton" @click="setCustomRoute">
+                <span class="routeButton_index">
+                  {{ `(${index + 1}) ` }}
+                </span>
+                <span
+                  v-for="(area, areaIndex) in route"
+                  :key="route + areaIndex"
+                  class="routeButton_area"
+                >
+                  {{ area }}
+                </span>
+              </button>
             </li>
           </ul>
           <div v-else class="recommendsCover">
@@ -232,6 +235,13 @@
       recommendRoutes() {
         return this.$store.state.recommendRoutes;
       },
+      areaName2Id() {
+        const areaInfo = {};
+        Object.entries(areaData).forEach(([id, data]) => {
+          areaInfo[data.name] = id;
+        });
+        return areaInfo;
+      },
     },
     methods: {
       changeItem(e) {
@@ -266,6 +276,13 @@
       },
       closeRecommendsModal() {
         this.isShowPath = false;
+      },
+      setCustomRoute(e) {
+        const target =
+          this.recommendRoutes[e.target.closest("li").dataset.routeIndex];
+        const newRoute = target.map((area) => this.areaName2Id[area]);
+        if (window.confirm("해당 루트를 적용하시겠습니까?"))
+          this.$store.dispatch("removeRoute", newRoute);
       },
     },
     watch: {
@@ -465,9 +482,16 @@
               color: $color2;
             }
           }
-          &__route {
-            width: max-content;
-            &__area {
+          .routeButton {
+            background: none;
+            border-radius: 5px;
+
+            &:hover,
+            &:active {
+              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+            }
+            &_area {
+              padding: 3px;
               &::after {
                 content: "-";
                 margin: 0 3px;

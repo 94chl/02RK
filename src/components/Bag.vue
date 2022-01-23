@@ -29,28 +29,34 @@
       </div>
     </div>
     <div data-modal="initialWeapon" class="bag_initialWeapon">
-      <button @click="onToggleModal" class="tabName">
-        시작무기
-        <i
-          :class="`fas fa-angle-double-down ${
-            toggleModal.initialWeapon ? 'hide' : ''
-          }`"
-        ></i>
-        <i
-          :class="`fas fa-angle-double-up ${
-            toggleModal.initialWeapon ? '' : 'hide'
-          }`"
-        ></i>
-      </button>
+      <div class="tabName">
+        <h3>시작무기</h3>
+        <div class="buttonBox">
+          <button @click="onToggleModal">
+            <i
+              :class="`fas fa-angle-double-down ${
+                toggleModal.initialWeapon ? 'hide' : ''
+              }`"
+            ></i>
+            <i
+              :class="`fas fa-angle-double-up ${
+                toggleModal.initialWeapon ? '' : 'hide'
+              }`"
+            ></i>
+          </button>
+        </div>
+      </div>
       <InitialWeapon />
     </div>
     <div class="bag_equip">
-      <p class="tabName">
-        장비
-        <button class="clearBtn" @click="clearBag" data-bag="equip">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      </p>
+      <div class="tabName">
+        <h3>장비</h3>
+        <div class="buttonBox">
+          <button class="clearBtn" @click="clearBag" data-bag="equip">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+      </div>
       <div>
         <ul>
           <li
@@ -95,12 +101,14 @@
       </div>
     </div>
     <div class="bag_inventory">
-      <p class="tabName">
-        가방
-        <button class="clearBtn" @click="clearBag" data-bag="inventory">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      </p>
+      <div class="tabName">
+        <h3>가방</h3>
+        <div class="buttonBox">
+          <button class="clearBtn" @click="clearBag" data-bag="inventory">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+      </div>
       <div>
         <ul>
           <li
@@ -149,7 +157,9 @@
       </div>
     </div>
     <div class="bag_assembles">
-      <p class="tabName">조합가능</p>
+      <div class="tabName">
+        <h3>조합가능</h3>
+      </div>
       <div v-if="Object.values(assembles).length > 0">
         <ul>
           <li
@@ -321,30 +331,13 @@
 
     &.active {
       @include active();
-      left: calc(50% - 160px);
     }
 
     .tabName {
-      color: $color2;
-      height: 25px;
-      line-height: 25px;
-      margin: 5px 0;
-      padding: 0 5px;
-
-      .clearBtn {
-        background: none;
-        color: $color2;
-        height: 25px;
-        border-radius: 5px;
-        &:hover {
-          box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
-        }
-      }
-    }
-
-    > .tabName {
       display: grid;
       grid-template-columns: auto 1fr;
+      align-items: center;
+
       h3 {
         color: $color2;
         height: 25px;

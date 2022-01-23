@@ -199,13 +199,12 @@
 <style lang="scss" scoped>
   .status {
     border-radius: 5px;
-    border: 2px solid $color5;
+    border: 2px solid $color3;
     box-sizing: border-box;
-    background: $color5;
+    background: $color2;
 
     &.active {
       @include active();
-      left: calc(50% - 160px);
     }
 
     .tabName {
@@ -220,8 +219,9 @@
       .tabName {
         display: grid;
         grid-template-columns: auto 1fr;
+        align-items: center;
         h3 {
-          color: $color2;
+          color: $color3;
           height: 25px;
           line-height: 25px;
           padding: 0;
@@ -234,7 +234,7 @@
           justify-content: space-between;
           button {
             background: none;
-            color: $color2;
+            color: $color3;
             border-radius: 5px;
             @include fasIcon(25px);
             margin-right: 5px;
@@ -242,7 +242,7 @@
               margin: 0;
             }
             &:hover {
-              box-shadow: 0 0 12px 2px inset rgba(255, 255, 255, 0.3);
+              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
             }
             &.selected {
               box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
@@ -255,7 +255,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 10px;
-        background: $color4;
+        background: $color3;
         border-radius: 5px;
         padding: 5px;
         li {
@@ -304,7 +304,8 @@
         .option {
           .optionInfo {
             display: flex;
-            background: $color4;
+            background: $color3;
+            color: $color2;
             padding: 5px;
             &.unique {
               display: block;

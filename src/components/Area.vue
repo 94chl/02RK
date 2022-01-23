@@ -65,14 +65,11 @@
         </li>
       </ul>
     </div>
-    <Map></Map>
   </div>
 </template>
 
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
-  import Map from "~/components/Map";
-
   export default {
     data() {
       return {
@@ -94,7 +91,7 @@
 
       this.areaInfo = newAreaData;
     },
-    components: { Map },
+    components: {},
     computed: {
       dropMats() {
         return this.$store.state.matGDs;

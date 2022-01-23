@@ -66,9 +66,6 @@ export function pathFinder(route, needsNow, bagNow) {
     (need) => !bag.includes(need) && !mapInfo.A000.drop.includes(need)
   );
 
-  // 맵(드랍테이블)에서 필요한 드랍템만 필터링
-  mapInfo = checkAreaDrop(mapInfo, needs);
-
   const hadNeeds = [];
 
   // 선점지역이 있으면, 해당지역 드랍템을 필요한 드랍템 목록에서 제거
@@ -85,6 +82,9 @@ export function pathFinder(route, needsNow, bagNow) {
       });
     });
   }
+
+  // 맵(드랍테이블)에서 필요한 드랍템만 필터링
+  mapInfo = checkAreaDrop(mapInfo, needs);
 
   // 시작점 고르기 : 필요한 드랍템이 많이 나오는 지역순(1개 이상)
   const startPoint = Object.keys(mapInfo)

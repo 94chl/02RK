@@ -88,7 +88,6 @@
           });
           return areaInfo;
         });
-        console.log(totalDrops[totalDrops.length - 1]);
         return totalDrops[totalDrops.length - 1].drops;
       },
     },

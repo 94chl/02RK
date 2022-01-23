@@ -2,6 +2,11 @@
   <div class="area">
     <div class="tabName">
       <h3>지역</h3>
+      <div class="buttonBox">
+        <button class="mapModalButton" @click="toggleMapModal">
+          <i class="fas fa-map"></i>
+        </button>
+      </div>
     </div>
     <div>
       <ul class="areaList">
@@ -60,11 +65,13 @@
         </li>
       </ul>
     </div>
+    <Map></Map>
   </div>
 </template>
 
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
+  import Map from "~/components/Map";
 
   export default {
     data() {
@@ -87,7 +94,7 @@
 
       this.areaInfo = newAreaData;
     },
-    components: {},
+    components: { Map },
     computed: {
       dropMats() {
         return this.$store.state.matGDs;
@@ -124,12 +131,38 @@
           1000
         );
       },
+      toggleMapModal() {
+        this.$store.dispatch("onToggleModal", "map");
+      },
     },
   };
 </script>
 
 <style lang="scss" scoped>
   .area {
+    position: relative;
+
+    .tabName {
+      display: flex;
+      .buttonBox {
+        display: flex;
+        button {
+          background: none;
+          border-radius: 5px;
+          width: fit-content;
+          padding: 0;
+
+          .fas {
+            color: $color3;
+            @include fasIcon(30px);
+          }
+          &:hover {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+
     .areaList {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

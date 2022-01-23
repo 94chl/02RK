@@ -2,9 +2,11 @@
   <div class="targetItems">
     <div class="tabName">
       <h3>목표 아이템</h3>
-      <button class="reamoveAllBtn" @click="removeAllTargetItem">
-        <i class="fas fa-trash-alt"></i>
-      </button>
+      <div class="buttonBox">
+        <button class="reamoveAllBtn" @click="removeAllTargetItem">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </div>
     </div>
     <div>
       <ul class="targetItem">
@@ -68,17 +70,21 @@
 
     .tabName {
       display: flex;
-      button {
-        background: none;
-        border-radius: 5px;
-        padding: 0;
+      .buttonBox {
+        display: flex;
+        button {
+          background: none;
+          border-radius: 5px;
+          width: fit-content;
+          padding: 0;
 
-        .fas {
-          color: $color3;
-          @include fasIcon(30px);
-        }
-        &:hover {
-          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+          .fas {
+            color: $color3;
+            @include fasIcon(30px);
+          }
+          &:hover {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+          }
         }
       }
     }

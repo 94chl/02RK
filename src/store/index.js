@@ -91,6 +91,7 @@ const store = createStore({
         initialWeapon: true,
         status: false,
         craft: false,
+        map: false,
       },
     };
   },

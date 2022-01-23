@@ -163,20 +163,25 @@
   .customRoute {
     .tabName {
       display: flex;
-      .buttonBox > button {
-        background: none;
-        border-radius: 5px;
-        padding: 0;
+      .buttonBox {
+        display: flex;
+        button {
+          background: none;
+          border-radius: 5px;
+          width: fit-content;
+          padding: 0;
 
-        .fas {
-          color: $color3;
-          @include fasIcon(30px);
-        }
-        &:hover {
-          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+          .fas {
+            color: $color3;
+            @include fasIcon(30px);
+          }
+          &:hover {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+          }
         }
       }
     }
+
     .routesBox {
       display: grid;
       grid-template-columns: repeat(5, minmax(min-content, 1fr));

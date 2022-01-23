@@ -33,12 +33,12 @@
         <div class="selectBox_dept">
           <form @change="changeDept">
             <input
+              v-for="dept in deptArr"
               type="radio"
               :value="dept"
               :id="`select${dept}_craft`"
               class="deptRadio"
               :name="dept"
-              v-for="dept in deptArr"
               :key="dept"
               :checked="dept === selectDept"
             />
@@ -135,9 +135,6 @@
         deptKor: { weapon: "무기", equip: "장비", item: "기타" },
         categoryArr: [],
         itemArr: [],
-        selectDept: "",
-        selectCategory: "",
-        selectGrade: "",
         areaIds: [],
         areaInfo: areaData,
         areaWithTargetItems: [],
@@ -145,6 +142,15 @@
     },
     components: {},
     computed: {
+      selectDept() {
+        return "";
+      },
+      selectCategory() {
+        return "";
+      },
+      selectGrade() {
+        return "";
+      },
       toggleModal() {
         return this.$store.state.toggleModal;
       },
@@ -205,7 +211,7 @@
           category: this.selectCategory,
           grade: this.selectGrade,
         };
-
+        console.log(selected);
         const targetPool = database[`${selected.dept}Data`]
           .filter((category) => category.category === selected.category)[0]
           .items.filter((item) => item.id[0] === selected.grade)
@@ -225,10 +231,12 @@
       },
       changeDept(e) {
         this.selectDept = e.target.value;
+        console.log(this.selectDept);
         this.categoryArr = database[`${this.selectDept}Data`].map((category) => ({
           ...category,
           kor: eng2Kor[category.category],
         }));
+        console.log(this.categoryArr);
         this.selectCategory = this.categoryArr[0].category;
         this.itemArr = this.categoryArr.filter(
           (category) => category.category === this.selectCategory

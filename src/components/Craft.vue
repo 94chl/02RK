@@ -31,35 +31,27 @@
       </div>
       <div class="selectBox">
         <div class="selectBox_dept">
-          <form @change="changeDept">
-            <input
-              v-for="dept in deptArr"
-              type="radio"
-              :value="dept"
-              :id="`select${dept}_craft`"
-              class="deptRadio"
-              :name="dept"
-              :key="dept"
-              :checked="dept === selectDept"
-            />
-            <label
-              :for="`select${dept}_craft`"
-              v-for="dept in deptArr"
-              :key="`deptArr${dept}`"
-              :class="`select${dept} ${dept == selectDept ? 'selected' : ''}`"
-            >
-              {{ deptKor[dept] }}
-            </label>
-          </form>
+          <button
+            v-for="dept in deptArr"
+            :data-dept="dept"
+            :class="`deptButton ${dept === selectedOptions.dept && 'selected'}`"
+            :key="`${dept}_craft`"
+            @click="changeCraftDept"
+          >
+            {{ deptKor[dept] }}
+          </button>
         </div>
 
         <div class="selectBox_category">
-          <select class="selectBox_category_select" @change="changeCategory">
+          <select
+            class="selectBox_category_select"
+            @change="changeCraftCategory"
+          >
             <option
               v-for="category in categoryArr"
               :value="category.category"
-              :selected="category.category === selectCategory"
-              :key="`categoryArr${category.category}`"
+              :selected="category.category === selectedOptions.category"
+              :key="`categoryArr${category.category}_craft`"
             >
               {{ category.kor }}
             </option>
@@ -133,23 +125,24 @@
       return {
         deptArr: ["weapon", "equip", "item"],
         deptKor: { weapon: "무기", equip: "장비", item: "기타" },
-        categoryArr: [],
-        itemArr: [],
         areaIds: [],
         areaInfo: areaData,
         areaWithTargetItems: [],
+        selectedDept: "weapon",
+        selectedCategory: "dagger",
+        selectedGrade: "W",
+        categoryArr: [],
+        itemArr: [],
       };
     },
     components: {},
     computed: {
-      selectDept() {
-        return "";
-      },
-      selectCategory() {
-        return "";
-      },
-      selectGrade() {
-        return "";
+      selectedOptions() {
+        return {
+          dept: this.selectedDept,
+          category: this.selectedCategory,
+          grade: this.selectedGrade,
+        };
       },
       toggleModal() {
         return this.$store.state.toggleModal;
@@ -206,12 +199,8 @@
         return customRouteDrops;
       },
       targetPool() {
-        const selected = {
-          dept: this.selectDept,
-          category: this.selectCategory,
-          grade: this.selectGrade,
-        };
-        console.log(selected);
+        const selected = { ...this.selectedOptions };
+
         const targetPool = database[`${selected.dept}Data`]
           .filter((category) => category.category === selected.category)[0]
           .items.filter((item) => item.id[0] === selected.grade)
@@ -229,27 +218,27 @@
       onChangeShowItemImg() {
         this.$store.dispatch("onChangeShowItemImg");
       },
-      changeDept(e) {
-        this.selectDept = e.target.value;
-        console.log(this.selectDept);
-        this.categoryArr = database[`${this.selectDept}Data`].map((category) => ({
-          ...category,
-          kor: eng2Kor[category.category],
-        }));
-        console.log(this.categoryArr);
-        this.selectCategory = this.categoryArr[0].category;
+      changeCraftDept(e) {
+        this.selectedDept = e.target.closest("button").dataset.dept;
+        this.categoryArr = database[`${this.selectedOptions.dept}Data`].map(
+          (category) => ({
+            ...category,
+            kor: eng2Kor[category.category],
+          })
+        );
+        this.selectedCategory = this.categoryArr[0].category;
         this.itemArr = this.categoryArr.filter(
-          (category) => category.category === this.selectCategory
+          (category) => category.category === this.selectedOptions.category
         )[0].items;
       },
-      changeCategory(e) {
-        this.selectCategory = e.target.value;
+      changeCraftCategory(e) {
+        this.selectedOptions.category = e.target.value;
         this.itemArr = this.categoryArr.filter(
-          (category) => category.category === this.selectCategory
+          (category) => category.category === this.selectedOptions.category
         )[0].items;
       },
       changeGrade(e) {
-        this.selectGrade = e.target.value;
+        this.selectedOptions.grade = e.target.value;
       },
       searchItem() {
         let targetPool = JSON.parse(JSON.stringify(this.targetPool));
@@ -290,16 +279,18 @@
       },
     },
     created() {
-      this.selectDept = "weapon";
-      this.categoryArr = database[`${this.selectDept}Data`].map((category) => ({
-        ...category,
-        kor: eng2Kor[category.category],
-      }));
-      this.selectCategory = this.categoryArr[0].category;
-      this.selectGrade = "W";
-      this.itemArr = this.categoryArr.filter(
-        (category) => category.category === this.selectCategory
+      const categories = database[`${this.selectedOptions.dept}Data`].map(
+        (category) => ({
+          ...category,
+          kor: eng2Kor[category.category],
+        })
+      );
+      this.categoryArr = categories;
+
+      const items = this.categoryArr.filter(
+        (category) => category.category === this.selectedOptions.category
       )[0].items;
+      this.itemArr = items;
     },
   };
 </script>
@@ -368,15 +359,12 @@
         display: flex;
         align-items: center;
 
-        .deptRadio {
-          display: none;
-        }
-
-        label {
+        .deptButton {
           margin: 2.5px 5px;
           box-shadow: 0 0 1px 1px $color1;
           border-radius: 5px;
-          padding: 0 5px;
+          padding: 5px 10px;
+          background: none;
           cursor: pointer;
 
           &.selected {

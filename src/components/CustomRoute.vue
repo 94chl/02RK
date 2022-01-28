@@ -30,14 +30,12 @@
         </div>
       </div>
     </div>
-    <Craft></Craft>
   </div>
 </template>
 
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
   import { disassembleWD } from "~/utils/disassemble";
-  import Craft from "~/components/Craft";
 
   export default {
     data() {
@@ -49,7 +47,6 @@
     created() {
       const keys = Object.keys(areaData);
       this.areaIds = keys.slice(2).concat(keys[0]);
-
       const newAreaData = JSON.parse(JSON.stringify(areaData));
       this.areaIds.forEach((areaId) => {
         newAreaData[areaId].drop = areaData[areaId].drop.map((dropId) =>
@@ -60,7 +57,7 @@
 
       this.areaInfo = newAreaData;
     },
-    components: { Craft },
+    components: {},
     computed: {
       customRoute() {
         return this.$store.state.customRoute;

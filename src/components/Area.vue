@@ -70,6 +70,7 @@
 
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
+
   export default {
     data() {
       return {

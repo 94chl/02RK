@@ -232,16 +232,17 @@
         )[0].items;
       },
       changeCraftCategory(e) {
-        this.selectedOptions.category = e.target.value;
+        this.selectedCategory = e.target.value;
         this.itemArr = this.categoryArr.filter(
           (category) => category.category === this.selectedOptions.category
         )[0].items;
       },
       changeGrade(e) {
-        this.selectedOptions.grade = e.target.value;
+        this.selectedGrade = e.target.value;
       },
       searchItem() {
         let targetPool = JSON.parse(JSON.stringify(this.targetPool));
+        console.log(targetPool);
         const areaWithTargetItems = this.customRouteDrops
           .slice(1)
           .map((areaInfo) => {

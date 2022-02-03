@@ -65,7 +65,7 @@
               </span>
             </span>
             <span v-else class="attrValue">
-              <span v-if="option.match(/([고유])|([버프])/g)">
+              <span v-if="option.match(/([고유])|([버프])|([액티브])/g)">
                 <ul>
                   <li
                     v-for="uniqueOption in cartItem[option].detail"

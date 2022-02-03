@@ -73,7 +73,7 @@
             class="option"
           >
             <div
-              v-if="!optionName.match(/([고유])|([버프])/g)"
+              v-if="!optionName.match(/([고유])|([버프])|([액티브])/g)"
               class="optionInfo"
             >
               <div class="optionInfo_name">
@@ -94,7 +94,7 @@
             class="option"
           >
             <div
-              v-if="optionName.match(/([고유])|([버프])/g)"
+              v-if="optionName.match(/([고유])|([버프])|([액티브])/g)"
               class="optionInfo unique"
             >
               <div class="optionInfo_name">
@@ -158,7 +158,7 @@
               const itemInfo = searchById(item.id);
               Object.entries(itemInfo).forEach(([optionName, optionValue]) => {
                 if (!this.commonOptions.includes(optionName)) {
-                  if (optionName.match(/([고유])|([버프])/g)) {
+                  if (optionName.match(/([고유])|([버프])|([액티브])/g)) {
                     itemOptions[optionName] = !itemOptions[optionName]
                       ? optionValue
                       : optionValue > itemOptions[optionName]

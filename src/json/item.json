@@ -25,7 +25,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1afMzEr42nXIBNps2YqrHHBxOhjVJx7C-=w1402-h253-iv1",
         "location": ["A005", "A010", "A013"],
-        "tobe": ["BWA003", "BWE003", "GC003", "GB001"],
+        "tobe": ["BWA003", "BWE003", "PWF002", "GC003", "GB001"],
         "pickup": 1,
         "limit": 3,
         "name": "거북이 등딱지"
@@ -75,7 +75,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1iDnMnZXL9nnOSOuk2lyAA85JP3frVjl9=w1402-h253-iv1",
         "location": ["A002", "A004", "A013"],
-        "tobe": ["BWF001", "GWH001", "BWJ003", "BWK003", "BWV004", "PWT004", "BC009", "BH003", "GA010"],
+        "tobe": ["BWF001", "GWH001", "BWJ003", "BWK003", "BWV004", "PWT004", "BC009", "BH003", "GA010", "PA005"],
         "pickup": 1,
         "limit": 3,
         "name": "마패"
@@ -155,7 +155,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1vOA2PjqPslTlSXpyuVYAkjXPVi1nel6t=w1402-h253-iv1",
         "location": ["A007", "A012", "A014"],
-        "tobe": ["GWE002", "GWS001", "GM001", "GT002"],
+        "tobe": ["GWE002", "GWS001", "GM001", "GT002", "YA005"],
         "pickup": 3,
         "limit": 3,
         "name": "철광석"
@@ -185,7 +185,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1bqt8VDhij4rAfMdibLruJAfAZJri7QAC=w1402-h253-iv1",
         "location": ["A000"],
-        "tobe": ["GWE001", "GWM002", "BWN002", "BWP002", "GC001", "GC002", "GB001", "GB003", "BB001", "BS003", "GA007"],
+        "tobe": ["GWE001", "GWM002", "BWN002", "BWP002", "GC001", "GC002", "BH007", "GB001", "GB003", "BB001", "BS003"],
         "pickup": 1,
         "limit": 3,
         "name": "가죽"
@@ -211,6 +211,45 @@
         "name": "피아노선"
       },
       {
+        "id": "WM022",
+        "sort": "material",
+        "img": "https://lh3.google.com/u/0/d/1lWBfne56JfjXz3LanPj7P7mDW4ior3dI=w1402-h684-iv1",
+        "location": ["A003", "A011", "A015"],
+        "tobe": ["GWA002", "GWA003", "GWI003", "GWJ002", "GM009"],
+        "pickup": 1,
+        "limit": 2,
+        "name": "만년필"
+      }, {
+        "id": "WM023",
+        "sort": "material",
+        "img": "https://lh3.google.com/u/0/d/1XNbfILvjATUPFy2_USjX0glQcHAxoFyx=w1402-h684-iv3",
+        "location": ["A005", "A007", "A012", "A013"],
+        "tobe": ["GWC001", "GM011"],
+        "pickup": 1,
+        "limit": 2,
+        "name": "곡괭이"
+      },
+      {
+        "id": "WM024",
+        "sort": "material",
+        "img": "https://lh3.google.com/u/0/d/1qtX7AoWC1Rg36alTfTYHHh0vRlKzsGWw=w1402-h684-iv2",
+        "location": ["A000"],
+        "tobe": ["GWA001", "GWF001", "BWJ004", "YWS001", "GC004", "GH002", "GS007", "GT011", "GF004"],
+        "pickup": 1,
+        "limit": 2,
+        "name": "나뭇가지"
+      },
+      {
+        "id": "WM025",
+        "sort": "shuriken",
+        "img": "https://lh3.google.com/u/0/d/1mItGqsV8wtMfrheh8MyBpjP4snWkwUbt=w1402-h684-iv2",
+        "location": ["A008", "A009", "A015"],
+        "tobe": ["BWJ001", "GM006"],
+        "pickup": 1,
+        "limit": 1,
+        "name": "분필"
+      },
+      {
         "id": "GM001",
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1eiBDmLQtLhH9pmQvdESR4yxjmyVKDRc0=w1402-h253-iv1",
@@ -227,7 +266,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/13aZxKeXBU0d4uBBvDDA7wkZ437F4mv-y=w1402-h253-iv1",
         "location": false,
-        "tobe": ["PWE006", "BWG003", "PWL001", "BC010", "GS006", "BT007"],
+        "tobe": ["PWE006", "BWG003", "YWH002", "PWL001", "BC010", "GS006", "BT007"],
         "pickup": 2,
         "limit": 3,
         "name": "기름먹인 천",
@@ -240,7 +279,7 @@
         "img": "https://lh3.google.com/u/0/d/1eVdsfYxUF6hvhnPk3dZonL5mVCvCjXmh=w1402-h253-iv1",
         "location": false,
         "tobe": ["YWN001", "BF001", "BF013", "BF015", "BF017", "BF022"],
-        "pickup": 3,
+        "pickup": 2,
         "limit": 3,
         "name": "뜨거운 오일",
         "stack": 3,
@@ -280,7 +319,7 @@
         "limit": 3,
         "name": "백색 가루",
         "stack": 1,
-        "material": ["WWJ003", "WM002"]
+        "material": ["WM025", "WM002"]
       },
       {
         "id": "GM007",
@@ -299,7 +338,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1ttUPGNm4CEao-k3pU0FDbI57aioFxaEw=w1402-h253-iv1",
         "location": false,
-        "tobe": ["PWG002", "BWO003", "PWS003", "PH003", "PB011", "BM003", "BM006"],
+        "tobe": ["PWG002", "PWM007", "BWO003", "PWS003", "PH003", "PB011", "BM003", "BM006"],
         "pickup": 1,
         "limit": 3,
         "name": "전자 부품",
@@ -316,7 +355,7 @@
         "limit": 3,
         "name": "정교한 도면",
         "stack": 1,
-        "material": ["WM015", "WWA002"]
+        "material": ["WM015", "WM022"]
       },
       {
         "id": "GM010",
@@ -340,7 +379,7 @@
         "limit": 3,
         "name": "황금",
         "stack": 1,
-        "material": ["WM013", "WWC001"]
+        "material": ["WM013", "WM023"]
       },
       {
         "id": "GM012",
@@ -383,7 +422,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1Rc8Z1kNYiHq7AxFojR6Eriog7wSL1tXL=w1402-h253-iv1",
         "location": false,
-        "tobe": ["PWD002", "PWK006", "YWO001", "PWP004", "PWQ003", "PWV005", "PB009", "PB010", "PA003", "PA005", "YA003", "PF005"],
+        "tobe": ["PWD002", "YWH002", "PWK006", "YWO001", "PWP004", "PWQ003", "PWV005", "PB009", "PB010", "PA003", "PA005", "YA003", "YA004", "PF005"],
         "pickup": 1,
         "limit": 3,
         "name": "문스톤",
@@ -395,7 +434,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/12P6lW3SknqwHbBpQ-5Ea9BGt0h6jI7zp=w1402-h253-iv1",
         "location": false,
-        "tobe": ["BWJ005", "PWJ005", "BA008"],
+        "tobe": ["BWJ005", "PWJ005", "PB014", "BA008"],
         "pickup": 1,
         "limit": 3,
         "name": "독약",
@@ -475,7 +514,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1cjFqIxouRXxw6MEKh8SQ3HaLUz0lB5sO=w1402-h253-iv1",
         "location": ["A007", "A012", "A014", "A006"],
-        "tobe": ["YWD002", "YWW005", "PA001", "PA002", "PM002", "PF003"],
+        "tobe": ["YWD002", "YWW005", "PA001", "PA002", "PA005", "PM002", "PF003"],
         "pickup": 1,
         "limit": 3,
         "name": "생명의 나무"
@@ -495,7 +534,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1CCjIqDTFgfJOPf4U8Tp9b_UQyvlND9HH=w1402-h253-iv1",
         "location": false,
-        "tobe": ["YWA001", "YWK02", "YWM001", "YWJ001", "YWL001", "YWI001", "YWG001", "YWF001", "YWN002", "YWD001", "YWW003", "YWW006", "YWW009", "YH002", "YC004", "YC006", "YS003", "YB003", "YB005", "YA001", "YT001"],
+        "tobe": ["YWA001", "YWK02", "YWM001", "YWJ001", "YWL001", "YWI001", "YWG001", "YWF001", "YWN002", "YWD001", "YWW003", "YWW006", "YWW009", "YH002", "YC004", "YC006", "YS003", "YB003", "YB005", "YA001", "YA005", "YT001"],
         "pickup": 1,
         "limit": 3,
         "name": "포스 코어",
@@ -590,7 +629,7 @@
         "img": "https://lh3.google.com/u/0/d/1yqrOB76-N_QELp5k7Q5CO3SHtwZiSBwy=w1402-h253-iv2",
         "location": false,
         "tobe": ["BT004"],
-        "pickup": 2,
+        "pickup": 1,
         "limit": 5,
         "name": "부비트랩",
         "stack": 1,
@@ -666,7 +705,7 @@
         "limit": 6,
         "name": "위장 카메라(나타폰 전용)",
         "stack": 3,
-        "material": ["WT001", "WWG002"]
+        "material": ["WT001", "WM024"]
       },
       {
         "id": "BT001",
@@ -698,7 +737,7 @@
         "img": "https://lh3.google.com/u/0/d/1xTOFSHJaQ-Rz6mUXj983MGD8C7_fLvXX=w1402-h253-iv2",
         "location": false,
         "tobe": ["PT003"],
-        "pickup": 2,
+        "pickup": 1,
         "limit": 5,
         "name": "펜듈럼 도끼",
         "stack": 1,
@@ -722,7 +761,7 @@
         "img": "https://lh3.google.com/u/0/d/1u0prigdv1deYIvs0jK_XU0KPSVZnxfMd=w1402-h253-iv2",
         "location": false,
         "tobe": ["PWM005"],
-        "pickup": 2,
+        "pickup": 1,
         "limit": 5,
         "name": "EMP 드론",
         "stack": 1,
@@ -782,7 +821,7 @@
         "img": "https://lh3.google.com/u/0/d/1j-sGnQ6stha_tiJ8-BnO1GBZVp1aXyU0=w1402-h253-iv2",
         "location": false,
         "tobe": false,
-        "pickup": 2,
+        "pickup": 1,
         "limit": 5,
         "name": "더블 기요틴",
         "stack": 1,
@@ -794,7 +833,7 @@
         "img": "https://lh3.google.com/u/0/d/1LFeCKAujXuD72wZ-9zabJcxlmA7v4WCu=w1402-h253-iv2",
         "location": false,
         "tobe": false,
-        "pickup": 2,
+        "pickup": 1,
         "limit": 5,
         "name": "크레모어",
         "stack": 1,
@@ -984,7 +1023,7 @@
         "limit": 5,
         "name": "버터",
         "stack": 1,
-        "material": ["WD007", "WWG002"]
+        "material": ["WD007", "WM024"]
       },
       {
         "id": "GF006",

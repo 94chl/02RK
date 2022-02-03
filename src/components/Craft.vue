@@ -242,7 +242,6 @@
       },
       searchItem() {
         let targetPool = JSON.parse(JSON.stringify(this.targetPool));
-        console.log(targetPool);
         const areaWithTargetItems = this.customRouteDrops
           .slice(1)
           .map((areaInfo) => {

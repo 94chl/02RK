@@ -46,6 +46,7 @@
 
 <script>
   import { areaData } from "~/utils/itemTable.js";
+  import { disassembleWD } from "~/utils/disassemble.js";
 
   export default {
     data() {
@@ -78,7 +79,7 @@
       },
       findRecommendPath() {
         const needDropsInfo = {
-          needDrops: this.dropMats,
+          needDrops: Object.keys(disassembleWD([...this.dropMats]).dropMatId),
           total: true,
         };
         try {

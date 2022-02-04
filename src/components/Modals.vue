@@ -1,10 +1,10 @@
 <template>
   <div class="modals">
+    <TotalPathFinder></TotalPathFinder>
     <Bag></Bag>
     <Status></Status>
-    <Map></Map>
     <Craft></Craft>
-    <TotalPathFinder></TotalPathFinder>
+    <Map></Map>
   </div>
 </template>
 

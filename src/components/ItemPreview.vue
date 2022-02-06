@@ -29,10 +29,19 @@
         <li
           v-for="option in cartItemOptions"
           :key="`cartItemInfo${option}`"
-          :class="`itemOption ${option}Info`"
+          :class="`itemOption ${option}Info ${
+            option.match(/(\[고유\])|(\[버프\])|(\[액티브\])/g) &&
+            'uniqueOption'
+          }`"
         >
           <div>
-            <span class="attrKey">
+            <span
+              v-if="option.match(/(\[고유\])|(\[버프\])|(\[액티브\])/g)"
+              class="attrKey"
+            >
+              {{ option }}
+            </span>
+            <span v-else class="attrKey">
               {{
                 `${
                   korOption[option]
@@ -65,17 +74,15 @@
               </span>
             </span>
             <span v-else class="attrValue">
-              <span v-if="option.match(/([고유])|([버프])|([액티브])/g)">
-                <ul>
-                  <li
-                    v-for="uniqueOption in cartItem[option].detail"
-                    :key="cartItem[option] + uniqueOption"
-                    class="uniqueOption"
-                  >
-                    {{ ` ${uniqueOption}` }}
-                  </li>
-                </ul>
-              </span>
+              <ul v-if="option.match(/([고유])|([버프])|([액티브])/g)">
+                <li
+                  v-for="uniqueOption in cartItem[option].detail"
+                  :key="cartItem[option] + uniqueOption"
+                  class="optionDetail"
+                >
+                  {{ ` ${uniqueOption}` }}
+                </li>
+              </ul>
               <span v-else>
                 {{
                   option.match(/[%]/g)
@@ -317,9 +324,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         img {
           height: fit-content;
         }
+
         .setEquipBtn {
           @include fasIcon(30px);
           border: none;
@@ -341,7 +350,26 @@
         display: flex;
         align-items: center;
         border-radius: 5px;
+
+        &.uniqueOption > div {
+          flex-direction: column;
+          align-items: flex-start;
+
+          .attrValue {
+            ul {
+              list-style: "-" inside;
+
+              .optionDetail {
+                text-indent: 10px;
+                margin: 5px 0;
+                word-break: keep-all;
+              }
+            }
+          }
+        }
+
         > div {
+          width: 100%;
           display: flex;
           column-gap: 5px;
           text-indent: 0;
@@ -350,13 +378,6 @@
           .attrKey {
             display: block;
             min-width: max-content;
-          }
-
-          .attrValue {
-            .uniqueOption {
-              display: block;
-              word-break: keep-all;
-            }
           }
         }
 

@@ -1,114 +1,127 @@
 <template>
-  <div :class="`craft ${toggleModal.craft ? 'active' : 'hide'}`">
-    <div class="craft_select">
-      <div class="tabName">
-        <h3>제작 가능 아이템</h3>
-        <div class="buttonBox">
-          <div>
-            <button
-              :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
-              @click="onChangeShowItemImg"
-            >
-              <span>
-                <i class="fas fa-font"></i>
-              </span>
-            </button>
-            <button
-              :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
-              @click="onChangeShowItemImg"
-            >
-              <span>
-                <i class="far fa-images"></i>
-              </span>
-            </button>
-          </div>
-          <button @click="toggleCraftModal">
-            <span>
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
-        </div>
-      </div>
-      <div class="selectBox">
-        <div class="selectBox_dept">
-          <button
-            v-for="dept in deptArr"
-            :data-dept="dept"
-            :class="`deptButton ${dept === selectedOptions.dept && 'selected'}`"
-            :key="`${dept}_craft`"
-            @click="changeCraftDept"
-          >
-            {{ deptKor[dept] }}
-          </button>
-        </div>
-
-        <div class="selectBox_category">
-          <select
-            class="selectBox_category_select"
-            @change="changeCraftCategory"
-          >
-            <option
-              v-for="category in categoryArr"
-              :value="category.category"
-              :selected="category.category === selectedOptions.category"
-              :key="`categoryArr${category.category}_craft`"
-            >
-              {{ category.kor }}
-            </option>
-          </select>
-        </div>
-
-        <div class="selectBox_grade">
-          <select class="selectBox_grade_select" @change="changeGrade">
-            <option value="W">일반</option>
-            <option value="G">고급</option>
-            <option value="B">희귀</option>
-            <option value="P">영웅</option>
-            <option value="Y">전설</option>
-          </select>
-        </div>
-
-        <div class="selectBox_searchItem">
-          <button class="selectBox_searchItem_btn" @click="searchItem">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
+  <div
+    :class="`craft ${
+      toggleModal.craft ? (minimize ? 'minimize' : 'active') : ''
+    }`"
+  >
+    <div v-if="toggleModal.craft && minimize">
+      <button @click="maximizeModal">
+        <i class="fas fa-angle-double-down"></i>
+      </button>
     </div>
-
-    <div class="craft_route">
-      <h3 class="tabName">사용자 루트</h3>
-      <div class="routesBox">
-        <div
-          v-for="(area, index) in customRoute"
-          :key="`route${index}`"
-          class="area"
-        >
-          <div class="area_name">
-            <div>{{ areaInfo[area].name }}</div>
-          </div>
-          <div v-if="areaWithTargetItems[index]" class="area_items">
-            <ul>
-              <li
-                v-for="item in areaWithTargetItems[index].targetItems"
-                :key="`canMake${item.id}`"
-                :data-itemid="item.id"
+    <div v-else-if="toggleModal.craft && !minimize">
+      <div class="craft_select">
+        <div class="tabName">
+          <h3>제작 가능 아이템</h3>
+          <div class="buttonBox">
+            <div>
+              <button
+                :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
+                @click="onChangeShowItemImg"
               >
-                <button
-                  :class="`showItemInfoBtn value${item.id[0]}`"
-                  @click="showItemInfo"
+                <span>
+                  <i class="fas fa-font"></i>
+                </span>
+              </button>
+              <button
+                :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
+                @click="onChangeShowItemImg"
+              >
+                <span>
+                  <i class="far fa-images"></i>
+                </span>
+              </button>
+            </div>
+            <button @click="toggleCraftModal">
+              <span>
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="selectBox">
+          <div class="selectBox_dept">
+            <button
+              v-for="dept in deptArr"
+              :data-dept="dept"
+              :class="`deptButton ${
+                dept === selectedOptions.dept && 'selected'
+              }`"
+              :key="`${dept}_craft`"
+              @click="changeCraftDept"
+            >
+              {{ deptKor[dept] }}
+            </button>
+          </div>
+
+          <div class="selectBox_category">
+            <select
+              class="selectBox_category_select"
+              @change="changeCraftCategory"
+            >
+              <option
+                v-for="category in categoryArr"
+                :value="category.category"
+                :selected="category.category === selectedOptions.category"
+                :key="`categoryArr${category.category}_craft`"
+              >
+                {{ category.kor }}
+              </option>
+            </select>
+          </div>
+
+          <div class="selectBox_grade">
+            <select class="selectBox_grade_select" @change="changeGrade">
+              <option value="W">일반</option>
+              <option value="G">고급</option>
+              <option value="B">희귀</option>
+              <option value="P">영웅</option>
+              <option value="Y">전설</option>
+            </select>
+          </div>
+
+          <div class="selectBox_searchItem">
+            <button class="selectBox_searchItem_btn" @click="searchItem">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="craft_route">
+        <h3 class="tabName">사용자 루트</h3>
+        <div class="routesBox">
+          <div
+            v-for="(area, index) in customRoute"
+            :key="`route${index}`"
+            class="area"
+          >
+            <div class="area_name">
+              <div>{{ areaInfo[area].name }}</div>
+            </div>
+            <div v-if="areaWithTargetItems[index]" class="area_items">
+              <ul>
+                <li
+                  v-for="item in areaWithTargetItems[index].targetItems"
+                  :key="`canMake${item.id}`"
+                  :data-itemid="item.id"
                 >
-                  <span :class="showItemImg ? 'hide' : ''">{{
-                    item.name
-                  }}</span>
-                  <img
-                    :class="showItemImg ? '' : 'hide'"
-                    :src="item.img"
-                    :alt="`${item.name}_img`"
-                  />
-                </button>
-              </li>
-            </ul>
+                  <button
+                    :class="`showItemInfoBtn value${item.id[0]}`"
+                    @click="showItemInfo"
+                  >
+                    <span :class="showItemImg ? 'hide' : ''">{{
+                      item.name
+                    }}</span>
+                    <img
+                      :class="showItemImg ? '' : 'hide'"
+                      :src="item.img"
+                      :alt="`${item.name}_img`"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -123,6 +136,7 @@
   export default {
     data() {
       return {
+        minimize: false,
         deptArr: ["weapon", "equip", "item"],
         deptKor: { weapon: "무기", equip: "장비", item: "기타" },
         areaIds: [],
@@ -145,6 +159,7 @@
         };
       },
       toggleModal() {
+        if (this.$store.state.toggleModal) this.minimize = false;
         return this.$store.state.toggleModal;
       },
       showItemImg() {
@@ -272,10 +287,15 @@
       },
       toggleCraftModal() {
         this.$store.dispatch("onToggleModal", "craft");
+        this.minimize = false;
       },
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
         this.$store.dispatch("setCart", selectedItem);
+        this.minimize = true;
+      },
+      maximizeModal() {
+        this.minimize = false;
       },
     },
     created() {
@@ -297,13 +317,32 @@
 
 <style lang="scss" scoped>
   .craft {
-    border-radius: 5px;
-    border: 2px solid $color5;
-    box-sizing: border-box;
-    background: $color2;
+    transition: min-height 0.5s, max-height 0.5s;
 
     &.active {
       @include active();
+      border-radius: 5px;
+      border: 2px solid $color5;
+      box-sizing: border-box;
+      background: $color2;
+      min-height: 300px;
+      max-height: 100vh;
+    }
+
+    &.minimize {
+      @include active();
+      border-radius: 5px;
+      border: 2px solid $color5;
+      box-sizing: border-box;
+      background: $color2;
+      min-height: 30px;
+      max-height: 30px;
+
+      button {
+        background: none;
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .tabName {

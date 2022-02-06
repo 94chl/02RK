@@ -5,23 +5,44 @@
         <h3>장비</h3>
         <div class="buttonBox">
           <div>
-            <button
-              :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
-              @click="onChangeShowItemImg"
-            >
-              <span>
-                <i class="fas fa-font"></i>
-              </span>
-            </button>
-            <button
-              :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
-              @click="onChangeShowItemImg"
-            >
-              <span>
-                <i class="far fa-images"></i>
-              </span>
-            </button>
+            <div>
+              <button
+                :class="`changeStatusDataBtn ${
+                  statusData === 'targetItems' ? 'selected' : ''
+                }`"
+                @click="onChangeStatusData"
+              >
+                <span> <i class="fas fa-shopping-cart"></i> </span>
+              </button>
+              <button
+                :class="`changeStatusDataBtn ${
+                  statusData === 'bagItems' ? 'selected' : ''
+                }`"
+                @click="onChangeStatusData"
+              >
+                <span> <i class="fas fa-suitcase"></i> </span>
+              </button>
+            </div>
+            <div v-if="statusData === 'bagItems'">
+              <button
+                :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
+                @click="onChangeShowItemImg"
+              >
+                <span>
+                  <i class="fas fa-font"></i>
+                </span>
+              </button>
+              <button
+                :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
+                @click="onChangeShowItemImg"
+              >
+                <span>
+                  <i class="far fa-images"></i>
+                </span>
+              </button>
+            </div>
           </div>
+
           <button @click="toggleStatusModal">
             <span>
               <i class="fas fa-times"></i>
@@ -29,27 +50,43 @@
           </button>
         </div>
       </div>
+
       <div>
-        <ul>
+        <ul v-if="statusData === 'targetItems'" class="targetItems">
           <li
-            v-for="pocket in Object.keys(equip)"
+            class="itemInfo"
+            v-for="(item, index) in targetItems"
+            :key="`target${item.id}`"
+            :data-index="index"
+            :data-itemid="item.id"
+          >
+            <button
+              :class="`showItemInfoBtn value${item.id[0]}`"
+              @click="showItemInfo"
+            >
+              <img :src="item.img" :alt="item.name" class="itemInfo_img" />
+            </button>
+            <div>{{ item.name }}</div>
+          </li>
+        </ul>
+
+        <ul v-if="statusData === 'bagItems'" class="bagItems">
+          <li
+            v-for="pocket in Object.keys(bagItems)"
             :key="pocket"
             :data-bag="pocket"
-            :data-item="`${equip[pocket].id ? equip[pocket].id : ''}`"
+            :data-item="`${bagItems[pocket].id ? bagItems[pocket].id : ''}`"
           >
-            <span v-if="equip[pocket].id">
-              <div :class="`itemInfo value${equip[pocket].id[0]}`">
+            <span v-if="bagItems[pocket].id">
+              <div :class="`itemInfo value${bagItems[pocket].id[0]}`">
                 <img
-                  :src="equip[pocket].img"
-                  :alt="`${equip[pocket].name}_img`"
-                  :title="`${equip[pocket].name}_img`"
+                  :src="bagItems[pocket].img"
+                  :alt="`${bagItems[pocket].name}_img`"
+                  :title="`${bagItems[pocket].name}_img`"
                   v-if="showItemImg"
                 />
-                <span v-else>{{ equip[pocket].name }}</span>
+                <span v-else>{{ bagItems[pocket].name }}</span>
               </div>
-              <button class="removeBtn" @click="dropItem">
-                <i class="fas fa-times"></i>
-              </button>
             </span>
             <span v-else>
               <div class="empty">
@@ -138,6 +175,7 @@
           "name",
           "reload",
         ],
+        statusData: "targetItems",
       };
     },
     components: {},
@@ -148,11 +186,16 @@
       showItemImg() {
         return this.$store.state.showItemImg;
       },
-      equip() {
+      targetItems() {
+        return this.$store.state.targetItems;
+      },
+      bagItems() {
         return this.$store.state.bagEquip;
       },
       equipOptions() {
-        const equipOptions = Object.values(this.$store.state.bagEquip).reduce(
+        const equipData =
+          this.statusData === "targetItems" ? this.targetItems : this.bagItems;
+        const equipOptions = Object.values(equipData).reduce(
           (itemOptions, item) => {
             if (item.id) {
               const itemInfo = searchById(item.id);
@@ -183,14 +226,18 @@
       onChangeShowItemImg() {
         this.$store.dispatch("onChangeShowItemImg");
       },
-      dropItem(e) {
-        if (!window.confirm("버리시겠습니까?")) return;
-
-        this.$store.dispatch("dropItem", e.target.closest("li").dataset.bag);
-        this.$store.dispatch("updateAssemblable");
-      },
       toggleStatusModal() {
         this.$store.dispatch("onToggleModal", "status");
+      },
+      onChangeStatusData() {
+        const nextStatusData = ["targetItems", "bagItems"].filter(
+          (dataType) => this.statusData !== dataType
+        )[0];
+        this.statusData = nextStatusData;
+      },
+      showItemInfo(e) {
+        const selectedItem = searchById(e.target.closest("li").dataset.itemid);
+        this.$store.dispatch("setCart", selectedItem);
       },
     },
   };
@@ -232,6 +279,11 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          > div {
+            display: flex;
+          }
+
           button {
             background: none;
             color: $color3;
@@ -250,7 +302,34 @@
           }
         }
       }
-      ul {
+
+      .targetItems {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        @media screen and (max-width: 720px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .itemInfo {
+          background: #fff;
+          border-radius: 5px;
+          margin: 5px;
+
+          .showItemInfoBtn {
+            border-radius: 5px;
+            &:hover {
+              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+            }
+          }
+
+          div {
+            padding: 5px;
+            text-align: center;
+          }
+        }
+      }
+
+      .bagItems {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -283,17 +362,6 @@
             font-size: 0.7em;
             padding: 5px;
           }
-          .removeBtn {
-            background: none;
-            @include fasIcon(25px);
-            position: absolute;
-            top: 0;
-            right: 0;
-            color: #ff0000;
-            &:hover {
-              font-weight: 700;
-            }
-          }
         }
       }
     }
@@ -320,7 +388,12 @@
               word-break: keep-all;
 
               .uniqueOptions {
-                list-style: "\2981"inside;
+                list-style: "-" inside;
+
+                li {
+                  text-indent: 10px;
+                  margin: 5px 0;
+                }
               }
             }
           }

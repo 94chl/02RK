@@ -173,6 +173,9 @@ const store = createStore({
     onToggleModal(state, modalState) {
       state.toggleModal = { ...state.toggleModal, ...modalState };
     },
+    showModal(state, modalState) {
+      state.toggleModal = { ...state.toggleModal, ...modalState };
+    },
     setRecommendRoutes(state, routesInfo) {
       const { routes, total } = routesInfo;
       total
@@ -476,6 +479,10 @@ const store = createStore({
     onToggleModal({ commit, state }, modal) {
       const modalState = { [modal]: !state.toggleModal[modal] };
       commit("onToggleModal", modalState);
+    },
+    showModal({ commit }, modal) {
+      const modalState = { [modal]: true };
+      commit("showModal", modalState);
     },
     findRecommendPath({ commit, state }, needDropsInfo) {
       const { needDrops, total } = needDropsInfo;

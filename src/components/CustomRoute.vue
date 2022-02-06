@@ -150,7 +150,7 @@
           this.$store.dispatch("removeRoute", []);
       },
       toggleCraftModal() {
-        this.$store.dispatch("onToggleModal", "craft");
+        this.$store.dispatch("showModal", "craft");
       },
     },
   };

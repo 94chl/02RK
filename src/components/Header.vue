@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header_logo">
-      <img src="../img/ER_Logo_White.png" alt="logo" />
+      <img src="../img/ER_Logo_White.webp" alt="logo" />
     </div>
     <div class="header_title">02RK</div>
     <div class="header_btns" data-modal="bag">

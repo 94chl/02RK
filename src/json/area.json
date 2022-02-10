@@ -1,7 +1,7 @@
 {
   "A000": {
     "name": "공통",
-    "drop": ["WF008", "BF002", "WM024", "WM019", "WM002", "PM001", "WWW001", "WWW002"],
+    "drop": ["WF008", "BF027", "WM024", "WM019", "WM002", "PM001", "WWW001", "WWW002"],
     "resurrection": false,
     "hyperloop": false
   },

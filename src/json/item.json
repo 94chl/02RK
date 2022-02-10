@@ -115,7 +115,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1uQzW6uu24ZSCT4UBWsSVo6ShEUXjsRtJ=w1402-h253-iv1",
         "location": ["A003", "A004", "A014"],
-        "tobe": ["GC006", "GC009", "GS005", "GA004"],
+        "tobe": ["GC006", "GC009", "BH007", "GS005", "GA004"],
         "pickup": 1,
         "limit": 3,
         "name": "옷감"
@@ -185,7 +185,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1bqt8VDhij4rAfMdibLruJAfAZJri7QAC=w1402-h253-iv1",
         "location": ["A000"],
-        "tobe": ["GWE001", "GWM002", "BWN002", "BWP002", "GC001", "GC002", "BH007", "GB001", "GB003", "BB001", "BS003"],
+        "tobe": ["GWE001", "GWM002", "BWN002", "BWP002", "GC001", "GC002", "GB001", "GB003", "BB001", "BS003"],
         "pickup": 1,
         "limit": 3,
         "name": "가죽"
@@ -266,7 +266,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/13aZxKeXBU0d4uBBvDDA7wkZ437F4mv-y=w1402-h253-iv1",
         "location": false,
-        "tobe": ["PWE006", "BWG003", "YWH002", "PWL001", "BC010", "GS006", "BT007"],
+        "tobe": ["PWE006", "BWG003", "PWH005", "PWL001", "BC010", "GS006", "BT007"],
         "pickup": 2,
         "limit": 3,
         "name": "기름먹인 천",
@@ -387,7 +387,7 @@
         "img": "https://lh3.google.com/u/0/d/1XQSAN2tsDuLQdGztsfXkyUybufXeyQVq=w1402-h253-iv1",
         "location": false,
         "tobe": ["BWK005", "PWP001", "BF003", "BF004", "BF010", "BF018"],
-        "pickup": 3,
+        "pickup": 2,
         "limit": 3,
         "name": "달궈진 돌멩이",
         "stack": 3,
@@ -422,7 +422,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1Rc8Z1kNYiHq7AxFojR6Eriog7wSL1tXL=w1402-h253-iv1",
         "location": false,
-        "tobe": ["PWD002", "YWH002", "PWK006", "YWO001", "PWP004", "PWQ003", "PWV005", "PB009", "PB010", "PA003", "PA005", "YA003", "YA004", "PF005"],
+        "tobe": ["PWD002", "PWH005", "PWK006", "YWO001", "PWP004", "PWQ003", "PWV005", "PB009", "PB010", "PA003", "PA005", "YA003", "YA004", "PF005"],
         "pickup": 1,
         "limit": 3,
         "name": "문스톤",
@@ -810,7 +810,7 @@
         "img": "https://lh3.google.com/u/0/d/12EX86pARkU-P5J7dQImP9394_TNjj1eh=w1402-h253-iv2",
         "location": false,
         "tobe": false,
-        "pickup": 3,
+        "pickup": 2,
         "limit": 5,
         "name": "C-4",
         "stack": 1,
@@ -858,7 +858,7 @@
         "img": "https://lh3.google.com/u/0/d/1ikq6Nw7Efz4VY-JMGyLMUVpyj3peu1aU=w1402-h253-iv2",
         "location": false,
         "tobe": false,
-        "pickup": 3,
+        "pickup": 2,
         "limit": 5,
         "name": "스마트 폭탄",
         "stack": 1,
@@ -875,7 +875,7 @@
         "location": ["A002", "A004", "A005"],
         "tobe": ["BF001", "BF003", "BF012", "BF025"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "감자"
       },
       {
@@ -885,7 +885,7 @@
         "location": ["A010", "A011", "A013"],
         "tobe": ["GF001", "GF002", "GF017", "BF009", "BF010", "BF015"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "대구"
       },
       {
@@ -895,7 +895,7 @@
         "location": ["A005", "A007", "A012"],
         "tobe": ["GF006", "BF004"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "붕어"
       },
       {
@@ -905,7 +905,7 @@
         "location": ["A006", "A011", "A014"],
         "tobe": ["GF018", "GD002", "GD007"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "레몬"
       },
       {
@@ -915,7 +915,7 @@
         "location": ["A002", "A004", "A007"],
         "tobe": ["GF003", "GF012", "GF020", "BF008"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "마늘"
       },
       {
@@ -925,7 +925,7 @@
         "location": ["A009", "A006", "A015"],
         "tobe": ["GF003", "GF006", "GF008", "GF013", "GF014", "GF018", "GF021", "BF011", "BF024"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "빵"
       },
       {
@@ -935,7 +935,7 @@
         "location": ["A000"],
         "tobe": ["GF012", "GF014", "BF018", "BF022"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "고기"
       },
       {
@@ -945,7 +945,7 @@
         "location": ["A007", "A012"],
         "tobe": ["GF017", "GF021", "BF014", "BF017", "BF026"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "달걀"
       },
       {
@@ -955,7 +955,7 @@
         "location": ["A004", "A008", "A010"],
         "tobe": ["BF005", "BF007", "BF013"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "생라면"
       },
       {
@@ -965,7 +965,7 @@
         "location": ["A004", "A005", "A012"],
         "tobe": ["GF010", "BF023", "BD008"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "약초"
       },
       {
@@ -975,7 +975,7 @@
         "location": ["A003", "A011", "A016"],
         "tobe": ["GF008", "GF024", "BF019", "GD013", "BD006"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "초콜렛"
       },
       {
@@ -985,7 +985,7 @@
         "location": false,
         "tobe": false,
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "꿀 바른 대구살",
         "stack": 1,
         "material": ["WF002", "WD001"]
@@ -997,7 +997,7 @@
         "location": false,
         "tobe": false,
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "대구 간 통조림",
         "stack": 1,
         "material": ["WF002", "WM017"]
@@ -1009,7 +1009,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "마늘빵",
         "stack": 1,
         "material": ["WF007", "WF005"]
@@ -1021,7 +1021,7 @@
         "location": false,
         "tobe": ["BF012", "BF019", "BF025"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "버터",
         "stack": 1,
         "material": ["WD007", "WM024"]
@@ -1033,7 +1033,7 @@
         "location": false,
         "tobe": false,
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "붕어빵",
         "stack": 1,
         "material": ["WF007", "WF003"]
@@ -1045,7 +1045,7 @@
         "location": false,
         "tobe": ["BF020"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "초코파이",
         "stack": 1,
         "material": ["WF007", "WF012"]
@@ -1057,7 +1057,7 @@
         "location": false,
         "tobe": ["BF021"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "난초",
         "stack": 1,
         "material": ["WF011", "WA002"]
@@ -1069,7 +1069,7 @@
         "location": false,
         "tobe": false,
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "마늘 베이컨 말이",
         "stack": 1,
         "material": ["WF005", "WF008"]
@@ -1081,7 +1081,7 @@
         "location": false,
         "tobe": false,
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "번",
         "stack": 1,
         "material": ["WF007", "WD005"]
@@ -1093,7 +1093,7 @@
         "location": false,
         "tobe": ["PF002"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "햄버거",
         "stack": 1,
         "material": ["WF007", "WF008"]
@@ -1105,7 +1105,7 @@
         "location": false,
         "tobe": false,
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "달걀 생선 필레",
         "stack": 1,
         "material": ["WF002", "WF009"]
@@ -1117,7 +1117,7 @@
         "location": false,
         "tobe": ["BF026"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "시트러스 케이크",
         "stack": 1,
         "material": ["WF007", "WF004"]
@@ -1129,7 +1129,7 @@
         "location": false,
         "tobe": false,
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "마늘 꿀절임",
         "stack": 1,
         "material": ["WF005", "WD001"]
@@ -1141,7 +1141,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "계란빵",
         "stack": 1,
         "material": ["WF009", "WF007"]
@@ -1153,7 +1153,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "초코 아이스크림",
         "stack": 1,
         "material": ["WD003", "WF012"]
@@ -1165,20 +1165,10 @@
         "location": false,
         "tobe": ["PF001", "PF002"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "감자튀김",
         "stack": 1,
         "material": ["WF001", "GM003"]
-      },
-      {
-        "id": "BF002",
-        "sort": "food",
-        "img": "https://lh3.google.com/u/0/d/1Mv-NytQKTCprI0cg4Mhx25BRFTncUeO2=w1402-h253-iv1",
-        "location": ["A000"],
-        "tobe": false,
-        "pickup": 1,
-        "limit": 5,
-        "name": "구급상자"
       },
       {
         "id": "BF003",
@@ -1186,8 +1176,8 @@
         "img": "https://lh3.google.com/u/0/d/1w-60YlcPyi4IMdXVqQc5s_pZ1_svWfZX=w1402-h253-iv1",
         "location": false,
         "tobe": false,
-        "pickup": 2,
-        "limit": 5,
+        "pickup": 3,
+        "limit": 6,
         "name": "구운 감자",
         "stack": 1,
         "material": ["WF001", "GM012"]
@@ -1198,8 +1188,8 @@
         "img": "https://lh3.google.com/u/0/d/1wU8LFk_k-iSzXEl_V39tujkIEvklLOia=w1402-h253-iv1",
         "location": false,
         "tobe": false,
-        "pickup": 1,
-        "limit": 5,
+        "pickup": 3,
+        "limit": 6,
         "name": "구운 붕어",
         "stack": 1,
         "material": ["WF003", "GM012"]
@@ -1210,8 +1200,8 @@
         "img": "https://lh3.google.com/u/0/d/1yvfR4c7uZR1EgJbEV9WFW1yiSiFA6MjG=w1402-h684-iv2",
         "location": false,
         "tobe": false,
-        "pickup": 2,
-        "limit": 5,
+        "pickup": 3,
+        "limit": 6,
         "name": "냉면",
         "stack": 1,
         "material": ["WF010", "GD015"]
@@ -1223,7 +1213,7 @@
         "location": false,
         "tobe": ["BF008"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "뜨거운 라면",
         "stack": 1,
         "material": ["WF010", "GD001"]
@@ -1235,7 +1225,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "마늘라면",
         "stack": 1,
         "material": ["BF007", "WF005"]
@@ -1247,7 +1237,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "매운탕",
         "stack": 1,
         "material": ["WF002", "GD001"]
@@ -1271,7 +1261,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "모카빵",
         "stack": 1,
         "material": ["GD008", "WF007"]
@@ -1283,7 +1273,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "버터 감자구이",
         "stack": 1,
         "material": ["GF004", "WF001"]
@@ -1295,7 +1285,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "볶음라면",
         "stack": 1,
         "material": ["WF010", "GM003"]
@@ -1306,8 +1296,8 @@
         "img": "https://lh3.google.com/u/0/d/14eAq8hh4AtjiaWSfa2T2pjNGSP_Dh7ck=w1402-h253-iv1",
         "location": false,
         "tobe": false,
-        "pickup": 2,
-        "limit": 5,
+        "pickup": 3,
+        "limit": 6,
         "name": "삶은 달걀",
         "stack": 1,
         "material": ["WF009", "GD001"]
@@ -1319,7 +1309,7 @@
         "location": false,
         "tobe": ["PF001"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "생선까스",
         "stack": 1,
         "material": ["WF002", "GM003"]
@@ -1330,8 +1320,8 @@
         "img": "https://lh3.google.com/u/0/d/1-SaIlUJ9PeDat052KB-JpVA07bL2q9sk=w1402-h253-iv1",
         "location": false,
         "tobe": false,
-        "pickup": 1,
-        "limit": 5,
+        "pickup": 2,
+        "limit": 6,
         "name": "스크램블 에그",
         "stack": 1,
         "material": ["WF009", "GM003"]
@@ -1355,7 +1345,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "초코칩 쿠키",
         "stack": 1,
         "material": ["WF012", "GF004"]
@@ -1367,7 +1357,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "초코파이 상자",
         "stack": 1,
         "material": ["GF008", "WA006"]
@@ -1379,7 +1369,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "힐링 포션",
         "stack": 1,
         "material": ["GF010", "WM001"]
@@ -1390,8 +1380,8 @@
         "img": "https://lh3.google.com/u/0/d/13lF133lJP5Y01mzDWYNNFCkpHobbvuls=w1402-h253-iv1",
         "location": false,
         "tobe": false,
-        "pickup": 1,
-        "limit": 5,
+        "pickup": 2,
+        "limit": 6,
         "name": "후라이드 치킨",
         "stack": 1,
         "material": ["WF008", "GM003"]
@@ -1402,8 +1392,8 @@
         "img": "https://lh3.google.com/u/0/d/1lryPW1B6PqlwgILYJhHQn-bPH1Lxca85=w1402-h253-iv1",
         "location": false,
         "tobe": false,
-        "pickup": 2,
-        "limit": 5,
+        "pickup": 3,
+        "limit": 6,
         "name": "탕약",
         "stack": 1,
         "material": ["WF011", "GD001"]
@@ -1415,7 +1405,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "술빵",
         "stack": 1,
         "material": ["GD005", "WF007"]
@@ -1427,7 +1417,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "허니버터",
         "stack": 1,
         "material": ["GF004", "WF001"]
@@ -1439,10 +1429,20 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "생일 케이크",
         "stack": 1,
         "material": ["GF018", "WF009"]
+      },
+      {
+        "id": "BF027",
+        "sort": "food",
+        "img": "https://lh3.google.com/u/0/d/1Mv-NytQKTCprI0cg4Mhx25BRFTncUeO2=w1402-h253-iv1",
+        "location": ["A000"],
+        "tobe": false,
+        "pickup": 1,
+        "limit": 6,
+        "name": "구급상자"
       },
       {
         "id": "PF001",
@@ -1451,7 +1451,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "피쉬 앤 칩스",
         "stack": 1,
         "material": ["BF001", "BF015"]
@@ -1463,7 +1463,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "일레븐 세트",
         "stack": 1,
         "material": ["BF001", "GF014"]
@@ -1487,7 +1487,7 @@
         "location": false,
         "tobe": false,
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "성수",
         "material": ["BM007", "WD002"]
       },
@@ -1498,7 +1498,7 @@
         "location": false,
         "tobe": false,
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "셀레네의 눈물",
         "stack": 1,
         "material": ["BM001", "WD002"]
@@ -1514,7 +1514,7 @@
         "location": ["A002", "A003", "A012"],
         "tobe": ["GF001", "GF020", "GD009", "GD011", "GD014", "BD004"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "꿀"
       },
       {
@@ -1524,7 +1524,7 @@
         "location": ["A005", "A007", "A009", "A012", "A014"],
         "tobe": ["GM005", "BM002", "GD001", "GD003", "GD005", "GD014", "GD015", "PF005", "PF004"],
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "물"
       },
       {
@@ -1534,7 +1534,7 @@
         "location": ["A006", "A007", "A014"],
         "tobe": ["GWV002", "PWE004", "PA001", "GF024", "GD006", "GD015", "GD016", "BD001"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "얼음"
       },
       {
@@ -1544,7 +1544,7 @@
         "location": ["A009", "A011", "A014"],
         "tobe": ["GD007", "GD012", "GD016", "GD017", "BD009"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "위스키"
       },
       {
@@ -1554,7 +1554,7 @@
         "location": ["A007", "A010", "A011"],
         "tobe": ["GF013", "GD006", "GD008", "GD010", "BD007"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "커피콩"
       },
       {
@@ -1564,7 +1564,7 @@
         "location": ["A011", "A013", "A014"],
         "tobe": ["BM005", "GD002", "GD009", "GD012"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "탄산수"
       },
       {
@@ -1574,7 +1574,7 @@
         "location": ["A003", "A006", "A009"],
         "tobe": ["GF004", "GD010", "GD011", "GD013", "GD017", "BD003"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "우유"
       },
       {
@@ -1583,8 +1583,8 @@
         "img": "https://lh3.google.com/u/0/d/1WE8rBEEbqrkyQy0Qa7TiVL5ZgGJB8aNK=w1402-h684-iv2",
         "location": false,
         "tobe": ["BWI004", "BH002", "BF007", "BF009", "BF014", "BF023", "BD001", "BD004", "BD006", "BD007"],
-        "pickup": 3,
-        "limit": 5,
+        "pickup": 2,
+        "limit": 6,
         "name": "뜨거운 물",
         "stack": 1,
         "material": ["WD002", "WM006"]
@@ -1596,7 +1596,7 @@
         "location": false,
         "tobe": false,
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "레몬에이드",
         "stack": 1,
         "material": ["WD006", "WF004"]
@@ -1608,7 +1608,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "물병",
         "stack": 1,
         "material": ["WD002", "WM001"]
@@ -1620,7 +1620,7 @@
         "location": false,
         "tobe": ["BD002", "BD005", "BD008"],
         "pickup": 1,
-        "limit": 5,
+        "limit": 6,
         "name": "백주",
         "stack": 1,
         "material": ["WM010", "WM001"]
@@ -1632,7 +1632,7 @@
         "location": false,
         "tobe": ["BF024"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "소주",
         "stack": 1,
         "material": ["WM010", "WD002"]
@@ -1644,7 +1644,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "아이스 커피",
         "stack": 1,
         "material": ["WD003", "WD005"]
@@ -1656,7 +1656,7 @@
         "location": false,
         "tobe": false,
         "pickup": 4,
-        "limit": 5,
+        "limit": 6,
         "name": "칵테일",
         "stack": 1,
         "material": ["WD004", "WF004"]
@@ -1668,7 +1668,7 @@
         "location": false,
         "tobe": ["BF011", "BD003"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "커피 리큐르",
         "stack": 1,
         "material": ["WM010", "WD005"]
@@ -1680,7 +1680,7 @@
         "location": false,
         "tobe": ["PWI004", "BD009", "BD010"],
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "콜라",
         "stack": 1,
         "material": ["WD006", "WD001"]
@@ -1692,7 +1692,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "카페라테",
         "stack": 1,
         "material": ["WD007", "WD005"]
@@ -1704,7 +1704,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "꿀탄 우유",
         "stack": 1,
         "material": ["WD007", "WD001"]
@@ -1716,7 +1716,7 @@
         "location": false,
         "tobe": false,
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "하이볼",
         "stack": 1,
         "material": ["WD004", "WD006"]
@@ -1728,7 +1728,7 @@
         "location": false,
         "tobe": false,
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "초코 우유",
         "stack": 1,
         "material": ["WD007", "WF012"]
@@ -1740,7 +1740,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "꿀물",
         "stack": 1,
         "material": ["WD001", "WD002"]
@@ -1752,7 +1752,7 @@
         "location": false,
         "tobe": ["BF005"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "얼음물",
         "stack": 1,
         "material": ["WD003", "WD002"]
@@ -1764,7 +1764,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "온더락",
         "stack": 1,
         "material": ["WD003", "WD004"]
@@ -1776,7 +1776,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "카우보이",
         "stack": 1,
         "material": ["WD007", "WD004"]
@@ -1788,7 +1788,7 @@
         "location": false,
         "tobe": ["PWV002", "PC012", "PA003"],
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "정화수",
         "stack": 1,
         "material": ["GD001", "WD003"]
@@ -1800,7 +1800,7 @@
         "location": false,
         "tobe": false,
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "고량주",
         "stack": 1,
         "material": ["GD004", "WM006"]
@@ -1812,7 +1812,7 @@
         "location": false,
         "tobe": false,
         "pickup": 4,
-        "limit": 5,
+        "limit": 6,
         "name": "깔루아 밀크",
         "stack": 1,
         "material": ["GD008", "WD007"]
@@ -1824,7 +1824,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "뜨거운 꿀물",
         "stack": 1,
         "material": ["GD001", "WD001"]
@@ -1848,7 +1848,7 @@
         "location": false,
         "tobe": false,
         "pickup": 4,
-        "limit": 5,
+        "limit": 6,
         "name": "핫초코",
         "stack": 1,
         "material": ["GD001", "WF012"]
@@ -1860,7 +1860,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "아메리카노",
         "stack": 1,
         "material": ["GD001", "WD005"]
@@ -1872,7 +1872,7 @@
         "location": false,
         "tobe": false,
         "pickup": 3,
-        "limit": 5,
+        "limit": 6,
         "name": "약주",
         "stack": 1,
         "material": ["GD004", "WF011"]
@@ -1884,7 +1884,7 @@
         "location": false,
         "tobe": false,
         "pickup": 5,
-        "limit": 5,
+        "limit": 6,
         "name": "위스키콕",
         "stack": 1,
         "material": ["GD009", "WD004"]
@@ -1896,7 +1896,7 @@
         "location": false,
         "tobe": false,
         "pickup": 2,
-        "limit": 5,
+        "limit": 6,
         "name": "캔콜라",
         "stack": 1,
         "material": ["GD009", "WM017"]

@@ -11,6 +11,22 @@
       </div>
     </div>
     <div class="map">
+      <div class="mapGuideBox">
+        <svg class="area a002" @click="setRoute">
+          <g>
+            <circle class="hyperloop" cx="10" cy="10" r="4" />
+            <text x="22" y="16">하이퍼루프</text>
+          </g>
+          <g>
+            <circle class="lifeTree" cx="10" cy="26" r="4" />
+            <text x="22" y="32">생명의 나무</text>
+          </g>
+          <g>
+            <circle class="alphaOmega" cx="10" cy="42" r="4" />
+            <text x="22" y="48">알파, 오메가</text>
+          </g>
+        </svg>
+      </div>
       <div class="mapBox">
         <svg class="area a001">
           <g>
@@ -24,7 +40,8 @@
               :class="customRoute.includes('A002') && 'selected'"
               points="0,0 72,0 72,24 96,24 96,96 72,96 72,48 0,48"
             />
-            <circle class="hyperloop" cx="15" cy="10" r="5" />
+            <circle class="hyperloop" cx="15" cy="10" r="4" />
+            <circle class="alphaOmega" cx="90" cy="60" r="4" />
             <text class="areaName" x="25" y="-10">골목길</text>
           </g>
         </svg>
@@ -34,7 +51,7 @@
               :class="customRoute.includes('A003') && 'selected'"
               points="48,0 120,0 120,72 24,72 24,48 0,48 0,24 48,24"
             />
-            <circle class="hyperloop" cx="90" cy="50" r="5" />
+            <circle class="hyperloop" cx="90" cy="50" r="4" />
             <text class="areaName" x="60" y="-40">번화가</text>
           </g>
         </svg>
@@ -44,7 +61,7 @@
               :class="customRoute.includes('A004') && 'selected'"
               points="24,0 48,0 48,72 0,72 0,24 24,24"
             />
-            <circle class="hyperloop" cx="40" cy="10" r="5" />
+            <circle class="hyperloop" cx="40" cy="10" r="4" />
             <text class="areaName" x="40" y="25">절</text>
           </g>
         </svg>
@@ -63,7 +80,8 @@
               :class="customRoute.includes('A006') && 'selected'"
               points="0,0 72,0 72,48 0,48"
             />
-            <circle class="hyperloop" cx="60" cy="20" r="5" />
+            <circle class="hyperloop" cx="65" cy="22" r="4" />
+            <circle class="lifeTree" cx="65" cy="10" r="4" />
             <text class="areaName" x="25" y="-5">병원</text>
           </g>
         </svg>
@@ -73,6 +91,7 @@
               :class="customRoute.includes('A007') && 'selected'"
               points="0,0 48,0 48,96 0,96"
             />
+            <circle class="lifeTree" cx="20" cy="25" r="4" />
             <text class="areaName" x="35" y="25">묘지</text>
           </g>
         </svg>
@@ -82,7 +101,8 @@
               :class="customRoute.includes('A008') && 'selected'"
               points="0,0 96,0 96,48 24,48 24,24 0,24"
             />
-            <circle class="hyperloop" cx="70" cy="35" r="5" />
+            <circle class="hyperloop" cx="70" cy="35" r="4" />
+            <circle class="alphaOmega" cx="85" cy="20" r="4" />
             <text class="areaName" x="35" y="-15">공장</text>
           </g>
         </svg>
@@ -92,7 +112,7 @@
               :class="customRoute.includes('A009') && 'selected'"
               points="0,0 48,0 48,72 0,72"
             />
-            <circle class="hyperloop" cx="40" cy="30" r="5" />
+            <circle class="hyperloop" cx="40" cy="30" r="4" />
             <text class="areaName" x="25" y="15">성당</text>
           </g>
         </svg>
@@ -102,6 +122,7 @@
               :class="customRoute.includes('A010') && 'selected'"
               points="0,0 48,0 48,48 72,48 72,72 24,72 24,48 0,48"
             />
+            <circle class="alphaOmega" cx="15" cy="40" r="4" />
             <text class="areaName" x="20" y="5">항구</text>
           </g>
         </svg>
@@ -111,7 +132,8 @@
               :class="customRoute.includes('A011') && 'selected'"
               points="0,0 48,0 48,72 0,72"
             />
-            <circle class="hyperloop" cx="15" cy="10" r="5" />
+            <circle class="hyperloop" cx="18" cy="13" r="4" />
+            <circle class="alphaOmega" cx="12" cy="5" r="4" />
             <text class="areaName" x="25" y="5">고급</text>
             <text class="areaName" x="20" y="20">주택가</text>
           </g>
@@ -122,6 +144,7 @@
               :class="customRoute.includes('A012') && 'selected'"
               points="0,0 72,0 72,24 48,24, 48, 96, 0, 96"
             />
+            <circle class="lifeTree" cx="20" cy="65" r="4" />
             <text class="areaName" x="40" y="20">숲</text>
           </g>
         </svg>
@@ -131,8 +154,9 @@
               :class="customRoute.includes('A013') && 'selected'"
               points="0,0 48,0 48,72 0,72"
             />
-            <text class="areaName" x="25" y="5">모래</text>
-            <text class="areaName" x="25" y="20">사장</text>
+            <circle class="alphaOmega" cx="38" cy="30" r="4" />
+            <text class="areaName" x="10" y="8">모래</text>
+            <text class="areaName" x="35" y="25">사장</text>
           </g>
         </svg>
         <svg class="area a014" @click="setRoute">
@@ -141,8 +165,10 @@
               :class="customRoute.includes('A014') && 'selected'"
               points="0,0 72,0 72,72 24,72 24,48 0,48"
             />
-            <circle class="hyperloop" cx="30" cy="10" r="5" />
-            <text class="areaName" x="35" y="0">호텔</text>
+            <circle class="hyperloop" cx="30" cy="10" r="4" />
+            <circle class="lifeTree" cx="40" cy="55" r="4" />
+            <circle class="alphaOmega" cx="60" cy="40" r="4" />
+            <text class="areaName" x="30" y="5">호텔</text>
           </g>
         </svg>
         <svg class="area a015" @click="setRoute">
@@ -160,7 +186,8 @@
               :class="customRoute.includes('A016') && 'selected'"
               points="0,0 72,0 72,24 0,24"
             />
-            <text class="areaName" x="12" y="18">양궁장</text>
+            <circle class="alphaOmega" cx="7" cy="9" r="4" />
+            <text class="areaName" x="15" y="18">양궁장</text>
           </g>
         </svg>
         <svg class="routeLine">
@@ -276,6 +303,25 @@
 </script>
 
 <style lang="scss" scoped>
+  @mixin mapObjIcon() {
+    stroke-width: 2;
+
+    &.hyperloop {
+      fill: #1b38db;
+      stroke: #63edff;
+    }
+
+    &.lifeTree {
+      fill: #f33f3f;
+      stroke: #0ea00e;
+    }
+
+    &.alphaOmega {
+      fill: #535353;
+      stroke: #ec44fc;
+    }
+  }
+
   @mixin mapUnit($width, $height) {
     width: 24px * $width;
     height: 24px * $height;
@@ -299,7 +345,7 @@
       }
 
       circle {
-        fill: #63edff;
+        @include mapObjIcon();
       }
 
       .routeOrder {
@@ -322,7 +368,7 @@
     max-width: 720px;
     min-width: fit-content;
     width: 100%;
-    z-index: 10;
+    z-index: 12;
     background: rgba(256, 256, 256, 0.7);
     display: flex;
     flex-direction: column;
@@ -377,6 +423,22 @@
       min-height: 380px;
       position: relative;
       background: rgba(256, 256, 256);
+
+      .mapGuideBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        g {
+          circle {
+            @include mapObjIcon;
+          }
+
+          text {
+            font-size: 12px;
+          }
+        }
+      }
 
       .mapBox {
         position: absolute;

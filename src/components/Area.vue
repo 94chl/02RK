@@ -10,14 +10,19 @@
     </div>
     <div>
       <ul class="areaList">
-        <li v-for="area in areaIds" :key="area" :data-areaid="area">
+        <li
+          v-for="area in areaIds"
+          :key="area"
+          :data-areaid="area"
+          :class="`area${area}`"
+        >
           <div>
             <button class="areaBtn" @click="setRoute">
-              <span v-if="customRoute.includes(area)" class="pickedArea">
-                {{ customRoute.indexOf(area) + 1 }}
-              </span>
               <span class="areaName">{{ areaInfo[area].name }}</span>
               <div class="areaInfoIcon">
+                <span v-if="customRoute.includes(area)" class="pickedArea">
+                  {{ customRoute.indexOf(area) + 1 }}
+                </span>
                 <span v-if="areaInfo[area].resurrection" class="resurrection">
                   <i class="fas fa-cross"></i>
                 </span>
@@ -25,15 +30,22 @@
                   <i class="fas fa-angle-double-left"></i>
                 </span>
                 <button
-                  @click="toggleArea"
-                  :class="`toggleDropsBtn ${
-                    !areaInfo[area].show ? '' : 'closed'
-                  }`"
+                  v-if="area === 'A000'"
+                  @click="toggleCommonDropsInfo"
+                  class="toggleCommonDropsInfoBtn"
                 >
-                  <i class="fas fa-angle-double-down"></i>
-                  <i class="fas fa-angle-double-up"></i>
+                  <i class="fa-solid fa-circle-info"></i>
                 </button>
               </div>
+              <button
+                @click="toggleArea"
+                :class="`toggleDropsBtn ${
+                  !areaInfo[area].show ? '' : 'closed'
+                }`"
+              >
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </button>
             </button>
           </div>
           <div class="areaNeedDrops">
@@ -62,6 +74,21 @@
               </li>
             </ul>
           </div>
+          <div
+            :class="`commonDropsInfoBox ${!commonDropsInfo && 'closed'}`"
+            v-if="area === 'A000'"
+          >
+            <ul>
+              <li>고기: 닭, 멧돼지, 늑대, 곰</li>
+              <li>가죽: 닭, 들개, 늑대, 곰</li>
+              <li>구급상자, VF 혈액샘플: 위클라인</li>
+              <li>나뭇가지, 돌멩이: 채집</li>
+              <li>카드모스의 부름: 에키온 패시브 스킬</li>
+            </ul>
+            <button type="button" @click="toggleCommonDropsInfo">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
         </li>
       </ul>
     </div>
@@ -76,6 +103,7 @@
       return {
         areaIds: [],
         areaInfo: areaData,
+        commonDropsInfo: false,
       };
     },
     created() {
@@ -132,6 +160,9 @@
       toggleMapModal() {
         this.$store.dispatch("onToggleModal", "map");
       },
+      toggleCommonDropsInfo() {
+        this.commonDropsInfo = !this.commonDropsInfo;
+      },
     },
   };
 </script>
@@ -171,64 +202,124 @@
         border-radius: 5px;
         min-height: 50px;
 
-        &:last-child .areaBtn {
-          cursor: default;
+        &.areaA000 {
+          .areaBtn {
+            cursor: default;
+
+            .toggleCommonDropsInfoBtn {
+              cursor: pointer;
+              background: #fff;
+              border-radius: 0;
+              @include fasIcon(25px);
+              color: $color1;
+
+              &:hover {
+                box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+              }
+
+              &.closed {
+                color: $color3;
+              }
+            }
+          }
+          .commonDropsInfoBox {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            background: $color4;
+            padding: 4px;
+            border-radius: 5px;
+
+            &.closed {
+              display: none;
+            }
+
+            li {
+              font-size: 14px;
+              margin: 4px 0;
+            }
+
+            button {
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              background: none;
+              border-radius: 5px;
+              &:active,
+              &:hover {
+                box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+              }
+            }
+          }
         }
 
         .areaBtn {
           background: #fff;
           width: 100%;
-          display: flex;
-          height: 25px;
-          line-height: 25px;
+          display: grid;
+          grid-template-columns: auto minmax(50px, 1fr) 25px;
           align-items: center;
-          position: relative;
+          height: 25px;
+          padding: 0;
 
-          .pickedArea {
-            color: #fff;
-            background: $color3;
-            border-radius: 50%;
-            width: 15px;
-            height: 15px;
-            line-height: 15px;
+          .areaName {
+            text-align: start;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            height: 25px;
           }
 
           .areaInfoIcon {
+            display: flex;
+            align-items: center;
+
+            span {
+              @include fasIcon(25px);
+              background: #fff;
+
+              &.pickedArea {
+                color: #fff;
+                background: $color3;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                margin: 5px;
+                line-height: 15px;
+              }
+              &.resurrection {
+                color: rgb(60, 202, 190);
+              }
+
+              &.hyperloop {
+                color: rgb(31, 119, 252);
+              }
+            }
+          }
+
+          .toggleDropsBtn {
             position: absolute;
             top: 0;
             right: 0;
-            .resurrection {
-              @include fasIcon(25px);
-              color: rgb(60, 202, 190);
-              background: #fff;
-            }
-            .hyperloop {
-              @include fasIcon(25px);
-              color: rgb(31, 119, 252);
-              background: #fff;
-            }
-            .toggleDropsBtn {
-              background: #fff;
-              border-radius: 0;
-              align-self: flex-end;
-              @include fasIcon(25px);
+            background: #fff;
+            border-radius: 0;
+            @include fasIcon(25px);
 
-              &:hover {
-                box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
-              }
+            &:hover {
+              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+            }
+            .fa-angle-double-down {
+              display: block;
+            }
+            .fa-angle-double-up {
+              display: none;
+            }
+            &.closed {
               .fa-angle-double-down {
-                display: block;
-              }
-              .fa-angle-double-up {
                 display: none;
               }
-              &.closed {
-                .fa-angle-double-down {
-                  display: none;
-                }
-                .fa-angle-double-up {
-                  display: block;
-                }
+              .fa-angle-double-up {
+                display: block;
               }
             }
           }
@@ -273,9 +364,8 @@
         &:last-child {
           grid-column: 1/4;
           .toggleDropsBtn {
-            position: absolute;
-            top: 0;
-            right: 5px;
+            background: #fff;
+            border-radius: 0;
             @include fasIcon(25px);
             .fa-angle-double-down {
               display: block;

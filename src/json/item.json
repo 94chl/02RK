@@ -1420,7 +1420,7 @@
         "limit": 6,
         "name": "허니버터",
         "stack": 1,
-        "material": ["GF004", "WF001"]
+        "material": ["GF004", "WD001"]
       },
       {
         "id": "BF026",

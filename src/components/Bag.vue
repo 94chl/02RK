@@ -510,6 +510,7 @@
             border-radius: 5px;
             box-shadow: 1px 1px 3px 1px #999;
             position: relative;
+            overflow: hidden;
 
             img {
               height: 100%;

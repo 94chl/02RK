@@ -15,15 +15,19 @@
         <svg class="area a002" @click="setRoute">
           <g>
             <circle class="hyperloop" cx="10" cy="10" r="4" />
-            <text x="22" y="16">하이퍼루프</text>
+            <text x="20" y="15">하이퍼루프</text>
           </g>
           <g>
             <circle class="lifeTree" cx="10" cy="26" r="4" />
-            <text x="22" y="32">생명의 나무</text>
+            <text x="20" y="31">생명의 나무</text>
           </g>
           <g>
-            <circle class="alphaOmega" cx="10" cy="42" r="4" />
-            <text x="22" y="48">알파, 오메가</text>
+            <circle class="meteor" cx="10" cy="42" r="4" />
+            <text x="20" y="47">운석</text>
+          </g>
+          <g>
+            <circle class="alphaOmega" cx="10" cy="58" r="4" />
+            <text x="20" y="63">알파, 오메가</text>
           </g>
         </svg>
       </div>
@@ -37,10 +41,14 @@
         <svg class="area a002" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A002') && 'selected'"
+              :class="
+                customRoute.includes('A002') &&
+                `selected ${customRoute[0] === 'A002' && 'startPoint'}`
+              "
               points="0,0 72,0 72,24 96,24 96,96 72,96 72,48 0,48"
             />
             <circle class="hyperloop" cx="15" cy="10" r="4" />
+            <circle class="meteor" cx="15" cy="30" r="4" />
             <circle class="alphaOmega" cx="90" cy="60" r="4" />
             <text class="areaName" x="25" y="-10">골목길</text>
           </g>
@@ -48,7 +56,10 @@
         <svg class="area a003" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A003') && 'selected'"
+              :class="
+                customRoute.includes('A003') &&
+                `selected ${customRoute[0] === 'A003' && 'startPoint'}`
+              "
               points="48,0 120,0 120,72 24,72 24,48 0,48 0,24 48,24"
             />
             <circle class="hyperloop" cx="90" cy="50" r="4" />
@@ -58,26 +69,37 @@
         <svg class="area a004" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A004') && 'selected'"
-              points="24,0 48,0 48,72 0,72 0,24 24,24"
+              :class="
+                customRoute.includes('A004') &&
+                `selected ${customRoute[0] === 'A004' && 'startPoint'}`
+              "
+              points="24,0 48,0 48,96 0,96 0,24 24,24"
             />
             <circle class="hyperloop" cx="40" cy="10" r="4" />
+            <circle class="meteor" cx="15" cy="75" r="4" />
             <text class="areaName" x="40" y="25">절</text>
           </g>
         </svg>
         <svg class="area a005" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A005') && 'selected'"
+              :class="
+                customRoute.includes('A005') &&
+                `selected ${customRoute[0] === 'A005' && 'startPoint'}`
+              "
               points="0,0 72,0 72,72 0,72"
             />
+            <circle class="meteor" cx="50" cy="15" r="4" />
             <text class="areaName" x="30" y="5">연못</text>
           </g>
         </svg>
         <svg class="area a006" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A006') && 'selected'"
+              :class="
+                customRoute.includes('A006') &&
+                `selected ${customRoute[0] === 'A006' && 'startPoint'}`
+              "
               points="0,0 72,0 72,48 0,48"
             />
             <circle class="hyperloop" cx="65" cy="22" r="4" />
@@ -88,7 +110,10 @@
         <svg class="area a007" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A007') && 'selected'"
+              :class="
+                customRoute.includes('A007') &&
+                `selected ${customRoute[0] === 'A007' && 'startPoint'}`
+              "
               points="0,0 48,0 48,96 0,96"
             />
             <circle class="lifeTree" cx="20" cy="25" r="4" />
@@ -98,10 +123,14 @@
         <svg class="area a008" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A008') && 'selected'"
+              :class="
+                customRoute.includes('A008') &&
+                `selected ${customRoute[0] === 'A008' && 'startPoint'}`
+              "
               points="0,0 96,0 96,48 24,48 24,24 0,24"
             />
             <circle class="hyperloop" cx="70" cy="35" r="4" />
+            <circle class="meteor" cx="75" cy="15" r="4" />
             <circle class="alphaOmega" cx="85" cy="20" r="4" />
             <text class="areaName" x="35" y="-15">공장</text>
           </g>
@@ -109,17 +138,24 @@
         <svg class="area a009" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A009') && 'selected'"
+              :class="
+                customRoute.includes('A009') &&
+                `selected ${customRoute[0] === 'A009' && 'startPoint'}`
+              "
               points="0,0 48,0 48,72 0,72"
             />
             <circle class="hyperloop" cx="40" cy="30" r="4" />
+            <circle class="meteor" cx="10" cy="60" r="4" />
             <text class="areaName" x="25" y="15">성당</text>
           </g>
         </svg>
         <svg class="area a010" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A010') && 'selected'"
+              :class="
+                customRoute.includes('A010') &&
+                `selected ${customRoute[0] === 'A010' && 'startPoint'}`
+              "
               points="0,0 48,0 48,48 72,48 72,72 24,72 24,48 0,48"
             />
             <circle class="alphaOmega" cx="15" cy="40" r="4" />
@@ -129,10 +165,14 @@
         <svg class="area a011" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A011') && 'selected'"
+              :class="
+                customRoute.includes('A011') &&
+                `selected ${customRoute[0] === 'A011' && 'startPoint'}`
+              "
               points="0,0 48,0 48,72 0,72"
             />
             <circle class="hyperloop" cx="18" cy="13" r="4" />
+            <circle class="meteor" cx="10" cy="60" r="4" />
             <circle class="alphaOmega" cx="12" cy="5" r="4" />
             <text class="areaName" x="25" y="5">고급</text>
             <text class="areaName" x="20" y="20">주택가</text>
@@ -141,7 +181,10 @@
         <svg class="area a012" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A012') && 'selected'"
+              :class="
+                customRoute.includes('A012') &&
+                `selected ${customRoute[0] === 'A012' && 'startPoint'}`
+              "
               points="0,0 72,0 72,24 48,24, 48, 96, 0, 96"
             />
             <circle class="lifeTree" cx="20" cy="65" r="4" />
@@ -151,7 +194,10 @@
         <svg class="area a013" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A013') && 'selected'"
+              :class="
+                customRoute.includes('A013') &&
+                `selected ${customRoute[0] === 'A013' && 'startPoint'}`
+              "
               points="0,0 48,0 48,72 0,72"
             />
             <circle class="alphaOmega" cx="38" cy="30" r="4" />
@@ -162,7 +208,10 @@
         <svg class="area a014" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A014') && 'selected'"
+              :class="
+                customRoute.includes('A014') &&
+                `selected ${customRoute[0] === 'A014' && 'startPoint'}`
+              "
               points="0,0 72,0 72,72 24,72 24,48 0,48"
             />
             <circle class="hyperloop" cx="30" cy="10" r="4" />
@@ -174,16 +223,23 @@
         <svg class="area a015" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A015') && 'selected'"
+              :class="
+                customRoute.includes('A015') &&
+                `selected ${customRoute[0] === 'A015' && 'startPoint'}`
+              "
               points="0,0 72,0 72,48 0,48"
             />
+            <circle class="meteor" cx="45" cy="15" r="4" />
             <text class="areaName" x="25" y="0">학교</text>
           </g>
         </svg>
         <svg class="area a016" @click="setRoute">
           <g>
             <polygon
-              :class="customRoute.includes('A016') && 'selected'"
+              :class="
+                customRoute.includes('A016') &&
+                `selected ${customRoute[0] === 'A016' && 'startPoint'}`
+              "
               points="0,0 72,0 72,24 0,24"
             />
             <circle class="alphaOmega" cx="7" cy="9" r="4" />
@@ -304,21 +360,20 @@
 
 <style lang="scss" scoped>
   @mixin mapObjIcon() {
-    stroke-width: 2;
-
     &.hyperloop {
-      fill: #1b38db;
-      stroke: #63edff;
+      fill: #63edff;
     }
 
     &.lifeTree {
-      fill: #f33f3f;
-      stroke: #0ea00e;
+      fill: #0ea00e;
+    }
+
+    &.meteor {
+      fill: #3236ff;
     }
 
     &.alphaOmega {
-      fill: #535353;
-      stroke: #ec44fc;
+      fill: #ff38de;
     }
   }
 
@@ -341,6 +396,10 @@
         &.selected {
           stroke: $color1;
           stroke-width: 4px;
+        }
+
+        &.startPoint {
+          stroke: #ff5e00;
         }
       }
 
@@ -431,6 +490,7 @@
 
         g {
           circle {
+            filter: contrast(70%);
             @include mapObjIcon;
           }
 
@@ -468,104 +528,104 @@
 
           &.a001 {
             @include mapUnit(2, 2);
-            top: 96px;
-            left: 96px;
+            top: 100px;
+            left: 100px;
           }
 
           &.a002 {
             @include mapUnit(4, 4);
-            top: 0px;
-            left: 168px;
+            top: 4px;
+            left: 172px;
             z-index: 16;
           }
 
           &.a003 {
             @include mapUnit(5, 3);
-            top: 48px;
-            left: 120px;
+            top: 52px;
+            left: 124px;
             z-index: 17;
           }
 
           &.a004 {
             @include mapUnit(2, 4);
-            top: 96px;
-            left: 216px;
+            top: 100px;
+            left: 220px;
             z-index: 16;
           }
 
           &.a005 {
             @include mapUnit(3, 3);
-            top: 120px;
-            left: 144px;
+            top: 124px;
+            left: 148px;
           }
 
           &.a006 {
             @include mapUnit(3, 2);
-            top: 192px;
-            left: 144px;
+            top: 196px;
+            left: 148px;
           }
 
           &.a007 {
             @include mapUnit(2, 4);
-            top: 144px;
-            left: 96px;
+            top: 148px;
+            left: 100px;
           }
 
           &.a008 {
             @include mapUnit(4, 2);
-            top: 240px;
-            left: 72px;
+            top: 244px;
+            left: 76px;
           }
 
           &.a009 {
             @include mapUnit(2, 3);
-            top: 168px;
-            left: 48px;
+            top: 172px;
+            left: 52px;
           }
 
           &.a010 {
             @include mapUnit(3, 3);
-            top: 192px;
-            left: 0px;
+            top: 196px;
+            left: 4px;
             z-index: 16;
           }
 
           &.a011 {
             @include mapUnit(2, 3);
-            top: 120px;
-            left: 0px;
+            top: 124px;
+            left: 4px;
           }
 
           &.a012 {
             @include mapUnit(3, 4);
-            top: 72px;
-            left: 48px;
+            top: 76px;
+            left: 52px;
             z-index: 16;
           }
 
           &.a013 {
             @include mapUnit(2, 3);
-            top: 48px;
-            left: 0px;
+            top: 52px;
+            left: 4px;
           }
 
           &.a014 {
             @include mapUnit(3, 3);
-            top: 0px;
-            left: 24px;
+            top: 4px;
+            left: 28px;
             z-index: 16;
           }
 
           &.a015 {
             @include mapUnit(3, 2);
-            top: 24px;
-            left: 96px;
+            top: 28px;
+            left: 100px;
           }
 
           &.a016 {
             @include mapUnit(3, 1);
-            top: 0px;
-            left: 96px;
+            top: 4px;
+            left: 100px;
             g > .areaName {
               transform: rotate(0);
             }

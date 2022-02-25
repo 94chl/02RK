@@ -104,7 +104,8 @@
             />
             <circle class="hyperloop" cx="65" cy="22" r="4" />
             <circle class="lifeTree" cx="65" cy="10" r="4" />
-            <text class="areaName" x="25" y="-5">병원</text>
+            <circle class="alphaOmega" cx="45" cy="15" r="4" />
+            <text class="areaName" x="25" y="0">병원</text>
           </g>
         </svg>
         <svg class="area a007" @click="setRoute">

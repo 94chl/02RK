@@ -147,10 +147,10 @@
     methods: {
       removeAllRoute() {
         if (window.confirm("루트를 초기화하시겠습니까?"))
-          this.$store.dispatch("removeRoute", []);
+          this.$store.dispatch("setRoute", []);
       },
       toggleCraftModal() {
-        this.$store.dispatch("showModal", "craft");
+        this.$store.dispatch("onToggleModal", "craft");
       },
     },
   };

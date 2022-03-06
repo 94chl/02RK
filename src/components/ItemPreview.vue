@@ -289,7 +289,7 @@
           this.recommendRoutes[e.target.closest("li").dataset.routeIndex];
         const newRoute = target.map((area) => this.areaName2Id[area]);
         if (window.confirm("해당 루트를 적용하시겠습니까?"))
-          this.$store.dispatch("removeRoute", newRoute);
+          this.$store.dispatch("setRoute", newRoute);
       },
     },
     watch: {

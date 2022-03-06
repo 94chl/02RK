@@ -6,6 +6,7 @@ import {
 } from "~/utils/disassemble";
 import { searchById, equippable, weaponSort } from "~/utils/itemTable";
 import { pathFinder } from "~/utils/pathFinder";
+import { setSessionStorage } from "~/utils/useSessionStorage";
 
 const store = createStore({
   state() {
@@ -198,18 +199,26 @@ const store = createStore({
       const newItemDetails = { ...newItem, ...disassembleGD([newItem.id]) };
 
       const newTargetItems = [...state.targetItems, newItemDetails];
+      setSessionStorage("02RK_targetItems", newTargetItems);
       commit("setTargetItems", newTargetItems);
       commit("getMatGDs");
     },
+    setTargetItems({ commit, state }, newItems) {
+      commit("setTargetItems", newItems);
+      commit("getMatGDs");
+    },
     removeTargetItems({ commit }, newTargetItems) {
+      setSessionStorage("02RK_targetItems", newTargetItems);
       commit("setTargetItems", newTargetItems);
       commit("getMatGDs");
     },
     addRoute({ commit, state }, nextArea) {
       const newRoute = [...state.customRoute, nextArea];
+      setSessionStorage("02RK_customRoute", newRoute);
       commit("setRoute", newRoute);
     },
-    removeRoute({ commit }, newRoute) {
+    setRoute({ commit }, newRoute) {
+      setSessionStorage("02RK_customRoute", newRoute);
       commit("setRoute", newRoute);
     },
     getItem({ commit, state }, newItemId) {

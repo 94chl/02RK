@@ -143,7 +143,7 @@
           return;
         if (this.customRoute.includes(pickedArea)) {
           const newRoute = this.customRoute.filter((area) => area !== pickedArea);
-          this.$store.dispatch("removeRoute", newRoute);
+          this.$store.dispatch("setRoute", newRoute);
         } else {
           this.$store.dispatch("addRoute", pickedArea);
         }

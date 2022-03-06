@@ -9,13 +9,6 @@
       <Area></Area>
       <Modals></Modals>
     </div>
-    <!-- <div class="footer">
-      <a href="https://hits.seeyoufarm.com">
-        <img
-          src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F94chl.github.io%2F02RK%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
-        />
-      </a>
-    </div> -->
   </div>
 </template>
 
@@ -27,6 +20,11 @@
   import NeedDrops from "~/components/NeedDrops";
   import CustomRoute from "~/components/CustomRoute";
   import Modals from "~/components/Modals";
+
+  import {
+    getSessionStorage,
+    removeSessionStorage,
+  } from "~/utils/useSessionStorage";
 
   export default {
     components: {
@@ -44,6 +42,20 @@
       },
     },
     methods: {},
+    mounted() {
+      const targetItems = getSessionStorage("02RK_targetItems", []);
+      const customRoute = getSessionStorage("02RK_customRoute", []);
+      if (
+        (targetItems.length || customRoute.length) &&
+        window.confirm("진행중이던 기록이 있습니다. 작업을 이어하시겠습니까?")
+      ) {
+        this.$store.dispatch("setTargetItems", targetItems);
+        this.$store.dispatch("setRoute", customRoute);
+      } else {
+        removeSessionStorage("02RK_targetItems");
+        removeSessionStorage("02RK_customRoute");
+      }
+    },
   };
 </script>
 

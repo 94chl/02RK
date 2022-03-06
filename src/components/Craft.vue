@@ -159,7 +159,6 @@
         };
       },
       toggleModal() {
-        if (this.$store.state.toggleModal) this.minimize = false;
         return this.$store.state.toggleModal;
       },
       showItemImg() {
@@ -287,7 +286,7 @@
       },
       toggleCraftModal() {
         this.$store.dispatch("onToggleModal", "craft");
-        this.minimize = false;
+        this.minimize = this.$store.state.toggleModal.craft ? false : true;
       },
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);

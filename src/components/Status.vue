@@ -388,7 +388,7 @@
               word-break: keep-all;
 
               .uniqueOptions {
-                list-style: "-" inside;
+                list-style: disc inside;
 
                 li {
                   text-indent: 10px;

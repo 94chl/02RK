@@ -1521,7 +1521,7 @@
         "id": "WD002",
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1PbX7TO3Fa0M11FB-aYqxNvoi_XStkvRF=w1402-h684-iv2",
-        "location": ["A005", "A007", "A009", "A012", "A014"],
+        "location": ["A004", "A005", "A007", "A009", "A012", "A014", "A015"],
         "tobe": ["GM005", "BM002", "GD001", "GD003", "GD005", "GD014", "GD015", "PF005", "PF004"],
         "pickup": 3,
         "limit": 6,

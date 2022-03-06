@@ -357,7 +357,7 @@
 
           .attrValue {
             ul {
-              list-style: "-" inside;
+              list-style: disc inside;
 
               .optionDetail {
                 text-indent: 10px;

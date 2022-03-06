@@ -26,7 +26,7 @@
   },
   "A004": {
     "name": "절",
-    "drop": ["WM008", "WM012", "WM013", "WM015", "WM018", "WWA003", "WWF001", "WWQ001", "WC002", "WC004", "WH001", "WA001", "WA005", "WF001", "WF005", "WF010", "WF011", "BM008"],
+    "drop": ["WM008", "WM012", "WM013", "WM015", "WM018", "WWA003", "WWF001", "WWQ001", "WC002", "WC004", "WH001", "WA001", "WA005", "WF001", "WF005", "WF010", "WF011", "WD002", "BM008"],
     "resurrection": false,
     "hyperloop": true
   },
@@ -90,7 +90,7 @@
   },
   "A015": {
     "name": "학교",
-    "drop": ["WM006", "WM007", "WM010", "WM017", "WWA001", "WM022", "WWH001", "WWJ001", "WM025", "WC001", "WH002", "WH003", "WB002", "WS001", "WA003", "WT001", "WF007", "BM008"],
+    "drop": ["WM006", "WM007", "WM010", "WM017", "WWA001", "WM022", "WWH001", "WWJ001", "WM025", "WC001", "WH002", "WH003", "WB002", "WS001", "WA003", "WT001", "WF007", "WD002", "BM008"],
     "resurrection": false,
     "hyperloop": false
   },

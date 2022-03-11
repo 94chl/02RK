@@ -119,7 +119,7 @@
               <div class="optionInfo_value">
                 <span>{{
                   optionName.match(/[%]/g)
-                    ? `${parseInt(optionValue * 100)}%`
+                    ? `${Math.round(optionValue * 1000) / 10}%`
                     : optionValue
                 }}</span>
               </div>

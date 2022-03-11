@@ -86,7 +86,7 @@
               <span v-else>
                 {{
                   option.match(/[%]/g)
-                    ? `${parseInt(cartItem[option] * 100)}%`
+                    ? `${Math.round(cartItem[option] * 1000) / 10}%`
                     : cartItem[option]
                 }}
               </span>

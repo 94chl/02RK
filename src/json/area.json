@@ -90,7 +90,7 @@
   },
   "A015": {
     "name": "학교",
-    "drop": ["WM006", "WM007", "WM010", "WM017", "WWA001", "WM022", "WWH001", "WWJ001", "WM025", "WC001", "WH002", "WH003", "WB002", "WS001", "WA003", "WT001", "WF007", "WD002", "BM008"],
+    "drop": ["WM006", "WM007", "WM010", "WM017", "WWA001", "WM022", "WWH001", "WWJ001", "WM025", "WC001", "WH002", "WH003", "WB002", "WS001", "WA003", "WF007", "WD002", "WD007", "BM008"],
     "resurrection": false,
     "hyperloop": false
   },

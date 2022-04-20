@@ -818,7 +818,7 @@
       {
         "id": "GH006",
         "sort": "helmet",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1M9G8MD-7LUDqc6kWK3wG9BEoyCZrM8Bx",
         "location": false,
         "tobe": ["BH009"],
         "pickup": 1,
@@ -963,7 +963,7 @@
       {
         "id": "BH009",
         "sort": "helmet",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1cBfMBJ8jEK3Xu3cuWt4UKtmpupb5vQEc",
         "location": false,
         "tobe": ["PH011"],
         "pickup": 1,
@@ -1137,7 +1137,7 @@
       {
         "id": "PH011",
         "sort": "helmet",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/16UMs7avUY4i-Hza7JA7L3YH0Ce8uAayZ",
         "location": false,
         "tobe": false,
         "pickup": 1,

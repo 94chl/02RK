@@ -21,7 +21,11 @@
             :class="`showItemInfoBtn value${item.id[0]}`"
             @click="showItemInfo"
           >
-            <img :src="item.img" :alt="item.name" class="itemInfo_img" />
+            <img
+              :src="item.img"
+              :alt="item.name[language]"
+              class="itemInfo_img"
+            />
           </button>
           <button @click="removeTargetItem" class="removeBtn">
             <i class="fas fa-times"></i>
@@ -38,6 +42,9 @@
   export default {
     components: {},
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       targetItems() {
         return this.$store.state.targetItems;
       },

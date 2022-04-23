@@ -10,7 +10,7 @@
           :key="`dropMats${mat.id}`"
           :class="totalDrops.includes(mat.id) && 'hadItem'"
         >
-          <span>{{ mat.name }}</span>
+          <span>{{ mat.name[language] }}</span>
           <span :class="mat.count >= 3 && 'danger'">{{
             `(x${mat.count})`
           }}</span>
@@ -27,6 +27,9 @@
   export default {
     components: {},
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       dropMats() {
         return this.$store.state.matGDs;
       },

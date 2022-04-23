@@ -75,11 +75,11 @@
               >
                 <img
                   :src="equip[pocket].img"
-                  :alt="`${equip[pocket].name}_img`"
-                  :title="`${equip[pocket].name}_img`"
+                  :alt="`${equip[pocket].name[language]}_img`"
+                  :title="`${equip[pocket].name[language]}_img`"
                   v-if="showItemImg"
                 />
-                <span v-else>{{ equip[pocket].name }}</span>
+                <span v-else>{{ equip[pocket].name[language] }}</span>
               </div>
               <button class="removeBtn" @click="dropItem">
                 <i class="fas fa-times"></i>
@@ -128,11 +128,11 @@
               >
                 <img
                   :src="inventory[pocket].img"
-                  :alt="`${inventory[pocket].name}_img`"
-                  :title="`${inventory[pocket].name}_img`"
+                  :alt="`${inventory[pocket].name[language]}_img`"
+                  :title="`${inventory[pocket].name[language]}_img`"
                   v-if="showItemImg"
                 />
-                <span v-else>{{ inventory[pocket].name }}</span>
+                <span v-else>{{ inventory[pocket].name[language] }}</span>
                 <span class="itemCount">{{
                   `(x${inventory[pocket].count})`
                 }}</span>
@@ -173,11 +173,11 @@
             >
               <img
                 :src="assemble.img"
-                :alt="`${assemble.name}_img`"
-                :title="`${assemble.name}_img`"
+                :alt="`${assemble.name[language]}_img`"
+                :title="`${assemble.name[language]}_img`"
                 v-if="showItemImg"
               />
-              <span v-else>{{ assemble.name }}</span>
+              <span v-else>{{ assemble.name[language] }}</span>
               <span class="itemCount">
                 {{ `(x${assemble.pickup})` }}
               </span>
@@ -201,6 +201,9 @@
     },
     components: { InitialWeapon },
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       showItemImg() {
         return this.$store.state.showItemImg;
       },

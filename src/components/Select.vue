@@ -48,7 +48,7 @@
           :selected="item.id === selectItem.id"
           :key="`itemArr${item.id}`"
         >
-          {{ item.name }}
+          {{ item.name[language] }}
         </option>
       </select>
     </div>
@@ -64,7 +64,7 @@
 </template>
 
 <script>
-  import { database, eng2Kor } from "~/utils/itemTable";
+  import { database, eng2Kor, itemOptions } from "~/utils/itemTable";
   import ItemPreview from "~/components/ItemPreview";
 
   export default {
@@ -80,8 +80,40 @@
     },
     components: { ItemPreview },
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       selectItem() {
         return this.$store.state.cart;
+      },
+      db() {
+        const { weaponData, itemData, equipData } = database;
+        const options = {};
+
+        weaponData.forEach((category) => {
+          category.items.forEach((item) => {
+            Object.keys(item).forEach((opt) => {
+              options[opt] = options[opt] ? options[opt] + 1 : 1;
+            });
+          });
+        });
+
+        itemData.forEach((category) => {
+          category.items.forEach((item) => {
+            Object.keys(item).forEach((opt) => {
+              options[opt] = options[opt] ? options[opt] + 1 : 1;
+            });
+          });
+        });
+        equipData.forEach((category) => {
+          category.items.forEach((item) => {
+            Object.keys(item).forEach((opt) => {
+              options[opt] = options[opt] ? options[opt] + 1 : 1;
+            });
+          });
+        });
+
+        return options;
       },
     },
     methods: {
@@ -125,6 +157,7 @@
         (category) => category.category === this.selectCategory
       )[0].items;
       this.$store.dispatch("setCart", this.itemArr[0]);
+      console.log(this.db);
     },
   };
 </script>

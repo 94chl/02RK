@@ -11,6 +11,7 @@ import { setSessionStorage } from "~/utils/useSessionStorage";
 const store = createStore({
   state() {
     return {
+      language: "kr",
       minHeight: 0,
       showItemImg: true,
       targetItems: [],

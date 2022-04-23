@@ -111,12 +111,12 @@
                     @click="showItemInfo"
                   >
                     <span :class="showItemImg ? 'hide' : ''">{{
-                      item.name
+                      item.name[language]
                     }}</span>
                     <img
                       :class="showItemImg ? '' : 'hide'"
                       :src="item.img"
-                      :alt="`${item.name}_img`"
+                      :alt="`${item.name[language]}_img`"
                     />
                   </button>
                 </li>
@@ -151,6 +151,9 @@
     },
     components: {},
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       selectedOptions() {
         return {
           dept: this.selectedDept,

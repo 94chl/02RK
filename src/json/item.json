@@ -1,8 +1,6 @@
-[
-  {
+[{
     "category": "material",
-    "items": [
-      {
+    "items": [{
         "id": "WM001",
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1iLBZzaRrz7-54oUzRG4H_XspDN37f7lc",
@@ -19,7 +17,13 @@
         ],
         "pickup": 2,
         "limit": 3,
-        "name": "유리병"
+        "name": {
+          "kr": "유리병",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "WM002",
@@ -29,7 +33,13 @@
         "tobe": ["GH005", "BS006", "GA003", "GM006", "GM012", "BM001"],
         "pickup": 2,
         "limit": 3,
-        "name": "돌멩이"
+        "name": {
+          "kr": "돌멩이",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "WM003",
@@ -39,7 +49,13 @@
         "tobe": ["BWA003", "BWE003", "PWF002", "GC003", "GB001"],
         "pickup": 1,
         "limit": 3,
-        "name": "거북이 등딱지"
+        "name": {
+          "kr": "거북이 등딱지",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM004",
@@ -49,7 +65,13 @@
         "tobe": ["BWI001", "BWI004", "GWK002", "BWL001", "GC008", "PH004"],
         "pickup": 1,
         "limit": 3,
-        "name": "고무"
+        "name": {
+          "kr": "고무",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM005",
@@ -67,7 +89,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "고철"
+        "name": {
+          "kr": "고철",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM006",
@@ -87,7 +115,13 @@
         ],
         "pickup": 1,
         "limit": 2,
-        "name": "라이터"
+        "name": {
+          "kr": "라이터",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM007",
@@ -107,7 +141,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "레이저 포인터"
+        "name": {
+          "kr": "레이저 포인터",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM008",
@@ -128,7 +168,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "마패"
+        "name": {
+          "kr": "마패",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM009",
@@ -138,7 +184,13 @@
         "tobe": ["GM005", "GM008", "BT005"],
         "pickup": 1,
         "limit": 3,
-        "name": "배터리"
+        "name": {
+          "kr": "배터리",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM010",
@@ -148,7 +200,13 @@
         "tobe": ["GWV001", "PWJ003", "GD004", "GD005", "GD008"],
         "pickup": 1,
         "limit": 3,
-        "name": "알코올"
+        "name": {
+          "kr": "알코올",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM011",
@@ -166,7 +224,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "오일"
+        "name": {
+          "kr": "오일",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM012",
@@ -176,7 +240,13 @@
         "tobe": ["GC006", "GC009", "BH007", "GS005", "GA004"],
         "pickup": 1,
         "limit": 3,
-        "name": "옷감"
+        "name": {
+          "kr": "옷감",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM013",
@@ -186,7 +256,13 @@
         "tobe": ["BWB003", "GM004", "GM011", "PH005"],
         "pickup": 1,
         "limit": 3,
-        "name": "원석"
+        "name": {
+          "kr": "원석",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM014",
@@ -196,7 +272,13 @@
         "tobe": ["GB004", "GS001", "BM004", "GT005"],
         "pickup": 1,
         "limit": 3,
-        "name": "접착제"
+        "name": {
+          "kr": "접착제",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM015",
@@ -206,7 +288,13 @@
         "tobe": ["GM007", "GM009", "GM013"],
         "pickup": 1,
         "limit": 3,
-        "name": "종이"
+        "name": {
+          "kr": "종이",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM016",
@@ -216,7 +304,13 @@
         "tobe": ["GWE002", "GWS001", "GM001", "GT002", "YA007"],
         "pickup": 3,
         "limit": 3,
-        "name": "철광석"
+        "name": {
+          "kr": "철광석",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3
       },
       {
         "id": "WM017",
@@ -226,7 +320,13 @@
         "tobe": ["GT006", "GF002", "BD010"],
         "pickup": 1,
         "limit": 3,
-        "name": "캔"
+        "name": {
+          "kr": "캔",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM018",
@@ -245,7 +345,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "화약"
+        "name": {
+          "kr": "화약",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM019",
@@ -266,7 +372,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "가죽"
+        "name": {
+          "kr": "가죽",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM020",
@@ -286,7 +398,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "못"
+        "name": {
+          "kr": "못",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM021",
@@ -306,7 +424,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "피아노선"
+        "name": {
+          "kr": "피아노선",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM022",
@@ -316,7 +440,13 @@
         "tobe": ["GWA002", "GWA003", "GWI003", "GWJ002", "GM009"],
         "pickup": 1,
         "limit": 2,
-        "name": "만년필"
+        "name": {
+          "kr": "만년필",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM023",
@@ -326,7 +456,13 @@
         "tobe": ["GWC001", "GM011"],
         "pickup": 1,
         "limit": 2,
-        "name": "곡괭이"
+        "name": {
+          "kr": "곡괭이",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM024",
@@ -346,7 +482,13 @@
         ],
         "pickup": 1,
         "limit": 2,
-        "name": "나뭇가지"
+        "name": {
+          "kr": "나뭇가지",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WM025",
@@ -356,7 +498,13 @@
         "tobe": ["BWJ001", "GM006"],
         "pickup": 1,
         "limit": 1,
-        "name": "분필"
+        "name": {
+          "kr": "분필",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "GM001",
@@ -379,7 +527,12 @@
         ],
         "pickup": 2,
         "limit": 3,
-        "name": "강철",
+        "name": {
+          "kr": "강철",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 2,
         "material": ["WM005", "WM016"]
       },
@@ -399,7 +552,12 @@
         ],
         "pickup": 2,
         "limit": 3,
-        "name": "기름먹인 천",
+        "name": {
+          "kr": "기름먹인 천",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 2,
         "material": ["WM011", "WB002"]
       },
@@ -411,8 +569,13 @@
         "tobe": ["YWN001", "BF001", "BF013", "BF015", "BF017", "BF022"],
         "pickup": 2,
         "limit": 3,
-        "name": "뜨거운 오일",
-        "stack": 3,
+        "name": {
+          "kr": "뜨거운 오일",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WM011", "WM006"]
       },
       {
@@ -423,7 +586,12 @@
         "tobe": ["BWB005", "PWC002", "PWE003", "BWT001", "PC014", "PB006"],
         "pickup": 1,
         "limit": 3,
-        "name": "루비",
+        "name": {
+          "kr": "루비",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WWP001", "WM013"]
       },
@@ -435,7 +603,12 @@
         "tobe": ["BWH002", "GWT002", "BM005"],
         "pickup": 1,
         "limit": 3,
-        "name": "방전 전지",
+        "name": {
+          "kr": "방전 전지",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WM009", "WD002"]
       },
@@ -455,7 +628,12 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "백색 가루",
+        "name": {
+          "kr": "백색 가루",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WM025", "WM002"]
       },
@@ -475,7 +653,12 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "재",
+        "name": {
+          "kr": "재",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WM015", "WM006"]
       },
@@ -496,7 +679,12 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "전자 부품",
+        "name": {
+          "kr": "전자 부품",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WM009", "WM021"]
       },
@@ -519,7 +707,12 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "정교한 도면",
+        "name": {
+          "kr": "정교한 도면",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WM015", "WM022"]
       },
@@ -540,7 +733,12 @@
         ],
         "pickup": 2,
         "limit": 3,
-        "name": "철판",
+        "name": {
+          "kr": "철판",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 2,
         "material": ["WM005", "WWP001"]
       },
@@ -566,7 +764,12 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "황금",
+        "name": {
+          "kr": "황금",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WM013", "WM023"]
       },
@@ -578,8 +781,13 @@
         "tobe": ["BWK005", "PWP001", "BF003", "BF004", "BF010", "BF018"],
         "pickup": 2,
         "limit": 3,
-        "name": "달궈진 돌멩이",
-        "stack": 3,
+        "name": {
+          "kr": "달궈진 돌멩이",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WM002", "WM006"]
       },
       {
@@ -588,10 +796,15 @@
         "img": "https://lh3.google.com/u/0/d/1Vds5Xhui9VV4g7Z8Q4IfCSKy7QNckFfv",
         "location": false,
         "tobe": ["BA015"],
-        "pickup": 3,
+        "pickup": 1,
         "limit": 3,
-        "name": "하드커버",
-        "stack": 3,
+        "name": {
+          "kr": "하드커버",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1,
         "material": ["WM015", "WM001"]
       },
       {
@@ -600,10 +813,15 @@
         "img": "https://lh3.google.com/u/0/d/1qZpgKRWnA-PyBorfRHz6KQ06rnBQL88U",
         "location": false,
         "tobe": ["BB006", "BS006"],
-        "pickup": 3,
+        "pickup": 1,
         "limit": 3,
-        "name": "철사",
-        "stack": 3,
+        "name": {
+          "kr": "철사",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1,
         "material": ["WM021", "WWP001"]
       },
       {
@@ -631,7 +849,12 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "문스톤",
+        "name": {
+          "kr": "문스톤",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["BM008", "WM002"]
       },
@@ -643,7 +866,12 @@
         "tobe": ["BWJ005", "PWJ005", "PB014", "BA008"],
         "pickup": 1,
         "limit": 3,
-        "name": "독약",
+        "name": {
+          "kr": "독약",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["GM007", "WD002"]
       },
@@ -663,7 +891,12 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "모터",
+        "name": {
+          "kr": "모터",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["GM008", "WM005"]
       },
@@ -675,7 +908,12 @@
         "tobe": ["PWG005", "PWN003", "PC001", "YB002"],
         "pickup": 1,
         "limit": 3,
-        "name": "유리판",
+        "name": {
+          "kr": "유리판",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["GA003", "WM014"]
       },
@@ -687,7 +925,12 @@
         "tobe": ["BWI003", "PWD003", "PWJ001", "PWM003", "PWP003", "PWQ002"],
         "pickup": 1,
         "limit": 3,
-        "name": "이온 전지",
+        "name": {
+          "kr": "이온 전지",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["GM005", "WD006"]
       },
@@ -699,7 +942,12 @@
         "tobe": ["PWU004", "PB004", "PS007", "YT002"],
         "pickup": 1,
         "limit": 1,
-        "name": "휴대폰",
+        "name": {
+          "kr": "휴대폰",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["GM009", "GM008"]
       },
@@ -725,7 +973,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "미스릴"
+        "name": {
+          "kr": "미스릴",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "BM008",
@@ -746,7 +1000,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "운석"
+        "name": {
+          "kr": "운석",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "BM009",
@@ -765,7 +1025,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "생명의 나무"
+        "name": {
+          "kr": "생명의 나무",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "PM001",
@@ -791,7 +1057,13 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "VF 혈액 샘플"
+        "name": {
+          "kr": "VF 혈액 샘플",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "PM002",
@@ -824,7 +1096,12 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": "포스 코어",
+        "name": {
+          "kr": "포스 코어",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["BM009", "BM008"]
       },
@@ -836,11 +1113,16 @@
         "tobe": ["PWJ004", "YWB004", "YWV005", "YB001", "YS002", "YWE002"],
         "pickup": 1,
         "limit": 1,
-        "name": "만년빙",
+        "name": {
+          "kr": "만년빙",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["BM009", "WD003"],
-        "스킬공격 추가피해": 18,
-        "스태미너 재생(%)": 1
+        "skill0": 18,
+        "mp_reg1": 1
       },
       {
         "id": "PM004",
@@ -858,19 +1140,23 @@
         ],
         "pickup": 1,
         "limit": 1,
-        "name": "삼매진화",
+        "name": {
+          "kr": "삼매진화",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["BM009", "WM006"],
-        "공격력": 10,
-        "방어력": 10,
-        "기본공격 추가피해": 15
+        "atk0": 10,
+        "def0": 10,
+        "basic_atk0": 15
       }
     ]
   },
   {
     "category": "trap",
-    "items": [
-      {
+    "items": [{
         "id": "WT001",
         "sort": "trap",
         "img": "https://lh3.google.com/u/0/d/15yVovzUo3WbohkDqlgn0or5FunIs9kAx",
@@ -878,7 +1164,13 @@
         "tobe": ["WWU001", "GT009", "GT010", "GT011"],
         "pickup": 1,
         "limit": 5,
-        "name": "감시 카메라"
+        "name": {
+          "kr": "감시 카메라",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WT002",
@@ -888,7 +1180,13 @@
         "tobe": ["GS007", "GT004", "GT005"],
         "pickup": 2,
         "limit": 5,
-        "name": "올가미"
+        "name": {
+          "kr": "올가미",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "WT003",
@@ -898,7 +1196,13 @@
         "tobe": ["GT001", "GT002", "GT007", "GT008"],
         "pickup": 2,
         "limit": 5,
-        "name": "쥐덫"
+        "name": {
+          "kr": "쥐덫",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "GT001",
@@ -909,8 +1213,13 @@
         "tobe": ["PWA004", "PWH001", "PH008", "BB004", "PT001"],
         "pickup": 2,
         "limit": 5,
-        "name": "가시 발판",
-        "stack": 1
+        "name": {
+          "kr": "가시 발판",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "GT002",
@@ -920,8 +1229,13 @@
         "tobe": ["PH009", "BT006", "YT001"],
         "pickup": 2,
         "limit": 5,
-        "name": "개량형 쥐덫",
-        "stack": 1,
+        "name": {
+          "kr": "개량형 쥐덫",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WT003", "WM016"]
       },
       {
@@ -932,7 +1246,12 @@
         "tobe": ["BWM004", "BT001"],
         "pickup": 1,
         "limit": 5,
-        "name": "다이너마이트",
+        "name": {
+          "kr": "다이너마이트",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WM021", "WM018"]
       },
@@ -944,8 +1263,13 @@
         "tobe": ["BT003"],
         "pickup": 2,
         "limit": 5,
-        "name": "대나무 트랩",
-        "stack": 1,
+        "name": {
+          "kr": "대나무 트랩",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WT002", "WWF001"]
       },
       {
@@ -956,8 +1280,13 @@
         "tobe": ["BT004"],
         "pickup": 2,
         "limit": 5,
-        "name": "부비트랩",
-        "stack": 1,
+        "name": {
+          "kr": "부비트랩",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WT002", "WM014"]
       },
       {
@@ -968,8 +1297,13 @@
         "tobe": ["PC002"],
         "pickup": 3,
         "limit": 5,
-        "name": "소란 발생기",
-        "stack": 1,
+        "name": {
+          "kr": "소란 발생기",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WM017", "WWI001"]
       },
       {
@@ -980,7 +1314,12 @@
         "tobe": ["BT006", "PT003"],
         "pickup": 1,
         "limit": 5,
-        "name": "정글 기요틴",
+        "name": {
+          "kr": "정글 기요틴",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WT003", "WWA003"]
       },
@@ -992,7 +1331,12 @@
         "tobe": ["BT007", "PT004"],
         "pickup": 1,
         "limit": 5,
-        "name": "폭발 트랩",
+        "name": {
+          "kr": "폭발 트랩",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WT003", "WM018"]
       },
@@ -1004,8 +1348,13 @@
         "tobe": ["PWO002"],
         "pickup": 2,
         "limit": 6,
-        "name": "망원 카메라",
-        "stack": 3,
+        "name": {
+          "kr": "망원 카메라",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WT001", "WA009"]
       },
       {
@@ -1016,8 +1365,13 @@
         "tobe": ["BT005"],
         "pickup": 2,
         "limit": 6,
-        "name": "정찰 드론",
-        "stack": 3,
+        "name": {
+          "kr": "정찰 드론",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WT001", "WM018"]
       },
       {
@@ -1028,10 +1382,15 @@
         "tobe": ["BWU001"],
         "pickup": 2,
         "limit": 6,
-        "name": "위장 카메라",
-        "stack": 3,
+        "name": {
+          "kr": "위장 카메라",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WT001", "WM024"],
-        "[조건]": "나타폰만 제작가능"
+        "only0": "나타폰만 제작가능"
       },
       {
         "id": "BT001",
@@ -1041,7 +1400,12 @@
         "tobe": ["PWI002", "PWL004", "PT001", "PT002", "YT002"],
         "pickup": 1,
         "limit": 5,
-        "name": "RDX",
+        "name": {
+          "kr": "RDX",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["GT003", "WM005"]
       },
@@ -1053,8 +1417,13 @@
         "tobe": ["PWE008", "PWF004"],
         "pickup": 2,
         "limit": 5,
-        "name": "미스릴 실",
-        "stack": 1,
+        "name": {
+          "kr": "미스릴 실",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WM021", "BM007"]
       },
       {
@@ -1065,8 +1434,13 @@
         "tobe": ["PT003"],
         "pickup": 2,
         "limit": 5,
-        "name": "펜듈럼 도끼",
-        "stack": 1,
+        "name": {
+          "kr": "펜듈럼 도끼",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GT004", "WWC002"]
       },
       {
@@ -1077,8 +1451,13 @@
         "tobe": ["PT004"],
         "pickup": 2,
         "limit": 5,
-        "name": "지뢰",
-        "stack": 1,
+        "name": {
+          "kr": "지뢰",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GT005", "WM018"]
       },
       {
@@ -1089,7 +1468,12 @@
         "tobe": ["PWM005"],
         "pickup": 1,
         "limit": 5,
-        "name": "EMP 드론",
+        "name": {
+          "kr": "EMP 드론",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["GT010", "WM009"]
       },
@@ -1101,8 +1485,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 5,
-        "name": "히든 메이든",
-        "stack": 1,
+        "name": {
+          "kr": "히든 메이든",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["GT002", "GT007"]
       },
       {
@@ -1113,7 +1502,12 @@
         "tobe": ["PWI007"],
         "pickup": 1,
         "limit": 5,
-        "name": "화염 트랩",
+        "name": {
+          "kr": "화염 트랩",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["GT008", "GM002"]
       },
@@ -1125,8 +1519,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 5,
-        "name": "폭뢰침",
-        "stack": 1,
+        "name": {
+          "kr": "폭뢰침",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["BT001", "GT001"]
       },
       {
@@ -1137,8 +1536,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 5,
-        "name": "C-4",
-        "stack": 1,
+        "name": {
+          "kr": "C-4",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["BT001", "GM006"]
       },
       {
@@ -1149,7 +1553,12 @@
         "tobe": false,
         "pickup": 1,
         "limit": 5,
-        "name": "더블 기요틴",
+        "name": {
+          "kr": "더블 기요틴",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["BT003", "GT007"]
       },
@@ -1161,7 +1570,12 @@
         "tobe": false,
         "pickup": 1,
         "limit": 5,
-        "name": "크레모어",
+        "name": {
+          "kr": "크레모어",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["BT004", "GT008"]
       },
@@ -1173,8 +1587,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 5,
-        "name": "리모트 마인",
-        "stack": 1,
+        "name": {
+          "kr": "리모트 마인",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["GT002", "PM002"]
       },
       {
@@ -1185,16 +1604,20 @@
         "tobe": false,
         "pickup": 2,
         "limit": 5,
-        "name": "스마트 폭탄",
-        "stack": 1,
+        "name": {
+          "kr": "스마트 폭탄",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["BT001", "BM006"]
       }
     ]
   },
   {
     "category": "food",
-    "items": [
-      {
+    "items": [{
         "id": "WF001",
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1eJ3QoVFoZyXaFNadrxjgbSTw4q4tqsbL",
@@ -1202,7 +1625,13 @@
         "tobe": ["BF001", "BF003", "BF012", "BF025"],
         "pickup": 2,
         "limit": 6,
-        "name": "감자"
+        "name": {
+          "kr": "감자",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "WF002",
@@ -1212,7 +1641,13 @@
         "tobe": ["GF001", "GF002", "GF017", "BF009", "BF010", "BF015"],
         "pickup": 2,
         "limit": 6,
-        "name": "대구"
+        "name": {
+          "kr": "대구",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "WF003",
@@ -1222,7 +1657,13 @@
         "tobe": ["GF006", "BF004"],
         "pickup": 2,
         "limit": 6,
-        "name": "붕어"
+        "name": {
+          "kr": "붕어",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "WF004",
@@ -1232,7 +1673,13 @@
         "tobe": ["GF018", "GD002", "GD007"],
         "pickup": 2,
         "limit": 6,
-        "name": "레몬"
+        "name": {
+          "kr": "레몬",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "WF005",
@@ -1242,7 +1689,13 @@
         "tobe": ["GF003", "GF012", "GF020", "BF008"],
         "pickup": 1,
         "limit": 6,
-        "name": "마늘"
+        "name": {
+          "kr": "마늘",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WF007",
@@ -1262,7 +1715,13 @@
         ],
         "pickup": 1,
         "limit": 6,
-        "name": "빵"
+        "name": {
+          "kr": "빵",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WF008",
@@ -1272,7 +1731,13 @@
         "tobe": ["GF012", "GF014", "BF018", "BF022"],
         "pickup": 1,
         "limit": 6,
-        "name": "고기"
+        "name": {
+          "kr": "고기",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WF009",
@@ -1282,7 +1747,13 @@
         "tobe": ["GF017", "GF021", "BF014", "BF017", "BF026"],
         "pickup": 1,
         "limit": 6,
-        "name": "달걀"
+        "name": {
+          "kr": "달걀",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WF010",
@@ -1292,7 +1763,13 @@
         "tobe": ["BF005", "BF007", "BF013"],
         "pickup": 1,
         "limit": 6,
-        "name": "생라면"
+        "name": {
+          "kr": "생라면",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WF011",
@@ -1302,7 +1779,13 @@
         "tobe": ["GF010", "BF023", "BD008"],
         "pickup": 1,
         "limit": 6,
-        "name": "약초"
+        "name": {
+          "kr": "약초",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WF012",
@@ -1312,7 +1795,13 @@
         "tobe": ["GF008", "GF024", "BF019", "GD013", "BD006"],
         "pickup": 1,
         "limit": 6,
-        "name": "초콜렛"
+        "name": {
+          "kr": "초콜렛",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "GF001",
@@ -1322,7 +1811,12 @@
         "tobe": false,
         "pickup": 1,
         "limit": 6,
-        "name": "꿀 바른 대구살",
+        "name": {
+          "kr": "꿀 바른 대구살",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF002", "WD001"]
       },
@@ -1334,7 +1828,12 @@
         "tobe": false,
         "pickup": 1,
         "limit": 6,
-        "name": "대구 간 통조림",
+        "name": {
+          "kr": "대구 간 통조림",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF002", "WM017"]
       },
@@ -1346,8 +1845,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "마늘빵",
-        "stack": 1,
+        "name": {
+          "kr": "마늘빵",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF007", "WF005"]
       },
       {
@@ -1358,7 +1862,12 @@
         "tobe": ["BF012", "BF019", "BF025"],
         "pickup": 1,
         "limit": 6,
-        "name": "버터",
+        "name": {
+          "kr": "버터",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WD007", "WM024"]
       },
@@ -1370,7 +1879,12 @@
         "tobe": false,
         "pickup": 1,
         "limit": 6,
-        "name": "붕어빵",
+        "name": {
+          "kr": "붕어빵",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF007", "WF003"]
       },
@@ -1382,7 +1896,12 @@
         "tobe": ["BF020"],
         "pickup": 1,
         "limit": 6,
-        "name": "초코파이",
+        "name": {
+          "kr": "초코파이",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF007", "WF012"]
       },
@@ -1394,8 +1913,13 @@
         "tobe": ["BF021"],
         "pickup": 2,
         "limit": 6,
-        "name": "난초",
-        "stack": 1,
+        "name": {
+          "kr": "난초",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF011", "WA002"]
       },
       {
@@ -1406,7 +1930,12 @@
         "tobe": false,
         "pickup": 1,
         "limit": 6,
-        "name": "마늘 베이컨 말이",
+        "name": {
+          "kr": "마늘 베이컨 말이",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF005", "WF008"]
       },
@@ -1418,7 +1947,12 @@
         "tobe": false,
         "pickup": 1,
         "limit": 6,
-        "name": "번",
+        "name": {
+          "kr": "번",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF007", "WD005"]
       },
@@ -1430,7 +1964,12 @@
         "tobe": ["PF002"],
         "pickup": 1,
         "limit": 6,
-        "name": "햄버거",
+        "name": {
+          "kr": "햄버거",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF007", "WF008"]
       },
@@ -1442,7 +1981,12 @@
         "tobe": false,
         "pickup": 1,
         "limit": 6,
-        "name": "달걀 생선 필레",
+        "name": {
+          "kr": "달걀 생선 필레",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF002", "WF009"]
       },
@@ -1454,8 +1998,13 @@
         "tobe": ["BF026"],
         "pickup": 2,
         "limit": 6,
-        "name": "시트러스 케이크",
-        "stack": 1,
+        "name": {
+          "kr": "시트러스 케이크",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF007", "WF004"]
       },
       {
@@ -1466,8 +2015,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "마늘 꿀절임",
-        "stack": 1,
+        "name": {
+          "kr": "마늘 꿀절임",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WF005", "WD001"]
       },
       {
@@ -1478,8 +2032,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "계란빵",
-        "stack": 1,
+        "name": {
+          "kr": "계란빵",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF009", "WF007"]
       },
       {
@@ -1490,7 +2049,12 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "초코 아이스크림",
+        "name": {
+          "kr": "초코 아이스크림",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WD003", "WF012"]
       },
@@ -1502,7 +2066,12 @@
         "tobe": ["PF001", "PF002"],
         "pickup": 1,
         "limit": 6,
-        "name": "감자튀김",
+        "name": {
+          "kr": "감자튀김",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF001", "GM003"]
       },
@@ -1514,8 +2083,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "구운 감자",
-        "stack": 1,
+        "name": {
+          "kr": "구운 감자",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WF001", "GM012"]
       },
       {
@@ -1526,8 +2100,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "구운 붕어",
-        "stack": 1,
+        "name": {
+          "kr": "구운 붕어",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WF003", "GM012"]
       },
       {
@@ -1538,8 +2117,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "냉면",
-        "stack": 1,
+        "name": {
+          "kr": "냉면",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WF010", "GD015"]
       },
       {
@@ -1550,8 +2134,13 @@
         "tobe": ["BF008"],
         "pickup": 2,
         "limit": 6,
-        "name": "뜨거운 라면",
-        "stack": 1,
+        "name": {
+          "kr": "뜨거운 라면",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF010", "GD001"]
       },
       {
@@ -1562,8 +2151,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "마늘라면",
-        "stack": 1,
+        "name": {
+          "kr": "마늘라면",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["BF007", "WF005"]
       },
       {
@@ -1574,8 +2168,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "매운탕",
-        "stack": 1,
+        "name": {
+          "kr": "매운탕",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF002", "GD001"]
       },
       {
@@ -1586,8 +2185,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 10,
-        "name": "메로구이",
-        "stack": 1,
+        "name": {
+          "kr": "메로구이",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WF002", "GM012"]
       },
       {
@@ -1598,8 +2202,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "모카빵",
-        "stack": 1,
+        "name": {
+          "kr": "모카빵",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GD008", "WF007"]
       },
       {
@@ -1610,8 +2219,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "버터 감자구이",
-        "stack": 1,
+        "name": {
+          "kr": "버터 감자구이",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GF004", "WF001"]
       },
       {
@@ -1622,8 +2236,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "볶음라면",
-        "stack": 1,
+        "name": {
+          "kr": "볶음라면",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF010", "GM003"]
       },
       {
@@ -1634,8 +2253,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "삶은 달걀",
-        "stack": 1,
+        "name": {
+          "kr": "삶은 달걀",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WF009", "GD001"]
       },
       {
@@ -1646,7 +2270,12 @@
         "tobe": ["PF001"],
         "pickup": 1,
         "limit": 6,
-        "name": "생선까스",
+        "name": {
+          "kr": "생선까스",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WF002", "GM003"]
       },
@@ -1658,8 +2287,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "스크램블 에그",
-        "stack": 1,
+        "name": {
+          "kr": "스크램블 에그",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF009", "GM003"]
       },
       {
@@ -1670,8 +2304,13 @@
         "tobe": false,
         "pickup": 4,
         "limit": 10,
-        "name": "스테이크",
-        "stack": 1,
+        "name": {
+          "kr": "스테이크",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 4,
         "material": ["WF008", "GM012"]
       },
       {
@@ -1682,8 +2321,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "초코칩 쿠키",
-        "stack": 1,
+        "name": {
+          "kr": "초코칩 쿠키",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF012", "GF004"]
       },
       {
@@ -1694,8 +2338,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "초코파이 상자",
-        "stack": 1,
+        "name": {
+          "kr": "초코파이 상자",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GF008", "WA006"]
       },
       {
@@ -1706,8 +2355,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "힐링 포션",
-        "stack": 1,
+        "name": {
+          "kr": "힐링 포션",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GF010", "WM001"]
       },
       {
@@ -1718,8 +2372,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "후라이드 치킨",
-        "stack": 1,
+        "name": {
+          "kr": "후라이드 치킨",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WF008", "GM003"]
       },
       {
@@ -1730,8 +2389,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "탕약",
-        "stack": 1,
+        "name": {
+          "kr": "탕약",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WF011", "GD001"]
       },
       {
@@ -1742,8 +2406,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "술빵",
-        "stack": 1,
+        "name": {
+          "kr": "술빵",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GD005", "WF007"]
       },
       {
@@ -1754,8 +2423,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "허니버터",
-        "stack": 1,
+        "name": {
+          "kr": "허니버터",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GF004", "WD001"]
       },
       {
@@ -1766,8 +2440,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "생일 케이크",
-        "stack": 1,
+        "name": {
+          "kr": "생일 케이크",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GF018", "WF009"]
       },
       {
@@ -1778,7 +2457,13 @@
         "tobe": false,
         "pickup": 1,
         "limit": 6,
-        "name": "구급상자"
+        "name": {
+          "kr": "구급상자",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "PF001",
@@ -1788,8 +2473,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "피쉬 앤 칩스",
-        "stack": 1,
+        "name": {
+          "kr": "피쉬 앤 칩스",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["BF001", "BF015"]
       },
       {
@@ -1800,8 +2490,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "일레븐 세트",
-        "stack": 1,
+        "name": {
+          "kr": "일레븐 세트",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["BF001", "GF014"]
       },
       {
@@ -1812,8 +2507,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "대환단",
-        "stack": 1,
+        "name": {
+          "kr": "대환단",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["BM009", "WA005"]
       },
       {
@@ -1824,7 +2524,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "성수",
+        "name": {
+          "kr": "성수",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["BM007", "WD002"]
       },
       {
@@ -1835,16 +2541,20 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "셀레네의 눈물",
-        "stack": 1,
+        "name": {
+          "kr": "셀레네의 눈물",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["BM001", "WD002"]
       }
     ]
   },
   {
     "category": "drink",
-    "items": [
-      {
+    "items": [{
         "id": "WD001",
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1ZkKcOqJmGpPea9v5TfqAOQYHMAHxGqMn",
@@ -1852,7 +2562,13 @@
         "tobe": ["GF001", "GF020", "GD009", "GD011", "GD014", "BD004"],
         "pickup": 2,
         "limit": 6,
-        "name": "꿀"
+        "name": {
+          "kr": "꿀",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "WD002",
@@ -1872,7 +2588,13 @@
         ],
         "pickup": 3,
         "limit": 6,
-        "name": "물"
+        "name": {
+          "kr": "물",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3
       },
       {
         "id": "WD003",
@@ -1891,7 +2613,13 @@
         ],
         "pickup": 2,
         "limit": 6,
-        "name": "얼음"
+        "name": {
+          "kr": "얼음",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "WD004",
@@ -1901,7 +2629,13 @@
         "tobe": ["GD007", "GD012", "GD016", "GD017", "BD009"],
         "pickup": 1,
         "limit": 6,
-        "name": "위스키"
+        "name": {
+          "kr": "위스키",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WD005",
@@ -1911,7 +2645,13 @@
         "tobe": ["GF013", "GD006", "GD008", "GD010", "BD007"],
         "pickup": 1,
         "limit": 6,
-        "name": "커피콩"
+        "name": {
+          "kr": "커피콩",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WD006",
@@ -1921,7 +2661,13 @@
         "tobe": ["BM005", "GD002", "GD009", "GD012"],
         "pickup": 1,
         "limit": 6,
-        "name": "탄산수"
+        "name": {
+          "kr": "탄산수",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 1
       },
       {
         "id": "WD007",
@@ -1931,7 +2677,13 @@
         "tobe": ["GF004", "GD010", "GD011", "GD013", "GD017", "BD003"],
         "pickup": 2,
         "limit": 6,
-        "name": "우유"
+        "name": {
+          "kr": "우유",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2
       },
       {
         "id": "GD001",
@@ -1952,8 +2704,13 @@
         ],
         "pickup": 2,
         "limit": 6,
-        "name": "뜨거운 물",
-        "stack": 1,
+        "name": {
+          "kr": "뜨거운 물",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WD002", "WM006"]
       },
       {
@@ -1964,8 +2721,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "레몬에이드",
-        "stack": 1,
+        "name": {
+          "kr": "레몬에이드",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WD006", "WF004"]
       },
       {
@@ -1976,8 +2738,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "물병",
-        "stack": 1,
+        "name": {
+          "kr": "물병",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WD002", "WM001"]
       },
       {
@@ -1988,7 +2755,12 @@
         "tobe": ["BD002", "BD005", "BD008"],
         "pickup": 1,
         "limit": 6,
-        "name": "백주",
+        "name": {
+          "kr": "백주",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
         "stack": 1,
         "material": ["WM010", "WM001"]
       },
@@ -2000,8 +2772,13 @@
         "tobe": ["BF024"],
         "pickup": 2,
         "limit": 6,
-        "name": "소주",
-        "stack": 1,
+        "name": {
+          "kr": "소주",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WM010", "WD002"]
       },
       {
@@ -2012,8 +2789,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "아이스 커피",
-        "stack": 1,
+        "name": {
+          "kr": "아이스 커피",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WD003", "WD005"]
       },
       {
@@ -2024,8 +2806,13 @@
         "tobe": false,
         "pickup": 4,
         "limit": 6,
-        "name": "칵테일",
-        "stack": 1,
+        "name": {
+          "kr": "칵테일",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 4,
         "material": ["WD004", "WF004"]
       },
       {
@@ -2036,8 +2823,13 @@
         "tobe": ["BF011", "BD003"],
         "pickup": 2,
         "limit": 6,
-        "name": "커피 리큐르",
-        "stack": 1,
+        "name": {
+          "kr": "커피 리큐르",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WM010", "WD005"]
       },
       {
@@ -2048,8 +2840,13 @@
         "tobe": ["PWI004", "BD009", "BD010"],
         "pickup": 3,
         "limit": 6,
-        "name": "콜라",
-        "stack": 1,
+        "name": {
+          "kr": "콜라",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WD006", "WD001"]
       },
       {
@@ -2060,8 +2857,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "카페라테",
-        "stack": 1,
+        "name": {
+          "kr": "카페라테",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WD007", "WD005"]
       },
       {
@@ -2072,8 +2874,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "꿀탄 우유",
-        "stack": 1,
+        "name": {
+          "kr": "꿀탄 우유",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WD007", "WD001"]
       },
       {
@@ -2084,8 +2891,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "하이볼",
-        "stack": 1,
+        "name": {
+          "kr": "하이볼",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WD004", "WD006"]
       },
       {
@@ -2096,8 +2908,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "초코 우유",
-        "stack": 1,
+        "name": {
+          "kr": "초코 우유",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["WD007", "WF012"]
       },
       {
@@ -2108,8 +2925,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "꿀물",
-        "stack": 1,
+        "name": {
+          "kr": "꿀물",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WD001", "WD002"]
       },
       {
@@ -2120,8 +2942,13 @@
         "tobe": ["BF005"],
         "pickup": 2,
         "limit": 6,
-        "name": "얼음물",
-        "stack": 1,
+        "name": {
+          "kr": "얼음물",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WD003", "WD002"]
       },
       {
@@ -2132,8 +2959,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "온더락",
-        "stack": 1,
+        "name": {
+          "kr": "온더락",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WD003", "WD004"]
       },
       {
@@ -2144,8 +2976,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "카우보이",
-        "stack": 1,
+        "name": {
+          "kr": "카우보이",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["WD007", "WD004"]
       },
       {
@@ -2156,8 +2993,13 @@
         "tobe": ["PWV002", "PC012", "PA003"],
         "pickup": 2,
         "limit": 6,
-        "name": "정화수",
-        "stack": 1,
+        "name": {
+          "kr": "정화수",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GD001", "WD003"]
       },
       {
@@ -2168,8 +3010,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "고량주",
-        "stack": 1,
+        "name": {
+          "kr": "고량주",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["GD004", "WM006"]
       },
       {
@@ -2180,8 +3027,13 @@
         "tobe": false,
         "pickup": 4,
         "limit": 6,
-        "name": "깔루아 밀크",
-        "stack": 1,
+        "name": {
+          "kr": "깔루아 밀크",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 4,
         "material": ["GD008", "WD007"]
       },
       {
@@ -2192,8 +3044,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "뜨거운 꿀물",
-        "stack": 1,
+        "name": {
+          "kr": "뜨거운 꿀물",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GD001", "WD001"]
       },
       {
@@ -2204,8 +3061,13 @@
         "tobe": ["PC013"],
         "pickup": 5,
         "limit": 6,
-        "name": "백일취",
-        "stack": 1,
+        "name": {
+          "kr": "백일취",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 5,
         "material": ["GD004", "WA002"]
       },
       {
@@ -2216,8 +3078,13 @@
         "tobe": false,
         "pickup": 4,
         "limit": 6,
-        "name": "핫초코",
-        "stack": 1,
+        "name": {
+          "kr": "핫초코",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 4,
         "material": ["GD001", "WF012"]
       },
       {
@@ -2228,8 +3095,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "아메리카노",
-        "stack": 1,
+        "name": {
+          "kr": "아메리카노",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GD001", "WD005"]
       },
       {
@@ -2240,8 +3112,13 @@
         "tobe": false,
         "pickup": 3,
         "limit": 6,
-        "name": "약주",
-        "stack": 1,
+        "name": {
+          "kr": "약주",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 3,
         "material": ["GD004", "WF011"]
       },
       {
@@ -2252,8 +3129,13 @@
         "tobe": false,
         "pickup": 5,
         "limit": 6,
-        "name": "위스키콕",
-        "stack": 1,
+        "name": {
+          "kr": "위스키콕",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 5,
         "material": ["GD009", "WD004"]
       },
       {
@@ -2264,8 +3146,13 @@
         "tobe": false,
         "pickup": 2,
         "limit": 6,
-        "name": "캔콜라",
-        "stack": 1,
+        "name": {
+          "kr": "캔콜라",
+          "en": "",
+          "ja": "",
+          "cn": ""
+        },
+        "stack": 2,
         "material": ["GD009", "WM017"]
       }
     ]

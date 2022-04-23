@@ -14,7 +14,7 @@
     <div class="routesBox">
       <div v-for="(area, index) in customRoute" :key="`route${index}`">
         <div>
-          <div>{{ areaInfo[area].name }}</div>
+          <div>{{ areaInfo[area].name[language] }}</div>
           <ul>
             <li
               v-for="item in areaWithTargetItems.filter(
@@ -23,7 +23,7 @@
               :key="`complete${item.id}`"
               :class="`value${item.id[0]}`"
             >
-              <img :src="item.img" :alt="`${item.name}_img`" />
+              <img :src="item.img" :alt="`${item.name[language]}_img`" />
             </li>
           </ul>
           <ul></ul>
@@ -59,6 +59,9 @@
     },
     components: {},
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       customRoute() {
         return this.$store.state.customRoute;
       },

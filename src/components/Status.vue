@@ -64,9 +64,13 @@
               :class="`showItemInfoBtn value${item.id[0]}`"
               @click="showItemInfo"
             >
-              <img :src="item.img" :alt="item.name" class="itemInfo_img" />
+              <img
+                :src="item.img"
+                :alt="item.name[language]"
+                class="itemInfo_img"
+              />
             </button>
-            <div>{{ item.name }}</div>
+            <div>{{ item.name[language] }}</div>
           </li>
         </ul>
 
@@ -81,11 +85,11 @@
               <div :class="`itemInfo value${bagItems[pocket].id[0]}`">
                 <img
                   :src="bagItems[pocket].img"
-                  :alt="`${bagItems[pocket].name}_img`"
-                  :title="`${bagItems[pocket].name}_img`"
+                  :alt="`${bagItems[pocket].name[language]}_img`"
+                  :title="`${bagItems[pocket].name[language]}_img`"
                   v-if="showItemImg"
                 />
-                <span v-else>{{ bagItems[pocket].name }}</span>
+                <span v-else>{{ bagItems[pocket].name[language] }}</span>
               </div>
             </span>
             <span v-else>
@@ -110,15 +114,15 @@
             class="option"
           >
             <div
-              v-if="!optionName.match(/([고유])|([버프])|([액티브])/g)"
+              v-if="!optionName.match(/(active)|(buff)|(uniq)/g)"
               class="optionInfo"
             >
               <div class="optionInfo_name">
-                {{ `${optionName.replace(/[(%)]/g, "")}:` }}
+                {{ `${itemOptions[optionName][language]}:` }}
               </div>
               <div class="optionInfo_value">
                 <span>{{
-                  optionName.match(/[%]/g)
+                  optionName.match(/[1]/g)
                     ? `${Math.round(optionValue * 1000) / 10}%`
                     : optionValue
                 }}</span>
@@ -131,11 +135,21 @@
             class="option"
           >
             <div
-              v-if="optionName.match(/([고유])|([버프])|([액티브])/g)"
+              v-if="optionName.match(/(active)|(buff)|(uniq)/g)"
               class="optionInfo unique"
             >
               <div class="optionInfo_name">
-                {{ optionName.replace(/[(%)]/g, "") }}
+                {{
+                  `[${
+                    optionName.match(/(active)/g)
+                      ? "액티브"
+                      : optionName.match(/(buff)/g)
+                      ? "버프"
+                      : optionName.match(/(uniq)/g)
+                      ? "고유"
+                      : "undefined"
+                  }] ${itemOptions[optionName][language]}`
+                }}
               </div>
               <div class="optionInfo_values">
                 <ul class="uniqueOptions">
@@ -157,7 +171,7 @@
 </template>
 
 <script>
-  import { searchById } from "~/utils/itemTable";
+  import { searchById, itemOptions } from "~/utils/itemTable";
 
   export default {
     data() {
@@ -175,11 +189,15 @@
           "name",
           "reload",
         ],
+        itemOptions,
         statusData: "targetItems",
       };
     },
     components: {},
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       toggleModal() {
         return this.$store.state.toggleModal;
       },
@@ -201,7 +219,7 @@
               const itemInfo = searchById(item.id);
               Object.entries(itemInfo).forEach(([optionName, optionValue]) => {
                 if (!this.commonOptions.includes(optionName)) {
-                  if (optionName.match(/([고유])|([버프])|([액티브])/g)) {
+                  if (optionName.match(/(active)|(buff)|(uniq)/g)) {
                     itemOptions[optionName] = !itemOptions[optionName]
                       ? optionValue
                       : optionValue > itemOptions[optionName]
@@ -388,11 +406,11 @@
               word-break: keep-all;
 
               .uniqueOptions {
-                list-style: disc inside;
+                list-style: disc outside;
+                padding: 4px;
 
                 li {
-                  text-indent: 10px;
-                  margin: 5px 0;
+                  margin: 4px 0;
                 }
               }
             }

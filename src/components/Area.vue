@@ -63,7 +63,7 @@
                 :data-itemid="drop.id"
               >
                 <button class="getDropBtn" @click="getItem">
-                  {{ drop.name }}
+                  {{ drop.name[language] }}
                 </button>
                 <span v-if="dropMats.dropMatObj[drop.id]">
                   {{
@@ -122,6 +122,9 @@
     },
     components: {},
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       dropMats() {
         return this.$store.state.matGDs;
       },

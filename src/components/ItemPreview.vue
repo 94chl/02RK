@@ -4,8 +4,8 @@
       <div class="imgInfo">
         <img
           :src="cartItem.img"
-          :alt="`${cartItem.name}_img`"
-          :title="`${cartItem.name}_img`"
+          :alt="`${cartItem.name[language]}_img`"
+          :title="`${cartItem.name[language]}_img`"
         />
         <button @click="setEquip" class="setEquipBtn">
           <i class="fas fa-suitcase"></i>
@@ -16,7 +16,7 @@
           <div>
             <span class="attrKey">이름 : </span>
             <span :class="`attrValue value${cartItemId[0]}`">{{
-              cartItem.name
+              cartItem.name[language]
             }}</span>
           </div>
         </li>
@@ -30,23 +30,32 @@
           v-for="option in cartItemOptions"
           :key="`cartItemInfo${option}`"
           :class="`itemOption ${option}Info ${
-            option.match(/(\[고유\])|(\[버프\])|(\[액티브\])/g) &&
-            'uniqueOption'
+            option.match(/(active)|(buff)|(uniq)/g) && 'uniqueOption'
           }`"
         >
           <div>
             <span
-              v-if="option.match(/(\[고유\])|(\[버프\])|(\[액티브\])/g)"
+              v-if="option.match(/(active)|(buff)|(uniq)/g)"
               class="attrKey"
             >
-              {{ option }}
+              {{
+                `[${
+                  option.match(/(active)/g)
+                    ? "액티브"
+                    : option.match(/(buff)/g)
+                    ? "버프"
+                    : option.match(/(uniq)/g)
+                    ? "고유"
+                    : "undefined"
+                }]${itemOptions[option][language]}`
+              }}
             </span>
             <span v-else class="attrKey">
               {{
                 `${
                   korOption[option]
                     ? korOption[option]
-                    : option.replace(/[(%)]/g, "")
+                    : itemOptions[option][language]
                 } : `
               }}
             </span>
@@ -61,7 +70,7 @@
                 :data-itemid="item.id"
                 :class="`matInfoBtn value${item.id[0]}`"
               >
-                <span> {{ item.name }}</span>
+                <span> {{ item.name[language] }}</span>
               </button>
             </span>
             <span class="attrValue" v-else-if="option === 'location'">
@@ -74,7 +83,7 @@
               </span>
             </span>
             <span v-else class="attrValue">
-              <ul v-if="option.match(/([고유])|([버프])|([액티브])/g)">
+              <ul v-if="option.match(/(active)|(buff)|(uniq)/g)">
                 <li
                   v-for="uniqueOption in cartItem[option].detail"
                   :key="cartItem[option] + uniqueOption"
@@ -85,7 +94,7 @@
               </ul>
               <span v-else>
                 {{
-                  option.match(/[%]/g)
+                  option.match(/[1]/g)
                     ? `${Math.round(cartItem[option] * 1000) / 10}%`
                     : cartItem[option]
                 }}
@@ -160,7 +169,7 @@
 </template>
 
 <script>
-  import { eng2Kor, searchById, areaData } from "~/utils/itemTable";
+  import { eng2Kor, searchById, areaData, itemOptions } from "~/utils/itemTable";
   import { disassembleWD } from "~/utils/disassemble";
   import { onUpdated, ref } from "vue";
   import { useStore } from "vuex";
@@ -186,6 +195,7 @@
           location: "드랍위치",
           tobe: "상위",
         },
+        itemOptions,
         necessaryOptions: ["img", "name", "sort"],
         isInitial: true,
         isShowPath: false,
@@ -207,6 +217,9 @@
     },
     components: {},
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       cartItemId() {
         return this.$store.state.cart.id;
       },
@@ -214,7 +227,7 @@
         const cart = this.$store.state.cart;
         const cartKeys = Object.keys(cart);
         const itemInfo = {};
-        cartKeys.forEach((option, index) => {
+        cartKeys.forEach((option, _) => {
           if (option === "img") itemInfo.img = cart[option];
           if (option === "name") itemInfo.name = cart[option];
           if (option === "sort") itemInfo.sort = eng2Kor[cart[option]];
@@ -357,11 +370,11 @@
 
           .attrValue {
             ul {
-              list-style: disc inside;
+              list-style: disc outside;
+              padding: 0 4px;
 
               .optionDetail {
-                text-indent: 10px;
-                margin: 5px 0;
+                margin: 4px 0;
                 word-break: keep-all;
               }
             }

@@ -12,11 +12,11 @@
         <button @click="setInitialWeapon" class="selectBtn">
           <img
             :src="weapon.img"
-            :alt="`${weapon.name}_icon`"
-            :title="`${weapon.name}_icon`"
+            :alt="`${weapon.name[language]}_icon`"
+            :title="`${weapon.name[language]}_icon`"
             v-if="showItemImg"
           />
-          <span v-else>{{ weapon.name }}</span>
+          <span v-else>{{ weapon.name[language] }}</span>
         </button>
       </li>
     </ul>
@@ -34,6 +34,9 @@
     },
     components: {},
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       toggleModal() {
         return this.$store.state.toggleModal;
       },

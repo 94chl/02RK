@@ -1049,7 +1049,7 @@
         },
         "stack": 1,
         "material": ["BWD001", "GT001"],
-        "atk0": 39,
+        "atk0": 35,
         "vamp1": 0.12,
         "atk_spd1": 0.2,
         "uniq028": {
@@ -1399,7 +1399,7 @@
         "stack": 1,
         "material": ["BWE004", "WA008"],
         "atk0": 45,
-        "basic_atk0": 32
+        "basic_atk0": 29
       },
       {
         "id": "PWE003",
@@ -4267,7 +4267,7 @@
         "load0": 30,
         "atk0": 18,
         "atk_spd1": 0.1,
-        "basic_atk0": 9
+        "basic_atk0": 7
       },
       {
         "id": "PWN002",
@@ -4330,8 +4330,8 @@
         "stack": 1,
         "material": ["BWN002", "BA004"],
         "load0": 30,
-        "atk0": 59,
-        "basic_atk0": 8,
+        "atk0": 61,
+        "basic_atk0": 6,
         "hp0": 200
       },
       {
@@ -4351,9 +4351,9 @@
         "stack": 1,
         "material": ["PWN001", "GM003"],
         "load0": 30,
-        "atk0": 49,
+        "atk0": 52,
         "atk_spd1": 0.25,
-        "basic_atk0": 14
+        "basic_atk0": 11
       },
       {
         "id": "YWN002",

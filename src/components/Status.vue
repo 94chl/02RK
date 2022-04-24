@@ -154,7 +154,7 @@
               <div class="optionInfo_values">
                 <ul class="uniqueOptions">
                   <li
-                    v-for="uniqueOption in optionValue.detail"
+                    v-for="uniqueOption in optionValue.detail[language]"
                     :key="optionValue + uniqueOption"
                     class="uniqueOption"
                   >

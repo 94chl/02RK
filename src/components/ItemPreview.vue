@@ -85,7 +85,7 @@
             <span v-else class="attrValue">
               <ul v-if="option.match(/(active)|(buff)|(uniq)/g)">
                 <li
-                  v-for="uniqueOption in cartItem[option].detail"
+                  v-for="uniqueOption in cartItem[option].detail[language]"
                   :key="cartItem[option] + uniqueOption"
                   class="optionDetail"
                 >

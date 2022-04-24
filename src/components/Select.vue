@@ -53,12 +53,21 @@
       </select>
     </div>
 
-    <div class="select_addItem">
-      <button class="select_addItem_btn" @click="addItem">
+    <div class="select_btns">
+      <!-- <button
+        :class="`search_btn ${itemOptionSearchModal && 'active'}`"
+        @click="openItemOptionSearchModal"
+      >
+        <i class="fas fa-search"></i>
+      </button> -->
+      <button class="add_btn" @click="addItem">
         <i class="fas fa-plus"></i>
       </button>
     </div>
 
+    <!-- <div v-if="!itemOptionSearchModal" class="itemOptionSearchModal">
+      아이템 옵션 검색 테스트
+    </div> -->
     <ItemPreview></ItemPreview>
   </div>
 </template>
@@ -76,6 +85,7 @@
         itemArr: [],
         selectDept: "",
         selectCategory: "",
+        itemOptionSearchModal: false,
       };
     },
     components: { ItemPreview },
@@ -144,6 +154,9 @@
       },
       addItem() {
         this.$store.dispatch("addTargetItems", this.$store.state.cart);
+      },
+      openItemOptionSearchModal() {
+        this.itemOptionSearchModal = !this.itemOptionSearchModal;
       },
     },
     created() {
@@ -234,20 +247,29 @@
       }
     }
 
-    &_addItem {
+    &_btns {
       height: 30px;
-      border-radius: 5px;
-      box-shadow: 0 0 1px 1px $color1;
-      &_btn {
+      display: flex;
+      position: relative;
+
+      button {
         width: 100%;
         height: 100%;
         background: $color2;
         color: $color3;
+        border-radius: 5px;
+        box-shadow: 0 0 1px 1px $color1 inset;
 
-        &:hover {
+        &:hover,
+        &.active {
           background: $color3;
           color: $color2;
         }
+      }
+
+      .itemOptionSearchModal {
+        position: absolute;
+        top: 30px;
       }
     }
   }

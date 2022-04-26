@@ -1,6 +1,8 @@
-[{
+[
+  {
     "category": "clothes",
-    "items": [{
+    "items": [
+      {
         "id": "WC001",
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1gZGqKeUpSVZ3Are4lhcpzqROnl8mfzFt",
@@ -10,9 +12,9 @@
         "limit": 1,
         "name": {
           "kr": "바람막이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Windbreaker",
+          "ja": "ウィンドブレーカー",
+          "cn": "夾克"
         },
         "stack": 1
       },
@@ -26,9 +28,9 @@
         "limit": 1,
         "name": {
           "kr": "승복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Monk's Robe",
+          "ja": "僧服",
+          "cn": "僧侶長袍"
         },
         "stack": 1
       },
@@ -43,9 +45,9 @@
         "limit": 1,
         "name": {
           "kr": "전신 수영복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Wetsuit",
+          "ja": "全身水着",
+          "cn": "全身泳衣"
         },
         "stack": 1
       },
@@ -59,9 +61,9 @@
         "limit": 1,
         "name": {
           "kr": "천 갑옷",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fabric Armor",
+          "ja": "布の鎧",
+          "cn": "布甲"
         },
         "stack": 1
       },
@@ -75,9 +77,9 @@
         "limit": 1,
         "name": {
           "kr": "가죽 갑옷",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Leather Armor",
+          "ja": "皮の鎧",
+          "cn": "皮衣"
         },
         "stack": 1,
         "material": ["WC004", "WM019"],
@@ -93,9 +95,9 @@
         "limit": 1,
         "name": {
           "kr": "가죽 자켓",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Leather Jacket",
+          "ja": "レザージャケット",
+          "cn": "皮夾克"
         },
         "stack": 1,
         "material": ["WC001", "WM019"],
@@ -112,9 +114,9 @@
         "limit": 1,
         "name": {
           "kr": "거북 도복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Turtle Dobok",
+          "ja": "亀の服",
+          "cn": "龜仙道服"
         },
         "stack": 1,
         "material": ["WC002", "WM003"],
@@ -131,9 +133,9 @@
         "limit": 1,
         "name": {
           "kr": "군복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Military Suit",
+          "ja": "軍服",
+          "cn": "迷彩軍服"
         },
         "stack": 1,
         "material": ["WC001", "WM024"],
@@ -151,9 +153,9 @@
         "limit": 1,
         "name": {
           "kr": "덧댄 로브",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Patched Robe",
+          "ja": "重ね縫いのローブ",
+          "cn": "補丁長袍"
         },
         "stack": 1,
         "material": ["WC002", "WB002"],
@@ -171,9 +173,9 @@
         "limit": 1,
         "name": {
           "kr": "드레스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Dress",
+          "ja": "ドレス",
+          "cn": "連身裙"
         },
         "stack": 1,
         "material": ["WM012", "WWA001"],
@@ -191,9 +193,9 @@
         "limit": 1,
         "name": {
           "kr": "비키니",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bikini",
+          "ja": "ビキニ",
+          "cn": "比基尼"
         },
         "stack": 1,
         "material": ["WC003", "WWA001"],
@@ -210,9 +212,9 @@
         "limit": 1,
         "name": {
           "kr": "잠수복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Diving Suit",
+          "ja": "潜水服",
+          "cn": "潛水裝"
         },
         "stack": 1,
         "material": ["WC003", "WM004"],
@@ -229,9 +231,9 @@
         "limit": 1,
         "name": {
           "kr": "사제복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Deacon Robes",
+          "ja": "司祭服",
+          "cn": "祭師法衣"
         },
         "stack": 1,
         "material": ["WA008", "WM012"],
@@ -248,9 +250,9 @@
         "limit": 1,
         "name": {
           "kr": "라이더 자켓",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Rider Jacket",
+          "ja": "ライダースジャケット",
+          "cn": "騎士夾克"
         },
         "stack": 1,
         "material": ["GC002", "WWR001"],
@@ -267,9 +269,9 @@
         "limit": 1,
         "name": {
           "kr": "사슬 갑옷",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Chain Armor",
+          "ja": "チェーンメール",
+          "cn": "鎖子甲"
         },
         "stack": 1,
         "material": ["GC001", "WWR001"],
@@ -283,12 +285,7 @@
         "tobe": ["PC008", "PC011", "YC005"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "정장",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "정장", "en": "Suit", "ja": "スーツ", "cn": "西裝" },
         "stack": 1,
         "material": ["GC002", "WA003"],
         "vamp1": 0.15,
@@ -304,9 +301,9 @@
         "limit": 1,
         "name": {
           "kr": "치파오",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Qipao",
+          "ja": "チーパオ",
+          "cn": "旗袍"
         },
         "stack": 1,
         "material": ["GC006", "WWJ001"],
@@ -324,9 +321,9 @@
         "limit": 1,
         "name": {
           "kr": "판금 갑옷",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sheet Metal Armor",
+          "ja": "プレートアーマー",
+          "cn": "鈑金鎧甲"
         },
         "stack": 1,
         "material": ["WC004", "GM001"],
@@ -341,12 +338,7 @@
         "tobe": ["BC009", "PC012"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "한복",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "한복", "en": "Hanbok", "ja": "韓服", "cn": "韓服" },
         "stack": 1,
         "material": ["GC005", "WA002"],
         "def0": 12,
@@ -363,9 +355,9 @@
         "limit": 1,
         "name": {
           "kr": "방탄조끼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bulletproof Vest",
+          "ja": "防弾チョッキ",
+          "cn": "防彈背心"
         },
         "stack": 1,
         "material": ["GC004", "GM010"],
@@ -383,9 +375,9 @@
         "limit": 1,
         "name": {
           "kr": "어사의",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Covert Agent Uniform",
+          "ja": "御史衣",
+          "cn": "御史袍"
         },
         "stack": 1,
         "material": ["BC006", "WM008"],
@@ -415,10 +407,10 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "고위사제복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "고위 사제복",
+          "en": "Cardinal Robes",
+          "ja": "高位司祭服",
+          "cn": "主教長袍"
         },
         "stack": 1,
         "material": ["GC009", "GM002"],
@@ -437,9 +429,9 @@
         "limit": 1,
         "name": {
           "kr": "광학미채 슈트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Optical Camouflage Suit",
+          "ja": "光学迷彩スーツ",
+          "cn": "光學迷彩服"
         },
         "stack": 1,
         "material": ["GC008", "BM004"],
@@ -458,9 +450,9 @@
         "limit": 1,
         "name": {
           "kr": "락커의 자켓",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Rocker's Jacket",
+          "ja": "ロッカージャケット",
+          "cn": "搖滾樂手夾克"
         },
         "stack": 1,
         "material": ["BC001", "GT006"],
@@ -488,9 +480,9 @@
         "limit": 1,
         "name": {
           "kr": "미스릴 갑옷",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mithril Armor",
+          "ja": "ミスリル鎧",
+          "cn": "秘銀鎧甲"
         },
         "stack": 1,
         "material": ["GC001", "BM007"],
@@ -508,9 +500,9 @@
         "limit": 1,
         "name": {
           "kr": "성기사의 갑옷",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Crusader Armor",
+          "ja": "聖騎士の鎧",
+          "cn": "十字軍鎧甲"
         },
         "stack": 1,
         "material": ["BC005", "GA001"],
@@ -529,9 +521,9 @@
         "limit": 1,
         "name": {
           "kr": "아마조네스 아머",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Amazoness Armor",
+          "ja": "アマゾネスアーマー",
+          "cn": "亞馬遜鎧甲"
         },
         "stack": 1,
         "material": ["BC005", "GC007"],
@@ -549,9 +541,9 @@
         "limit": 1,
         "name": {
           "kr": "용의 도복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Dragon Dobok",
+          "ja": "龍の道服",
+          "cn": "龍之道服"
         },
         "stack": 1,
         "material": ["BC004", "GC003"],
@@ -579,9 +571,9 @@
         "limit": 1,
         "name": {
           "kr": "지휘관의 갑옷",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Commander's Armor",
+          "ja": "指揮官の鎧",
+          "cn": "指揮官鎧甲"
         },
         "stack": 1,
         "material": ["BC002", "GM011"],
@@ -598,9 +590,9 @@
         "limit": 1,
         "name": {
           "kr": "집사복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Butler's Suit",
+          "ja": "執事服",
+          "cn": "執事西裝"
         },
         "stack": 1,
         "material": ["BC003", "GA008"],
@@ -627,9 +619,9 @@
         "limit": 1,
         "name": {
           "kr": "배틀 슈트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Battle Suit",
+          "ja": "バトルスーツ",
+          "cn": "騎士戰甲"
         },
         "stack": 1,
         "material": ["BC007", "GC008"],
@@ -649,9 +641,9 @@
         "limit": 1,
         "name": {
           "kr": "EOD 슈트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "EOD Suit",
+          "ja": "EODスーツ",
+          "cn": "EOD防爆服"
         },
         "stack": 1,
         "material": ["BC007", "GC005"],
@@ -671,9 +663,9 @@
         "limit": 1,
         "name": {
           "kr": "턱시도",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tuxedo",
+          "ja": "タキシード",
+          "cn": "禮服"
         },
         "stack": 1,
         "material": ["BC003", "GC006"],
@@ -691,9 +683,9 @@
         "limit": 1,
         "name": {
           "kr": "제사장의 예복",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "High Priest Robes",
+          "ja": "祭司長の礼服",
+          "cn": "大祭司長袍"
         },
         "stack": 1,
         "material": ["BC006", "BD001"],
@@ -721,9 +713,9 @@
         "limit": 1,
         "name": {
           "kr": "창파오",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Changpao",
+          "ja": "チャンパオ",
+          "cn": "太使袍"
         },
         "stack": 1,
         "material": ["BC004", "BD005"],
@@ -742,9 +734,9 @@
         "limit": 1,
         "name": {
           "kr": "석양의 갑옷",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sunset Armor",
+          "ja": "黄昏の鎧",
+          "cn": "餘暉鎧甲"
         },
         "stack": 1,
         "material": ["GC001", "GM004"],
@@ -762,9 +754,9 @@
         "limit": 1,
         "name": {
           "kr": "미스릴 크롭",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mithril Crop",
+          "ja": "ミスリルクロップ",
+          "cn": "秘銀吊帶"
         },
         "stack": 1,
         "material": ["GC007", "BM007"],
@@ -791,9 +783,9 @@
         "limit": 1,
         "name": {
           "kr": "불꽃 드레스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Blazing Dress",
+          "ja": "炎のドレス",
+          "cn": "星火洋裝"
         },
         "stack": 1,
         "material": ["GC006", "PM004"],
@@ -822,9 +814,9 @@
         "limit": 1,
         "name": {
           "kr": "카바나",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Kabana",
+          "ja": "カバナ",
+          "cn": "黃金之鎧"
         },
         "stack": 1,
         "material": ["PC007", "BM008"],
@@ -842,9 +834,9 @@
         "limit": 1,
         "name": {
           "kr": "퀸 오브 하트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Queen of Hearts",
+          "ja": "クイーンオブハート",
+          "cn": "紅心皇后"
         },
         "stack": 1,
         "material": ["GC005", "PM001"],
@@ -871,9 +863,9 @@
         "limit": 1,
         "name": {
           "kr": "성법의",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Holy Orders",
+          "ja": "聖法衣",
+          "cn": "神職法衣"
         },
         "stack": 1,
         "material": ["GC009", "PM002"],
@@ -904,9 +896,9 @@
         "limit": 1,
         "name": {
           "kr": "버건디 47",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Burgundy 47",
+          "ja": "バーガンディー 47",
+          "cn": "酒紅色西裝"
         },
         "stack": 1,
         "material": ["BC003", "PM001"],
@@ -941,9 +933,9 @@
         "limit": 1,
         "name": {
           "kr": "아오자이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Áo Dài",
+          "ja": "アオザイ",
+          "cn": "奧黛"
         },
         "stack": 1,
         "material": ["GC006", "PM002"],
@@ -962,9 +954,9 @@
         "limit": 1,
         "name": {
           "kr": "팬텀 자켓",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Phantom Jacket",
+          "ja": "ファントムジャケット",
+          "cn": "惡靈戰衣"
         },
         "stack": 1,
         "material": ["BC001", "PM004"],
@@ -988,7 +980,8 @@
   },
   {
     "category": "helmet",
-    "items": [{
+    "items": [
+      {
         "id": "WH001",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1o_dmAKmRufs1-k_awigGI5GOUJGmx8X_",
@@ -998,9 +991,9 @@
         "limit": 1,
         "name": {
           "kr": "머리띠",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hairband",
+          "ja": "カチューシャ",
+          "cn": "髮帶"
         },
         "stack": 1
       },
@@ -1012,12 +1005,7 @@
         "tobe": ["GH003", "GH004"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "모자",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "모자", "en": "Hat", "ja": "帽子", "cn": "帽子" },
         "stack": 1
       },
       {
@@ -1030,9 +1018,9 @@
         "limit": 1,
         "name": {
           "kr": "자전거 헬멧",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bike Helmet",
+          "ja": "ヘルメット",
+          "cn": "自行車頭盔"
         },
         "stack": 1
       },
@@ -1044,12 +1032,7 @@
         "tobe": ["BH005", "YH003"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "가면",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "가면", "en": "Mask", "ja": "仮面", "cn": "面具" },
         "stack": 1,
         "material": ["WH001", "WA001"],
         "def0": 10,
@@ -1074,9 +1057,9 @@
         "limit": 1,
         "name": {
           "kr": "머리테",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Circlet",
+          "ja": "サークレット",
+          "cn": "頭環"
         },
         "stack": 1,
         "material": ["WH001", "WM024"],
@@ -1093,9 +1076,9 @@
         "limit": 1,
         "name": {
           "kr": "베레모",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Beret",
+          "ja": "ベレー帽",
+          "cn": "貝雷帽"
         },
         "stack": 1,
         "material": ["WH002", "WWA001"],
@@ -1113,9 +1096,9 @@
         "limit": 1,
         "name": {
           "kr": "사슬 코이프",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Chain Coif",
+          "ja": "チェーンコイフ",
+          "cn": "鏈甲兜帽"
         },
         "stack": 1,
         "material": ["WH002", "WWR001"],
@@ -1132,9 +1115,9 @@
         "limit": 1,
         "name": {
           "kr": "안전모",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Safety Helmet",
+          "ja": "安全帽",
+          "cn": "安全帽"
         },
         "stack": 1,
         "material": ["WH003", "WM002"],
@@ -1149,10 +1132,10 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "피어나는 봉오리(Lv1)",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "피어나는 봉오리",
+          "en": "Crown of Buds",
+          "ja": "咲くつぼみ",
+          "cn": "初蕾花冠"
         },
         "stack": 1,
         "only0": "프리야 전용 방어구",
@@ -1170,9 +1153,9 @@
         "limit": 1,
         "name": {
           "kr": "방탄모",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ballistic Helmet",
+          "ja": "防弾帽",
+          "cn": "防彈頭盔"
         },
         "stack": 1,
         "material": ["GH003", "WH003"],
@@ -1190,9 +1173,9 @@
         "limit": 1,
         "name": {
           "kr": "소방 헬멧",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fire Helmet",
+          "ja": "消防ヘルメット",
+          "cn": "消防頭盔"
         },
         "stack": 1,
         "material": ["GH005", "GD001"],
@@ -1209,9 +1192,9 @@
         "limit": 1,
         "name": {
           "kr": "티아라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tiara",
+          "ja": "ティアラ",
+          "cn": "金屬頭環"
         },
         "stack": 1,
         "material": ["GH002", "WM008"],
@@ -1226,12 +1209,7 @@
         "tobe": ["BH008", "PH005"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "왕관",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "왕관", "en": "Crown", "ja": "王冠", "cn": "王冠" },
         "stack": 1,
         "material": ["GH003", "GM011"],
         "skill1": 0.08,
@@ -1248,9 +1226,9 @@
         "limit": 1,
         "name": {
           "kr": "투구",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Close Helm",
+          "ja": "兜",
+          "cn": "護面盔"
         },
         "stack": 1,
         "material": ["GH004", "GH001"],
@@ -1277,9 +1255,9 @@
         "limit": 1,
         "name": {
           "kr": "오토바이 헬멧",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Motorcycle Helmet",
+          "ja": "バイクヘルメット",
+          "cn": "全罩安全帽"
         },
         "stack": 1,
         "material": ["GH005", "GA005"],
@@ -1297,9 +1275,9 @@
         "limit": 1,
         "name": {
           "kr": "로빈",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Virtuous Outlaw",
+          "ja": "ロビンハット",
+          "cn": "羅賓帽"
         },
         "stack": 1,
         "material": ["BA016", "WM012"],
@@ -1317,9 +1295,9 @@
         "limit": 1,
         "name": {
           "kr": "성기사의 투구",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Crusader Helmet",
+          "ja": "パラディンの兜",
+          "cn": "聖騎士頭盔"
         },
         "stack": 1,
         "material": ["BH004", "WA008"],
@@ -1349,10 +1327,10 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "싱그러운 꽃잎(Lv2)",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "싱그러운 꽃잎",
+          "en": "Garland of Petals",
+          "ja": "爽やかな花びら",
+          "cn": "清雅花冠"
         },
         "stack": 1,
         "material": ["GH006"],
@@ -1371,9 +1349,9 @@
         "limit": 1,
         "name": {
           "kr": "미스릴 투구",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mithril Helm",
+          "ja": "ミスリルヘルム",
+          "cn": "秘銀頭盔"
         },
         "stack": 1,
         "material": ["GH004", "BM007"],
@@ -1392,9 +1370,9 @@
         "limit": 1,
         "name": {
           "kr": "수정 티아라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Crystal Tiara",
+          "ja": "水晶ティアラ",
+          "cn": "水晶冠"
         },
         "stack": 1,
         "material": ["BH003", "GA003"],
@@ -1412,9 +1390,9 @@
         "limit": 1,
         "name": {
           "kr": "전술-OPS 헬멧",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tactical OPS Helmet",
+          "ja": "戦術OPSヘルメット",
+          "cn": "OPS戰術鋼盔"
         },
         "stack": 1,
         "material": ["BH001", "GM008"],
@@ -1434,9 +1412,9 @@
         "limit": 1,
         "name": {
           "kr": "기사단장의 투구",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Helm of Banneret",
+          "ja": "騎士団長の兜",
+          "cn": "軍團長護面盔"
         },
         "stack": 1,
         "material": ["BH005", "WM004"],
@@ -1464,9 +1442,9 @@
         "limit": 1,
         "name": {
           "kr": "제국 왕관",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Imperial Crown",
+          "ja": "帝国王冠",
+          "cn": "帝國皇冠"
         },
         "stack": 1,
         "material": ["BH004", "WM013"],
@@ -1485,9 +1463,9 @@
         "limit": 1,
         "name": {
           "kr": "황실 부르고넷",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Imperial Burgonet",
+          "ja": "皇室ブルゴネット",
+          "cn": "帝國戰盔"
         },
         "stack": 1,
         "material": ["BH005", "GM011"],
@@ -1515,9 +1493,9 @@
         "limit": 1,
         "name": {
           "kr": "모호크 헬멧",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mohawk Headgear",
+          "ja": "モホークヘルメット",
+          "cn": "龐克頭盔"
         },
         "stack": 1,
         "material": ["BH002", "GT001"],
@@ -1547,9 +1525,9 @@
         "limit": 1,
         "name": {
           "kr": "비질란테",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Vigilante",
+          "ja": "ヴィジランテ",
+          "cn": "戰隊頭盔"
         },
         "stack": 1,
         "material": ["BH002", "GT002"],
@@ -1567,9 +1545,9 @@
         "limit": 1,
         "name": {
           "kr": "다이아뎀",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Diadem",
+          "ja": "ダイアデム",
+          "cn": "寶石頭冠"
         },
         "stack": 1,
         "material": ["GH002", "BB006"],
@@ -1588,10 +1566,10 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "만개하는 선율(Lv3)",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "만개하는 선율",
+          "en": "Harmony in Full Bloom",
+          "ja": "満開のメロディー",
+          "cn": "仙境花冠"
         },
         "stack": 1,
         "material": ["BH009"],
@@ -1612,9 +1590,9 @@
         "limit": 1,
         "name": {
           "kr": "월계관",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Laurel Wreath",
+          "ja": "月桂冠",
+          "cn": "月桂冠"
         },
         "stack": 1,
         "material": ["GH002", "PM004"],
@@ -1634,9 +1612,9 @@
         "limit": 1,
         "name": {
           "kr": "천사의 고리",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Elysian Halo",
+          "ja": "エンジェルヘイロー",
+          "cn": "天使光環"
         },
         "stack": 1,
         "material": ["GH002", "PM002"],
@@ -1666,9 +1644,9 @@
         "limit": 1,
         "name": {
           "kr": "변검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Chinese Opera Mask",
+          "ja": "臉譜",
+          "cn": "臉譜"
         },
         "stack": 1,
         "material": ["GH001", "PM001"],
@@ -1688,9 +1666,9 @@
         "limit": 1,
         "name": {
           "kr": "빛의 증표",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fallen Pegasus",
+          "ja": "光の証票",
+          "cn": "聖光冠冕"
         },
         "stack": 1,
         "material": ["PH002", "BM008"],
@@ -1703,7 +1681,8 @@
   },
   {
     "category": "bracelet",
-    "items": [{
+    "items": [
+      {
         "id": "WB001",
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1H19Orw-LZFvTcMs5Heu02Zzp-w9dYoe-",
@@ -1713,9 +1692,9 @@
         "limit": 1,
         "name": {
           "kr": "손목시계",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Watch",
+          "ja": "腕時計",
+          "cn": "手錶"
         },
         "stack": 1
       },
@@ -1727,12 +1706,7 @@
         "tobe": ["GC005", "GB002", "GB003", "GM002"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "붕대",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "붕대", "en": "Bandage", "ja": "包帯", "cn": "繃帶" },
         "stack": 1
       },
       {
@@ -1745,9 +1719,9 @@
         "limit": 1,
         "name": {
           "kr": "팔찌",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bracelet",
+          "ja": "ブレスレット",
+          "cn": "手鐲"
         },
         "stack": 1
       },
@@ -1761,9 +1735,9 @@
         "limit": 1,
         "name": {
           "kr": "가죽 방패",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Leather Shield",
+          "ja": "皮の盾",
+          "cn": "皮盾"
         },
         "stack": 1,
         "material": ["WM003", "WM019"],
@@ -1780,9 +1754,9 @@
         "limit": 1,
         "name": {
           "kr": "분대장 완장",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Squad Leader Armband",
+          "ja": "分隊長の腕章",
+          "cn": "隊長臂章"
         },
         "stack": 1,
         "material": ["WB002", "WWS001"],
@@ -1799,9 +1773,9 @@
         "limit": 1,
         "name": {
           "kr": "브레이서",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bracer",
+          "ja": "ブレーサー",
+          "cn": "護腕"
         },
         "stack": 1,
         "material": ["WB002", "WM019"],
@@ -1818,9 +1792,9 @@
         "limit": 1,
         "name": {
           "kr": "고장난 시계",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Broken Watch",
+          "ja": "壊れた腕時計",
+          "cn": "破碎的手錶"
         },
         "stack": 1,
         "material": ["WB001", "WM014"],
@@ -1834,12 +1808,7 @@
         "tobe": ["BWD002", "PB006"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "검집",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "검집", "en": "Sheath", "ja": "鞘", "cn": "劍鞘" },
         "stack": 1,
         "material": ["GM010", "WM019"],
         "atk0": 18,
@@ -1855,9 +1824,9 @@
         "limit": 1,
         "name": {
           "kr": "금팔찌",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Golden Bracelet",
+          "ja": "黄金腕輪",
+          "cn": "金手鐲"
         },
         "stack": 1,
         "material": ["WB003", "GM011"],
@@ -1874,9 +1843,9 @@
         "limit": 1,
         "name": {
           "kr": "바주반드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bazuband",
+          "ja": "バズバンド",
+          "cn": "鐵護手"
         },
         "stack": 1,
         "material": ["GB003", "GM010"],
@@ -1893,9 +1862,9 @@
         "limit": 1,
         "name": {
           "kr": "진홍 팔찌",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Crimson Bracelet",
+          "ja": "紅のブレスレット",
+          "cn": "紅寶石手鍊"
         },
         "stack": 1,
         "material": ["WB003", "GT001"],
@@ -1912,9 +1881,9 @@
         "limit": 1,
         "name": {
           "kr": "강철 방패",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Steel Shield",
+          "ja": "鋼鉄の盾",
+          "cn": "鋼鐵之盾"
         },
         "stack": 1,
         "material": ["GB001", "GM001"],
@@ -1930,15 +1899,43 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "바브드 블라썸",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "바브드 블로섬",
+          "en": "Barbed Blossom",
+          "ja": "バーブドブロッサム",
+          "cn": "荆棘手環"
         },
         "stack": 1,
         "material": ["WA002", "GM014"],
         "atk0": 10,
         "cool1": 0.07
+      },
+      {
+        "id": "BB007",
+        "sort": "bracelet",
+        "img": "https://lh3.google.com/u/0/d/1nc7-l-OQe91aH3W6Ei8y9aNwUWF_qP_O",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "포이즌드",
+          "en": "Corrupting Touch",
+          "ja": "ポイズン手袋",
+          "cn": "巨人手套"
+        },
+        "stack": 1,
+        "material": ["WWE002", "BM002"],
+        "def0": 15,
+        "skill0": 12,
+        "uniq029": {
+          "detail": {
+            "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
+            "en": [],
+            "ja": [],
+            "cn": []
+          },
+          "value": 0.4
+        }
       },
       {
         "id": "PB001",
@@ -1950,9 +1947,9 @@
         "limit": 1,
         "name": {
           "kr": "소드 스토퍼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sword Stopper",
+          "ja": "ソードストッパー",
+          "cn": "刀刃護手"
         },
         "stack": 1,
         "material": ["BB003", "WM020"],
@@ -1982,9 +1979,9 @@
         "limit": 1,
         "name": {
           "kr": "드라우프니르",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Draupnir",
+          "ja": "ドラウプニル",
+          "cn": "德羅普尼爾"
         },
         "stack": 1,
         "material": ["BB002", "GB003"],
@@ -2003,9 +2000,9 @@
         "limit": 1,
         "name": {
           "kr": "미스릴 방패",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mithril Shield",
+          "ja": "ミスリル盾",
+          "cn": "秘銀盾"
         },
         "stack": 1,
         "material": ["GB001", "BM007"],
@@ -2024,9 +2021,9 @@
         "limit": 1,
         "name": {
           "kr": "바이탈 센서",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Vital Sign Sensor",
+          "ja": "バイタルセンサー",
+          "cn": "生命訊號感測器"
         },
         "stack": 1,
         "material": ["BM006", "WB001"],
@@ -2043,9 +2040,9 @@
         "limit": 1,
         "name": {
           "kr": "기사의 신조",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Creed of the Knight",
+          "ja": "騎士の信条",
+          "cn": "騎士信條"
         },
         "stack": 1,
         "material": ["BB005", "GB002"],
@@ -2064,9 +2061,9 @@
         "limit": 1,
         "name": {
           "kr": "샤자한의 검집",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sheath of Shah Jahan",
+          "ja": "シャージャハーン鞘",
+          "cn": "沙·賈汗之劍"
         },
         "stack": 1,
         "material": ["BB001", "GM004"],
@@ -2084,9 +2081,9 @@
         "limit": 1,
         "name": {
           "kr": "아이기스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Burnished Aegis",
+          "ja": "アイギス",
+          "cn": "宙斯盾"
         },
         "stack": 1,
         "material": ["BB004", "GB001"],
@@ -2105,9 +2102,9 @@
         "limit": 1,
         "name": {
           "kr": "틴달로스의 팔찌",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tindalos Band",
+          "ja": "ティンダロスの腕輪",
+          "cn": "廷達羅斯手環"
         },
         "stack": 1,
         "material": ["BB002", "GB004"],
@@ -2125,9 +2122,9 @@
         "limit": 1,
         "name": {
           "kr": "큐브 워치",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cube Watch",
+          "ja": "キューブウォッチ",
+          "cn": "召喚手錶"
         },
         "stack": 1,
         "material": ["GB004", "BM001"],
@@ -2145,9 +2142,9 @@
         "limit": 1,
         "name": {
           "kr": "나이팅게일",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Nightingale",
+          "ja": "ナイチンゲール",
+          "cn": "南丁格爾"
         },
         "stack": 1,
         "material": ["GB004", "BM001"],
@@ -2176,9 +2173,9 @@
         "limit": 1,
         "name": {
           "kr": "플라즈마 아크",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Plasma Arc",
+          "ja": "プレズマアーク",
+          "cn": "等離子電盾"
         },
         "stack": 1,
         "material": ["BB005", "GM008"],
@@ -2196,43 +2193,15 @@
         "limit": 1,
         "name": {
           "kr": "스마트 밴드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Smart Band",
+          "ja": "スマートバンド",
+          "cn": "智能手環"
         },
         "stack": 1,
         "material": ["BB006", "GM009"],
         "atk0": 30,
         "vamp1": 0.06,
         "cool1": 0.12
-      },
-      {
-        "id": "PB014",
-        "sort": "bracelet",
-        "img": "https://lh3.google.com/u/0/d/1nc7-l-OQe91aH3W6Ei8y9aNwUWF_qP_O",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "포이즌드",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
-        "stack": 1,
-        "material": ["WWE002", "BM002"],
-        "def0": 15,
-        "skill0": 12,
-        "uniq029": {
-          "detail": {
-            "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
-            "ja": [],
-            "cn": []
-          },
-          "value": 0.4
-        }
       },
       {
         "id": "YB001",
@@ -2244,9 +2213,9 @@
         "limit": 1,
         "name": {
           "kr": "스카디의 팔찌",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bracelet of Skadi",
+          "ja": "スカディのブレスレット",
+          "cn": "絲卡蒂手鐲"
         },
         "stack": 1,
         "material": ["BB004", "PM003"],
@@ -2277,9 +2246,9 @@
         "limit": 1,
         "name": {
           "kr": "레이더",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Radar",
+          "ja": "レーダー",
+          "cn": "雷達"
         },
         "stack": 1,
         "material": ["PB004", "BM004"],
@@ -2297,9 +2266,9 @@
         "limit": 1,
         "name": {
           "kr": "오토-암즈",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Auto-arms",
+          "ja": "オートアームズ",
+          "cn": "自動臂"
         },
         "stack": 1,
         "material": ["GB003", "PM002"],
@@ -2318,9 +2287,9 @@
         "limit": 1,
         "name": {
           "kr": "프로미넌스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Prominence",
+          "ja": "プロミネンス",
+          "cn": "日珥"
         },
         "stack": 1,
         "material": ["BB004", "PM001"],
@@ -2347,9 +2316,9 @@
         "limit": 1,
         "name": {
           "kr": "텔루리안 타임피스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tellurian Timepiece",
+          "ja": "テルリアンタイムピース",
+          "cn": "銀河腕錶"
         },
         "stack": 1,
         "material": ["GB004", "PM002"],
@@ -2375,7 +2344,8 @@
   },
   {
     "category": "shoes",
-    "items": [{
+    "items": [
+      {
         "id": "WS001",
         "sort": "shoes",
         "img": "https://lh3.google.com/u/0/d/1jZwNpwAZSCLBU3KRQYdKD6HspWcFpcIL",
@@ -2385,9 +2355,9 @@
         "limit": 1,
         "name": {
           "kr": "슬리퍼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Slippers",
+          "ja": "スリッパ",
+          "cn": "拖鞋"
         },
         "stack": 1
       },
@@ -2401,9 +2371,9 @@
         "limit": 1,
         "name": {
           "kr": "운동화",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Running Shoes",
+          "ja": "スニーカー",
+          "cn": "跑鞋"
         },
         "stack": 1
       },
@@ -2417,9 +2387,9 @@
         "limit": 1,
         "name": {
           "kr": "타이즈",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tights",
+          "ja": "タイツ",
+          "cn": "褲襪"
         },
         "stack": 1
       },
@@ -2433,9 +2403,9 @@
         "limit": 1,
         "name": {
           "kr": "무릎 보호대",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Knee Pads",
+          "ja": "ひざプロテクター",
+          "cn": "護膝"
         },
         "stack": 1,
         "material": ["WS003", "WM014"],
@@ -2452,9 +2422,9 @@
         "limit": 1,
         "name": {
           "kr": "체인 레깅스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Chain Leggings",
+          "ja": "チェーンレギンス",
+          "cn": "護腿鏈甲"
         },
         "stack": 1,
         "material": ["WS003", "WWR001"],
@@ -2471,9 +2441,9 @@
         "limit": 1,
         "name": {
           "kr": "하이힐",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "High Heels",
+          "ja": "ハイヒール",
+          "cn": "高跟鞋"
         },
         "stack": 1,
         "material": ["WS001", "WM005"],
@@ -2490,9 +2460,9 @@
         "limit": 1,
         "name": {
           "kr": "힐리스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Heelys",
+          "ja": "ローラーシューズ",
+          "cn": "滑輪鞋"
         },
         "stack": 1,
         "material": ["WS002", "WWI001"],
@@ -2509,9 +2479,9 @@
         "limit": 1,
         "name": {
           "kr": "덧댄 슬리퍼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Repaired Slippers",
+          "ja": "布を当てたスリッパ",
+          "cn": "補丁拖鞋"
         },
         "stack": 1,
         "material": ["WS001", "WM012"],
@@ -2527,12 +2497,7 @@
         "tobe": ["BS003"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "부츠",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "부츠", "en": "Boots", "ja": "ブーツ", "cn": "靴子" },
         "stack": 1,
         "material": ["WS002", "GM002"],
         "hp_reg1": 0.15,
@@ -2547,12 +2512,7 @@
         "tobe": ["BS001", "YS005"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "나막신",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "나막신", "en": "Clogs", "ja": "木靴", "cn": "木鞋" },
         "stack": 1,
         "material": ["WM024", "WT002"],
         "move_spd0": 0.12
@@ -2567,9 +2527,9 @@
         "limit": 1,
         "name": {
           "kr": "등산화",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hiking Boots",
+          "ja": "登山靴",
+          "cn": "登山鞋"
         },
         "stack": 1,
         "material": ["GS007", "WM002"],
@@ -2585,9 +2545,9 @@
         "limit": 1,
         "name": {
           "kr": "강철 무릎 보호대",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Steel Knee Pads",
+          "ja": "鋼鉄ひざプロテクター",
+          "cn": "鋼鐵護膝"
         },
         "stack": 1,
         "material": ["GS001", "GM001"],
@@ -2604,9 +2564,9 @@
         "limit": 1,
         "name": {
           "kr": "전투화",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Combat Boots",
+          "ja": "戦闘靴",
+          "cn": "軍靴"
         },
         "stack": 1,
         "material": ["GS006", "WM019"],
@@ -2624,9 +2584,9 @@
         "limit": 1,
         "name": {
           "kr": "킬힐",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Killer Heels",
+          "ja": "キルヒール",
+          "cn": "恨天高"
         },
         "stack": 1,
         "material": ["GS003", "GA003"],
@@ -2645,9 +2605,9 @@
         "limit": 1,
         "name": {
           "kr": "아이젠",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Glacier Crampons",
+          "ja": "アイゼン ",
+          "cn": "冰爪鞋"
         },
         "stack": 1,
         "material": ["WM005", "GM014"],
@@ -2664,9 +2624,9 @@
         "limit": 1,
         "name": {
           "kr": "경량화 부츠",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Feather Boots",
+          "ja": "軽量化ブーツ",
+          "cn": "羽毛靴"
         },
         "stack": 1,
         "material": ["BS003", "WA001"],
@@ -2684,9 +2644,9 @@
         "limit": 1,
         "name": {
           "kr": "미스릴 부츠",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mithril Boots",
+          "ja": "ミスリルブーツ",
+          "cn": "秘銀靴"
         },
         "stack": 1,
         "material": ["GS002", "BM007"],
@@ -2704,9 +2664,9 @@
         "limit": 1,
         "name": {
           "kr": "부케팔로스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bucephalus",
+          "ja": "ブケパロス",
+          "cn": "布西發拉斯"
         },
         "stack": 1,
         "material": ["BS005", "GS002"],
@@ -2726,9 +2686,9 @@
         "limit": 1,
         "name": {
           "kr": "클링온 부츠",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "White Rhinos",
+          "ja": "クリングオンブーツ",
+          "cn": "白犀牛靴子"
         },
         "stack": 1,
         "material": ["BS003", "WM020"],
@@ -2755,9 +2715,9 @@
         "limit": 1,
         "name": {
           "kr": "타키온 브레이스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tachyon Brace",
+          "ja": "タキオンブレイス",
+          "cn": "超光速次元鋼靴"
         },
         "stack": 1,
         "material": ["GS001", "BM003"],
@@ -2775,9 +2735,9 @@
         "limit": 1,
         "name": {
           "kr": "풍화륜",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Straitjacket Sneakers",
+          "ja": "風火輪",
+          "cn": "風火輪"
         },
         "stack": 1,
         "material": ["GS005", "GM007"],
@@ -2796,9 +2756,9 @@
         "limit": 1,
         "name": {
           "kr": "매버릭 러너",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Maverick Runner",
+          "ja": "マベリックランナー",
+          "cn": "馬弗里克之履"
         },
         "stack": 1,
         "material": ["GS004", "BM006"],
@@ -2824,9 +2784,9 @@
         "limit": 1,
         "name": {
           "kr": "아이언 메이든",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Iron Maiden",
+          "ja": "アイアンメイデン",
+          "cn": "劍齒虎"
         },
         "stack": 1,
         "material": ["BS006", "BM008"],
@@ -2841,12 +2801,7 @@
         "tobe": false,
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "SCV(Self-Controlled Vehicle)",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "SCV", "en": "SCV", "ja": "SCV", "cn": "SCV" },
         "stack": 1,
         "material": ["GM009", "BM003"],
         "move_spd0": 0.32,
@@ -2862,9 +2817,9 @@
         "limit": 1,
         "name": {
           "kr": "EOD 부츠",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "EOD Boots",
+          "ja": "EODシューズ",
+          "cn": "EOD防爆靴"
         },
         "stack": 1,
         "material": ["GS006", "BS002"],
@@ -2884,9 +2839,9 @@
         "limit": 1,
         "name": {
           "kr": "글레이셜 슈즈",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Glacial Shoes",
+          "ja": "グレイシャルシューズ",
+          "cn": "萬年冰鞋"
         },
         "stack": 1,
         "material": ["GS005", "PM003"],
@@ -2906,9 +2861,9 @@
         "limit": 1,
         "name": {
           "kr": "헤르메스의 부츠",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Boots of Hermes",
+          "ja": "エルメスのブーツ",
+          "cn": "荷米斯之靴"
         },
         "stack": 1,
         "material": ["GS004", "PM002"],
@@ -2934,9 +2889,9 @@
         "limit": 1,
         "name": {
           "kr": "분홍신",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Red Shoes",
+          "ja": "赤い靴",
+          "cn": "紅鞋"
         },
         "stack": 1,
         "material": ["GS003", "PM001"],
@@ -2955,9 +2910,9 @@
         "limit": 1,
         "name": {
           "kr": "탭루트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Taproot",
+          "ja": "タップルート",
+          "cn": "生化推進器"
         },
         "stack": 1,
         "material": ["GS007", "BF027"],
@@ -2977,7 +2932,8 @@
   },
   {
     "category": "accessory",
-    "items": [{
+    "items": [
+      {
         "id": "WA001",
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1DXPunbOCnzGEwT1FLVdVtEzetynlCWaR",
@@ -2997,12 +2953,7 @@
         ],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "깃털",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "깃털", "en": "Feather", "ja": "羽", "cn": "羽毛" },
         "stack": 1
       },
       {
@@ -3022,12 +2973,7 @@
         ],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "꽃",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "꽃", "en": "Flower", "ja": "花", "cn": "花" },
         "stack": 1
       },
       {
@@ -3038,12 +2984,7 @@
         "tobe": ["BC003", "GA004", "GA011", "PA005"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "리본",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "리본", "en": "Ribbon", "ja": "リボン", "cn": "緞帶" },
         "stack": 1
       },
       {
@@ -3054,12 +2995,7 @@
         "tobe": ["BWG002", "GA009", "BA003"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "부채",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "부채", "en": "Fan", "ja": "扇子", "cn": "扇子" },
         "stack": 1
       },
       {
@@ -3072,9 +3008,9 @@
         "limit": 1,
         "name": {
           "kr": "불경",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Buddhist Scripture",
+          "ja": "仏経",
+          "cn": "佛經"
         },
         "stack": 1
       },
@@ -3086,12 +3022,7 @@
         "tobe": ["BA004", "BA008", "BA014", "BF020"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "상자",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "상자", "en": "Box", "ja": "ダンボール", "cn": "紙箱" },
         "stack": 1
       },
       {
@@ -3104,9 +3035,9 @@
         "limit": 1,
         "name": {
           "kr": "성배",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Holy Grail",
+          "ja": "聖杯",
+          "cn": "聖杯"
         },
         "stack": 1
       },
@@ -3128,9 +3059,9 @@
         "limit": 1,
         "name": {
           "kr": "십자가",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cross",
+          "ja": "十字架",
+          "cn": "十字架"
         },
         "stack": 1
       },
@@ -3144,9 +3075,9 @@
         "limit": 1,
         "name": {
           "kr": "쌍안경",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Binoculars",
+          "ja": "双眼鏡",
+          "cn": "望遠鏡"
         },
         "stack": 1
       },
@@ -3160,9 +3091,9 @@
         "limit": 1,
         "name": {
           "kr": "성자의 유산",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Saint's Relic",
+          "ja": "聖者の遺産",
+          "cn": "聖者的遺物"
         },
         "stack": 1,
         "material": ["WA008", "WA007"],
@@ -3187,9 +3118,9 @@
         "limit": 1,
         "name": {
           "kr": "운명의 꽃",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Flower of Fate",
+          "ja": "運命の花",
+          "cn": "命運之花"
         },
         "stack": 1,
         "material": ["WA002", "WWJ002"],
@@ -3206,9 +3137,9 @@
         "limit": 1,
         "name": {
           "kr": "유리 조각",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Glass Pieces",
+          "ja": "ガラスの破片",
+          "cn": "玻璃碎片"
         },
         "stack": 1,
         "material": ["WM001", "WM002"],
@@ -3222,12 +3153,7 @@
         "tobe": ["PWE001", "PWG001", "BA003"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "인형",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "인형", "en": "Doll", "ja": "人形", "cn": "娃娃" },
         "stack": 1,
         "material": ["WA003", "WM012"],
         "vamp1": 0.12,
@@ -3243,9 +3169,9 @@
         "limit": 1,
         "name": {
           "kr": "저격 스코프",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sniper Scope",
+          "ja": "狙撃スコープ",
+          "cn": "狙擊鏡"
         },
         "stack": 1,
         "material": ["WM007", "WA009"],
@@ -3262,9 +3188,9 @@
         "limit": 1,
         "name": {
           "kr": "진신사리",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Buddha Sarira",
+          "ja": "真身舍利",
+          "cn": "舍利子"
         },
         "stack": 1,
         "material": ["WC002", "WA005"],
@@ -3279,12 +3205,7 @@
         "tobe": ["BA005", "PA004"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "화살통",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "화살통", "en": "Quiver", "ja": "矢筒", "cn": "箭袋" },
         "stack": 1,
         "material": ["WWF001", "WA001"],
         "atk_spd1": 0.12,
@@ -3308,9 +3229,9 @@
         "limit": 1,
         "name": {
           "kr": "먼지털이개",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Feather Duster",
+          "ja": "埃払い",
+          "cn": "雞毛撢子"
         },
         "stack": 1,
         "material": ["WWG001", "WA001"],
@@ -3335,9 +3256,9 @@
         "limit": 1,
         "name": {
           "kr": "군선",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Gilded Quill Fan",
+          "ja": "軍扇",
+          "cn": "鍍金羽扇"
         },
         "stack": 1,
         "material": ["WA004", "WM020"],
@@ -3362,9 +3283,9 @@
         "limit": 1,
         "name": {
           "kr": "비파단도",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Shaman's Bronze",
+          "ja": "琵琶短剣",
+          "cn": "琵琶短劍"
         },
         "stack": 1,
         "material": ["WWB001", "WM008"],
@@ -3381,9 +3302,9 @@
         "limit": 1,
         "name": {
           "kr": "캐리비안 장식총",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Decorative Flintlock",
+          "ja": "カリビアン装飾銃",
+          "cn": "加勒比裝飾槍"
         },
         "stack": 1,
         "material": ["WWM001", "WA003"],
@@ -3400,9 +3321,9 @@
         "limit": 1,
         "name": {
           "kr": "사격 교본",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Marksman Handbook",
+          "ja": "射撃教本",
+          "cn": "射擊教本"
         },
         "stack": 1,
         "material": ["WWL001", "WWN001"],
@@ -3427,9 +3348,9 @@
         "limit": 1,
         "name": {
           "kr": "백우선",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "White Crane Fan",
+          "ja": "白羽扇",
+          "cn": "白鶴扇"
         },
         "stack": 1,
         "material": ["GA009", "WA001"],
@@ -3463,9 +3384,9 @@
         "limit": 1,
         "name": {
           "kr": "우치와",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Uchiwa",
+          "ja": "うちわ",
+          "cn": "團扇"
         },
         "stack": 1,
         "material": ["GA004", "WA004"],
@@ -3481,12 +3402,7 @@
         "tobe": ["PWN004", "PWU003", "BA013"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "탄창",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "탄창", "en": "Magazine", "ja": "弾倉", "cn": "彈匣" },
         "stack": 1,
         "material": ["WA006", "GM010"],
         "hp0": 110,
@@ -3502,9 +3418,9 @@
         "limit": 1,
         "name": {
           "kr": "궁기병의 화살통",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Laced Quiver",
+          "ja": "弓騎兵の矢筒",
+          "cn": "騎兵箭袋"
         },
         "stack": 1,
         "material": ["GA007", "WWG001"],
@@ -3530,9 +3446,9 @@
         "limit": 1,
         "name": {
           "kr": "월왕구천",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Revenge of Goujian",
+          "ja": "越王勾踐",
+          "cn": "越王勾踐"
         },
         "stack": 1,
         "material": ["GA010", "GM009"],
@@ -3549,9 +3465,9 @@
         "limit": 1,
         "name": {
           "kr": "슈뢰딩거의 상자",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Schrödinger's Box",
+          "ja": "博士の箱",
+          "cn": "薛丁格的箱子"
         },
         "stack": 1,
         "material": ["WA006", "BM002"],
@@ -3577,9 +3493,9 @@
         "limit": 1,
         "name": {
           "kr": "진리는 나의 빛",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Veritas Lux Mea",
+          "ja": "真理は我が光",
+          "cn": "真我之光"
         },
         "stack": 1,
         "material": ["GA006", "GA001"],
@@ -3610,9 +3526,9 @@
         "limit": 1,
         "name": {
           "kr": "해적의 증표",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Buccaneer Doubloon",
+          "ja": "海賊の証票",
+          "cn": "海盜印記"
         },
         "stack": 1,
         "material": ["GA011", "WWA003"],
@@ -3630,9 +3546,9 @@
         "limit": 1,
         "name": {
           "kr": "호크 아이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hawkeye",
+          "ja": "ホークアイ",
+          "cn": "鷹眼"
         },
         "stack": 1,
         "material": ["GA012", "GA005"],
@@ -3658,9 +3574,9 @@
         "limit": 1,
         "name": {
           "kr": "해적 깃발",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Jolly Roger",
+          "ja": "海賊の旗",
+          "cn": "海盜旗"
         },
         "stack": 1,
         "material": ["GA008", "GA011"],
@@ -3691,9 +3607,9 @@
         "limit": 1,
         "name": {
           "kr": "능동 위장",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Active Camouflage",
+          "ja": "能動偽装",
+          "cn": "光學迷彩包"
         },
         "stack": 1,
         "material": ["BA004", "GC004"],
@@ -3710,9 +3626,9 @@
         "limit": 1,
         "name": {
           "kr": "오르골",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Music Box",
+          "ja": "オルゴール",
+          "cn": "音樂盒"
         },
         "stack": 1,
         "material": ["WA006", "BM003"],
@@ -3729,9 +3645,9 @@
         "limit": 1,
         "name": {
           "kr": "마도서",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Grimoire",
+          "ja": "魔導書",
+          "cn": "魔法書"
         },
         "stack": 1,
         "material": ["GA002", "GM013"],
@@ -3760,9 +3676,9 @@
         "limit": 1,
         "name": {
           "kr": "아이테르 깃털",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Aether Fringe",
+          "ja": "アイテールの羽",
+          "cn": "埃忒耳之羽毛"
         },
         "stack": 1,
         "material": ["GA002", "WA001"],
@@ -3788,9 +3704,9 @@
         "limit": 1,
         "name": {
           "kr": "요명월",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Lunar Embrace",
+          "ja": "邀明月",
+          "cn": "邀明月"
         },
         "stack": 1,
         "material": ["BD001", "BM001"],
@@ -3827,9 +3743,9 @@
         "limit": 1,
         "name": {
           "kr": "미스릴 퀴버",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mithril Quiver",
+          "ja": "ミスリルクイーバー",
+          "cn": "秘銀箭袋"
         },
         "stack": 1,
         "material": ["GA007", "BM007"],
@@ -3856,9 +3772,9 @@
         "limit": 1,
         "name": {
           "kr": "달빛 펜던트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Moonlight Pendant",
+          "ja": "月光ペンダント",
+          "cn": "月光吊墜"
         },
         "stack": 1,
         "material": ["WA003", "BM001"],
@@ -3876,9 +3792,9 @@
         "limit": 1,
         "name": {
           "kr": "호루스의 눈",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Eye of Horus",
+          "ja": "ホルスの目",
+          "cn": "荷魯斯之眼"
         },
         "stack": 1,
         "material": ["WM008", "BM009"],
@@ -3907,9 +3823,9 @@
         "limit": 1,
         "name": {
           "kr": "에메랄드 타블렛",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Emerald Tablet",
+          "ja": "エメラルドタブレット",
+          "cn": "翡翠石板"
         },
         "stack": 1,
         "material": ["GA002", "PM002"],
@@ -3928,9 +3844,9 @@
         "limit": 1,
         "name": {
           "kr": "파초선",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sanguine Gunbai",
+          "ja": "芭蕉扇",
+          "cn": "芭蕉扇"
         },
         "stack": 1,
         "material": ["GA009", "PM001"],
@@ -3969,9 +3885,9 @@
         "limit": 1,
         "name": {
           "kr": "쿤달라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Kundala",
+          "ja": "クンダーラ",
+          "cn": "昆德拉"
         },
         "stack": 1,
         "material": ["BM007", "BM001"],
@@ -4002,9 +3918,9 @@
         "limit": 1,
         "name": {
           "kr": "쿤달라 Mk2",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Kundala Mk2",
+          "ja": "クンダーラMk2",
+          "cn": "昆德拉Mk2"
         },
         "stack": 1,
         "material": ["BM007", "BM001"],
@@ -4036,9 +3952,9 @@
         "limit": 1,
         "name": {
           "kr": "살라딘의 화살통",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sultan Adorned",
+          "ja": "スルタンの矢筒",
+          "cn": "蘇丹箭袋"
         },
         "stack": 1,
         "material": ["BA005", "BM001"],
@@ -4080,9 +3996,9 @@
         "limit": 1,
         "name": {
           "kr": "살라딘의 화살통 Mk2",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sultan Adorned Mk2",
+          "ja": "スルタンの矢筒Mk2",
+          "cn": "蘇丹箭袋Mk2"
         },
         "stack": 1,
         "material": ["BA005", "BM001"],
@@ -4122,9 +4038,9 @@
         "limit": 1,
         "name": {
           "kr": "아티팩트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Totem",
+          "ja": "アーティファクト",
+          "cn": "極光陀螺"
         },
         "stack": 1,
         "material": ["BM009", "WM016"],

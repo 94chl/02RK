@@ -1,7 +1,9 @@
-[{
+[
+  {
     "category": "dagger",
     "class": "A",
-    "items": [{
+    "items": [
+      {
         "id": "WWA001",
         "sort": "dagger",
         "img": "https://lh3.google.com/u/0/d/1vfOpH94inv5xPx409K7WM1fbTQ3_01GQ",
@@ -11,9 +13,9 @@
         "limit": 1,
         "name": {
           "kr": "가위",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Scissors",
+          "ja": "はさみ",
+          "cn": "剪刀"
         },
         "stack": 1
       },
@@ -35,9 +37,9 @@
         "limit": 1,
         "name": {
           "kr": "식칼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Kitchen Knife",
+          "ja": "包丁",
+          "cn": "菜刀"
         },
         "stack": 1
       },
@@ -51,9 +53,9 @@
         "limit": 1,
         "name": {
           "kr": "군용 나이프",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Army Knife",
+          "ja": "軍用ナイフ",
+          "cn": "軍刀"
         },
         "stack": 1,
         "material": ["WWA003", "WM024"],
@@ -68,12 +70,7 @@
         "tobe": ["BWA002", "PWA003"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "메스",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "메스", "en": "Scalpel", "ja": "メス", "cn": "手術刀" },
         "stack": 1,
         "material": ["WM022", "WWJ001"],
         "atk0": 18
@@ -88,9 +85,9 @@
         "limit": 1,
         "name": {
           "kr": "자마다르",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Jamadhar",
+          "ja": "ジャマダハル",
+          "cn": "拳刃"
         },
         "stack": 1,
         "material": ["WM022", "WWE001"],
@@ -106,9 +103,9 @@
         "limit": 1,
         "name": {
           "kr": "장미칼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Rose Knife",
+          "ja": "バラのナイフ",
+          "cn": "玫瑰刀"
         },
         "stack": 1,
         "material": ["GWA001", "WA002"],
@@ -126,9 +123,9 @@
         "limit": 1,
         "name": {
           "kr": "스위스 아미 나이프",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Swiss Army Knife",
+          "ja": "スイスアーミーナイフ",
+          "cn": "瑞士軍刀"
         },
         "stack": 1,
         "material": ["GWA002", "WWA001"],
@@ -145,9 +142,9 @@
         "limit": 1,
         "name": {
           "kr": "카라페이스 카타르",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Carapace Katar",
+          "ja": "カラペースカタル",
+          "cn": "印度拳刃"
         },
         "stack": 1,
         "material": ["GWA003", "WM003"],
@@ -164,9 +161,9 @@
         "limit": 1,
         "name": {
           "kr": "카른웬난",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Carnwennan",
+          "ja": "カルンウェナン",
+          "cn": "亞瑟王的短劍"
         },
         "stack": 1,
         "material": ["BWA001", "GA001"],
@@ -186,9 +183,9 @@
         "limit": 1,
         "name": {
           "kr": "파산검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mount Slicer",
+          "ja": "破山剣",
+          "cn": "破山劍"
         },
         "stack": 1,
         "material": ["BWA001", "GM007"],
@@ -207,9 +204,9 @@
         "limit": 1,
         "name": {
           "kr": "초진동나이프",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Vibroblade",
+          "ja": "超振動ナイフ",
+          "cn": "共振匕首"
         },
         "stack": 1,
         "material": ["GWA002", "BM003"],
@@ -227,9 +224,9 @@
         "limit": 1,
         "name": {
           "kr": "다마스커스 가시",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Damascus Steel Thorn",
+          "ja": "ダマスカス鋼の棘",
+          "cn": "大馬士革·索恩"
         },
         "stack": 1,
         "material": ["BWA002", "GT001"],
@@ -255,9 +252,9 @@
         "limit": 1,
         "name": {
           "kr": "마하라자",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Maharaja",
+          "ja": "マハラジャ",
+          "cn": "摩訶羅闍"
         },
         "stack": 1,
         "material": ["BWA003", "BA016"],
@@ -296,9 +293,9 @@
         "limit": 1,
         "name": {
           "kr": "프라가라흐",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fragarach",
+          "ja": "フラガラック",
+          "cn": "佛拉格拉克"
         },
         "stack": 1,
         "material": ["GWA001", "PM002"],
@@ -319,7 +316,8 @@
   {
     "category": "twoHand",
     "class": "B",
-    "items": [{
+    "items": [
+      {
         "id": "WWB001",
         "sort": "twoHand",
         "img": "https://lh3.google.com/u/0/d/184pMLP8ifWj4u2z7keDXlF9ICs5DbdFe",
@@ -337,9 +335,9 @@
         "limit": 1,
         "name": {
           "kr": "녹슨 검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Rusty Sword",
+          "ja": "錆びついた剣",
+          "cn": "鐵銹劍"
         },
         "stack": 1
       },
@@ -353,9 +351,9 @@
         "limit": 1,
         "name": {
           "kr": "샴쉬르",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Shamshir",
+          "ja": "シャムシール",
+          "cn": "彎刀"
         },
         "stack": 1,
         "material": ["WWB001", "WM006"],
@@ -371,9 +369,9 @@
         "limit": 1,
         "name": {
           "kr": "플라즈마 소드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Plasma Sword",
+          "ja": "プラズマソード",
+          "cn": "等離子劍"
         },
         "stack": 1,
         "material": ["WWB001", "WM007"],
@@ -388,12 +386,7 @@
         "tobe": ["BWB002", "BWB003", "YWB002"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "일본도",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "일본도", "en": "Katana", "ja": "刀", "cn": "武士刀" },
         "stack": 1,
         "material": ["GM010", "WWB001"],
         "atk0": 35
@@ -408,9 +401,9 @@
         "limit": 1,
         "name": {
           "kr": "마사무네",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Masamune",
+          "ja": "正宗",
+          "cn": "名刀正宗"
         },
         "stack": 1,
         "material": ["BWB001", "WM011"],
@@ -427,9 +420,9 @@
         "limit": 1,
         "name": {
           "kr": "무라마사",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Muramasa",
+          "ja": "村正",
+          "cn": "妖刀村正"
         },
         "stack": 1,
         "material": ["BWB001", "WM013"],
@@ -445,9 +438,9 @@
         "limit": 1,
         "name": {
           "kr": "바스타드 소드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bastard Sword",
+          "ja": "バスタードソード",
+          "cn": "長劍"
         },
         "stack": 1,
         "material": ["GM001", "WWB001"],
@@ -463,9 +456,9 @@
         "limit": 1,
         "name": {
           "kr": "보검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Jewel Sword",
+          "ja": "宝剣",
+          "cn": "寶劍"
         },
         "stack": 1,
         "material": ["GWB001", "GM004"],
@@ -482,9 +475,9 @@
         "limit": 1,
         "name": {
           "kr": "뚜언 띠엔",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Thuận Thiên",
+          "ja": "タンキエム",
+          "cn": "順天劍"
         },
         "stack": 1,
         "material": ["BWB004", "GC003"],
@@ -502,9 +495,9 @@
         "limit": 1,
         "name": {
           "kr": "호푸어드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hovud",
+          "ja": "ホヴズ",
+          "cn": "天衛之劍"
         },
         "stack": 1,
         "material": ["BWB005", "GA003"],
@@ -523,9 +516,9 @@
         "limit": 1,
         "name": {
           "kr": "엑스칼리버",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Excalibur",
+          "ja": "エクスカリバー",
+          "cn": "斷鋼聖劍"
         },
         "stack": 1,
         "material": ["BWB005", "WA007"],
@@ -544,9 +537,9 @@
         "limit": 1,
         "name": {
           "kr": "아론다이트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Arondight",
+          "ja": "アロンダイト",
+          "cn": "亞隆戴特"
         },
         "stack": 1,
         "material": ["BWB002", "WA008"],
@@ -564,9 +557,9 @@
         "limit": 1,
         "name": {
           "kr": "모노호시자오",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Monohoshizao",
+          "ja": "物干し竿",
+          "cn": "物幹焯"
         },
         "stack": 1,
         "material": ["BWB003", "GM009"],
@@ -584,9 +577,9 @@
         "limit": 1,
         "name": {
           "kr": "레바테인",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Laevateinn",
+          "ja": "レーヴァテイン",
+          "cn": "災厄之杖"
         },
         "stack": 1,
         "material": ["GWB001", "PM004"],
@@ -603,9 +596,9 @@
         "limit": 1,
         "name": {
           "kr": "다인슬라이프",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Dáinsleif",
+          "ja": "ダインスレイヴ",
+          "cn": "噬血魔劍"
         },
         "stack": 1,
         "material": ["BWB001", "PM001"],
@@ -639,9 +632,9 @@
         "limit": 1,
         "name": {
           "kr": "빛의 검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Aurora Longsword",
+          "ja": "光の剣",
+          "cn": "極光長劍"
         },
         "stack": 1,
         "material": ["BWB006", "BM008"],
@@ -672,9 +665,9 @@
         "limit": 1,
         "name": {
           "kr": "알마스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Almas",
+          "ja": "アルマス",
+          "cn": "極冰之劍"
         },
         "stack": 1,
         "material": ["BWB004", "PM003"],
@@ -698,7 +691,8 @@
   {
     "category": "axe",
     "class": "C",
-    "items": [{
+    "items": [
+      {
         "id": "WWC002",
         "sort": "axe",
         "img": "https://lh3.google.com/u/0/d/14UTwa9WFFDP_SraCiu5QZR9fvrTCIpsf",
@@ -708,9 +702,9 @@
         "limit": 1,
         "name": {
           "kr": "손도끼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hatchet",
+          "ja": "ハチェット",
+          "cn": "短柄斧"
         },
         "stack": 1
       },
@@ -724,9 +718,9 @@
         "limit": 1,
         "name": {
           "kr": "사슬 낫",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Chain Scythe",
+          "ja": "鎖鎌",
+          "cn": "鎖鐮"
         },
         "stack": 1,
         "material": ["WM023", "WWR001"],
@@ -751,9 +745,9 @@
         "limit": 1,
         "name": {
           "kr": "전투 도끼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Battle Axe",
+          "ja": "バトルアックス",
+          "cn": "戰斧"
         },
         "stack": 1,
         "material": ["WWC002", "WWF001"],
@@ -769,9 +763,9 @@
         "limit": 1,
         "name": {
           "kr": "경량화 도끼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Light Hatchet",
+          "ja": "軽量化アックス",
+          "cn": "輕量化斧頭"
         },
         "stack": 1,
         "material": ["GWC002", "WA001"],
@@ -788,9 +782,9 @@
         "limit": 1,
         "name": {
           "kr": "사신의 낫",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Reaper's Scythe",
+          "ja": "死神の鎌",
+          "cn": "死神鐮刀"
         },
         "stack": 1,
         "material": ["GWC001", "WWG001"],
@@ -815,9 +809,9 @@
         "limit": 1,
         "name": {
           "kr": "대부",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Gigantic Axe",
+          "ja": "大斧",
+          "cn": "大斧"
         },
         "stack": 1,
         "material": ["GWC002", "GM001"],
@@ -834,9 +828,9 @@
         "limit": 1,
         "name": {
           "kr": "빔 엑스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Beam Axe",
+          "ja": "ビームアックス",
+          "cn": "激光刃斧"
         },
         "stack": 1,
         "material": ["BWC003", "WM007"],
@@ -854,9 +848,9 @@
         "limit": 1,
         "name": {
           "kr": "산타 무에르테",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Santa Muerte",
+          "ja": "サンタムエルテ",
+          "cn": "死亡祈願"
         },
         "stack": 1,
         "material": ["BWC002", "GM004"],
@@ -882,9 +876,9 @@
         "limit": 1,
         "name": {
           "kr": "스퀴테",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Scythe",
+          "ja": "大鎌",
+          "cn": "大鐮刀"
         },
         "stack": 1,
         "material": ["BWC002", "GM011"],
@@ -910,9 +904,9 @@
         "limit": 1,
         "name": {
           "kr": "파라슈",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Parashu",
+          "ja": "パラシュ",
+          "cn": "羅摩斧"
         },
         "stack": 1,
         "material": ["BWC001", "GA002"],
@@ -931,9 +925,9 @@
         "limit": 1,
         "name": {
           "kr": "저거너트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Juggernaut",
+          "ja": "ジャガンナート",
+          "cn": "戰坦克"
         },
         "stack": 1,
         "material": ["BWC001", "BM003"],
@@ -979,9 +973,9 @@
         "limit": 1,
         "name": {
           "kr": "하르페",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Harpe",
+          "ja": "ハルペー",
+          "cn": "赫帕爾"
         },
         "stack": 1,
         "material": ["BWC003", "BA012"],
@@ -1012,9 +1006,9 @@
         "limit": 1,
         "name": {
           "kr": "반고부",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Axe of Pangu",
+          "ja": "バンコ斧",
+          "cn": "盤古斧"
         },
         "stack": 1,
         "material": ["BWC003", "BA012"],
@@ -1035,7 +1029,8 @@
   {
     "category": "dual",
     "class": "D",
-    "items": [{
+    "items": [
+      {
         "id": "WWD001",
         "sort": "dual",
         "img": "https://lh3.google.com/u/0/d/1TBX-_ItMXoDdDfb5gM7Ge9-B4AU0QSbH",
@@ -1045,9 +1040,9 @@
         "limit": 1,
         "name": {
           "kr": "쌍칼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Twin Blades",
+          "ja": "双刀",
+          "cn": "雙刀"
         },
         "stack": 1,
         "material": ["WWB001", "WWA003"],
@@ -1063,9 +1058,9 @@
         "limit": 1,
         "name": {
           "kr": "조잡한 쌍검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Wrought Swords",
+          "ja": "粗末な双剣",
+          "cn": "粗劣的雙劍"
         },
         "stack": 1,
         "material": ["WWA001", "WM023"],
@@ -1081,9 +1076,9 @@
         "limit": 1,
         "name": {
           "kr": "피렌체식 쌍검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Florentine",
+          "ja": "フィレンツェ式双剣",
+          "cn": "佛羅倫斯"
         },
         "stack": 1,
         "material": ["WWD001", "GM009"],
@@ -1100,9 +1095,9 @@
         "limit": 1,
         "name": {
           "kr": "쌍둥이 검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Pocket Aces",
+          "ja": "双子の剣",
+          "cn": "雙匕首"
         },
         "stack": 1,
         "material": ["WWD001", "BB001"],
@@ -1118,9 +1113,9 @@
         "limit": 1,
         "name": {
           "kr": "이천일류",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Divine Dual Swords",
+          "ja": "二天一流",
+          "cn": "二天一流"
         },
         "stack": 1,
         "material": ["BWD001", "GT001"],
@@ -1149,9 +1144,9 @@
         "limit": 1,
         "name": {
           "kr": "자웅일대검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Starsteel Twin Swords",
+          "ja": "雌雄一対の剣",
+          "cn": "雌雄雙股劍"
         },
         "stack": 1,
         "material": ["WWD001", "BM001"],
@@ -1169,9 +1164,9 @@
         "limit": 1,
         "name": {
           "kr": "디오스쿠로이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Dioscuri",
+          "ja": "ディオスクロイ",
+          "cn": "狄奧斯庫洛伊"
         },
         "stack": 1,
         "material": ["GWD001", "BM005"],
@@ -1188,9 +1183,9 @@
         "limit": 1,
         "name": {
           "kr": "아수라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Asura",
+          "ja": "阿修羅",
+          "cn": "阿修羅"
         },
         "stack": 1,
         "material": ["BWD001", "GA006"],
@@ -1218,9 +1213,9 @@
         "limit": 1,
         "name": {
           "kr": "간장과 막야",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Spring and Autumn",
+          "ja": "干將·莫耶",
+          "cn": "陰陽雙刃"
         },
         "stack": 1,
         "material": ["WWD001", "PM002"],
@@ -1246,9 +1241,9 @@
         "limit": 1,
         "name": {
           "kr": "로이거 차르",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Lloigor & Zahr",
+          "ja": "ロイガーツァール",
+          "cn": "羅伊格爾＆扎爾"
         },
         "stack": 1,
         "material": ["BWD002", "GM007"],
@@ -1274,7 +1269,8 @@
   {
     "category": "glove",
     "class": "E",
-    "items": [{
+    "items": [
+      {
         "id": "WWE001",
         "sort": "glove",
         "img": "https://lh3.google.com/u/0/d/1uFitslBawi6QRMLDtKOQJBaxmmY-z6RQ",
@@ -1284,9 +1280,9 @@
         "limit": 1,
         "name": {
           "kr": "너클",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Brass Knuckles",
+          "ja": "ナックル",
+          "cn": "指虎"
         },
         "stack": 1
       },
@@ -1295,14 +1291,14 @@
         "sort": "glove",
         "img": "https://lh3.google.com/u/0/d/1YR4c1dfLr7cjT2KQU1AHJgpvMSFuarWy",
         "location": ["A006", "A014"],
-        "tobe": ["GWE001", "BWE001", "PB014"],
+        "tobe": ["GWE001", "BWE001", "BB007"],
         "pickup": 1,
         "limit": 1,
         "name": {
           "kr": "목장갑",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cotton Gloves",
+          "ja": "軍手",
+          "cn": "作業用手套"
         },
         "stack": 1
       },
@@ -1315,10 +1311,10 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "가죽 장갑",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "글러브",
+          "en": "Leather Gloves",
+          "ja": "グローブ",
+          "cn": "皮手套"
         },
         "stack": 1,
         "material": ["WWE002", "WM019"],
@@ -1334,9 +1330,9 @@
         "limit": 1,
         "name": {
           "kr": "아이언 너클",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Iron Knuckles",
+          "ja": "アイアンナックル",
+          "cn": "鐵指虎"
         },
         "stack": 1,
         "material": ["WWE001", "WM016"],
@@ -1352,9 +1348,9 @@
         "limit": 1,
         "name": {
           "kr": "건틀릿",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Gauntlet",
+          "ja": "ガントレット",
+          "cn": "金屬手套"
         },
         "stack": 1,
         "material": ["GM001", "WWE002"],
@@ -1370,9 +1366,9 @@
         "limit": 1,
         "name": {
           "kr": "윙 너클",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Wing Knuckles",
+          "ja": "ウィングナックル",
+          "cn": "羽翼指虎"
         },
         "stack": 1,
         "material": ["GWE002", "WA001"],
@@ -1389,9 +1385,9 @@
         "limit": 1,
         "name": {
           "kr": "귀골 장갑",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bone Gauntlet",
+          "ja": "亀骨手袋",
+          "cn": "龜甲拳套"
         },
         "stack": 1,
         "material": ["BWE001", "WM003"],
@@ -1409,9 +1405,9 @@
         "limit": 1,
         "name": {
           "kr": "벽력귀투",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Shatter Shell Gauntlet",
+          "ja": "霹靂亀投",
+          "cn": "爆裂拳套"
         },
         "stack": 1,
         "material": ["BWE001", "WM018"],
@@ -1428,9 +1424,9 @@
         "limit": 1,
         "name": {
           "kr": "유리 너클",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Glass Knuckles",
+          "ja": "ガラスナックル",
+          "cn": "碎玻璃指虎"
         },
         "stack": 1,
         "material": ["GWE002", "GA003"],
@@ -1447,9 +1443,9 @@
         "limit": 1,
         "name": {
           "kr": "회단 장갑",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Phoenix Gloves",
+          "ja": "灰身手袋",
+          "cn": "涅盤拳套"
         },
         "stack": 1,
         "material": ["GWE001", "GM007"],
@@ -1466,9 +1462,9 @@
         "limit": 1,
         "name": {
           "kr": "단영촌천투",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "One Inch Punch",
+          "ja": "単零寸千闘",
+          "cn": "寸拳"
         },
         "stack": 1,
         "material": ["BWE003", "GA004"],
@@ -1487,9 +1483,9 @@
         "limit": 1,
         "name": {
           "kr": "디바인 피스트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Divine Fist",
+          "ja": "聖なる拳",
+          "cn": "聖拳"
         },
         "stack": 1,
         "material": ["BWE004", "WA008"],
@@ -1506,9 +1502,9 @@
         "limit": 1,
         "name": {
           "kr": "블러드윙 너클",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bloodwing Knuckles",
+          "ja": "ウィングナックル",
+          "cn": "血翼指虎"
         },
         "stack": 1,
         "material": ["BWE002", "GM004"],
@@ -1526,9 +1522,9 @@
         "limit": 1,
         "name": {
           "kr": "빙화현옥수",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Frost Petal Hand",
+          "ja": "氷花現玉手",
+          "cn": "霜瓣玉手"
         },
         "stack": 1,
         "material": ["BWE006", "WD003"],
@@ -1546,9 +1542,9 @@
         "limit": 1,
         "name": {
           "kr": "여래수투",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Buddha's Palm",
+          "ja": "如来手闘",
+          "cn": "如來神掌"
         },
         "stack": 1,
         "material": ["BWE006", "GA006"],
@@ -1566,9 +1562,9 @@
         "limit": 1,
         "name": {
           "kr": "브레이질 건틀릿",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Brasil Gauntlet",
+          "ja": "B・ガントレット",
+          "cn": "巴西拳套"
         },
         "stack": 1,
         "material": ["BWE003", "GM002"],
@@ -1614,9 +1610,9 @@
         "limit": 1,
         "name": {
           "kr": "소수",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "White Claw Punch",
+          "ja": "素手",
+          "cn": "赤手空拳"
         },
         "stack": 1,
         "material": ["BWE005", "GM006"],
@@ -1634,9 +1630,9 @@
         "limit": 1,
         "name": {
           "kr": "천잠장갑",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Imperial Silk Gloves",
+          "ja": "天蚕手袋",
+          "cn": "天蠶手套"
         },
         "stack": 1,
         "material": ["BT002", "GWE001"],
@@ -1653,9 +1649,9 @@
         "limit": 1,
         "name": {
           "kr": "주작자문",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mark of the Phoenix",
+          "ja": "朱雀刺紋",
+          "cn": "朱雀之紋"
         },
         "stack": 1,
         "material": ["GWE001", "PM004"],
@@ -1672,9 +1668,9 @@
         "limit": 1,
         "name": {
           "kr": "프로스트 팽",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Permafrost",
+          "ja": "永久凍土",
+          "cn": "凍土傳說"
         },
         "stack": 1,
         "material": ["BWE006", "PM003"],
@@ -1699,7 +1695,8 @@
   {
     "category": "tonfa",
     "class": "F",
-    "items": [{
+    "items": [
+      {
         "id": "WWF001",
         "sort": "tonfa",
         "img": "https://lh3.google.com/u/0/d/1s6m0maK_BwB9zGw1ysQqPxNT0Zvzhh-5",
@@ -1719,12 +1716,7 @@
         ],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "대나무",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "대나무", "en": "Bamboo", "ja": "竹", "cn": "竹子" },
         "stack": 1
       },
       {
@@ -1737,9 +1729,9 @@
         "limit": 1,
         "name": {
           "kr": "톤파",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Wooden Tonfa",
+          "ja": "トンファー",
+          "cn": "雙拐"
         },
         "stack": 1,
         "material": ["WWF001", "WM024"],
@@ -1755,9 +1747,9 @@
         "limit": 1,
         "name": {
           "kr": "경찰봉",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Police Baton",
+          "ja": "警察棒",
+          "cn": "警棍"
         },
         "stack": 1,
         "material": ["GWF001", "WM008"],
@@ -1773,9 +1765,9 @@
         "limit": 1,
         "name": {
           "kr": "류큐톤파",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ryukyu Tonfa",
+          "ja": "琉球トンファー",
+          "cn": "琉球雙拐"
         },
         "stack": 1,
         "material": ["GWF001", "GM006"],
@@ -1792,9 +1784,9 @@
         "limit": 1,
         "name": {
           "kr": "택티컬 톤파",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tactical Tonfa",
+          "ja": "戦術トンファー",
+          "cn": "戰術雙拐"
         },
         "stack": 1,
         "material": ["BWF001", "GM009"],
@@ -1811,9 +1803,9 @@
         "limit": 1,
         "name": {
           "kr": "마이쏙",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mai Sok",
+          "ja": "マイソック",
+          "cn": "泰式拳法"
         },
         "stack": 1,
         "material": ["BWF002", "WM003"],
@@ -1831,9 +1823,9 @@
         "limit": 1,
         "name": {
           "kr": "플라즈마 톤파",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Plasma Tonfa",
+          "ja": "プラズマトンファー",
+          "cn": "等離雙拐"
         },
         "stack": 1,
         "material": ["BWF002", "WM007"],
@@ -1851,9 +1843,9 @@
         "limit": 1,
         "name": {
           "kr": "윈드러너",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Windrunner",
+          "ja": "ウィンドランナー",
+          "cn": "風行者"
         },
         "stack": 1,
         "material": ["GWF001", "BT002"],
@@ -1897,9 +1889,9 @@
         "limit": 1,
         "name": {
           "kr": "흑요석 짓테",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Obsidian Jitte",
+          "ja": "黒曜石十手",
+          "cn": "黑曜石雙釵"
         },
         "stack": 1,
         "material": ["BWF001", "PM002"],
@@ -1925,7 +1917,8 @@
   {
     "category": "bat",
     "class": "G",
-    "items": [{
+    "items": [
+      {
         "id": "WWG001",
         "sort": "bat",
         "img": "https://lh3.google.com/u/0/d/1RmFMZXhcOt4kztW_aog3DnsjrO2XGo7b",
@@ -1942,12 +1935,7 @@
         ],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "단봉",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "단봉", "en": "Short Rod", "ja": "短棒", "cn": "短棍" },
         "stack": 1
       },
       {
@@ -1958,12 +1946,7 @@
         "tobe": ["BWG001", "BWG002", "PWG004", "YWG001"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "장봉",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "장봉", "en": "Long Rod", "ja": "長棒", "cn": "長棍" },
         "stack": 1,
         "material": ["WWG001", "WWF001"],
         "atk0": 22
@@ -1978,9 +1961,9 @@
         "limit": 1,
         "name": {
           "kr": "도깨비 방망이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Goblin Bat",
+          "ja": "金砕棒",
+          "cn": "碎棒"
         },
         "stack": 1,
         "material": ["GWG001", "WM020"],
@@ -2003,12 +1986,7 @@
         "tobe": ["PWG003"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "우산",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "우산", "en": "Umbrella", "ja": "傘", "cn": "雨傘" },
         "stack": 1,
         "material": ["GWG001", "WA004"],
         "atk0": 30,
@@ -2022,12 +2000,7 @@
         "tobe": ["PWG001"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "횃불",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "횃불", "en": "Torch", "ja": "松明", "cn": "火炬" },
         "stack": 1,
         "material": ["WWG001", "GM002"],
         "atk0": 36,
@@ -2044,9 +2017,9 @@
         "limit": 1,
         "name": {
           "kr": "몽둥이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Reinforced Club",
+          "ja": "棍",
+          "cn": "矛柄"
         },
         "stack": 1,
         "material": ["WWG001", "GM001"],
@@ -2062,9 +2035,9 @@
         "limit": 1,
         "name": {
           "kr": "구원의 여신상",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Statue of Soteria",
+          "ja": "救援の女神像",
+          "cn": "救世女神像"
         },
         "stack": 1,
         "material": ["BWG003", "GA004"],
@@ -2085,9 +2058,9 @@
         "limit": 1,
         "name": {
           "kr": "타구봉",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mallet",
+          "ja": "打狗棒",
+          "cn": "打狗棒"
         },
         "stack": 1,
         "material": ["BWG001", "GM008"],
@@ -2113,9 +2086,9 @@
         "limit": 1,
         "name": {
           "kr": "스파이의 우산",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Spy Umbrella",
+          "ja": "スパイの傘",
+          "cn": "特工傘"
         },
         "stack": 1,
         "material": ["BWG002", "GM007"],
@@ -2133,9 +2106,9 @@
         "limit": 1,
         "name": {
           "kr": "마법봉",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Magic Stick",
+          "ja": "魔法ステッキ",
+          "cn": "魔法棒"
         },
         "stack": 1,
         "material": ["GWG001", "PA005"],
@@ -2154,9 +2127,9 @@
         "limit": 1,
         "name": {
           "kr": "금강저",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Vajra",
+          "ja": "金剛杵",
+          "cn": "金剛杵"
         },
         "stack": 1,
         "material": ["BWG004", "BM004"],
@@ -2181,9 +2154,9 @@
         "limit": 1,
         "name": {
           "kr": "팔괘장",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Pakua Chang",
+          "ja": "八卦掌",
+          "cn": "八卦佛杖"
         },
         "stack": 1,
         "material": ["BWG004", "GC003"],
@@ -2217,9 +2190,9 @@
         "limit": 1,
         "name": {
           "kr": "여의봉",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Monkey King Bar",
+          "ja": "如意棒",
+          "cn": "如意金箍棒"
         },
         "stack": 1,
         "material": ["GWG001", "PM002"],
@@ -2240,7 +2213,8 @@
   {
     "category": "whip",
     "class": "H",
-    "items": [{
+    "items": [
+      {
         "id": "WWH001",
         "sort": "whip",
         "img": "https://lh3.google.com/u/0/d/1i_ymAx_uG9-eUksydRg2A65bprBjjIOH",
@@ -2248,12 +2222,7 @@
         "tobe": ["GWH001", "GWH002"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "채찍",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "채찍", "en": "Whip", "ja": "鞭", "cn": "鞭子" },
         "stack": 1
       },
       {
@@ -2266,9 +2235,9 @@
         "limit": 1,
         "name": {
           "kr": "오랏줄",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Rope Cuffs",
+          "ja": "お縄",
+          "cn": "繩環"
         },
         "stack": 1,
         "material": ["WWH001", "WM008"],
@@ -2283,12 +2252,7 @@
         "tobe": ["BWH002", "PWH004"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "철편",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "철편", "en": "Bullwhip", "ja": "鉄鞭", "cn": "鐵鞭" },
         "stack": 1,
         "material": ["WWH001", "WWJ001"],
         "atk0": 30
@@ -2303,9 +2267,9 @@
         "limit": 1,
         "name": {
           "kr": "바람 채찍",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Wind Whip",
+          "ja": "風の鞭",
+          "cn": "風之鞭"
         },
         "stack": 1,
         "material": ["GWH001", "WA001"],
@@ -2322,9 +2286,9 @@
         "limit": 1,
         "name": {
           "kr": "벽력편",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Lightning Whip",
+          "ja": "霹靂鞭",
+          "cn": "霹靂鞭"
         },
         "stack": 1,
         "material": ["GWH002", "GM005"],
@@ -2341,9 +2305,9 @@
         "limit": 1,
         "name": {
           "kr": "글레이프니르",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Gleipnir",
+          "ja": "グレイプニル",
+          "cn": "格萊普尼爾"
         },
         "stack": 1,
         "material": ["BWH001", "GT001"],
@@ -2370,9 +2334,9 @@
         "limit": 1,
         "name": {
           "kr": "플라즈마 윕",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Plasma Whip",
+          "ja": "プラズマ鞭",
+          "cn": "等離子鞭"
         },
         "stack": 1,
         "material": ["BWH002", "WM007"],
@@ -2390,10 +2354,10 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "뇌룡편",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "벽력편",
+          "en": "Thunder Whip",
+          "ja": "雷龍鞭",
+          "cn": "雷龍鞭"
         },
         "stack": 1,
         "material": ["BWH002", "GM011"],
@@ -2412,9 +2376,9 @@
         "limit": 1,
         "name": {
           "kr": "캐소드 라쉬",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cathode Lash",
+          "ja": "カソードラッシュ",
+          "cn": "負極離子鞭"
         },
         "stack": 1,
         "material": ["GWH002", "BA016"],
@@ -2445,9 +2409,9 @@
         "limit": 1,
         "name": {
           "kr": "우라누스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ouranos",
+          "ja": "ウーラノス",
+          "cn": "烏拉諾斯"
         },
         "stack": 1,
         "material": ["GM002", "BM001"],
@@ -2476,9 +2440,9 @@
         "limit": 1,
         "name": {
           "kr": "혈화구절편",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bloody Nine Tails",
+          "ja": "血花九節鞭",
+          "cn": "血花九節鞭"
         },
         "stack": 1,
         "material": ["GWH001", "PM001"],
@@ -2492,7 +2456,8 @@
   {
     "category": "throw",
     "class": "I",
-    "items": [{
+    "items": [
+      {
         "id": "WWI001",
         "sort": "throw",
         "img": "https://lh3.google.com/u/0/d/1E4bLe1YIIVknGSomcqiPbjdV8jZC_RFa",
@@ -2502,9 +2467,9 @@
         "limit": 1,
         "name": {
           "kr": "쇠구슬",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Iron Ball",
+          "ja": "鉄の玉",
+          "cn": "鋼珠"
         },
         "stack": 1
       },
@@ -2518,9 +2483,9 @@
         "limit": 1,
         "name": {
           "kr": "야구공",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Baseball",
+          "ja": "野球ボール",
+          "cn": "棒球"
         },
         "stack": 1
       },
@@ -2534,9 +2499,9 @@
         "limit": 1,
         "name": {
           "kr": "수류탄",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Grenade",
+          "ja": "手榴弾",
+          "cn": "手榴彈"
         },
         "stack": 1,
         "material": ["WWI001", "WM018"],
@@ -2553,9 +2518,9 @@
         "limit": 1,
         "name": {
           "kr": "화염병",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Molotov Cocktail",
+          "ja": "火炎瓶",
+          "cn": "燃燒瓶"
         },
         "stack": 1,
         "material": ["WM001", "WM011"],
@@ -2572,9 +2537,9 @@
         "limit": 1,
         "name": {
           "kr": "싸인볼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Autographed Baseball",
+          "ja": "サインボール",
+          "cn": "簽名球"
         },
         "stack": 1,
         "material": ["WWI002", "WM022"],
@@ -2588,12 +2553,7 @@
         "tobe": ["PWI003"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "슬링",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "슬링", "en": "Sling", "ja": "スリング", "cn": "吊索" },
         "stack": 1,
         "material": ["GWI003", "WM004"],
         "atk0": 42
@@ -2608,9 +2568,9 @@
         "limit": 1,
         "name": {
           "kr": "밀가루 폭탄",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Flour Bomb",
+          "ja": "小麦粉爆弾",
+          "cn": "麵粉炸彈"
         },
         "stack": 1,
         "material": ["GM006", "GWI002"],
@@ -2627,9 +2587,9 @@
         "limit": 1,
         "name": {
           "kr": "볼 라이트닝",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ball Lightning",
+          "ja": "ボール・ライトニング",
+          "cn": "閃電球"
         },
         "stack": 1,
         "material": ["WWI001", "BM005"],
@@ -2646,9 +2606,9 @@
         "limit": 1,
         "name": {
           "kr": "플러버",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Flubber",
+          "ja": "フラバー",
+          "cn": "飛天法寶"
         },
         "stack": 1,
         "material": ["GD001", "WM004"],
@@ -2664,9 +2624,9 @@
         "limit": 1,
         "name": {
           "kr": "가시 탱탱볼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Spiky Bouncy Ball",
+          "ja": "スーパーボール",
+          "cn": "尖刺彈力球"
         },
         "stack": 1,
         "material": ["BWI004", "WM020"],
@@ -2691,9 +2651,9 @@
         "limit": 1,
         "name": {
           "kr": "필럼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Pilum",
+          "ja": "ピルム",
+          "cn": "羅馬重標槍"
         },
         "stack": 1,
         "material": ["WWQ001", "GA012"],
@@ -2718,9 +2678,9 @@
         "limit": 1,
         "name": {
           "kr": "소이탄",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Incendiary Bomb",
+          "ja": "焼夷弾",
+          "cn": "燃燒彈"
         },
         "stack": 1,
         "material": ["GWI002", "BWI003"],
@@ -2740,9 +2700,9 @@
         "limit": 1,
         "name": {
           "kr": "고폭 수류탄",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "High Explosive Grenade",
+          "ja": "高爆手榴弾",
+          "cn": "高爆手榴弾"
         },
         "stack": 1,
         "material": ["GWI001", "BT001"],
@@ -2760,9 +2720,9 @@
         "limit": 1,
         "name": {
           "kr": "다비드슬링",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "David's Sling",
+          "ja": "ダビデのスリング",
+          "cn": "大衛的彈弓"
         },
         "stack": 1,
         "material": ["BWI001", "GA001"],
@@ -2781,9 +2741,9 @@
         "limit": 1,
         "name": {
           "kr": "연막탄",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Smoke Bomb",
+          "ja": "煙幕弾",
+          "cn": "煙霧彈"
         },
         "stack": 1,
         "material": ["BWI002", "GD009"],
@@ -2801,9 +2761,9 @@
         "limit": 1,
         "name": {
           "kr": "루테늄 구슬",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ruthenium Marble",
+          "ja": "ルテニウムの玉",
+          "cn": "釕珠"
         },
         "stack": 1,
         "material": ["BWI005", "GM011"],
@@ -2830,9 +2790,9 @@
         "limit": 1,
         "name": {
           "kr": "안티오크의 수류탄",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Grenade of Antioch",
+          "ja": "アンティオキアの手榴弾",
+          "cn": "安提奧克的手榴彈"
         },
         "stack": 1,
         "material": ["PWI002", "WA008"],
@@ -2850,9 +2810,9 @@
         "limit": 1,
         "name": {
           "kr": "파이어 볼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fireball",
+          "ja": "ファイヤーボール",
+          "cn": "火球"
         },
         "stack": 1,
         "material": ["GWI003", "BT007"],
@@ -2870,9 +2830,9 @@
         "limit": 1,
         "name": {
           "kr": "아스트라페",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Astrapē",
+          "ja": "アストラペー",
+          "cn": "阿斯特拉普"
         },
         "stack": 1,
         "material": ["BWI006", "GA003"],
@@ -2900,9 +2860,9 @@
         "limit": 1,
         "name": {
           "kr": "점착 폭탄",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sticky Bomb",
+          "ja": "粘着爆弾",
+          "cn": "黏性炸彈"
         },
         "stack": 1,
         "material": ["PWI001", "GWI001"],
@@ -2933,9 +2893,9 @@
         "limit": 1,
         "name": {
           "kr": "프리즘 볼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Dyadic Prism",
+          "ja": "プリズムボール",
+          "cn": "魔導稜鏡"
         },
         "stack": 1,
         "material": ["BWI003", "PM002"],
@@ -2948,7 +2908,8 @@
   {
     "category": "shuriken",
     "class": "J",
-    "items": [{
+    "items": [
+      {
         "id": "WWJ001",
         "sort": "shuriken",
         "img": "https://lh3.google.com/u/0/d/1wcrgMHcIinyorzVxD5M1elLhuqqM9Vo2",
@@ -2956,12 +2917,7 @@
         "tobe": ["GWA002", "GWH002", "GWJ003", "GWJ004", "BWR002", "BC004"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "면도칼",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "면도칼", "en": "Razor", "ja": "剃刀", "cn": "剃刀" },
         "stack": 1
       },
       {
@@ -2974,9 +2930,9 @@
         "limit": 1,
         "name": {
           "kr": "트럼프 카드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Playing Cards",
+          "ja": "トランプカード",
+          "cn": "撲克牌"
         },
         "stack": 1
       },
@@ -2988,12 +2944,7 @@
         "tobe": ["BWJ007"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "다트",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "다트", "en": "Dart", "ja": "ダーツ", "cn": "飛鏢" },
         "stack": 1,
         "material": ["WWS001", "WA001"],
         "atk0": 16,
@@ -3010,9 +2961,9 @@
         "limit": 1,
         "name": {
           "kr": "빈티지 카드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Vintage Cards",
+          "ja": "ビンテージカード",
+          "cn": "復古撲克"
         },
         "stack": 1,
         "material": ["WWJ002", "WM022"],
@@ -3029,9 +2980,9 @@
         "limit": 1,
         "name": {
           "kr": "표창",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Throwing Stars",
+          "ja": "四方手裏剣",
+          "cn": "梅花鏢"
         },
         "stack": 1,
         "material": ["WWJ001", "WM021"],
@@ -3047,9 +2998,9 @@
         "limit": 1,
         "name": {
           "kr": "흑건",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Onyx Dagger",
+          "ja": "黒剣",
+          "cn": "瑪瑙匕首"
         },
         "stack": 1,
         "material": ["WWJ001", "WA008"],
@@ -3064,12 +3015,7 @@
         "tobe": ["PWJ002", "PWJ008"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "부적",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "부적", "en": "Charm", "ja": "御札", "cn": "符咒" },
         "stack": 1,
         "material": ["GWJ002", "WM025"],
         "atk0": 30,
@@ -3085,9 +3031,9 @@
         "limit": 1,
         "name": {
           "kr": "매화비표",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Apricot Flower Tag",
+          "ja": "梅花の手裏剣",
+          "cn": "梅花苦無"
         },
         "stack": 1,
         "material": ["GWJ004", "WA002"],
@@ -3105,9 +3051,9 @@
         "limit": 1,
         "name": {
           "kr": "챠크람",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Chakram",
+          "ja": "チャクラム",
+          "cn": "環刃"
         },
         "stack": 1,
         "material": ["GWJ003", "WM008"],
@@ -3123,9 +3069,9 @@
         "limit": 1,
         "name": {
           "kr": "유엽비도",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Willow Leaf Spike",
+          "ja": "柳葉飛刀",
+          "cn": "柳葉飛刀"
         },
         "stack": 1,
         "material": ["BWJ002", "WM024"],
@@ -3143,9 +3089,9 @@
         "limit": 1,
         "name": {
           "kr": "독침",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Venom Dart",
+          "ja": "毒針",
+          "cn": "毒針"
         },
         "stack": 1,
         "material": ["WWS001", "BM002"],
@@ -3162,9 +3108,9 @@
         "limit": 1,
         "name": {
           "kr": "법륜",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Dharma Chakram",
+          "ja": "法輪",
+          "cn": "達摩法輪"
         },
         "stack": 1,
         "material": ["BWJ003", "WA005"],
@@ -3181,9 +3127,9 @@
         "limit": 1,
         "name": {
           "kr": "플럼바타",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Plumbata",
+          "ja": "プラムバタ",
+          "cn": "普拉巴塔標槍"
         },
         "stack": 1,
         "material": ["GWJ001", "GM001"],
@@ -3201,9 +3147,9 @@
         "limit": 1,
         "name": {
           "kr": "미치광이왕의 카드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cards of Tyranny",
+          "ja": "狂気王のカード",
+          "cn": "瘋子國王的卡片"
         },
         "stack": 1,
         "material": ["GWJ002", "BM005"],
@@ -3223,9 +3169,9 @@
         "limit": 1,
         "name": {
           "kr": "옥전결",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mystic Jade Charm",
+          "ja": "玉篆訣",
+          "cn": "翡翠秘符"
         },
         "stack": 1,
         "material": ["BWJ001", "GM011"],
@@ -3245,9 +3191,9 @@
         "limit": 1,
         "name": {
           "kr": "풍마 수리검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fuhma Shuriken",
+          "ja": "風魔手裏剣",
+          "cn": "風魔手裏劍"
         },
         "stack": 1,
         "material": ["BWJ004", "WM010"],
@@ -3276,9 +3222,9 @@
         "limit": 1,
         "name": {
           "kr": "빙백은침",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Frost Venom Dart",
+          "ja": "氷魄銀針",
+          "cn": "冰魄銀針"
         },
         "stack": 1,
         "material": ["BWJ005", "PM003"],
@@ -3296,9 +3242,9 @@
         "limit": 1,
         "name": {
           "kr": "푸른색 단도",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Azure Dagger",
+          "ja": "青色の短刀",
+          "cn": "蔚藍匕首"
         },
         "stack": 1,
         "material": ["BWJ004", "BM002"],
@@ -3326,9 +3272,9 @@
         "limit": 1,
         "name": {
           "kr": "플레셋",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Flechette",
+          "ja": "フレシェット弾",
+          "cn": "飛镖彈"
         },
         "stack": 1,
         "material": ["BWJ007", "GM006"],
@@ -3356,9 +3302,9 @@
         "limit": 1,
         "name": {
           "kr": "건곤권",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Wind and Fire Wheels",
+          "ja": "乾坤圈",
+          "cn": "乾坤圈"
         },
         "stack": 1,
         "material": ["BWJ006", "WWF001"],
@@ -3376,9 +3322,9 @@
         "limit": 1,
         "name": {
           "kr": "생사부",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Death Rune",
+          "ja": "生死符",
+          "cn": "亡者之符"
         },
         "stack": 1,
         "material": ["BWJ001", "BM008"],
@@ -3417,12 +3363,12 @@
         "tobe": false,
         "pickup": 1,
         "limit": 1,
+        "load0": 20,
         "name": {
           "kr": "수다르사나",
-          "load0": 20,
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sudarsana",
+          "ja": "スダルサナ",
+          "cn": "善見神輪"
         },
         "stack": 1,
         "material": ["GWJ003", "PM002"],
@@ -3440,9 +3386,9 @@
         "limit": 1,
         "name": {
           "kr": "만천화우",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Petal Torrent",
+          "ja": "滿天花雨",
+          "cn": "滿天花雨"
         },
         "stack": 1,
         "material": ["PWJ004", "GT003"],
@@ -3457,7 +3403,8 @@
   {
     "category": "bow",
     "class": "K",
-    "items": [{
+    "items": [
+      {
         "id": "WWK001",
         "sort": "bow",
         "img": "https://lh3.google.com/u/0/d/1QnSKQBHvhPxcqyh62m14ARMph2LIsYOV",
@@ -3465,12 +3412,7 @@
         "tobe": ["GWK001", "GWK002"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "양궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "양궁", "en": "Bow", "ja": "洋弓", "cn": "弓" },
         "stack": 1
       },
       {
@@ -3483,9 +3425,9 @@
         "limit": 1,
         "name": {
           "kr": "목궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Wooden Bow",
+          "ja": "木弓",
+          "cn": "木弓"
         },
         "stack": 1,
         "material": ["WWK001", "WM021"],
@@ -3499,12 +3441,7 @@
         "tobe": ["BWK001", "BWK004", "BWK006", "YWK02"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "장궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "장궁", "en": "Longbow", "ja": "長弓", "cn": "長弓" },
         "stack": 1,
         "material": ["WWK001", "WM004"],
         "atk0": 25
@@ -3519,9 +3456,9 @@
         "limit": 1,
         "name": {
           "kr": "컴포지트 보우",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Composite Bow",
+          "ja": "コンポジットボウ",
+          "cn": "複合弓"
         },
         "stack": 1,
         "material": ["GWK002", "WM020"],
@@ -3546,9 +3483,9 @@
         "limit": 1,
         "name": {
           "kr": "강궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Strong Bow",
+          "ja": "強弓",
+          "cn": "強弓"
         },
         "stack": 1,
         "material": ["GWK001", "WM011"],
@@ -3564,9 +3501,9 @@
         "limit": 1,
         "name": {
           "kr": "국궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Stallion Bow",
+          "ja": "国弓",
+          "cn": "松武弓"
         },
         "stack": 1,
         "material": ["BWK004", "WM008"],
@@ -3583,9 +3520,9 @@
         "limit": 1,
         "name": {
           "kr": "벽력궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mighty Bow",
+          "ja": "霹靂弓",
+          "cn": "暗殺特弓"
         },
         "stack": 1,
         "material": ["GWK002", "WM018"],
@@ -3602,9 +3539,9 @@
         "limit": 1,
         "name": {
           "kr": "탄궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Pellet Bow",
+          "ja": "弾弓",
+          "cn": "狙擊彈弓"
         },
         "stack": 1,
         "material": ["GWK001", "GM012"],
@@ -3620,9 +3557,9 @@
         "limit": 1,
         "name": {
           "kr": "화전",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Scorchbow",
+          "ja": "火矢",
+          "cn": "火矢弓"
         },
         "stack": 1,
         "material": ["GWK002", "WM006"],
@@ -3639,9 +3576,9 @@
         "limit": 1,
         "name": {
           "kr": "편전",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ancient Bolt",
+          "ja": "片箭",
+          "cn": "片箭"
         },
         "stack": 1,
         "material": ["BWK003", "WWF001"],
@@ -3658,9 +3595,9 @@
         "limit": 1,
         "name": {
           "kr": "골든래쇼 보우",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Golden-Ratio Bow",
+          "ja": "黄金比率の弓",
+          "cn": "黃金之弓"
         },
         "stack": 1,
         "material": ["BWK005", "GM011"],
@@ -3679,9 +3616,9 @@
         "limit": 1,
         "name": {
           "kr": "트윈보우",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Twinbow",
+          "ja": "ツインボウ",
+          "cn": "雙子殺"
         },
         "stack": 1,
         "material": ["BWK002", "BWK001"],
@@ -3708,9 +3645,9 @@
         "limit": 1,
         "name": {
           "kr": "엘리멘탈 보우",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Elemental Bow",
+          "ja": "エレメンタルボウ",
+          "cn": "元素靈弓"
         },
         "stack": 1,
         "material": ["BWK006", "BA001"],
@@ -3737,9 +3674,9 @@
         "limit": 1,
         "name": {
           "kr": "제베의 활",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Jebe's Altered Bow",
+          "ja": "ジェベの矢",
+          "cn": "哲別之弓"
         },
         "stack": 1,
         "material": ["BWK004", "BA005"],
@@ -3757,9 +3694,9 @@
         "limit": 1,
         "name": {
           "kr": "아르테미스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Artemis",
+          "ja": "アルテミス",
+          "cn": "阿提米絲"
         },
         "stack": 1,
         "material": ["BWK002", "BM001"],
@@ -3779,9 +3716,9 @@
         "limit": 1,
         "name": {
           "kr": "페일노트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Failnaught",
+          "ja": "無駄なしの弓",
+          "cn": "血之刻印"
         },
         "stack": 1,
         "material": ["BWK002", "PM001"],
@@ -3799,9 +3736,9 @@
         "limit": 1,
         "name": {
           "kr": "아르기로톡소스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Argyrotoxus",
+          "ja": "アリュギュロトクソス",
+          "cn": "阿耳古洛托克索斯"
         },
         "stack": 1,
         "material": ["GWK002", "PM002"],
@@ -3814,7 +3751,8 @@
   {
     "category": "crossbow",
     "class": "L",
-    "items": [{
+    "items": [
+      {
         "id": "WWL001",
         "sort": "crossbow",
         "img": "https://lh3.google.com/u/0/d/1SEUXSvOXZrPG9Nfs528zWt_qGY8QFH2y",
@@ -3824,9 +3762,9 @@
         "limit": 1,
         "name": {
           "kr": "석궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Short Crossbow",
+          "ja": "石弓",
+          "cn": "短弩"
         },
         "stack": 1
       },
@@ -3840,9 +3778,9 @@
         "limit": 1,
         "name": {
           "kr": "쇠뇌",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Long Crossbow",
+          "ja": "弩",
+          "cn": "長弩"
         },
         "stack": 1,
         "material": ["WWL001", "WM021"],
@@ -3858,9 +3796,9 @@
         "limit": 1,
         "name": {
           "kr": "크로스보우",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Crossbow",
+          "ja": "クロスボウ",
+          "cn": "十字弩"
         },
         "stack": 1,
         "material": ["WWL001", "WWF001"],
@@ -3876,9 +3814,9 @@
         "limit": 1,
         "name": {
           "kr": "노",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Power Crossbow",
+          "ja": "連弩",
+          "cn": "連弩"
         },
         "stack": 1,
         "material": ["GWL001", "WM004"],
@@ -3894,9 +3832,9 @@
         "limit": 1,
         "name": {
           "kr": "저격궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Laser Crossbow",
+          "ja": "狙撃弓",
+          "cn": "激光弩"
         },
         "stack": 1,
         "material": ["GWL002", "WM007"],
@@ -3913,9 +3851,9 @@
         "limit": 1,
         "name": {
           "kr": "헤비 크로스보우",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Heavy Crossbow",
+          "ja": "ヘビークロスボウ",
+          "cn": "重弩"
         },
         "stack": 1,
         "material": ["GWL001", "GM001"],
@@ -3929,12 +3867,7 @@
         "tobe": ["PWL001"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "철궁",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "철궁", "en": "Steel Bow", "ja": "鉄弓", "cn": "鋼弩" },
         "stack": 1,
         "material": ["GWL002", "GM010"],
         "atk0": 52
@@ -3949,9 +3882,9 @@
         "limit": 1,
         "name": {
           "kr": "대황",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Legend of The General",
+          "ja": "李広の弩",
+          "cn": "大將靈魂"
         },
         "stack": 1,
         "material": ["BWL004", "GM002"],
@@ -3969,9 +3902,9 @@
         "limit": 1,
         "name": {
           "kr": "발리스타",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ballista",
+          "ja": "バリスタ",
+          "cn": "諸葛連弩"
         },
         "stack": 1,
         "material": ["BWL003", "WWQ001"],
@@ -3988,9 +3921,9 @@
         "limit": 1,
         "name": {
           "kr": "저격 크로스보우",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sniper Crossbow",
+          "ja": "狙撃クロスボウ",
+          "cn": "狙擊弩"
         },
         "stack": 1,
         "material": ["BWL002", "GA005"],
@@ -4016,9 +3949,9 @@
         "limit": 1,
         "name": {
           "kr": "영광금귀신기노",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Golden Ghost",
+          "ja": "靈光金亀神機弩",
+          "cn": "靈光金龜神機弩"
         },
         "stack": 1,
         "material": ["BWL001", "BT001"],
@@ -4036,9 +3969,9 @@
         "limit": 1,
         "name": {
           "kr": "샤릉가",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sharanga",
+          "ja": "シャランガ",
+          "cn": "沙蘭加"
         },
         "stack": 1,
         "material": ["GWL002", "PM002"],
@@ -4063,7 +3996,8 @@
   {
     "category": "pistol",
     "class": "M",
-    "items": [{
+    "items": [
+      {
         "id": "WWM001",
         "sort": "pistol",
         "img": "https://lh3.google.com/u/0/d/107vs8WvSntW3RmcTXi92Y-RAzVaYNN6F",
@@ -4073,9 +4007,9 @@
         "limit": 1,
         "name": {
           "kr": "발터 PPK",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Walther PPK",
+          "ja": "ワルサーPPK",
+          "cn": "瓦爾特PPK"
         },
         "stack": 1
       },
@@ -4089,9 +4023,9 @@
         "limit": 1,
         "name": {
           "kr": "매그넘-파이선",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Magnum-Python",
+          "ja": "マグナム‐パイソン",
+          "cn": "馬格努恩·蟒蛇"
         },
         "stack": 1,
         "material": ["WWM001", "WM011"],
@@ -4109,9 +4043,9 @@
         "limit": 1,
         "name": {
           "kr": "베레타 M92F",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Beretta M92F",
+          "ja": "ベレッタM92F",
+          "cn": "貝瑞塔M92F"
         },
         "stack": 1,
         "material": ["WWM001", "WM019"],
@@ -4126,12 +4060,7 @@
         "tobe": ["PWM002", "PWM005"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "FN57",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "FN57", "en": "FN57", "ja": "FN57", "cn": "FN57" },
         "stack": 1,
         "material": ["GWM002", "WM007"],
         "atk0": 29,
@@ -4148,9 +4077,9 @@
         "limit": 1,
         "name": {
           "kr": "더블 리볼버 SP",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Double Revolver SP",
+          "ja": "ダブルリボルバーSP",
+          "cn": "雙動式左輪手槍SP"
         },
         "stack": 1,
         "material": ["GWM001", "WWM001"],
@@ -4168,9 +4097,9 @@
         "limit": 1,
         "name": {
           "kr": "매그넘-아나콘다",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Magnum-Anaconda",
+          "ja": "マグナム‐アナコンダ",
+          "cn": "馬格努恩·巨蟒"
         },
         "stack": 1,
         "material": ["GWM001", "GM009"],
@@ -4189,9 +4118,9 @@
         "limit": 1,
         "name": {
           "kr": "데린저",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Derringer",
+          "ja": "デリンジャー",
+          "cn": "德林加手槍"
         },
         "stack": 1,
         "material": ["WWM001", "GT003"],
@@ -4209,9 +4138,9 @@
         "limit": 1,
         "name": {
           "kr": "마탄의 사수",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Devil's Marksman",
+          "ja": "魔弾の射手",
+          "cn": "魔彈射手"
         },
         "stack": 1,
         "material": ["BWM002", "BM008"],
@@ -4244,9 +4173,9 @@
         "limit": 1,
         "name": {
           "kr": "엘레강스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Elegance",
+          "ja": "エレガンス",
+          "cn": "優雅者之槍"
         },
         "stack": 1,
         "material": ["BWM001", "GA008"],
@@ -4266,9 +4195,9 @@
         "limit": 1,
         "name": {
           "kr": "일렉트론 블라스터",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Electron Blaster",
+          "ja": "エレクトロンブラスター",
+          "cn": "電子光束槍"
         },
         "stack": 1,
         "material": ["GWM002", "BM005"],
@@ -4288,9 +4217,9 @@
         "limit": 1,
         "name": {
           "kr": "매그넘-보아",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Magnum-Boa",
+          "ja": "マグナム・ボア",
+          "cn": "馬格農·博亞"
         },
         "stack": 1,
         "material": ["BWM003", "GM001"],
@@ -4310,9 +4239,9 @@
         "limit": 1,
         "name": {
           "kr": "글록48",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Glock 48",
+          "ja": "グロック48",
+          "cn": "格洛克 48"
         },
         "stack": 1,
         "material": ["BWM001", "BT005"],
@@ -4341,9 +4270,9 @@
         "limit": 1,
         "name": {
           "kr": "스탬피드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Stampede",
+          "ja": "スタンピード",
+          "cn": "史坦普特"
         },
         "stack": 1,
         "material": ["BWM004", "GM011"],
@@ -4373,9 +4302,9 @@
         "limit": 1,
         "name": {
           "kr": "플라즈마 건",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Molten Malachite",
+          "ja": "プラズマガン",
+          "cn": "等離子槍"
         },
         "stack": 1,
         "material": ["BWM004", "GM008"],
@@ -4422,9 +4351,9 @@
         "limit": 1,
         "name": {
           "kr": "악켈테",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Kelte",
+          "ja": "アクケルテ",
+          "cn": "凱爾特"
         },
         "stack": 1,
         "material": ["GWM002", "PM002"],
@@ -4440,7 +4369,8 @@
   {
     "category": "rifle",
     "class": "N",
-    "items": [{
+    "items": [
+      {
         "id": "WWN001",
         "sort": "rifle",
         "img": "https://lh3.google.com/u/0/d/1Y1Xxj3ngmnnGMq0kGPLzBcuz8Ueho1N0",
@@ -4450,9 +4380,9 @@
         "limit": 1,
         "name": {
           "kr": "페도로프 자동소총",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fedorova",
+          "ja": "フェドロバ自動小銃",
+          "cn": "費德洛夫自動步槍"
         },
         "stack": 1
       },
@@ -4466,9 +4396,9 @@
         "limit": 1,
         "name": {
           "kr": "STG-44",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "STG-44",
+          "ja": "STG-44",
+          "cn": "STG-44"
         },
         "stack": 1,
         "material": ["WWN001", "WM018"],
@@ -4483,12 +4413,7 @@
         "tobe": ["PWN002", "PWN003"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "AK-47",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "AK-47", "en": "AK-47", "ja": "AK-47", "cn": "AK-47" },
         "stack": 1,
         "material": ["GWN001", "WM021"],
         "atk0": 29,
@@ -4502,12 +4427,7 @@
         "tobe": ["PWN004"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "M16A1",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "M16A1", "en": "M16A1", "ja": "M16A1", "cn": "M16A1" },
         "stack": 1,
         "material": ["GWN001", "WM019"],
         "atk0": 25,
@@ -4523,9 +4443,9 @@
         "limit": 1,
         "name": {
           "kr": "개틀링건",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Gatling Gun",
+          "ja": "ガトリングガン",
+          "cn": "格特林機槍"
         },
         "stack": 1,
         "material": ["GWN001", "BM003"],
@@ -4544,9 +4464,9 @@
         "limit": 1,
         "name": {
           "kr": "95식 자동소총",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Type 95",
+          "ja": "95式自動小銃",
+          "cn": "95式自動步槍"
         },
         "stack": 1,
         "material": ["BWN001", "GM001"],
@@ -4570,12 +4490,7 @@
         "tobe": false,
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "AK-12",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "AK-12", "en": "AK-12", "ja": "AK-12", "cn": "AK-12" },
         "stack": 1,
         "material": ["BWN001", "BM004"],
         "load0": 30,
@@ -4591,12 +4506,7 @@
         "tobe": false,
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "XCR",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "XCR", "en": "XCR", "ja": "XCR", "cn": "XCR" },
         "stack": 1,
         "material": ["BWN002", "BA004"],
         "load0": 30,
@@ -4614,9 +4524,9 @@
         "limit": 1,
         "name": {
           "kr": "아그니",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Agni",
+          "ja": "アグニ",
+          "cn": "阿耆尼"
         },
         "stack": 1,
         "material": ["PWN001", "GM003"],
@@ -4635,9 +4545,9 @@
         "limit": 1,
         "name": {
           "kr": "저지먼트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Judgement",
+          "ja": "ジャッジメント",
+          "cn": "極地加農炮"
         },
         "stack": 1,
         "material": ["GWN001", "PM002"],
@@ -4651,7 +4561,8 @@
   {
     "category": "sniper",
     "class": "O",
-    "items": [{
+    "items": [
+      {
         "id": "WWO001",
         "sort": "sniper",
         "img": "https://lh3.google.com/u/0/d/1IiPweycJ2wNLDUmPGE0J5VMbyuUsL-x1",
@@ -4661,9 +4572,9 @@
         "limit": 1,
         "name": {
           "kr": "화승총",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Long Rifle",
+          "ja": "火縄銃",
+          "cn": "長步槍"
         },
         "stack": 1
       },
@@ -4677,9 +4588,9 @@
         "limit": 1,
         "name": {
           "kr": "스프링필드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Springfield",
+          "ja": "スプリングフィールド",
+          "cn": "斯普林菲爾德"
         },
         "stack": 1,
         "material": ["WWO001", "WM007"],
@@ -4696,9 +4607,9 @@
         "limit": 1,
         "name": {
           "kr": "하푼건",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Harpoon Gun",
+          "ja": "ハープーンガン",
+          "cn": "魚叉炮"
         },
         "stack": 1,
         "material": ["GWO001", "WWQ001"],
@@ -4715,9 +4626,9 @@
         "limit": 1,
         "name": {
           "kr": "금교전",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Golden Rifle",
+          "ja": "金蛟剪",
+          "cn": "黃金步槍"
         },
         "stack": 1,
         "material": ["GWO001", "GM011"],
@@ -4735,9 +4646,9 @@
         "limit": 1,
         "name": {
           "kr": "레일건",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Railgun",
+          "ja": "レールガン",
+          "cn": "電磁炮"
         },
         "stack": 1,
         "material": ["GWO001", "GM008"],
@@ -4755,9 +4666,9 @@
         "limit": 1,
         "name": {
           "kr": "Tac-50",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tac-50",
+          "ja": "Tac-50",
+          "cn": "Tac-50"
         },
         "stack": 1,
         "material": ["BWO001", "GM009"],
@@ -4777,9 +4688,9 @@
         "limit": 1,
         "name": {
           "kr": "인터벤션",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Intervention",
+          "ja": "インターベンション",
+          "cn": "夜行"
         },
         "stack": 1,
         "material": ["BWO001", "GT009"],
@@ -4806,9 +4717,9 @@
         "limit": 1,
         "name": {
           "kr": "NTW-20",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "NTW-20",
+          "ja": "NTW-20",
+          "cn": "NTW-20"
         },
         "stack": 1,
         "material": ["BWO002", "GM010"],
@@ -4827,9 +4738,9 @@
         "limit": 1,
         "name": {
           "kr": "폴라리스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Polaris",
+          "ja": "ポラリス",
+          "cn": "北極星"
         },
         "stack": 1,
         "material": ["BWO003", "GM006"],
@@ -4849,9 +4760,9 @@
         "limit": 1,
         "name": {
           "kr": "사사성광",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Deadly Ray",
+          "ja": "斜射星光",
+          "cn": "四射星光"
         },
         "stack": 1,
         "material": ["BWO002", "BM001"],
@@ -4870,9 +4781,9 @@
         "limit": 1,
         "name": {
           "kr": "현자총통",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Blackfire Cannon",
+          "ja": "賢者銃筒",
+          "cn": "霹靂火炮"
         },
         "stack": 1,
         "material": ["GWO001", "PM004"],
@@ -4898,7 +4809,8 @@
   {
     "category": "hammer",
     "class": "P",
-    "items": [{
+    "items": [
+      {
         "id": "WWP001",
         "sort": "hammer",
         "img": "https://lh3.google.com/u/0/d/10kdpexMw-FbGqyHd5i8Sfdi7P9NwJ7WW",
@@ -4906,12 +4818,7 @@
         "tobe": ["GWP001", "BWP003", "GM004", "GM010", "GM014"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "망치",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "망치", "en": "Hammer", "ja": "金槌", "cn": "錘子" },
         "stack": 1
       },
       {
@@ -4924,9 +4831,9 @@
         "limit": 1,
         "name": {
           "kr": "워해머",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Warhammer",
+          "ja": "ウォーハンマー",
+          "cn": "戰錘"
         },
         "stack": 1,
         "material": ["WWP001", "WWG001"],
@@ -4942,9 +4849,9 @@
         "limit": 1,
         "name": {
           "kr": "모닝 스타",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Morning Star",
+          "ja": "モーニングスター",
+          "cn": "釘頭錘"
         },
         "stack": 1,
         "material": ["GWP001", "WWI001"],
@@ -4960,9 +4867,9 @@
         "limit": 1,
         "name": {
           "kr": "사슴 망치",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Black Stag Hammer",
+          "ja": "鹿の槌",
+          "cn": "黑鹿錘"
         },
         "stack": 1,
         "material": ["GWP001", "WM019"],
@@ -4978,9 +4885,9 @@
         "limit": 1,
         "name": {
           "kr": "운명의 망치",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Forged Destiny",
+          "ja": "運命のハンマー",
+          "cn": "命運之錘"
         },
         "stack": 1,
         "material": ["WWP001", "GA002"],
@@ -4998,9 +4905,9 @@
         "limit": 1,
         "name": {
           "kr": "낭아봉",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fang Mace",
+          "ja": "狼牙棒",
+          "cn": "狼牙棒"
         },
         "stack": 1,
         "material": ["BWP001", "GM012"],
@@ -5018,9 +4925,9 @@
         "limit": 1,
         "name": {
           "kr": "다그다의 망치",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hammer of Dagda",
+          "ja": "ダグダのハンマー",
+          "cn": "達格達的大釜"
         },
         "stack": 1,
         "material": ["BWP001", "GA001"],
@@ -5038,9 +4945,9 @@
         "limit": 1,
         "name": {
           "kr": "토르의 망치",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hammer of Thor",
+          "ja": "トールハンマー",
+          "cn": "雷神之錘"
         },
         "stack": 1,
         "material": ["BWP002", "BM005"],
@@ -5058,9 +4965,9 @@
         "limit": 1,
         "name": {
           "kr": "개밥바라기",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Evening Star",
+          "ja": "イーブニングスター",
+          "cn": "夜神星錘"
         },
         "stack": 1,
         "material": ["BWP001", "BM001"],
@@ -5077,9 +4984,9 @@
         "limit": 1,
         "name": {
           "kr": "천근추",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Weight of the World",
+          "ja": "千斤錘",
+          "cn": "千斤錘"
         },
         "stack": 1,
         "material": ["BWP003", "GA006"],
@@ -5106,9 +5013,9 @@
         "limit": 1,
         "name": {
           "kr": "피스브링어",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Peacebringer",
+          "ja": "ピースブリンガー",
+          "cn": "和平暗使"
         },
         "stack": 1,
         "material": ["BWP002", "PM001"],
@@ -5121,7 +5028,8 @@
   {
     "category": "spear",
     "class": "Q",
-    "items": [{
+    "items": [
+      {
         "id": "WWQ001",
         "sort": "spear",
         "img": "https://lh3.google.com/u/0/d/1P0KDBo_HXA9fMzDc9d_s-WC0LONE8ohD",
@@ -5131,9 +5039,9 @@
         "limit": 1,
         "name": {
           "kr": "단창",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Short Spear",
+          "ja": "短槍",
+          "cn": "短矛"
         },
         "stack": 1
       },
@@ -5147,9 +5055,9 @@
         "limit": 1,
         "name": {
           "kr": "죽창",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bamboo Spear",
+          "ja": "竹槍",
+          "cn": "竹矛"
         },
         "stack": 1,
         "material": ["WWQ001", "WWF001"],
@@ -5165,9 +5073,9 @@
         "limit": 1,
         "name": {
           "kr": "바이던트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bident",
+          "ja": "バイデント",
+          "cn": "雙叉戟"
         },
         "stack": 1,
         "material": ["GWQ001", "WWA003"],
@@ -5181,12 +5089,7 @@
         "tobe": ["BWQ003", "PWQ004", "YWQ002"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "파이크",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "파이크", "en": "Pike", "ja": "パイク", "cn": "矛" },
         "stack": 1,
         "material": ["WWQ001", "GM001"],
         "atk0": 45
@@ -5199,12 +5102,7 @@
         "tobe": ["PWQ005", "PWQ006"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "도끼창",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "도끼창", "en": "Halberd", "ja": "戦斧", "cn": "斧槍" },
         "stack": 1,
         "material": ["WWC002", "BWQ002"],
         "atk0": 60
@@ -5219,9 +5117,9 @@
         "limit": 1,
         "name": {
           "kr": "강창",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sharpened Spear",
+          "ja": "鋼槍",
+          "cn": "鋼槍"
         },
         "stack": 1,
         "material": ["GWQ001", "WA001"],
@@ -5238,9 +5136,9 @@
         "limit": 1,
         "name": {
           "kr": "애각창",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Gentian Silver Gun",
+          "ja": "涯角槍",
+          "cn": "涯角槍"
         },
         "stack": 1,
         "material": ["GWQ001", "BM007"],
@@ -5258,9 +5156,9 @@
         "limit": 1,
         "name": {
           "kr": "장팔사모",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Eighteen Foot Spear",
+          "ja": "丈八蛇矛",
+          "cn": "丈八蛇矛"
         },
         "stack": 1,
         "material": ["BWQ004", "BM005"],
@@ -5278,9 +5176,9 @@
         "limit": 1,
         "name": {
           "kr": "코스믹 바이던트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cosmic Bident",
+          "ja": "コスミックバイデント",
+          "cn": "宇宙雙叉戟"
         },
         "stack": 1,
         "material": ["BWQ001", "BM001"],
@@ -5297,9 +5195,9 @@
         "limit": 1,
         "name": {
           "kr": "트리아이나",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Lance of Poseidon",
+          "ja": "トリアイナ",
+          "cn": "波賽頓之戟"
         },
         "stack": 1,
         "material": ["BWQ001", "BWQ002"],
@@ -5317,9 +5215,9 @@
         "limit": 1,
         "name": {
           "kr": "방천화극",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fangtian Huaji",
+          "ja": "方天畫戟",
+          "cn": "方天畫戟"
         },
         "stack": 1,
         "material": ["BWQ003", "GA009"],
@@ -5347,9 +5245,9 @@
         "limit": 1,
         "name": {
           "kr": "청룡언월도",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Dragon Guandao",
+          "ja": "青龍偃月刀",
+          "cn": "青龍偃月刀"
         },
         "stack": 1,
         "material": ["BWQ003", "GM010"],
@@ -5368,9 +5266,9 @@
         "limit": 1,
         "name": {
           "kr": "화첨창",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Blazing Lance",
+          "ja": "火尖槍",
+          "cn": "烈日之矛"
         },
         "stack": 1,
         "material": ["GWQ001", "PM004"],
@@ -5387,9 +5285,9 @@
         "limit": 1,
         "name": {
           "kr": "롱기누스의 창",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Spear of Longinus",
+          "ja": "ロンギヌスの槍",
+          "cn": "朗基努斯之槍"
         },
         "stack": 1,
         "material": ["BWQ002", "PM001"],
@@ -5418,7 +5316,8 @@
   {
     "category": "nunchaku",
     "class": "R",
-    "items": [{
+    "items": [
+      {
         "id": "WWR001",
         "sort": "nunchaku",
         "img": "https://lh3.google.com/u/0/d/1ZQYBu8_2ukSPAhwExlZ4M4b4mTKdyrbK",
@@ -5428,9 +5327,9 @@
         "limit": 1,
         "name": {
           "kr": "쇠사슬",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Steel Chain",
+          "ja": "鎖",
+          "cn": "鐵鍊"
         },
         "stack": 1
       },
@@ -5444,9 +5343,9 @@
         "limit": 1,
         "name": {
           "kr": "눈차크",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Nunchaku",
+          "ja": "ヌンチャク",
+          "cn": "雙棍"
         },
         "stack": 1,
         "material": ["WWR001", "WM005"],
@@ -5462,9 +5361,9 @@
         "limit": 1,
         "name": {
           "kr": "샤퍼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sharper",
+          "ja": "シャーパー",
+          "cn": "賭棍"
         },
         "stack": 1,
         "material": ["GWR001", "WM020"],
@@ -5489,9 +5388,9 @@
         "limit": 1,
         "name": {
           "kr": "블리더",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bleeder",
+          "ja": "ブリーダー",
+          "cn": "飼養員"
         },
         "stack": 1,
         "material": ["GWR001", "WWJ001"],
@@ -5507,9 +5406,9 @@
         "limit": 1,
         "name": {
           "kr": "대소반룡곤",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Smiting Dragon",
+          "ja": "大小盤龍棍",
+          "cn": "大小盤龍棍"
         },
         "stack": 1,
         "material": ["BWR001", "GM007"],
@@ -5535,9 +5434,9 @@
         "limit": 1,
         "name": {
           "kr": "초진동눈차크",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Vibro Nunchaku",
+          "ja": "超振動ヌンチャク",
+          "cn": "超級震動雙節棍"
         },
         "stack": 1,
         "material": ["BWR002", "BM003"],
@@ -5554,9 +5453,9 @@
         "limit": 1,
         "name": {
           "kr": "케르베로스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cerberus",
+          "ja": "ケロベロス",
+          "cn": "刻耳柏洛斯"
         },
         "stack": 1,
         "material": ["BWR001", "GWR001"],
@@ -5591,9 +5490,9 @@
         "limit": 1,
         "name": {
           "kr": "히드라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hydra",
+          "ja": "ヒドラ",
+          "cn": "九頭蛇"
         },
         "stack": 1,
         "material": ["BWR002", "PM001"],
@@ -5606,7 +5505,8 @@
   {
     "category": "rapier",
     "class": "S",
-    "items": [{
+    "items": [
+      {
         "id": "WWS001",
         "sort": "rapier",
         "img": "https://lh3.google.com/u/0/d/1bLU4Ruwotxkx1N9iRRY-gt6262fYdyhD",
@@ -5614,12 +5514,7 @@
         "tobe": ["GWJ001", "BWJ005", "GWS001", "BWS002", "GB002"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "바늘",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "바늘", "en": "Needle", "ja": "針", "cn": "針" },
         "stack": 1
       },
       {
@@ -5632,9 +5527,9 @@
         "limit": 1,
         "name": {
           "kr": "레이피어",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fencing Rapier",
+          "ja": "レイピア",
+          "cn": "刺劍"
         },
         "stack": 1,
         "material": ["WWS001", "WM016"],
@@ -5650,9 +5545,9 @@
         "limit": 1,
         "name": {
           "kr": "매화검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Apricot Sword",
+          "ja": "梅花の剣",
+          "cn": "梅花劍"
         },
         "stack": 1,
         "material": ["GWS001", "GA002"],
@@ -5670,9 +5565,9 @@
         "limit": 1,
         "name": {
           "kr": "에스톡",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Estoc",
+          "ja": "エストック",
+          "cn": "穿甲劍"
         },
         "stack": 1,
         "material": ["GWS001", "WWS001"],
@@ -5688,9 +5583,9 @@
         "limit": 1,
         "name": {
           "kr": "활빈검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sword of Justice",
+          "ja": "正義の剣",
+          "cn": "正義之劍"
         },
         "stack": 1,
         "material": ["GWS001", "BC009"],
@@ -5711,9 +5606,9 @@
         "limit": 1,
         "name": {
           "kr": "듀랜달 Mk2",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Durendal Mk2",
+          "ja": "デュランダルMk2",
+          "cn": "杜倫德爾MK2"
         },
         "stack": 1,
         "material": ["BWS001", "WM007"],
@@ -5734,9 +5629,9 @@
         "limit": 1,
         "name": {
           "kr": "볼틱레토",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Volticletto",
+          "ja": "ボルティックレット",
+          "cn": "音速起子"
         },
         "stack": 1,
         "material": ["BWS001", "GM008"],
@@ -5755,9 +5650,9 @@
         "limit": 1,
         "name": {
           "kr": "유성검",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Meteor Claymore",
+          "ja": "流星剣",
+          "cn": "隕星重劍"
         },
         "stack": 1,
         "material": ["BWS001", "BM008"],
@@ -5784,9 +5679,9 @@
         "limit": 1,
         "name": {
           "kr": "주와이외즈",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Joyeuse",
+          "ja": "ジョワユーズ",
+          "cn": "咎瓦尤斯"
         },
         "stack": 1,
         "material": ["GWS001", "BM007"],
@@ -5806,9 +5701,9 @@
         "limit": 1,
         "name": {
           "kr": "레드 펜서",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Red Panther",
+          "ja": "レッドパンサー",
+          "cn": "赤豹"
         },
         "stack": 1,
         "material": ["BWS002", "BB004"],
@@ -5827,9 +5722,9 @@
         "limit": 1,
         "name": {
           "kr": "에스프리",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Esprit",
+          "ja": "エスプリ",
+          "cn": "阿斯卡普里"
         },
         "stack": 1,
         "material": ["BWS002", "GA012"],
@@ -5856,9 +5751,9 @@
         "limit": 1,
         "name": {
           "kr": "미스틸테인",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mistilteinn",
+          "ja": "ミスティルテイン",
+          "cn": "米斯特汀"
         },
         "stack": 1,
         "material": ["PWS001", "WM024"],
@@ -5875,7 +5770,8 @@
   {
     "category": "guitar",
     "class": "T",
-    "items": [{
+    "items": [
+      {
         "id": "WWT001",
         "sort": "guitar",
         "img": "https://lh3.google.com/u/0/d/1v-BtYL8BFwcqfWjP_msyWoAA8vtuW3Gn",
@@ -5885,9 +5781,9 @@
         "limit": 1,
         "name": {
           "kr": "보급형 기타",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Starter Guitar",
+          "ja": "普及型ギター",
+          "cn": "紅心"
         },
         "stack": 1,
         "material": ["WWF001", "WM021"]
@@ -5902,9 +5798,9 @@
         "limit": 1,
         "name": {
           "kr": "골든 브릿지",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Golden Bridge",
+          "ja": "ゴールデンブリッジ",
+          "cn": "黃金琴橋"
         },
         "stack": 1,
         "material": ["WWT001", "GM011"],
@@ -5921,9 +5817,9 @@
         "limit": 1,
         "name": {
           "kr": "싱글 픽업",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Single Coil Pickup",
+          "ja": "シングルピックアップ",
+          "cn": "單線圈拾音器電吉他"
         },
         "stack": 1,
         "material": ["WWT001", "GM005"],
@@ -5941,9 +5837,9 @@
         "limit": 1,
         "name": {
           "kr": "루비 스페셜",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ruby Special",
+          "ja": "ルビースペシャル",
+          "cn": "紅寶石特別版"
         },
         "stack": 1,
         "material": ["GWT002", "GM004"],
@@ -5962,9 +5858,9 @@
         "limit": 1,
         "name": {
           "kr": "험버커 픽업",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Humbucker Pickup",
+          "ja": "ハンバッカーピックアップ",
+          "cn": "雙線圈拾音器電吉他"
         },
         "stack": 1,
         "material": ["GWT001", "GA005"],
@@ -5982,9 +5878,9 @@
         "limit": 1,
         "name": {
           "kr": "King-V",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "King-V",
+          "ja": "King-V",
+          "cn": "King-V"
         },
         "stack": 1,
         "material": ["GWT001", "WWA001"],
@@ -6001,9 +5897,9 @@
         "limit": 1,
         "name": {
           "kr": "노캐스터",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Nocaster",
+          "ja": "ノーキャスター",
+          "cn": "諾卡斯特"
         },
         "stack": 1,
         "material": ["GWT002", "GM009"],
@@ -6022,9 +5918,9 @@
         "limit": 1,
         "name": {
           "kr": "슈퍼스트렛",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Superstrat",
+          "ja": "スーパーストラット",
+          "cn": "金屬復古吉他"
         },
         "stack": 1,
         "material": ["GWT002", "WWF001"],
@@ -6042,9 +5938,9 @@
         "limit": 1,
         "name": {
           "kr": "야생마",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Wild Horse",
+          "ja": "ワイルドホース",
+          "cn": "野馬"
         },
         "stack": 1,
         "material": ["GWT002", "WM011"],
@@ -6062,9 +5958,9 @@
         "limit": 1,
         "name": {
           "kr": "보헤미안",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bohemian",
+          "ja": "ボヘミアン",
+          "cn": "波希米亞"
         },
         "stack": 1,
         "material": ["BWT001", "WWJ002"],
@@ -6084,9 +5980,9 @@
         "limit": 1,
         "name": {
           "kr": "천국의 계단",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Stairway to Heaven",
+          "ja": "天国への階段",
+          "cn": "天國的階梯"
         },
         "stack": 1,
         "material": ["BWT002", "WA007"],
@@ -6106,9 +6002,9 @@
         "limit": 1,
         "name": {
           "kr": "퍼플 헤이즈",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Purple Haze",
+          "ja": "パープル・ヘイズ",
+          "cn": "紫色團霧"
         },
         "stack": 1,
         "material": ["BWT003", "GM007"],
@@ -6126,9 +6022,9 @@
         "limit": 1,
         "name": {
           "kr": "새티스팩션",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Satisfaction",
+          "ja": "サティスファクション",
+          "cn": "樂事"
         },
         "stack": 1,
         "material": ["BWT004", "WM008"],
@@ -6147,9 +6043,9 @@
         "limit": 1,
         "name": {
           "kr": "원더풀 투나잇",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Wonderful Tonight",
+          "ja": "ワンダフルトゥナイト",
+          "cn": "絕色之夜"
         },
         "stack": 1,
         "material": ["BWT005", "BM008"],
@@ -6194,9 +6090,9 @@
         "limit": 1,
         "name": {
           "kr": "더 월",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Wall",
+          "ja": "ザ・ウォール",
+          "cn": "紅磚"
         },
         "stack": 1,
         "material": ["BWT005", "GM006"],
@@ -6214,9 +6110,9 @@
         "limit": 1,
         "name": {
           "kr": "틴 스피릿",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Teen Spirit",
+          "ja": "ティーンスピリット",
+          "cn": "少年魂"
         },
         "stack": 1,
         "material": ["BWT006", "GA006"],
@@ -6239,7 +6135,8 @@
   {
     "category": "camera",
     "class": "U",
-    "items": [{
+    "items": [
+      {
         "id": "WWU001",
         "sort": "camera",
         "img": "https://lh3.google.com/u/0/d/1JLju5XQm8NDqJGvN-6f2btE716mz7lEO",
@@ -6247,12 +6144,7 @@
         "tobe": ["GWU001"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "렌즈",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "렌즈", "en": "Lens", "ja": "レンズ", "cn": "鏡頭" },
         "stack": 1,
         "material": ["WM001", "WT001"]
       },
@@ -6266,9 +6158,9 @@
         "limit": 1,
         "name": {
           "kr": "카메라 건",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Pistol Camera",
+          "ja": "カメラガン",
+          "cn": "攝影槍"
         },
         "stack": 1,
         "material": ["WWU001", "WWM001"],
@@ -6285,9 +6177,9 @@
         "limit": 1,
         "name": {
           "kr": "컴팩트 카메라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Compact Camera",
+          "ja": "コンパクトカメラ",
+          "cn": "數位相機"
         },
         "stack": 1,
         "material": ["GWU001", "GT011"],
@@ -6304,9 +6196,9 @@
         "limit": 1,
         "name": {
           "kr": "레인지 파인더",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Rangefinder",
+          "ja": "レンジファインダー",
+          "cn": "測距望遠鏡"
         },
         "stack": 1,
         "material": ["GA005", "GB004"],
@@ -6324,9 +6216,9 @@
         "limit": 1,
         "name": {
           "kr": "카메라 라이플",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Carbine Camera",
+          "ja": "カメラライフル",
+          "cn": "狙擊攝影機"
         },
         "stack": 1,
         "material": ["GWU001", "WWN001"],
@@ -6352,9 +6244,9 @@
         "limit": 1,
         "name": {
           "kr": "미러리스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mirrorless",
+          "ja": "ミラーレス",
+          "cn": "傳統相機"
         },
         "stack": 1,
         "material": ["BWU001", "GM011"],
@@ -6372,9 +6264,9 @@
         "limit": 1,
         "name": {
           "kr": "컴파운드 사이트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Laser Designator",
+          "ja": "コンパウンドサイト",
+          "cn": "全息瞄準鏡"
         },
         "stack": 1,
         "material": ["BWU002", "WA002"],
@@ -6401,9 +6293,9 @@
         "limit": 1,
         "name": {
           "kr": "카메라 캐논",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cannon Camera",
+          "ja": "カメラキャノン",
+          "cn": "高倍望遠大砲"
         },
         "stack": 1,
         "material": ["BWU003", "BA004"],
@@ -6430,9 +6322,9 @@
         "limit": 1,
         "name": {
           "kr": "V.I.C.G",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "V.I.C.G",
+          "ja": "V.I.C.G",
+          "cn": "V.I.C.G"
         },
         "stack": 1,
         "material": ["GWU001", "BM006"],
@@ -6450,9 +6342,9 @@
         "limit": 1,
         "name": {
           "kr": "울트라비전",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ultraviolet",
+          "ja": "ウルトラビジョン",
+          "cn": "超感相機"
         },
         "stack": 1,
         "material": ["GWU001", "PM002"],
@@ -6478,7 +6370,8 @@
   {
     "category": "arcana",
     "class": "V",
-    "items": [{
+    "items": [
+      {
         "id": "WWV001",
         "sort": "arcana",
         "img": "https://lh3.google.com/u/0/d/1o4oaZrzvPAVKAXxoo5bEjcLSrqojv6oU",
@@ -6488,9 +6381,9 @@
         "limit": 1,
         "name": {
           "kr": "유리구슬",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Glass Bead",
+          "ja": "ガラス玉",
+          "cn": "琉璃球"
         },
         "stack": 1,
         "material": ["WM001", "WM006"]
@@ -6505,9 +6398,9 @@
         "limit": 1,
         "name": {
           "kr": "거울구슬",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mirror Core",
+          "ja": "鏡玉",
+          "cn": "鏡面球"
         },
         "stack": 1,
         "material": ["WWV001", "WM010"],
@@ -6523,9 +6416,9 @@
         "limit": 1,
         "name": {
           "kr": "얼음구슬",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Frigid Pearl",
+          "ja": "氷玉",
+          "cn": "冰晶球"
         },
         "stack": 1,
         "material": ["WWV001", "WD003"],
@@ -6542,9 +6435,9 @@
         "limit": 1,
         "name": {
           "kr": "의지의 지팡이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Staff of Reliance",
+          "ja": "意志の棒",
+          "cn": "意志權杖"
         },
         "stack": 1,
         "material": ["GWV001", "WWG001"],
@@ -6560,9 +6453,9 @@
         "limit": 1,
         "name": {
           "kr": "감정의 컵",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sensibility",
+          "ja": "感情のコップ",
+          "cn": "聖杯 - 感情"
         },
         "stack": 1,
         "material": ["GWV001", "WA007"],
@@ -6579,9 +6472,9 @@
         "limit": 1,
         "name": {
           "kr": "이성의 칼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Frigid Pearl Blade",
+          "ja": "理性のソード",
+          "cn": "理性之刃"
         },
         "stack": 1,
         "material": ["GWV002", "WWA003"],
@@ -6599,9 +6492,9 @@
         "limit": 1,
         "name": {
           "kr": "소유의 펜타클",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Possession Pentacle",
+          "ja": "所有のペンタクル",
+          "cn": "五芒星碎片"
         },
         "stack": 1,
         "material": ["GWV002", "WM008"],
@@ -6619,9 +6512,9 @@
         "limit": 1,
         "name": {
           "kr": "더 스타",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Star",
+          "ja": "ザ・スター",
+          "cn": "五芒星"
         },
         "stack": 1,
         "material": ["BWV004", "BB006"],
@@ -6640,9 +6533,9 @@
         "limit": 1,
         "name": {
           "kr": "절제",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Temperance",
+          "ja": "節制",
+          "cn": "聖杯 - 節制"
         },
         "stack": 1,
         "material": ["BWV002", "BD001"],
@@ -6662,9 +6555,9 @@
         "limit": 1,
         "name": {
           "kr": "운명의 수레바퀴",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Hierophant",
+          "ja": "運命の輪",
+          "cn": "命運之輪"
         },
         "stack": 1,
         "material": ["BWV003", "GA002"],
@@ -6695,9 +6588,9 @@
         "limit": 1,
         "name": {
           "kr": "은둔자",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Hermit",
+          "ja": "隠者",
+          "cn": "隱遁者"
         },
         "stack": 1,
         "material": ["BWV001", "GA001"],
@@ -6727,9 +6620,9 @@
         "limit": 1,
         "name": {
           "kr": "더 문",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Moon",
+          "ja": "ザ・ムーン",
+          "cn": "月水晶"
         },
         "stack": 1,
         "material": ["GWV001", "BM001"],
@@ -6760,9 +6653,9 @@
         "limit": 1,
         "name": {
           "kr": "여제",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "The Empress",
+          "ja": "女帝",
+          "cn": "女帝"
         },
         "stack": 1,
         "material": ["GWV002", "PM003"],
@@ -6787,7 +6680,8 @@
   {
     "category": "VFProsthetic",
     "class": "W",
-    "items": [{
+    "items": [
+      {
         "id": "GWW001",
         "sort": "VFProsthetic",
         "img": "https://lh3.google.com/u/0/d/1zBbUzno7McwGadyHDX8oZJJSyJW6QzBU",
@@ -6796,9 +6690,9 @@
         "limit": 1,
         "name": {
           "kr": "바이퍼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Viper",
+          "ja": "ヴァイパー",
+          "cn": "毒蛇"
         },
         "stack": 1,
         "atk0": 5
@@ -6813,9 +6707,9 @@
         "limit": 1,
         "name": {
           "kr": "사이드와인더",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Sidewinder",
+          "ja": "サイドワインダー",
+          "cn": "響尾蛇"
         },
         "stack": 1,
         "material": ["GWW001", "WWW001"],
@@ -6846,9 +6740,9 @@
         "limit": 1,
         "name": {
           "kr": "블랙맘바",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Black Mamba",
+          "ja": "ブラックマンバ",
+          "cn": "黑曼巴蛇"
         },
         "stack": 1,
         "material": ["GWW001", "WWW001"],
@@ -6865,9 +6759,9 @@
         "limit": 1,
         "name": {
           "kr": "데스애더",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Deathadder",
+          "ja": "デスアダー",
+          "cn": "南棘蛇"
         },
         "stack": 1,
         "material": ["GWW001", "WWW001"],
@@ -6897,9 +6791,9 @@
         "limit": 1,
         "name": {
           "kr": "슈퍼사이드와인더",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Alpha Sidewinder",
+          "ja": "スーパーサイドワインダー",
+          "cn": "超級響尾蛇"
         },
         "stack": 1,
         "material": ["BWW001", "WWW002"],
@@ -6931,9 +6825,9 @@
         "limit": 1,
         "name": {
           "kr": "블랙맘바킹",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Black Mamba King",
+          "ja": "ブラックマンバキング",
+          "cn": "帝王黑曼巴蛇"
         },
         "stack": 1,
         "material": ["BWW002", "WWW002"],
@@ -6951,9 +6845,9 @@
         "limit": 1,
         "name": {
           "kr": "데스애더퀸",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Deathadder Queen",
+          "ja": "デスアダークイン",
+          "cn": "女王蛇"
         },
         "stack": 1,
         "material": ["BWW003", "WWW002"],
@@ -6984,9 +6878,9 @@
         "limit": 1,
         "name": {
           "kr": "슈퍼사이드와인더-VBS",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Alpha Sidewinder VBS",
+          "ja": "スーパーサイドワインダー-VBS",
+          "cn": "超級響尾蛇 VBS"
         },
         "stack": 1,
         "material": ["PWW001", "PM001"],
@@ -7027,9 +6921,9 @@
         "limit": 1,
         "name": {
           "kr": "슈퍼사이드와인더-ML",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Alpha Sidewinder ML",
+          "ja": "スーパーサイドワインダー-ML",
+          "cn": "超級響尾蛇 ML"
         },
         "stack": 1,
         "material": ["PWW001", "BM007"],
@@ -7082,9 +6976,9 @@
         "limit": 1,
         "name": {
           "kr": "슈퍼사이드와인더-FC",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Alpha Sidewinder FC",
+          "ja": "スーパーサイドワインダー-FC",
+          "cn": "超級響尾蛇 FC"
         },
         "stack": 1,
         "material": ["PWW001", "PM002"],
@@ -7125,9 +7019,9 @@
         "limit": 1,
         "name": {
           "kr": "블랙맘바킹-VBS",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Black Mamba King VBS",
+          "ja": "ブラックマンバキング-VBS",
+          "cn": "帝王黑曼巴蛇 VBS"
         },
         "stack": 1,
         "material": ["PWW002", "PM001"],
@@ -7154,9 +7048,9 @@
         "limit": 1,
         "name": {
           "kr": "블랙맘바킹-TL",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Black Mamba King TL",
+          "ja": "ブラックマンバキング-TL",
+          "cn": "帝王黑曼巴蛇 TL"
         },
         "stack": 1,
         "material": ["PWW002", "BM009"],
@@ -7185,9 +7079,9 @@
         "limit": 1,
         "name": {
           "kr": "블랙맘바킹-FC",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Black Mamba King FC",
+          "ja": "ブラックマンバキング-FC",
+          "cn": "帝王黑曼巴蛇 FC"
         },
         "stack": 1,
         "material": ["PWW002", "PM002"],
@@ -7214,9 +7108,9 @@
         "limit": 1,
         "name": {
           "kr": "데스애더퀸-VBS",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Deathadder Queen VBS",
+          "ja": "デスアダークイン-VBS",
+          "cn": "女王蛇 VBS"
         },
         "stack": 1,
         "material": ["PWW003", "PM001"],
@@ -7256,9 +7150,9 @@
         "limit": 1,
         "name": {
           "kr": "데스애더퀸-MT",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Deathadder Queen MT",
+          "ja": "デスアダークイン-MT",
+          "cn": "女王蛇 MT"
         },
         "stack": 1,
         "material": ["PWW003", "BM008"],
@@ -7301,9 +7195,9 @@
         "limit": 1,
         "name": {
           "kr": "데스애더퀸-FC",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Deathadder Queen FC",
+          "ja": "デスアダークイン-FC",
+          "cn": "女王蛇 FC"
         },
         "stack": 1,
         "material": ["PWW003", "PM002"],
@@ -7342,10 +7236,10 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "카드모스의 부름 LV.2",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "카드모스의 부름 LV2",
+          "en": "Call of Cadmus Lv2",
+          "ja": "カドモスの呼び声Lv2",
+          "cn": "卡德摩斯的召喚Lv2"
         },
         "stack": 1,
         "only0": "에키온의 패시브 스킬이 2레벨 이상일 경우"
@@ -7359,10 +7253,10 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "카드모스의 부름 LV.3",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "카드모스의 부름 LV3",
+          "en": "Call of Cadmus Lv3",
+          "ja": "カドモスの呼び声Lv3",
+          "cn": "卡德摩斯的召喚Lv3"
         },
         "stack": 1,
         "only0": "에키온의 패시브 스킬이 3레벨 이상일 경우"

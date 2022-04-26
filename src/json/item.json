@@ -1,6 +1,8 @@
-[{
+[
+  {
     "category": "material",
-    "items": [{
+    "items": [
+      {
         "id": "WM001",
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1iLBZzaRrz7-54oUzRG4H_XspDN37f7lc",
@@ -19,9 +21,9 @@
         "limit": 3,
         "name": {
           "kr": "유리병",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Glass Bottle",
+          "ja": "ガラスのビン",
+          "cn": "玻璃瓶"
         },
         "stack": 2
       },
@@ -33,12 +35,7 @@
         "tobe": ["GH005", "BS006", "GA003", "GM006", "GM012", "BM001"],
         "pickup": 2,
         "limit": 3,
-        "name": {
-          "kr": "돌멩이",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "돌멩이", "en": "Stone", "ja": "石ころ", "cn": "石頭" },
         "stack": 2
       },
       {
@@ -51,9 +48,9 @@
         "limit": 3,
         "name": {
           "kr": "거북이 등딱지",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Turtle Shell",
+          "ja": "亀の甲羅",
+          "cn": "龜殼"
         },
         "stack": 1
       },
@@ -65,12 +62,7 @@
         "tobe": ["BWI001", "BWI004", "GWK002", "BWL001", "GC008", "PH004"],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "고무",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "고무", "en": "Rubber", "ja": "ゴム", "cn": "膠帶" },
         "stack": 1
       },
       {
@@ -91,9 +83,9 @@
         "limit": 3,
         "name": {
           "kr": "고철",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Scrap Metal",
+          "ja": "屑鉄",
+          "cn": "廢鐵"
         },
         "stack": 1
       },
@@ -117,9 +109,9 @@
         "limit": 2,
         "name": {
           "kr": "라이터",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Lighter",
+          "ja": "ライター",
+          "cn": "打火機"
         },
         "stack": 1
       },
@@ -143,9 +135,9 @@
         "limit": 3,
         "name": {
           "kr": "레이저 포인터",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Laser Pointer",
+          "ja": "レーザーポインタ",
+          "cn": "雷射筆"
         },
         "stack": 1
       },
@@ -170,9 +162,9 @@
         "limit": 3,
         "name": {
           "kr": "마패",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Stallion Medal",
+          "ja": "馬牌",
+          "cn": "馬牌"
         },
         "stack": 1
       },
@@ -186,9 +178,9 @@
         "limit": 3,
         "name": {
           "kr": "배터리",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Battery",
+          "ja": "バッテリー",
+          "cn": "電池"
         },
         "stack": 1
       },
@@ -202,9 +194,9 @@
         "limit": 3,
         "name": {
           "kr": "알코올",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Alcohol",
+          "ja": "アルコール",
+          "cn": "酒精"
         },
         "stack": 1
       },
@@ -224,12 +216,7 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "오일",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "오일", "en": "Oil", "ja": "オイル", "cn": "油" },
         "stack": 1
       },
       {
@@ -240,12 +227,7 @@
         "tobe": ["GC006", "GC009", "BH007", "GS005", "GA004"],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "옷감",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "옷감", "en": "Cloth", "ja": "生地", "cn": "布" },
         "stack": 1
       },
       {
@@ -256,12 +238,7 @@
         "tobe": ["BWB003", "GM004", "GM011", "PH005"],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "원석",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "원석", "en": "Gemstone", "ja": "原石", "cn": "原石" },
         "stack": 1
       },
       {
@@ -272,12 +249,7 @@
         "tobe": ["GB004", "GS001", "BM004", "GT005"],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "접착제",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "접착제", "en": "Glue", "ja": "接着剤", "cn": "膠水" },
         "stack": 1
       },
       {
@@ -288,12 +260,7 @@
         "tobe": ["GM007", "GM009", "GM013"],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "종이",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "종이", "en": "Paper", "ja": "紙", "cn": "紙" },
         "stack": 1
       },
       {
@@ -306,9 +273,9 @@
         "limit": 3,
         "name": {
           "kr": "철광석",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Iron Ore",
+          "ja": "鉄鉱石",
+          "cn": "鐵礦石"
         },
         "stack": 3
       },
@@ -320,12 +287,7 @@
         "tobe": ["GT006", "GF002", "BD010"],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "캔",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "캔", "en": "Can", "ja": "缶", "cn": "罐子" },
         "stack": 1
       },
       {
@@ -345,12 +307,7 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "화약",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "화약", "en": "Gunpowder", "ja": "火薬", "cn": "火藥" },
         "stack": 1
       },
       {
@@ -372,12 +329,7 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "가죽",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "가죽", "en": "Leather", "ja": "皮", "cn": "皮革" },
         "stack": 1
       },
       {
@@ -398,12 +350,7 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "못",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "못", "en": "Nail", "ja": "釘", "cn": "釘子" },
         "stack": 1
       },
       {
@@ -426,9 +373,9 @@
         "limit": 3,
         "name": {
           "kr": "피아노선",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Piano Wire",
+          "ja": "ピアノ線",
+          "cn": "鋼琴線"
         },
         "stack": 1
       },
@@ -442,9 +389,9 @@
         "limit": 2,
         "name": {
           "kr": "만년필",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fountain Pen",
+          "ja": "万年筆",
+          "cn": "鋼筆"
         },
         "stack": 1
       },
@@ -458,9 +405,9 @@
         "limit": 2,
         "name": {
           "kr": "곡괭이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Pickaxe",
+          "ja": "つるはし",
+          "cn": "十字鎬"
         },
         "stack": 1
       },
@@ -482,12 +429,7 @@
         ],
         "pickup": 1,
         "limit": 2,
-        "name": {
-          "kr": "나뭇가지",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "나뭇가지", "en": "Branch", "ja": "枝", "cn": "樹枝" },
         "stack": 1
       },
       {
@@ -498,12 +440,7 @@
         "tobe": ["BWJ001", "GM006"],
         "pickup": 1,
         "limit": 1,
-        "name": {
-          "kr": "분필",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "분필", "en": "Chalk", "ja": "チョーク", "cn": "粉筆" },
         "stack": 1
       },
       {
@@ -527,12 +464,7 @@
         ],
         "pickup": 2,
         "limit": 3,
-        "name": {
-          "kr": "강철",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "강철", "en": "Steel", "ja": "鋼鉄", "cn": "鋼鐵" },
         "stack": 2,
         "material": ["WM005", "WM016"]
       },
@@ -554,9 +486,9 @@
         "limit": 3,
         "name": {
           "kr": "기름먹인 천",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Oilcloth",
+          "ja": "油を染み込ませた布",
+          "cn": "油布"
         },
         "stack": 2,
         "material": ["WM011", "WB002"]
@@ -571,9 +503,9 @@
         "limit": 3,
         "name": {
           "kr": "뜨거운 오일",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Heated Oil",
+          "ja": "熱いオイル",
+          "cn": "高溫油"
         },
         "stack": 2,
         "material": ["WM011", "WM006"]
@@ -586,12 +518,7 @@
         "tobe": ["BWB005", "PWC002", "PWE003", "BWT001", "PC014", "PB006"],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "루비",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "루비", "en": "Ruby", "ja": "ルビー", "cn": "紅寶石" },
         "stack": 1,
         "material": ["WWP001", "WM013"]
       },
@@ -605,9 +532,9 @@
         "limit": 3,
         "name": {
           "kr": "방전 전지",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Dead Battery",
+          "ja": "放電電池",
+          "cn": "廢電池"
         },
         "stack": 1,
         "material": ["WM009", "WD002"]
@@ -630,9 +557,9 @@
         "limit": 3,
         "name": {
           "kr": "백색 가루",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "White Powder",
+          "ja": "白い粉",
+          "cn": "白色粉末"
         },
         "stack": 1,
         "material": ["WM025", "WM002"]
@@ -653,12 +580,7 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "재",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "재", "en": "Ash", "ja": "灰", "cn": "灰燼" },
         "stack": 1,
         "material": ["WM015", "WM006"]
       },
@@ -681,9 +603,9 @@
         "limit": 3,
         "name": {
           "kr": "전자 부품",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Electronic Parts",
+          "ja": "電子部品",
+          "cn": "電子零件"
         },
         "stack": 1,
         "material": ["WM009", "WM021"]
@@ -709,9 +631,9 @@
         "limit": 3,
         "name": {
           "kr": "정교한 도면",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Blueprint",
+          "ja": "精巧な図面",
+          "cn": "精密藍圖"
         },
         "stack": 1,
         "material": ["WM015", "WM022"]
@@ -735,9 +657,9 @@
         "limit": 3,
         "name": {
           "kr": "철판",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Iron Sheet",
+          "ja": "鉄板",
+          "cn": "鐵板"
         },
         "stack": 2,
         "material": ["WM005", "WWP001"]
@@ -764,12 +686,7 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "황금",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "황금", "en": "Gold", "ja": "黄金", "cn": "黃金" },
         "stack": 1,
         "material": ["WM013", "WM023"]
       },
@@ -783,9 +700,9 @@
         "limit": 3,
         "name": {
           "kr": "달궈진 돌멩이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Heated Stone",
+          "ja": "熱せられた砥石",
+          "cn": "燒烤石"
         },
         "stack": 2,
         "material": ["WM002", "WM006"]
@@ -800,9 +717,9 @@
         "limit": 3,
         "name": {
           "kr": "하드커버",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hardcover",
+          "ja": "ハードカバー",
+          "cn": "精裝"
         },
         "stack": 1,
         "material": ["WM015", "WM001"]
@@ -817,9 +734,9 @@
         "limit": 3,
         "name": {
           "kr": "철사",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Barbed Wire",
+          "ja": "針金",
+          "cn": "鐵絲"
         },
         "stack": 1,
         "material": ["WM021", "WWP001"]
@@ -845,15 +762,15 @@
           "YA004",
           "YA005",
           "YA006",
-          "PF005"
+          "BD011"
         ],
         "pickup": 1,
         "limit": 3,
         "name": {
           "kr": "문스톤",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Moonstone",
+          "ja": "ムーンストーン",
+          "cn": "月亮石"
         },
         "stack": 1,
         "material": ["BM008", "WM002"]
@@ -863,15 +780,10 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/16h67ciZC0a7rOwhpXZfu1F8zj-U61YgV",
         "location": false,
-        "tobe": ["BWJ005", "PWJ005", "PB014", "BA008"],
+        "tobe": ["BWJ005", "PWJ005", "BB007", "BA008"],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "독약",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "독약", "en": "Poison", "ja": "毒薬", "cn": "毒藥" },
         "stack": 1,
         "material": ["GM007", "WD002"]
       },
@@ -891,12 +803,7 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "모터",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "모터", "en": "Motor", "ja": "モーター", "cn": "馬達" },
         "stack": 1,
         "material": ["GM008", "WM005"]
       },
@@ -910,9 +817,9 @@
         "limit": 3,
         "name": {
           "kr": "유리판",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Glass Panel",
+          "ja": "ガラスパネル",
+          "cn": "玻璃板"
         },
         "stack": 1,
         "material": ["GA003", "WM014"]
@@ -927,9 +834,9 @@
         "limit": 3,
         "name": {
           "kr": "이온 전지",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ion Battery",
+          "ja": "イオン電池",
+          "cn": "鋰離子電池"
         },
         "stack": 1,
         "material": ["GM005", "WD006"]
@@ -944,9 +851,9 @@
         "limit": 1,
         "name": {
           "kr": "휴대폰",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cell Phone",
+          "ja": "携帯電話",
+          "cn": "手機"
         },
         "stack": 1,
         "material": ["GM009", "GM008"]
@@ -969,15 +876,15 @@
           "YA003",
           "YA004",
           "BT002",
-          "PF004"
+          "BF028"
         ],
         "pickup": 1,
         "limit": 3,
         "name": {
           "kr": "미스릴",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mithril",
+          "ja": "ミスリル",
+          "cn": "秘銀"
         },
         "stack": 1
       },
@@ -1000,12 +907,7 @@
         ],
         "pickup": 1,
         "limit": 3,
-        "name": {
-          "kr": "운석",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "운석", "en": "Meteorite", "ja": "隕石", "cn": "隕石" },
         "stack": 1
       },
       {
@@ -1027,9 +929,9 @@
         "limit": 3,
         "name": {
           "kr": "생명의 나무",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Tree of Life",
+          "ja": "生命の木",
+          "cn": "生命樹枝"
         },
         "stack": 1
       },
@@ -1059,9 +961,9 @@
         "limit": 3,
         "name": {
           "kr": "VF 혈액 샘플",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "VF Blood Sample",
+          "ja": "VF血液サンプル",
+          "cn": "VF 血液樣本"
         },
         "stack": 1
       },
@@ -1098,9 +1000,9 @@
         "limit": 3,
         "name": {
           "kr": "포스 코어",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Force Core",
+          "ja": "フォースコアー",
+          "cn": "能源晶石"
         },
         "stack": 1,
         "material": ["BM009", "BM008"]
@@ -1115,9 +1017,9 @@
         "limit": 1,
         "name": {
           "kr": "만년빙",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Glacial Ice",
+          "ja": "万年氷",
+          "cn": "萬年冰"
         },
         "stack": 1,
         "material": ["BM009", "WD003"],
@@ -1142,9 +1044,9 @@
         "limit": 1,
         "name": {
           "kr": "삼매진화",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "True Samadhi Fire",
+          "ja": "三昧真火",
+          "cn": "三昧真火"
         },
         "stack": 1,
         "material": ["BM009", "WM006"],
@@ -1156,7 +1058,8 @@
   },
   {
     "category": "trap",
-    "items": [{
+    "items": [
+      {
         "id": "WT001",
         "sort": "trap",
         "img": "https://lh3.google.com/u/0/d/15yVovzUo3WbohkDqlgn0or5FunIs9kAx",
@@ -1166,9 +1069,9 @@
         "limit": 5,
         "name": {
           "kr": "감시 카메라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Surveillance Camera",
+          "ja": "監視カメラ",
+          "cn": "監視器"
         },
         "stack": 1
       },
@@ -1180,12 +1083,7 @@
         "tobe": ["GS007", "GT004", "GT005"],
         "pickup": 2,
         "limit": 5,
-        "name": {
-          "kr": "올가미",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "올가미", "en": "Snare", "ja": "投げ罠", "cn": "套索" },
         "stack": 2
       },
       {
@@ -1198,9 +1096,9 @@
         "limit": 5,
         "name": {
           "kr": "쥐덫",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mousetrap",
+          "ja": "ネズミ捕り",
+          "cn": "捕鼠夾"
         },
         "stack": 2
       },
@@ -1215,9 +1113,9 @@
         "limit": 5,
         "name": {
           "kr": "가시 발판",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Spiked Plank",
+          "ja": "棘の足場",
+          "cn": "尖板"
         },
         "stack": 2
       },
@@ -1231,9 +1129,9 @@
         "limit": 5,
         "name": {
           "kr": "개량형 쥐덫",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Enhanced Mousetrap",
+          "ja": "改良型ネズミ捕り",
+          "cn": "改良型捕鼠夾"
         },
         "stack": 2,
         "material": ["WT003", "WM016"]
@@ -1248,9 +1146,9 @@
         "limit": 5,
         "name": {
           "kr": "다이너마이트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Dynamite",
+          "ja": "ダイナマイト",
+          "cn": "炸藥"
         },
         "stack": 1,
         "material": ["WM021", "WM018"]
@@ -1265,9 +1163,9 @@
         "limit": 5,
         "name": {
           "kr": "대나무 트랩",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bamboo Trap",
+          "ja": "竹トラップ",
+          "cn": "竹槍陷阱"
         },
         "stack": 2,
         "material": ["WT002", "WWF001"]
@@ -1282,9 +1180,9 @@
         "limit": 5,
         "name": {
           "kr": "부비트랩",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Booby Trap",
+          "ja": "ブービートラップ",
+          "cn": "傻瓜陷阱"
         },
         "stack": 2,
         "material": ["WT002", "WM014"]
@@ -1299,9 +1197,9 @@
         "limit": 5,
         "name": {
           "kr": "소란 발생기",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Clang Clatter",
+          "ja": "騒音発生器",
+          "cn": "噪音產生器"
         },
         "stack": 3,
         "material": ["WM017", "WWI001"]
@@ -1316,9 +1214,9 @@
         "limit": 5,
         "name": {
           "kr": "정글 기요틴",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Jungle Guillotine",
+          "ja": "ジヤングルギロチン",
+          "cn": "斷頭台"
         },
         "stack": 1,
         "material": ["WT003", "WWA003"]
@@ -1333,9 +1231,9 @@
         "limit": 5,
         "name": {
           "kr": "폭발 트랩",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Explosive Trap",
+          "ja": "爆発トラップ",
+          "cn": "爆炸地雷"
         },
         "stack": 1,
         "material": ["WT003", "WM018"]
@@ -1350,9 +1248,9 @@
         "limit": 6,
         "name": {
           "kr": "망원 카메라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Telephoto Camera",
+          "ja": "望遠カメラ",
+          "cn": "望遠監視器"
         },
         "stack": 2,
         "material": ["WT001", "WA009"]
@@ -1367,9 +1265,9 @@
         "limit": 6,
         "name": {
           "kr": "정찰 드론",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Recon Drone",
+          "ja": "偵察ドローン",
+          "cn": "無人探測儀"
         },
         "stack": 2,
         "material": ["WT001", "WM018"]
@@ -1384,9 +1282,9 @@
         "limit": 6,
         "name": {
           "kr": "위장 카메라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Trail Camera",
+          "ja": "偽装カメラ",
+          "cn": "潛行相機"
         },
         "stack": 2,
         "material": ["WT001", "WM024"],
@@ -1400,12 +1298,7 @@
         "tobe": ["PWI002", "PWL004", "PT001", "PT002", "YT002"],
         "pickup": 1,
         "limit": 5,
-        "name": {
-          "kr": "RDX",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "RDX", "en": "RDX", "ja": "RDX", "cn": "RDX 高能炸藥" },
         "stack": 1,
         "material": ["GT003", "WM005"]
       },
@@ -1419,9 +1312,9 @@
         "limit": 5,
         "name": {
           "kr": "미스릴 실",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mithril String",
+          "ja": "ミスリル糸",
+          "cn": "秘銀細線"
         },
         "stack": 2,
         "material": ["WM021", "BM007"]
@@ -1436,9 +1329,9 @@
         "limit": 5,
         "name": {
           "kr": "펜듈럼 도끼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Pendulum Axe",
+          "ja": "ペンデュラム斧",
+          "cn": "擺斧"
         },
         "stack": 2,
         "material": ["GT004", "WWC002"]
@@ -1451,12 +1344,7 @@
         "tobe": ["PT004"],
         "pickup": 2,
         "limit": 5,
-        "name": {
-          "kr": "지뢰",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "지뢰", "en": "Mine", "ja": "地雷", "cn": "地雷" },
         "stack": 2,
         "material": ["GT005", "WM018"]
       },
@@ -1470,9 +1358,9 @@
         "limit": 5,
         "name": {
           "kr": "EMP 드론",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "EMP Drone",
+          "ja": "EMP ドローン",
+          "cn": "EMP 探測儀"
         },
         "stack": 1,
         "material": ["GT010", "WM009"]
@@ -1487,9 +1375,9 @@
         "limit": 5,
         "name": {
           "kr": "히든 메이든",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hidden Maiden",
+          "ja": "隠しメイデン",
+          "cn": "鐵處女陷阱"
         },
         "stack": 3,
         "material": ["GT002", "GT007"]
@@ -1504,9 +1392,9 @@
         "limit": 5,
         "name": {
           "kr": "화염 트랩",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fire Trap",
+          "ja": "火炎トラップ",
+          "cn": "火焰陷阱"
         },
         "stack": 1,
         "material": ["GT008", "GM002"]
@@ -1521,9 +1409,9 @@
         "limit": 5,
         "name": {
           "kr": "폭뢰침",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Stingburst",
+          "ja": "爆雷針",
+          "cn": "爆雷針"
         },
         "stack": 2,
         "material": ["BT001", "GT001"]
@@ -1536,12 +1424,7 @@
         "tobe": false,
         "pickup": 2,
         "limit": 5,
-        "name": {
-          "kr": "C-4",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "C-4", "en": "C-4", "ja": "C4", "cn": "C4" },
         "stack": 2,
         "material": ["BT001", "GM006"]
       },
@@ -1555,9 +1438,9 @@
         "limit": 5,
         "name": {
           "kr": "더블 기요틴",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Double Guillotine",
+          "ja": "ダブルギロチン",
+          "cn": "雙刀斷頭台"
         },
         "stack": 1,
         "material": ["BT003", "GT007"]
@@ -1572,9 +1455,9 @@
         "limit": 5,
         "name": {
           "kr": "크레모어",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Claymore",
+          "ja": "クレイモア",
+          "cn": "闊刀地雷"
         },
         "stack": 1,
         "material": ["BT004", "GT008"]
@@ -1589,9 +1472,9 @@
         "limit": 5,
         "name": {
           "kr": "리모트 마인",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Remote Mine",
+          "ja": "リモートマイン",
+          "cn": "遙控地雷"
         },
         "stack": 3,
         "material": ["GT002", "PM002"]
@@ -1606,9 +1489,9 @@
         "limit": 5,
         "name": {
           "kr": "스마트 폭탄",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Smart Bomb",
+          "ja": "スマート爆弾",
+          "cn": "智能炸彈"
         },
         "stack": 2,
         "material": ["BT001", "BM006"]
@@ -1617,7 +1500,8 @@
   },
   {
     "category": "food",
-    "items": [{
+    "items": [
+      {
         "id": "WF001",
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1eJ3QoVFoZyXaFNadrxjgbSTw4q4tqsbL",
@@ -1627,9 +1511,9 @@
         "limit": 6,
         "name": {
           "kr": "감자",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Potato",
+          "ja": "ジャガイモ",
+          "cn": "馬鈴薯"
         },
         "stack": 2
       },
@@ -1641,12 +1525,7 @@
         "tobe": ["GF001", "GF002", "GF017", "BF009", "BF010", "BF015"],
         "pickup": 2,
         "limit": 6,
-        "name": {
-          "kr": "대구",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "대구", "en": "Cod", "ja": "タラ", "cn": "鱈魚" },
         "stack": 2
       },
       {
@@ -1657,12 +1536,7 @@
         "tobe": ["GF006", "BF004"],
         "pickup": 2,
         "limit": 6,
-        "name": {
-          "kr": "붕어",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "붕어", "en": "Carp", "ja": "鮒", "cn": "鯉魚" },
         "stack": 2
       },
       {
@@ -1673,12 +1547,7 @@
         "tobe": ["GF018", "GD002", "GD007"],
         "pickup": 2,
         "limit": 6,
-        "name": {
-          "kr": "레몬",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "레몬", "en": "Lemon", "ja": "レモン", "cn": "檸檬" },
         "stack": 2
       },
       {
@@ -1691,9 +1560,9 @@
         "limit": 6,
         "name": {
           "kr": "마늘",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Garlic",
+          "ja": "にんにく",
+          "cn": "大蒜"
         },
         "stack": 1
       },
@@ -1715,12 +1584,7 @@
         ],
         "pickup": 1,
         "limit": 6,
-        "name": {
-          "kr": "빵",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "빵", "en": "Bread", "ja": "パン", "cn": "麵包" },
         "stack": 1
       },
       {
@@ -1731,12 +1595,7 @@
         "tobe": ["GF012", "GF014", "BF018", "BF022"],
         "pickup": 1,
         "limit": 6,
-        "name": {
-          "kr": "고기",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "고기", "en": "Meat", "ja": "肉", "cn": "肉" },
         "stack": 1
       },
       {
@@ -1747,12 +1606,7 @@
         "tobe": ["GF017", "GF021", "BF014", "BF017", "BF026"],
         "pickup": 1,
         "limit": 6,
-        "name": {
-          "kr": "달걀",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "달걀", "en": "Egg", "ja": "卵", "cn": "雞蛋" },
         "stack": 1
       },
       {
@@ -1765,9 +1619,9 @@
         "limit": 6,
         "name": {
           "kr": "생라면",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ramen",
+          "ja": "インスタントラーメン",
+          "cn": "拉麵"
         },
         "stack": 1
       },
@@ -1781,9 +1635,9 @@
         "limit": 6,
         "name": {
           "kr": "약초",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Oriental Herb",
+          "ja": "薬草",
+          "cn": "人蔘"
         },
         "stack": 1
       },
@@ -1796,10 +1650,10 @@
         "pickup": 1,
         "limit": 6,
         "name": {
-          "kr": "초콜렛",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "초콜릿",
+          "en": "Chocolate",
+          "ja": "チョコレート",
+          "cn": "巧克力"
         },
         "stack": 1
       },
@@ -1813,9 +1667,9 @@
         "limit": 6,
         "name": {
           "kr": "꿀 바른 대구살",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Honey Cod Steak",
+          "ja": "タラのはちみつ漬け",
+          "cn": "蜂蜜鱈魚排"
         },
         "stack": 1,
         "material": ["WF002", "WD001"]
@@ -1830,9 +1684,9 @@
         "limit": 6,
         "name": {
           "kr": "대구 간 통조림",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Canned Cod Liver",
+          "ja": "鱈肝缶詰",
+          "cn": "鱈魚肝罐頭"
         },
         "stack": 1,
         "material": ["WF002", "WM017"]
@@ -1847,9 +1701,9 @@
         "limit": 6,
         "name": {
           "kr": "마늘빵",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Garlic Bread",
+          "ja": "ガーリックブレッド",
+          "cn": "蒜香麵包"
         },
         "stack": 2,
         "material": ["WF007", "WF005"]
@@ -1862,12 +1716,7 @@
         "tobe": ["BF012", "BF019", "BF025"],
         "pickup": 1,
         "limit": 6,
-        "name": {
-          "kr": "버터",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "버터", "en": "Butter", "ja": "バター", "cn": "奶油" },
         "stack": 1,
         "material": ["WD007", "WM024"]
       },
@@ -1881,9 +1730,9 @@
         "limit": 6,
         "name": {
           "kr": "붕어빵",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Carp Bread",
+          "ja": "タイ焼き",
+          "cn": "鯛魚燒"
         },
         "stack": 1,
         "material": ["WF007", "WF003"]
@@ -1898,9 +1747,9 @@
         "limit": 6,
         "name": {
           "kr": "초코파이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Choco Pie",
+          "ja": "チョコパイ",
+          "cn": "巧克力派"
         },
         "stack": 1,
         "material": ["WF007", "WF012"]
@@ -1913,12 +1762,7 @@
         "tobe": ["BF021"],
         "pickup": 2,
         "limit": 6,
-        "name": {
-          "kr": "난초",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "난초", "en": "Orchid", "ja": "ハーブ", "cn": "藥草" },
         "stack": 2,
         "material": ["WF011", "WA002"]
       },
@@ -1932,9 +1776,9 @@
         "limit": 6,
         "name": {
           "kr": "마늘 베이컨 말이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Bacon and Garlic Sticks",
+          "ja": "にんにくベーコン",
+          "cn": "大蒜培根"
         },
         "stack": 1,
         "material": ["WF005", "WF008"]
@@ -1947,12 +1791,7 @@
         "tobe": false,
         "pickup": 1,
         "limit": 6,
-        "name": {
-          "kr": "번",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "번", "en": "Bun", "ja": "バン", "cn": "小麵包" },
         "stack": 1,
         "material": ["WF007", "WD005"]
       },
@@ -1966,9 +1805,9 @@
         "limit": 6,
         "name": {
           "kr": "햄버거",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hamburger",
+          "ja": "ハンバーガー",
+          "cn": "漢堡"
         },
         "stack": 1,
         "material": ["WF007", "WF008"]
@@ -1983,9 +1822,9 @@
         "limit": 6,
         "name": {
           "kr": "달걀 생선 필레",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fish Fillet With Egg",
+          "ja": "卵と魚フィーレ",
+          "cn": "蛋煎魚片"
         },
         "stack": 1,
         "material": ["WF002", "WF009"]
@@ -2000,9 +1839,9 @@
         "limit": 6,
         "name": {
           "kr": "시트러스 케이크",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Citrus Cake",
+          "ja": "シトラスケーキ",
+          "cn": "柑橘蛋糕"
         },
         "stack": 2,
         "material": ["WF007", "WF004"]
@@ -2017,9 +1856,9 @@
         "limit": 6,
         "name": {
           "kr": "마늘 꿀절임",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Honey Garlic",
+          "ja": "にんにくはちみつ漬け",
+          "cn": "蜂蜜泡大蒜"
         },
         "stack": 3,
         "material": ["WF005", "WD001"]
@@ -2034,9 +1873,9 @@
         "limit": 6,
         "name": {
           "kr": "계란빵",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Egg Bun",
+          "ja": "卵パン",
+          "cn": "雞蛋麵包"
         },
         "stack": 2,
         "material": ["WF009", "WF007"]
@@ -2051,9 +1890,9 @@
         "limit": 6,
         "name": {
           "kr": "초코 아이스크림",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Choco Ice Cream",
+          "ja": "チョコアイス",
+          "cn": "巧克力冰淇淋"
         },
         "stack": 1,
         "material": ["WD003", "WF012"]
@@ -2068,9 +1907,9 @@
         "limit": 6,
         "name": {
           "kr": "감자튀김",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "French Fries",
+          "ja": "ポテトフライ",
+          "cn": "炸薯條"
         },
         "stack": 1,
         "material": ["WF001", "GM003"]
@@ -2085,9 +1924,9 @@
         "limit": 6,
         "name": {
           "kr": "구운 감자",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Baked Potato",
+          "ja": "焼きポテト",
+          "cn": "烤馬鈴薯"
         },
         "stack": 3,
         "material": ["WF001", "GM012"]
@@ -2102,9 +1941,9 @@
         "limit": 6,
         "name": {
           "kr": "구운 붕어",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Baked Carp",
+          "ja": "焼き鮒",
+          "cn": "紅燒鯉魚"
         },
         "stack": 3,
         "material": ["WF003", "GM012"]
@@ -2119,9 +1958,9 @@
         "limit": 6,
         "name": {
           "kr": "냉면",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cold Noodles",
+          "ja": "冷麺",
+          "cn": "冷麵"
         },
         "stack": 3,
         "material": ["WF010", "GD015"]
@@ -2136,9 +1975,9 @@
         "limit": 6,
         "name": {
           "kr": "뜨거운 라면",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hot Ramen",
+          "ja": "あつあつのラーメン",
+          "cn": "熱拉麵"
         },
         "stack": 2,
         "material": ["WF010", "GD001"]
@@ -2153,9 +1992,9 @@
         "limit": 6,
         "name": {
           "kr": "마늘라면",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Garlic Ramen",
+          "ja": "ガーリックラーメン",
+          "cn": "大蒜拉麵"
         },
         "stack": 2,
         "material": ["BF007", "WF005"]
@@ -2170,9 +2009,9 @@
         "limit": 6,
         "name": {
           "kr": "매운탕",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Spicy Fish Stew",
+          "ja": "メウンタン",
+          "cn": "辣魚湯"
         },
         "stack": 2,
         "material": ["WF002", "GD001"]
@@ -2187,9 +2026,9 @@
         "limit": 10,
         "name": {
           "kr": "메로구이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Grilled Chilean Sea Bass",
+          "ja": "メロ焼き",
+          "cn": "烤智利海鱸魚"
         },
         "stack": 3,
         "material": ["WF002", "GM012"]
@@ -2204,9 +2043,9 @@
         "limit": 6,
         "name": {
           "kr": "모카빵",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Mocha Bread",
+          "ja": "モカブレッド",
+          "cn": "摩卡麵包"
         },
         "stack": 2,
         "material": ["GD008", "WF007"]
@@ -2221,9 +2060,9 @@
         "limit": 6,
         "name": {
           "kr": "버터 감자구이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Butter-Fried Potatoes",
+          "ja": "ジャガイモバター",
+          "cn": "奶油烤馬鈴薯"
         },
         "stack": 2,
         "material": ["GF004", "WF001"]
@@ -2238,9 +2077,9 @@
         "limit": 6,
         "name": {
           "kr": "볶음라면",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Stir Fried Ramen",
+          "ja": "焼きそば",
+          "cn": "炒拉麵"
         },
         "stack": 2,
         "material": ["WF010", "GM003"]
@@ -2255,9 +2094,9 @@
         "limit": 6,
         "name": {
           "kr": "삶은 달걀",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hard Boiled Egg",
+          "ja": "ゆで卵",
+          "cn": "水煮蛋"
         },
         "stack": 3,
         "material": ["WF009", "GD001"]
@@ -2272,9 +2111,9 @@
         "limit": 6,
         "name": {
           "kr": "생선까스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fish Cutlet",
+          "ja": "フィッシュカツ",
+          "cn": "炸魚片"
         },
         "stack": 1,
         "material": ["WF002", "GM003"]
@@ -2289,9 +2128,9 @@
         "limit": 6,
         "name": {
           "kr": "스크램블 에그",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Scrambled Egg",
+          "ja": "スクランブルエッグ",
+          "cn": "炒蛋"
         },
         "stack": 2,
         "material": ["WF009", "GM003"]
@@ -2306,9 +2145,9 @@
         "limit": 10,
         "name": {
           "kr": "스테이크",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Steak",
+          "ja": "ステーキ",
+          "cn": "牛排"
         },
         "stack": 4,
         "material": ["WF008", "GM012"]
@@ -2323,9 +2162,9 @@
         "limit": 6,
         "name": {
           "kr": "초코칩 쿠키",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Chocolate Chip Cookies",
+          "ja": "チョコチップクッキー",
+          "cn": "巧克力餅乾"
         },
         "stack": 2,
         "material": ["WF012", "GF004"]
@@ -2340,9 +2179,9 @@
         "limit": 6,
         "name": {
           "kr": "초코파이 상자",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Choco Pie Box",
+          "ja": "箱入りチョコパイ",
+          "cn": "盒裝巧克力派"
         },
         "stack": 2,
         "material": ["GF008", "WA006"]
@@ -2357,9 +2196,9 @@
         "limit": 6,
         "name": {
           "kr": "힐링 포션",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Healing Potion",
+          "ja": "ポーション",
+          "cn": "治療藥水"
         },
         "stack": 2,
         "material": ["GF010", "WM001"]
@@ -2374,9 +2213,9 @@
         "limit": 6,
         "name": {
           "kr": "후라이드 치킨",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fried Chicken",
+          "ja": "フライドチキン",
+          "cn": "炸雞"
         },
         "stack": 2,
         "material": ["WF008", "GM003"]
@@ -2391,9 +2230,9 @@
         "limit": 6,
         "name": {
           "kr": "탕약",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Oriental Concoction",
+          "ja": "漢方茶",
+          "cn": "漢方茶"
         },
         "stack": 3,
         "material": ["WF011", "GD001"]
@@ -2408,9 +2247,9 @@
         "limit": 6,
         "name": {
           "kr": "술빵",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Rum Raisin Bread",
+          "ja": "酒蒸しパン",
+          "cn": "酒釀餅"
         },
         "stack": 2,
         "material": ["GD005", "WF007"]
@@ -2425,9 +2264,9 @@
         "limit": 6,
         "name": {
           "kr": "허니버터",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Honey Butter",
+          "ja": "ハニーバター",
+          "cn": "蜂蜜奶油"
         },
         "stack": 2,
         "material": ["GF004", "WD001"]
@@ -2442,9 +2281,9 @@
         "limit": 6,
         "name": {
           "kr": "생일 케이크",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Birthday Cake",
+          "ja": "誕生日ケーキ",
+          "cn": "生日蛋糕"
         },
         "stack": 2,
         "material": ["GF018", "WF009"]
@@ -2459,11 +2298,28 @@
         "limit": 6,
         "name": {
           "kr": "구급상자",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "First Aid Kit",
+          "ja": "救急箱",
+          "cn": "醫藥箱"
         },
         "stack": 1
+      },
+      {
+        "id": "BF028",
+        "sort": "food",
+        "img": "https://lh3.google.com/u/0/d/1V1DD-760k6micv2E04Snh-jXGViJTx9d",
+        "location": false,
+        "tobe": false,
+        "pickup": 3,
+        "limit": 6,
+        "name": {
+          "kr": "성수",
+          "en": "Holy Water",
+          "ja": "聖水",
+          "cn": "聖水"
+        },
+        "stack": 3,
+        "material": ["BM007", "WD002"]
       },
       {
         "id": "PF001",
@@ -2475,9 +2331,9 @@
         "limit": 6,
         "name": {
           "kr": "피쉬 앤 칩스",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Fish And Chips",
+          "ja": "フィッシュアンドチップス",
+          "cn": "炸魚薯條"
         },
         "stack": 2,
         "material": ["BF001", "BF015"]
@@ -2492,9 +2348,9 @@
         "limit": 6,
         "name": {
           "kr": "일레븐 세트",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "#11 Combo Meal",
+          "ja": "Elevenセット",
+          "cn": "11號套餐"
         },
         "stack": 2,
         "material": ["BF001", "GF014"]
@@ -2509,52 +2365,19 @@
         "limit": 6,
         "name": {
           "kr": "대환단",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Zen Vitality",
+          "ja": "大丸丹",
+          "cn": "大還丹"
         },
         "stack": 3,
         "material": ["BM009", "WA005"]
-      },
-      {
-        "id": "PF004",
-        "sort": "food",
-        "img": "https://lh3.google.com/u/0/d/1V1DD-760k6micv2E04Snh-jXGViJTx9d",
-        "location": false,
-        "tobe": false,
-        "pickup": 3,
-        "limit": 6,
-        "name": {
-          "kr": "성수",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
-        "stack": 3,
-        "material": ["BM007", "WD002"]
-      },
-      {
-        "id": "PF005",
-        "sort": "drink",
-        "img": "https://lh3.google.com/u/0/d/1cJigA2yJrdCtQK1F-u9Vlj4Vy2-223kb",
-        "location": false,
-        "tobe": false,
-        "pickup": 3,
-        "limit": 6,
-        "name": {
-          "kr": "셀레네의 눈물",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
-        "stack": 3,
-        "material": ["BM001", "WD002"]
       }
     ]
   },
   {
     "category": "drink",
-    "items": [{
+    "items": [
+      {
         "id": "WD001",
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1ZkKcOqJmGpPea9v5TfqAOQYHMAHxGqMn",
@@ -2562,12 +2385,7 @@
         "tobe": ["GF001", "GF020", "GD009", "GD011", "GD014", "BD004"],
         "pickup": 2,
         "limit": 6,
-        "name": {
-          "kr": "꿀",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "꿀", "en": "Honey", "ja": "はちみつ", "cn": "蜂蜜" },
         "stack": 2
       },
       {
@@ -2583,17 +2401,12 @@
           "GD005",
           "GD014",
           "GD015",
-          "PF005",
-          "PF004"
+          "BD011",
+          "BF028"
         ],
         "pickup": 3,
         "limit": 6,
-        "name": {
-          "kr": "물",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "물", "en": "Water", "ja": "水", "cn": "水" },
         "stack": 3
       },
       {
@@ -2613,12 +2426,7 @@
         ],
         "pickup": 2,
         "limit": 6,
-        "name": {
-          "kr": "얼음",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "얼음", "en": "Ice", "ja": "氷", "cn": "冰塊" },
         "stack": 2
       },
       {
@@ -2631,9 +2439,9 @@
         "limit": 6,
         "name": {
           "kr": "위스키",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Whiskey",
+          "ja": "ウイスキー",
+          "cn": "威士忌"
         },
         "stack": 1
       },
@@ -2647,9 +2455,9 @@
         "limit": 6,
         "name": {
           "kr": "커피콩",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Coffee",
+          "ja": "コーヒー豆",
+          "cn": "咖啡"
         },
         "stack": 1
       },
@@ -2663,9 +2471,9 @@
         "limit": 6,
         "name": {
           "kr": "탄산수",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Carbonated Water",
+          "ja": "炭酸水",
+          "cn": "碳酸水"
         },
         "stack": 1
       },
@@ -2677,12 +2485,7 @@
         "tobe": ["GF004", "GD010", "GD011", "GD013", "GD017", "BD003"],
         "pickup": 2,
         "limit": 6,
-        "name": {
-          "kr": "우유",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "우유", "en": "Milk", "ja": "牛乳", "cn": "牛奶" },
         "stack": 2
       },
       {
@@ -2706,9 +2509,9 @@
         "limit": 6,
         "name": {
           "kr": "뜨거운 물",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Boiling Water",
+          "ja": "お湯",
+          "cn": "熱開水"
         },
         "stack": 2,
         "material": ["WD002", "WM006"]
@@ -2723,9 +2526,9 @@
         "limit": 6,
         "name": {
           "kr": "레몬에이드",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Lemonade",
+          "ja": "レモンエイド",
+          "cn": "檸檬汁"
         },
         "stack": 3,
         "material": ["WD006", "WF004"]
@@ -2740,9 +2543,9 @@
         "limit": 6,
         "name": {
           "kr": "물병",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Water Bottle",
+          "ja": "水筒",
+          "cn": "水瓶"
         },
         "stack": 2,
         "material": ["WD002", "WM001"]
@@ -2755,12 +2558,7 @@
         "tobe": ["BD002", "BD005", "BD008"],
         "pickup": 1,
         "limit": 6,
-        "name": {
-          "kr": "백주",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "백주", "en": "Baijiu", "ja": "白酒", "cn": "白酒" },
         "stack": 1,
         "material": ["WM010", "WM001"]
       },
@@ -2772,12 +2570,7 @@
         "tobe": ["BF024"],
         "pickup": 2,
         "limit": 6,
-        "name": {
-          "kr": "소주",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "소주", "en": "Soju", "ja": "焼酎", "cn": "燒酒" },
         "stack": 2,
         "material": ["WM010", "WD002"]
       },
@@ -2791,9 +2584,9 @@
         "limit": 6,
         "name": {
           "kr": "아이스 커피",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Iced Coffee",
+          "ja": "アイスコーヒー",
+          "cn": "冰咖啡"
         },
         "stack": 2,
         "material": ["WD003", "WD005"]
@@ -2808,9 +2601,9 @@
         "limit": 6,
         "name": {
           "kr": "칵테일",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cocktail",
+          "ja": "カクテル",
+          "cn": "雞尾酒"
         },
         "stack": 4,
         "material": ["WD004", "WF004"]
@@ -2825,9 +2618,9 @@
         "limit": 6,
         "name": {
           "kr": "커피 리큐르",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Coffee Liqueur",
+          "ja": "コーヒーリキュール",
+          "cn": "咖啡利口酒"
         },
         "stack": 2,
         "material": ["WM010", "WD005"]
@@ -2840,12 +2633,7 @@
         "tobe": ["PWI004", "BD009", "BD010"],
         "pickup": 3,
         "limit": 6,
-        "name": {
-          "kr": "콜라",
-          "en": "",
-          "ja": "",
-          "cn": ""
-        },
+        "name": { "kr": "콜라", "en": "Cola", "ja": "コーラ", "cn": "可樂" },
         "stack": 3,
         "material": ["WD006", "WD001"]
       },
@@ -2859,9 +2647,9 @@
         "limit": 6,
         "name": {
           "kr": "카페라테",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Latte",
+          "ja": "カフェラッテ",
+          "cn": "咖啡拿鐵"
         },
         "stack": 2,
         "material": ["WD007", "WD005"]
@@ -2876,9 +2664,9 @@
         "limit": 6,
         "name": {
           "kr": "꿀탄 우유",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Honey Milk",
+          "ja": "ハニーミルク",
+          "cn": "蜂蜜牛奶"
         },
         "stack": 2,
         "material": ["WD007", "WD001"]
@@ -2893,9 +2681,9 @@
         "limit": 6,
         "name": {
           "kr": "하이볼",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Highball",
+          "ja": "ハイボール",
+          "cn": "高杯酒"
         },
         "stack": 3,
         "material": ["WD004", "WD006"]
@@ -2910,9 +2698,9 @@
         "limit": 6,
         "name": {
           "kr": "초코 우유",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Chocolate Milk",
+          "ja": "チョコミルク",
+          "cn": "巧克力牛奶"
         },
         "stack": 3,
         "material": ["WD007", "WF012"]
@@ -2927,9 +2715,9 @@
         "limit": 6,
         "name": {
           "kr": "꿀물",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Honey Water",
+          "ja": "蜂蜜水",
+          "cn": "蜂蜜水"
         },
         "stack": 2,
         "material": ["WD001", "WD002"]
@@ -2944,9 +2732,9 @@
         "limit": 6,
         "name": {
           "kr": "얼음물",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Ice Water",
+          "ja": "氷水",
+          "cn": "冰水"
         },
         "stack": 2,
         "material": ["WD003", "WD002"]
@@ -2961,9 +2749,9 @@
         "limit": 6,
         "name": {
           "kr": "온더락",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "On The Rocks",
+          "ja": "オン・ザ・ロック",
+          "cn": "威士忌加冰"
         },
         "stack": 2,
         "material": ["WD003", "WD004"]
@@ -2978,9 +2766,9 @@
         "limit": 6,
         "name": {
           "kr": "카우보이",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Cowboy",
+          "ja": "カウボーイ",
+          "cn": "牛仔雞尾酒"
         },
         "stack": 2,
         "material": ["WD007", "WD004"]
@@ -2995,9 +2783,9 @@
         "limit": 6,
         "name": {
           "kr": "정화수",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Purified Water",
+          "ja": "浄化水",
+          "cn": "淨化水"
         },
         "stack": 2,
         "material": ["GD001", "WD003"]
@@ -3012,9 +2800,9 @@
         "limit": 6,
         "name": {
           "kr": "고량주",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Kaoliang Liquor",
+          "ja": "高粱酒",
+          "cn": "高粱酒"
         },
         "stack": 3,
         "material": ["GD004", "WM006"]
@@ -3029,9 +2817,9 @@
         "limit": 6,
         "name": {
           "kr": "깔루아 밀크",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "White Russian",
+          "ja": "カルーアミルク",
+          "cn": "咖啡蜜牛奶酒"
         },
         "stack": 4,
         "material": ["GD008", "WD007"]
@@ -3046,9 +2834,9 @@
         "limit": 6,
         "name": {
           "kr": "뜨거운 꿀물",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hot Honey Water",
+          "ja": "はちみつ湯",
+          "cn": "熱蜂蜜水"
         },
         "stack": 2,
         "material": ["GD001", "WD001"]
@@ -3063,9 +2851,9 @@
         "limit": 6,
         "name": {
           "kr": "백일취",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Flower Liquor",
+          "ja": "百日酔",
+          "cn": "花酒"
         },
         "stack": 5,
         "material": ["GD004", "WA002"]
@@ -3080,9 +2868,9 @@
         "limit": 6,
         "name": {
           "kr": "핫초코",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Hot Chocolate",
+          "ja": "ホットチョコレート",
+          "cn": "熱可可"
         },
         "stack": 4,
         "material": ["GD001", "WF012"]
@@ -3097,9 +2885,9 @@
         "limit": 6,
         "name": {
           "kr": "아메리카노",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Americano",
+          "ja": "アメリカーノ",
+          "cn": "美式咖啡"
         },
         "stack": 2,
         "material": ["GD001", "WD005"]
@@ -3114,9 +2902,9 @@
         "limit": 6,
         "name": {
           "kr": "약주",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "en": "Herbal Liquor",
+          "ja": "薬酒",
+          "cn": "藥酒"
         },
         "stack": 3,
         "material": ["GD004", "WF011"]
@@ -3130,10 +2918,10 @@
         "pickup": 5,
         "limit": 6,
         "name": {
-          "kr": "위스키콕",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "위스키 콕",
+          "en": "Whiskey Cocktail",
+          "ja": "ウイスキーコック",
+          "cn": "威士忌旋塞"
         },
         "stack": 5,
         "material": ["GD009", "WD004"]
@@ -3147,13 +2935,30 @@
         "pickup": 2,
         "limit": 6,
         "name": {
-          "kr": "캔콜라",
-          "en": "",
-          "ja": "",
-          "cn": ""
+          "kr": "캔 콜라",
+          "en": "Can of Cola",
+          "ja": "缶コーラ",
+          "cn": "罐裝可樂"
         },
         "stack": 2,
         "material": ["GD009", "WM017"]
+      },
+      {
+        "id": "BD011",
+        "sort": "drink",
+        "img": "https://lh3.google.com/u/0/d/1cJigA2yJrdCtQK1F-u9Vlj4Vy2-223kb",
+        "location": false,
+        "tobe": false,
+        "pickup": 3,
+        "limit": 6,
+        "name": {
+          "kr": "셀레네의 눈물",
+          "en": "Tear of Selene",
+          "ja": "セレーネーの涙",
+          "cn": "塞勒涅之淚"
+        },
+        "stack": 3,
+        "material": ["BM001", "WD002"]
       }
     ]
   }

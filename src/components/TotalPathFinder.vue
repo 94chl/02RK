@@ -34,7 +34,7 @@
               :key="route + areaIndex"
               class="routeButton_area"
             >
-              {{ area }}
+              {{ area[language] }}
             </span>
           </button>
         </li>
@@ -56,6 +56,9 @@
     },
     components: {},
     computed: {
+      language() {
+        return this.$store.state.language;
+      },
       toggleModal() {
         return this.$store.state.toggleModal;
       },

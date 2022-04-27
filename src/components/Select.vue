@@ -22,7 +22,7 @@
           :key="`deptArr${dept}`"
           :class="`select${dept} ${dept == selectDept ? 'selected' : ''}`"
         >
-          {{ deptKor[dept] }}
+          {{ depts[dept][language] }}
         </label>
       </form>
     </div>
@@ -35,7 +35,7 @@
           :selected="category.category === selectCategory"
           :key="`categoryArr${category.category}`"
         >
-          {{ category.kor }}
+          {{ category.nameInfo[language] }}
         </option>
       </select>
     </div>
@@ -73,14 +73,18 @@
 </template>
 
 <script>
-  import { database, eng2Kor, itemOptions } from "~/utils/itemTable";
+  import { database, categoryName, itemOptions } from "~/utils/itemTable";
   import ItemPreview from "~/components/ItemPreview";
 
   export default {
     data() {
       return {
         deptArr: ["weapon", "equip", "item"],
-        deptKor: { weapon: "무기", equip: "장비", item: "기타" },
+        depts: {
+          weapon: { kr: "무기", en: "Weapon", ja: "武器", cn: "武器" },
+          equip: { kr: "방어구", en: "Armor", ja: "防具", cn: "防具" },
+          item: { kr: "기타", en: "Miscellaneous", ja: "その他", cn: "其他" },
+        },
         categoryArr: [],
         itemArr: [],
         selectDept: "",
@@ -131,7 +135,7 @@
         this.selectDept = e.target.value;
         this.categoryArr = database[`${this.selectDept}Data`].map((category) => ({
           ...category,
-          kor: eng2Kor[category.category],
+          nameInfo: categoryName[category.category],
         }));
         this.selectCategory = this.categoryArr[0].category;
         this.itemArr = this.categoryArr.filter(
@@ -163,7 +167,7 @@
       this.selectDept = "weapon";
       this.categoryArr = database[`${this.selectDept}Data`].map((category) => ({
         ...category,
-        kor: eng2Kor[category.category],
+        nameInfo: categoryName[category.category],
       }));
       this.selectCategory = this.categoryArr[0].category;
       this.itemArr = this.categoryArr.filter(

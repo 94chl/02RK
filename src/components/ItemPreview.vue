@@ -23,7 +23,7 @@
         <li class="itemOption sortInfo">
           <div>
             <span class="attrKey">종류 : </span>
-            <span class="attrValue">{{ cartItem.sort }}</span>
+            <span class="attrValue">{{ cartItem.sort[language] }}</span>
           </div>
         </li>
         <li
@@ -79,7 +79,7 @@
                 :key="areaId"
                 class="dropArea"
               >
-                {{ areaData[areaId].name }}
+                {{ areaData[areaId].name[language] }}
               </span>
             </span>
             <span v-else class="attrValue">
@@ -145,7 +145,7 @@
                   :key="route + areaIndex"
                   class="routeButton_area"
                 >
-                  {{ area }}
+                  {{ area[language] }}
                 </span>
               </button>
             </li>
@@ -169,7 +169,12 @@
 </template>
 
 <script>
-  import { eng2Kor, searchById, areaData, itemOptions } from "~/utils/itemTable";
+  import {
+    categoryName,
+    searchById,
+    areaData,
+    itemOptions,
+  } from "~/utils/itemTable";
   import { disassembleWD } from "~/utils/disassemble";
   import { onUpdated, ref } from "vue";
   import { useStore } from "vuex";
@@ -230,7 +235,7 @@
         cartKeys.forEach((option, _) => {
           if (option === "img") itemInfo.img = cart[option];
           if (option === "name") itemInfo.name = cart[option];
-          if (option === "sort") itemInfo.sort = eng2Kor[cart[option]];
+          if (option === "sort") itemInfo.sort = categoryName[cart[option]];
           if (cart[option]) {
             if (option === "material")
               itemInfo.material = cart[option].map((id) => searchById(id));

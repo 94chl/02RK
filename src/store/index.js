@@ -184,8 +184,14 @@ const store = createStore({
         ? (state.totalRecommendRoutes = routes)
         : (state.recommendRoutes = routes);
     },
+    setSelectedLanguage(state, newLanguage) {
+      state.language = newLanguage;
+    },
   },
   actions: {
+    selectLanguage({ commit }, newLanguage) {
+      commit("setSelectedLanguage", newLanguage);
+    },
     onChangeMinHeight({ commit }, newMinHeight) {
       commit("changeMinHeight", newMinHeight);
     },

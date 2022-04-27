@@ -18,7 +18,7 @@
         >
           <div>
             <button class="areaBtn" @click="setRoute">
-              <span class="areaName">{{ areaInfo[area].name }}</span>
+              <span class="areaName">{{ areaInfo[area].name[language] }}</span>
               <div class="areaInfoIcon">
                 <span v-if="customRoute.includes(area)" class="pickedArea">
                   {{ customRoute.indexOf(area) + 1 }}

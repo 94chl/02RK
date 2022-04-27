@@ -9,6 +9,7 @@
       <Area></Area>
       <Modals></Modals>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -20,6 +21,7 @@
   import NeedDrops from "~/components/NeedDrops";
   import CustomRoute from "~/components/CustomRoute";
   import Modals from "~/components/Modals";
+  import Footer from "~/components/Footer";
 
   import {
     getSessionStorage,
@@ -35,6 +37,7 @@
       Area,
       NeedDrops,
       Modals,
+      Footer,
     },
     computed: {
       minHeight() {
@@ -134,6 +137,9 @@
         background: $color2;
         border-radius: 5px;
         box-shadow: 0 1px 1px 0 $color1;
+        &.modals {
+          margin-bottom: 0;
+        }
       }
 
       .tabName {
@@ -161,15 +167,6 @@
             }
           }
         }
-      }
-    }
-
-    .footer {
-      height: 25px;
-      img {
-        max-width: 100%;
-        height: 100%;
-        width: fit-content;
       }
     }
   }

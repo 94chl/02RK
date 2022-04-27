@@ -97,7 +97,7 @@
             class="area"
           >
             <div class="area_name">
-              <div>{{ areaInfo[area].name }}</div>
+              <div>{{ areaInfo[area].name[language] }}</div>
             </div>
             <div v-if="areaWithTargetItems[index]" class="area_items">
               <ul>
@@ -130,7 +130,12 @@
 </template>
 
 <script>
-  import { database, eng2Kor, areaData, searchById } from "~/utils/itemTable";
+  import {
+    database,
+    categoryName,
+    areaData,
+    searchById,
+  } from "~/utils/itemTable";
   import { disassembleWD } from "~/utils/disassemble";
 
   export default {
@@ -240,7 +245,7 @@
         this.categoryArr = database[`${this.selectedOptions.dept}Data`].map(
           (category) => ({
             ...category,
-            kor: eng2Kor[category.category],
+            kor: categoryName[category.category],
           })
         );
         this.selectedCategory = this.categoryArr[0].category;
@@ -304,7 +309,7 @@
       const categories = database[`${this.selectedOptions.dept}Data`].map(
         (category) => ({
           ...category,
-          kor: eng2Kor[category.category],
+          kor: categoryName[category.category],
         })
       );
       this.categoryArr = categories;

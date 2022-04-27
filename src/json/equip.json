@@ -2322,8 +2322,8 @@
         },
         "stack": 1,
         "material": ["GB004", "PM002"],
-        "def0": 33,
-        "atk_spd1": 0.2,
+        "def0": 25,
+        "atk_spd1": 0.3,
         "move_spd0": 0.12,
         "cool1": 0.15,
         "uniq004": {

@@ -190,7 +190,7 @@
         "stack": 1,
         "material": ["BWA001", "GM007"],
         "atk0": 20,
-        "grow_sill0": 2,
+        "grow_skill0": 2,
         "cool1": 0.1,
         "move_spd0": 0.1
       },
@@ -1248,7 +1248,7 @@
         "stack": 1,
         "material": ["BWD002", "GM007"],
         "atk0": 35,
-        "grow_sill0": 2.5,
+        "grow_skill0": 2.5,
         "uniq022": {
           "detail": {
             "kr": [
@@ -1530,7 +1530,7 @@
         "material": ["BWE006", "WD003"],
         "atk0": 41,
         "skill0": 17,
-        "grow_sill0": 1
+        "grow_skill0": 1
       },
       {
         "id": "PWE005",
@@ -2818,7 +2818,7 @@
         "material": ["GWI003", "BT007"],
         "load0": 50,
         "atk0": 22,
-        "grow_sill0": 2.5
+        "grow_skill0": 2.5
       },
       {
         "id": "PWI008",
@@ -3179,7 +3179,7 @@
         "atk0": 55,
         "skill1": 0.15,
         "skill0": 2,
-        "grow_sill0": 1
+        "grow_skill0": 1
       },
       {
         "id": "PWJ003",
@@ -5223,7 +5223,7 @@
         "material": ["BWQ003", "GA009"],
         "atk0": 79,
         "skill0": 18,
-        "grow_sill0": 1,
+        "grow_skill0": 1,
         "move_spd0": -0.07,
         "uniq029": {
           "detail": {
@@ -5413,7 +5413,7 @@
         "stack": 1,
         "material": ["BWR001", "GM007"],
         "atk0": 45,
-        "grow_sill0": 2,
+        "grow_skill0": 2,
         "uniq029": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],

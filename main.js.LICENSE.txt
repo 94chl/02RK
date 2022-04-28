@@ -1,4 +1,28 @@
 /*!
+  * @intlify/core-base v9.1.9
+  * (c) 2021 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+/*!
+  * @intlify/message-compiler v9.1.9
+  * (c) 2021 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+/*!
+  * @intlify/runtime v9.1.9
+  * (c) 2021 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+/*!
+  * @intlify/vue-devtools v9.1.9
+  * (c) 2021 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+/*!
  * vuex v4.0.2
  * (c) 2021 Evan You
  * @license MIT

@@ -1,7 +1,7 @@
 <template>
   <div :class="`mapModal ${toggleModal.map ? 'active' : 'hide'}`">
     <div class="tabName">
-      <h3>지도</h3>
+      <h3>{{ $t("modal.map") }}</h3>
       <div class="buttonBox">
         <button @click="toggleMapModal">
           <span>
@@ -15,19 +15,19 @@
         <svg class="area a002" @click="setRoute">
           <g>
             <circle class="hyperloop" cx="10" cy="10" r="4" />
-            <text x="20" y="15">하이퍼루프</text>
+            <text x="20" y="15">{{ $t("mapModal.hyperLoop") }}</text>
           </g>
           <g>
             <circle class="lifeTree" cx="10" cy="26" r="4" />
-            <text x="20" y="31">생명의 나무</text>
+            <text x="20" y="31">{{ $t("mapModal.lifeTree") }}</text>
           </g>
           <g>
             <circle class="meteor" cx="10" cy="42" r="4" />
-            <text x="20" y="47">운석</text>
+            <text x="20" y="47">{{ $t("mapModal.meteor") }}</text>
           </g>
           <g>
             <circle class="alphaOmega" cx="10" cy="58" r="4" />
-            <text x="20" y="63">알파, 오메가</text>
+            <text x="20" y="63">{{ $t("mapModal.alphaOmega") }}</text>
           </g>
         </svg>
       </div>
@@ -35,7 +35,9 @@
         <svg class="area a001">
           <g>
             <polygon points="0,0 48,0 48,48 0,48" />
-            <text class="areaName" x="10" y="5">연구소</text>
+            <text class="areaName" x="10" y="5">
+              {{ $t("mapModal.research") }}
+            </text>
           </g>
         </svg>
         <svg class="area a002" @click="setRoute">
@@ -50,7 +52,9 @@
             <circle class="hyperloop" cx="15" cy="10" r="4" />
             <circle class="meteor" cx="15" cy="30" r="4" />
             <circle class="alphaOmega" cx="90" cy="60" r="4" />
-            <text class="areaName" x="25" y="-10">골목길</text>
+            <text class="areaName" x="25" y="-10">
+              {{ $t("mapModal.alley") }}
+            </text>
           </g>
         </svg>
         <svg class="area a003" @click="setRoute">
@@ -63,7 +67,9 @@
               points="48,0 120,0 120,72 24,72 24,48 0,48 0,24 48,24"
             />
             <circle class="hyperloop" cx="90" cy="50" r="4" />
-            <text class="areaName" x="60" y="-40">번화가</text>
+            <text class="areaName" x="60" y="-40">
+              {{ $t("mapModal.avenue") }}
+            </text>
           </g>
         </svg>
         <svg class="area a004" @click="setRoute">
@@ -77,7 +83,9 @@
             />
             <circle class="hyperloop" cx="40" cy="10" r="4" />
             <circle class="meteor" cx="15" cy="75" r="4" />
-            <text class="areaName" x="40" y="25">절</text>
+            <text class="areaName" x="40" y="25">
+              {{ $t("mapModal.temple") }}
+            </text>
           </g>
         </svg>
         <svg class="area a005" @click="setRoute">
@@ -90,7 +98,7 @@
               points="0,0 72,0 72,72 0,72"
             />
             <circle class="meteor" cx="50" cy="15" r="4" />
-            <text class="areaName" x="30" y="5">연못</text>
+            <text class="areaName" x="30" y="5">{{ $t("mapModal.pond") }}</text>
           </g>
         </svg>
         <svg class="area a006" @click="setRoute">
@@ -105,7 +113,9 @@
             <circle class="hyperloop" cx="65" cy="22" r="4" />
             <circle class="lifeTree" cx="65" cy="10" r="4" />
             <circle class="alphaOmega" cx="45" cy="15" r="4" />
-            <text class="areaName" x="25" y="0">병원</text>
+            <text class="areaName" x="25" y="0">
+              {{ $t("mapModal.hospital") }}
+            </text>
           </g>
         </svg>
         <svg class="area a007" @click="setRoute">
@@ -118,7 +128,9 @@
               points="0,0 48,0 48,96 0,96"
             />
             <circle class="lifeTree" cx="20" cy="25" r="4" />
-            <text class="areaName" x="35" y="25">묘지</text>
+            <text class="areaName" x="35" y="25">
+              {{ $t("mapModal.cemetery") }}
+            </text>
           </g>
         </svg>
         <svg class="area a008" @click="setRoute">
@@ -133,7 +145,9 @@
             <circle class="hyperloop" cx="70" cy="35" r="4" />
             <circle class="meteor" cx="75" cy="15" r="4" />
             <circle class="alphaOmega" cx="85" cy="20" r="4" />
-            <text class="areaName" x="35" y="-15">공장</text>
+            <text class="areaName" x="35" y="-15">
+              {{ $t("mapModal.factory") }}
+            </text>
           </g>
         </svg>
         <svg class="area a009" @click="setRoute">
@@ -147,7 +161,9 @@
             />
             <circle class="hyperloop" cx="40" cy="30" r="4" />
             <circle class="meteor" cx="10" cy="60" r="4" />
-            <text class="areaName" x="25" y="15">성당</text>
+            <text class="areaName" x="25" y="15">
+              {{ $t("mapModal.chapel") }}
+            </text>
           </g>
         </svg>
         <svg class="area a010" @click="setRoute">
@@ -160,7 +176,9 @@
               points="0,0 48,0 48,48 72,48 72,72 24,72 24,48 0,48"
             />
             <circle class="alphaOmega" cx="15" cy="40" r="4" />
-            <text class="areaName" x="20" y="5">항구</text>
+            <text class="areaName" x="30" y="10">
+              {{ $t("mapModal.dock") }}
+            </text>
           </g>
         </svg>
         <svg class="area a011" @click="setRoute">
@@ -175,8 +193,9 @@
             <circle class="hyperloop" cx="18" cy="13" r="4" />
             <circle class="meteor" cx="10" cy="60" r="4" />
             <circle class="alphaOmega" cx="12" cy="5" r="4" />
-            <text class="areaName" x="25" y="5">고급</text>
-            <text class="areaName" x="20" y="20">주택가</text>
+            <text class="areaName" x="0" y="-25">
+              {{ $t("mapModal.uptown") }}
+            </text>
           </g>
         </svg>
         <svg class="area a012" @click="setRoute">
@@ -189,7 +208,9 @@
               points="0,0 72,0 72,24 48,24, 48, 96, 0, 96"
             />
             <circle class="lifeTree" cx="20" cy="65" r="4" />
-            <text class="areaName" x="40" y="20">숲</text>
+            <text class="areaName" x="40" y="20">
+              {{ $t("mapModal.forest") }}
+            </text>
           </g>
         </svg>
         <svg class="area a013" @click="setRoute">
@@ -202,8 +223,9 @@
               points="0,0 48,0 48,72 0,72"
             />
             <circle class="alphaOmega" cx="38" cy="30" r="4" />
-            <text class="areaName" x="10" y="8">모래</text>
-            <text class="areaName" x="35" y="25">사장</text>
+            <text class="areaName" x="5" y="-10">
+              {{ $t("mapModal.beach") }}
+            </text>
           </g>
         </svg>
         <svg class="area a014" @click="setRoute">
@@ -218,7 +240,9 @@
             <circle class="hyperloop" cx="30" cy="10" r="4" />
             <circle class="lifeTree" cx="40" cy="55" r="4" />
             <circle class="alphaOmega" cx="60" cy="40" r="4" />
-            <text class="areaName" x="30" y="5">호텔</text>
+            <text class="areaName" x="30" y="5">
+              {{ $t("mapModal.hotel") }}
+            </text>
           </g>
         </svg>
         <svg class="area a015" @click="setRoute">
@@ -231,7 +255,9 @@
               points="0,0 72,0 72,48 0,48"
             />
             <circle class="meteor" cx="45" cy="15" r="4" />
-            <text class="areaName" x="25" y="0">학교</text>
+            <text class="areaName" x="25" y="0">
+              {{ $t("mapModal.school") }}
+            </text>
           </g>
         </svg>
         <svg class="area a016" @click="setRoute">
@@ -244,7 +270,9 @@
               points="0,0 72,0 72,24 0,24"
             />
             <circle class="alphaOmega" cx="7" cy="9" r="4" />
-            <text class="areaName" x="15" y="18">양궁장</text>
+            <text class="areaName" x="15" y="18">
+              {{ $t("mapModal.archery") }}
+            </text>
           </g>
         </svg>
         <svg class="routeLine">
@@ -595,6 +623,9 @@
             @include mapUnit(2, 3);
             top: 124px;
             left: 4px;
+            g > .areaName {
+              transform: rotate(90deg);
+            }
           }
 
           &.a012 {
@@ -608,6 +639,9 @@
             @include mapUnit(2, 3);
             top: 52px;
             left: 4px;
+            g > .areaName {
+              transform: rotate(90deg);
+            }
           }
 
           &.a014 {

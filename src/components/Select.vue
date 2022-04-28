@@ -1,7 +1,7 @@
 <template>
   <div class="select">
     <div class="tabName">
-      <h3>아이템 선택</h3>
+      <h3>{{ $t("section.selectItem") }}</h3>
     </div>
 
     <div class="select_dept">
@@ -22,7 +22,7 @@
           :key="`deptArr${dept}`"
           :class="`select${dept} ${dept == selectDept ? 'selected' : ''}`"
         >
-          {{ depts[dept][language] }}
+          {{ $t(`selectSection.${dept}`) }}
         </label>
       </form>
     </div>
@@ -80,11 +80,6 @@
     data() {
       return {
         deptArr: ["weapon", "equip", "item"],
-        depts: {
-          weapon: { kr: "무기", en: "Weapon", ja: "武器", cn: "武器" },
-          equip: { kr: "방어구", en: "Armor", ja: "防具", cn: "防具" },
-          item: { kr: "기타", en: "Miscellaneous", ja: "その他", cn: "其他" },
-        },
         categoryArr: [],
         itemArr: [],
         selectDept: "",

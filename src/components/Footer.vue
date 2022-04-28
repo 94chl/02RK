@@ -35,9 +35,8 @@
     },
     methods: {
       selectLanguage(e) {
-        console.log(this.selectedLanguage);
         this.$store.dispatch("selectLanguage", e.target.value);
-        console.log(this.selectedLanguage);
+        this.$i18n.locale = this.selectedLanguage;
       },
     },
   };

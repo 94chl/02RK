@@ -12,7 +12,7 @@
     <div v-else-if="toggleModal.craft && !minimize">
       <div class="craft_select">
         <div class="tabName">
-          <h3>제작 가능 아이템</h3>
+          <h3>{{ $t("modal.craft") }}</h3>
           <div class="buttonBox">
             <div>
               <button
@@ -50,7 +50,7 @@
               :key="`${dept}_craft`"
               @click="changeCraftDept"
             >
-              {{ deptKor[dept] }}
+              {{ $t(`selectSection.${dept}`) }}
             </button>
           </div>
 
@@ -65,18 +65,18 @@
                 :selected="category.category === selectedOptions.category"
                 :key="`categoryArr${category.category}_craft`"
               >
-                {{ category.kor }}
+                {{ category.nameInfo[language] }}
               </option>
             </select>
           </div>
 
           <div class="selectBox_grade">
             <select class="selectBox_grade_select" @change="changeGrade">
-              <option value="W">일반</option>
-              <option value="G">고급</option>
-              <option value="B">희귀</option>
-              <option value="P">영웅</option>
-              <option value="Y">전설</option>
+              <option value="W">{{ $t("common.gradeCommon") }}</option>
+              <option value="G">{{ $t("common.gradeUncommon") }}</option>
+              <option value="B">{{ $t("common.gradeRare") }}</option>
+              <option value="P">{{ $t("common.gradeEpic") }}</option>
+              <option value="Y">{{ $t("common.gradeLegend") }}</option>
             </select>
           </div>
 
@@ -89,7 +89,7 @@
       </div>
 
       <div class="craft_route">
-        <h3 class="tabName">사용자 루트</h3>
+        <h3 class="tabName">{{ $t("section.customRoute") }}</h3>
         <div class="routesBox">
           <div
             v-for="(area, index) in customRoute"
@@ -143,7 +143,6 @@
       return {
         minimize: false,
         deptArr: ["weapon", "equip", "item"],
-        deptKor: { weapon: "무기", equip: "장비", item: "기타" },
         areaIds: [],
         areaInfo: areaData,
         areaWithTargetItems: [],
@@ -245,7 +244,7 @@
         this.categoryArr = database[`${this.selectedOptions.dept}Data`].map(
           (category) => ({
             ...category,
-            kor: categoryName[category.category],
+            nameInfo: categoryName[category.category],
           })
         );
         this.selectedCategory = this.categoryArr[0].category;
@@ -309,7 +308,7 @@
       const categories = database[`${this.selectedOptions.dept}Data`].map(
         (category) => ({
           ...category,
-          kor: categoryName[category.category],
+          nameInfo: categoryName[category.category],
         })
       );
       this.categoryArr = categories;

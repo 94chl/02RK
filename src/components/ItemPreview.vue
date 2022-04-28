@@ -14,7 +14,7 @@
       <ul>
         <li class="itemOption nameInfo">
           <div>
-            <span class="attrKey">이름 : </span>
+            <span class="attrKey"> {{ $t("itemPreviewSection.name") }} : </span>
             <span :class="`attrValue value${cartItemId[0]}`">{{
               cartItem.name[language]
             }}</span>
@@ -22,7 +22,7 @@
         </li>
         <li class="itemOption sortInfo">
           <div>
-            <span class="attrKey">종류 : </span>
+            <span class="attrKey"> {{ $t("itemPreviewSection.sort") }} : </span>
             <span class="attrValue">{{ cartItem.sort[language] }}</span>
           </div>
         </li>
@@ -41,20 +41,20 @@
               {{
                 `[${
                   option.match(/(active)/g)
-                    ? "액티브"
+                    ? $t("itemPreviewSection.optionUniq")
                     : option.match(/(buff)/g)
-                    ? "버프"
+                    ? $t("itemPreviewSection.optionbuff")
                     : option.match(/(uniq)/g)
-                    ? "고유"
-                    : "undefined"
+                    ? $t("itemPreviewSection.optionActive")
+                    : ""
                 }]${itemOptions[option][language]}`
               }}
             </span>
             <span v-else class="attrKey">
               {{
                 `${
-                  korOption[option]
-                    ? korOption[option]
+                  optionName[option]
+                    ? optionName[option]
                     : itemOptions[option][language]
                 } : `
               }}
@@ -115,8 +115,8 @@
         </div>
         <div v-if="isInitial" class="beforeRecommend">
           <p>
-            <span><i class="fas fa-map-marked-alt"></i></span> 클릭시 최단루트를
-            탐색합니다
+            <span><i class="fas fa-map-marked-alt"></i></span>
+            {{ $t("itemPreviewSection.recommendFuncInfo") }}
           </p>
         </div>
         <div v-else class="recommends">
@@ -152,10 +152,16 @@
           </ul>
           <div v-else class="recommendsCover">
             <div v-if="recommendRoutes.length > 0" class="routeCount">
-              <p>{{ `${recommendRoutes.length}개의` }}</p>
-              <p>루트를 찾았습니다</p>
               <p>
-                <i class="fas fa-toggle-off"></i>을 클릭해서 루트를 확인하세요!
+                {{
+                  $t("itemPreviewSection.foundRecommendsInfo", {
+                    number: recommendRoutes.length,
+                  })
+                }}
+              </p>
+              <p>
+                <i class="fas fa-toggle-off"></i
+                >{{ $t("itemPreviewSection.showRecommendsInfo") }}
               </p>
             </div>
             <p v-else class="noRouteCount">
@@ -192,13 +198,13 @@
     data() {
       return {
         areaData: areaData,
-        korOption: {
-          img: "이미지",
-          name: "이름",
-          sort: "종류",
-          material: "재료",
-          location: "드랍위치",
-          tobe: "상위",
+        optionName: {
+          img: this.$t("itemPreviewSection.img"),
+          name: this.$t("itemPreviewSection.name"),
+          sort: this.$t("itemPreviewSection.sort"),
+          material: this.$t("itemPreviewSection.material"),
+          location: this.$t("itemPreviewSection.location"),
+          tobe: this.$t("itemPreviewSection.tobe"),
         },
         itemOptions,
         necessaryOptions: ["img", "name", "sort"],

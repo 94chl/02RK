@@ -1,7 +1,7 @@
 <template>
   <div class="targetItems">
     <div class="tabName">
-      <h3>목표 아이템</h3>
+      <h3>{{ $t("section.targetItem") }}</h3>
       <div class="buttonBox">
         <button class="reamoveAllBtn" @click="removeAllTargetItem">
           <i class="fas fa-trash-alt"></i>

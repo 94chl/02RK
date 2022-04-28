@@ -5,7 +5,7 @@
     }`"
   >
     <div class="tabName">
-      <h3>목표 아이템 추천 루트</h3>
+      <h3>{{ $t("modal.recommendRoute") }}</h3>
       <div class="buttonBox">
         <button class="findRecommendPathBtn" @click="findRecommendPath">
           <i class="fas fa-map-marked-alt"></i>

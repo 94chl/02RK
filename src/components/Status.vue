@@ -2,7 +2,7 @@
   <div :class="`status ${toggleModal.status ? 'active' : 'hide'}`">
     <div class="status_equip">
       <div class="tabName">
-        <h3>장비</h3>
+        <h3>{{ $t("modal.equip") }}</h3>
         <div class="buttonBox">
           <div>
             <div>
@@ -103,7 +103,7 @@
     </div>
 
     <div class="status_info">
-      <h3 class="tabName">스테이터스</h3>
+      <h3 class="tabName">{{ $t("modal.status") }}</h3>
       <div class="optionBox">
         <ul>
           <li
@@ -142,12 +142,12 @@
                 {{
                   `[${
                     optionName.match(/(active)/g)
-                      ? "액티브"
+                      ? $t("itemPreviewSection.optionUniq")
                       : optionName.match(/(buff)/g)
-                      ? "버프"
+                      ? $t("itemPreviewSection.optionbuff")
                       : optionName.match(/(uniq)/g)
-                      ? "고유"
-                      : "undefined"
+                      ? $t("itemPreviewSection.optionActive")
+                      : ""
                   }] ${itemOptions[optionName][language]}`
                 }}
               </div>

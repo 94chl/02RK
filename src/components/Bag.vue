@@ -1,7 +1,7 @@
 <template>
   <div :class="`bag ${toggleModal.bag ? 'active' : 'hide'}`">
     <div class="tabName">
-      <h3>가방</h3>
+      <h3>{{ $t("section.bag") }}</h3>
       <div class="buttonBox">
         <div>
           <button
@@ -30,7 +30,7 @@
     </div>
     <div data-modal="initialWeapon" class="bag_initialWeapon">
       <div class="tabName">
-        <h3>시작무기</h3>
+        <h3>{{ $t("modal.initialWeapon") }}</h3>
         <div class="buttonBox">
           <button @click="onToggleModal">
             <i
@@ -50,7 +50,7 @@
     </div>
     <div class="bag_equip">
       <div class="tabName">
-        <h3>장비</h3>
+        <h3>{{ $t("modal.equip") }}</h3>
         <div class="buttonBox">
           <button class="clearBtn" @click="clearBag" data-bag="equip">
             <i class="fas fa-trash-alt"></i>
@@ -102,7 +102,7 @@
     </div>
     <div class="bag_inventory">
       <div class="tabName">
-        <h3>가방</h3>
+        <h3>{{ $t("modal.bag") }}</h3>
         <div class="buttonBox">
           <button class="clearBtn" @click="clearBag" data-bag="inventory">
             <i class="fas fa-trash-alt"></i>
@@ -158,7 +158,7 @@
     </div>
     <div class="bag_assembles">
       <div class="tabName">
-        <h3>조합가능</h3>
+        <h3>{{ $t("modal.makable") }}</h3>
       </div>
       <div v-if="Object.values(assembles).length > 0">
         <ul>

@@ -1,7 +1,7 @@
 <template>
   <div class="customRoute">
     <div class="tabName">
-      <h3>사용자 루트</h3>
+      <h3>{{ $t("section.customRoute") }}</h3>
       <div class="buttonBox">
         <button class="removeAllBtn" @click="removeAllRoute">
           <i class="fas fa-trash-alt"></i>

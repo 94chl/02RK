@@ -1,0 +1,72 @@
+{
+  "section": {
+    "selectItem": "Select Item",
+    "targetItem": "Target Item",
+    "neededDropItem": "Need Item",
+    "customRoute": "Custom Route",
+    "areas": "Area"
+  },
+  "common": {
+    "gradeCommon": "일반",
+    "gradeUncommon": "고급",
+    "gradeRare": "희귀",
+    "gradeEpic": "영웅",
+    "gradeLegend": "전설"
+  },
+  "modal": {
+    "bag": "가방",
+    "initialWeapon": "시작 무기",
+    "makable": "제작 가능",
+    "equip": "장비",
+    "status": "스테이터스",
+    "recommendRoute": "목표 아이템 추천 루트",
+    "craft": "제작 가능 아이템",
+    "commonDrop1": "나뭇가지, 돌멩이: 채집",
+    "commonDrop2": "고기: 닭, 멧돼지, 늑대, 곰",
+    "commonDrop3": "가죽: 닭, 들개, 늑대, 곰",
+    "commonDrop4": "구급상자, VF 혈액샘플: 위클라인",
+    "commonDrop5": "카드모스의 부름: 에키온 패시브 스킬",
+    "map": "지도"
+  },
+  "selectSection": {
+    "weapon": "무기",
+    "equip": "방어구",
+    "item": "기타"
+  },
+  "itemPreviewSection": {
+    "img": "이미지",
+    "name": "이름",
+    "sort": "종류",
+    "material": "재료 아이템",
+    "location": "드랍 위치",
+    "tobe": "상위 아이템",
+    "optionUniq": "고유",
+    "optionbuff": "버프",
+    "optionActive": "액티브",
+    "recommendFuncInfo": "버튼을 누르면 최단 루트를 탐색합니다",
+    "foundRecommendsInfo": "{number}개의 루트를 찾았습니다",
+    "showRecommendsInfo": "버튼을 눌러 루트를 확인하세요!"
+  },
+  "mapModal": {
+    "hyperLoop": "하이퍼루프",
+    "lifeTree": "생명의 나무",
+    "meteor": "운석",
+    "alphaOmega": "알파, 오메가",
+    "research": "연구소",
+    "alley": "골목길",
+    "avenue": "번화가",
+    "temple": "절",
+    "pond": "연못",
+    "hospital": "병원",
+    "cemetery": "묘지",
+    "factory": "공장",
+    "chapel": "성당",
+    "dock": "항구",
+    "uptown": "고급 주택가",
+    "forest": "숲",
+    "beach": "모래사장",
+    "hotel": "호텔",
+    "school": "학교",
+    "archery": "양궁장"
+  }
+}

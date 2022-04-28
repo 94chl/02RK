@@ -1,7 +1,7 @@
 <template>
   <div class="area">
     <div class="tabName">
-      <h3>지역</h3>
+      <h3>{{ $t("section.areas") }}</h3>
       <div class="buttonBox">
         <button class="mapModalButton" @click="toggleMapModal">
           <i class="fas fa-map"></i>
@@ -79,11 +79,11 @@
             v-if="area === 'A000'"
           >
             <ul>
-              <li>고기: 닭, 멧돼지, 늑대, 곰</li>
-              <li>가죽: 닭, 들개, 늑대, 곰</li>
-              <li>구급상자, VF 혈액샘플: 위클라인</li>
-              <li>나뭇가지, 돌멩이: 채집</li>
-              <li>카드모스의 부름: 에키온 패시브 스킬</li>
+              <li>{{ $t("modal.commonDrop1") }}</li>
+              <li>{{ $t("modal.commonDrop2") }}</li>
+              <li>{{ $t("modal.commonDrop3") }}</li>
+              <li>{{ $t("modal.commonDrop4") }}</li>
+              <li>{{ $t("modal.commonDrop5") }}</li>
             </ul>
             <button type="button" @click="toggleCommonDropsInfo">
               <i class="fas fa-times"></i>

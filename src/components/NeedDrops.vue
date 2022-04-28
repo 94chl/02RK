@@ -1,7 +1,7 @@
 <template>
   <div class="needDrops">
     <div class="tabName">
-      <h3>필요한 드랍템</h3>
+      <h3>{{ $t("section.neededDropItem") }}</h3>
     </div>
     <div>
       <ul class="needDrops_list">

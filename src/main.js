@@ -3,6 +3,14 @@ import { createApp } from "vue";
 import App from "~/App";
 
 import store from "~/store/index"; // NOTE "/index.js" 생략 가능
+import { createI18n } from "vue-i18n";
+import { kr, en, ja, cn } from "./language";
+
+const i18n = createI18n({
+  locale: "kr",
+  fallbackLocale: "en",
+  messages: { kr, en, ja, cn },
+});
 
 // import '~/routes/guard'
 
@@ -12,6 +20,7 @@ const app = createApp(App);
 // NOTE app애플리케이션에 store플러그인을 등록
 
 app.use(store);
+app.use(i18n);
 
 // NOTE 컴포넌트 전역등록
 // app.component("Posts", Posts);

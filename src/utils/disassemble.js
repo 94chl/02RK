@@ -109,16 +109,18 @@ export function disassembleAllWD(itemArr) {
       : count;
   });
 
+  const dropMatObj = {};
   const dropsId = Object.keys(drops);
-  const dropsInfo = dropsId.map((id) => {
+  const dropMatArr = dropsId.map((id) => {
     const itemInfo = searchById(id);
+    dropMatObj[id] = drops[id];
     return { id, name: itemInfo.name, count: drops[id] };
   });
 
   const itemMatInfo = {
     greenMatObj: greens,
-    dropMatArr: dropsInfo,
-    dropMatObj: drops,
+    dropMatArr: dropMatArr,
+    dropMatObj: dropMatObj,
   };
 
   return itemMatInfo;

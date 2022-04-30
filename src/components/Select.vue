@@ -169,7 +169,7 @@
         (category) => category.category === this.selectCategory
       )[0].items;
       this.$store.dispatch("setCart", this.itemArr[0]);
-      console.log(this.db);
+      // console.log(this.db);
     },
   };
 </script>

@@ -18,7 +18,10 @@
       </div>
     </div>
     <div class="routesInfo">
-      <ul class="routes" v-if="totalRecommendRoutes.length > 0">
+      <ul
+        class="routes"
+        v-if="totalRecommendRoutes.length > 0 && !error.message"
+      >
         <li
           class="route"
           v-for="(route, index) in totalRecommendRoutes"
@@ -39,19 +42,24 @@
           </button>
         </li>
       </ul>
-      <div class="noRoutes" v-else>{{ errorMessage }}</div>
+      <div class="noRoutes" v-if="error.message">
+        {{
+          error.items
+            ? $t(`noti.${error.message}`, { items: error.items })
+            : $t(`noti.${error.message}`)
+        }}
+      </div>
     </div>
   </div>
 </template>
 
 <script>
   import { areaData } from "~/utils/itemTable.js";
-  import { disassembleWD } from "~/utils/disassemble.js";
 
   export default {
     data() {
       return {
-        errorMessage: "",
+        error: { message: "" },
       };
     },
     components: {},
@@ -63,7 +71,7 @@
         return this.$store.state.toggleModal;
       },
       dropMats() {
-        return this.$store.state.matGDs.dropMatArr.map((mat) => mat.id);
+        return this.$store.state.matGDs.dropMatObj;
       },
       totalRecommendRoutes() {
         return this.$store.state.totalRecommendRoutes;
@@ -82,20 +90,20 @@
       },
       findRecommendPath() {
         const needDropsInfo = {
-          needDrops: Object.keys(disassembleWD([...this.dropMats]).dropMatId),
+          needDrops: this.dropMats,
           total: true,
         };
         try {
           this.$store.dispatch("findRecommendPath", needDropsInfo);
         } catch (e) {
-          this.errorMessage = e;
+          this.error = e;
         }
       },
       setCustomRoute(e) {
         const target =
           this.totalRecommendRoutes[e.target.closest("li").dataset.routeIndex];
         const newRoute = target.map((area) => this.areaName2Id[area]);
-        if (window.confirm("해당 루트를 적용하시겠습니까?"))
+        if (window.confirm(this.$t("not.applyRoute")))
           this.$store.dispatch("setRoute", newRoute);
       },
     },
@@ -193,6 +201,7 @@
       }
       .noRoutes {
         padding: 5px;
+        white-space: pre-line;
       }
     }
   }

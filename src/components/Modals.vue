@@ -16,11 +16,6 @@
   import TotalPathFinder from "~/components/TotalPathFinder";
 
   export default {
-    data() {
-      return {
-        errorMessage: "",
-      };
-    },
     components: { Bag, Status, Map, Craft, TotalPathFinder },
     computed: {},
     methods: {},

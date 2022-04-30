@@ -47,6 +47,22 @@ function checkAreaDrop(area, needs) {
   return area;
 }
 
+// 필요 재료중 소지템, 공통드랍템 제거
+export function checkNeedsWithBags(needs, bag) {
+  const result = JSON.parse(JSON.stringify(needs));
+
+  Object.keys(result).forEach((itemId) => {
+    if (areaData.A000.drop.includes(itemId)) result[itemId] = 0;
+  });
+  Object.keys(bag).forEach((itemId) => {
+    if (result[itemId])
+      result[itemId] =
+        result[itemId] < bag[itemId] ? 0 : result[itemId] - bag[itemId];
+  });
+
+  return result;
+}
+
 //파라미터 = 아이템 아이디
 export function pathFinder(route, needsNow, bagNow) {
   // 맵(이동가능 여부)
@@ -58,13 +74,8 @@ export function pathFinder(route, needsNow, bagNow) {
   const routeStack = [...route];
   const finishedRoute = [];
 
-  // 현재 소지품 중 필요한 드랍템만 추림
-  const bag = bagNow.filter((item) => needsNow.includes(item));
-
-  // 필요 재료중 소지템, 공통드랍템 제거
-  const needs = needsNow.filter(
-    (need) => !bag.includes(need) && !mapInfo.A000.drop.includes(need)
-  );
+  const needsObj = checkNeedsWithBags(needsNow, bagNow);
+  const needs = Object.keys(needsObj).filter((itemId) => needsObj[itemId]);
 
   const hadNeeds = [];
 
@@ -173,7 +184,7 @@ export function pathFinder(route, needsNow, bagNow) {
     }
   } //shortRoute
 
-  shortRoute(needs, bag, pathInfo, mapInfo, startPoint, routeStack);
+  shortRoute(needs, [], pathInfo, mapInfo, startPoint, routeStack);
 
   return finishedRoute;
 }

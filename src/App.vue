@@ -68,6 +68,9 @@
   $color3: #255f4c;
   $color4: #e9ad7c;
   $color5: #a06536;
+  .app {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
   .hide {
     display: none;

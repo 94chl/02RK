@@ -12,21 +12,21 @@
       </div>
     </div>
     <div class="routesBox">
-      <div v-for="(area, index) in customRoute" :key="`route${index}`">
+      <div
+        v-for="(area, index) in Object.values(areaWithTargetItems)"
+        :key="`route${index}`"
+      >
         <div>
-          <div>{{ areaInfo[area].name[language] }}</div>
-          <ul>
+          <div>{{ areaData[area.areaId].name[language] }}</div>
+          <ul v-if="area.targetItems.length">
             <li
-              v-for="item in areaWithTargetItems.filter(
-                (areaInfo) => areaInfo.area === area
-              )[0].targetItems"
+              v-for="item in area.targetItems"
               :key="`complete${item.id}`"
               :class="`value${item.id[0]}`"
             >
               <img :src="item.img" :alt="`${item.name[language]}_img`" />
             </li>
           </ul>
-          <ul></ul>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
     data() {
       return {
         areaIds: [],
-        areaInfo: areaData,
+        areaData,
       };
     },
     created() {
@@ -55,15 +55,12 @@
         newAreaData[areaId].show = false;
       });
 
-      this.areaInfo = newAreaData;
+      this.areaData = newAreaData;
     },
     components: {},
     computed: {
       language() {
         return this.$store.state.language;
-      },
-      customRoute() {
-        return this.$store.state.customRoute;
       },
       bagDrops() {
         const bagEquip = Object.values(this.$store.state.bagEquip).reduce(
@@ -89,25 +86,24 @@
         return bagDrops;
       },
       customRouteDrops() {
-        const customRouteDrops = ["A000", ...this.customRoute].reduce(
-          (acc, areaId, index) => {
-            const newDrops =
-              index > 0
-                ? areaData[areaId].drop.filter(
-                    (item) => !acc[acc.length - 1].drops.includes(item)
-                  )
-                : areaData[areaId].drop;
-            acc.push({
-              area: areaId,
-              drops:
-                index > 0
-                  ? [...acc[acc.length - 1].drops, ...newDrops]
-                  : newDrops,
-            });
-            return acc;
-          },
-          []
-        );
+        const customRouteDrops = [
+          "A000",
+          ...this.$store.state.customRoute,
+        ].reduce((acc, areaId, index) => {
+          const newDrops =
+            index > 0
+              ? areaData[areaId].drop.filter(
+                  (item) => !acc[acc.length - 1].drops.includes(item)
+                )
+              : areaData[areaId].drop;
+          acc.push({
+            areaId: areaId,
+            drops:
+              index > 0 ? [...acc[acc.length - 1].drops, ...newDrops] : newDrops,
+          });
+          return acc;
+        }, []);
+
         return customRouteDrops;
       },
       areaWithTargetItems() {
@@ -118,7 +114,9 @@
           JSON.stringify(this.customRouteDrops)
         );
 
-        const areaWithTargetItems = customRouteDrops.slice(1).map((areaInfo) => {
+        const areaWithTargetItems = {};
+
+        customRouteDrops.slice(1).forEach((areaInfo) => {
           this.bagDrops.forEach((drop) => {
             if (!areaInfo.drops.includes(drop)) areaInfo.drops.push(drop);
           });
@@ -141,7 +139,7 @@
           });
           targetItems = remainTargetItems;
 
-          return areaInfo;
+          areaWithTargetItems[areaInfo.areaId] = areaInfo;
         });
 
         return areaWithTargetItems;
@@ -149,7 +147,7 @@
     },
     methods: {
       removeAllRoute() {
-        if (window.confirm("루트를 초기화하시겠습니까?"))
+        if (window.confirm(this.$t("noti.clearRoute")))
           this.$store.dispatch("setRoute", []);
       },
       toggleCraftModal() {

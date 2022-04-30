@@ -151,7 +151,10 @@
             </li>
           </ul>
           <div v-else class="recommendsCover">
-            <div v-if="recommendRoutes.length > 0" class="routeCount">
+            <div
+              v-if="recommendRoutes.length > 0 && !error.message"
+              class="routeCount"
+            >
               <p>
                 {{
                   $t("itemPreviewSection.foundRecommendsInfo", {
@@ -165,7 +168,7 @@
               </p>
             </div>
             <p v-else class="noRouteCount">
-              {{ errorMessage }}
+              {{ $t(`noti.${error.message}`) }}
             </p>
           </div>
         </div>
@@ -198,14 +201,6 @@
     data() {
       return {
         areaData: areaData,
-        optionName: {
-          img: this.$t("itemPreviewSection.img"),
-          name: this.$t("itemPreviewSection.name"),
-          sort: this.$t("itemPreviewSection.sort"),
-          material: this.$t("itemPreviewSection.material"),
-          location: this.$t("itemPreviewSection.location"),
-          tobe: this.$t("itemPreviewSection.tobe"),
-        },
         itemOptions,
         necessaryOptions: ["img", "name", "sort"],
         isInitial: true,
@@ -223,11 +218,22 @@
           "name",
           "reload",
         ],
-        errorMessage: "",
+        error: { message: "" },
       };
     },
     components: {},
     computed: {
+      optionName() {
+        const translation = {
+          img: this.$t("itemPreviewSection.img"),
+          name: this.$t("itemPreviewSection.name"),
+          sort: this.$t("itemPreviewSection.sort"),
+          material: this.$t("itemPreviewSection.material"),
+          location: this.$t("itemPreviewSection.location"),
+          tobe: this.$t("itemPreviewSection.tobe"),
+        };
+        return translation;
+      },
       language() {
         return this.$store.state.language;
       },
@@ -283,13 +289,15 @@
       },
       findRecommendPath() {
         const needDropsInfo = {
-          needDrops: Object.keys(disassembleWD([this.cartItemId]).dropMatId),
+          needDrops: disassembleWD([this.cartItemId]).dropMatId,
           total: false,
         };
         try {
           this.$store.dispatch("findRecommendPath", needDropsInfo);
+          this.error = { message: "" };
         } catch (e) {
-          this.errorMessage = e;
+          console.log("err");
+          this.error = e;
         }
         this.isInitial = false;
       },
@@ -312,7 +320,7 @@
         const target =
           this.recommendRoutes[e.target.closest("li").dataset.routeIndex];
         const newRoute = target.map((area) => this.areaName2Id[area]);
-        if (window.confirm("해당 루트를 적용하시겠습니까?"))
+        if (window.confirm(this.$t("noti.applyRoute")))
           this.$store.dispatch("setRoute", newRoute);
       },
     },
@@ -486,9 +494,9 @@
 
         p {
           word-break: keep-all;
-          font-size: 0.8rem;
-          padding: 0;
+          padding: 8px 0;
           margin: 0;
+          white-space: pre-line;
 
           span .fas {
             color: $color3;
@@ -554,13 +562,16 @@
           text-align: center;
           width: 100%;
           p {
-            word-break: keep-all;
+            word-break: break-word;
+            display: block;
+            padding: 8px 0;
+            white-space: pre-line;
+
             &.routeCount {
               font-weight: 700;
               color: $color3;
             }
             &.noRouteCount {
-              font-size: 0.8rem;
             }
           }
           i {

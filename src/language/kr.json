@@ -16,7 +16,7 @@
   "modal": {
     "bag": "가방",
     "initialWeapon": "시작 무기",
-    "makable": "제작 가능",
+    "bagMakable": "제작 가능",
     "equip": "장비",
     "status": "스테이터스",
     "recommendRoute": "목표 아이템 추천 루트",
@@ -43,9 +43,9 @@
     "optionUniq": "고유",
     "optionbuff": "버프",
     "optionActive": "액티브",
-    "recommendFuncInfo": "버튼을 누르면 최단 루트를 탐색합니다",
+    "recommendFuncInfo": "을 누르면 최단 루트를 탐색합니다",
     "foundRecommendsInfo": "{number}개의 루트를 찾았습니다",
-    "showRecommendsInfo": "버튼을 눌러 루트를 확인하세요!"
+    "showRecommendsInfo": "을 눌러 루트를 확인하세요."
   },
   "mapModal": {
     "hyperLoop": "하이퍼루프",
@@ -68,5 +68,18 @@
     "hotel": "호텔",
     "school": "학교",
     "archery": "양궁장"
+  },
+  "noti": {
+    "cannotFindRoute": "최단 루트를 발견하지 못했습니다.\n혹은 필요한 재료를 이미 소지하고 있을 수도 있습니다.",
+    "emptyTargets": "목표 아이템이 없습니다.",
+    "noDropArea": "{items}은(는) 드랍되지 않는 아이템입니다.",
+    "applyRoute": "해당 루트를 적용하시겠습니까?",
+    "dropItem": "버리시겠습니까?",
+    "dropAllItems": "전부 버리시겠습니까?",
+    "craftItem": "조합하시겠습니까?",
+    "clearRoute": "루트를 초기화하시겠습니까?",
+    "changeWeapon": "현재 무기가 교체됩니다",
+    "removeTargetItem": "삭제하시겠습니까?",
+    "removeAllTargetItems": "전부 삭제하시겠습니까?"
   }
 }

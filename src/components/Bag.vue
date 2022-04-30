@@ -1,7 +1,7 @@
 <template>
   <div :class="`bag ${toggleModal.bag ? 'active' : 'hide'}`">
     <div class="tabName">
-      <h3>{{ $t("section.bag") }}</h3>
+      <h3>{{ $t("modal.bag") }}</h3>
       <div class="buttonBox">
         <div>
           <button
@@ -158,7 +158,7 @@
     </div>
     <div class="bag_assembles">
       <div class="tabName">
-        <h3>{{ $t("modal.makable") }}</h3>
+        <h3>{{ $t("modal.bagMakable") }}</h3>
       </div>
       <div v-if="Object.values(assembles).length > 0">
         <ul>
@@ -225,19 +225,19 @@
         this.$store.dispatch("onChangeShowItemImg");
       },
       dropItem(e) {
-        if (!window.confirm("버리시겠습니까?")) return;
+        if (!window.confirm(this.$t("noti.dropItem"))) return;
 
         this.$store.dispatch("dropItem", e.target.closest("li").dataset.bag);
         this.$store.dispatch("updateAssemblable");
       },
       clearBag(e) {
-        if (!window.confirm("전부 버리시겠습니까?")) return;
+        if (!window.confirm(this.$t("noti.dropAllItems"))) return;
 
         this.$store.dispatch("clearBag", e.target.closest("button").dataset.bag);
         this.$store.dispatch("updateAssemblable");
       },
       getAssemble(e) {
-        if (!window.confirm("조합하시겠습니까?")) return;
+        if (!window.confirm(this.$t("noti.craftItem"))) return;
         this.$store.dispatch(
           "getAssemble",
           this.assembles[e.target.closest("li").dataset.assemble]

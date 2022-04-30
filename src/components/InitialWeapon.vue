@@ -50,7 +50,7 @@
         if (this.$store.state.bagEquip.weapon.id === target) return;
 
         if (this.$store.state.bagEquip.weapon.id) {
-          if (!window.confirm("현재 무기가 교체됩니다")) return;
+          if (!window.confirm(this.$t("noti.changeWeapon"))) return;
         }
 
         this.$store.dispatch("setInitialWeapon", target);

@@ -1,9 +1,5 @@
 import { createStore } from "vuex";
-import {
-  disassembleGD,
-  disassembleWD,
-  disassembleAllWD,
-} from "~/utils/disassemble";
+import { disassembleGD, disassembleAllWD } from "~/utils/disassemble";
 import { searchById, equippable, weaponSort } from "~/utils/itemTable";
 import { pathFinder } from "~/utils/pathFinder";
 import { setSessionStorage } from "~/utils/useSessionStorage";
@@ -37,10 +33,10 @@ const store = createStore({
         pocket0: {
           id: "WF007",
           sort: "food",
-          name: "빵",
+          name: { kr: "빵", en: "Bread", ja: "パン", cn: "麵包" },
           img: "https://lh3.google.com/u/0/d/1XUn2lFRhkEaItjBUaW4Efriu7HrOUydi",
           count: 2,
-          limit: 5,
+          limit: 6,
           location: "pocket0",
           tobe: [
             "GF003",
@@ -57,10 +53,10 @@ const store = createStore({
         pocket1: {
           id: "WD002",
           sort: "drink",
-          name: "물",
+          name: { kr: "물", en: "Water", ja: "水", cn: "水" },
           img: "https://lh3.google.com/u/0/d/1oBJ2fniH9jpU1gUoI2QD1UY32xdS6GMU",
           count: 2,
-          limit: 5,
+          limit: 6,
           location: "pocket1",
           tobe: [
             "GM005",
@@ -211,7 +207,7 @@ const store = createStore({
       commit("setTargetItems", newTargetItems);
       commit("getMatGDs");
     },
-    setTargetItems({ commit, state }, newItems) {
+    setTargetItems({ commit }, newItems) {
       commit("setTargetItems", newItems);
       commit("getMatGDs");
     },
@@ -502,34 +498,38 @@ const store = createStore({
     },
     findRecommendPath({ commit, state }, needDropsInfo) {
       const { needDrops, total } = needDropsInfo;
-      const notDroppable = needDrops.filter((drop) => {
-        const dropInfo = searchById(drop);
-        return !dropInfo.location;
-      });
+
+      if (!needDrops) throw { message: "emptyTargets" };
+
+      const notDroppable = Object.keys(needDrops).filter(
+        (dropId) => !searchById(dropId)?.location
+      );
+
       if (notDroppable.length > 0) {
-        throw `${
-          searchById(notDroppable[0]).name
-        }(은)는 드랍되지 않는 아이템입니다`;
+        throw {
+          message: "noDropArea",
+          items: notDroppable.map((item) => searchById(item).name),
+        };
       }
-      const bagEquip = Object.values(state.bagEquip).reduce((acc, cur) => {
-        if (cur.id) acc.push(cur.id);
-        return acc;
-      }, []);
-      const bagInventory = Object.values(state.bagInventory).reduce(
-        (acc, cur) => {
-          if (cur.id) acc.push(cur.id);
-          return acc;
-        },
-        []
-      );
-      const bagTotal = Object.keys(
-        disassembleWD(bagEquip.concat(bagInventory)).dropMatId
-      );
+
+      const bagTotal = {};
+
+      Object.values(state.bagEquip).forEach((item) => {
+        if (item.id) bagTotal[item.id] = item.count;
+      });
+      Object.values(state.bagInventory).forEach((item) => {
+        if (item.id) {
+          bagTotal[item.id] = bagTotal[item.id]
+            ? bagTotal[item.id] + item.count
+            : item.count;
+        }
+      });
+
       const routes = pathFinder(state.customRoute, needDrops, bagTotal);
       if (routes.length > 0) {
         commit("setRecommendRoutes", { routes, total });
       } else {
-        throw "최단 루트를 발견하지 못했습니다. 혹은 이미 필요한 재료를 소지하고 있을 수도 있습니다.";
+        throw { message: "cannotFindRoute" };
       }
     },
   },

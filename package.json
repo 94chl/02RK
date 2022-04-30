@@ -1,14 +1,20 @@
 {
   "name": "02rk",
   "version": "1.0.0",
-  "description": "",
+  "description": "02RK is simulator of online PC game 'Eternal Return'",
   "main": "main.js",
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "eternal return",
+    "영원회귀",
+    "エターナルリターン",
+    "永恒轮回",
+    "永恆輪迴"
+  ],
+  "author": "yongrok",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.15.8",

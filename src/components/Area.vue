@@ -67,8 +67,7 @@
                 </button>
                 <span v-if="dropMats.dropMatObj[drop.id]">
                   {{
-                    dropMats.dropMatObj[drop.id] &&
-                    `(x${dropMats.dropMatObj[drop.id]})`
+                    dropMats.dropMatObj[drop.id] && `(x${needDrops[drop.id]})`
                   }}
                 </span>
               </li>
@@ -97,6 +96,7 @@
 
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
+  import { checkNeedsWithBags } from "~/utils/pathFinder";
 
   export default {
     data() {
@@ -130,6 +130,28 @@
       },
       customRoute() {
         return this.$store.state.customRoute;
+      },
+      bagDrops() {
+        const bagDrops = {};
+
+        Object.values(this.$store.state.bagEquip).forEach((item) => {
+          if (item.id) bagDrops[item.id] = item.count;
+        });
+        Object.values(this.$store.state.bagInventory).forEach((item) => {
+          if (item.id) {
+            bagDrops[item.id] = bagDrops[item.id]
+              ? bagDrops[item.id] + item.count
+              : item.count;
+          }
+        });
+        return bagDrops;
+      },
+      needDrops() {
+        const remains = checkNeedsWithBags(
+          this.dropMats?.dropMatObj,
+          this.bagDrops
+        );
+        return remains;
       },
     },
     methods: {

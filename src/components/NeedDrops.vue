@@ -6,13 +6,13 @@
     <div>
       <ul class="needDrops_list">
         <li
-          v-for="mat in dropMats.dropMatArr"
-          :key="`dropMats${mat.id}`"
-          :class="totalDrops.includes(mat.id) && 'hadItem'"
+          v-for="matId in Object.keys(needDrops)"
+          :key="`dropMats${matId}`"
+          :class="!needDrops[matId] && 'hadItem'"
         >
-          <span>{{ mat.name[language] }}</span>
-          <span :class="mat.count >= 3 && 'danger'">{{
-            `(x${mat.count})`
+          <span>{{ dropMatsInfo[matId].name[language] }}</span>
+          <span :class="dropMatsInfo[matId].count >= 3 && 'danger'">{{
+            `(x${dropMatsInfo[matId].count})`
           }}</span>
         </li>
       </ul>
@@ -22,7 +22,7 @@
 
 <script>
   import { areaData } from "~/utils/itemTable";
-  import { disassembleWD } from "~/utils/disassemble";
+  import { checkNeedsWithBags } from "~/utils/pathFinder";
 
   export default {
     components: {},
@@ -33,30 +33,29 @@
       dropMats() {
         return this.$store.state.matGDs;
       },
+      dropMatsInfo() {
+        const result = {};
+        this.$store.state.matGDs.dropMatArr.forEach((item) => {
+          result[item.id] = item;
+        });
+        return result;
+      },
       customRoute() {
         return this.$store.state.customRoute;
       },
       bagDrops() {
-        const bagEquip = Object.values(this.$store.state.bagEquip).reduce(
-          (acc, cur) => {
-            if (cur.id) acc.push(cur.id);
-            return acc;
-          },
-          []
-        );
-        const bagInventory = Object.values(this.$store.state.bagInventory).reduce(
-          (acc, cur) => {
-            if (cur.id) acc.push(cur.id);
-            return acc;
-          },
-          []
-        );
-        const bagDrops = Object.keys(
-          disassembleWD(bagEquip.concat(bagInventory)).dropMatId
-        ).reduce((acc, cur) => {
-          if (!acc.includes(cur)) acc.push(cur);
-          return acc;
-        }, []);
+        const bagDrops = {};
+
+        Object.values(this.$store.state.bagEquip).forEach((item) => {
+          if (item.id) bagDrops[item.id] = item.count;
+        });
+        Object.values(this.$store.state.bagInventory).forEach((item) => {
+          if (item.id) {
+            bagDrops[item.id] = bagDrops[item.id]
+              ? bagDrops[item.id] + item.count
+              : item.count;
+          }
+        });
         return bagDrops;
       },
       customRouteDrops() {
@@ -82,16 +81,19 @@
         return customRouteDrops;
       },
       totalDrops() {
-        const customRouteDrops = JSON.parse(
-          JSON.stringify(this.customRouteDrops)
+        const totalDrops = this.customRouteDrops.reduce((acc, cur) => {
+          const { drops } = cur;
+          drops.forEach((dropId) => !acc.includes(dropId) && acc.push(dropId));
+          return acc;
+        }, []);
+        return totalDrops;
+      },
+      needDrops() {
+        const remains = checkNeedsWithBags(
+          this.dropMats?.dropMatObj,
+          this.bagDrops
         );
-        const totalDrops = customRouteDrops.map((areaInfo) => {
-          this.bagDrops.forEach((drop) => {
-            if (!areaInfo.drops.includes(drop)) areaInfo.drops.push(drop);
-          });
-          return areaInfo;
-        });
-        return totalDrops[totalDrops.length - 1].drops;
+        return remains;
       },
     },
     methods: {},
@@ -119,7 +121,7 @@
         }
 
         .danger {
-          color: red;
+          color: orange;
           font-weight: 700;
         }
       }

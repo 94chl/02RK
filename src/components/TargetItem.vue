@@ -51,7 +51,7 @@
     },
     methods: {
       removeTargetItem(e) {
-        if (window.confirm("삭제하시겠습니까?")) {
+        if (window.confirm(this.$t("noti.removeTargetItem"))) {
           const newTargetItems = this.targetItems.filter(
             (_, index) => index != e.target.closest("li").dataset.index
           );
@@ -59,7 +59,7 @@
         }
       },
       removeAllTargetItem() {
-        if (window.confirm("전부 삭제하시겠습니까?")) {
+        if (window.confirm(this.$t("noti.removeAllTargetItems"))) {
           this.$store.dispatch("removeTargetItems", []);
         }
       },

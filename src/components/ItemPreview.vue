@@ -296,7 +296,6 @@
           this.$store.dispatch("findRecommendPath", needDropsInfo);
           this.error = { message: "" };
         } catch (e) {
-          console.log("err");
           this.error = e;
         }
         this.isInitial = false;

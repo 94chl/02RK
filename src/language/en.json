@@ -80,6 +80,7 @@
     "clearRoute": "Clear the route?",
     "changeWeapon": "Equipped weapon will be changed",
     "removeTargetItem": "Remove this item?",
-    "removeAllTargetItems": "Remove all items?"
+    "removeAllTargetItems": "Remove all items?",
+    "loadPreviousData": "There is a previous data in progress. Do you want to continue?"
   }
 }

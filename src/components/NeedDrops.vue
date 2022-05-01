@@ -98,7 +98,8 @@
       needDrops() {
         const remains = checkNeedsWithBags(
           this.dropMats?.dropMatObj,
-          this.bagDrops
+          this.bagDrops,
+          true
         );
         return remains;
       },

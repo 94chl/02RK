@@ -6,6 +6,17 @@ import store from "~/store/index"; // NOTE "/index.js" 생략 가능
 import { createI18n } from "vue-i18n";
 import { kr, en, ja, cn } from "./language";
 
+const language = navigator.language;
+const browserLanguage = language.includes("ko")
+  ? "kr"
+  : language.includes("ja")
+  ? "ja"
+  : language.includes("cn") || language.includes("zh")
+  ? "cn"
+  : "en";
+
+console.log(browserLanguage);
+
 const i18n = createI18n({
   locale: "kr",
   fallbackLocale: "en",

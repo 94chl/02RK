@@ -48,12 +48,15 @@ function checkAreaDrop(area, needs) {
 }
 
 // 필요 재료중 소지템, 공통드랍템 제거
-export function checkNeedsWithBags(needs, bag) {
+export function checkNeedsWithBags(needs, bag, checkCommon) {
   const result = JSON.parse(JSON.stringify(needs));
 
-  Object.keys(result).forEach((itemId) => {
-    if (areaData.A000.drop.includes(itemId)) result[itemId] = 0;
-  });
+  if (checkCommon) {
+    Object.keys(result).forEach((itemId) => {
+      if (areaData.A000.drop.includes(itemId)) result[itemId] = 0;
+    });
+  }
+
   Object.keys(bag).forEach((itemId) => {
     if (result[itemId])
       result[itemId] =
@@ -74,7 +77,7 @@ export function pathFinder(route, needsNow, bagNow) {
   const routeStack = [...route];
   const finishedRoute = [];
 
-  const needsObj = checkNeedsWithBags(needsNow, bagNow);
+  const needsObj = checkNeedsWithBags(needsNow, bagNow, true);
   const needs = Object.keys(needsObj).filter((itemId) => needsObj[itemId]);
 
   const hadNeeds = [];

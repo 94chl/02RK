@@ -80,6 +80,7 @@
     "clearRoute": "루트를 초기화하시겠습니까?",
     "changeWeapon": "현재 무기가 교체됩니다",
     "removeTargetItem": "삭제하시겠습니까?",
-    "removeAllTargetItems": "전부 삭제하시겠습니까?"
+    "removeAllTargetItems": "전부 삭제하시겠습니까?",
+    "loadPreviousData": "진행중이던 기록이 있습니다. 작업을 이어하시겠습니까?"
   }
 }

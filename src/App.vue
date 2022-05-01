@@ -46,11 +46,12 @@
     },
     methods: {},
     mounted() {
+      this.$store.dispatch("selectLanguage", this.$i18n.locale);
       const targetItems = getSessionStorage("02RK_targetItems", []);
       const customRoute = getSessionStorage("02RK_customRoute", []);
       if (
         (targetItems.length || customRoute.length) &&
-        window.confirm("진행중이던 기록이 있습니다. 작업을 이어하시겠습니까?")
+        window.confirm(this.$t("noti.loadPreviousData"))
       ) {
         this.$store.dispatch("setTargetItems", targetItems);
         this.$store.dispatch("setRoute", customRoute);

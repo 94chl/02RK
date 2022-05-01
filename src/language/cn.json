@@ -76,6 +76,7 @@
     "clearRoute": "確定要重置路徑嗎？",
     "changeWeapon": "現在換武器。",
     "removeTargetItem": "確定要刪除嗎？",
-    "removeAllTargetItems": "確定要全部刪除嗎？"
+    "removeAllTargetItems": "確定要全部刪除嗎？",
+    "loadPreviousData": "有正在進行中的之前數據。 確定要繼續作業嗎？"
   }
 }

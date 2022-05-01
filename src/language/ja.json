@@ -76,6 +76,7 @@
     "clearRoute": "ルートを初期化しますか。",
     "changeWeapon": "現在の武器が入れ替わります。",
     "removeTargetItem": "このアイテムを消しますか。",
-    "removeAllTargetItems": "全てのアイテムを消しますか。"
+    "removeAllTargetItems": "全てのアイテムを消しますか。",
+    "loadPreviousData": "進行中の以前のデータがあります。 作業を続けますか？"
   }
 }

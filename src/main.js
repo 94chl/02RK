@@ -11,14 +11,12 @@ const browserLanguage = language.includes("ko")
   ? "kr"
   : language.includes("ja")
   ? "ja"
-  : language.includes("cn") || language.includes("zh")
+  : language.includes("zh")
   ? "cn"
   : "en";
 
-console.log(browserLanguage);
-
 const i18n = createI18n({
-  locale: "kr",
+  locale: browserLanguage,
   fallbackLocale: "en",
   messages: { kr, en, ja, cn },
 });

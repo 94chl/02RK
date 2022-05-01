@@ -163,12 +163,18 @@ export function pathFinder(route, needsNow, bagNow) {
         routeT.push(startT[i].id);
         if (shortestRoute > routeT.length) {
           shortestRoute = routeT.length;
-          const routeName = routeT.map((areaId) => areaData[areaId].name);
+          const routeInfo = routeT.map((areaId) => ({
+            id: areaId,
+            name: areaData[areaId].name,
+          }));
           finishedRoute.splice(0);
-          finishedRoute.push(routeName);
+          finishedRoute.push(routeInfo);
         } else if (shortestRoute == routeT.length) {
-          const routeName = routeT.map((areaId) => areaData[areaId].name);
-          finishedRoute.push(routeName);
+          const routeInfo = routeT.map((areaId) => ({
+            id: areaId,
+            name: areaData[areaId].name,
+          }));
+          finishedRoute.push(routeInfo);
         }
       } else if (needsT.length > 0 && dest.length > 0) {
         routeT.push(startT[i].id);
@@ -185,6 +191,5 @@ export function pathFinder(route, needsNow, bagNow) {
   } //shortRoute
 
   shortRoute(needs, [], pathInfo, mapInfo, startPoint, routeStack);
-
   return finishedRoute;
 }

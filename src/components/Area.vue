@@ -20,8 +20,8 @@
             <button class="areaBtn" @click="setRoute">
               <span class="areaName">{{ areaInfo[area].name[language] }}</span>
               <div class="areaInfoIcon">
-                <span v-if="customRoute.includes(area)" class="pickedArea">
-                  {{ customRoute.indexOf(area) + 1 }}
+                <span v-if="customRouteId.includes(area)" class="pickedArea">
+                  {{ customRouteId.indexOf(area) + 1 }}
                 </span>
                 <span v-if="areaInfo[area].resurrection" class="resurrection">
                   <i class="fas fa-cross"></i>
@@ -131,6 +131,9 @@
       customRoute() {
         return this.$store.state.customRoute;
       },
+      customRouteId() {
+        return this.$store.state.customRoute.map((route) => route.id);
+      },
       bagDrops() {
         const bagDrops = {};
 
@@ -160,14 +163,22 @@
           !this.areaInfo[e.target.closest("li").dataset.areaid].show;
       },
       setRoute(e) {
-        const pickedArea = e.target.closest("li").dataset.areaid;
+        const pickedAreaId = e.target.closest("li").dataset.areaid;
+        const pickedArea = {
+          id: pickedAreaId,
+          name: this.areaInfo[pickedAreaId].name,
+        };
         if (
-          pickedArea === "A000" ||
+          pickedAreaId === "A000" ||
           e.target.closest("button").className.includes("toggleDropsBtn")
         )
           return;
-        if (this.customRoute.includes(pickedArea)) {
-          const newRoute = this.customRoute.filter((area) => area !== pickedArea);
+        if (this.customRouteId.includes(pickedAreaId)) {
+          const newRoute = this.customRouteId.reduce((acc, areaId) => {
+            if (areaId !== pickedAreaId)
+              acc.push({ id: areaId, name: this.areaInfo[pickedAreaId].name });
+            return acc;
+          }, []);
           this.$store.dispatch("setRoute", newRoute);
         } else {
           this.$store.dispatch("addRoute", pickedArea);

@@ -87,17 +87,26 @@
       },
       customRouteDrops() {
         const customRouteDrops = [
-          "A000",
+          {
+            id: "A000",
+            name: {
+              kr: "공통",
+              en: "common",
+              ja: "共通",
+              cn: "共通",
+            },
+          },
           ...this.$store.state.customRoute,
-        ].reduce((acc, areaId, index) => {
+        ].reduce((acc, cur, index) => {
           const newDrops =
             index > 0
-              ? areaData[areaId].drop.filter(
+              ? areaData[cur.id].drop.filter(
                   (item) => !acc[acc.length - 1].drops.includes(item)
                 )
-              : areaData[areaId].drop;
+              : areaData[cur.id].drop;
           acc.push({
-            areaId: areaId,
+            areaId: cur.id,
+            name: cur.name,
             drops:
               index > 0 ? [...acc[acc.length - 1].drops, ...newDrops] : newDrops,
           });

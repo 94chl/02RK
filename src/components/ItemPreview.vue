@@ -145,7 +145,7 @@
                   :key="route + areaIndex"
                   class="routeButton_area"
                 >
-                  {{ area[language] }}
+                  {{ area.name[language] }}
                 </span>
               </button>
             </li>
@@ -272,13 +272,6 @@
       recommendRoutes() {
         return this.$store.state.recommendRoutes;
       },
-      areaName2Id() {
-        const areaInfo = {};
-        Object.entries(areaData).forEach(([id, data]) => {
-          areaInfo[data.name] = id;
-        });
-        return areaInfo;
-      },
     },
     methods: {
       changeItem(e) {
@@ -318,9 +311,9 @@
       setCustomRoute(e) {
         const target =
           this.recommendRoutes[e.target.closest("li").dataset.routeIndex];
-        const newRoute = target.map((area) => this.areaName2Id[area]);
+
         if (window.confirm(this.$t("noti.applyRoute")))
-          this.$store.dispatch("setRoute", newRoute);
+          this.$store.dispatch("setRoute", target);
       },
     },
     watch: {

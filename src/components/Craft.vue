@@ -97,7 +97,7 @@
             class="area"
           >
             <div class="area_name">
-              <div>{{ areaInfo[area].name[language] }}</div>
+              <div>{{ areaInfo[area.id].name[language] }}</div>
             </div>
             <div v-if="areaWithTargetItems[index]" class="area_items">
               <ul>
@@ -198,25 +198,32 @@
         return bagDrops;
       },
       customRouteDrops() {
-        const customRouteDrops = ["A000", ...this.customRoute].reduce(
-          (acc, areaId, index) => {
-            const newDrops =
-              index > 0
-                ? areaData[areaId].drop.filter(
-                    (item) => !acc[acc.length - 1].drops.includes(item)
-                  )
-                : areaData[areaId].drop;
-            acc.push({
-              area: areaId,
-              drops:
-                index > 0
-                  ? [...acc[acc.length - 1].drops, ...newDrops]
-                  : newDrops,
-            });
-            return acc;
+        const customRouteDrops = [
+          {
+            id: "A000",
+            name: {
+              kr: "공통",
+              en: "common",
+              ja: "共通",
+              cn: "共通",
+            },
           },
-          []
-        );
+          ...this.$store.state.customRoute,
+        ].reduce((acc, cur, index) => {
+          const newDrops =
+            index > 0
+              ? areaData[cur.id].drop.filter(
+                  (item) => !acc[acc.length - 1].drops.includes(item)
+                )
+              : areaData[cur.id].drop;
+          acc.push({
+            areaId: cur.id,
+            name: cur.name,
+            drops:
+              index > 0 ? [...acc[acc.length - 1].drops, ...newDrops] : newDrops,
+          });
+          return acc;
+        }, []);
         return customRouteDrops;
       },
       targetPool() {

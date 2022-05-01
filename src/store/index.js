@@ -524,8 +524,8 @@ const store = createStore({
             : item.count;
         }
       });
-
-      const routes = pathFinder(state.customRoute, needDrops, bagTotal);
+      const customRoute = state.customRoute.map((route) => route.id);
+      const routes = pathFinder(customRoute, needDrops, bagTotal);
       if (routes.length > 0) {
         commit("setRecommendRoutes", { routes, total });
       } else {

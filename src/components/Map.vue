@@ -281,7 +281,8 @@
               :points="
                 customRoute
                   .map(
-                    (route) => `${routePoint[route].x},${routePoint[route].y}`
+                    (route) =>
+                      `${routePoint[route.id].x},${routePoint[route.id].y}`
                   )
                   .join(' ')
               "

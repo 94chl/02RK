@@ -191,5 +191,6 @@ export function pathFinder(route, needsNow, bagNow) {
   } //shortRoute
 
   shortRoute(needs, [], pathInfo, mapInfo, startPoint, routeStack);
+
   return finishedRoute;
 }

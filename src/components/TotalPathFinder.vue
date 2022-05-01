@@ -37,7 +37,7 @@
               :key="route + areaIndex"
               class="routeButton_area"
             >
-              {{ area[language] }}
+              {{ area.name[language] }}
             </span>
           </button>
         </li>

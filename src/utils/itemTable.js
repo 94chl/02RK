@@ -739,12 +739,6 @@ export const itemOptions = {
     ja: "チャージドストライク",
     cn: "致命",
   },
-  uniq014: {
-    kr: "충전 - 섬광",
-    en: "Burden: Magnetic Midnight",
-    ja: "チャージ - 閃光",
-    cn: "充能 - 闪光",
-  },
   uniq026: {
     kr: "충전 - 철환",
     en: "Burden: Lead Shell",
@@ -787,23 +781,35 @@ export const itemOptions = {
     ja: "迅速 - ルドラの短剣",
     cn: "神速 - 魯德拉的短劍",
   },
+  buff002: {
+    kr: "신속 - 플라즈마",
+    en: "Streamlined: Charge Carrier",
+    ja: "迅速 - プラズマ",
+    cn: "神速 - 等離子",
+  },
   buff003: {
     kr: "신속 - 산들바람",
     en: "Streamlined: Zephyr",
     ja: "迅速 - そよ風",
     cn: "神速 - 微風",
   },
-  buff002: {
-    kr: "블레싱:코스믹파워",
-    en: "Blessing: Cosmic Efflux",
-    ja: "祝福 : コスモパワー",
-    cn: "祝福：蒼穹之力",
-  },
   buff004: {
     kr: "열정",
     en: "Vigor",
     ja: "情熱",
     cn: "热情",
+  },
+  buff005: {
+    kr: "블레싱:코스믹파워",
+    en: "Blessing: Cosmic Efflux",
+    ja: "祝福 : コスモパワー",
+    cn: "祝福：蒼穹之力",
+  },
+  buff006: {
+    kr: "저주",
+    en: "Primordial Hex",
+    ja: "呪い",
+    cn: "詛咒",
   },
   active001: {
     kr: "가속",

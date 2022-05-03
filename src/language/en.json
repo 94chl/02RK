@@ -3,7 +3,7 @@
     "selectItem": "Select Item",
     "targetItem": "Target Item",
     "neededDropItem": "Need Item",
-    "customRoute": "Custom Route",
+    "customRoute": "Custom Plan",
     "areas": "Area"
   },
   "common": {
@@ -19,7 +19,7 @@
     "bagMakable": "Item can be crafted",
     "equip": "Equip",
     "status": "Stats",
-    "recommendRoute": "Recommend routes for target item",
+    "recommendRoute": "Recommend plans for target item",
     "craft": "Can be crafted",
     "commonDrop1": "Branch, Stone: Collect",
     "commonDrop2": "Meat: Chicken, Boar, Wolf, Bear",

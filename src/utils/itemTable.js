@@ -703,12 +703,6 @@ export const itemOptions = {
     ja: "セカンドウインド - 血の契約",
     cn: "逆流 - 血之契約",
   },
-  uniq007: {
-    kr: "신속 - 루드라의 단검",
-    en: "Streamlined: Rudra Embodied",
-    ja: "迅速 - ルドラの短剣",
-    cn: "神速 - 魯德拉的短劍",
-  },
   uniq018: {
     kr: "신속 - 산들바람",
     en: "Streamlined: Zephyr",
@@ -722,6 +716,12 @@ export const itemOptions = {
     cn: "神速 - 等離子",
   },
   uniq020: {
+    kr: "신속 - 루드라의 단검",
+    en: "Streamlined: Rudra Embodied",
+    ja: "迅速 - ルドラの短剣",
+    cn: "神速 - 魯德拉的短劍",
+  },
+  uniq023: {
     kr: "열정",
     en: "Vigor",
     ja: "情熱",

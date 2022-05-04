@@ -688,7 +688,7 @@ export const itemOptions = {
   uniq015: {
     kr: "세컨드 윈드-성전",
     en: "Second Wind: Crusade",
-    ja: "カンドウインド - 聖伝",
+    ja: "セカンドウインド - 聖伝",
     cn: "逆流 - 聖戰",
   },
   uniq016: {

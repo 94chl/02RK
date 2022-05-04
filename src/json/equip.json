@@ -467,7 +467,10 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
             "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
-            "ja": [],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "（近）40％／（遠）30％"
+            ],
             "cn": []
           },
           "value": 0.4
@@ -805,7 +808,10 @@
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
               "Damage: 4.5%(M)/3%(R) of User's Max HP"
             ],
-            "ja": [],
+            "ja": [
+              "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージを与えます。",
+              "ダメージ：最大体力の4.5％（近）／3％（遠）"
+            ],
             "cn": []
           },
           "value": 0.045
@@ -891,7 +897,11 @@
               "The temporal anomaly is negating damage and effects of the next hostile skill or trap",
               "The anomaly then disappears, returning after 25 seconds"
             ],
-            "ja": [],
+            "ja": [
+              "屈折のマントを装備します。",
+              "屈折のマントは敵が自分に与える次のスキルまたはトラップのダメージと効果を一度保護してから消えます。",
+              "25秒後に再生成されます。"
+            ],
             "cn": []
           },
           "value": 1
@@ -935,7 +945,14 @@
               "HP Recovery on you is (M: 15%, R: 8%) more effective for 8 seconds",
               "Cooldown: 70s"
             ],
-            "ja": [],
+            "ja": [
+              "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
+              "すべてのデバフを解除",
+              "1.5秒間150+キャラクターレベル*10のシールドを獲得",
+              "8秒間攻撃力が10増加",
+              "（近）15％／（遠）8％の受ける回復量が増加",
+              "クールダウン：70秒"
+            ],
             "cn": []
           },
           "value": 150
@@ -992,7 +1009,10 @@
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
               "Damage: 5.5%(M)/4%(R) of User's Max HP"
             ],
-            "ja": [],
+            "ja": [
+              "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージを与えます。",
+              "ダメージ：最大体力の5.5％（近）／4％（遠）"
+            ],
             "cn": []
           },
           "value": 0.055
@@ -1339,7 +1359,12 @@
               "Your skill amplification is increased by 12% for 6 seconds",
               "Cooldown: 80s"
             ],
-            "ja": [],
+            "ja": [
+              "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
+              "1.5秒間135+キャラクターレベル*8のシールドを獲得",
+              "6秒間スキル増幅が12％増加",
+              "クールダウン：80秒"
+            ],
             "cn": []
           },
           "value": 135
@@ -1542,7 +1567,12 @@
               "Taking 700 or more damage over 3 seconds causes 150 damage to nearby enemies",
               "Cooldown: 3s"
             ],
-            "ja": [],
+            "ja": [
+              "基本攻撃から受けたダメージの4.5％を攻撃者に固定ダメージで返します。",
+              "40％(近)／30％(遠)の治癒減少効果を与えます。",
+              "3秒間累積して700のダメージを受けると、周りに150のダメージを与えます。",
+              "クールダウン：3秒"
+            ],
             "cn": []
           },
           "value": 0.045
@@ -1667,7 +1697,12 @@
               "Damage: equivalent to 10%(M)/8%(R) of the enemy's max HP",
               "Cooldown: 2s"
             ],
-            "ja": [],
+            "ja": [
+              "スキルを使用すると意念をチャージします。",
+              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージを与えます。",
+              "ダメージ：敵最大体力の10％",
+              "クールダウン: 2秒"
+            ],
             "cn": []
           },
           "value": 0.1
@@ -1970,7 +2005,10 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
             "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
-            "ja": [],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "（近）40％／（遠）30％"
+            ],
             "cn": []
           },
           "value": 0.4
@@ -2008,7 +2046,12 @@
               "Taking 600 or more damage over 3 seconds causes 600 damage to nearby enemies",
               "Cooldown: 2s"
             ],
-            "ja": [],
+            "ja": [
+              "基本攻撃から受けたダメージの4.5％を攻撃者に固定ダメージで返します。",
+              "40％(近)／30％(遠)の治癒減少効果を与えます。",
+              "4秒間累積して600のダメージを受けると、周りに150のダメージを与えます。",
+              "クールダウン：2秒"
+            ],
             "cn": []
           },
           "value": 0.045
@@ -2386,7 +2429,11 @@
               "The temporal anomaly is negating damage and effects of the next hostile skill or trap",
               "The anomaly then disappears, returning after 25 seconds"
             ],
-            "ja": [],
+            "ja": [
+              "屈折のマントを装備します。",
+              "屈折のマントは敵が自分に与える次のスキルまたはトラップのダメージと効果を一度保護してから消えます。",
+              "25秒後に再生成されます。"
+            ],
             "cn": []
           },
           "value": 1
@@ -2753,7 +2800,9 @@
             "en": [
               "Basic attacks reduce target's healing received by 40%(M)/30%(R)"
             ],
-            "ja": [],
+            "ja": [
+              "基本攻撃を受けた対象の治癒効果が減少：40％（近）／30％（遠）"
+            ],
             "cn": []
           },
           "value": 0.4
@@ -2822,7 +2871,9 @@
           "detail": {
             "kr": ["군중제어 효과 지속 시간 15% 감소"],
             "en": ["Reduces crowd control effects by 15%"],
-            "ja": [],
+            "ja": [
+              "制圧、エアボーン、ノックバック、捕まりを除外したデバフの持続時間が15%減少"
+            ],
             "cn": []
           },
           "value": 0.15
@@ -2927,7 +2978,9 @@
           "detail": {
             "kr": ["군중제어 효과 지속 시간 25% 감소"],
             "en": ["Reduces crowd control effects by 25%"],
-            "ja": [],
+            "ja": [
+              "制圧、エアボーン、ノックバック、捕まりを除外したデバフの持続時間が25%減少"
+            ],
             "cn": []
           },
           "value": 0.25
@@ -3321,7 +3374,10 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
             "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
-            "ja": [],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "（近）40％／（遠）30％"
+            ],
             "cn": []
           },
           "value": 0.4
@@ -3422,7 +3478,10 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
             "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
-            "ja": [],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "（近）40％／（遠）30％"
+            ],
             "cn": []
           },
           "value": 0.4
@@ -3531,7 +3590,10 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
             "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
-            "ja": [],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "（近）40％／（遠）30％"
+            ],
             "cn": []
           },
           "value": 0.4
@@ -3657,7 +3719,12 @@
               "Basic attacks consume all stacks, dealing up to 100 cellular damage",
               "Melee: At max stacks, your next basic attack slows enemies by 20% for 2 seconds"
             ],
-            "ja": [],
+            "ja": [
+              "移動するたびに[軽い足取り]を最大20mまで重畳して獲得",
+              "重畳によって移動速度が最大0.06まで増加します",
+              "基本攻撃ダメージを与える場合、重畳をすべて消費して最大100の固有ダメージを与えます",
+              "近距離：最大重畳状態でダメージを受けた対象の移動速度を2秒間20％減少させます"
+            ],
             "cn": []
           },
           "value": 100
@@ -3735,7 +3802,14 @@
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ],
-            "ja": [],
+            "ja": [
+              "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
+              "＜呪い＞の状態から解除されると固定ダメージを受けます。",
+              "ダメージ：45+スキル増幅*1",
+              "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
+              "基本攻撃時1秒減少",
+              "クールダウン：2秒"
+            ],
             "cn": []
           },
           "value": 45
@@ -3744,7 +3818,7 @@
           "detail": {
             "kr": ["이동속도: 6% 감소", "지속시간: 4초"],
             "en": ["Slowing by 6%", "Duration: 4s"],
-            "ja": [],
+            "ja": ["移動速度：6％減少", "4秒間"],
             "cn": []
           },
           "value": 0.06
@@ -3901,7 +3975,12 @@
               "Damage: equivalent to Skill Amplification*2.5(M)/1.5(R)",
               "Cooldown: 2s"
             ],
-            "ja": [],
+            "ja": [
+              "スキルを使用すると意念をチャージします。",
+              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージを与えます。",
+              "ダメージ：スキル増幅*2.5（近）／1.5（遠）",
+              "クールダウン: 2秒"
+            ],
             "cn": []
           },
           "value": 2.5
@@ -3949,7 +4028,10 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
             "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
-            "ja": [],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "（近）40％／（遠）30％"
+            ],
             "cn": []
           },
           "value": 0.4
@@ -3968,7 +4050,12 @@
               "Basic attacks consume all stacks, dealing up to 200 cellular damage",
               "Melee: At max stacks, your next basic attack slows enemies by 30% for 2 seconds"
             ],
-            "ja": [],
+            "ja": [
+              "移動するたびに[軽い足取り]を最大20mまで重畳して獲得",
+              "重畳によって移動速度が最大0.15まで増加します",
+              "基本攻撃ダメージを与える場合、重畳をすべて消費して最大200の固有ダメージを与えます",
+              "近距離：最大重畳状態でダメージを受けた対象の移動速度を2秒間25％減少させます"
+            ],
             "cn": []
           },
           "value": 200
@@ -4007,7 +4094,12 @@
               "Damage: equivalent to Skill Amplification*2.5(M)/1.5(R)",
               "Cooldown: 2s"
             ],
-            "ja": [],
+            "ja": [
+              "スキルを使用すると意念をチャージします。",
+              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージを与えます。",
+              "ダメージ：スキル増幅*2.5（近）／1.5（遠）",
+              "クールダウン: 2秒"
+            ],
             "cn": []
           },
           "value": 0.1

@@ -235,7 +235,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -267,7 +267,11 @@
               "기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급",
               "쿨다운: 4초"
             ],
-            "en": [],
+            "en": [
+              "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Rudra Embodied>",
+              "Excludes multiple hit effects.",
+              "Cooldown: 4s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -276,7 +280,11 @@
         "buff001": {
           "detail": {
             "kr": ["공격력: 21% 증가", "이동 속도: 24% 증가", "지속시간: 3초"],
-            "en": [],
+            "en": [
+              "Attack Power: +21%",
+              "Movement speed: +24%",
+              "Duration: 3 seconds"
+            ],
             "ja": [],
             "cn": []
           },
@@ -304,7 +312,10 @@
         "uniq025": {
           "detail": {
             "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 4초"],
-            "en": [],
+            "en": [
+              "Your next basic attack gains a bonus critical strike chance",
+              "Cooldown: 4s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -615,7 +626,15 @@
               "8초 동안 받는 회복 15% 증가",
               "쿨다운: 80초"
             ],
-            "en": [],
+            "en": [
+              "When dropping below 40% HP after taking damage from an enemy player",
+              "You are cleansed of all debuffs and crowd control effects",
+              "You gain a (150 + Character Level*10) HP shield for 2.5 seconds",
+              "50% Tenacity for 8 seconds",
+              "15 Attack Power for 8 seconds",
+              "HP Recovery on you is 15% more effective for 8 seconds.",
+              "Cooldown: 80s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -648,7 +667,11 @@
               "대상은 2초간 30% 둔화",
               "쿨다운: 6초"
             ],
-            "en": [],
+            "en": [
+              "Your next basic attack deals 80 extra cellular damage",
+              "Slows your target by 30% for 2 seconds",
+              "Cooldown: 6s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -679,7 +702,10 @@
               "스킬 공격에 적중당한 적은 0.56초간 이동속도 99% 감소",
               "쿨다운: 4초"
             ],
-            "en": [],
+            "en": [
+              "Dealing damage to an enemy with a skill slows them by 99% for 0.56 seconds",
+              "Cooldown: 4s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -728,9 +754,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.2"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.2"],
+            "ja": ["+0.2"],
+            "cn": ["+0.2"]
           },
           "value": 0.2
         }
@@ -792,9 +818,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
           "value": 0.5
         }
@@ -859,9 +885,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
           "value": 0.5
         }
@@ -887,9 +913,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.75"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.75"],
+            "ja": ["+0.75"],
+            "cn": ["+0.75"]
           },
           "value": 0.75
         }
@@ -942,7 +968,11 @@
               "현재 체력의 7%의 고유피해",
               "열정 버프 1스택 획득"
             ],
-            "en": [],
+            "en": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 7% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds."
+            ],
             "ja": [],
             "cn": []
           },
@@ -951,12 +981,17 @@
         "buff004": {
           "detail": {
             "kr": [
+              "1스택 당 효과 적용",
               "공격 속도: 8% 증가",
               "지속 시간: 5초",
               "최대 3스택",
               "최대 스택: 공격력 +20, 이동속도 +0.2"
             ],
-            "en": [],
+            "en": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 8%.",
+              "At 3 stacks, you gain extra 20 Attack Power and 0.2 Movement speed."
+            ],
             "ja": [],
             "cn": []
           },
@@ -989,7 +1024,12 @@
               "다음 기본 공격 시 스택을 모두 소모하여 최대 120의 고유피해",
               "최대 스택 공격 시 2초간 상대의 이동 속도 25% 감소"
             ],
-            "en": [],
+            "en": [
+              "Gain a stack every move, up to 24m.",
+              "Your movement speed will increase by up to 0.08, based on how many stacks you have.",
+              "Basic attacks consume all stacks, dealing up to 120 cellular damage.",
+              "At max stacks, your next basic attack slows enemies by 25% for 2 seconds."
+            ],
             "ja": [],
             "cn": []
           },
@@ -1017,7 +1057,7 @@
         "uniq011": {
           "detail": {
             "kr": ["군중제어 효과 지속 시간 30% 감소"],
-            "en": [],
+            "en": ["Reduces crowd control effects by 30%"],
             "ja": [],
             "cn": []
           },
@@ -1127,7 +1167,9 @@
             "kr": [
               "기본 공격 시, 대상의 치유 효과가 4초간 40%(근)/30%(원) 감소"
             ],
-            "en": [],
+            "en": [
+              "Basic attacks reduce target's healing received by 40%(M)/30%(R)"
+            ],
             "ja": [],
             "cn": []
           },
@@ -1196,7 +1238,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -1224,9 +1266,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+1"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+1"],
+            "ja": ["+1"],
+            "cn": ["+1"]
           },
           "value": 1
         }
@@ -1259,7 +1301,14 @@
               "기본 공격 시 저주 대기시간이 1초 감소",
               "쿨다운: 2초"
             ],
-            "en": [],
+            "en": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires.",
+              "Damage: 85 + Skill Amplification*1.5 + Extra Skill Damage*1",
+              "Targets cannot be hexed again for 8 seconds.",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown : 2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -1268,7 +1317,7 @@
         "buff006": {
           "detail": {
             "kr": ["이동속도: 8% 감소", "지속시간: 4초"],
-            "en": [],
+            "en": ["Slowing by 8%", "Duration: 4s"],
             "ja": [],
             "cn": []
           },
@@ -1590,7 +1639,11 @@
               "현재 체력의 2%의 고유피해",
               "열정 버프 1스택 획득"
             ],
-            "en": [],
+            "en": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 2% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds."
+            ],
             "ja": [],
             "cn": []
           },
@@ -1599,12 +1652,17 @@
         "buff004": {
           "detail": {
             "kr": [
+              "1스택 당 효과 적용",
               "공격 속도: 10% 증가",
               "지속 시간: 5초",
               "최대 4스택",
               "최대 스택: 공격력 +10"
             ],
-            "en": [],
+            "en": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 10%.",
+              "At 4 stacks, you gain extra 10 Attack Power"
+            ],
             "ja": [],
             "cn": []
           },
@@ -1694,7 +1752,10 @@
               "스킬 공격에 적중당한 적은 2초간 이동속도 20%, 공격속도 10% 감소",
               "쿨다운: 4초"
             ],
-            "en": [],
+            "en": [
+              "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 10% for 2 seconds",
+              "Cooldown: 4s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -1870,7 +1931,11 @@
               "기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급",
               "쿨다운: 7초"
             ],
-            "en": [],
+            "en": [
+              "Hitting a single enemy with a basic attack or skill 2 times within 4 seconds grants you <Zephyr>",
+              "Excludes multiple hit effects.",
+              "Cooldown: 7s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -1884,7 +1949,12 @@
               "이동 속도: 20% 증가",
               "지속 시간: 3초"
             ],
-            "en": [],
+            "en": [
+              "Shield: 200",
+              "Movement speed: +20%",
+              "Attack speed: 40%",
+              "Duration: 3 seconds"
+            ],
             "ja": [],
             "cn": []
           },
@@ -1918,7 +1988,14 @@
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
             ],
-            "en": [],
+            "en": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires.",
+              "Damage: 50 + Skill Amplification*2",
+              "Targets cannot be hexed again for 8 seconds.",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown : 2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -1927,7 +2004,7 @@
         "buff006": {
           "detail": {
             "kr": ["이동속도: 10% 감소", "지속시간: 4초"],
-            "en": [],
+            "en": ["Slowing by 10%", "Duration: 4s"],
             "ja": [],
             "cn": []
           },
@@ -1993,7 +2070,9 @@
         "uniq013": {
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": [
+              "Basic attacks reduce target's healing received by 40%(M)/30%(R)"
+            ],
             "ja": [],
             "cn": []
           },
@@ -2091,7 +2170,9 @@
         "uniq013": {
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": [
+              "Basic attacks reduce target's healing received by 40%(M)/30%(R)"
+            ],
             "ja": [],
             "cn": []
           },
@@ -2159,7 +2240,10 @@
         "uniq025": {
           "detail": {
             "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 3초"],
-            "en": [],
+            "en": [
+              "Your next basic attack gains a bonus critical strike chance",
+              "Cooldown: 3s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -2195,7 +2279,14 @@
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
             ],
-            "en": [],
+            "en": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires.",
+              "Damage: 50 + Skill Amplification*1.35",
+              "Targets cannot be hexed again for 8 seconds.",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown : 2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -2204,7 +2295,7 @@
         "buff006": {
           "detail": {
             "kr": ["이동속도: 6% 감소", "지속시간: 4초"],
-            "en": [],
+            "en": ["Slowing by 6%", "Duration: 4s"],
             "ja": [],
             "cn": []
           },
@@ -2232,9 +2323,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+1"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+1"],
+            "ja": ["+1"],
+            "cn": ["+1"]
           },
           "value": 1
         }
@@ -2347,7 +2438,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -2422,7 +2513,11 @@
               "기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급",
               "쿨다운: 5초"
             ],
-            "en": [],
+            "en": [
+              "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Charge Carrier>",
+              "Excludes multiple hit effects.",
+              "Cooldown: 5s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -2431,7 +2526,11 @@
         "buff002": {
           "detail": {
             "kr": ["이동속도: 레벨*1% 증가", "보호막: 105", "지속시간: 2초"],
-            "en": [],
+            "en": [
+              "Shield: 105",
+              "Movement speed: +(Level*1)%",
+              "Duration: 2 seconds"
+            ],
             "ja": [],
             "cn": []
           },
@@ -2460,10 +2559,15 @@
           "detail": {
             "kr": [
               "스킬 사용 후, 4초 이내에 다음 기본 공격은 추가 피해",
-              "피해량: 대상 최대 체력의 10%(근)",
+              "피해량: 대상 최대 체력의 10%",
               "쿨다운: 2초"
             ],
-            "en": [],
+            "en": [
+              "Using a skill causes a Biotic Infusion.",
+              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
+              "Damage: equivalent to 10% of the enemy's max HP",
+              "Cooldown: 2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -2674,7 +2778,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -2701,9 +2805,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
           "value": 0.5
         }
@@ -2813,7 +2917,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -2883,9 +2987,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.75"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.75"],
+            "ja": ["+0.75"],
+            "cn": ["+0.75"]
           },
           "value": 0.75
         }
@@ -2916,7 +3020,12 @@
               "피해량: 캐릭터 레벨*8 + 스킬 증폭*1",
               "쿨다운: 5초"
             ],
-            "en": [],
+            "en": [
+              "Your next basic attack deals extra cellular damage",
+              "Damage: Level*8 + Skill Amplification*1",
+              "Slows your target by 20% for 1 second",
+              "Cooldown: 5s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -3245,9 +3354,9 @@
         "uniq007": {
           "detail": {
             "kr": ["+5%"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+5%"],
+            "ja": ["+5%"],
+            "cn": ["+5%"]
           },
           "value": 0.05
         }
@@ -3295,7 +3404,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -3324,9 +3433,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
           "value": 0.5
         },
@@ -3381,7 +3490,14 @@
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
             ],
-            "en": [],
+            "en": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires.",
+              "Damage: 100 + Skill Amplification*1.25",
+              "Targets cannot be hexed again for 8 seconds.",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown : 2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -3390,7 +3506,7 @@
         "buff006": {
           "detail": {
             "kr": ["이동속도: 10% 감소", "지속시간: 4초"],
-            "en": [],
+            "en": ["Slowing by 10%", "Duration: 4s"],
             "ja": [],
             "cn": []
           },
@@ -3399,9 +3515,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+1"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+1"],
+            "ja": ["+1"],
+            "cn": ["+1"]
           },
           "value": 1
         }
@@ -3517,7 +3633,9 @@
         "uniq013": {
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": [
+              "Basic attacks reduce target's healing received by 40%(M)/30%(R)"
+            ],
             "ja": [],
             "cn": []
           },
@@ -3679,7 +3797,9 @@
         "uniq013": {
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": [
+              "Basic attacks reduce target's healing received by 40%(M)/30%(R)"
+            ],
             "ja": [],
             "cn": []
           },
@@ -3708,7 +3828,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -3982,9 +4102,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.75"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.75"],
+            "ja": ["+0.75"],
+            "cn": ["+0.75"]
           },
           "value": 0.75
         },
@@ -4035,7 +4155,11 @@
               "충전 스택에 따라 최대 0.12의 이동속도 추가",
               "다음 기본 공격 시 스택을 모두 소모하여 최대 120의 고유피해"
             ],
-            "en": [],
+            "en": [
+              "Gain a stack every move, up to 24m.",
+              "Your movement speed will increase by up to 0.12, based on how many stacks you have.",
+              "Basic attacks consume all stacks, dealing up to 120 cellular damage."
+            ],
             "ja": [],
             "cn": []
           },
@@ -4204,11 +4328,15 @@
           "detail": {
             "kr": [
               "마지막 탄환으로 가하는 기본 공격은 스킬 피해를 입힘",
-              "피해량: 공격력 + 스킬 증폭*2 + 스킬 공격 추가 피해*200% + 상대 최대 체력의 8%",
+              "피해량: 공격력 + 스킬 증폭*2 + 스킬 공격 추가 피해*2 + 상대 최대 체력의 8%",
               "마탄 고유 효과로 입힌 피해의 66%만큼 체력 회복",
               "치유 감소 등의 적중 시 효과 적용X"
             ],
-            "en": [],
+            "en": [
+              "Basic Attacks using the last bullet of your ammo deals extra cellular damage",
+              "Damage: Attack Power + Skill Amplification*2 + Extra Skill Damage*2 + 8% of enemy's max HP",
+              "Heal for 66% of damage dealt"
+            ],
             "ja": [],
             "cn": []
           },
@@ -4305,9 +4433,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.75"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.75"],
+            "ja": ["+0.75"],
+            "cn": ["+0.75"]
           },
           "value": 0.75
         }
@@ -4338,7 +4466,10 @@
               "마지막 탄환으로 가하는 기본 공격은 추가 고유 피해를 입힘",
               "피해량: 공격력 + 스킬 증폭*2 + 레벨*8 + 상대 최대체력의 6%"
             ],
-            "en": [],
+            "en": [
+              "Basic Attacks using the last bullet of your ammo deals extra cellular damage",
+              "Damage: Attack Power + Skill Amplification*2 + 6% of enemy's max HP"
+            ],
             "ja": [],
             "cn": []
           },
@@ -4373,7 +4504,11 @@
               "현재 체력의 5%의 고유피해",
               "열정 버프 1스택 획득"
             ],
-            "en": [],
+            "en": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 5% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds."
+            ],
             "ja": [],
             "cn": []
           },
@@ -4382,12 +4517,17 @@
         "buff004": {
           "detail": {
             "kr": [
+              "1스택 당 효과 적용",
               "공격 속도: 8% 증가",
               "지속 시간: 5초",
               "최대 4스택",
               "최대 스택: 공격력 +15, 이동속도 +0.1"
             ],
-            "en": [],
+            "en": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 8%.",
+              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed."
+            ],
             "ja": [],
             "cn": []
           },
@@ -4528,9 +4668,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+1"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+1"],
+            "ja": ["+1"],
+            "cn": ["+1"]
           },
           "value": 1
         }
@@ -4752,9 +4892,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+1"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+1"],
+            "ja": ["+1"],
+            "cn": ["+1"]
           },
           "value": 1
         },
@@ -4850,7 +4990,11 @@
               "대상은 0.56초간 99% 둔화",
               "쿨다운: 4초"
             ],
-            "en": [],
+            "en": [
+              "Your next basic attack deals 75 extra cellular damage",
+              "Slows your target by 99% for 0.56 seconds",
+              "Cooldown: 4s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -5049,7 +5193,10 @@
         "uniq025": {
           "detail": {
             "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 3초"],
-            "en": [],
+            "en": [
+              "Your next basic attack gains a bonus critical strike chance",
+              "Cooldown: 3s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -5281,7 +5428,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -5350,14 +5497,22 @@
           "detail": {
             "kr": [
               "적 실험체에게 피해를 받아 체력이 40% 이하가 될 때 발동",
-              "2.5초간 (150 + 레벨당  10)의 보호막 획득",
               "모든 해로운 상태이상 해제",
+              "2.5초간 (150 + 레벨당  10)의 보호막 획득",
               "방해효과 저항 50%",
               "8초 동안 공격력 15 증가",
               "8초 동안 받는 회복 15% 증가",
               "쿨다운: 70초"
             ],
-            "en": [],
+            "en": [
+              "When dropping below 40% HP after taking damage from an enemy player",
+              "You are cleansed of all debuffs and crowd control effects",
+              "You gain a (150 + Character Level*10) HP shield for 2.5 seconds",
+              "50% Tenacity for 8 seconds",
+              "15 Attack Power for 8 seconds",
+              "HP Recovery on you is 15% more effective for 8 seconds.",
+              "Cooldown: 70s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -5424,7 +5579,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -5470,7 +5625,7 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
             "ja": [],
             "cn": []
           },
@@ -5517,7 +5672,9 @@
         "uniq013": {
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [],
+            "en": [
+              "Basic attacks reduce target's healing received by 40%(M)/30%(R)"
+            ],
             "ja": [],
             "cn": []
           },
@@ -5526,9 +5683,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
           "value": 0.5
         }
@@ -5715,7 +5872,10 @@
         "uniq025": {
           "detail": {
             "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 3초"],
-            "en": [],
+            "en": [
+              "Your next basic attack gains a bonus critical strike chance",
+              "Cooldown: 3s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -5787,9 +5947,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.75"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.75"],
+            "ja": ["+0.75"],
+            "cn": ["+0.75"]
           },
           "value": 0.75
         }
@@ -6108,11 +6268,16 @@
         "uniq002": {
           "detail": {
             "kr": [
+              "1스택 당 효과 적용",
               "기본 공격이 적 실험체에게 명중하면 발동",
               "현재 체력의 5%의 고유피해",
               "열정 버프 1스택 획득"
             ],
-            "en": [],
+            "en": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 5% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds."
+            ],
             "ja": [],
             "cn": []
           },
@@ -6126,7 +6291,11 @@
               "최대 4스택",
               "최대 스택: 공격력 +15, 이동속도 +0.1"
             ],
-            "en": [],
+            "en": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 8%.",
+              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed."
+            ],
             "ja": [],
             "cn": []
           },
@@ -6176,9 +6345,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.75"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.75"],
+            "ja": ["+0.75"],
+            "cn": ["+0.75"]
           },
           "value": 0.75
         }
@@ -6279,9 +6448,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
           "value": 0.5
         },
@@ -6329,9 +6498,9 @@
         "uniq007": {
           "detail": {
             "kr": ["+5%"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+5%"],
+            "ja": ["+5%"],
+            "cn": ["+5%"]
           },
           "value": 0.05
         }
@@ -6356,9 +6525,9 @@
         "uniq008": {
           "detail": {
             "kr": ["+1"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+1"],
+            "ja": ["+1"],
+            "cn": ["+1"]
           },
           "value": 1
         },
@@ -6411,7 +6580,12 @@
               "피해량: 스킬 증폭*1.5 + 스킬 공격 추가 피해*1",
               "쿨다운: 3초"
             ],
-            "en": [],
+            "en": [
+              "Using a skill causes a Biotic Infusion.",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: equivalent to Skill Amplification*1.5 + Extra Skill Damage*1",
+              "Cooldown: 3s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -6624,7 +6798,12 @@
               "피격 시 치유감소 40%(근)/30%(원)",
               "4초 안에 450의 피해를 받으면, 일정 범위 내의 적에게 215의 고유 피해를 입힘(쿨다운 1초)"
             ],
-            "en": [],
+            "en": [
+              "When hit by a basic attack, reflect 3% true damage to the attacker",
+              "Reduce their healing by 40%(M)/30%(R) for 4 seconds.",
+              "Taking 450 or more damage over 3 seconds causes 215 damage to nearby enemies.",
+              "Cooldown: 1s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -6658,7 +6837,14 @@
               "기본 공격 시 저주 대기시간이 1초 감소",
               "쿨다운: 2초"
             ],
-            "en": [],
+            "en": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires.",
+              "Damage: 50 + Skill Amplification*1.75",
+              "Targets cannot be hexed again for 8 seconds.",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown : 2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -6667,7 +6853,7 @@
         "buff006": {
           "detail": {
             "kr": ["이동속도: 8% 감소", "지속시간: 4초"],
-            "en": [],
+            "en": ["Slowing by 8%", "Duration: 4s"],
             "ja": [],
             "cn": []
           },
@@ -6700,7 +6886,11 @@
               "굴절의 망토는 적이 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 소멸",
               "쿨다운: 25초"
             ],
-            "en": [],
+            "en": [
+              "Create a temporal anomaly",
+              "The temporal anomaly is negating damage and effects of the next hostile skill or trap.",
+              "The anomaly then disappears, returning after 25 seconds."
+            ],
             "ja": [],
             "cn": []
           },
@@ -6732,7 +6922,10 @@
               "스킬 공격에 적중당한 적은 2초간 이동속도 20%, 공격속도 30% 감소",
               "쿨다운: 4초"
             ],
-            "en": [],
+            "en": [
+              "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 30% for 2 seconds",
+              "Cooldown: 4s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -6788,7 +6981,13 @@
               "다음 기본 공격 시 스택을 모두 소모하여 최대 35의 고유피해",
               "최대 스택으로 기본 공격 시 1초간 상대의 이동 속도 30% 감소"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.05m you move, up to 5m.",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
+              "Basic attacks consume all stacks, dealing up to 35 cellular damage.",
+              "At max stacks, your next basic attack slows enemies by 30% for 1 seconds"
+            ],
             "ja": [],
             "cn": []
           },
@@ -6840,7 +7039,13 @@
               "피해량: 캐릭터 레벨*5",
               "쿨다운: 0.2초"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion.",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*5",
+              "Cooldown: 0.2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -6875,7 +7080,13 @@
               "다음 기본 공격 시 스택을 모두 소모하여 최대 35의 고유피해",
               "최대 스택으로 기본 공격 시 1초간 상대의 이동 속도 30% 감소"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.05m you move, up to 5m.",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
+              "Basic attacks consume all stacks, dealing up to 35 cellular damage.",
+              "At max stacks, your next basic attack slows enemies by 30% for 1 seconds"
+            ],
             "ja": [],
             "cn": []
           },
@@ -6929,7 +7140,13 @@
               "피해량: 캐릭터 레벨*5",
               "쿨다운: 0.2초"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion.",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*5",
+              "Cooldown: 0.2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -6958,9 +7175,9 @@
         "uniq010": {
           "detail": {
             "kr": ["+20%"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+20%"],
+            "ja": ["+20%"],
+            "cn": ["+20%"]
           },
           "value": 0.2
         },
@@ -6973,7 +7190,13 @@
               "다음 기본 공격 시 스택을 모두 소모하여 최대 80의 고유피해",
               "최대 스택으로 기본 공격 시 1초간 상대의 이동 속도 40% 감소"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.04m you move, up to 4m.",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage.",
+              "At max stacks, your next basic attack slows enemies by 40% for 1 seconds"
+            ],
             "ja": [],
             "cn": []
           },
@@ -7002,9 +7225,9 @@
         "uniq007": {
           "detail": {
             "kr": ["+5%"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+5%"],
+            "ja": ["+5%"],
+            "cn": ["+5%"]
           },
           "value": 0.05
         },
@@ -7017,7 +7240,13 @@
               "다음 기본 공격 시 스택을 모두 소모하여 최대 80의 고유피해",
               "최대 스택으로 기본 공격 시 1초간 상대의 이동 속도 40% 감소"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.04m you move, up to 4m.",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage.",
+              "At max stacks, your next basic attack slows enemies by 40% for 1 seconds"
+            ],
             "ja": [],
             "cn": []
           },
@@ -7029,7 +7258,10 @@
               "에키온의 과부화 상태의 지속시간이 VF폭주(R)의 레벨에 따라 영구적으로 감소",
               "30% / 35% / 40% / 45%"
             ],
-            "en": [],
+            "en": [
+              "The duration of Exuviation is reduced based on the level of VF Overflow(R)",
+              "30% / 35% / 40% / 45%"
+            ],
             "ja": [],
             "cn": []
           },
@@ -7058,7 +7290,7 @@
         "uniq011": {
           "detail": {
             "kr": ["군중제어 효과 지속 시간 15% 감소"],
-            "en": [],
+            "en": ["Reduces crowd control effects by 15%"],
             "ja": [],
             "cn": []
           },
@@ -7073,7 +7305,13 @@
               "다음 기본 공격 시 스택을 모두 소모하여 최대 80의 고유피해",
               "최대 스택으로 기본 공격 시 1초간 상대의 이동 속도 40% 감소"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.04m you move, up to 4m.",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage.",
+              "At max stacks, your next basic attack slows enemies by 40% for 1 seconds"
+            ],
             "ja": [],
             "cn": []
           },
@@ -7102,9 +7340,9 @@
         "uniq010": {
           "detail": {
             "kr": ["+15%"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+15%"],
+            "ja": ["+15%"],
+            "cn": ["+15%"]
           },
           "value": 0.15
         }
@@ -7135,7 +7373,11 @@
               "매초마다 2.5m 이내의 적에게 피해를 입힘",
               "피해량: 착용자 최대 체력의 4%"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Cellular damage is dealt to enemies in a 2.5m range every 1second when in combat.",
+              "Damage: 4% of User's Max HP"
+            ],
             "ja": [],
             "cn": []
           },
@@ -7164,7 +7406,7 @@
         "uniq011": {
           "detail": {
             "kr": ["군중제어 효과 지속 시간 15% 감소"],
-            "en": [],
+            "en": ["Reduces crowd control effects by 15%"],
             "ja": [],
             "cn": []
           },
@@ -7193,9 +7435,9 @@
         "uniq010": {
           "detail": {
             "kr": ["+20%"],
-            "en": [],
-            "ja": [],
-            "cn": []
+            "en": ["+20%"],
+            "ja": ["+20%"],
+            "cn": ["+20%"]
           },
           "value": 0.2
         },
@@ -7207,7 +7449,13 @@
               "피해량: 캐릭터 레벨*7",
               "쿨다운: 0.2초"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion.",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*7",
+              "Cooldown: 0.2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -7241,7 +7489,13 @@
               "피해량: 캐릭터 레벨*7",
               "쿨다운: 0.2초"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion.",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*7",
+              "Cooldown: 0.2s"
+            ],
             "ja": [],
             "cn": []
           },
@@ -7253,7 +7507,10 @@
               "독사의 진노(R)에 적중한 적 대상의 방어력을 7초 동안 6% 감소",
               "최대 2중첩"
             ],
-            "en": [],
+            "en": [
+              "Reduce the defense of enemies hit by Envenomization(R) by 6% for 7 seconds",
+              "This can be stacked up to 2 times."
+            ],
             "ja": [],
             "cn": []
           },
@@ -7282,7 +7539,7 @@
         "uniq011": {
           "detail": {
             "kr": ["군중제어 효과 지속 시간 15% 감소"],
-            "en": [],
+            "en": ["Reduces crowd control effects by 15%"],
             "ja": [],
             "cn": []
           },
@@ -7296,7 +7553,13 @@
               "피해량: 캐릭터 레벨*7",
               "쿨다운: 0.2초"
             ],
-            "en": [],
+            "en": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion.",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*7",
+              "Cooldown: 0.2s"
+            ],
             "ja": [],
             "cn": []
           },

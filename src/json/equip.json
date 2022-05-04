@@ -802,7 +802,7 @@
               "피해량: 착용자 최대 체력의 4.5%(근)/3%(원)"
             ],
             "en": [
-              "Deals cellular damage to enemies in a 2.5m range every 1second when in combat.",
+              "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
               "Damage: 4.5%(M)/3%(R) of User's Max HP"
             ],
             "ja": [],
@@ -888,8 +888,8 @@
             ],
             "en": [
               "Create a temporal anomaly",
-              "The temporal anomaly is negating damage and effects of the next hostile skill or trap.",
-              "The anomaly then disappears, returning after 25 seconds."
+              "The temporal anomaly is negating damage and effects of the next hostile skill or trap",
+              "The anomaly then disappears, returning after 25 seconds"
             ],
             "ja": [],
             "cn": []
@@ -932,7 +932,7 @@
               "You are cleansed of all debuffs and crowd control effects",
               "You gain a (150 + Character Level*10) HP shield for 1.5 seconds",
               "10 Attack Power for 8 seconds",
-              "HP Recovery on you is (M: 15%, R: 8%) more effective for 8 seconds.",
+              "HP Recovery on you is (M: 15%, R: 8%) more effective for 8 seconds",
               "Cooldown: 70s"
             ],
             "ja": [],
@@ -989,7 +989,7 @@
               "피해량: 착용자 최대 체력의 5.5%(근)/4%(원)"
             ],
             "en": [
-              "Deals cellular damage to enemies in a 2.5m range every 1second when in combat.",
+              "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
               "Damage: 5.5%(M)/4%(R) of User's Max HP"
             ],
             "ja": [],
@@ -1336,7 +1336,7 @@
             "en": [
               "When dropping below 40% HP after taking damage from an enemy player",
               "You gain a (135 + Level*8) HP shield for 1.5 seconds",
-              "Your skill amplification is increased by 12% for 6 seconds.",
+              "Your skill amplification is increased by 12% for 6 seconds",
               "Cooldown: 80s"
             ],
             "ja": [],
@@ -1538,8 +1538,8 @@
             ],
             "en": [
               "When hit by a basic attack, reflect 4.5% true damage to the attacker",
-              "Reduce their healing by 40%(M)/30%(R) for 4 seconds.",
-              "Taking 700 or more damage over 3 seconds causes 150 damage to nearby enemies.",
+              "Reduce their healing by 40%(M)/30%(R) for 4 seconds",
+              "Taking 700 or more damage over 3 seconds causes 150 damage to nearby enemies",
               "Cooldown: 3s"
             ],
             "ja": [],
@@ -1662,7 +1662,7 @@
               "쿨다운: 2초"
             ],
             "en": [
-              "Using a skill causes a Biotic Infusion.",
+              "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
               "Damage: equivalent to 10%(M)/8%(R) of the enemy's max HP",
               "Cooldown: 2s"
@@ -2004,8 +2004,8 @@
             ],
             "en": [
               "When hit by a basic attack, reflect 4.5% true damage to the attacker",
-              "Reduce their healing by 40%(M)/30%(R) for 4 seconds.",
-              "Taking 600 or more damage over 3 seconds causes 600 damage to nearby enemies.",
+              "Reduce their healing by 40%(M)/30%(R) for 4 seconds",
+              "Taking 600 or more damage over 3 seconds causes 600 damage to nearby enemies",
               "Cooldown: 2s"
             ],
             "ja": [],
@@ -2383,8 +2383,8 @@
             ],
             "en": [
               "Create a temporal anomaly",
-              "The temporal anomaly is negating damage and effects of the next hostile skill or trap.",
-              "The anomaly then disappears, returning after 25 seconds."
+              "The temporal anomaly is negating damage and effects of the next hostile skill or trap",
+              "The anomaly then disappears, returning after 25 seconds"
             ],
             "ja": [],
             "cn": []
@@ -3652,10 +3652,10 @@
               "근거리 실험체는 최대 스택 공격 시 2초간 상대의 이동 속도 20% 감소"
             ],
             "en": [
-              "Gain a stack every move, up to 20m.",
-              "Your movement speed will increase by up to 0.06, based on how many stacks you have.",
-              "Basic attacks consume all stacks, dealing up to 100 cellular damage.",
-              "Melee: At max stacks, your next basic attack slows enemies by 20% for 2 seconds."
+              "Gain a stack every move, up to 20m",
+              "Your movement speed will increase by up to 0.06, based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 100 cellular damage",
+              "Melee: At max stacks, your next basic attack slows enemies by 20% for 2 seconds"
             ],
             "ja": [],
             "cn": []
@@ -3729,11 +3729,11 @@
             ],
             "en": [
               "Hitting an enemy with a skill hexes them",
-              "Dealing true damage when the hex expires.",
+              "Dealing true damage when the hex expires",
               "Damage: 45 + Skill Amplification*1",
-              "Targets cannot be hexed again for 8 seconds.",
+              "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
-              "Cooldown : 2s"
+              "Cooldown: 2s"
             ],
             "ja": [],
             "cn": []
@@ -3896,7 +3896,7 @@
               "쿨다운: 2초"
             ],
             "en": [
-              "Using a skill causes a Biotic Infusion.",
+              "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
               "Damage: equivalent to Skill Amplification*2.5(M)/1.5(R)",
               "Cooldown: 2s"
@@ -3963,10 +3963,10 @@
               "근거리 실험체는 최대 스택 공격 시 2초간 상대의 이동 속도 30% 감소"
             ],
             "en": [
-              "Gain a stack every move, up to 20m.",
-              "Your movement speed will increase by up to 0.15, based on how many stacks you have.",
-              "Basic attacks consume all stacks, dealing up to 200 cellular damage.",
-              "Melee: At max stacks, your next basic attack slows enemies by 30% for 2 seconds."
+              "Gain a stack every move, up to 20m",
+              "Your movement speed will increase by up to 0.15, based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 200 cellular damage",
+              "Melee: At max stacks, your next basic attack slows enemies by 30% for 2 seconds"
             ],
             "ja": [],
             "cn": []
@@ -4002,7 +4002,7 @@
               "쿨다운: 2초"
             ],
             "en": [
-              "Using a skill causes a Biotic Infusion.",
+              "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
               "Damage: equivalent to Skill Amplification*2.5(M)/1.5(R)",
               "Cooldown: 2s"

@@ -269,7 +269,7 @@
             ],
             "en": [
               "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Rudra Embodied>",
-              "Excludes multiple hit effects.",
+              "Excludes multiple hit effects",
               "Cooldown: 4s"
             ],
             "ja": [],
@@ -632,7 +632,7 @@
               "You gain a (150 + Character Level*10) HP shield for 2.5 seconds",
               "50% Tenacity for 8 seconds",
               "15 Attack Power for 8 seconds",
-              "HP Recovery on you is 15% more effective for 8 seconds.",
+              "HP Recovery on you is 15% more effective for 8 seconds",
               "Cooldown: 80s"
             ],
             "ja": [],
@@ -971,7 +971,7 @@
             "en": [
               "Hitting a test subject with a basic attack deals",
               "Damage equal to 7% of the target’s current HP",
-              "Grants you a stack of Vigor for 5 seconds."
+              "Grants you a stack of Vigor for 5 seconds"
             ],
             "ja": [],
             "cn": []
@@ -989,8 +989,8 @@
             ],
             "en": [
               "Each stack of Vigor",
-              "Increases your Attack Speed by 8%.",
-              "At 3 stacks, you gain extra 20 Attack Power and 0.2 Movement speed."
+              "Increases your Attack Speed by 8%",
+              "At 3 stacks, you gain extra 20 Attack Power and 0.2 Movement speed"
             ],
             "ja": [],
             "cn": []
@@ -1025,10 +1025,10 @@
               "최대 스택 공격 시 2초간 상대의 이동 속도 25% 감소"
             ],
             "en": [
-              "Gain a stack every move, up to 24m.",
-              "Your movement speed will increase by up to 0.08, based on how many stacks you have.",
-              "Basic attacks consume all stacks, dealing up to 120 cellular damage.",
-              "At max stacks, your next basic attack slows enemies by 25% for 2 seconds."
+              "Gain a stack every move, up to 24m",
+              "Your movement speed will increase by up to 0.08, based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 120 cellular damage",
+              "At max stacks, your next basic attack slows enemies by 25% for 2 seconds"
             ],
             "ja": [],
             "cn": []
@@ -1303,11 +1303,11 @@
             ],
             "en": [
               "Hitting an enemy with a skill hexes them",
-              "Dealing true damage when the hex expires.",
+              "Dealing true damage when the hex expires",
               "Damage: 85 + Skill Amplification*1.5 + Extra Skill Damage*1",
-              "Targets cannot be hexed again for 8 seconds.",
+              "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
-              "Cooldown : 2s"
+              "Cooldown: 2s"
             ],
             "ja": [],
             "cn": []
@@ -1642,7 +1642,7 @@
             "en": [
               "Hitting a test subject with a basic attack deals",
               "Damage equal to 2% of the target’s current HP",
-              "Grants you a stack of Vigor for 5 seconds."
+              "Grants you a stack of Vigor for 5 seconds"
             ],
             "ja": [],
             "cn": []
@@ -1660,7 +1660,7 @@
             ],
             "en": [
               "Each stack of Vigor",
-              "Increases your Attack Speed by 10%.",
+              "Increases your Attack Speed by 10%",
               "At 4 stacks, you gain extra 10 Attack Power"
             ],
             "ja": [],
@@ -1933,7 +1933,7 @@
             ],
             "en": [
               "Hitting a single enemy with a basic attack or skill 2 times within 4 seconds grants you <Zephyr>",
-              "Excludes multiple hit effects.",
+              "Excludes multiple hit effects",
               "Cooldown: 7s"
             ],
             "ja": [],
@@ -1990,11 +1990,11 @@
             ],
             "en": [
               "Hitting an enemy with a skill hexes them",
-              "Dealing true damage when the hex expires.",
+              "Dealing true damage when the hex expires",
               "Damage: 50 + Skill Amplification*2",
-              "Targets cannot be hexed again for 8 seconds.",
+              "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
-              "Cooldown : 2s"
+              "Cooldown: 2s"
             ],
             "ja": [],
             "cn": []
@@ -2281,11 +2281,11 @@
             ],
             "en": [
               "Hitting an enemy with a skill hexes them",
-              "Dealing true damage when the hex expires.",
+              "Dealing true damage when the hex expires",
               "Damage: 50 + Skill Amplification*1.35",
-              "Targets cannot be hexed again for 8 seconds.",
+              "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
-              "Cooldown : 2s"
+              "Cooldown: 2s"
             ],
             "ja": [],
             "cn": []
@@ -2515,7 +2515,7 @@
             ],
             "en": [
               "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Charge Carrier>",
-              "Excludes multiple hit effects.",
+              "Excludes multiple hit effects",
               "Cooldown: 5s"
             ],
             "ja": [],
@@ -2563,7 +2563,7 @@
               "쿨다운: 2초"
             ],
             "en": [
-              "Using a skill causes a Biotic Infusion.",
+              "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
               "Damage: equivalent to 10% of the enemy's max HP",
               "Cooldown: 2s"
@@ -3492,11 +3492,11 @@
             ],
             "en": [
               "Hitting an enemy with a skill hexes them",
-              "Dealing true damage when the hex expires.",
+              "Dealing true damage when the hex expires",
               "Damage: 100 + Skill Amplification*1.25",
-              "Targets cannot be hexed again for 8 seconds.",
+              "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
-              "Cooldown : 2s"
+              "Cooldown: 2s"
             ],
             "ja": [],
             "cn": []
@@ -4156,9 +4156,9 @@
               "다음 기본 공격 시 스택을 모두 소모하여 최대 120의 고유피해"
             ],
             "en": [
-              "Gain a stack every move, up to 24m.",
-              "Your movement speed will increase by up to 0.12, based on how many stacks you have.",
-              "Basic attacks consume all stacks, dealing up to 120 cellular damage."
+              "Gain a stack every move, up to 24m",
+              "Your movement speed will increase by up to 0.12, based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 120 cellular damage"
             ],
             "ja": [],
             "cn": []
@@ -4507,7 +4507,7 @@
             "en": [
               "Hitting a test subject with a basic attack deals",
               "Damage equal to 5% of the target’s current HP",
-              "Grants you a stack of Vigor for 5 seconds."
+              "Grants you a stack of Vigor for 5 seconds"
             ],
             "ja": [],
             "cn": []
@@ -4525,8 +4525,8 @@
             ],
             "en": [
               "Each stack of Vigor",
-              "Increases your Attack Speed by 8%.",
-              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed."
+              "Increases your Attack Speed by 8%",
+              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
             ],
             "ja": [],
             "cn": []
@@ -5510,7 +5510,7 @@
               "You gain a (150 + Character Level*10) HP shield for 2.5 seconds",
               "50% Tenacity for 8 seconds",
               "15 Attack Power for 8 seconds",
-              "HP Recovery on you is 15% more effective for 8 seconds.",
+              "HP Recovery on you is 15% more effective for 8 seconds",
               "Cooldown: 70s"
             ],
             "ja": [],
@@ -6276,7 +6276,7 @@
             "en": [
               "Hitting a test subject with a basic attack deals",
               "Damage equal to 5% of the target’s current HP",
-              "Grants you a stack of Vigor for 5 seconds."
+              "Grants you a stack of Vigor for 5 seconds"
             ],
             "ja": [],
             "cn": []
@@ -6293,8 +6293,8 @@
             ],
             "en": [
               "Each stack of Vigor",
-              "Increases your Attack Speed by 8%.",
-              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed."
+              "Increases your Attack Speed by 8%",
+              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
             ],
             "ja": [],
             "cn": []
@@ -6581,7 +6581,7 @@
               "쿨다운: 3초"
             ],
             "en": [
-              "Using a skill causes a Biotic Infusion.",
+              "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
               "Damage: equivalent to Skill Amplification*1.5 + Extra Skill Damage*1",
               "Cooldown: 3s"
@@ -6800,8 +6800,8 @@
             ],
             "en": [
               "When hit by a basic attack, reflect 3% true damage to the attacker",
-              "Reduce their healing by 40%(M)/30%(R) for 4 seconds.",
-              "Taking 450 or more damage over 3 seconds causes 215 damage to nearby enemies.",
+              "Reduce their healing by 40%(M)/30%(R) for 4 seconds",
+              "Taking 450 or more damage over 3 seconds causes 215 damage to nearby enemies",
               "Cooldown: 1s"
             ],
             "ja": [],
@@ -6839,11 +6839,11 @@
             ],
             "en": [
               "Hitting an enemy with a skill hexes them",
-              "Dealing true damage when the hex expires.",
+              "Dealing true damage when the hex expires",
               "Damage: 50 + Skill Amplification*1.75",
-              "Targets cannot be hexed again for 8 seconds.",
+              "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
-              "Cooldown : 2s"
+              "Cooldown: 2s"
             ],
             "ja": [],
             "cn": []
@@ -6888,8 +6888,8 @@
             ],
             "en": [
               "Create a temporal anomaly",
-              "The temporal anomaly is negating damage and effects of the next hostile skill or trap.",
-              "The anomaly then disappears, returning after 25 seconds."
+              "The temporal anomaly is negating damage and effects of the next hostile skill or trap",
+              "The anomaly then disappears, returning after 25 seconds"
             ],
             "ja": [],
             "cn": []
@@ -6983,9 +6983,9 @@
             ],
             "en": [
               "During VF Overflow",
-              "Gain a stack of Swift Strides every 0.05m you move, up to 5m.",
-              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
-              "Basic attacks consume all stacks, dealing up to 35 cellular damage.",
+              "Gain a stack of Swift Strides every 0.05m you move, up to 5m",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 35 cellular damage",
               "At max stacks, your next basic attack slows enemies by 30% for 1 seconds"
             ],
             "ja": [],
@@ -7041,7 +7041,7 @@
             ],
             "en": [
               "During VF Overflow",
-              "Echion's skills cause Biotic Infusion.",
+              "Echion's skills cause Biotic Infusion",
               "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
               "Damage: Character Level*5",
               "Cooldown: 0.2s"
@@ -7082,9 +7082,9 @@
             ],
             "en": [
               "During VF Overflow",
-              "Gain a stack of Swift Strides every 0.05m you move, up to 5m.",
-              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
-              "Basic attacks consume all stacks, dealing up to 35 cellular damage.",
+              "Gain a stack of Swift Strides every 0.05m you move, up to 5m",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 35 cellular damage",
               "At max stacks, your next basic attack slows enemies by 30% for 1 seconds"
             ],
             "ja": [],
@@ -7142,7 +7142,7 @@
             ],
             "en": [
               "During VF Overflow",
-              "Echion's skills cause Biotic Infusion.",
+              "Echion's skills cause Biotic Infusion",
               "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
               "Damage: Character Level*5",
               "Cooldown: 0.2s"
@@ -7192,9 +7192,9 @@
             ],
             "en": [
               "During VF Overflow",
-              "Gain a stack of Swift Strides every 0.04m you move, up to 4m.",
-              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
-              "Basic attacks consume all stacks, dealing up to 80 cellular damage.",
+              "Gain a stack of Swift Strides every 0.04m you move, up to 4m",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage",
               "At max stacks, your next basic attack slows enemies by 40% for 1 seconds"
             ],
             "ja": [],
@@ -7242,9 +7242,9 @@
             ],
             "en": [
               "During VF Overflow",
-              "Gain a stack of Swift Strides every 0.04m you move, up to 4m.",
-              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
-              "Basic attacks consume all stacks, dealing up to 80 cellular damage.",
+              "Gain a stack of Swift Strides every 0.04m you move, up to 4m",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage",
               "At max stacks, your next basic attack slows enemies by 40% for 1 seconds"
             ],
             "ja": [],
@@ -7307,9 +7307,9 @@
             ],
             "en": [
               "During VF Overflow",
-              "Gain a stack of Swift Strides every 0.04m you move, up to 4m.",
-              "Your movement speed will increase by up to 0.1 based on how many stacks you have.",
-              "Basic attacks consume all stacks, dealing up to 80 cellular damage.",
+              "Gain a stack of Swift Strides every 0.04m you move, up to 4m",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage",
               "At max stacks, your next basic attack slows enemies by 40% for 1 seconds"
             ],
             "ja": [],
@@ -7375,7 +7375,7 @@
             ],
             "en": [
               "During VF Overflow",
-              "Cellular damage is dealt to enemies in a 2.5m range every 1second when in combat.",
+              "Cellular damage is dealt to enemies in a 2.5m range every 1second when in combat",
               "Damage: 4% of User's Max HP"
             ],
             "ja": [],
@@ -7451,7 +7451,7 @@
             ],
             "en": [
               "During VF Overflow",
-              "Echion's skills cause Biotic Infusion.",
+              "Echion's skills cause Biotic Infusion",
               "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
               "Damage: Character Level*7",
               "Cooldown: 0.2s"
@@ -7491,7 +7491,7 @@
             ],
             "en": [
               "During VF Overflow",
-              "Echion's skills cause Biotic Infusion.",
+              "Echion's skills cause Biotic Infusion",
               "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
               "Damage: Character Level*7",
               "Cooldown: 0.2s"
@@ -7509,7 +7509,7 @@
             ],
             "en": [
               "Reduce the defense of enemies hit by Envenomization(R) by 6% for 7 seconds",
-              "This can be stacked up to 2 times."
+              "This can be stacked up to 2 times"
             ],
             "ja": [],
             "cn": []
@@ -7555,7 +7555,7 @@
             ],
             "en": [
               "During VF Overflow",
-              "Echion's skills cause Biotic Infusion.",
+              "Echion's skills cause Biotic Infusion",
               "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
               "Damage: Character Level*7",
               "Cooldown: 0.2s"

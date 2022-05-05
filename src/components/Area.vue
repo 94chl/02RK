@@ -198,6 +198,7 @@
         this.$store.dispatch("onToggleModal", "map");
       },
       toggleCommonDropsInfo() {
+        if (!this.commonDropsInfo) this.areaInfo.A000.show = true;
         this.commonDropsInfo = !this.commonDropsInfo;
       },
     },
@@ -305,6 +306,8 @@
             text-overflow: ellipsis;
             overflow: hidden;
             height: 25px;
+            line-height: 25px;
+            text-indent: 4px;
           }
 
           .areaInfoIcon {

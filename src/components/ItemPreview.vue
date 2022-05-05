@@ -47,7 +47,7 @@
                     : option.match(/(uniq)/g)
                     ? $t("itemPreviewSection.optionActive")
                     : ""
-                }]${itemOptions[option][language]}`
+                }] ${itemOptions[option][language]}`
               }}
             </span>
             <span v-else-if="option.match(/(only)/g)" class="attrKey">

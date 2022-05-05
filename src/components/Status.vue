@@ -107,22 +107,30 @@
       <div class="optionBox">
         <ul>
           <li
-            v-for="[optionName, optionValue] in Object.entries(
+            v-for="[optionId, optionValue] in Object.entries(
               equipOptions
             ).sort()"
-            :key="optionName"
+            :key="optionId"
             class="option"
           >
+            <div v-if="optionId.match(/(only)/g)" class="optionInfo">
+              <div class="optionInfo_name">
+                {{ `[${itemOptions[optionId][language]}] : ` }}
+              </div>
+              <div class="optionInfo_value">
+                <span>{{ optionValue[language] }}</span>
+              </div>
+            </div>
             <div
-              v-if="!optionName.match(/(active)|(buff)|(uniq)/g)"
+              v-else-if="!optionId.match(/(active)|(buff)|(uniq)/g)"
               class="optionInfo"
             >
               <div class="optionInfo_name">
-                {{ `${itemOptions[optionName][language]}:` }}
+                {{ `${itemOptions[optionId][language]} : ` }}
               </div>
               <div class="optionInfo_value">
                 <span>{{
-                  optionName.match(/[1]/g)
+                  optionId.match(/[1]/g)
                     ? `${Math.round(optionValue * 1000) / 10}%`
                     : optionValue
                 }}</span>
@@ -130,25 +138,25 @@
             </div>
           </li>
           <li
-            v-for="[optionName, optionValue] in Object.entries(equipOptions)"
-            :key="optionName"
+            v-for="[optionId, optionValue] in Object.entries(equipOptions)"
+            :key="optionId"
             class="option"
           >
             <div
-              v-if="optionName.match(/(active)|(buff)|(uniq)/g)"
+              v-if="optionId.match(/(active)|(buff)|(uniq)/g)"
               class="optionInfo unique"
             >
               <div class="optionInfo_name">
                 {{
                   `[${
-                    optionName.match(/(active)/g)
+                    optionId.match(/(active)/g)
                       ? $t("itemPreviewSection.optionUniq")
-                      : optionName.match(/(buff)/g)
+                      : optionId.match(/(buff)/g)
                       ? $t("itemPreviewSection.optionbuff")
-                      : optionName.match(/(uniq)/g)
+                      : optionId.match(/(uniq)/g)
                       ? $t("itemPreviewSection.optionActive")
                       : ""
-                  }] ${itemOptions[optionName][language]}`
+                  }] ${itemOptions[optionId][language]}`
                 }}
               </div>
               <div class="optionInfo_values">
@@ -217,18 +225,18 @@
           (itemOptions, item) => {
             if (item.id) {
               const itemInfo = searchById(item.id);
-              Object.entries(itemInfo).forEach(([optionName, optionValue]) => {
-                if (!this.commonOptions.includes(optionName)) {
-                  if (optionName.match(/(active)|(buff)|(uniq)/g)) {
-                    itemOptions[optionName] = !itemOptions[optionName]
+              Object.entries(itemInfo).forEach(([optionId, optionValue]) => {
+                if (!this.commonOptions.includes(optionId)) {
+                  if (optionId.match(/(active)|(buff)|(uniq)/g)) {
+                    itemOptions[optionId] = !itemOptions[optionId]
                       ? optionValue
-                      : optionValue > itemOptions[optionName]
+                      : optionValue > itemOptions[optionId]
                       ? optionValue
-                      : itemOptions[optionName];
+                      : itemOptions[optionId];
                   } else {
-                    itemOptions[optionName] = !itemOptions[optionName]
+                    itemOptions[optionId] = !itemOptions[optionId]
                       ? optionValue
-                      : itemOptions[optionName] + optionValue;
+                      : itemOptions[optionId] + optionValue;
                   }
                 }
               });
@@ -237,6 +245,7 @@
           },
           {}
         );
+
         return equipOptions;
       },
     },

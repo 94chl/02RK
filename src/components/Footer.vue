@@ -4,9 +4,9 @@
       <div class="language_select">
         <select name="language" id="language" @change="selectLanguage">
           <option
-            v-for="(language, index) in Object.keys(languages)"
+            v-for="language in Object.keys(languages)"
             :value="languages[language]"
-            :selected="index === 0"
+            :selected="languages[language] === selectedLanguage"
             :key="languages[language]"
           >
             {{ language }}
@@ -29,8 +29,8 @@
         languages: {
           Korean: "kr",
           English: "en",
-          Chinese: "cn",
           Japanese: "ja",
+          Chinese: "cn",
         },
       };
     },

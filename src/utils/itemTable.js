@@ -535,12 +535,6 @@ export const itemOptions = {
     ja: "非戦闘中の移動速度",
     cn: "非戰鬥狀態下移動速度",
   },
-  only0: {
-    kr: "조건",
-    en: "Only",
-    ja: "専用",
-    cn: "專用",
-  },
   penet1: {
     kr: "방어 관통",
     en: "Armor penetration",
@@ -600,6 +594,12 @@ export const itemOptions = {
     en: "Vision Range",
     ja: "視界範囲",
     cn: "視野範圍",
+  },
+  only: {
+    kr: "조건",
+    en: "Only",
+    ja: "専用",
+    cn: "專用",
   },
   uniq001: {
     kr: "의념",
@@ -803,7 +803,7 @@ export const itemOptions = {
     kr: "블레싱:코스믹파워",
     en: "Blessing: Cosmic Efflux",
     ja: "祝福 : コスモパワー",
-    cn: "祝福：蒼穹之力",
+    cn: "祝福:蒼穹之力",
   },
   buff006: {
     kr: "저주",
@@ -827,13 +827,13 @@ export const itemOptions = {
     kr: "블레싱:명상",
     en: "Blessing: Calm Mind",
     ja: "祝福 : 瞑想",
-    cn: "祝福：冥想",
+    cn: "祝福:冥想",
   },
   active004: {
     kr: "블레싱:코스믹파워",
     en: "Blessing: Cosmic Efflux",
     ja: "祝福 : コスモパワー",
-    cn: "祝福：蒼穹之力",
+    cn: "祝福:蒼穹之力",
   },
   active005: {
     kr: "정지",

@@ -50,6 +50,9 @@
                 }]${itemOptions[option][language]}`
               }}
             </span>
+            <span v-else-if="option.match(/(only)/g)" class="attrKey">
+              {{ `[${itemOptions[option][language]}] : ` }}
+            </span>
             <span v-else class="attrKey">
               {{
                 `${
@@ -92,6 +95,10 @@
                   {{ ` ${uniqueOption}` }}
                 </li>
               </ul>
+
+              <span v-else-if="option.match(/(only)/g)" class="attrKey">
+                {{ cartItem[option][language] }}
+              </span>
               <span v-else>
                 {{
                   option.match(/[1]/g)

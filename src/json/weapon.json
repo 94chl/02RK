@@ -236,8 +236,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
             "en": ["Skills reduce target's healing received by 40%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40%減少"],
+            "cn": ["Skills reduce target's healing received by 40%"]
           },
           "value": 0.4
         }
@@ -274,9 +274,13 @@
             ],
             "ja": [
               "4秒以内に3回の個別ダメージを加えると＜ルドラの短剣＞になります。",
-              "クールダウン：4秒"
+              "クールダウン:4秒"
             ],
-            "cn": []
+            "cn": [
+              "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Rudra Embodied>",
+              "Excludes multiple hit effects",
+              "Cooldown: 4s"
+            ]
           },
           "value": 1
         },
@@ -288,8 +292,12 @@
               "Movement speed: +24%",
               "Duration: 3 seconds"
             ],
-            "ja": ["攻撃力：21％増加", "移動速度：24％増加", "3秒間"],
-            "cn": []
+            "ja": ["攻撃力:21%増加", "移動速度:24%増加", "3秒間"],
+            "cn": [
+              "Attack Power: +21%",
+              "Movement speed: +24%",
+              "Duration: 3 seconds"
+            ]
           },
           "value": 0.35
         }
@@ -316,11 +324,17 @@
           "detail": {
             "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 4초"],
             "en": [
-              "Your next basic attack gains a bonus critical strike chance",
+              "Your next basic attack gains a 100% bonus critical strike chance",
               "Cooldown: 4s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "次の基本攻撃が100%の致命打確率ボーナスを獲得",
+              "クールダウン:4秒"
+            ],
+            "cn": [
+              "Your next basic attack gains a 100% bonus critical strike chance",
+              "Cooldown: 4s"
+            ]
           },
           "value": 1
         }
@@ -644,10 +658,18 @@
               "2.5秒間150+キャラクターレベル*10のシールドを獲得",
               "50%の行動妨害耐性を獲得",
               "8秒間攻撃力が15増加",
-              "受ける回復量が15％増加",
-              "クールダウン：80秒"
+              "受ける回復量が15%増加",
+              "クールダウン:80秒"
             ],
-            "cn": []
+            "cn": [
+              "When dropping below 40% HP after taking damage from an enemy player",
+              "You are cleansed of all debuffs and crowd control effects",
+              "You gain a (150 + Character Level*10) HP shield for 2.5 seconds",
+              "50% Tenacity for 8 seconds",
+              "15 Attack Power for 8 seconds",
+              "HP Recovery on you is 15% more effective for 8 seconds",
+              "Cooldown: 80s"
+            ]
           },
           "value": 150
         }
@@ -683,8 +705,16 @@
               "Slows your target by 30% for 2 seconds",
               "Cooldown: 6s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "次に加える基本攻撃が80の追加固有ダメージ",
+              "2秒間移動速度を30%だけ減少",
+              "クールダウン:6秒"
+            ],
+            "cn": [
+              "Your next basic attack deals 80 extra cellular damage",
+              "Slows your target by 30% for 2 seconds",
+              "Cooldown: 6s"
+            ]
           },
           "value": 80
         }
@@ -717,8 +747,14 @@
               "Dealing damage to an enemy with a skill slows them by 99% for 0.56 seconds",
               "Cooldown: 4s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "スキルで敵にダメージを与えると、0.56秒間移動速度を99%だけ減少",
+              "クールダウン:4秒"
+            ],
+            "cn": [
+              "Dealing damage to an enemy with a skill slows them by 99% for 0.56 seconds",
+              "Cooldown: 4s"
+            ]
           },
           "value": 0.99
         }
@@ -989,7 +1025,11 @@
               "敵実験体の現在体力の7%のダメージ",
               "5秒間情熱スタックを獲得"
             ],
-            "cn": []
+            "cn": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 7% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds"
+            ]
           },
           "value": 0.07
         },
@@ -1009,10 +1049,14 @@
             ],
             "ja": [
               "重畳された情熱スタックにつき",
-              "攻撃速度：+8%",
+              "攻撃速度:+8%",
               "最大3重畳すると、20の攻撃力と0.2の移動速度を追加"
             ],
-            "cn": []
+            "cn": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 8%",
+              "At 3 stacks, you gain extra 20 Attack Power and 0.2 Movement speed"
+            ]
           },
           "value": 0.08
         }
@@ -1053,9 +1097,14 @@
               "移動するたびに[軽い足取り]を最大24mまで重畳して獲得",
               "重畳によって移動速度が最大0.08まで増加します",
               "基本攻撃ダメージを与える場合、重畳をすべて消費して最大120の固有ダメージを与えます",
-              "最大重畳状態でダメージを受けた対象の移動速度を2秒間25％減少させます"
+              "最大重畳状態でダメージを受けた対象の移動速度を2秒間25%減少させます"
             ],
-            "cn": []
+            "cn": [
+              "Gain a stack every move, up to 24m",
+              "Your movement speed will increase by up to 0.08, based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 120 cellular damage",
+              "At max stacks, your next basic attack slows enemies by 25% for 2 seconds"
+            ]
           },
           "value": 120
         }
@@ -1085,7 +1134,7 @@
             "ja": [
               "制圧、エアボーン、ノックバック、捕まりを除外したデバフの持続時間が30%減少"
             ],
-            "cn": []
+            "cn": ["Reduces crowd control effects by 30%"]
           },
           "value": 0.3
         }
@@ -1192,8 +1241,8 @@
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 4초간 40% 감소"],
             "en": ["Basic attacks reduce target's healing received by 40%"],
-            "ja": ["基本攻撃を受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["基本攻撃を受けた対象の治癒効果が40%減少"],
+            "cn": ["Basic attacks reduce target's healing received by 40%"]
           },
           "value": 0.4
         }
@@ -1261,8 +1310,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
             "en": ["Skills reduce target's healing received by 40%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40%減少"],
+            "cn": ["Skills reduce target's healing received by 40%"]
           },
           "value": 0.4
         }
@@ -1333,13 +1382,20 @@
             ],
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
-              "＜呪い＞の状態から解除されると固定ダメージを受けます。",
-              "ダメージ：85+スキル増幅*1.5+スキル攻撃追加ダメージ*1",
+              "＜呪い＞の状態から解除されると固定ダメージ",
+              "ダメージ:85+スキル増幅*1.5+スキル攻撃追加ダメージ*1",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
-              "クールダウン：2秒"
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 85 + Skill Amplification*1.5 + Extra Skill Damage*1",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ]
           },
           "value": 85
         },
@@ -1347,8 +1403,8 @@
           "detail": {
             "kr": ["이동속도: 8% 감소", "지속시간: 4초"],
             "en": ["Slowing by 8%", "Duration: 4s"],
-            "ja": ["移動速度：8％減少", "4秒間"],
-            "cn": []
+            "ja": ["移動速度:8%減少", "4秒間"],
+            "cn": ["Slowing by 8%", "Duration: 4s"]
           },
           "value": 0.08
         }
@@ -1678,7 +1734,11 @@
               "敵実験体の現在体力の2%のダメージ",
               "5秒間情熱スタックを獲得"
             ],
-            "cn": []
+            "cn": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 2% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds"
+            ]
           },
           "value": 0.02
         },
@@ -1698,10 +1758,14 @@
             ],
             "ja": [
               "重畳された情熱スタックにつき",
-              "攻撃速度：+10%",
+              "攻撃速度:+10%",
               "最大3重畳すると、10の攻撃力を追加"
             ],
-            "cn": []
+            "cn": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 10%",
+              "At 4 stacks, you gain extra 10 Attack Power"
+            ]
           },
           "value": 0.1
         }
@@ -1793,8 +1857,14 @@
               "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 10% for 2 seconds",
               "Cooldown: 4s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "スキルで敵にダメージを与えると、2秒間移動速度を20%、攻撃速度を10%だけ減少",
+              "クールダウン:4秒"
+            ],
+            "cn": [
+              "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 10% for 2 seconds",
+              "Cooldown: 4s"
+            ]
           },
           "value": 0.3
         }
@@ -1975,9 +2045,13 @@
             ],
             "ja": [
               "4秒以内に2回の個別ダメージを加えると＜そよ風＞になります。",
-              "クールダウン：7秒"
+              "クールダウン:7秒"
             ],
-            "cn": []
+            "cn": [
+              "Hitting a single enemy with a basic attack or skill 2 times within 4 seconds grants you <Zephyr>",
+              "Excludes multiple hit effects",
+              "Cooldown: 7s"
+            ]
           },
           "value": 1
         },
@@ -1996,12 +2070,17 @@
               "Duration: 3 seconds"
             ],
             "ja": [
-              "移動速度：40％増加",
-              "攻撃速度：20％増加",
+              "移動速度:40%増加",
+              "攻撃速度:20%増加",
               "200のシールドを獲得",
               "3秒間"
             ],
-            "cn": []
+            "cn": [
+              "Shield: 200",
+              "Movement speed: +20%",
+              "Attack speed: 40%",
+              "Duration: 3 seconds"
+            ]
           },
           "value": 0.4
         }
@@ -2043,13 +2122,20 @@
             ],
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
-              "＜呪い＞の状態から解除されると固定ダメージを受けます。",
-              "ダメージ：50+スキル増幅*2",
+              "＜呪い＞の状態から解除されると固定ダメージ",
+              "ダメージ:50+スキル増幅*2",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
-              "クールダウン：2秒"
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 50 + Skill Amplification*2",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ]
           },
           "value": 50
         },
@@ -2057,8 +2143,8 @@
           "detail": {
             "kr": ["이동속도: 10% 감소", "지속시간: 4초"],
             "en": ["Slowing by 10%", "Duration: 4s"],
-            "ja": ["移動速度：10％減少", "4秒間"],
-            "cn": []
+            "ja": ["移動速度:10%減少", "4秒間"],
+            "cn": ["Slowing by 10%", "Duration: 4s"]
           },
           "value": 0.1
         }
@@ -2123,8 +2209,8 @@
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40% 감소"],
             "en": ["Basic attacks reduce target's healing received by 40%"],
-            "ja": ["基本攻撃を受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["基本攻撃を受けた対象の治癒効果が40%減少"],
+            "cn": ["Basic attacks reduce target's healing received by 40%"]
           },
           "value": 0.4
         }
@@ -2221,8 +2307,8 @@
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40% 감소"],
             "en": ["Basic attacks reduce target's healing received by 40%"],
-            "ja": ["基本攻撃を受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["基本攻撃を受けた対象の治癒効果が40%減少"],
+            "cn": ["Basic attacks reduce target's healing received by 40%"]
           },
           "value": 0.4
         }
@@ -2292,8 +2378,14 @@
               "Your next basic attack gains a bonus critical strike chance",
               "Cooldown: 3s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "次の基本攻撃が100%の致命打確率ボーナスを獲得",
+              "クールダウン:3秒"
+            ],
+            "cn": [
+              "Your next basic attack gains a bonus critical strike chance",
+              "Cooldown: 3s"
+            ]
           },
           "value": 1
         }
@@ -2337,13 +2429,20 @@
             ],
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
-              "＜呪い＞の状態から解除されると固定ダメージを受けます。",
-              "ダメージ：50+スキル増幅*1.35",
+              "＜呪い＞の状態から解除されると固定ダメージ",
+              "ダメージ:50+スキル増幅*1.35",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
-              "クールダウン：2秒"
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 50 + Skill Amplification*1.35",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ]
           },
           "value": 50
         },
@@ -2351,8 +2450,8 @@
           "detail": {
             "kr": ["이동속도: 6% 감소", "지속시간: 4초"],
             "en": ["Slowing by 6%", "Duration: 4s"],
-            "ja": ["移動速度：6％減少", "4秒間"],
-            "cn": []
+            "ja": ["移動速度:6%減少", "4秒間"],
+            "cn": ["Slowing by 6%", "Duration: 4s"]
           },
           "value": 0.06
         }
@@ -2494,8 +2593,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
             "en": ["Skills reduce target's healing received by 40%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40%減少"],
+            "cn": ["Skills reduce target's healing received by 40%"]
           },
           "value": 0.4
         },
@@ -2575,26 +2674,38 @@
             ],
             "ja": [
               "4秒以内に3回の個別ダメージを加えると＜プラズマ＞になります。",
-              "クールダウン：5秒"
+              "クールダウン:5秒"
             ],
-            "cn": []
+            "cn": [
+              "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Charge Carrier>",
+              "Excludes multiple hit effects",
+              "Cooldown: 5s"
+            ]
           },
           "value": 1
         },
         "buff002": {
           "detail": {
-            "kr": ["이동속도: 레벨*1% 증가", "보호막: 105", "지속시간: 2초"],
+            "kr": [
+              "이동속도: 캐릭터 레벨*1% 증가",
+              "보호막: 105",
+              "지속시간: 2초"
+            ],
             "en": [
               "Shield: 105",
-              "Movement speed: +(Level*1)%",
+              "Movement speed: +(Character Level*1)%",
               "Duration: 2 seconds"
             ],
             "ja": [
-              "移動速度：キャラクターレベル*1％増加",
+              "移動速度:キャラクターレベル*1%増加",
               "105のシールドを獲得",
               "2秒間"
             ],
-            "cn": []
+            "cn": [
+              "Shield: 105",
+              "Movement speed: +(Character Level*1)%",
+              "Duration: 2 seconds"
+            ]
           },
           "value": 0.35
         }
@@ -2631,12 +2742,17 @@
               "Cooldown: 2s"
             ],
             "ja": [
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：敵最大体力の10％",
-              "クールダウン: 2秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:敵最大体力の10%",
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Using a skill causes a Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
+              "Damage: equivalent to 10% of the enemy's max HP",
+              "Cooldown: 2s"
+            ]
           },
           "value": 0.1
         }
@@ -2846,8 +2962,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 30% 감소"],
             "en": ["Skills reduce target's healing received by 30%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30%減少"],
+            "cn": ["Skills reduce target's healing received by 30%"]
           },
           "value": 0.4
         }
@@ -2985,8 +3101,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 30% 감소"],
             "en": ["Skills reduce target's healing received by 30%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30%減少"],
+            "cn": ["Skills reduce target's healing received by 30%"]
           },
           "value": 0.4
         }
@@ -3083,18 +3199,29 @@
         "uniq027": {
           "detail": {
             "kr": [
-              "다음에 가하는 기본공격이 스킬피해를 입히고 이동속도를 1초간 20% 감소시킴",
+              "다음에 가하는 기본공격이 스킬피해를 입힘",
               "피해량: 캐릭터 레벨*8 + 스킬 증폭*1",
+              "이동속도를 1초간 20% 감소",
               "쿨다운: 5초"
             ],
             "en": [
               "Your next basic attack deals extra cellular damage",
-              "Damage: Level*8 + Skill Amplification*1",
+              "Damage: Character Level*8 + Skill Amplification*1",
               "Slows your target by 20% for 1 second",
               "Cooldown: 5s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "次に加える基本攻撃が75の追加固有ダメージ",
+              "ダメージ:キャラクターレベル*8+スキル増幅*1",
+              "1秒間移動速度を20%だけ減少",
+              "クールダウン:5秒"
+            ],
+            "cn": [
+              "Your next basic attack deals extra cellular damage",
+              "Damage: Character Level*8 + Skill Amplification*1",
+              "Slows your target by 20% for 1 second",
+              "Cooldown: 5s"
+            ]
           },
           "value": 8
         }
@@ -3472,8 +3599,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 30% 감소"],
             "en": ["Skills reduce target's healing received by 30%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30%減少"],
+            "cn": ["Skills reduce target's healing received by 30%"]
           },
           "value": 0.4
         }
@@ -3567,13 +3694,20 @@
             ],
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
-              "＜呪い＞の状態から解除されると固定ダメージを受けます。",
-              "ダメージ：100+スキル増幅*1.25",
+              "＜呪い＞の状態から解除されると固定ダメージ",
+              "ダメージ:100+スキル増幅*1.25",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
-              "クールダウン：2秒"
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 100 + Skill Amplification*1.25",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ]
           },
           "value": 100
         },
@@ -3581,8 +3715,8 @@
           "detail": {
             "kr": ["이동속도: 10% 감소", "지속시간: 4초"],
             "en": ["Slowing by 10%", "Duration: 4s"],
-            "ja": ["移動速度：10％減少", "4秒間"],
-            "cn": []
+            "ja": ["移動速度:10%減少", "4秒間"],
+            "cn": ["Slowing by 10%", "Duration: 4s"]
           },
           "value": 0.1
         },
@@ -3708,8 +3842,8 @@
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 30% 감소"],
             "en": ["Basic attacks reduce target's healing received by 30%"],
-            "ja": ["基本攻撃を受けた対象の治癒効果が30％減少"],
-            "cn": []
+            "ja": ["基本攻撃を受けた対象の治癒効果が30%減少"],
+            "cn": ["Basic attacks reduce target's healing received by 30%"]
           },
           "value": 0.4
         }
@@ -3870,8 +4004,8 @@
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 30% 감소"],
             "en": ["Basic attacks reduce target's healing received by 30%"],
-            "ja": ["基本攻撃を受けた対象の治癒効果が30％減少"],
-            "cn": []
+            "ja": ["基本攻撃を受けた対象の治癒効果が30%減少"],
+            "cn": ["Basic attacks reduce target's healing received by 30%"]
           },
           "value": 0.4
         }
@@ -3899,8 +4033,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 30% 감소"],
             "en": ["Skills reduce target's healing received by 30%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30%減少"],
+            "cn": ["Skills reduce target's healing received by 30%"]
           },
           "value": 0.4
         }
@@ -4235,7 +4369,11 @@
               "重畳によって移動速度が最大0.12まで増加します",
               "基本攻撃ダメージを与える場合、重畳をすべて消費して最大120の固有ダメージを与えます"
             ],
-            "cn": []
+            "cn": [
+              "Gain a stack every move, up to 24m",
+              "Your movement speed will increase by up to 0.12, based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 120 cellular damage"
+            ]
           },
           "value": 120
         }
@@ -4412,11 +4550,15 @@
               "Heal for 66% of damage dealt"
             ],
             "ja": [
-              "最後の弾丸に加える基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：攻撃力+スキル増幅*2+スキル攻撃追加ダメージ*2+ 敵最大体力の8％",
-              "与えたダメージの66％だけの体力を回復"
+              "最後の弾丸に加える基本攻撃が追加固有ダメージ",
+              "ダメージ:攻撃力+スキル増幅*2+スキル攻撃追加ダメージ*2+ 敵最大体力の8%",
+              "与えたダメージの66%だけの体力を回復"
             ],
-            "cn": []
+            "cn": [
+              "Basic Attacks using the last bullet of your ammo deals extra cellular damage",
+              "Damage: Attack Power + Skill Amplification*2 + Extra Skill Damage*2 + 8% of enemy's max HP",
+              "Heal for 66% of damage dealt"
+            ]
           },
           "value": 3
         }
@@ -4542,17 +4684,20 @@
           "detail": {
             "kr": [
               "마지막 탄환으로 가하는 기본 공격은 추가 고유 피해를 입힘",
-              "피해량: 공격력 + 스킬 증폭*2 + 레벨*8 + 상대 최대체력의 6%"
+              "피해량: 공격력 + 스킬 증폭*2 + 캐릭터 레벨*8 + 상대 최대체력의 6%"
             ],
             "en": [
               "Basic Attacks using the last bullet of your ammo deals extra cellular damage",
               "Damage: Attack Power + Skill Amplification*2 + 6% of enemy's max HP"
             ],
             "ja": [
-              "最後の弾丸に加える基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：攻撃力+スキル増幅*2+キャラクターレベル*8+敵最大体力の6％"
+              "最後の弾丸に加える基本攻撃が追加固有ダメージ",
+              "ダメージ:攻撃力+スキル増幅*2+キャラクターレベル*8+敵最大体力の6%"
             ],
-            "cn": []
+            "cn": [
+              "Basic Attacks using the last bullet of your ammo deals extra cellular damage",
+              "Damage: Attack Power + Skill Amplification*2 + 6% of enemy's max HP"
+            ]
           },
           "value": 2
         }
@@ -4595,7 +4740,11 @@
               "敵実験体の現在体力の5%のダメージ",
               "5秒間情熱スタックを獲得"
             ],
-            "cn": []
+            "cn": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 5% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds"
+            ]
           },
           "value": 0.04
         },
@@ -4615,10 +4764,14 @@
             ],
             "ja": [
               "重畳された情熱スタックにつき",
-              "攻撃速度：+8%",
+              "攻撃速度:+8%",
               "最大3重畳すると、15の攻撃力と0.1の移動速度を追加"
             ],
-            "cn": []
+            "cn": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 8%",
+              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
+            ]
           },
           "value": 0.08
         }
@@ -5084,8 +5237,16 @@
               "Slows your target by 99% for 0.56 seconds",
               "Cooldown: 4s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "次に加える基本攻撃が75の追加固有ダメージ",
+              "0.56秒間移動速度を99%だけ減少",
+              "クールダウン:4秒"
+            ],
+            "cn": [
+              "Your next basic attack deals 75 extra cellular damage",
+              "Slows your target by 99% for 0.56 seconds",
+              "Cooldown: 4s"
+            ]
           },
           "value": 75
         }
@@ -5286,8 +5447,14 @@
               "Your next basic attack gains a bonus critical strike chance",
               "Cooldown: 3s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "次の基本攻撃が100%の致命打確率ボーナスを獲得",
+              "クールダウン:3秒"
+            ],
+            "cn": [
+              "Your next basic attack gains a bonus critical strike chance",
+              "Cooldown: 3s"
+            ]
           },
           "value": 1
         }
@@ -5518,8 +5685,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
             "en": ["Skills reduce target's healing received by 40%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40%減少"],
+            "cn": ["Skills reduce target's healing received by 40%"]
           },
           "value": 0.4
         }
@@ -5608,10 +5775,18 @@
               "2.5秒間150+キャラクターレベル*10のシールドを獲得",
               "50%の行動妨害耐性を獲得",
               "8秒間攻撃力が15増加",
-              "受ける回復量が15％増加",
-              "クールダウン：70秒"
+              "受ける回復量が15%増加",
+              "クールダウン:70秒"
             ],
-            "cn": []
+            "cn": [
+              "When dropping below 40% HP after taking damage from an enemy player",
+              "You are cleansed of all debuffs and crowd control effects",
+              "You gain a (150 + Character Level*10) HP shield for 2.5 seconds",
+              "50% Tenacity for 8 seconds",
+              "15 Attack Power for 8 seconds",
+              "HP Recovery on you is 15% more effective for 8 seconds",
+              "Cooldown: 70s"
+            ]
           },
           "value": 150
         }
@@ -5677,8 +5852,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
             "en": ["Skills reduce target's healing received by 40%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40%減少"],
+            "cn": ["Skills reduce target's healing received by 40%"]
           },
           "value": 0.4
         }
@@ -5723,8 +5898,8 @@
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
             "en": ["Skills reduce target's healing received by 40%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が40%減少"],
+            "cn": ["Skills reduce target's healing received by 40%"]
           },
           "value": 0.4
         }
@@ -5770,8 +5945,8 @@
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40% 감소"],
             "en": ["Basic attacks reduce target's healing received by 40%"],
-            "ja": ["基本攻撃を受けた対象の治癒効果が40％減少"],
-            "cn": []
+            "ja": ["基本攻撃を受けた対象の治癒効果が40%減少"],
+            "cn": ["Basic attacks reduce target's healing received by 40%"]
           },
           "value": 0.4
         },
@@ -5971,8 +6146,14 @@
               "Your next basic attack gains a bonus critical strike chance",
               "Cooldown: 3s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "次の基本攻撃が100%の致命打確率ボーナスを獲得",
+              "クールダウン:3秒"
+            ],
+            "cn": [
+              "Your next basic attack gains a bonus critical strike chance",
+              "Cooldown: 3s"
+            ]
           },
           "value": 1
         }
@@ -6378,7 +6559,11 @@
               "敵実験体の現在体力の5%のダメージ",
               "5秒間情熱スタックを獲得"
             ],
-            "cn": []
+            "cn": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 5% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds"
+            ]
           },
           "value": 0.05
         },
@@ -6397,10 +6582,14 @@
             ],
             "ja": [
               "重畳された情熱スタックにつき",
-              "攻撃速度：+8%",
+              "攻撃速度:+8%",
               "最大3重畳すると、15の攻撃力と0.1の移動速度を追加"
             ],
-            "cn": []
+            "cn": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 8%",
+              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
+            ]
           },
           "value": 0.08
         }
@@ -6690,12 +6879,17 @@
               "Cooldown: 3s"
             ],
             "ja": [
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：スキル増幅*1.5 + スキル攻撃追加ダメージ*1",
-              "クールダウン: 3秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:スキル増幅*1.5 + スキル攻撃追加ダメージ*1",
+              "クールダウン:3秒"
             ],
-            "cn": []
+            "cn": [
+              "Using a skill causes a Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: equivalent to Skill Amplification*1.5 + Extra Skill Damage*1",
+              "Cooldown: 3s"
+            ]
           },
           "value": 3
         }
@@ -6913,12 +7107,17 @@
               "Cooldown: 1s"
             ],
             "ja": [
-              "基本攻撃から受けたダメージの3％を攻撃者に固定ダメージで返します。",
-              "40％(近)／30％(遠)の治癒減少効果を与えます。",
-              "4秒間累積して450のダメージを受けると、周りに215のダメージを与えます。",
-              "クールダウン：1秒"
+              "基本攻撃から受けたダメージの3%を攻撃者に固定ダメージで返します。",
+              "40%(近)/30%(遠)の治癒減少効果",
+              "4秒間累積して450のダメージを受けると、周りに215のダメージ",
+              "クールダウン:1秒"
             ],
-            "cn": []
+            "cn": [
+              "When hit by a basic attack, reflect 3% true damage to the attacker",
+              "Reduce their healing by 40% for 4 seconds",
+              "Taking 450 or more damage over 3 seconds causes 215 damage to nearby enemies",
+              "Cooldown: 1s"
+            ]
           },
           "value": 0.03
         }
@@ -6960,13 +7159,20 @@
             ],
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
-              "＜呪い＞の状態から解除されると固定ダメージを受けます。",
-              "ダメージ：50+スキル増幅*1.75",
+              "＜呪い＞の状態から解除されると固定ダメージ",
+              "ダメージ:50+スキル増幅*1.75",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
-              "クールダウン：2秒"
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 50 + Skill Amplification*1.75",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ]
           },
           "value": 50
         },
@@ -6974,8 +7180,8 @@
           "detail": {
             "kr": ["이동속도: 8% 감소", "지속시간: 4초"],
             "en": ["Slowing by 8%", "Duration: 4s"],
-            "ja": ["移動速度：8％減少", "4秒間"],
-            "cn": []
+            "ja": ["移動速度:8%減少", "4秒間"],
+            "cn": ["Slowing by 8%", "Duration: 4s"]
           },
           "value": 0.08
         }
@@ -7012,11 +7218,15 @@
               "The anomaly then disappears, returning after 25 seconds"
             ],
             "ja": [
-              "屈折のマントを装備します。",
+              "屈折のマントを装備",
               "屈折のマントは敵が自分に与える次のスキルまたはトラップのダメージと効果を一度保護してから消えます。",
-              "25秒後に再生成されます。"
+              "25秒後に再生成"
             ],
-            "cn": []
+            "cn": [
+              "Create a temporal anomaly",
+              "The temporal anomaly is negating damage and effects of the next hostile skill or trap",
+              "The anomaly then disappears, returning after 25 seconds"
+            ]
           },
           "value": 1
         }
@@ -7050,8 +7260,14 @@
               "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 30% for 2 seconds",
               "Cooldown: 4s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "スキルで敵にダメージを与えると、2秒間移動速度を20%、攻撃速度を30%だけ減少",
+              "クールダウン:4秒"
+            ],
+            "cn": [
+              "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 30% for 2 seconds",
+              "Cooldown: 4s"
+            ]
           },
           "value": 0.2
         }
@@ -7117,9 +7333,15 @@
               "0.05m移動するたびに[軽い足取り]を最大100回まで重畳して獲得",
               "重畳によって移動速度が最大0.1まで増加します",
               "基本攻撃ダメージを与える場合、重畳をすべて消費して最大35の固有ダメージを与えます",
-              "最大重畳状態でダメージを受けた対象の移動速度を1秒間30％減少させます"
+              "最大重畳状態でダメージを受けた対象の移動速度を1秒間30%減少させます"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.05m you move, up to 100 times",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 35 cellular damage",
+              "At max stacks, your next basic attack slows enemies by 30% for 1 seconds"
+            ]
           },
           "value": 70
         }
@@ -7178,12 +7400,18 @@
             ],
             "ja": [
               "VF暴走走状態の時",
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：キャラクターレベル*5",
-              "クールダウン: 0.2秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:キャラクターレベル*5",
+              "クールダウン:0.2秒"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*5",
+              "Cooldown: 0.2s"
+            ]
           },
           "value": 5
         }
@@ -7228,9 +7456,15 @@
               "0.05m移動するたびに[軽い足取り]を最大100回まで重畳して獲得",
               "重畳によって移動速度が最大0.1まで増加します",
               "基本攻撃ダメージを与える場合、重畳をすべて消費して最大35の固有ダメージを与えます",
-              "最大重畳状態でダメージを受けた対象の移動速度を1秒間30％減少させます"
+              "最大重畳状態でダメージを受けた対象の移動速度を1秒間30%減少させます"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.05m you move, up to 100 times",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 35 cellular damage",
+              "At max stacks, your next basic attack slows enemies by 30% for 1 seconds"
+            ]
           },
           "value": 70
         }
@@ -7291,12 +7525,18 @@
             ],
             "ja": [
               "VF暴走走状態の時",
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：キャラクターレベル*5",
-              "クールダウン: 0.2秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:キャラクターレベル*5",
+              "クールダウン:0.2秒"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*5",
+              "Cooldown: 0.2s"
+            ]
           },
           "value": 5
         }
@@ -7350,9 +7590,15 @@
               "0.04m移動するたびに[軽い足取り]を最大100回まで重畳して獲得",
               "重畳によって移動速度が最大0.1まで増加します",
               "基本攻撃ダメージを与える場合、重畳をすべて消費して最大80の固有ダメージを与えます",
-              "最大重畳状態でダメージを受けた対象の移動速度を1秒間40％減少させます"
+              "最大重畳状態でダメージを受けた対象の移動速度を1秒間40%減少させます"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.04m you move, up to 100 times",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage",
+              "At max stacks, your next basic attack slows enemies by 40% for 1 seconds"
+            ]
           },
           "value": 160
         }
@@ -7406,9 +7652,15 @@
               "0.04m移動するたびに[軽い足取り]を最大100回まで重畳して獲得",
               "重畳によって移動速度が最大0.1まで増加します",
               "基本攻撃ダメージを与える場合、重畳をすべて消費して最大80の固有ダメージを与えます",
-              "最大重畳状態でダメージを受けた対象の移動速度を1秒間40％減少させます"
+              "最大重畳状態でダメージを受けた対象の移動速度を1秒間40%減少させます"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.04m you move, up to 100 times",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage",
+              "At max stacks, your next basic attack slows enemies by 40% for 1 seconds"
+            ]
           },
           "value": 160
         },
@@ -7422,8 +7674,14 @@
               "The duration of Exuviation is reduced based on the level of VF Overflow(R)",
               "30% / 35% / 40% / 45%"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "エキオンのオーバーロード状態の持続時間がVF暴走(R)レベルによって永久に減少",
+              "30% / 35% / 40% / 45%"
+            ],
+            "cn": [
+              "The duration of Exuviation is reduced based on the level of VF Overflow(R)",
+              "30% / 35% / 40% / 45%"
+            ]
           },
           "value": 0.3
         }
@@ -7454,7 +7712,7 @@
             "ja": [
               "制圧、エアボーン、ノックバック、捕まりを除外したデバフの持続時間が15%減少"
             ],
-            "cn": []
+            "cn": ["Reduces crowd control effects by 15%"]
           },
           "value": 0.15
         },
@@ -7479,9 +7737,15 @@
               "0.04m移動するたびに[軽い足取り]を最大100回まで重畳して獲得",
               "重畳によって移動速度が最大0.1まで増加します",
               "基本攻撃ダメージを与える場合、重畳をすべて消費して最大80の固有ダメージを与えます",
-              "最大重畳状態でダメージを受けた対象の移動速度を1秒間40％減少させます"
+              "最大重畳状態でダメージを受けた対象の移動速度を1秒間40%減少させます"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Gain a stack of Swift Strides every 0.04m you move, up to 100 times",
+              "Your movement speed will increase by up to 0.1 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage",
+              "At max stacks, your next basic attack slows enemies by 40% for 1 seconds"
+            ]
           },
           "value": 160
         }
@@ -7548,10 +7812,14 @@
             ],
             "ja": [
               "VF暴走状態の時",
-              "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージを与えます。",
-              "ダメージ：最大体力の4%"
+              "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージ",
+              "ダメージ:最大体力の4%"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Cellular damage is dealt to enemies in a 2.5m range every 1second when in combat",
+              "Damage: 4% of User's Max HP"
+            ]
           },
           "value": 0.05
         }
@@ -7582,7 +7850,7 @@
             "ja": [
               "制圧、エアボーン、ノックバック、捕まりを除外したデバフの持続時間が15%減少"
             ],
-            "cn": []
+            "cn": ["Reduces crowd control effects by 15%"]
           },
           "value": 0.15
         }
@@ -7632,12 +7900,18 @@
             ],
             "ja": [
               "VF暴走走状態の時",
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：キャラクターレベル*7",
-              "クールダウン: 0.2秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:キャラクターレベル*7",
+              "クールダウン:0.2秒"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*7",
+              "Cooldown: 0.2s"
+            ]
           },
           "value": 7
         }
@@ -7678,12 +7952,18 @@
             ],
             "ja": [
               "VF暴走走状態の時",
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：キャラクターレベル*7",
-              "クールダウン: 0.2秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:キャラクターレベル*7",
+              "クールダウン:0.2秒"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*7",
+              "Cooldown: 0.2s"
+            ]
           },
           "value": 7
         },
@@ -7697,8 +7977,14 @@
               "Reduce the defense of enemies hit by Envenomization(R) by 6% for 7 seconds",
               "This can be stacked up to 2 times"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "エンベノミゼーション(R)に的中した敵対象の防御力を7秒間6%減少",
+              "最大2スタックまで重畳"
+            ],
+            "cn": [
+              "Reduce the defense of enemies hit by Envenomization(R) by 6% for 7 seconds",
+              "This can be stacked up to 2 times"
+            ]
           },
           "value": 0.06
         }
@@ -7729,7 +8015,7 @@
             "ja": [
               "制圧、エアボーン、ノックバック、捕まりを除外したデバフの持続時間が15%減少"
             ],
-            "cn": []
+            "cn": ["Reduces crowd control effects by 15%"]
           },
           "value": 0.15
         },
@@ -7750,12 +8036,18 @@
             ],
             "ja": [
               "VF暴走走状態の時",
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：キャラクターレベル*7",
-              "クールダウン: 0.2秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:キャラクターレベル*7",
+              "クールダウン:0.2秒"
             ],
-            "cn": []
+            "cn": [
+              "During VF Overflow",
+              "Echion's skills cause Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
+              "Damage: Character Level*7",
+              "Cooldown: 0.2s"
+            ]
           },
           "value": 7
         }
@@ -7775,7 +8067,12 @@
           "cn": "卡德摩斯的召喚Lv2"
         },
         "stack": 1,
-        "only0": "에키온의 패시브 스킬이 2레벨 이상일 경우"
+        "only": {
+          "kr": "에키온의 패시브 스킬",
+          "en": "Passive skill of Echion",
+          "ja": "エキオンのパッシブスキル",
+          "cn": "厄喀翁被動技能"
+        }
       },
       {
         "id": "WWW002",
@@ -7792,7 +8089,12 @@
           "cn": "卡德摩斯的召喚Lv3"
         },
         "stack": 1,
-        "only0": "에키온의 패시브 스킬이 3레벨 이상일 경우"
+        "only": {
+          "kr": "에키온의 패시브 스킬",
+          "en": "Passive skill of Echion",
+          "ja": "エキオンのパッシブスキル",
+          "cn": "厄喀翁被動技能"
+        }
       }
     ]
   }

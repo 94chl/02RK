@@ -389,14 +389,20 @@
           "detail": {
             "kr": [
               "휴식을 2초 이상 지속시 보호막 적용",
-              "보호막: 45 + 레벨*6(근)/4.5(원)"
+              "보호막: 45 + 캐릭터 레벨*6(근)/4.5(원)"
             ],
             "en": [
               "Resting for 2 seconds grants a HP shield",
-              "Shield: 45 + Character Level*6(M)/4.5(R)"
+              "Shield: 45 + Character Level*6(Melee)/4.5(Ranged)"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "2秒間休息状態を続ける時",
+              "45+キャラクターレベル*6(近)/4.5(遠)のシールドを獲得"
+            ],
+            "cn": [
+              "Resting for 2 seconds grants a HP shield",
+              "Shield: 45 + Character Level*6(Melee)/4.5(Ranged)"
+            ]
           },
           "value": 45
         }
@@ -466,12 +472,16 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
             "ja": [
               "スキル攻撃のダメージを受けた対象の治癒効果が減少",
-              "（近）40％／（遠）30％"
+              "40%(近)/30%(遠)"
             ],
-            "cn": []
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
           },
           "value": 0.4
         }
@@ -766,7 +776,12 @@
         },
         "stack": 1,
         "material": ["GC007", "BM007"],
-        "only0": "마이만 제작가능",
+        "only": {
+          "kr": "마이만 제작 가능",
+          "en": "Mai can craft",
+          "ja": "マイだけが制作できる。",
+          "cn": "只有梅才能製作"
+        },
         "def0": 65,
         "atk_spd1": 0.28,
         "uniq009": {
@@ -806,13 +821,16 @@
             ],
             "en": [
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
-              "Damage: 4.5%(M)/3%(R) of User's Max HP"
+              "Damage: 4.5%(Melee)/3%(Ranged) of User's Max HP"
             ],
             "ja": [
-              "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージを与えます。",
-              "ダメージ：最大体力の4.5％（近）／3％（遠）"
+              "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージ",
+              "ダメージ:最大体力の4.5%(近)/3%(遠)"
             ],
-            "cn": []
+            "cn": [
+              "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
+              "Damage: 4.5%(Melee)/3%(Ranged) of User's Max HP"
+            ]
           },
           "value": 0.045
         }
@@ -898,11 +916,15 @@
               "The anomaly then disappears, returning after 25 seconds"
             ],
             "ja": [
-              "屈折のマントを装備します。",
+              "屈折のマントを装備",
               "屈折のマントは敵が自分に与える次のスキルまたはトラップのダメージと効果を一度保護してから消えます。",
-              "25秒後に再生成されます。"
+              "25秒後に再生成"
             ],
-            "cn": []
+            "cn": [
+              "Create a temporal anomaly",
+              "The temporal anomaly is negating damage and effects of the next hostile skill or trap",
+              "The anomaly then disappears, returning after 25 seconds"
+            ]
           },
           "value": 1
         }
@@ -950,10 +972,17 @@
               "すべてのデバフを解除",
               "1.5秒間150+キャラクターレベル*10のシールドを獲得",
               "8秒間攻撃力が10増加",
-              "（近）15％／（遠）8％の受ける回復量が増加",
-              "クールダウン：70秒"
+              "15%(近)/8%(遠)の受ける回復量が増加",
+              "クールダウン:70秒"
             ],
-            "cn": []
+            "cn": [
+              "When dropping below 40% HP after taking damage from an enemy player",
+              "You are cleansed of all debuffs and crowd control effects",
+              "You gain a (150 + Character Level*10) HP shield for 1.5 seconds",
+              "10 Attack Power for 8 seconds",
+              "HP Recovery on you is (M: 15%, R: 8%) more effective for 8 seconds",
+              "Cooldown: 70s"
+            ]
           },
           "value": 150
         }
@@ -974,7 +1003,12 @@
         },
         "stack": 1,
         "material": ["GC006", "PM002"],
-        "only0": "마이만 제작가능",
+        "only": {
+          "kr": "마이만 제작 가능",
+          "en": "Mai can craft",
+          "ja": "マイだけが制作できる。",
+          "cn": "只有梅才能製作"
+        },
         "atk0": 50,
         "def0": 65,
         "mp_reg1": 1
@@ -995,7 +1029,12 @@
         },
         "stack": 1,
         "material": ["BC001", "PM004"],
-        "only0": "마이만 제작가능",
+        "only": {
+          "kr": "마이만 제작 가능",
+          "en": "Mai can craft",
+          "ja": "マイだけが制作できる。",
+          "cn": "只有梅才能製作"
+        },
         "atk0": 20,
         "def0": 30,
         "basic_atk_def0": 4,
@@ -1007,13 +1046,16 @@
             ],
             "en": [
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
-              "Damage: 5.5%(M)/4%(R) of User's Max HP"
+              "Damage: 5.5%(Melee)/4%(Ranged) of User's Max HP"
             ],
             "ja": [
-              "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージを与えます。",
-              "ダメージ：最大体力の5.5％（近）／4％（遠）"
+              "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージ",
+              "ダメージ:最大体力の5.5%(近)/4%(遠)"
             ],
-            "cn": []
+            "cn": [
+              "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
+              "Damage: 5.5%(Melee)/4%(Ranged) of User's Max HP"
+            ]
           },
           "value": 0.055
         }
@@ -1180,7 +1222,12 @@
           "cn": "初蕾花冠"
         },
         "stack": 1,
-        "only0": "프리야 전용 방어구",
+        "only": {
+          "kr": "프리야만 장착 가능",
+          "en": "Priya can be equipped",
+          "ja": "プリヤだけが装備できる。",
+          "cn": "只有普里亞才能裝備"
+        },
         "def0": 10,
         "mp0": 170,
         "skill1": 0.05
@@ -1349,23 +1396,28 @@
           "detail": {
             "kr": [
               "적 실험체에게 피해를 받아 체력이 40% 이하가 될 때 발동",
-              "1.5초간 (135 + 레벨*8)의 보호막 획득",
+              "1.5초간 (135 + 캐릭터 레벨*8)의 보호막 획득",
               "6초 동안 스킬 증폭이 12% 증가",
               "쿨다운: 80초"
             ],
             "en": [
               "When dropping below 40% HP after taking damage from an enemy player",
-              "You gain a (135 + Level*8) HP shield for 1.5 seconds",
+              "You gain a (135 + Character Level*8) HP shield for 1.5 seconds",
               "Your skill amplification is increased by 12% for 6 seconds",
               "Cooldown: 80s"
             ],
             "ja": [
               "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
               "1.5秒間135+キャラクターレベル*8のシールドを獲得",
-              "6秒間スキル増幅が12％増加",
-              "クールダウン：80秒"
+              "6秒間スキル増幅が12%増加",
+              "クールダウン:80秒"
             ],
-            "cn": []
+            "cn": [
+              "When dropping below 40% HP after taking damage from an enemy player",
+              "You gain a (135 + Character Level*8) HP shield for 1.5 seconds",
+              "Your skill amplification is increased by 12% for 6 seconds",
+              "Cooldown: 80s"
+            ]
           },
           "value": 135
         }
@@ -1386,7 +1438,12 @@
         },
         "stack": 1,
         "material": ["GH006"],
-        "only0": "프리야 전용 방어구",
+        "only": {
+          "kr": "프리야만 장착 가능",
+          "en": "Priya can be equipped",
+          "ja": "プリヤだけが装備できる。",
+          "cn": "只有普里亞才能裝備"
+        },
         "def0": 20,
         "mp0": 200,
         "skill1": 0.1
@@ -1563,17 +1620,22 @@
             ],
             "en": [
               "When hit by a basic attack, reflect 4.5% true damage to the attacker",
-              "Reduce their healing by 40%(M)/30%(R) for 4 seconds",
+              "Reduce their healing by 40%(Melee)/30%(Ranged) for 4 seconds",
               "Taking 700 or more damage over 3 seconds causes 150 damage to nearby enemies",
               "Cooldown: 3s"
             ],
             "ja": [
-              "基本攻撃から受けたダメージの4.5％を攻撃者に固定ダメージで返します。",
-              "40％(近)／30％(遠)の治癒減少効果を与えます。",
-              "3秒間累積して700のダメージを受けると、周りに150のダメージを与えます。",
-              "クールダウン：3秒"
+              "基本攻撃から受けたダメージの4.5%を攻撃者に固定ダメージで返します。",
+              "40%(近)/30%(遠)の治癒減少効果",
+              "3秒間累積して700のダメージを受けると、周りに150のダメージ",
+              "クールダウン:3秒"
             ],
-            "cn": []
+            "cn": [
+              "When hit by a basic attack, reflect 4.5% true damage to the attacker",
+              "Reduce their healing by 40%(Melee)/30%(Ranged) for 4 seconds",
+              "Taking 700 or more damage over 3 seconds causes 150 damage to nearby enemies",
+              "Cooldown: 3s"
+            ]
           },
           "value": 0.045
         }
@@ -1636,7 +1698,12 @@
         },
         "stack": 1,
         "material": ["BH009"],
-        "only0": "프리야 전용 방어구",
+        "only": {
+          "kr": "프리야만 장착 가능",
+          "en": "Priya can be equipped",
+          "ja": "プリヤだけが装備できる。",
+          "cn": "只有普里亞才能裝備"
+        },
         "def0": 30,
         "mp0": 300,
         "skill1": 0.1,
@@ -1694,16 +1761,21 @@
             "en": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to 10%(M)/8%(R) of the enemy's max HP",
+              "Damage: equivalent to 10%(Melee)/8%(Ranged) of the enemy's max HP",
               "Cooldown: 2s"
             ],
             "ja": [
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：敵最大体力の10％",
-              "クールダウン: 2秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:敵最大体力の10%",
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Using a skill causes a Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
+              "Damage: equivalent to 10%(Melee)/8%(Ranged) of the enemy's max HP",
+              "Cooldown: 2s"
+            ]
           },
           "value": 0.1
         }
@@ -2004,12 +2076,16 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
             "ja": [
               "スキル攻撃のダメージを受けた対象の治癒効果が減少",
-              "（近）40％／（遠）30％"
+              "40%/(近)30%(遠)"
             ],
-            "cn": []
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
           },
           "value": 0.4
         }
@@ -2042,17 +2118,22 @@
             ],
             "en": [
               "When hit by a basic attack, reflect 4.5% true damage to the attacker",
-              "Reduce their healing by 40%(M)/30%(R) for 4 seconds",
+              "Reduce their healing by 40%(Melee)/30%(Ranged) for 4 seconds",
               "Taking 600 or more damage over 3 seconds causes 600 damage to nearby enemies",
               "Cooldown: 2s"
             ],
             "ja": [
-              "基本攻撃から受けたダメージの4.5％を攻撃者に固定ダメージで返します。",
-              "40％(近)／30％(遠)の治癒減少効果を与えます。",
-              "4秒間累積して600のダメージを受けると、周りに150のダメージを与えます。",
-              "クールダウン：2秒"
+              "基本攻撃から受けたダメージの4.5%を攻撃者に固定ダメージで返します。",
+              "40%(近)/30%(遠)の治癒減少効果",
+              "4秒間累積して600のダメージを受けると、周りに150のダメージ",
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "When hit by a basic attack, reflect 4.5% true damage to the attacker",
+              "Reduce their healing by 40%(Melee)/30%(Ranged) for 4 seconds",
+              "Taking 600 or more damage over 3 seconds causes 600 damage to nearby enemies",
+              "Cooldown: 2s"
+            ]
           },
           "value": 0.045
         }
@@ -2238,18 +2319,7 @@
         "material": ["GB004", "BM001"],
         "atk0": 20,
         "hp0": 160,
-        "heal_up1": {
-          "detail": {
-            "kr": [
-              "자신 및 팀원에게 주는 회복기 +15%",
-              "흡혈 및 음식 회복은 미적용"
-            ],
-            "en": [],
-            "ja": [],
-            "cn": []
-          },
-          "value": 0.15
-        }
+        "heal_up1": 0.15
       },
       {
         "id": "PB011",
@@ -2321,8 +2391,14 @@
               "Dealing damage to an enemy with a skill slows them by 20% for 1 second",
               "Cooldown: 3s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "スキルで敵にダメージを与えると、1秒間移動速度を20%だけ減少",
+              "クールダウン:3秒"
+            ],
+            "cn": [
+              "Dealing damage to an enemy with a skill slows them by 20% for 1 second",
+              "Cooldown: 3s"
+            ]
           },
           "value": 0.2
         }
@@ -2430,11 +2506,15 @@
               "The anomaly then disappears, returning after 25 seconds"
             ],
             "ja": [
-              "屈折のマントを装備します。",
+              "屈折のマントを装備",
               "屈折のマントは敵が自分に与える次のスキルまたはトラップのダメージと効果を一度保護してから消えます。",
-              "25秒後に再生成されます。"
+              "25秒後に再生成"
             ],
-            "cn": []
+            "cn": [
+              "Create a temporal anomaly",
+              "The temporal anomaly is negating damage and effects of the next hostile skill or trap",
+              "The anomaly then disappears, returning after 25 seconds"
+            ]
           },
           "value": 1
         }
@@ -2798,12 +2878,12 @@
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
             "en": [
-              "Basic attacks reduce target's healing received by 40%(M)/30%(R)"
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
             ],
-            "ja": [
-              "基本攻撃を受けた対象の治癒効果が減少：40％（近）／30％（遠）"
-            ],
-            "cn": []
+            "ja": ["基本攻撃を受けた対象の治癒効果が減少:40%(近)/30%(遠)"],
+            "cn": [
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
           },
           "value": 0.4
         }
@@ -2874,7 +2954,7 @@
             "ja": [
               "制圧、エアボーン、ノックバック、捕まりを除外したデバフの持続時間が15%減少"
             ],
-            "cn": []
+            "cn": ["Reduces crowd control effects by 15%"]
           },
           "value": 0.15
         }
@@ -2981,7 +3061,7 @@
             "ja": [
               "制圧、エアボーン、ノックバック、捕まりを除外したデバフの持続時間が25%減少"
             ],
-            "cn": []
+            "cn": ["Reduces crowd control effects by 25%"]
           },
           "value": 0.25
         }
@@ -3373,12 +3453,16 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
             "ja": [
               "スキル攻撃のダメージを受けた対象の治癒効果が減少",
-              "（近）40％／（遠）30％"
+              "40%/(近)30%(遠)"
             ],
-            "cn": []
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
           },
           "value": 0.4
         }
@@ -3477,12 +3561,16 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
             "ja": [
               "スキル攻撃のダメージを受けた対象の治癒効果が減少",
-              "（近）40％／（遠）30％"
+              "40%/(近)30%(遠)"
             ],
-            "cn": []
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
           },
           "value": 0.4
         }
@@ -3589,12 +3677,16 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
             "ja": [
               "スキル攻撃のダメージを受けた対象の治癒効果が減少",
-              "（近）40％／（遠）30％"
+              "40%/(近)30%(遠)"
             ],
-            "cn": []
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
           },
           "value": 0.4
         }
@@ -3633,8 +3725,18 @@
               "Taking damage will end the effect",
               "Cooldown: 30s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "アイテムを使用すると、最大体力の6.5%を即時回復",
+              "その後毎秒失った体力とスタミナの5.5%を3秒間回復",
+              "ダメージを受けた場合、解除",
+              "クールダウン:30秒"
+            ],
+            "cn": [
+              "Activate to instantly heal 6.5% of your max HP",
+              "Recover 5.5% of your missing HP & SP per second for 3 seconds",
+              "Taking damage will end the effect",
+              "Cooldown: 30s"
+            ]
           },
           "value": 0.065
         }
@@ -3723,9 +3825,14 @@
               "移動するたびに[軽い足取り]を最大20mまで重畳して獲得",
               "重畳によって移動速度が最大0.06まで増加します",
               "基本攻撃ダメージを与える場合、重畳をすべて消費して最大100の固有ダメージを与えます",
-              "近距離：最大重畳状態でダメージを受けた対象の移動速度を2秒間20％減少させます"
+              "近距離:最大重畳状態でダメージを受けた対象の移動速度を2秒間20%減少させます"
             ],
-            "cn": []
+            "cn": [
+              "Gain a stack every move, up to 20m",
+              "Your movement speed will increase by up to 0.06, based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 100 cellular damage",
+              "Melee: At max stacks, your next basic attack slows enemies by 20% for 2 seconds"
+            ]
           },
           "value": 100
         }
@@ -3804,13 +3911,20 @@
             ],
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
-              "＜呪い＞の状態から解除されると固定ダメージを受けます。",
-              "ダメージ：45+スキル増幅*1",
+              "＜呪い＞の状態から解除されると固定ダメージ",
+              "ダメージ:45+スキル増幅*1",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
-              "クールダウン：2秒"
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 45 + Skill Amplification*1",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ]
           },
           "value": 45
         },
@@ -3818,8 +3932,8 @@
           "detail": {
             "kr": ["이동속도: 6% 감소", "지속시간: 4초"],
             "en": ["Slowing by 6%", "Duration: 4s"],
-            "ja": ["移動速度：6％減少", "4秒間"],
-            "cn": []
+            "ja": ["移動速度:6%減少", "4秒間"],
+            "cn": ["Slowing by 6%", "Duration: 4s"]
           },
           "value": 0.06
         }
@@ -3880,8 +3994,11 @@
               "쿨다운: 16초"
             ],
             "en": ["Activate to gain <Cosmic Efflux>", "Cooldown: 16s"],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "アイテムを使用すると、＜コスモパワー＞を獲得",
+              "クールダウン:16秒"
+            ],
+            "cn": ["Activate to gain <Cosmic Efflux>", "Cooldown: 16s"]
           },
           "value": 0.6
         },
@@ -3889,8 +4006,8 @@
           "detail": {
             "kr": ["공격력: 16% 증가", "방어력: 16% 증가", "지속시간: 6초"],
             "en": ["Attack Power: +16%", "Defense: +16%", "Duration: 6s"],
-            "ja": [],
-            "cn": []
+            "ja": ["攻撃力:+16%", "防御力:+16%", "6秒間"],
+            "cn": ["Attack Power: +16%", "Defense: +16%", "Duration: 6s"]
           },
           "value": 0.16
         }
@@ -3972,16 +4089,21 @@
             "en": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(M)/1.5(R)",
+              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
               "Cooldown: 2s"
             ],
             "ja": [
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：スキル増幅*2.5（近）／1.5（遠）",
-              "クールダウン: 2秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:スキル増幅*2.5(近)/1.5(遠)",
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Using a skill causes a Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
+              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Cooldown: 2s"
+            ]
           },
           "value": 2.5
         }
@@ -4027,12 +4149,16 @@
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": ["Skills reduce target's healing received by 40%(M)/30%(R)"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
             "ja": [
               "スキル攻撃のダメージを受けた対象の治癒効果が減少",
-              "（近）40％／（遠）30％"
+              "40%/(近)30%(遠)"
             ],
-            "cn": []
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
           },
           "value": 0.4
         },
@@ -4054,9 +4180,14 @@
               "移動するたびに[軽い足取り]を最大20mまで重畳して獲得",
               "重畳によって移動速度が最大0.15まで増加します",
               "基本攻撃ダメージを与える場合、重畳をすべて消費して最大200の固有ダメージを与えます",
-              "近距離：最大重畳状態でダメージを受けた対象の移動速度を2秒間25％減少させます"
+              "近距離:最大重畳状態でダメージを受けた対象の移動速度を2秒間25%減少させます"
             ],
-            "cn": []
+            "cn": [
+              "Gain a stack every move, up to 20m",
+              "Your movement speed will increase by up to 0.15, based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 200 cellular damage",
+              "Melee: At max stacks, your next basic attack slows enemies by 30% for 2 seconds"
+            ]
           },
           "value": 200
         }
@@ -4077,6 +4208,12 @@
         },
         "stack": 1,
         "material": ["BM007", "BM001"],
+        "only": {
+          "kr": "솔로 모드",
+          "en": "Solo",
+          "ja": "ソロモード",
+          "cn": "單人"
+        },
         "hp0": 120,
         "skill1": 0.17,
         "vision0": 1.5,
@@ -4091,16 +4228,21 @@
             "en": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(M)/1.5(R)",
+              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
               "Cooldown: 2s"
             ],
             "ja": [
-              "スキルを使用すると意念をチャージします。",
-              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージを与えます。",
-              "ダメージ：スキル増幅*2.5（近）／1.5（遠）",
-              "クールダウン: 2秒"
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:スキル増幅*2.5(近)/1.5(遠)",
+              "クールダウン:2秒"
             ],
-            "cn": []
+            "cn": [
+              "Using a skill causes a Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
+              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Cooldown: 2s"
+            ]
           },
           "value": 0.1
         }
@@ -4121,6 +4263,12 @@
         },
         "stack": 1,
         "material": ["BM007", "BM001"],
+        "only": {
+          "kr": "듀오, 스쿼드 모드",
+          "en": "Duo, Squad",
+          "ja": "デュオ,スクワッド",
+          "cn": "雙人,三人"
+        },
         "def0": 10,
         "skill1": 0.25,
         "vision0": 1.5,
@@ -4138,8 +4286,16 @@
               "This excludes Airborne, Knockback, and Grab",
               "Cooldown: 45s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "アイテムを使用すると、自分にかかったデバフがすぐに解除",
+              "エアボーン、ノックバック、捕まりは解除",
+              "クールダウン:45秒"
+            ],
+            "cn": [
+              "Activate to instantly cleanse debuffs or crowd control effects on you",
+              "This excludes Airborne, Knockback, and Grab",
+              "Cooldown: 45s"
+            ]
           },
           "value": 45
         }
@@ -4160,7 +4316,12 @@
         },
         "stack": 1,
         "material": ["BA005", "BM001"],
-        "only0": "솔로 모드 전용 아이템",
+        "only": {
+          "kr": "솔로 모드",
+          "en": "Solo",
+          "ja": "ソロモード",
+          "cn": "單人"
+        },
         "atk0": 12,
         "atk_spd1": 0.33,
         "uniq009": {
@@ -4183,13 +4344,24 @@
               "쿨다운: 30초"
             ],
             "en": [
-              "Activate to increase your movement speed by 0.5(M)/.03(R) for 2.5 seconds",
+              "Activate to increase your movement speed by 0.5(Melee)/0.3(Ranged) for 2.5 seconds",
               "Ignore unit collision",
               "Performing an action other than moving cancels this effect",
               "Cooldown: 30s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "アイテムを使用すると、移動速度が0.5(近)/0.3(遠)だけ増加",
+              "他の対象と衝突しません。",
+              "移動以外の行動時に終了",
+              "2.5秒間",
+              "クールダウン:30秒"
+            ],
+            "cn": [
+              "Activate to increase your movement speed by 0.5(Melee)/0.3(Ranged) for 2.5 seconds",
+              "Ignore unit collision",
+              "Performing an action other than moving cancels this effect",
+              "Cooldown: 30s"
+            ]
           },
           "value": 1
         }
@@ -4210,7 +4382,12 @@
         },
         "stack": 1,
         "material": ["BA005", "BM001"],
-        "only0": "듀오, 스쿼드 모드 전용 아이템",
+        "only": {
+          "kr": "듀오, 스쿼드 모드",
+          "en": "Duo, Squad",
+          "ja": "デュオ,スクワッド",
+          "cn": "雙人,三人"
+        },
         "atk0": 12,
         "atk_spd1": 0.33,
         "uniq009": {
@@ -4235,8 +4412,16 @@
               "This excludes Airborne, Knockback, and Grab",
               "Cooldown: 45s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "アイテムを使用すると、自分にかかったデバフがすぐに解除",
+              "エアボーン、ノックバック、捕まりは解除",
+              "クールダウン:45秒"
+            ],
+            "cn": [
+              "Activate to instantly cleanse debuffs or crowd control effects on you",
+              "This excludes Airborne, Knockback, and Grab",
+              "Cooldown: 45s"
+            ]
           },
           "value": 45
         }
@@ -4257,7 +4442,12 @@
         },
         "stack": 1,
         "material": ["BM009", "WM016"],
-        "only0": "듀오, 스쿼드 모드 전용 아이템",
+        "only": {
+          "kr": "듀오, 스쿼드 모드",
+          "en": "Duo, Squad",
+          "ja": "デュオ,スクワッド",
+          "cn": "雙人,三人"
+        },
         "atk0": 18,
         "def0": 18,
         "active005": {
@@ -4272,8 +4462,15 @@
               "Making them invulnerable unable to perform any other actions as well",
               "Cooldown: 55s"
             ],
-            "ja": [],
-            "cn": []
+            "ja": [
+              "アイテムを使用すると、2.5秒間硬直状態になり、いかなる行動もできません。",
+              "クールダウン:55秒"
+            ],
+            "cn": [
+              "Activate to put the user in stasis for 2.5 second",
+              "Making them invulnerable unable to perform any other actions as well",
+              "Cooldown: 55s"
+            ]
           },
           "value": 2.5
         }

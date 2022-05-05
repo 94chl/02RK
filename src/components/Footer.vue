@@ -19,6 +19,12 @@
         contact: <a href="mailto:94chl@naver.com">94chl@naver.com</a>
       </address>
     </div>
+    <div class="footer_license">
+      <p>
+        The copyright of all games and related intellectual property rights are
+        located in Nimble Neuron(the "Company").
+      </p>
+    </div>
   </div>
 </template>
 
@@ -51,6 +57,7 @@
 
 <style lang="scss" scoped>
   .footer {
+    padding: 12px 0;
     &_container {
       background: $color1;
       width: 100%;
@@ -75,8 +82,7 @@
 
     &_contact {
       text-align: center;
-      padding: 4px;
-      margin-top: 20px;
+      padding: 8px;
       address {
         opacity: 0.5;
         font-size: 0.8rem;
@@ -88,6 +94,11 @@
           }
         }
       }
+    }
+
+    &_license {
+      border-top: 1px solid $color1;
+      padding: 8px;
     }
   }
 </style>

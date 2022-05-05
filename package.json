@@ -1,7 +1,7 @@
 {
   "name": "02rk",
   "version": "1.0.0",
-  "description": "02RK is simulator of online PC game 'Eternal Return'",
+  "description": "02RK is a plan simulator of online PC game 'Eternal Return'",
   "main": "main.js",
   "scripts": {
     "dev": "webpack-dev-server --mode=development",

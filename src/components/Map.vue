@@ -44,7 +44,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A002') &&
+                customRouteId.includes('A002') &&
                 `selected ${customRoute[0] === 'A002' && 'startPoint'}`
               "
               points="0,0 72,0 72,24 96,24 96,96 72,96 72,48 0,48"
@@ -61,7 +61,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A003') &&
+                customRouteId.includes('A003') &&
                 `selected ${customRoute[0] === 'A003' && 'startPoint'}`
               "
               points="48,0 120,0 120,72 24,72 24,48 0,48 0,24 48,24"
@@ -76,7 +76,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A004') &&
+                customRouteId.includes('A004') &&
                 `selected ${customRoute[0] === 'A004' && 'startPoint'}`
               "
               points="24,0 48,0 48,96 0,96 0,24 24,24"
@@ -92,7 +92,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A005') &&
+                customRouteId.includes('A005') &&
                 `selected ${customRoute[0] === 'A005' && 'startPoint'}`
               "
               points="0,0 72,0 72,72 0,72"
@@ -105,7 +105,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A006') &&
+                customRouteId.includes('A006') &&
                 `selected ${customRoute[0] === 'A006' && 'startPoint'}`
               "
               points="0,0 72,0 72,48 0,48"
@@ -122,7 +122,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A007') &&
+                customRouteId.includes('A007') &&
                 `selected ${customRoute[0] === 'A007' && 'startPoint'}`
               "
               points="0,0 48,0 48,96 0,96"
@@ -137,7 +137,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A008') &&
+                customRouteId.includes('A008') &&
                 `selected ${customRoute[0] === 'A008' && 'startPoint'}`
               "
               points="0,0 96,0 96,48 24,48 24,24 0,24"
@@ -154,7 +154,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A009') &&
+                customRouteId.includes('A009') &&
                 `selected ${customRoute[0] === 'A009' && 'startPoint'}`
               "
               points="0,0 48,0 48,72 0,72"
@@ -170,7 +170,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A010') &&
+                customRouteId.includes('A010') &&
                 `selected ${customRoute[0] === 'A010' && 'startPoint'}`
               "
               points="0,0 48,0 48,48 72,48 72,72 24,72 24,48 0,48"
@@ -185,7 +185,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A011') &&
+                customRouteId.includes('A011') &&
                 `selected ${customRoute[0] === 'A011' && 'startPoint'}`
               "
               points="0,0 48,0 48,72 0,72"
@@ -202,7 +202,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A012') &&
+                customRouteId.includes('A012') &&
                 `selected ${customRoute[0] === 'A012' && 'startPoint'}`
               "
               points="0,0 72,0 72,24 48,24, 48, 96, 0, 96"
@@ -217,7 +217,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A013') &&
+                customRouteId.includes('A013') &&
                 `selected ${customRoute[0] === 'A013' && 'startPoint'}`
               "
               points="0,0 48,0 48,72 0,72"
@@ -232,7 +232,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A014') &&
+                customRouteId.includes('A014') &&
                 `selected ${customRoute[0] === 'A014' && 'startPoint'}`
               "
               points="0,0 72,0 72,72 24,72 24,48 0,48"
@@ -249,7 +249,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A015') &&
+                customRouteId.includes('A015') &&
                 `selected ${customRoute[0] === 'A015' && 'startPoint'}`
               "
               points="0,0 72,0 72,48 0,48"
@@ -264,7 +264,7 @@
           <g>
             <polygon
               :class="
-                customRoute.includes('A016') &&
+                customRouteId.includes('A016') &&
                 `selected ${customRoute[0] === 'A016' && 'startPoint'}`
               "
               points="0,0 72,0 72,24 0,24"
@@ -295,6 +295,8 @@
 </template>
 
 <script>
+  import { areaData } from "~/utils/itemTable.js";
+
   export default {
     data() {
       return {
@@ -370,15 +372,31 @@
       customRoute() {
         return this.$store.state.customRoute;
       },
+      customRouteId() {
+        const customRouteId = this.$store.state.customRoute.map(
+          (routeInfo) => routeInfo.id
+        );
+        return customRouteId;
+      },
     },
     methods: {
       toggleMapModal() {
         this.$store.dispatch("onToggleModal", "map");
       },
       setRoute(e) {
-        const pickedArea = e.target.closest("svg").classList[1].toUpperCase();
-        if (this.customRoute.includes(pickedArea)) {
-          const newRoute = this.customRoute.filter((area) => area !== pickedArea);
+        const pickedAreaId = e.target.closest("svg").classList[1].toUpperCase();
+        const pickedArea = {
+          id: pickedAreaId,
+          name: areaData[pickedAreaId].name,
+        };
+
+        const isIncluded = this.customRoute.filter(
+          (route) => route.id === pickedAreaId
+        );
+        if (isIncluded.length) {
+          const newRoute = this.customRoute.filter(
+            (area) => area !== pickedAreaId
+          );
           this.$store.dispatch("setRoute", newRoute);
         } else {
           this.$store.dispatch("addRoute", pickedArea);

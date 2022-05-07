@@ -95,35 +95,6 @@
       selectItem() {
         return this.$store.state.cart;
       },
-      db() {
-        const { weaponData, itemData, equipData } = database;
-        const options = {};
-
-        weaponData.forEach((category) => {
-          category.items.forEach((item) => {
-            Object.keys(item).forEach((opt) => {
-              options[opt] = options[opt] ? options[opt] + 1 : 1;
-            });
-          });
-        });
-
-        itemData.forEach((category) => {
-          category.items.forEach((item) => {
-            Object.keys(item).forEach((opt) => {
-              options[opt] = options[opt] ? options[opt] + 1 : 1;
-            });
-          });
-        });
-        equipData.forEach((category) => {
-          category.items.forEach((item) => {
-            Object.keys(item).forEach((opt) => {
-              options[opt] = options[opt] ? options[opt] + 1 : 1;
-            });
-          });
-        });
-
-        return options;
-      },
     },
     methods: {
       changeDept(e) {
@@ -169,7 +140,7 @@
         (category) => category.category === this.selectCategory
       )[0].items;
       this.$store.dispatch("setCart", this.itemArr[0]);
-      // console.log(this.db);
+      console.log(itemOptions);
     },
   };
 </script>

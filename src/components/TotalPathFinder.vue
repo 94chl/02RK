@@ -18,30 +18,50 @@
       </div>
     </div>
     <div class="routesInfo">
-      <ul
-        class="routes"
-        v-if="totalRecommendRoutes.length > 0 && !error.message"
+      <div
+        class="initialMessgae"
+        v-if="!isActivatedTotalPathFinder && !error.message"
       >
-        <li
-          class="route"
-          v-for="(route, index) in totalRecommendRoutes"
-          :key="`totalRoute${index}`"
-          :data-route-index="index"
-        >
-          <button class="routeButton" @click="setCustomRoute">
-            <span class="routeButton_index">
-              {{ `(${index + 1}) ` }}
-            </span>
-            <span
-              v-for="(area, areaIndex) in route"
-              :key="route + areaIndex"
-              class="routeButton_area"
-            >
-              {{ area.name[language] }}
-            </span>
-          </button>
-        </li>
-      </ul>
+        <span><i class="fas fa-map-marked-alt"></i></span>
+        {{ $t("modal.recommendFuncInfo") }}
+      </div>
+      <div
+        class="routes"
+        v-if="
+          isActivatedTotalPathFinder &&
+          totalRecommendRoutes.length > 0 &&
+          !error.message
+        "
+      >
+        <h4 class="routesResult">
+          {{
+            $t("modal.recommendRouteResult", {
+              routes: totalRecommendRoutes.length,
+            })
+          }}
+        </h4>
+        <ul>
+          <li
+            class="route"
+            v-for="(route, index) in totalRecommendRoutes"
+            :key="`totalRoute${index}`"
+            :data-route-index="index"
+          >
+            <button class="routeButton" @click="setCustomRoute">
+              <span class="routeButton_index">
+                {{ `(${index + 1}) ` }}
+              </span>
+              <span
+                v-for="(area, areaIndex) in route"
+                :key="route + areaIndex"
+                class="routeButton_area"
+              >
+                {{ area.name[language] }}
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
       <div class="noRoutes" v-if="error.message">
         {{
           error.items
@@ -60,6 +80,7 @@
     data() {
       return {
         error: { message: "" },
+        isActivated: false,
       };
     },
     components: {},
@@ -83,6 +104,9 @@
         });
         return areaInfo;
       },
+      isActivatedTotalPathFinder() {
+        return this.$store.state.isActivatedTotalPathFinder;
+      },
     },
     methods: {
       toggleTotalPathFindertModal() {
@@ -103,7 +127,7 @@
         const target =
           this.totalRecommendRoutes[e.target.closest("li").dataset.routeIndex];
         const newRoute = target.map((area) => this.areaName2Id[area]);
-        if (window.confirm(this.$t("not.applyRoute")))
+        if (window.confirm(this.$t("noti.applyRoute")))
           this.$store.dispatch("setRoute", newRoute);
       },
     },
@@ -116,18 +140,14 @@
     height: fit-content;
     background: #fff;
     min-width: 35px;
-    max-height: 50%;
+    max-height: 50vh;
     text-align: right;
     border-radius: 5px;
     border: 1px solid $color3;
     box-sizing: border-box;
-
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 30px;
 
     &.active {
       @include active();
@@ -139,6 +159,11 @@
       grid-template-columns: auto 1fr;
       align-items: center;
       border-bottom: 1px solid #000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
 
       h3 {
         width: fit-content;
@@ -166,9 +191,35 @@
     }
 
     .routesInfo {
-      height: fit-content;
+      max-height: calc(50vh - 80px);
+      padding: 10px 5px;
+      overflow-y: scroll;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .initialMessgae {
+        .fas {
+          color: $color3;
+        }
+      }
+
+      .routesResult {
+        text-align: initial;
+      }
       .routes {
         padding: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .routesResult {
+          font-weight: 700;
+        }
+
         .route {
           width: fit-content;
           word-break: keep-all;
@@ -184,10 +235,10 @@
               box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
             }
             &_area {
-              padding: 3px;
+              padding: 4px;
               &::after {
-                content: "-";
-                margin: 0 3px;
+                content: "→";
+                margin-left: 4px;
               }
               &:last-child {
                 &::after {

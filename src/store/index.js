@@ -83,6 +83,7 @@ const store = createStore({
       customRoute: [],
       recommendRoutes: [],
       totalRecommendRoutes: [],
+      isActivatedTotalPathFinder: false,
       toggleModal: {
         bag: false,
         totalPathFinder: false,
@@ -91,6 +92,7 @@ const store = createStore({
         craft: false,
         map: false,
       },
+      loading: false,
     };
   },
   getters: {},
@@ -176,12 +178,18 @@ const store = createStore({
     },
     setRecommendRoutes(state, routesInfo) {
       const { routes, total } = routesInfo;
-      total
-        ? (state.totalRecommendRoutes = routes)
-        : (state.recommendRoutes = routes);
+      if (total) {
+        state.totalRecommendRoutes = routes;
+        state.isActivatedTotalPathFinder = true;
+      } else {
+        state.recommendRoutes = routes;
+      }
     },
     setSelectedLanguage(state, newLanguage) {
       state.language = newLanguage;
+    },
+    setLoading(state, newLoadingState) {
+      state.loading = newLoadingState;
     },
   },
   actions: {
@@ -525,7 +533,9 @@ const store = createStore({
         }
       });
       const customRoute = state.customRoute.map((route) => route.id);
+      // commit("setLoading", true);
       const routes = pathFinder(customRoute, needDrops, bagTotal);
+      // commit("setLoading", false);
       if (routes.length > 0) {
         commit("setRecommendRoutes", { routes, total });
       } else {

@@ -20,6 +20,8 @@
     "equip": "장비",
     "status": "스테이터스",
     "recommendRoute": "목표 아이템 추천 루트",
+    "recommendFuncInfo": "을 누르면 최단 루트를 탐색합니다",
+    "recommendRouteResult": "탐색 결과({routes})",
     "craft": "제작 가능 아이템",
     "commonDrop1": "나뭇가지, 돌멩이: 채집",
     "commonDrop2": "고기: 닭, 멧돼지, 늑대, 곰",

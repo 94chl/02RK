@@ -19,7 +19,9 @@
     "bagMakable": "Item can be crafted",
     "equip": "Equip",
     "status": "Stats",
-    "recommendRoute": "Recommend plans for target item",
+    "recommendRoute": "Shortest pathes for target item",
+    "recommendFuncInfo": ": Search for shortest pathes for all of target items",
+    "recommendRouteResult": "Results({routes})",
     "craft": "Can be crafted",
     "commonDrop1": "Branch, Stone: Collect",
     "commonDrop2": "Meat: Chicken, Boar, Wolf, Bear",
@@ -43,9 +45,9 @@
     "optionUniq": "Unique",
     "optionbuff": "Effect",
     "optionActive": "Item Skill",
-    "recommendFuncInfo": ": Search for shortest routes.",
-    "foundRecommendsInfo": "{number} routes are searched.",
-    "showRecommendsInfo": ": Check searched shortest routes."
+    "recommendFuncInfo": ": Search for the shortest pathes.",
+    "foundRecommendsInfo": "{number} plans are searched.",
+    "showRecommendsInfo": ": Check searched shortest pathes."
   },
   "mapModal": {
     "hyperLoop": "Hyperloop",

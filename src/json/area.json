@@ -16,6 +16,7 @@
       "WWW001",
       "WWW002"
     ],
+    "adjacent": [],
     "resurrection": false,
     "hyperloop": false
   },
@@ -28,6 +29,7 @@
       "cn": "研究中心"
     },
     "drop": [],
+    "adjacent": [],
     "resurrection": false,
     "hyperloop": false
   },
@@ -60,6 +62,22 @@
       "WF010",
       "BM008"
     ],
+    "adjacent": [
+      "A003",
+      "A004",
+      "A005",
+      "A006",
+      "A007",
+      "A008",
+      "A009",
+      "A010",
+      "A011",
+      "A012",
+      "A013",
+      "A014",
+      "A015",
+      "A016"
+    ],
     "resurrection": false,
     "hyperloop": true
   },
@@ -88,6 +106,22 @@
       "WD001",
       "WD007",
       "WF012"
+    ],
+    "adjacent": [
+      "A002",
+      "A004",
+      "A005",
+      "A006",
+      "A007",
+      "A008",
+      "A009",
+      "A010",
+      "A011",
+      "A012",
+      "A013",
+      "A014",
+      "A015",
+      "A016"
     ],
     "resurrection": false,
     "hyperloop": true
@@ -119,6 +153,22 @@
       "WF011",
       "WD002",
       "BM008"
+    ],
+    "adjacent": [
+      "A002",
+      "A003",
+      "A005",
+      "A006",
+      "A007",
+      "A008",
+      "A009",
+      "A010",
+      "A011",
+      "A012",
+      "A013",
+      "A014",
+      "A015",
+      "A016"
     ],
     "resurrection": false,
     "hyperloop": true
@@ -152,6 +202,7 @@
       "WF011",
       "BM008"
     ],
+    "adjacent": ["A003", "A004", "A006"],
     "resurrection": false,
     "hyperloop": false
   },
@@ -179,6 +230,22 @@
       "WD007",
       "WF004",
       "WF007"
+    ],
+    "adjacent": [
+      "A002",
+      "A003",
+      "A004",
+      "A005",
+      "A007",
+      "A008",
+      "A009",
+      "A010",
+      "A011",
+      "A012",
+      "A013",
+      "A014",
+      "A015",
+      "A016"
     ],
     "resurrection": false,
     "hyperloop": true
@@ -210,7 +277,10 @@
       "WF003",
       "WF005",
       "WF009"
-    ]
+    ],
+    "adjacent": ["A006", "A008", "A009"],
+    "resurrection": false,
+    "hyperloop": false
   },
   "A008": {
     "name": {
@@ -240,6 +310,22 @@
       "WF010",
       "BM008"
     ],
+    "adjacent": [
+      "A002",
+      "A003",
+      "A004",
+      "A005",
+      "A006",
+      "A007",
+      "A009",
+      "A010",
+      "A011",
+      "A012",
+      "A013",
+      "A014",
+      "A015",
+      "A016"
+    ],
     "resurrection": false,
     "hyperloop": true
   },
@@ -268,6 +354,22 @@
       "WD002",
       "WD004",
       "WD007"
+    ],
+    "adjacent": [
+      "A002",
+      "A003",
+      "A004",
+      "A005",
+      "A006",
+      "A007",
+      "A008",
+      "A010",
+      "A011",
+      "A012",
+      "A013",
+      "A014",
+      "A015",
+      "A016"
     ],
     "resurrection": false,
     "hyperloop": true
@@ -300,6 +402,7 @@
       "WF002",
       "WF010"
     ],
+    "adjacent": ["A008", "A009", "A011"],
     "resurrection": false,
     "hyperloop": false
   },
@@ -331,6 +434,22 @@
       "WF002",
       "WF004",
       "WF012"
+    ],
+    "adjacent": [
+      "A002",
+      "A003",
+      "A004",
+      "A005",
+      "A006",
+      "A007",
+      "A008",
+      "A009",
+      "A010",
+      "A012",
+      "A013",
+      "A014",
+      "A015",
+      "A016"
     ],
     "resurrection": false,
     "hyperloop": true
@@ -364,6 +483,7 @@
       "WF009",
       "WF011"
     ],
+    "adjacent": ["A003", "A009", "A011", "A013", "A014", "A015"],
     "resurrection": false,
     "hyperloop": false
   },
@@ -393,6 +513,7 @@
       "WD006",
       "WF002"
     ],
+    "adjacent": ["A011", "A012", "A014"],
     "resurrection": false,
     "hyperloop": false
   },
@@ -423,6 +544,22 @@
       "WD004",
       "WD006",
       "WF004"
+    ],
+    "adjacent": [
+      "A002",
+      "A003",
+      "A004",
+      "A005",
+      "A006",
+      "A007",
+      "A008",
+      "A009",
+      "A010",
+      "A011",
+      "A012",
+      "A013",
+      "A015",
+      "A016"
     ],
     "resurrection": false,
     "hyperloop": true
@@ -455,6 +592,7 @@
       "WD007",
       "BM008"
     ],
+    "adjacent": ["A002", "A003", "A012", "A016"],
     "resurrection": false,
     "hyperloop": false
   },
@@ -483,6 +621,7 @@
       "WT002",
       "WF012"
     ],
+    "adjacent": ["A002", "A014", "A015"],
     "resurrection": false,
     "hyperloop": false
   }

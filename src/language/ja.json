@@ -20,6 +20,8 @@
     "equip": "装備",
     "status": "ステータス",
     "recommendRoute": "推奨ルート",
+    "recommendFuncInfo": "をクリックして目標アイテム全ての最短ルートを探索",
+    "recommendRouteResult": "探索結果({routes})",
     "craft": "製作できる上位アイテム",
     "commonDrop1": "枝、石ころ:採集",
     "commonDrop2": "肉:ニワトリ、イノシシ、オオカミ、クマ",
@@ -41,7 +43,7 @@
     "optionActive": "アイテムスキル",
     "recommendFuncInfo": "をクリックして\nルートを探索",
     "foundRecommendsInfo": "{number}個のルート探索",
-    "showRecommendsInfo": "をクリックして\nルートを確認"
+    "showRecommendsInfo": "をクリックして\n探索したルートを確認"
   },
   "mapModal": {
     "hyperLoop": "ハイパーループ",

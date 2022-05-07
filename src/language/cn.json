@@ -20,6 +20,8 @@
     "equip": "裝備",
     "status": "統計",
     "recommendRoute": "推薦路徑",
+    "recommendFuncInfo": ":寻找最短的路径。",
+    "recommendRouteResult": "結果({routes})",
     "craft": "可以製作的高級物品。",
     "commonDrop1": "樹枝, 石頭: 收集",
     "commonDrop2": "肉: 雞, 野豬, 狼, 熊",

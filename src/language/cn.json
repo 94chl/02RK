@@ -28,7 +28,14 @@
     "commonDrop3": "皮革: 雞, 野狗, 狼, 熊",
     "commonDrop4": "醫藥箱, VF血液樣本: 維克萊恩",
     "commonDrop5": "卡德摩斯的召喚: 厄喀翁",
-    "map": "地圖"
+    "map": "地圖",
+    "manual": "小貼士"
+  },
+  "manual": {
+    "manual1": "包裏的單品可以移動到拖放（手機不支持）",
+    "manual2": "使用手機時，請丟棄道具重新獲取",
+    "manual3": "探索最短路徑時，請參考包的隨身物品",
+    "manual4": "在創建路徑中完成的項目將參考攜帶品"
   },
   "selectSection": { "weapon": "武器", "equip": "防具", "item": "其他" },
   "itemPreviewSection": {

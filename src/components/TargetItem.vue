@@ -6,6 +6,9 @@
         <button class="reamoveAllBtn" @click="removeAllTargetItem">
           <i class="fas fa-trash-alt"></i>
         </button>
+        <button @click="togglePathFinderModal" class="pathFinderBtn">
+          <i class="fas fa-map-marked-alt"></i>
+        </button>
       </div>
     </div>
     <div>
@@ -66,6 +69,9 @@
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
         this.$store.dispatch("setCart", selectedItem);
+      },
+      togglePathFinderModal() {
+        this.$store.dispatch("onToggleModal", "totalPathFinder");
       },
     },
   };

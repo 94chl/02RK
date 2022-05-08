@@ -28,7 +28,14 @@
     "commonDrop3": "Leather: Chicken, Wild Dog, Wolf, Bear",
     "commonDrop4": "First Aid Kit, VF Blood Sample: Wickeline",
     "commonDrop5": "Call of Cadmus: Echion",
-    "map": "Map"
+    "map": "Map",
+    "manual": "02RK Tips"
+  },
+  "manual": {
+    "manual1": "You can move items in inventory by drag and drop(not for mobile)",
+    "manual2": "In mobile, drop the item and get item again",
+    "manual3": "In searching shortest pathes, it refers to inventory",
+    "manual4": "In the plan section, crafted items refer to inventory"
   },
   "selectSection": {
     "weapon": "Weapon",

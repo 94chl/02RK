@@ -91,6 +91,7 @@ const store = createStore({
         status: false,
         craft: false,
         map: false,
+        manual: false,
       },
       loading: false,
     };

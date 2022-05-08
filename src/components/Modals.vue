@@ -1,5 +1,9 @@
 <template>
   <div class="modals">
+    <div v-if="modals.manual" class="mapManual">
+      <Manual />
+    </div>
+
     <div v-if="modals.totalPathFinder" class="pathFinderModal">
       <TotalPathFinder />
     </div>
@@ -31,9 +35,10 @@
   import Map from "~/components/Map";
   import Craft from "~/components/Craft";
   import TotalPathFinder from "~/components/TotalPathFinder";
+  import Manual from "~/components/Manual";
 
   export default {
-    components: { Bag, Status, Map, Craft, TotalPathFinder },
+    components: { Bag, Status, Map, Craft, TotalPathFinder, Manual },
     computed: {
       modals() {
         return this.$store.state.toggleModal;

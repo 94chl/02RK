@@ -20,13 +20,20 @@
         <i class="fas fa-tshirt"></i>
       </button>
       <button
+        @click="onToggleModal"
         :class="`totalPathFinderBtn ${
           toggleModal.totalPathFinder ? 'openedBtn' : ''
         }`"
-        @click="onToggleModal"
         data-modal="totalPathFinder"
       >
         <i class="fas fa-map-marked-alt"></i>
+      </button>
+      <button
+        :class="`manualBtn ${toggleModal.manual ? 'openedBtn' : ''}`"
+        data-modal="manual"
+        @click="onToggleModal"
+      >
+        <i class="fas fa-solid fa-circle-info"></i>
       </button>
     </div>
   </div>
@@ -64,15 +71,14 @@
     top: 0;
     left: 0;
     z-index: 10;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     justify-content: space-between;
     background: $color1;
 
     &_logo {
       max-width: 120px;
-      height: 50px;
-      line-height: 50px;
-      margin: 10px 0;
+      padding: 0 4px;
       img {
         height: 100%;
       }
@@ -98,6 +104,8 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      gap: 4px;
+      padding: 0 4px;
 
       button {
         @include fasIcon(30px);

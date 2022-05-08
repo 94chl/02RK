@@ -32,7 +32,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1jtEKbpRsEoXIuW7BkBl-O3TWJdaSaxpN",
         "location": ["A000"],
-        "tobe": ["GH005", "BS006", "GA003", "GM006", "GM012", "BM001"],
+        "tobe": ["GH005", "BS006", "GA003", "GM006", "GM012", "BM008"],
         "pickup": 2,
         "limit": 3,
         "name": { "kr": "돌멩이", "en": "Stone", "ja": "石ころ", "cn": "石頭" },
@@ -597,7 +597,7 @@
           "PH003",
           "PB011",
           "BM003",
-          "BM006"
+          "BM001"
         ],
         "pickup": 1,
         "limit": 3,
@@ -625,7 +625,7 @@
           "PB013",
           "PS009",
           "BA006",
-          "BM006"
+          "BM001"
         ],
         "pickup": 1,
         "limit": 3,
@@ -744,36 +744,19 @@
       {
         "id": "BM001",
         "sort": "material",
-        "img": "https://lh3.google.com/u/0/d/1Z92IKABPSijOPt1qBj3aBPO5XgvUfmbN",
+        "img": "https://lh3.google.com/u/0/d/1tszZTpdU2D7640lJI70b5ZdWaSJWFwH4",
         "location": false,
-        "tobe": [
-          "PWD002",
-          "PWH005",
-          "PWK006",
-          "YWO001",
-          "PWP004",
-          "PWQ003",
-          "PWV005",
-          "PB009",
-          "PB010",
-          "PA003",
-          "PA005",
-          "YA003",
-          "YA004",
-          "YA005",
-          "YA006",
-          "BD011"
-        ],
+        "tobe": ["PWU004", "PB004", "PS007", "YT002"],
         "pickup": 1,
-        "limit": 3,
+        "limit": 1,
         "name": {
-          "kr": "문스톤",
-          "en": "Moonstone",
-          "ja": "ムーンストーン",
-          "cn": "月亮石"
+          "kr": "휴대폰",
+          "en": "Cell Phone",
+          "ja": "携帯電話",
+          "cn": "手機"
         },
         "stack": 1,
-        "material": ["BM008", "WM002"]
+        "material": ["GM009", "GM008"]
       },
       {
         "id": "BM002",
@@ -844,23 +827,6 @@
       {
         "id": "BM006",
         "sort": "material",
-        "img": "https://lh3.google.com/u/0/d/1tszZTpdU2D7640lJI70b5ZdWaSJWFwH4",
-        "location": false,
-        "tobe": ["PWU004", "PB004", "PS007", "YT002"],
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "휴대폰",
-          "en": "Cell Phone",
-          "ja": "携帯電話",
-          "cn": "手機"
-        },
-        "stack": 1,
-        "material": ["GM009", "GM008"]
-      },
-      {
-        "id": "BM007",
-        "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1cxEFd5tBoqm61J_mBClkcQhIfc2u8O5t",
         "location": ["A002", "A008", "A011"],
         "tobe": [
@@ -889,7 +855,7 @@
         "stack": 1
       },
       {
-        "id": "BM008",
+        "id": "BM007",
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1eSTA2RX_DG85o9yMa0CG4lwaqJQw0Mus",
         "location": ["A002", "A004", "A005", "A008", "A015"],
@@ -902,13 +868,47 @@
           "PWT005",
           "YC002",
           "YH004",
-          "BM001",
+          "BM008",
           "PM002"
         ],
         "pickup": 1,
         "limit": 3,
         "name": { "kr": "운석", "en": "Meteorite", "ja": "隕石", "cn": "隕石" },
         "stack": 1
+      },
+      {
+        "id": "BM008",
+        "sort": "material",
+        "img": "https://lh3.google.com/u/0/d/1Z92IKABPSijOPt1qBj3aBPO5XgvUfmbN",
+        "location": false,
+        "tobe": [
+          "PWD002",
+          "PWH005",
+          "PWK006",
+          "YWO001",
+          "PWP004",
+          "PWQ003",
+          "PWV005",
+          "PB009",
+          "PB010",
+          "PA003",
+          "PA005",
+          "YA003",
+          "YA004",
+          "YA005",
+          "YA006",
+          "BD011"
+        ],
+        "pickup": 1,
+        "limit": 3,
+        "name": {
+          "kr": "문스톤",
+          "en": "Moonstone",
+          "ja": "ムーンストーン",
+          "cn": "月亮石"
+        },
+        "stack": 1,
+        "material": ["BM007", "WM002"]
       },
       {
         "id": "BM009",
@@ -1005,7 +1005,7 @@
           "cn": "能源晶石"
         },
         "stack": 1,
-        "material": ["BM009", "BM008"]
+        "material": ["BM009", "BM007"]
       },
       {
         "id": "PM003",
@@ -1322,7 +1322,7 @@
           "cn": "秘銀細線"
         },
         "stack": 2,
-        "material": ["WM021", "BM007"]
+        "material": ["WM021", "BM006"]
       },
       {
         "id": "BT003",
@@ -1499,7 +1499,7 @@
           "cn": "智能炸彈"
         },
         "stack": 2,
-        "material": ["BT001", "BM006"]
+        "material": ["BT001", "BM001"]
       }
     ]
   },
@@ -2324,7 +2324,7 @@
           "cn": "聖水"
         },
         "stack": 3,
-        "material": ["BM007", "WD002"]
+        "material": ["BM006", "WD002"]
       },
       {
         "id": "PF001",
@@ -2963,7 +2963,7 @@
           "cn": "塞勒涅之淚"
         },
         "stack": 3,
-        "material": ["BM001", "WD002"]
+        "material": ["BM008", "WD002"]
       }
     ]
   }

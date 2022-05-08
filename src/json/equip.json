@@ -501,7 +501,7 @@
           "cn": "秘銀鎧甲"
         },
         "stack": 1,
-        "material": ["GC001", "BM007"],
+        "material": ["GC001", "BM006"],
         "def0": 5,
         "atk_spd1": 0.22,
         "move_spd0": 0.1
@@ -775,7 +775,7 @@
           "cn": "秘銀吊帶"
         },
         "stack": 1,
-        "material": ["GC007", "BM007"],
+        "material": ["GC007", "BM006"],
         "only": {
           "kr": "마이만 제작 가능",
           "en": "Mai can craft",
@@ -850,7 +850,7 @@
           "cn": "黃金之鎧"
         },
         "stack": 1,
-        "material": ["PC007", "BM008"],
+        "material": ["PC007", "BM007"],
         "skill1": 0.22,
         "def0": 40,
         "vision0": 1
@@ -1463,7 +1463,7 @@
           "cn": "秘銀頭盔"
         },
         "stack": 1,
-        "material": ["GH004", "BM007"],
+        "material": ["GH004", "BM006"],
         "def0": 38,
         "atk_spd1": 0.3,
         "cool1": 0.15,
@@ -1817,7 +1817,7 @@
           "cn": "聖光冠冕"
         },
         "stack": 1,
-        "material": ["PH002", "BM008"],
+        "material": ["PH002", "BM007"],
         "cri_rate1": 0.24,
         "cri_atk1": 0.12,
         "def0": 28,
@@ -2174,7 +2174,7 @@
           "cn": "秘銀盾"
         },
         "stack": 1,
-        "material": ["GB001", "BM007"],
+        "material": ["GB001", "BM006"],
         "atk0": 30,
         "def0": 30,
         "atk_spd1": 0.2,
@@ -2195,7 +2195,7 @@
           "cn": "生命訊號感測器"
         },
         "stack": 1,
-        "material": ["BM006", "WB001"],
+        "material": ["BM001", "WB001"],
         "def0": 15,
         "atk_spd1": 0.4
       },
@@ -2296,7 +2296,7 @@
           "cn": "召喚手錶"
         },
         "stack": 1,
-        "material": ["GB004", "BM001"],
+        "material": ["GB004", "BM008"],
         "def0": 18,
         "cool1": 0.1,
         "atk_spd1": 0.6
@@ -2316,7 +2316,7 @@
           "cn": "南丁格爾"
         },
         "stack": 1,
-        "material": ["GB004", "BM001"],
+        "material": ["GB004", "BM008"],
         "atk0": 20,
         "hp0": 160,
         "heal_up1": 0.15
@@ -2828,7 +2828,7 @@
           "cn": "秘銀靴"
         },
         "stack": 1,
-        "material": ["GS002", "BM007"],
+        "material": ["GS002", "BM006"],
         "def0": 15,
         "atk_spd1": 0.32,
         "move_spd0": 0.42
@@ -2944,7 +2944,7 @@
           "cn": "馬弗里克之履"
         },
         "stack": 1,
-        "material": ["GS004", "BM006"],
+        "material": ["GS004", "BM001"],
         "atk0": 15,
         "move_spd0": 0.32,
         "uniq011": {
@@ -2974,7 +2974,7 @@
           "cn": "劍齒虎"
         },
         "stack": 1,
-        "material": ["BS006", "BM008"],
+        "material": ["BS006", "BM007"],
         "move_spd0": 0.35,
         "penet1": 0.1
       },
@@ -3981,7 +3981,7 @@
           "cn": "邀明月"
         },
         "stack": 1,
-        "material": ["BD001", "BM001"],
+        "material": ["BD001", "BM008"],
         "atk0": 10,
         "def0": 10,
         "mp_reg1": 1,
@@ -4027,7 +4027,7 @@
           "cn": "秘銀箭袋"
         },
         "stack": 1,
-        "material": ["GA007", "BM007"],
+        "material": ["GA007", "BM006"],
         "def0": 12,
         "atk_spd1": 0.33,
         "move_spd0": 0.1,
@@ -4056,7 +4056,7 @@
           "cn": "月光吊墜"
         },
         "stack": 1,
-        "material": ["WA003", "BM001"],
+        "material": ["WA003", "BM008"],
         "atk0": 26,
         "vamp_all1": 0.15,
         "vision0": 1
@@ -4207,7 +4207,7 @@
           "cn": "昆德拉"
         },
         "stack": 1,
-        "material": ["BM007", "BM001"],
+        "material": ["BM006", "BM008"],
         "only": {
           "kr": "솔로 모드",
           "en": "Solo",
@@ -4262,7 +4262,7 @@
           "cn": "昆德拉Mk2"
         },
         "stack": 1,
-        "material": ["BM007", "BM001"],
+        "material": ["BM006", "BM008"],
         "only": {
           "kr": "듀오, 스쿼드 모드",
           "en": "Duo, Squad",
@@ -4315,7 +4315,7 @@
           "cn": "蘇丹箭袋"
         },
         "stack": 1,
-        "material": ["BA005", "BM001"],
+        "material": ["BA005", "BM008"],
         "only": {
           "kr": "솔로 모드",
           "en": "Solo",
@@ -4381,7 +4381,7 @@
           "cn": "蘇丹箭袋Mk2"
         },
         "stack": 1,
-        "material": ["BA005", "BM001"],
+        "material": ["BA005", "BM008"],
         "only": {
           "kr": "듀오, 스쿼드 모드",
           "en": "Duo, Squad",

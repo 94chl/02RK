@@ -689,7 +689,7 @@
           "cn": "極光長劍"
         },
         "stack": 1,
-        "material": ["BWB006", "BM008"],
+        "material": ["BWB006", "BM007"],
         "atk0": 67,
         "atk_spd1": 0.38,
         "vision0": 2,
@@ -1262,7 +1262,7 @@
           "cn": "雌雄雙股劍"
         },
         "stack": 1,
-        "material": ["WWD001", "BM001"],
+        "material": ["WWD001", "BM008"],
         "atk0": 50,
         "atk_spd1": 0.45,
         "basic_atk0": 10
@@ -2725,7 +2725,7 @@
           "cn": "烏拉諾斯"
         },
         "stack": 1,
-        "material": ["GM002", "BM001"],
+        "material": ["GM002", "BM008"],
         "atk0": 69,
         "atk_spd1": 0.12,
         "uniq001": {
@@ -3670,7 +3670,7 @@
           "cn": "亡者之符"
         },
         "stack": 1,
-        "material": ["BWJ001", "BM008"],
+        "material": ["BWJ001", "BM007"],
         "load0": 20,
         "atk0": 73,
         "skill1": 0.1,
@@ -4074,7 +4074,7 @@
           "cn": "阿提米絲"
         },
         "stack": 1,
-        "material": ["BWK002", "BM001"],
+        "material": ["BWK002", "BM008"],
         "atk0": 78,
         "skill1": 0.25,
         "hp0": 150,
@@ -4530,7 +4530,7 @@
           "cn": "魔彈射手"
         },
         "stack": 1,
-        "material": ["BWM002", "BM008"],
+        "material": ["BWM002", "BM007"],
         "load0": 3,
         "atk0": 36,
         "skill1": 0.2,
@@ -5200,7 +5200,7 @@
           "cn": "四射星光"
         },
         "stack": 1,
-        "material": ["BWO002", "BM001"],
+        "material": ["BWO002", "BM008"],
         "load0": 2,
         "atk0": 80,
         "skill1": 0.28,
@@ -5417,7 +5417,7 @@
           "cn": "夜神星錘"
         },
         "stack": 1,
-        "material": ["BWP001", "BM001"],
+        "material": ["BWP001", "BM008"],
         "atk0": 90,
         "skill1": 0.2
       },
@@ -5597,7 +5597,7 @@
           "cn": "涯角槍"
         },
         "stack": 1,
-        "material": ["GWQ001", "BM007"],
+        "material": ["GWQ001", "BM006"],
         "atk0": 102,
         "atk_spd1": 0.12,
         "move_spd0": 0.12
@@ -5637,7 +5637,7 @@
           "cn": "宇宙雙叉戟"
         },
         "stack": 1,
-        "material": ["BWQ001", "BM001"],
+        "material": ["BWQ001", "BM008"],
         "atk0": 108,
         "grow_atk_spd1": 0.02
       },
@@ -6135,7 +6135,7 @@
           "cn": "隕星重劍"
         },
         "stack": 1,
-        "material": ["BWS001", "BM008"],
+        "material": ["BWS001", "BM007"],
         "atk0": 49,
         "cool1": 0.12,
         "cri_atk1": 0.12,
@@ -6173,7 +6173,7 @@
           "cn": "咎瓦尤斯"
         },
         "stack": 1,
-        "material": ["GWS001", "BM007"],
+        "material": ["GWS001", "BM006"],
         "atk0": 66,
         "atk_spd1": 0.3,
         "cri_rate1": 0.1,
@@ -6537,7 +6537,7 @@
           "cn": "絕色之夜"
         },
         "stack": 1,
-        "material": ["BWT005", "BM008"],
+        "material": ["BWT005", "BM007"],
         "atk0": 75,
         "basic_atk0": 2,
         "atk_spd1": 0.15,
@@ -6841,7 +6841,7 @@
           "cn": "V.I.C.G"
         },
         "stack": 1,
-        "material": ["GWU001", "BM006"],
+        "material": ["GWU001", "BM001"],
         "atk0": 62,
         "basic_atk0": 25,
         "vision0": 1
@@ -7201,7 +7201,7 @@
           "cn": "月水晶"
         },
         "stack": 1,
-        "material": ["GWV001", "BM001"],
+        "material": ["GWV001", "BM008"],
         "atk0": 75,
         "skill1": 0.1,
         "vision0": 1.5,
@@ -7618,7 +7618,7 @@
           "cn": "超級響尾蛇 ML"
         },
         "stack": 1,
-        "material": ["PWW001", "BM007"],
+        "material": ["PWW001", "BM006"],
         "atk0": 63,
         "move_spd0": 0.1,
         "cool1": 0.1,
@@ -7931,7 +7931,7 @@
           "cn": "女王蛇 MT"
         },
         "stack": 1,
-        "material": ["PWW003", "BM008"],
+        "material": ["PWW003", "BM007"],
         "atk0": 61,
         "grow_basic_atk0": 2,
         "atk_spd1": 0.2,

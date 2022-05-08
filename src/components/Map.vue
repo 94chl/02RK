@@ -35,9 +35,17 @@
         <svg class="area a001">
           <g>
             <polygon points="0,0 48,0 48,48 0,48" />
-            <text class="areaName" x="10" y="5">
+            <text v-if="language !== 'en'" class="areaName" x="10" y="5">
               {{ $t("mapModal.research") }}
             </text>
+            <g v-else>
+              <text class="areaName" x="10" y="0">
+                {{ $t("mapModal.research").split(" ")[0] }}
+              </text>
+              <text class="areaName" x="10" y="15">
+                {{ $t("mapModal.research").split(" ")[1] }}
+              </text>
+            </g>
           </g>
         </svg>
         <svg class="area a002" @click="setRoute">
@@ -270,9 +278,17 @@
               points="0,0 72,0 72,24 0,24"
             />
             <circle class="alphaOmega" cx="7" cy="9" r="4" />
-            <text class="areaName" x="15" y="18">
+            <text v-if="language !== 'en'" class="areaName" x="15" y="18">
               {{ $t("mapModal.archery") }}
             </text>
+            <g v-else>
+              <text class="areaName" x="15" y="15">
+                {{ $t("mapModal.archery").split(" ")[0] }}
+              </text>
+              <text class="areaName" x="15" y="30">
+                {{ $t("mapModal.archery").split(" ")[1] }}
+              </text>
+            </g>
           </g>
         </svg>
         <svg class="routeLine">
@@ -377,6 +393,9 @@
           (routeInfo) => routeInfo.id
         );
         return customRouteId;
+      },
+      language() {
+        return this.$store.state.language;
       },
     },
     methods: {

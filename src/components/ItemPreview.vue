@@ -340,7 +340,7 @@
 
     &_info {
       display: grid;
-      grid-template-columns: 25% auto 25%;
+      grid-template-columns: 25% calc(50% - 10px) 25%;
       @media screen and (max-width: 720px) {
         grid-template-columns: 1fr;
       }
@@ -386,14 +386,22 @@
           flex-direction: column;
           align-items: flex-start;
 
+          .attrKey {
+            display: block;
+            max-width: 100%;
+            word-break: break-all;
+          }
+
           .attrValue {
+            display: block;
+            max-width: 100%;
             ul {
               list-style: disc outside;
               padding: 0 4px;
 
               .optionDetail {
                 margin: 4px 0;
-                word-break: keep-all;
+                word-break: break-all;
               }
             }
           }
@@ -408,7 +416,6 @@
           padding: 3px;
           .attrKey {
             display: block;
-            min-width: max-content;
           }
         }
 

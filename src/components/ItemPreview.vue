@@ -279,6 +279,13 @@
       recommendRoutes() {
         return this.$store.state.recommendRoutes;
       },
+      areaName2Id() {
+        const areaInfo = {};
+        Object.entries(areaData).forEach(([id, data]) => {
+          areaInfo[data.name] = id;
+        });
+        return areaInfo;
+      },
     },
     methods: {
       changeItem(e) {

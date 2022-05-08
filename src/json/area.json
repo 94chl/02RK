@@ -1,5 +1,6 @@
 {
   "A000": {
+    "id": "A000",
     "name": {
       "kr": "공통",
       "en": "common",
@@ -22,6 +23,7 @@
   },
 
   "A001": {
+    "id": "A001",
     "name": {
       "kr": "연구소",
       "en": "Research Center",
@@ -34,6 +36,7 @@
     "hyperloop": false
   },
   "A002": {
+    "id": "A002",
     "name": {
       "kr": "골목길",
       "en": "Alley",
@@ -82,6 +85,7 @@
     "hyperloop": true
   },
   "A003": {
+    "id": "A003",
     "name": {
       "kr": "번화가",
       "en": "Avenue",
@@ -127,6 +131,7 @@
     "hyperloop": true
   },
   "A004": {
+    "id": "A004",
     "name": {
       "kr": "절",
       "en": "Temple",
@@ -174,6 +179,7 @@
     "hyperloop": true
   },
   "A005": {
+    "id": "A005",
     "name": {
       "kr": "연못",
       "en": "Pond",
@@ -207,6 +213,7 @@
     "hyperloop": false
   },
   "A006": {
+    "id": "A006",
     "name": {
       "kr": "병원",
       "en": "Hospital",
@@ -251,6 +258,7 @@
     "hyperloop": true
   },
   "A007": {
+    "id": "A007",
     "name": {
       "kr": "묘지",
       "en": "Cemetery",
@@ -283,6 +291,7 @@
     "hyperloop": false
   },
   "A008": {
+    "id": "A008",
     "name": {
       "kr": "공장",
       "en": "Factory",
@@ -330,6 +339,7 @@
     "hyperloop": true
   },
   "A009": {
+    "id": "A009",
     "name": {
       "kr": "성당",
       "en": "Chapel",
@@ -375,6 +385,7 @@
     "hyperloop": true
   },
   "A010": {
+    "id": "A010",
     "name": {
       "kr": "항구",
       "en": "Dock",
@@ -407,6 +418,7 @@
     "hyperloop": false
   },
   "A011": {
+    "id": "A011",
     "name": {
       "kr": "고급 주택가",
       "en": "Uptown",
@@ -455,6 +467,7 @@
     "hyperloop": true
   },
   "A012": {
+    "id": "A012",
     "name": {
       "kr": "숲",
       "en": "Forest",
@@ -488,6 +501,7 @@
     "hyperloop": false
   },
   "A013": {
+    "id": "A013",
     "name": {
       "kr": "모래사장",
       "en": "Beach",
@@ -518,6 +532,7 @@
     "hyperloop": false
   },
   "A014": {
+    "id": "A014",
     "name": {
       "kr": "호텔",
       "en": "Hotel",
@@ -565,6 +580,7 @@
     "hyperloop": true
   },
   "A015": {
+    "id": "A015",
     "name": {
       "kr": "학교",
       "en": "School",
@@ -597,6 +613,7 @@
     "hyperloop": false
   },
   "A016": {
+    "id": "A016",
     "name": {
       "kr": "양궁장",
       "en": "Archery Range",

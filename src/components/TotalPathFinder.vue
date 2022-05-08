@@ -126,9 +126,9 @@
       setCustomRoute(e) {
         const target =
           this.totalRecommendRoutes[e.target.closest("li").dataset.routeIndex];
-        const newRoute = target.map((area) => this.areaName2Id[area]);
+
         if (window.confirm(this.$t("noti.applyRoute")))
-          this.$store.dispatch("setRoute", newRoute);
+          this.$store.dispatch("setRoute", target);
       },
     },
   };

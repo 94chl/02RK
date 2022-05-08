@@ -40,11 +40,11 @@
             >
               {{
                 `[${
-                  option.match(/(active)/g)
+                  option.match(/(uniq)/g)
                     ? $t("itemPreviewSection.optionUniq")
                     : option.match(/(buff)/g)
                     ? $t("itemPreviewSection.optionbuff")
-                    : option.match(/(uniq)/g)
+                    : option.match(/(active)/g)
                     ? $t("itemPreviewSection.optionActive")
                     : ""
                 }] ${itemOptions[option][language]}`

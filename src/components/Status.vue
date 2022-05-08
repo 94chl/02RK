@@ -149,11 +149,11 @@
               <div class="optionInfo_name">
                 {{
                   `[${
-                    optionId.match(/(active)/g)
+                    optionId.match(/(uniq)/g)
                       ? $t("itemPreviewSection.optionUniq")
                       : optionId.match(/(buff)/g)
                       ? $t("itemPreviewSection.optionbuff")
-                      : optionId.match(/(uniq)/g)
+                      : optionId.match(/(active)/g)
                       ? $t("itemPreviewSection.optionActive")
                       : ""
                   }] ${itemOptions[optionId][language]}`

@@ -1295,7 +1295,7 @@
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1xJS89c4Tuzla7xHKAQ11Mqmq-kJdMb6s",
         "location": false,
-        "tobe": ["BH008", "PH005"],
+        "tobe": ["PH011", "PH005"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "왕관", "en": "Crown", "ja": "王冠", "cn": "王冠" },
@@ -1375,59 +1375,11 @@
         "vision0": 2
       },
       {
-        "id": "BH008",
-        "sort": "helmet",
-        "img": "https://lh3.google.com/u/0/d/1MMCnEKHA1-w6_Bzd7KTiTnI9R3PgNtnX",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "성기사의 투구",
-          "en": "Crusader Helmet",
-          "ja": "パラディンの兜",
-          "cn": "聖騎士頭盔"
-        },
-        "stack": 1,
-        "material": ["BH004", "WA008"],
-        "def0": 23,
-        "basic_atk0": 5,
-        "uniq015": {
-          "detail": {
-            "kr": [
-              "적 실험체에게 피해를 받아 체력이 40% 이하가 될 때 발동",
-              "1.5초간 (135 + 캐릭터 레벨*8)의 보호막 획득",
-              "6초 동안 스킬 증폭이 12% 증가",
-              "쿨다운: 80초"
-            ],
-            "en": [
-              "When dropping below 40% HP after taking damage from an enemy player",
-              "You gain a (135 + Character Level*8) HP shield for 1.5 seconds",
-              "Your skill amplification is increased by 12% for 6 seconds",
-              "Cooldown: 80s"
-            ],
-            "ja": [
-              "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
-              "1.5秒間135+キャラクターレベル*8のシールドを獲得",
-              "6秒間スキル増幅が12%増加",
-              "クールダウン:80秒"
-            ],
-            "cn": [
-              "When dropping below 40% HP after taking damage from an enemy player",
-              "You gain a (135 + Character Level*8) HP shield for 1.5 seconds",
-              "Your skill amplification is increased by 12% for 6 seconds",
-              "Cooldown: 80s"
-            ]
-          },
-          "value": 135
-        }
-      },
-      {
         "id": "BH009",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1cBfMBJ8jEK3Xu3cuWt4UKtmpupb5vQEc",
         "location": false,
-        "tobe": ["PH011"],
+        "tobe": ["PH012"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1684,6 +1636,54 @@
       },
       {
         "id": "PH011",
+        "sort": "helmet",
+        "img": "https://lh3.google.com/u/0/d/1MMCnEKHA1-w6_Bzd7KTiTnI9R3PgNtnX",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "성기사의 투구",
+          "en": "Crusader Helmet",
+          "ja": "パラディンの兜",
+          "cn": "聖騎士頭盔"
+        },
+        "stack": 1,
+        "material": ["BH004", "WA008"],
+        "def0": 23,
+        "basic_atk0": 5,
+        "uniq015": {
+          "detail": {
+            "kr": [
+              "적 실험체에게 피해를 받아 체력이 40% 이하가 될 때 발동",
+              "1.5초간 (135 + 캐릭터 레벨*8)의 보호막 획득",
+              "6초 동안 스킬 증폭이 12% 증가",
+              "쿨다운: 80초"
+            ],
+            "en": [
+              "When dropping below 40% HP after taking damage from an enemy player",
+              "You gain a (135 + Character Level*8) HP shield for 1.5 seconds",
+              "Your skill amplification is increased by 12% for 6 seconds",
+              "Cooldown: 80s"
+            ],
+            "ja": [
+              "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
+              "1.5秒間135+キャラクターレベル*8のシールドを獲得",
+              "6秒間スキル増幅が12%増加",
+              "クールダウン:80秒"
+            ],
+            "cn": [
+              "When dropping below 40% HP after taking damage from an enemy player",
+              "You gain a (135 + Character Level*8) HP shield for 1.5 seconds",
+              "Your skill amplification is increased by 12% for 6 seconds",
+              "Cooldown: 80s"
+            ]
+          },
+          "value": 135
+        }
+      },
+      {
+        "id": "PH012",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/16UMs7avUY4i-Hza7JA7L3YH0Ce8uAayZ",
         "location": false,
@@ -3239,7 +3239,7 @@
           "PWI006",
           "GWJ004",
           "GC009",
-          "BH008",
+          "PH011",
           "GA001"
         ],
         "pickup": 1,

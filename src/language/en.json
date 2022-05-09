@@ -35,7 +35,8 @@
     "manual1": "You can move items in inventory by drag and drop(not for mobile)",
     "manual2": "In mobile, drop the item and get item again",
     "manual3": "In searching shortest pathes, it refers to inventory",
-    "manual4": "In the plan section, crafted items refer to inventory"
+    "manual4": "If want a real game environment, please set a initial weapon in inventory",
+    "manual5": "In the plan section, crafted items refer to inventory"
   },
   "selectSection": {
     "weapon": "Weapon",

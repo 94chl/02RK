@@ -108,7 +108,7 @@
           "cn": "玫瑰刀"
         },
         "stack": 1,
-        "material": ["GWA001", "WA002"],
+        "material": ["GWA001", "WM026"],
         "atk0": 20,
         "cool1": 0.08,
         "move_spd0": 0.08
@@ -167,8 +167,8 @@
         },
         "stack": 1,
         "material": ["BWA001", "GA001"],
-        "atk0": 31,
-        "grow_basic_atk0": 2,
+        "atk0": 33,
+        "grow_atk0": 2,
         "hp_reg1": 0.6,
         "cool1": 0.08,
         "move_spd0": 0.08
@@ -189,8 +189,8 @@
         },
         "stack": 1,
         "material": ["BWA001", "GM007"],
-        "atk0": 20,
-        "grow_skill0": 2,
+        "atk0": 35,
+        "skill1": 0.19,
         "cool1": 0.1,
         "move_spd0": 0.1
       },
@@ -258,28 +258,28 @@
         },
         "stack": 1,
         "material": ["BWA003", "BA016"],
-        "atk0": 39,
+        "atk0": 42,
         "def0": 15,
         "uniq020": {
           "detail": {
             "kr": [
               "단일 실험체에게 4초 안에 기본 공격 또는 개별의 피해를 입히는 스킬을 3회 적중 시(무기, 아이템 스킬 제외), <루드라의 단검> 상태가 됩니다",
               "기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급",
-              "쿨다운: 4초"
+              "쿨다운: 7초"
             ],
             "en": [
               "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Rudra Embodied>",
               "Excludes multiple hit effects",
-              "Cooldown: 4s"
+              "Cooldown: 7s"
             ],
             "ja": [
               "4秒以内に3回の個別ダメージを加えると＜ルドラの短剣＞になります。",
-              "クールダウン:4秒"
+              "クールダウン:7秒"
             ],
             "cn": [
               "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Rudra Embodied>",
               "Excludes multiple hit effects",
-              "Cooldown: 4s"
+              "Cooldown: 7s"
             ]
           },
           "value": 1
@@ -317,7 +317,7 @@
           "cn": "佛拉格拉克"
         },
         "stack": 1,
-        "material": ["GWA001", "PM002"],
+        "material": ["GWA001", "PM009"],
         "atk0": 82,
         "move_spd0": 0.12,
         "uniq025": {
@@ -571,8 +571,8 @@
         },
         "stack": 1,
         "material": ["BWB002", "WA008"],
-        "atk0": 40,
-        "basic_atk0": 26,
+        "atk0": 53,
+        "grow_atk0": 1,
         "atk_spd1": 0.3
       },
       {
@@ -610,7 +610,7 @@
           "cn": "災厄之杖"
         },
         "stack": 1,
-        "material": ["GWB001", "PM004"],
+        "material": ["GWB001", "PM007"],
         "atk0": 62,
         "grow_basic_atk1": 0.018
       },
@@ -689,7 +689,7 @@
           "cn": "極光長劍"
         },
         "stack": 1,
-        "material": ["BWB006", "BM007"],
+        "material": ["BWB006", "PM003"],
         "atk0": 67,
         "atk_spd1": 0.38,
         "vision0": 2,
@@ -734,10 +734,10 @@
           "cn": "極冰之劍"
         },
         "stack": 1,
-        "material": ["BWB004", "PM003"],
+        "material": ["BWB004", "PM008"],
         "atk0": 51,
-        "skill0": 30,
-        "uniq029": {
+        "skill1": 0.3,
+        "uniq034": {
           "detail": {
             "kr": [
               "스킬 공격에 적중당한 적은 0.56초간 이동속도 99% 감소",
@@ -877,7 +877,7 @@
         "sort": "axe",
         "img": "https://lh3.google.com/u/0/d/1GDLYvRo29i6vEnf0cd3GaRAYyrDK7ah9",
         "location": false,
-        "tobe": ["PWC001", "YWC001"],
+        "tobe": ["PWC001", "PWC006"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1062,7 +1062,7 @@
         }
       },
       {
-        "id": "YWC001",
+        "id": "PWC006",
         "sort": "axe",
         "img": "https://lh3.google.com/u/0/d/1tOMrF3-1EDFL78vEixvileKD_dC7MEVq",
         "location": false,
@@ -1150,7 +1150,7 @@
         "sort": "dual",
         "img": "https://lh3.google.com/u/0/d/1TBX-_ItMXoDdDfb5gM7Ge9-B4AU0QSbH",
         "location": false,
-        "tobe": ["BWD001", "BWD002", "PWD002", "YWD001"],
+        "tobe": ["BWD001", "BWD002", "YWD003", "YWD001"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1248,26 +1248,6 @@
         }
       },
       {
-        "id": "PWD002",
-        "sort": "dual",
-        "img": "https://lh3.google.com/u/0/d/1QgV64yXNXwwgQQ29FhytJGlQf8f7C2OP",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "자웅일대검",
-          "en": "Starsteel Twin Swords",
-          "ja": "雌雄一対の剣",
-          "cn": "雌雄雙股劍"
-        },
-        "stack": 1,
-        "material": ["WWD001", "BM008"],
-        "atk0": 50,
-        "atk_spd1": 0.45,
-        "basic_atk0": 10
-      },
-      {
         "id": "PWD003",
         "sort": "dual",
         "img": "https://lh3.google.com/u/0/d/1aK_sUFrp_XdV4ZSI4IJR2QfLLCLU3-I2",
@@ -1331,7 +1311,7 @@
           "cn": "陰陽雙刃"
         },
         "stack": 1,
-        "material": ["WWD001", "PM002"],
+        "material": ["WWD001", "PM009"],
         "atk0": 65,
         "atk_spd1": 0.18,
         "uniq008": {
@@ -1361,13 +1341,13 @@
         "stack": 1,
         "material": ["BWD002", "GM007"],
         "atk0": 35,
-        "grow_skill0": 2.5,
+        "grow_skill1": 0.02,
         "uniq006": {
           "detail": {
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 85 + 스킬 증폭*1.5 + 스킬공격 추가 피해*1",
+              "피해량: 85 + 스킬 증폭*2",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간이 1초 감소",
               "쿨다운: 2초"
@@ -1375,7 +1355,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 85 + Skill Amplification*1.5 + Extra Skill Damage*1",
+              "Damage: 85 + Skill Amplification*2",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -1383,7 +1363,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:85+スキル増幅*1.5+スキル攻撃追加ダメージ*1",
+              "ダメージ:85+スキル増幅*2",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -1391,7 +1371,7 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 85 + Skill Amplification*1.5 + Extra Skill Damage*1",
+              "Damage: 85 + Skill Amplification*2",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -1408,6 +1388,25 @@
           },
           "value": 0.08
         }
+      },
+      {
+        "id": "YWD003",
+        "sort": "dual",
+        "img": "https://lh3.google.com/u/0/d/1QgV64yXNXwwgQQ29FhytJGlQf8f7C2OP",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "자웅일대검",
+          "en": "Starsteel Twin Swords",
+          "ja": "雌雄一対の剣",
+          "cn": "雌雄雙股劍"
+        },
+        "stack": 1,
+        "material": ["WWD001", "PM004"],
+        "atk0": 55,
+        "atk_spd1": 0.45
       }
     ]
   },
@@ -1452,7 +1451,7 @@
         "sort": "glove",
         "img": "https://lh3.google.com/u/0/d/1n1Hg6yGUXphGY0CwYFcpnw_RX_ugDe6V",
         "location": false,
-        "tobe": ["BWE006", "PWE008", "YWE001"],
+        "tobe": ["BWE006", "YWE003", "YWE001"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1557,7 +1556,7 @@
         "stack": 1,
         "material": ["BWE001", "WM018"],
         "atk0": 32,
-        "basic_atk0": 15
+        "grow_basic_atk1": 0.01
       },
       {
         "id": "BWE005",
@@ -1594,8 +1593,8 @@
         },
         "stack": 1,
         "material": ["GWE001", "GM007"],
-        "atk0": 27,
-        "skill0": 15
+        "atk0": 25,
+        "skill1": 0.12
       },
       {
         "id": "PWE001",
@@ -1635,7 +1634,7 @@
         "stack": 1,
         "material": ["BWE004", "WA008"],
         "atk0": 45,
-        "basic_atk0": 29
+        "grow_basic_atk1": 0.015
       },
       {
         "id": "PWE003",
@@ -1673,9 +1672,9 @@
         },
         "stack": 1,
         "material": ["BWE006", "WD003"],
-        "atk0": 41,
-        "skill0": 17,
-        "grow_skill0": 1
+        "atk0": 35,
+        "skill1": 0.12,
+        "grow_skill1": 0.01
       },
       {
         "id": "PWE005",
@@ -1791,25 +1790,6 @@
         "cri_atk1": 0.05
       },
       {
-        "id": "PWE008",
-        "sort": "glove",
-        "img": "https://lh3.google.com/u/0/d/13W9pS-3ky6ge_ovIR8wOTOQh-T7PWva3",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "천잠장갑",
-          "en": "Imperial Silk Gloves",
-          "ja": "天蚕手袋",
-          "cn": "天蠶手套"
-        },
-        "stack": 1,
-        "material": ["BT002", "GWE001"],
-        "atk0": 78,
-        "move_spd0": 0.1
-      },
-      {
         "id": "YWE001",
         "sort": "glove",
         "img": "https://lh3.google.com/u/0/d/1QztdycvTSUXIntszi5q_VgXclC0VDjV6",
@@ -1824,9 +1804,9 @@
           "cn": "朱雀之紋"
         },
         "stack": 1,
-        "material": ["GWE001", "PM004"],
+        "material": ["GWE001", "PM007"],
         "atk0": 30,
-        "grow_basic_atk1": 0.016
+        "grow_basic_atk1": 0.02
       },
       {
         "id": "YWE002",
@@ -1843,11 +1823,11 @@
           "cn": "凍土傳說"
         },
         "stack": 1,
-        "material": ["BWE006", "PM003"],
+        "material": ["BWE006", "PM008"],
         "atk0": 43,
         "cool1": 0.1,
-        "skill0": 37,
-        "uniq029": {
+        "skill1": 0.25,
+        "uniq034": {
           "detail": {
             "kr": [
               "스킬 공격에 적중당한 적은 2초간 이동속도 20%, 공격속도 10% 감소",
@@ -1868,6 +1848,25 @@
           },
           "value": 0.3
         }
+      },
+      {
+        "id": "YWE003",
+        "sort": "glove",
+        "img": "https://lh3.google.com/u/0/d/13W9pS-3ky6ge_ovIR8wOTOQh-T7PWva3",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "천잠장갑",
+          "en": "Imperial Silk Gloves",
+          "ja": "天蚕手袋",
+          "cn": "天蠶手套"
+        },
+        "stack": 1,
+        "material": ["PT005", "GWE001"],
+        "atk0": 78,
+        "move_spd0": 0.1
       }
     ]
   },
@@ -1903,7 +1902,7 @@
         "sort": "tonfa",
         "img": "https://lh3.google.com/u/0/d/12hwv7LSmfJF9yekIIEUbPmXVPDIkM5pY",
         "location": false,
-        "tobe": ["BWF001", "BWF002", "PWF004"],
+        "tobe": ["BWF001", "BWF002", "YWF002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1988,9 +1987,30 @@
         },
         "stack": 1,
         "material": ["BWF002", "WM003"],
-        "atk0": 15,
+        "atk0": 45,
         "def0": 18,
-        "hp_reg1": 0.7
+        "hp_reg1": 0.7,
+        "uniq018": {
+          "detail": {
+            "kr": [
+              "적 실험체에게 피해를 받으면, 2.5초간 (40 + 레벨당  5)의 보호막 획득",
+              "쿨다운: 25초"
+            ],
+            "en": [
+              "When taking damage from an enemy player, you gain a (40 + Character Level*5) HP shield for 2.5 seconds",
+              "Cooldown: 25s"
+            ],
+            "ja": [
+              "着用者が敵実験体にダメージを受けた時、2.5秒間40+キャラクターレベル*5のシールドを獲得",
+              "クールダウン:25秒"
+            ],
+            "cn": [
+              "When taking damage from an enemy player, you gain a (40 + Character Level*5) HP shield for 2.5 seconds",
+              "Cooldown: 25s"
+            ]
+          },
+          "value": 40
+        }
       },
       {
         "id": "PWF003",
@@ -2013,7 +2033,71 @@
         "vision0": 2
       },
       {
-        "id": "PWF004",
+        "id": "YWF001",
+        "sort": "tonfa",
+        "img": "https://lh3.google.com/u/0/d/16eHLZpAUOCdkRMBEsDVWoTXkOsspsxJA",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "흑요석 짓테",
+          "en": "Obsidian Jitte",
+          "ja": "黒曜石十手",
+          "cn": "黑曜石雙釵"
+        },
+        "stack": 1,
+        "material": ["BWF001", "PM009"],
+        "atk0": 63,
+        "def0": 8,
+        "uniq006": {
+          "detail": {
+            "kr": [
+              "<저주> 상태가 해제될 때, 고정 피해를 입힘",
+              "피해량: 50 + 스킬 증폭*2",
+              "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
+              "기본 공격 시 저주 대기시간 1초 감소",
+              "쿨다운: 2초"
+            ],
+            "en": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 50 + Skill Amplification*2",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ],
+            "ja": [
+              "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
+              "＜呪い＞の状態から解除されると固定ダメージ",
+              "ダメージ:50+スキル増幅*2",
+              "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
+              "基本攻撃時1秒減少",
+              "クールダウン:2秒"
+            ],
+            "cn": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 50 + Skill Amplification*2",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ]
+          },
+          "value": 50
+        },
+        "buff006": {
+          "detail": {
+            "kr": ["이동속도: 10% 감소", "지속시간: 4초"],
+            "en": ["Slowing by 10%", "Duration: 4s"],
+            "ja": ["移動速度:10%減少", "4秒間"],
+            "cn": ["Slowing by 10%", "Duration: 4s"]
+          },
+          "value": 0.1
+        }
+      },
+      {
+        "id": "YWF002",
         "sort": "tonfa",
         "img": "https://lh3.google.com/u/0/d/1_eWC95bTuBWDjUlApsZLWTiEcw-_sBTG",
         "location": false,
@@ -2027,11 +2111,11 @@
           "cn": "風行者"
         },
         "stack": 1,
-        "material": ["GWF001", "BT002"],
+        "material": ["GWF001", "PT005"],
         "atk0": 58,
         "def0": 8,
         "move_spd0": 0.1,
-        "uniq018": {
+        "uniq021": {
           "detail": {
             "kr": [
               "단일 실험체에게 4초 안에 기본 공격 또는 개별의 피해를 입히는 스킬(무기, 아이템 스킬 제외)을 2회 적중 시 <산들바람> 상태가 됩니다",
@@ -2084,70 +2168,6 @@
           },
           "value": 0.4
         }
-      },
-      {
-        "id": "YWF001",
-        "sort": "tonfa",
-        "img": "https://lh3.google.com/u/0/d/16eHLZpAUOCdkRMBEsDVWoTXkOsspsxJA",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "흑요석 짓테",
-          "en": "Obsidian Jitte",
-          "ja": "黒曜石十手",
-          "cn": "黑曜石雙釵"
-        },
-        "stack": 1,
-        "material": ["BWF001", "PM002"],
-        "atk0": 63,
-        "def0": 8,
-        "uniq006": {
-          "detail": {
-            "kr": [
-              "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 50 + 스킬 증폭*2",
-              "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
-              "기본 공격 시 저주 대기시간 1초 감소",
-              "쿨다운: 2초"
-            ],
-            "en": [
-              "Hitting an enemy with a skill hexes them",
-              "Dealing true damage when the hex expires",
-              "Damage: 50 + Skill Amplification*2",
-              "Targets cannot be hexed again for 8 seconds",
-              "Basic attacks reduce this cooldown by 1s",
-              "Cooldown: 2s"
-            ],
-            "ja": [
-              "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
-              "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:50+スキル増幅*2",
-              "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
-              "基本攻撃時1秒減少",
-              "クールダウン:2秒"
-            ],
-            "cn": [
-              "Hitting an enemy with a skill hexes them",
-              "Dealing true damage when the hex expires",
-              "Damage: 50 + Skill Amplification*2",
-              "Targets cannot be hexed again for 8 seconds",
-              "Basic attacks reduce this cooldown by 1s",
-              "Cooldown: 2s"
-            ]
-          },
-          "value": 50
-        },
-        "buff006": {
-          "detail": {
-            "kr": ["이동속도: 10% 감소", "지속시간: 4초"],
-            "en": ["Slowing by 10%", "Duration: 4s"],
-            "ja": ["移動速度:10%減少", "4秒間"],
-            "cn": ["Slowing by 10%", "Duration: 4s"]
-          },
-          "value": 0.1
-        }
       }
     ]
   },
@@ -2180,7 +2200,7 @@
         "sort": "bat",
         "img": "https://lh3.google.com/u/0/d/16nnlYBpgIwymOqjnbaBWoFgUpWKOkQDJ",
         "location": false,
-        "tobe": ["BWG001", "BWG002", "PWG004", "YWG001"],
+        "tobe": ["BWG001", "BWG002", "YWG002", "YWG001"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "장봉", "en": "Long Rod", "ja": "長棒", "cn": "長棍" },
@@ -2227,7 +2247,7 @@
         "stack": 1,
         "material": ["GWG001", "WA004"],
         "atk0": 30,
-        "skill0": 14
+        "skill1": 0.11
       },
       {
         "id": "BWG003",
@@ -2331,28 +2351,23 @@
         "material": ["BWG002", "GM007"],
         "atk0": 60,
         "mp_reg0": 0.8,
-        "skill0": 22
-      },
-      {
-        "id": "PWG004",
-        "sort": "bat",
-        "img": "https://lh3.google.com/u/0/d/1LNi5Nqz1-8HLWeJ6cBHv2lnKvYdZVtbA",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "마법봉",
-          "en": "Magic Stick",
-          "ja": "魔法ステッキ",
-          "cn": "魔法棒"
-        },
-        "stack": 1,
-        "material": ["GWG001", "PA005"],
-        "atk0": 49,
-        "vamp_all1": 0.15,
-        "skill1": 0.25,
-        "vision0": 1
+        "skill1": 0.15,
+        "uniq014": {
+          "detail": {
+            "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "40%/(近)30%(遠)"
+            ],
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
+          },
+          "value": 0.4
+        }
       },
       {
         "id": "PWG005",
@@ -2471,7 +2486,7 @@
           "cn": "如意金箍棒"
         },
         "stack": 1,
-        "material": ["GWG001", "PM002"],
+        "material": ["GWG001", "PM009"],
         "atk0": 125,
         "atk_spd1": 0.1,
         "uniq008": {
@@ -2483,6 +2498,27 @@
           },
           "value": 1
         }
+      },
+      {
+        "id": "YWG002",
+        "sort": "bat",
+        "img": "https://lh3.google.com/u/0/d/1LNi5Nqz1-8HLWeJ6cBHv2lnKvYdZVtbA",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "마법봉",
+          "en": "Magic Stick",
+          "ja": "魔法ステッキ",
+          "cn": "魔法棒"
+        },
+        "stack": 1,
+        "material": ["GWG001", "YA010"],
+        "atk0": 49,
+        "vamp_all1": 0.15,
+        "skill1": 0.25,
+        "vision0": 1
       }
     ]
   },
@@ -2518,7 +2554,7 @@
         "stack": 1,
         "material": ["WWH001", "WM008"],
         "atk0": 24,
-        "skill0": 6
+        "skill1": 0.06
       },
       {
         "id": "GWH002",
@@ -2550,7 +2586,8 @@
         "stack": 1,
         "material": ["GWH001", "WA001"],
         "atk0": 36,
-        "move_spd0": 0.06
+        "move_spd0": 0.04,
+        "skill1": 0.1
       },
       {
         "id": "BWH002",
@@ -2567,7 +2604,7 @@
           "cn": "霹靂鞭"
         },
         "stack": 1,
-        "material": ["GWH002", "GM005"],
+        "material": ["GWH002", "WM009"],
         "atk0": 35,
         "atk_spd1": 0.15
       },
@@ -2588,7 +2625,7 @@
         "stack": 1,
         "material": ["BWH001", "GT001"],
         "atk0": 50,
-        "skill0": 21,
+        "skill1": 0.16,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
@@ -2616,9 +2653,8 @@
         },
         "stack": 1,
         "material": ["BWH002", "WM007"],
-        "atk0": 40,
+        "atk0": 65,
         "atk_spd1": 0.4,
-        "grow_basic_atk0": 2,
         "vision0": 1.5
       },
       {
@@ -2630,14 +2666,14 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "벽력편",
+          "kr": "뇌룡편",
           "en": "Thunder Whip",
           "ja": "雷龍鞭",
           "cn": "雷龍鞭"
         },
         "stack": 1,
         "material": ["BWH002", "GM011"],
-        "atk0": 48,
+        "atk0": 53,
         "skill1": 0.12,
         "grow_skill1": 0.01,
         "atk_spd1": 0.12
@@ -2665,21 +2701,21 @@
             "kr": [
               "단일 실험체에게 4초 안에 기본 공격 또는 개별의 피해를 입히는 스킬(무기, 아이템 스킬 제외)을 3회 적중 시 <플라즈마> 상태가 됩니다",
               "기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급",
-              "쿨다운: 5초"
+              "쿨다운: 12초"
             ],
             "en": [
               "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Charge Carrier>",
               "Excludes multiple hit effects",
-              "Cooldown: 5s"
+              "Cooldown: 12s"
             ],
             "ja": [
               "4秒以内に3回の個別ダメージを加えると＜プラズマ＞になります。",
-              "クールダウン:5秒"
+              "クールダウン:12秒"
             ],
             "cn": [
               "Hitting a single enemy with a basic attack or skill 3 times within 4 seconds grants you <Charge Carrier>",
               "Excludes multiple hit effects",
-              "Cooldown: 5s"
+              "Cooldown: 12s"
             ]
           },
           "value": 1
@@ -2711,7 +2747,28 @@
         }
       },
       {
-        "id": "PWH005",
+        "id": "YWH001",
+        "sort": "whip",
+        "img": "https://lh3.google.com/u/0/d/1aZr-PFq7cIgABmhROt_Zqam4Iay5ywDs",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "혈화구절편",
+          "en": "Bloody Nine Tails",
+          "ja": "血花九節鞭",
+          "cn": "血花九節鞭"
+        },
+        "stack": 1,
+        "material": ["GWH001", "PM001"],
+        "atk0": 70,
+        "skill1": 0.3,
+        "vamp_all1": 0.15,
+        "cool1": 0.13
+      },
+      {
+        "id": "YWH002",
         "sort": "whip",
         "img": "https://lh3.google.com/u/0/d/1n9UhsfiEfjChh3enOLfZgkJdvD3ILz4w",
         "location": false,
@@ -2725,7 +2782,7 @@
           "cn": "烏拉諾斯"
         },
         "stack": 1,
-        "material": ["GM002", "BM008"],
+        "material": ["GM002", "PM004"],
         "atk0": 69,
         "atk_spd1": 0.12,
         "uniq001": {
@@ -2756,27 +2813,6 @@
           },
           "value": 0.1
         }
-      },
-      {
-        "id": "YWH001",
-        "sort": "whip",
-        "img": "https://lh3.google.com/u/0/d/1aZr-PFq7cIgABmhROt_Zqam4Iay5ywDs",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "혈화구절편",
-          "en": "Bloody Nine Tails",
-          "ja": "血花九節鞭",
-          "cn": "血花九節鞭"
-        },
-        "stack": 1,
-        "material": ["GWH001", "PM001"],
-        "atk0": 70,
-        "skill0": 40,
-        "vamp_all1": 0.15,
-        "cool1": 0.13
       }
     ]
   },
@@ -2821,7 +2857,7 @@
         "sort": "throw",
         "img": "https://lh3.google.com/u/0/d/18lj8kOZF-HoZLC-8hVwjUKWsNa_IQ0Yr",
         "location": false,
-        "tobe": ["PWI002", "PWI009"],
+        "tobe": ["BWI007", "PWI009"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2833,7 +2869,7 @@
         "stack": 1,
         "material": ["WWI001", "WM018"],
         "atk0": 25,
-        "basic_atk0": 20
+        "grow_basic_atk1": 0.01
       },
       {
         "id": "GWI002",
@@ -2996,6 +3032,26 @@
         }
       },
       {
+        "id": "BWI007",
+        "sort": "throw",
+        "img": "https://lh3.google.com/u/0/d/16fpSYxDDLcQWB0tKuftN_rD6FPLxBBO8",
+        "location": false,
+        "tobe": ["PWI006"],
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "고폭 수류탄",
+          "en": "High Explosive Grenade",
+          "ja": "高爆手榴弾",
+          "cn": "高爆手榴弾"
+        },
+        "stack": 1,
+        "material": ["GWI001", "BT001"],
+        "load0": 8,
+        "atk0": 50,
+        "grow_basic_atk1": 0.015
+      },
+      {
         "id": "PWI001",
         "sort": "throw",
         "img": "https://lh3.google.com/u/0/d/1jotk0KvrpowEVDAiuw1vjFNGhdmJ6RI1",
@@ -3018,26 +3074,6 @@
         "cool1": 0.12
       },
       {
-        "id": "PWI002",
-        "sort": "throw",
-        "img": "https://lh3.google.com/u/0/d/16fpSYxDDLcQWB0tKuftN_rD6FPLxBBO8",
-        "location": false,
-        "tobe": ["PWI006"],
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "고폭 수류탄",
-          "en": "High Explosive Grenade",
-          "ja": "高爆手榴弾",
-          "cn": "高爆手榴弾"
-        },
-        "stack": 1,
-        "material": ["GWI001", "BT001"],
-        "load0": 8,
-        "atk0": 44,
-        "basic_atk0": 50
-      },
-      {
         "id": "PWI003",
         "sort": "throw",
         "img": "https://lh3.google.com/u/0/d/1E2-nSACXPW8wHq4CHKXW-I45lk2aBwvn",
@@ -3054,8 +3090,8 @@
         "stack": 1,
         "material": ["BWI001", "GA001"],
         "load0": 50,
-        "atk0": 56,
-        "basic_atk0": 36,
+        "atk0": 62,
+        "grow_atk0": 2,
         "hp_reg1": 0.8
       },
       {
@@ -3122,10 +3158,10 @@
           "cn": "安提奧克的手榴彈"
         },
         "stack": 1,
-        "material": ["PWI002", "WA008"],
+        "material": ["BWI007", "WA008"],
         "load0": 18,
-        "atk0": 68,
-        "basic_atk0": 42
+        "atk0": 75,
+        "grow_basic_atk1": 0.015
       },
       {
         "id": "PWI007",
@@ -3144,8 +3180,8 @@
         "stack": 1,
         "material": ["GWI003", "BT007"],
         "load0": 50,
-        "atk0": 22,
-        "grow_skill0": 2.5
+        "atk0": 15,
+        "grow_skill1": 0.03
       },
       {
         "id": "PWI008",
@@ -3241,7 +3277,7 @@
           "cn": "魔導稜鏡"
         },
         "stack": 1,
-        "material": ["BWI003", "PM002"],
+        "material": ["BWI003", "PM009"],
         "load0": 50,
         "atk0": 103,
         "atk_spd1": 0.33
@@ -3347,22 +3383,22 @@
         },
         "stack": 1,
         "material": ["WWJ001", "WA008"],
-        "atk0": 17,
-        "skill0": 5
+        "atk0": 20,
+        "skill1": 0.05
       },
       {
         "id": "BWJ001",
         "sort": "shuriken",
         "img": "https://lh3.google.com/u/0/d/1vQsi1fkD8b_BK-fYOV0PnyzvUcSI55Rf",
         "location": false,
-        "tobe": ["PWJ002", "PWJ008"],
+        "tobe": ["PWJ002", "YWJ003"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "부적", "en": "Charm", "ja": "御札", "cn": "符咒" },
         "stack": 1,
         "material": ["GWJ002", "WM025"],
         "atk0": 30,
-        "skill0": 5
+        "skill1": 0.06
       },
       {
         "id": "BWJ002",
@@ -3379,9 +3415,9 @@
           "cn": "梅花苦無"
         },
         "stack": 1,
-        "material": ["GWJ004", "WA002"],
-        "atk0": 17,
-        "skill0": 8,
+        "material": ["GWJ004", "WM026"],
+        "atk0": 24,
+        "skill1": 0.08,
         "cool1": 0.05
       },
       {
@@ -3418,8 +3454,8 @@
         },
         "stack": 1,
         "material": ["BWJ002", "WM024"],
-        "atk0": 17,
-        "skill0": 12,
+        "atk0": 32,
+        "skill1": 0.08,
         "cool1": 0.08
       },
       {
@@ -3439,7 +3475,7 @@
         "stack": 1,
         "material": ["WWS001", "BM002"],
         "atk0": 55,
-        "skill0": 15
+        "skill1": 0.1
       },
       {
         "id": "BWJ006",
@@ -3521,8 +3557,52 @@
         "load0": 20,
         "atk0": 55,
         "skill1": 0.15,
-        "skill0": 2,
-        "grow_skill0": 1
+        "uniq006": {
+          "detail": {
+            "kr": [
+              "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
+              "<저주> 상태가 해제될 때, 고정 피해를 입힘",
+              "피해량: 30 + 스킬 증폭*1",
+              "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
+              "기본 공격 시 저주 대기시간 1초 감소",
+              "쿨다운: 2초"
+            ],
+            "en": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 30 + Skill Amplification*1",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ],
+            "ja": [
+              "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
+              "＜呪い＞の状態から解除されると固定ダメージ",
+              "ダメージ:30+スキル増幅*1",
+              "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
+              "基本攻撃時1秒減少",
+              "クールダウン:2秒"
+            ],
+            "cn": [
+              "Hitting an enemy with a skill hexes them",
+              "Dealing true damage when the hex expires",
+              "Damage: 100 + Skill Amplification*1.25",
+              "Targets cannot be hexed again for 8 seconds",
+              "Basic attacks reduce this cooldown by 1s",
+              "Cooldown: 2s"
+            ]
+          },
+          "value": 100
+        },
+        "buff006": {
+          "detail": {
+            "kr": ["이동속도: 6% 감소", "지속시간: 4초"],
+            "en": ["Slowing by 6%", "Duration: 4s"],
+            "ja": ["移動速度:6%減少", "4秒間"],
+            "cn": ["Slowing by 6%", "Duration: 4s"]
+          },
+          "value": 0.1
+        }
       },
       {
         "id": "PWJ003",
@@ -3542,7 +3622,7 @@
         "material": ["BWJ004", "WM010"],
         "load0": 50,
         "atk0": 60,
-        "skill0": 12,
+        "skill1": 0.12,
         "mp_reg0": 1,
         "cool1": 0.15,
         "uniq007": {
@@ -3570,10 +3650,10 @@
           "cn": "冰魄銀針"
         },
         "stack": 1,
-        "material": ["BWJ005", "PM003"],
+        "material": ["BWJ005", "PM008"],
         "load0": 3,
         "atk0": 65,
-        "skill0": 17
+        "skill1": 0.15
       },
       {
         "id": "PWJ005",
@@ -3592,9 +3672,9 @@
         "stack": 1,
         "material": ["BWJ004", "BM002"],
         "load0": 50,
-        "atk0": 30,
-        "skill0": 32,
-        "cool1": 0.05,
+        "atk0": 34,
+        "skill1": 0.2,
+        "cool1": 0.08,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 30% 감소"],
@@ -3656,7 +3736,50 @@
         "skill1": 0.25
       },
       {
-        "id": "PWJ008",
+        "id": "YWJ001",
+        "sort": "shuriken",
+        "img": "https://lh3.google.com/u/0/d/1GeK2YsQtuJq04WK945Cds9sKzHBc1JHX",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "load0": 20,
+        "name": {
+          "kr": "수다르사나",
+          "en": "Sudarsana",
+          "ja": "スダルサナ",
+          "cn": "善見神輪"
+        },
+        "stack": 1,
+        "material": ["GWJ003", "PM009"],
+        "atk0": 90,
+        "skill1": 0.25,
+        "vision0": 2
+      },
+      {
+        "id": "YWJ002",
+        "sort": "shuriken",
+        "img": "https://lh3.google.com/u/0/d/1VEtrxnNqYktAS9SuRXWfNrVcsd2e9Bkp",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "만천화우",
+          "en": "Petal Torrent",
+          "ja": "滿天花雨",
+          "cn": "滿天花雨"
+        },
+        "stack": 1,
+        "material": ["PWJ004", "GT003"],
+        "load0": 4,
+        "atk0": 75,
+        "cri_atk1": 0.25,
+        "basic_atk0": 110,
+        "skill1": 0.19
+      },
+      {
+        "id": "YWJ003",
         "sort": "shuriken",
         "img": "https://lh3.google.com/u/0/d/11g0yrs82S3wEMMeWBaSANhcPQapSO-sK",
         "location": false,
@@ -3670,7 +3793,7 @@
           "cn": "亡者之符"
         },
         "stack": 1,
-        "material": ["BWJ001", "BM007"],
+        "material": ["BWJ001", "PM003"],
         "load0": 20,
         "atk0": 73,
         "skill1": 0.1,
@@ -3729,49 +3852,6 @@
           },
           "value": 1
         }
-      },
-      {
-        "id": "YWJ001",
-        "sort": "shuriken",
-        "img": "https://lh3.google.com/u/0/d/1GeK2YsQtuJq04WK945Cds9sKzHBc1JHX",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "load0": 20,
-        "name": {
-          "kr": "수다르사나",
-          "en": "Sudarsana",
-          "ja": "スダルサナ",
-          "cn": "善見神輪"
-        },
-        "stack": 1,
-        "material": ["GWJ003", "PM002"],
-        "atk0": 90,
-        "skill1": 0.25,
-        "vision0": 2
-      },
-      {
-        "id": "YWJ002",
-        "sort": "shuriken",
-        "img": "https://lh3.google.com/u/0/d/1VEtrxnNqYktAS9SuRXWfNrVcsd2e9Bkp",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "만천화우",
-          "en": "Petal Torrent",
-          "ja": "滿天花雨",
-          "cn": "滿天花雨"
-        },
-        "stack": 1,
-        "material": ["PWJ004", "GT003"],
-        "load0": 4,
-        "atk0": 75,
-        "cri_atk1": 0.25,
-        "basic_atk0": 110,
-        "skill0": 28
       }
     ]
   },
@@ -3813,7 +3893,7 @@
         "sort": "bow",
         "img": "https://lh3.google.com/u/0/d/15PlYCCH5Wo-hwUpYBgdrXLKq_lHwzyWu",
         "location": false,
-        "tobe": ["BWK001", "BWK004", "BWK006", "YWK02"],
+        "tobe": ["BWK001", "BWK004", "BWK006", "YWK002"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "장궁", "en": "Longbow", "ja": "長弓", "cn": "長弓" },
@@ -3853,7 +3933,7 @@
         "sort": "bow",
         "img": "https://lh3.google.com/u/0/d/102buEIuDwbynlRkxGXlE-AH0b0XF6jZO",
         "location": false,
-        "tobe": ["PWK003", "PWK006", "YWK001"],
+        "tobe": ["PWK003", "YWK003", "YWK001"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3882,8 +3962,8 @@
         },
         "stack": 1,
         "material": ["BWK004", "WM008"],
-        "atk0": 25,
-        "basic_atk0": 20
+        "atk0": 58,
+        "grow_basic_atk1": 0.01
       },
       {
         "id": "BWK004",
@@ -3901,8 +3981,8 @@
         },
         "stack": 1,
         "material": ["GWK002", "WM018"],
-        "atk0": 25,
-        "basic_atk0": 11
+        "atk0": 35,
+        "grow_basic_atk1": 0.007
       },
       {
         "id": "BWK005",
@@ -3939,7 +4019,7 @@
         "stack": 1,
         "material": ["GWK002", "WM006"],
         "atk0": 22,
-        "skill0": 14
+        "skill1": 0.12
       },
       {
         "id": "PWK001",
@@ -3957,8 +4037,8 @@
         },
         "stack": 1,
         "material": ["BWK003", "WWF001"],
-        "atk0": 50,
-        "grow_basic_atk0": 2
+        "atk0": 74,
+        "grow_basic_atk1": 0.012
       },
       {
         "id": "PWK002",
@@ -3977,8 +4057,7 @@
         "stack": 1,
         "material": ["BWK005", "GM011"],
         "atk0": 56,
-        "skill1": 0.1,
-        "grow_skill1": 0.01,
+        "skill1": 0.22,
         "cool1": 0.15
       },
       {
@@ -4027,7 +4106,7 @@
         "stack": 1,
         "material": ["BWK006", "BA001"],
         "atk0": 55,
-        "skill0": 32,
+        "skill1": 0.25,
         "move_spd0": 0.06,
         "uniq014": {
           "detail": {
@@ -4060,28 +4139,6 @@
         "move_spd0": 0.06
       },
       {
-        "id": "PWK006",
-        "sort": "bow",
-        "img": "https://lh3.google.com/u/0/d/1tJui66z8aoZ2vt5XV-MEZKUiMgA-Cb-K",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "아르테미스",
-          "en": "Artemis",
-          "ja": "アルテミス",
-          "cn": "阿提米絲"
-        },
-        "stack": 1,
-        "material": ["BWK002", "BM008"],
-        "atk0": 78,
-        "skill1": 0.25,
-        "hp0": 150,
-        "mp0": 200,
-        "vision0": 2
-      },
-      {
         "id": "YWK001",
         "sort": "bow",
         "img": "https://lh3.google.com/u/0/d/1KvJkTmLsjvlEjLx9SYf_1PKbMdFytT9x",
@@ -4102,7 +4159,7 @@
         "vamp_all1": 0.15
       },
       {
-        "id": "YWK02",
+        "id": "YWK002",
         "sort": "bow",
         "img": "https://lh3.google.com/u/0/d/17DPbqAcOZ6xR5mTOoPk01YyYniAvQxFm",
         "location": false,
@@ -4116,10 +4173,32 @@
           "cn": "阿耳古洛托克索斯"
         },
         "stack": 1,
-        "material": ["GWK002", "PM002"],
+        "material": ["GWK002", "PM009"],
         "atk0": 91,
         "skill1": 0.2,
         "penet1": 0.1
+      },
+      {
+        "id": "YWK003",
+        "sort": "bow",
+        "img": "https://lh3.google.com/u/0/d/1tJui66z8aoZ2vt5XV-MEZKUiMgA-Cb-K",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "아르테미스",
+          "en": "Artemis",
+          "ja": "アルテミス",
+          "cn": "阿提米絲"
+        },
+        "stack": 1,
+        "material": ["BWK002", "PM004"],
+        "atk0": 78,
+        "skill1": 0.25,
+        "hp0": 150,
+        "mp0": 200,
+        "vision0": 2
       }
     ]
   },
@@ -4213,7 +4292,7 @@
         },
         "stack": 1,
         "material": ["GWL002", "WM007"],
-        "atk0": 30,
+        "atk0": 35,
         "vision0": 1
       },
       {
@@ -4265,7 +4344,7 @@
         "material": ["BWL004", "GM002"],
         "atk0": 63,
         "hp_reg1": 0.9,
-        "atk_spd1": 0.5
+        "atk_spd1": 0.4
       },
       {
         "id": "PWL002",
@@ -4331,8 +4410,7 @@
         "stack": 1,
         "material": ["BWL001", "BT001"],
         "atk0": 61,
-        "basic_atk0": 22,
-        "grow_basic_atk0": 2
+        "grow_basic_atk1": 0.02
       },
       {
         "id": "YWL001",
@@ -4349,7 +4427,7 @@
           "cn": "沙蘭加"
         },
         "stack": 1,
-        "material": ["GWL002", "PM002"],
+        "material": ["GWL002", "PM009"],
         "atk0": 116,
         "vision0": 2.5,
         "uniq003": {
@@ -4418,7 +4496,7 @@
         "material": ["WWM001", "WM011"],
         "atk0": 15,
         "atk_spd1": 0.1,
-        "move_spd0": 0.1
+        "move_spd0": 0.02
       },
       {
         "id": "GWM002",
@@ -4437,7 +4515,7 @@
         "stack": 1,
         "material": ["WWM001", "WM019"],
         "atk0": 23,
-        "move_spd0": 0.1
+        "move_spd0": 0.02
       },
       {
         "id": "BWM001",
@@ -4451,7 +4529,7 @@
         "stack": 1,
         "material": ["GWM002", "WM007"],
         "atk0": 29,
-        "move_spd0": 0.1,
+        "move_spd0": 0.04,
         "vision0": 1
       },
       {
@@ -4459,7 +4537,7 @@
         "sort": "pistol",
         "img": "https://lh3.google.com/u/0/d/1xWc_ekVYddIw4gQNHAEUPyclpB5-nrkd",
         "location": false,
-        "tobe": ["PWM001"],
+        "tobe": ["YWM002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -4472,7 +4550,7 @@
         "material": ["GWM001", "WWM001"],
         "atk0": 30,
         "atk_spd1": 0.1,
-        "move_spd0": 0.1
+        "move_spd0": 0.04
       },
       {
         "id": "BWM003",
@@ -4493,7 +4571,7 @@
         "atk0": 43,
         "vamp1": 0.1,
         "atk_spd1": 0.1,
-        "move_spd0": 0.1
+        "move_spd0": 0.04
       },
       {
         "id": "BWM004",
@@ -4513,55 +4591,7 @@
         "material": ["WWM001", "GT003"],
         "load0": 2,
         "atk0": 50,
-        "move_spd0": 0.2
-      },
-      {
-        "id": "PWM001",
-        "sort": "pistol",
-        "img": "https://lh3.google.com/u/0/d/1XJUU6Pe0uURg2PxUllOqcIfcKaGNaVr3",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "마탄의 사수",
-          "en": "Devil's Marksman",
-          "ja": "魔弾の射手",
-          "cn": "魔彈射手"
-        },
-        "stack": 1,
-        "material": ["BWM002", "BM007"],
-        "load0": 3,
-        "atk0": 36,
-        "skill1": 0.2,
-        "atk_spd1": 0.3,
-        "move_spd0": 0.1,
-        "uniq021": {
-          "detail": {
-            "kr": [
-              "마지막 탄환으로 가하는 기본 공격은 스킬 피해를 입힘",
-              "피해량: 공격력 + 스킬 증폭*2 + 스킬 공격 추가 피해*2 + 상대 최대 체력의 8%",
-              "마탄 고유 효과로 입힌 피해의 66%만큼 체력 회복",
-              "치유 감소 등의 적중 시 효과 적용X"
-            ],
-            "en": [
-              "Basic Attacks using the last bullet of your ammo deals extra cellular damage",
-              "Damage: Attack Power + Skill Amplification*2 + Extra Skill Damage*2 + 8% of enemy's max HP",
-              "Heal for 66% of damage dealt"
-            ],
-            "ja": [
-              "最後の弾丸に加える基本攻撃が追加固有ダメージ",
-              "ダメージ:攻撃力+スキル増幅*2+スキル攻撃追加ダメージ*2+ 敵最大体力の8%",
-              "与えたダメージの66%だけの体力を回復"
-            ],
-            "cn": [
-              "Basic Attacks using the last bullet of your ammo deals extra cellular damage",
-              "Damage: Attack Power + Skill Amplification*2 + Extra Skill Damage*2 + 8% of enemy's max HP",
-              "Heal for 66% of damage dealt"
-            ]
-          },
-          "value": 3
-        }
+        "move_spd0": 0.04
       },
       {
         "id": "PWM002",
@@ -4582,7 +4612,7 @@
         "load0": 8,
         "atk0": 48,
         "grow_atk0": 2,
-        "move_spd0": 0.12,
+        "move_spd0": 0.08,
         "vision0": 1
       },
       {
@@ -4603,9 +4633,9 @@
         "material": ["GWM002", "BM005"],
         "load0": 12,
         "atk0": 51,
-        "grow_basic_atk0": 2,
+        "grow_basic_atk1": 0.02,
         "atk_spd1": 0.35,
-        "move_spd0": 0.1
+        "move_spd0": 0.06
       },
       {
         "id": "PWM004",
@@ -4627,7 +4657,7 @@
         "atk0": 72,
         "vamp1": 0.22,
         "atk_spd1": 0.25,
-        "move_spd0": 0.1
+        "move_spd0": 0.06
       },
       {
         "id": "PWM005",
@@ -4648,7 +4678,7 @@
         "load0": 10,
         "atk0": 65,
         "atk_spd1": 0.2,
-        "move_spd0": 0.1,
+        "move_spd0": 0.06,
         "vision0": 2.5,
         "uniq008": {
           "detail": {
@@ -4679,7 +4709,7 @@
         "load0": 2,
         "atk0": 28,
         "grow_skill1": 0.01,
-        "move_spd0": 0.1,
+        "move_spd0": 0.06,
         "uniq022": {
           "detail": {
             "kr": [
@@ -4721,7 +4751,7 @@
         "load0": 30,
         "atk0": 52,
         "atk_spd1": 0.35,
-        "move_spd0": 0.1,
+        "move_spd0": 0.06,
         "range0": -0.35,
         "uniq002": {
           "detail": {
@@ -4791,13 +4821,61 @@
           "cn": "凱爾特"
         },
         "stack": 1,
-        "material": ["GWM002", "PM002"],
+        "material": ["GWM002", "PM009"],
         "load0": 12,
         "atk0": 83,
         "atk_spd1": 0.4,
         "penet1": 0.12,
         "move_spd0": 0.1,
         "vision0": 2
+      },
+      {
+        "id": "YWM002",
+        "sort": "pistol",
+        "img": "https://lh3.google.com/u/0/d/1XJUU6Pe0uURg2PxUllOqcIfcKaGNaVr3",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "마탄의 사수",
+          "en": "Devil's Marksman",
+          "ja": "魔弾の射手",
+          "cn": "魔彈射手"
+        },
+        "stack": 1,
+        "material": ["BWM002", "PM003"],
+        "load0": 3,
+        "atk0": 36,
+        "skill1": 0.2,
+        "atk_spd1": 0.3,
+        "move_spd0": 0.06,
+        "uniq023": {
+          "detail": {
+            "kr": [
+              "마지막 탄환으로 가하는 기본 공격은 스킬 피해를 입힘",
+              "피해량: 공격력 + 스킬 증폭*2 + 스킬 공격 추가 피해*2 + 상대 최대 체력의 8%",
+              "마탄 고유 효과로 입힌 피해의 66%만큼 체력 회복",
+              "치유 감소 등의 적중 시 효과 적용X"
+            ],
+            "en": [
+              "Basic Attacks using the last bullet of your ammo deals extra cellular damage",
+              "Damage: Attack Power + Skill Amplification*2 + Extra Skill Damage*2 + 8% of enemy's max HP",
+              "Heal for 66% of damage dealt"
+            ],
+            "ja": [
+              "最後の弾丸に加える基本攻撃が追加固有ダメージ",
+              "ダメージ:攻撃力+スキル増幅*2+スキル攻撃追加ダメージ*2+ 敵最大体力の8%",
+              "与えたダメージの66%だけの体力を回復"
+            ],
+            "cn": [
+              "Basic Attacks using the last bullet of your ammo deals extra cellular damage",
+              "Damage: Attack Power + Skill Amplification*2 + Extra Skill Damage*2 + 8% of enemy's max HP",
+              "Heal for 66% of damage dealt"
+            ]
+          },
+          "value": 3
+        }
       }
     ]
   },
@@ -4826,7 +4904,7 @@
         "sort": "rifle",
         "img": "https://lh3.google.com/u/0/d/13wTiFTFUaR4f_u8p5sYfznDz4TT0-Kbi",
         "location": false,
-        "tobe": ["BWN001", "BWN002", "PWN001", "YWN002"],
+        "tobe": ["BWN001", "BWN002", "BWN003", "YWN002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -4837,8 +4915,7 @@
         },
         "stack": 1,
         "material": ["WWN001", "WM018"],
-        "atk0": 18,
-        "basic_atk0": 2
+        "atk0": 27
       },
       {
         "id": "BWN001",
@@ -4851,8 +4928,7 @@
         "name": { "kr": "AK-47", "en": "AK-47", "ja": "AK-47", "cn": "AK-47" },
         "stack": 1,
         "material": ["GWN001", "WM021"],
-        "atk0": 29,
-        "basic_atk0": 2
+        "atk0": 46
       },
       {
         "id": "BWN002",
@@ -4865,15 +4941,14 @@
         "name": { "kr": "M16A1", "en": "M16A1", "ja": "M16A1", "cn": "M16A1" },
         "stack": 1,
         "material": ["GWN001", "WM019"],
-        "atk0": 25,
-        "basic_atk0": 4
+        "atk0": 25
       },
       {
-        "id": "PWN001",
+        "id": "BWN003",
         "sort": "rifle",
         "img": "https://lh3.google.com/u/0/d/1zK2JS2jB2JkTnQixkHDLBE60xtS_H9z9",
         "location": false,
-        "tobe": ["YWN001"],
+        "tobe": ["PWN005"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -4883,11 +4958,11 @@
           "cn": "格特林機槍"
         },
         "stack": 1,
-        "material": ["GWN001", "BM003"],
+        "material": ["GWN001", "GM008"],
         "load0": 30,
-        "atk0": 18,
+        "atk0": 32,
         "atk_spd1": 0.1,
-        "basic_atk0": 6
+        "grow_basic_atk1": 0.012
       },
       {
         "id": "PWN002",
@@ -4909,12 +4984,12 @@
         "atk0": 72,
         "uniq008": {
           "detail": {
-            "kr": ["+1"],
-            "en": ["+1"],
-            "ja": ["+1"],
-            "cn": ["+1"]
+            "kr": ["+0.75"],
+            "en": ["+0.75"],
+            "ja": ["+0.75"],
+            "cn": ["+0.75"]
           },
-          "value": 1
+          "value": 0.75
         }
       },
       {
@@ -4929,9 +5004,9 @@
         "stack": 1,
         "material": ["BWN001", "BM004"],
         "load0": 30,
-        "atk0": 56,
-        "grow_atk0": 2,
-        "cri_rate1": 0.22
+        "atk0": 76,
+        "cri_rate1": 0.22,
+        "cri_atk1": 0.05
       },
       {
         "id": "PWN004",
@@ -4945,12 +5020,11 @@
         "stack": 1,
         "material": ["BWN002", "BA004"],
         "load0": 30,
-        "atk0": 61,
-        "basic_atk0": 5,
+        "atk0": 69,
         "hp0": 200
       },
       {
-        "id": "YWN001",
+        "id": "PWN005",
         "sort": "rifle",
         "img": "https://lh3.google.com/u/0/d/1pYCH7Tv_DuNhb3otKZuTSh6xj7ty-PA0",
         "location": false,
@@ -4964,11 +5038,11 @@
           "cn": "阿耆尼"
         },
         "stack": 1,
-        "material": ["PWN001", "GM003"],
+        "material": ["BWN003", "GM003"],
         "load0": 30,
-        "atk0": 52,
+        "atk0": 70,
         "atk_spd1": 0.25,
-        "basic_atk0": 9
+        "grow_basic_atk1": 0.015
       },
       {
         "id": "YWN002",
@@ -4985,7 +5059,7 @@
           "cn": "極地加農炮"
         },
         "stack": 1,
-        "material": ["GWN001", "PM002"],
+        "material": ["GWN001", "PM009"],
         "load0": 120,
         "atk0": 95,
         "penet1": 0.12,
@@ -5200,7 +5274,7 @@
           "cn": "四射星光"
         },
         "stack": 1,
-        "material": ["BWO002", "BM008"],
+        "material": ["BWO002", "PM004"],
         "load0": 2,
         "atk0": 80,
         "skill1": 0.28,
@@ -5221,7 +5295,7 @@
           "cn": "霹靂火炮"
         },
         "stack": 1,
-        "material": ["GWO001", "PM004"],
+        "material": ["GWO001", "PM007"],
         "load0": 1,
         "atk0": 120,
         "range0": -0.5,
@@ -5291,7 +5365,7 @@
         "sort": "hammer",
         "img": "https://lh3.google.com/u/0/d/1EE6iSEaUd3SJVSbI1G3iKKrYyPzwMSq8",
         "location": false,
-        "tobe": ["PWP001", "PWP002", "PWP004"],
+        "tobe": ["PWP001", "PWP002", "YWP002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -5358,9 +5432,8 @@
         },
         "stack": 1,
         "material": ["BWP001", "GM012"],
-        "atk0": 50,
-        "skill0": 16,
-        "grow_skill0": 1
+        "atk0": 70,
+        "skill1": 0.2
       },
       {
         "id": "PWP002",
@@ -5378,8 +5451,7 @@
         },
         "stack": 1,
         "material": ["BWP001", "GA001"],
-        "atk0": 83,
-        "basic_atk0": 22,
+        "atk0": 94,
         "hp_reg1": 0.8
       },
       {
@@ -5398,28 +5470,8 @@
         },
         "stack": 1,
         "material": ["BWP002", "BM005"],
-        "atk0": 85,
-        "atk_spd1": 0.3,
-        "grow_atk_spd1": 0.01
-      },
-      {
-        "id": "PWP004",
-        "sort": "hammer",
-        "img": "https://lh3.google.com/u/0/d/1JXQKsg7ua7Qm60BwjalW1J7xgLbBaO2x",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "개밥바라기",
-          "en": "Evening Star",
-          "ja": "イーブニングスター",
-          "cn": "夜神星錘"
-        },
-        "stack": 1,
-        "material": ["BWP001", "BM008"],
-        "atk0": 90,
-        "skill1": 0.2
+        "atk0": 80,
+        "atk_spd1": 0.3
       },
       {
         "id": "PWP005",
@@ -5478,6 +5530,25 @@
         "atk0": 120,
         "vamp_all1": 0.1,
         "penet1": 0.12
+      },
+      {
+        "id": "YWP002",
+        "sort": "hammer",
+        "img": "https://lh3.google.com/u/0/d/1JXQKsg7ua7Qm60BwjalW1J7xgLbBaO2x",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "개밥바라기",
+          "en": "Evening Star",
+          "ja": "イーブニングスター",
+          "cn": "夜神星錘"
+        },
+        "stack": 1,
+        "material": ["BWP001", "PM004"],
+        "atk0": 90,
+        "skill1": 0.22
       }
     ]
   },
@@ -5506,7 +5577,7 @@
         "sort": "spear",
         "img": "https://lh3.google.com/u/0/d/1W0DYovbSIy5OOmEzJASzVTZK9jXwDtwL",
         "location": false,
-        "tobe": ["BWQ001", "BWQ004", "PWQ001", "YWQ001"],
+        "tobe": ["BWQ001", "BWQ004", "YWQ003", "YWQ001"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -5524,7 +5595,7 @@
         "sort": "spear",
         "img": "https://lh3.google.com/u/0/d/1sA-xNB5L3SK6HocPZ9cxHPkP06o-wdLS",
         "location": false,
-        "tobe": ["PWQ003", "PWQ004"],
+        "tobe": ["YWQ004", "PWQ004"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -5580,27 +5651,7 @@
         "stack": 1,
         "material": ["GWQ001", "WA001"],
         "atk0": 40,
-        "move_spd0": 0.06
-      },
-      {
-        "id": "PWQ001",
-        "sort": "spear",
-        "img": "https://lh3.google.com/u/0/d/1TubPO8riguU0lXG9rKiueTQQ0B25ujMI",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "애각창",
-          "en": "Gentian Silver Gun",
-          "ja": "涯角槍",
-          "cn": "涯角槍"
-        },
-        "stack": 1,
-        "material": ["GWQ001", "BM006"],
-        "atk0": 102,
-        "atk_spd1": 0.12,
-        "move_spd0": 0.12
+        "move_spd0": 0.04
       },
       {
         "id": "PWQ002",
@@ -5619,27 +5670,8 @@
         "stack": 1,
         "material": ["BWQ004", "BM005"],
         "atk0": 87,
-        "atk_spd1": 0.4,
+        "atk_spd1": 0.25,
         "move_spd0": 0.04
-      },
-      {
-        "id": "PWQ003",
-        "sort": "spear",
-        "img": "https://lh3.google.com/u/0/d/1kIi8DqlmF5EeLUybIOhFU0arRTmiAyZx",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "코스믹 바이던트",
-          "en": "Cosmic Bident",
-          "ja": "コスミックバイデント",
-          "cn": "宇宙雙叉戟"
-        },
-        "stack": 1,
-        "material": ["BWQ001", "BM008"],
-        "atk0": 108,
-        "grow_atk_spd1": 0.02
       },
       {
         "id": "PWQ004",
@@ -5657,7 +5689,7 @@
         },
         "stack": 1,
         "material": ["BWQ001", "BWQ002"],
-        "atk0": 80,
+        "atk0": 83,
         "skill1": 0.21,
         "cool1": 0.05
       },
@@ -5678,9 +5710,7 @@
         "stack": 1,
         "material": ["BWQ003", "GA009"],
         "atk0": 79,
-        "skill0": 18,
-        "grow_skill0": 1,
-        "move_spd0": -0.07,
+        "skill1": 0.16,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
@@ -5727,7 +5757,7 @@
           "cn": "烈日之矛"
         },
         "stack": 1,
-        "material": ["GWQ001", "PM004"],
+        "material": ["GWQ001", "PM007"],
         "atk0": 95,
         "grow_basic_atk1": 0.02
       },
@@ -5747,8 +5777,8 @@
         },
         "stack": 1,
         "material": ["BWQ002", "PM001"],
-        "atk0": 100,
-        "vamp1": 0.15,
+        "atk0": 110,
+        "vamp1": 0.2,
         "uniq017": {
           "detail": {
             "kr": [
@@ -5790,6 +5820,45 @@
           },
           "value": 150
         }
+      },
+      {
+        "id": "YWQ003",
+        "sort": "spear",
+        "img": "https://lh3.google.com/u/0/d/1TubPO8riguU0lXG9rKiueTQQ0B25ujMI",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "애각창",
+          "en": "Gentian Silver Gun",
+          "ja": "涯角槍",
+          "cn": "涯角槍"
+        },
+        "stack": 1,
+        "material": ["GWQ001", "PM002"],
+        "atk0": 102,
+        "atk_spd1": 0.12,
+        "move_spd0": 0.12
+      },
+      {
+        "id": "YWQ004",
+        "sort": "spear",
+        "img": "https://lh3.google.com/u/0/d/1kIi8DqlmF5EeLUybIOhFU0arRTmiAyZx",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "코스믹 바이던트",
+          "en": "Cosmic Bident",
+          "ja": "コスミックバイデント",
+          "cn": "宇宙雙叉戟"
+        },
+        "stack": 1,
+        "material": ["BWQ001", "PM004"],
+        "atk0": 108,
+        "grow_atk_spd1": 0.02
       }
     ]
   },
@@ -5893,7 +5962,7 @@
         "stack": 1,
         "material": ["BWR001", "GM007"],
         "atk0": 45,
-        "grow_skill0": 2,
+        "grow_skill1": 0.015,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
@@ -6002,7 +6071,7 @@
         "sort": "rapier",
         "img": "https://lh3.google.com/u/0/d/1__7sZTwksKedhxfigW4oVDw8rDTTz_cH",
         "location": false,
-        "tobe": ["BWS001", "BWS002", "PWS001", "PWS005"],
+        "tobe": ["BWS001", "BWS002", "PWS001", "YWS002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -6069,10 +6138,11 @@
         },
         "stack": 1,
         "material": ["GWS001", "BC009"],
-        "atk0": 20,
-        "cri_atk1": 0.25,
+        "atk0": 25,
+        "cri_atk1": 0.15,
+        "skill1": 0.15,
         "hp_reg1": 0.75,
-        "mp_reg1": 1.5,
+        "mp_reg1": 1,
         "cool1": 0.12,
         "vision0": 1
       },
@@ -6097,7 +6167,28 @@
         "cri_atk1": 0.06,
         "cool1": 0.08,
         "vamp1": 0.09,
-        "vision0": 1
+        "vision0": 1,
+        "uniq027": {
+          "detail": {
+            "kr": [
+              "기본 공격 적중 시, 대상에게 1.25초간 25% 둔화",
+              "쿨다운: 6초"
+            ],
+            "en": [
+              "Your next basic attack slows your target by 25% for 1.25 seconds",
+              "Cooldown: 6s"
+            ],
+            "ja": [
+              "次に加える基本攻撃が1.25秒間移動速度を25%だけ減少",
+              "クールダウン:6秒"
+            ],
+            "cn": [
+              "Your next basic attack slows your target by 25% for 1.25 seconds",
+              "Cooldown: 6s"
+            ]
+          },
+          "value": 0.25
+        }
       },
       {
         "id": "PWS003",
@@ -6135,7 +6226,7 @@
           "cn": "隕星重劍"
         },
         "stack": 1,
-        "material": ["BWS001", "BM007"],
+        "material": ["BWS001", "PM003"],
         "atk0": 49,
         "cool1": 0.12,
         "cri_atk1": 0.12,
@@ -6157,28 +6248,6 @@
           },
           "value": 1
         }
-      },
-      {
-        "id": "PWS005",
-        "sort": "rapier",
-        "img": "https://lh3.google.com/u/0/d/1aP8H4d0wBLayqCvHc5-UOiK9pmG0LCuB",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "주와이외즈",
-          "en": "Joyeuse",
-          "ja": "ジョワユーズ",
-          "cn": "咎瓦尤斯"
-        },
-        "stack": 1,
-        "material": ["GWS001", "BM006"],
-        "atk0": 66,
-        "atk_spd1": 0.3,
-        "cri_rate1": 0.1,
-        "cri_atk1": 0.12,
-        "move_spd0": 0.1
       },
       {
         "id": "PWS006",
@@ -6245,14 +6314,36 @@
           "cn": "米斯特汀"
         },
         "stack": 1,
-        "material": ["PWS001", "WM024"],
-        "atk0": 25,
-        "cri_atk1": 0.25,
-        "skill1": 0.15,
+        "material": ["PWS001", "PM006"],
+        "atk0": 30,
+        "cri_atk1": 0.15,
+        "skill1": 0.25,
         "hp_reg1": 0.75,
         "mp_reg1": 1.5,
         "cool1": 0.15,
         "vision0": 1
+      },
+      {
+        "id": "YWS002",
+        "sort": "rapier",
+        "img": "https://lh3.google.com/u/0/d/1aP8H4d0wBLayqCvHc5-UOiK9pmG0LCuB",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "주와이외즈",
+          "en": "Joyeuse",
+          "ja": "ジョワユーズ",
+          "cn": "咎瓦尤斯"
+        },
+        "stack": 1,
+        "material": ["GWS001", "PM002"],
+        "atk0": 66,
+        "atk_spd1": 0.3,
+        "cri_rate1": 0.1,
+        "cri_atk1": 0.12,
+        "move_spd0": 0.1
       }
     ]
   },
@@ -6311,10 +6402,8 @@
           "cn": "單線圈拾音器電吉他"
         },
         "stack": 1,
-        "material": ["WWT001", "GM005"],
-        "atk0": 8,
-        "atk_spd1": 0.15,
-        "basic_atk0": 2
+        "material": ["WWT001", "WM009"],
+        "atk0": 15
       },
       {
         "id": "BWT001",
@@ -6333,9 +6422,7 @@
         "stack": 1,
         "material": ["GWT002", "GM004"],
         "atk0": 20,
-        "basic_atk0": 2,
-        "hp0": 150,
-        "atk_spd1": 0.2
+        "hp0": 120
       },
       {
         "id": "BWT002",
@@ -6355,7 +6442,7 @@
         "material": ["GWT001", "GA005"],
         "atk0": 25,
         "skill1": 0.15,
-        "vision0": 3
+        "vision0": 2
       },
       {
         "id": "BWT003",
@@ -6374,7 +6461,7 @@
         "stack": 1,
         "material": ["GWT001", "WWA001"],
         "atk0": 13,
-        "skill1": 0.16
+        "skill1": 0.2
       },
       {
         "id": "BWT004",
@@ -6392,8 +6479,7 @@
         },
         "stack": 1,
         "material": ["GWT002", "GM009"],
-        "atk0": 15,
-        "basic_atk0": 10,
+        "atk0": 25,
         "vamp1": 0.1,
         "atk_spd1": 0.2
       },
@@ -6413,9 +6499,7 @@
         },
         "stack": 1,
         "material": ["GWT002", "WWF001"],
-        "atk0": 19,
-        "basic_atk0": 2,
-        "atk_spd1": 0.15
+        "atk0": 46
       },
       {
         "id": "BWT006",
@@ -6433,8 +6517,7 @@
         },
         "stack": 1,
         "material": ["GWT002", "WM011"],
-        "atk0": 9,
-        "basic_atk0": 6,
+        "atk0": 22,
         "atk_spd1": 0.25
       },
       {
@@ -6453,11 +6536,10 @@
         },
         "stack": 1,
         "material": ["BWT001", "WWJ002"],
-        "atk0": 40,
+        "atk0": 5,
         "cri_rate1": 0.22,
-        "basic_atk0": 2,
-        "hp0": 200,
-        "atk_spd1": 0.4
+        "cri_atk1": 0.05,
+        "hp0": 200
       },
       {
         "id": "PWT002",
@@ -6474,12 +6556,20 @@
           "cn": "天國的階梯"
         },
         "stack": 1,
-        "material": ["BWT002", "WA007"],
+        "material": ["BWT002", "WA008"],
         "atk0": 56,
         "skill1": 0.18,
-        "hp_reg1": 1,
         "cool1": 0.05,
-        "vision0": 2
+        "vision0": 2,
+        "uniq007": {
+          "detail": {
+            "kr": ["+5%"],
+            "en": ["+5%"],
+            "ja": ["+5%"],
+            "cn": ["+5%"]
+          },
+          "value": 0.05
+        }
       },
       {
         "id": "PWT003",
@@ -6517,10 +6607,9 @@
         },
         "stack": 1,
         "material": ["BWT004", "WM008"],
-        "atk0": 28,
-        "basic_atk0": 13,
-        "vamp1": 0.18,
-        "atk_spd1": 0.4
+        "atk0": 51,
+        "vamp1": 0.22,
+        "atk_spd1": 0.15
       },
       {
         "id": "PWT005",
@@ -6537,35 +6626,33 @@
           "cn": "絕色之夜"
         },
         "stack": 1,
-        "material": ["BWT005", "BM007"],
+        "material": ["BWT005", "PM003"],
         "atk0": 75,
-        "basic_atk0": 2,
-        "atk_spd1": 0.15,
         "uniq002": {
           "detail": {
             "kr": [
               "1스택 당 효과 적용",
               "기본 공격이 적 실험체에게 명중하면 발동",
-              "현재 체력의 5%의 고유피해",
+              "현재 체력의 6%의 고유피해",
               "열정 버프 1스택 획득"
             ],
             "en": [
               "Hitting a test subject with a basic attack deals",
-              "Damage equal to 5% of the target’s current HP",
+              "Damage equal to 6% of the target’s current HP",
               "Grants you a stack of Vigor for 5 seconds"
             ],
             "ja": [
               "基本攻撃が敵実験体に的中する時",
-              "敵実験体の現在体力の5%のダメージ",
+              "敵実験体の現在体力の6%のダメージ",
               "5秒間情熱スタックを獲得"
             ],
             "cn": [
               "Hitting a test subject with a basic attack deals",
-              "Damage equal to 5% of the target’s current HP",
+              "Damage equal to 6% of the target’s current HP",
               "Grants you a stack of Vigor for 5 seconds"
             ]
           },
-          "value": 0.05
+          "value": 0.06
         },
         "buff004": {
           "detail": {
@@ -6611,7 +6698,6 @@
         "stack": 1,
         "material": ["BWT005", "GM006"],
         "atk0": 65,
-        "basic_atk0": 2,
         "atk_spd1": 0.2
       },
       {
@@ -6630,18 +6716,16 @@
         },
         "stack": 1,
         "material": ["BWT006", "GA006"],
-        "atk0": 16,
-        "basic_atk0": 3,
-        "grow_basic_atk0": 1,
+        "atk0": 47,
         "atk_spd1": 0.4,
         "uniq008": {
           "detail": {
-            "kr": ["+0.75"],
-            "en": ["+0.75"],
-            "ja": ["+0.75"],
-            "cn": ["+0.75"]
+            "kr": ["+0.5"],
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
-          "value": 0.75
+          "value": 0.5
         }
       }
     ]
@@ -6783,7 +6867,7 @@
           "cn": "全息瞄準鏡"
         },
         "stack": 1,
-        "material": ["BWU002", "WA002"],
+        "material": ["BWU002", "WM026"],
         "atk0": 48,
         "cool1": 0.15,
         "vision0": 4,
@@ -6861,33 +6945,33 @@
           "cn": "超感相機"
         },
         "stack": 1,
-        "material": ["GWU001", "PM002"],
+        "material": ["GWU001", "PM009"],
         "atk0": 55,
-        "skill0": 18,
+        "skill1": 0.25,
         "vision0": 1.5,
         "uniq001": {
           "detail": {
             "kr": [
               "스킬 사용 후, 3초 이내에 다음 기본 공격은 고유 피해",
-              "피해량: 스킬 증폭*1.5 + 스킬 공격 추가 피해*1",
+              "피해량: 스킬 증폭*2",
               "쿨다운: 3초"
             ],
             "en": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*1.5 + Extra Skill Damage*1",
+              "Damage: equivalent to Skill Amplification*2",
               "Cooldown: 3s"
             ],
             "ja": [
               "スキルを使用すると意念をチャージ",
               "チャージした状態で次の3秒内の基本攻撃が追加固有ダメージ",
-              "ダメージ:スキル増幅*1.5 + スキル攻撃追加ダメージ*1",
+              "ダメージ:スキル増幅*2",
               "クールダウン:3秒"
             ],
             "cn": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 3 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*1.5 + Extra Skill Damage*1",
+              "Damage: equivalent to Skill Amplification*2",
               "Cooldown: 3s"
             ]
           },
@@ -6922,7 +7006,7 @@
         "sort": "arcana",
         "img": "https://lh3.google.com/u/0/d/1eO74DkZolOJDKFtjF5XLlqnPMswGR6qW",
         "location": false,
-        "tobe": ["BWV001", "BWV002", "PWV005"],
+        "tobe": ["BWV001", "BWV002", "YWV002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -7046,7 +7130,7 @@
           "cn": "五芒星"
         },
         "stack": 1,
-        "material": ["BWV004", "BB006"],
+        "material": ["BWV004", "GM014"],
         "atk0": 59,
         "vision0": 1,
         "cool1": 0.1,
@@ -7187,7 +7271,48 @@
         }
       },
       {
-        "id": "PWV005",
+        "id": "YWV001",
+        "sort": "arcana",
+        "img": "https://lh3.google.com/u/0/d/105K4cIpWj_0v4CyqvXCW0iWdOyVOsq16",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "여제",
+          "en": "The Empress",
+          "ja": "女帝",
+          "cn": "女帝"
+        },
+        "stack": 1,
+        "material": ["GWV002", "PM008"],
+        "atk0": 55,
+        "skill1": 0.2,
+        "cool1": 0.15,
+        "uniq034": {
+          "detail": {
+            "kr": [
+              "스킬 공격에 적중당한 적은 2초간 이동속도 20%, 공격속도 30% 감소",
+              "쿨다운: 4초"
+            ],
+            "en": [
+              "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 30% for 2 seconds",
+              "Cooldown: 4s"
+            ],
+            "ja": [
+              "スキルで敵にダメージを与えると、2秒間移動速度を20%、攻撃速度を30%だけ減少",
+              "クールダウン:4秒"
+            ],
+            "cn": [
+              "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 30% for 2 seconds",
+              "Cooldown: 4s"
+            ]
+          },
+          "value": 0.2
+        }
+      },
+      {
+        "id": "YWV002",
         "sort": "arcana",
         "img": "https://lh3.google.com/u/0/d/1B57yJLp2uSsVPtIWfHkUfH2G-l2xojeZ",
         "location": false,
@@ -7201,7 +7326,7 @@
           "cn": "月水晶"
         },
         "stack": 1,
-        "material": ["GWV001", "BM008"],
+        "material": ["GWV001", "PM004"],
         "atk0": 75,
         "skill1": 0.1,
         "vision0": 1.5,
@@ -7229,47 +7354,6 @@
             ]
           },
           "value": 1
-        }
-      },
-      {
-        "id": "YWV005",
-        "sort": "arcana",
-        "img": "https://lh3.google.com/u/0/d/105K4cIpWj_0v4CyqvXCW0iWdOyVOsq16",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "여제",
-          "en": "The Empress",
-          "ja": "女帝",
-          "cn": "女帝"
-        },
-        "stack": 1,
-        "material": ["GWV002", "PM003"],
-        "atk0": 55,
-        "skill1": 0.2,
-        "cool1": 0.15,
-        "uniq029": {
-          "detail": {
-            "kr": [
-              "스킬 공격에 적중당한 적은 2초간 이동속도 20%, 공격속도 30% 감소",
-              "쿨다운: 4초"
-            ],
-            "en": [
-              "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 30% for 2 seconds",
-              "Cooldown: 4s"
-            ],
-            "ja": [
-              "スキルで敵にダメージを与えると、2秒間移動速度を20%、攻撃速度を30%だけ減少",
-              "クールダウン:4秒"
-            ],
-            "cn": [
-              "Dealing damage to an enemy with a skill slows them by 20%, and reduces their Attack Speed by 30% for 2 seconds",
-              "Cooldown: 4s"
-            ]
-          },
-          "value": 0.2
         }
       }
     ]
@@ -7382,7 +7466,7 @@
         "stack": 1,
         "material": ["GWW001", "WWW001"],
         "atk0": 33,
-        "grow_basic_atk0": 1,
+        "grow_basic_atk1": 0.01,
         "uniq001": {
           "detail": {
             "kr": [
@@ -7506,7 +7590,7 @@
         "stack": 1,
         "material": ["BWW003", "WWW002"],
         "atk0": 53,
-        "grow_basic_atk0": 2,
+        "grow_basic_atk1": 0.02,
         "atk_spd1": 0.15,
         "uniq001": {
           "detail": {
@@ -7618,7 +7702,7 @@
           "cn": "超級響尾蛇 ML"
         },
         "stack": 1,
-        "material": ["PWW001", "BM006"],
+        "material": ["PWW001", "PM002"],
         "atk0": 63,
         "move_spd0": 0.1,
         "cool1": 0.1,
@@ -7664,7 +7748,7 @@
           },
           "value": 160
         },
-        "uniq024": {
+        "uniq041": {
           "detail": {
             "kr": [
               "에키온의 과부화 상태의 지속시간이 VF폭주(R)의 레벨에 따라 영구적으로 감소",
@@ -7701,7 +7785,7 @@
           "cn": "超級響尾蛇 FC"
         },
         "stack": 1,
-        "material": ["PWW001", "PM002"],
+        "material": ["PWW001", "PM009"],
         "atk0": 69,
         "move_spd0": 0.08,
         "cool1": 0.06,
@@ -7794,11 +7878,11 @@
           "cn": "帝王黑曼巴蛇 TL"
         },
         "stack": 1,
-        "material": ["PWW002", "BM009"],
+        "material": ["PWW002", "PM006"],
         "atk0": 63,
         "grow_hp0": 11,
         "vamp_all1": 0.12,
-        "uniq012": {
+        "uniq030": {
           "detail": {
             "kr": [
               "VF폭주 상태일 때",
@@ -7839,7 +7923,7 @@
           "cn": "帝王黑曼巴蛇 FC"
         },
         "stack": 1,
-        "material": ["PWW002", "PM002"],
+        "material": ["PWW002", "PM009"],
         "atk0": 69,
         "grow_hp0": 11,
         "vamp_all1": 0.17,
@@ -7872,7 +7956,7 @@
         "stack": 1,
         "material": ["PWW003", "PM001"],
         "atk0": 71,
-        "grow_basic_atk0": 2,
+        "grow_basic_atk1": 0.02,
         "atk_spd1": 0.25,
         "uniq010": {
           "detail": {
@@ -7931,9 +8015,9 @@
           "cn": "女王蛇 MT"
         },
         "stack": 1,
-        "material": ["PWW003", "BM007"],
+        "material": ["PWW003", "PM003"],
         "atk0": 61,
-        "grow_basic_atk0": 2,
+        "grow_basic_atk1": 0.02,
         "atk_spd1": 0.2,
         "uniq001": {
           "detail": {
@@ -7967,7 +8051,7 @@
           },
           "value": 7
         },
-        "uniq023": {
+        "uniq040": {
           "detail": {
             "kr": [
               "독사의 진노(R)에 적중한 적 대상의 방어력을 7초 동안 6% 감소",
@@ -8004,9 +8088,9 @@
           "cn": "女王蛇 FC"
         },
         "stack": 1,
-        "material": ["PWW003", "PM002"],
+        "material": ["PWW003", "PM009"],
         "atk0": 67,
-        "grow_basic_atk0": 2,
+        "grow_basic_atk1": 0.02,
         "atk_spd1": 0.25,
         "uniq011": {
           "detail": {

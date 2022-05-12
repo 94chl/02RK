@@ -83,6 +83,7 @@
               <li>{{ $t("modal.commonDrop3") }}</li>
               <li>{{ $t("modal.commonDrop4") }}</li>
               <li>{{ $t("modal.commonDrop5") }}</li>
+              <li>{{ $t("modal.commonDrop6") }}</li>
             </ul>
             <button type="button" @click="toggleCommonDropsInfo">
               <i class="fas fa-times"></i>

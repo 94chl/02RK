@@ -55,7 +55,7 @@
         "id": "WC004",
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1fJ3UYqUhtSozB5Fm9C-fjPU-1QtYp9lH",
-        "location": ["A004", "A007", "A016"],
+        "location": ["A004", "A007", "A012", "A016"],
         "tobe": ["GC001", "BC005"],
         "pickup": 1,
         "limit": 1,
@@ -72,7 +72,7 @@
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1zF_sIlxlzpRDyfnflx1BKmCZDQ5UaYno",
         "location": false,
-        "tobe": ["BC002", "PC003"],
+        "tobe": ["BC002", "YC006"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -101,8 +101,8 @@
         },
         "stack": 1,
         "material": ["WC001", "WM019"],
-        "def0": 10,
-        "basic_atk_def0": 3
+        "atk0": 8,
+        "def0": 7
       },
       {
         "id": "GC003",
@@ -139,9 +139,9 @@
         },
         "stack": 1,
         "material": ["WC001", "WM024"],
+        "atk0": 4,
         "def0": 10,
-        "hp0": 30,
-        "basic_atk_def0": 5
+        "hp0": 30
       },
       {
         "id": "GC005",
@@ -168,7 +168,7 @@
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/12rCFPvA1aujQjRctOeB8TzZfBAkRhP9C",
         "location": false,
-        "tobe": ["BC004", "PC011", "YC001", "YC006"],
+        "tobe": ["BC004", "PC011", "YC001", "YC008"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -188,7 +188,7 @@
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1H38g-T7vGGQOsFhzpP3l2NTYFwmHXLXy",
         "location": false,
-        "tobe": ["PC005", "PC015"],
+        "tobe": ["PC005", "YC009"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -237,8 +237,8 @@
         },
         "stack": 1,
         "material": ["WA008", "WM012"],
-        "hp0": 80,
-        "skill0": 4
+        "atk0": 8,
+        "hp0": 80
       },
       {
         "id": "BC001",
@@ -256,8 +256,8 @@
         },
         "stack": 1,
         "material": ["GC002", "WWR001"],
-        "def0": 10,
-        "basic_atk_def0": 4
+        "atk0": 15,
+        "def0": 10
       },
       {
         "id": "BC002",
@@ -288,8 +288,8 @@
         "name": { "kr": "정장", "en": "Suit", "ja": "スーツ", "cn": "西裝" },
         "stack": 1,
         "material": ["GC002", "WA003"],
-        "vamp1": 0.15,
-        "basic_atk_def0": 4
+        "atk0": 10,
+        "vamp1": 0.15
       },
       {
         "id": "BC004",
@@ -340,7 +340,7 @@
         "limit": 1,
         "name": { "kr": "한복", "en": "Hanbok", "ja": "韓服", "cn": "韓服" },
         "stack": 1,
-        "material": ["GC005", "WA002"],
+        "material": ["GC005", "WM026"],
         "def0": 12,
         "hp_reg1": 0.35,
         "cool1": 0.1
@@ -361,9 +361,8 @@
         },
         "stack": 1,
         "material": ["GC004", "GM010"],
-        "def0": 17,
-        "hp0": 70,
-        "basic_atk_def0": 8
+        "def0": 22,
+        "hp0": 70
       },
       {
         "id": "BC009",
@@ -385,7 +384,7 @@
         "hp_reg1": 0.45,
         "cool1": 0.12,
         "vision0": 1,
-        "uniq028": {
+        "uniq033": {
           "detail": {
             "kr": [
               "휴식을 2초 이상 지속시 보호막 적용",
@@ -423,10 +422,10 @@
         },
         "stack": 1,
         "material": ["GC009", "GM002"],
+        "atk0": 12,
         "def0": 10,
         "hp0": 140,
-        "hp_reg1": 0.45,
-        "skill0": 12
+        "hp_reg1": 0.45
       },
       {
         "id": "PC001",
@@ -466,8 +465,7 @@
         "stack": 1,
         "material": ["BC001", "GT006"],
         "atk0": 22,
-        "def0": 10,
-        "basic_atk_def0": 5,
+        "def0": 11,
         "non_combat_move_spd0": 0.1,
         "uniq014": {
           "detail": {
@@ -487,26 +485,6 @@
         }
       },
       {
-        "id": "PC003",
-        "sort": "clothes",
-        "img": "https://lh3.google.com/u/0/d/1ADUWGKSD0TXUDZTXVajPT7iHsmnLO62C",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "미스릴 갑옷",
-          "en": "Mithril Armor",
-          "ja": "ミスリル鎧",
-          "cn": "秘銀鎧甲"
-        },
-        "stack": 1,
-        "material": ["GC001", "BM006"],
-        "def0": 5,
-        "atk_spd1": 0.22,
-        "move_spd0": 0.1
-      },
-      {
         "id": "PC004",
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1vjjEnH_EpAxvFZtKyL_ne5xMAPsK7nuR",
@@ -522,7 +500,7 @@
         },
         "stack": 1,
         "material": ["BC005", "GA001"],
-        "basic_atk0": 13,
+        "atk0": 18,
         "def0": 30,
         "hp0": 50,
         "hp_reg1": 0.75
@@ -612,9 +590,8 @@
         },
         "stack": 1,
         "material": ["BC003", "GA008"],
-        "atk0": 25,
+        "atk0": 27,
         "vamp1": 0.18,
-        "basic_atk_def0": 5,
         "uniq009": {
           "detail": {
             "kr": ["+0.08"],
@@ -641,9 +618,8 @@
         },
         "stack": 1,
         "material": ["BC007", "GC008"],
-        "def0": 25,
+        "def0": 33,
         "hp0": 70,
-        "basic_atk_def0": 8,
         "skill_def1": 0.08,
         "cri_def1": 0.08
       },
@@ -663,10 +639,9 @@
         },
         "stack": 1,
         "material": ["BC007", "GC005"],
-        "def0": 25,
+        "def0": 33,
         "hp0": 115,
         "hp_reg1": 0.6,
-        "basic_atk_def0": 8,
         "cool1": 0.1
       },
       {
@@ -685,9 +660,9 @@
         },
         "stack": 1,
         "material": ["BC003", "GC006"],
+        "atk0": 12,
         "def0": 20,
-        "grow_basic_atk0": 1,
-        "vamp1": 0.11
+        "vamp_all1": 0.12
       },
       {
         "id": "PC012",
@@ -761,40 +736,6 @@
         "vision0": 1
       },
       {
-        "id": "PC015",
-        "sort": "clothes",
-        "img": "https://lh3.google.com/u/0/d/1HTxr7By237HFN7zt_7Q8zRuxLKuOwo6a",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "미스릴 크롭",
-          "en": "Mithril Crop",
-          "ja": "ミスリルクロップ",
-          "cn": "秘銀吊帶"
-        },
-        "stack": 1,
-        "material": ["GC007", "BM006"],
-        "only": {
-          "kr": "마이만 제작 가능",
-          "en": "Mai can craft",
-          "ja": "マイだけが制作できる。",
-          "cn": "只有梅才能製作"
-        },
-        "def0": 65,
-        "atk_spd1": 0.28,
-        "uniq009": {
-          "detail": {
-            "kr": ["+0.2"],
-            "en": ["+0.2"],
-            "ja": ["+0.2"],
-            "cn": ["+0.2"]
-          },
-          "value": 0.2
-        }
-      },
-      {
         "id": "YC001",
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1AuNWjbLWqYlVaUC_d3FxmUKvSNpROB6h",
@@ -809,11 +750,11 @@
           "cn": "星火洋裝"
         },
         "stack": 1,
-        "material": ["GC006", "PM004"],
+        "material": ["GC006", "PM007"],
         "atk0": 16,
         "def0": 30,
         "mp_reg1": 1,
-        "uniq012": {
+        "uniq030": {
           "detail": {
             "kr": [
               "전투에 돌입하면 매 초마다 2.5m 이내의 적에게 피해를 입힘",
@@ -850,7 +791,7 @@
           "cn": "黃金之鎧"
         },
         "stack": 1,
-        "material": ["PC007", "BM007"],
+        "material": ["PC007", "PM003"],
         "skill1": 0.22,
         "def0": 40,
         "vision0": 1
@@ -899,9 +840,9 @@
           "cn": "神職法衣"
         },
         "stack": 1,
-        "material": ["GC009", "PM002"],
+        "material": ["GC009", "PM009"],
+        "atk0": 25,
         "hp0": 225,
-        "skill0": 20,
         "cri_def1": 0.05,
         "uniq004": {
           "detail": {
@@ -945,9 +886,8 @@
         },
         "stack": 1,
         "material": ["BC003", "PM001"],
-        "atk0": 25,
+        "atk0": 27,
         "vamp1": 0.2,
-        "basic_atk_def0": 7,
         "move_spd0": 0.1,
         "uniq016": {
           "detail": {
@@ -990,28 +930,22 @@
       {
         "id": "YC006",
         "sort": "clothes",
-        "img": "https://lh3.google.com/u/0/d/1g8aoJvI8ntuZ6M6xzg-E4rvttvtGd_aX",
+        "img": "https://lh3.google.com/u/0/d/1ADUWGKSD0TXUDZTXVajPT7iHsmnLO62C",
         "location": false,
         "tobe": false,
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "아오자이",
-          "en": "Áo Dài",
-          "ja": "アオザイ",
-          "cn": "奧黛"
+          "kr": "미스릴 갑옷",
+          "en": "Mithril Armor",
+          "ja": "ミスリル鎧",
+          "cn": "秘銀鎧甲"
         },
         "stack": 1,
-        "material": ["GC006", "PM002"],
-        "only": {
-          "kr": "마이만 제작 가능",
-          "en": "Mai can craft",
-          "ja": "マイだけが制作できる。",
-          "cn": "只有梅才能製作"
-        },
-        "atk0": 50,
-        "def0": 65,
-        "mp_reg1": 1
+        "material": ["GC001", "PM002"],
+        "def0": 5,
+        "atk_spd1": 0.22,
+        "move_spd0": 0.1
       },
       {
         "id": "YC007",
@@ -1028,7 +962,7 @@
           "cn": "惡靈戰衣"
         },
         "stack": 1,
-        "material": ["BC001", "PM004"],
+        "material": ["BC001", "PM007"],
         "only": {
           "kr": "마이만 제작 가능",
           "en": "Mai can craft",
@@ -1037,8 +971,7 @@
         },
         "atk0": 20,
         "def0": 30,
-        "basic_atk_def0": 4,
-        "uniq012": {
+        "uniq030": {
           "detail": {
             "kr": [
               "전투에 돌입하면 매 초마다 2.5m 이내의 적에게 피해를 입힘",
@@ -1058,6 +991,66 @@
             ]
           },
           "value": 0.055
+        }
+      },
+      {
+        "id": "YC008",
+        "sort": "clothes",
+        "img": "https://lh3.google.com/u/0/d/1g8aoJvI8ntuZ6M6xzg-E4rvttvtGd_aX",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "아오자이",
+          "en": "Áo Dài",
+          "ja": "アオザイ",
+          "cn": "奧黛"
+        },
+        "stack": 1,
+        "material": ["GC006", "PM009"],
+        "only": {
+          "kr": "마이만 제작 가능",
+          "en": "Mai can craft",
+          "ja": "マイだけが制作できる。",
+          "cn": "只有梅才能製作"
+        },
+        "atk0": 50,
+        "def0": 65,
+        "mp_reg1": 1
+      },
+      {
+        "id": "YC009",
+        "sort": "clothes",
+        "img": "https://lh3.google.com/u/0/d/1HTxr7By237HFN7zt_7Q8zRuxLKuOwo6a",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "미스릴 크롭",
+          "en": "Mithril Crop",
+          "ja": "ミスリルクロップ",
+          "cn": "秘銀吊帶"
+        },
+        "stack": 1,
+        "material": ["GC007", "PM002"],
+        "only": {
+          "kr": "마이만 제작 가능",
+          "en": "Mai can craft",
+          "ja": "マイだけが制作できる。",
+          "cn": "只有梅才能製作"
+        },
+        "def0": 65,
+        "atk_spd1": 0.28,
+        "uniq009": {
+          "detail": {
+            "kr": ["+0.2"],
+            "en": ["+0.2"],
+            "ja": ["+0.2"],
+            "cn": ["+0.2"]
+          },
+          "value": 0.2
         }
       }
     ]
@@ -1096,7 +1089,7 @@
         "id": "WH003",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1oq1yVTsGfaep1EH0KUehLLR5gKjH6RTs",
-        "location": ["A009", "A013", "A015"],
+        "location": ["A005", "A009", "A013", "A015"],
         "tobe": ["GH005", "BH001"],
         "pickup": 1,
         "limit": 1,
@@ -1175,7 +1168,7 @@
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1UT7EpUW33YU-B9Bax0D58nAO-DcMcb85",
         "location": false,
-        "tobe": ["BH005", "PH001"],
+        "tobe": ["BH005", "YH005"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1372,7 +1365,24 @@
         "material": ["BA016", "WM012"],
         "atk0": 12,
         "cool1": 0.12,
-        "vision0": 2
+        "uniq008": {
+          "detail": {
+            "kr": ["+0.25"],
+            "en": ["+0.25"],
+            "ja": ["+0.25"],
+            "cn": ["+0.25"]
+          },
+          "value": 0.25
+        },
+        "uniq009": {
+          "detail": {
+            "kr": ["+0.06"],
+            "en": ["+0.06"],
+            "ja": ["+0.06"],
+            "cn": ["+0.06"]
+          },
+          "value": 0.06
+        }
       },
       {
         "id": "BH009",
@@ -1401,27 +1411,6 @@
         "skill1": 0.1
       },
       {
-        "id": "PH001",
-        "sort": "helmet",
-        "img": "https://lh3.google.com/u/0/d/1dTwsRHcgptQtCo-6uUqYMwuNH47r8nJQ",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "미스릴 투구",
-          "en": "Mithril Helm",
-          "ja": "ミスリルヘルム",
-          "cn": "秘銀頭盔"
-        },
-        "stack": 1,
-        "material": ["GH004", "BM006"],
-        "def0": 38,
-        "atk_spd1": 0.3,
-        "cool1": 0.15,
-        "move_spd0": 0.1
-      },
-      {
         "id": "PH002",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1fcFD8aMOsrSX674VOnbun3YK_p9YHTRn",
@@ -1439,7 +1428,7 @@
         "material": ["BH003", "GA003"],
         "cri_rate1": 0.2,
         "def0": 24,
-        "mp0": 500
+        "mp0": 400
       },
       {
         "id": "PH003",
@@ -1609,7 +1598,7 @@
         "stack": 1,
         "material": ["BH002", "GT002"],
         "hp0": 175,
-        "skill_def0": 12,
+        "skill_def1": 0.14,
         "mp_reg1": 0.65
       },
       {
@@ -1628,9 +1617,8 @@
         },
         "stack": 1,
         "material": ["GH002", "BB006"],
-        "atk0": 10,
+        "atk0": 20,
         "def0": 15,
-        "basic_atk0": 10,
         "cool1": 0.12,
         "mp0": 270
       },
@@ -1651,7 +1639,7 @@
         "stack": 1,
         "material": ["BH004", "WA008"],
         "def0": 23,
-        "basic_atk0": 5,
+        "atk0": 5,
         "uniq015": {
           "detail": {
             "kr": [
@@ -1725,12 +1713,36 @@
           "cn": "月桂冠"
         },
         "stack": 1,
-        "material": ["GH002", "PM004"],
-        "atk0": 15,
-        "basic_atk0": 17,
+        "material": ["GH002", "PM007"],
+        "atk0": 16,
         "def0": 18,
-        "mp0": 580,
-        "mp_reg0": 2
+        "mp0": 500,
+        "uniq031": {
+          "detail": {
+            "kr": [
+              "기본 공격 시 상대를 불태워 매 초 자신의 레벨에 비례한 고정 피해를 입힘",
+              "피해량: 착용자 레벨*5(근)/*4(원)",
+              "지속시간: 2초",
+              "최대 1스택"
+            ],
+            "en": [
+              "Basic attacks apply Smoldering and deal true damage to each 1 second",
+              "Damage: Character Level * 5(Melee)/4(Ranged)",
+              "Duration: 2s"
+            ],
+            "ja": [
+              "基本攻撃対象に燃え1秒ごとに対象に固定ダメージ",
+              "ダメージ:キャラクターレベル*5(近)/4(遠)",
+              "2秒間"
+            ],
+            "cn": [
+              "Basic attacks apply Smoldering and deal true damage to each 1 second",
+              "Damage: Character Level * 5(Melee)/4(Ranged)",
+              "Duration: 2s"
+            ]
+          },
+          "value": 5
+        }
       },
       {
         "id": "YH002",
@@ -1747,7 +1759,7 @@
           "cn": "天使光環"
         },
         "stack": 1,
-        "material": ["GH002", "PM002"],
+        "material": ["GH002", "PM009"],
         "atk0": 25,
         "def0": 40,
         "mp0": 300,
@@ -1817,11 +1829,32 @@
           "cn": "聖光冠冕"
         },
         "stack": 1,
-        "material": ["PH002", "BM007"],
+        "material": ["PH002", "PM003"],
         "cri_rate1": 0.24,
         "cri_atk1": 0.12,
         "def0": 28,
         "mp0": 500
+      },
+      {
+        "id": "YH005",
+        "sort": "helmet",
+        "img": "https://lh3.google.com/u/0/d/1dTwsRHcgptQtCo-6uUqYMwuNH47r8nJQ",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "미스릴 투구",
+          "en": "Mithril Helm",
+          "ja": "ミスリルヘルム",
+          "cn": "秘銀頭盔"
+        },
+        "stack": 1,
+        "material": ["GH004", "PM002"],
+        "def0": 38,
+        "atk_spd1": 0.3,
+        "cool1": 0.15,
+        "move_spd0": 0.1
       }
     ]
   },
@@ -1833,7 +1866,7 @@
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1H19Orw-LZFvTcMs5Heu02Zzp-w9dYoe-",
         "location": ["A003", "A011", "A014"],
-        "tobe": ["GB004", "PB004"],
+        "tobe": ["GB004", "BB008"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1876,7 +1909,7 @@
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1ZRHGgd_rzIkf_h6ux5aiSoFY-EAsjcmb",
         "location": false,
-        "tobe": ["BB005", "PB003", "PB007"],
+        "tobe": ["BB005", "YB006", "PB007"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1933,7 +1966,7 @@
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1C9mqwUM50K8M52C3-uVhuTcxygfmXeP8",
         "location": false,
-        "tobe": ["BWU002", "PB008", "PB009", "PB010", "YB005"],
+        "tobe": ["BWU002", "PB008", "YB007", "PB010", "YB005"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1957,8 +1990,7 @@
         "name": { "kr": "검집", "en": "Sheath", "ja": "鞘", "cn": "劍鞘" },
         "stack": 1,
         "material": ["GM010", "WM019"],
-        "atk0": 18,
-        "basic_atk_def0": 5
+        "atk0": 18
       },
       {
         "id": "BB002",
@@ -1995,8 +2027,7 @@
         },
         "stack": 1,
         "material": ["GB003", "GM010"],
-        "def0": 28,
-        "basic_atk_def0": 4
+        "def0": 28
       },
       {
         "id": "BB004",
@@ -2041,7 +2072,7 @@
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1WHZrPFGPKSSxRJ25QdjIaKCczm6-Og3F",
         "location": false,
-        "tobe": ["PWV001", "PB013"],
+        "tobe": ["PH010", "PB013"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2051,7 +2082,7 @@
           "cn": "荆棘手環"
         },
         "stack": 1,
-        "material": ["WA002", "GM014"],
+        "material": ["WM026", "GM014"],
         "atk0": 10,
         "cool1": 0.07
       },
@@ -2071,8 +2102,7 @@
         },
         "stack": 1,
         "material": ["WWE002", "BM002"],
-        "def0": 15,
-        "skill0": 12,
+        "atk0": 21,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -2091,6 +2121,25 @@
         }
       },
       {
+        "id": "BB008",
+        "sort": "bracelet",
+        "img": "https://lh3.google.com/u/0/d/1nyF3x64osxWoskArFQaYzNuBRZcyt3eZ",
+        "location": false,
+        "tobe": ["PB014"],
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "바이탈 센서",
+          "en": "Vital Sign Sensor",
+          "ja": "バイタルセンサー",
+          "cn": "生命訊號感測器"
+        },
+        "stack": 1,
+        "material": ["GM008", "WB001"],
+        "def0": 15,
+        "atk_spd1": 0.4
+      },
+      {
         "id": "PB001",
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1T0u3u1U5dEtufVJehCAiDl1b04bblskA",
@@ -2106,8 +2155,7 @@
         },
         "stack": 1,
         "material": ["BB003", "WM020"],
-        "def0": 23,
-        "basic_atk_def0": 4,
+        "def0": 27,
         "uniq005": {
           "detail": {
             "kr": [
@@ -2160,46 +2208,6 @@
         "mp0": 240
       },
       {
-        "id": "PB003",
-        "sort": "bracelet",
-        "img": "https://lh3.google.com/u/0/d/1kw2a95W4mTEQbOkYzEV5UJilLuc0dmBn",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "미스릴 방패",
-          "en": "Mithril Shield",
-          "ja": "ミスリル盾",
-          "cn": "秘銀盾"
-        },
-        "stack": 1,
-        "material": ["GB001", "BM006"],
-        "atk0": 30,
-        "def0": 30,
-        "atk_spd1": 0.2,
-        "move_spd0": 0.1
-      },
-      {
-        "id": "PB004",
-        "sort": "bracelet",
-        "img": "https://lh3.google.com/u/0/d/1nyF3x64osxWoskArFQaYzNuBRZcyt3eZ",
-        "location": false,
-        "tobe": ["YB002"],
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "바이탈 센서",
-          "en": "Vital Sign Sensor",
-          "ja": "バイタルセンサー",
-          "cn": "生命訊號感測器"
-        },
-        "stack": 1,
-        "material": ["BM001", "WB001"],
-        "def0": 15,
-        "atk_spd1": 0.4
-      },
-      {
         "id": "PB005",
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1_v-kLlgqQ1BE9HbKOOwwQ7M5fTgF8G8J",
@@ -2215,8 +2223,8 @@
         },
         "stack": 1,
         "material": ["BB005", "GB002"],
-        "atk0": 22,
-        "cri_atk1": 0.2,
+        "atk0": 25,
+        "cri_atk1": 0.15,
         "def0": 22,
         "hp_reg1": 0.45
       },
@@ -2237,8 +2245,7 @@
         "stack": 1,
         "material": ["BB001", "GM004"],
         "atk0": 35,
-        "hp0": 110,
-        "basic_atk_def0": 10
+        "hp0": 120
       },
       {
         "id": "PB007",
@@ -2282,26 +2289,6 @@
         "cool1": 0.12
       },
       {
-        "id": "PB009",
-        "sort": "bracelet",
-        "img": "https://lh3.google.com/u/0/d/1XURL7sTshcqj31HOvpqQDuCrY_XSQBQg",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "큐브 워치",
-          "en": "Cube Watch",
-          "ja": "キューブウォッチ",
-          "cn": "召喚手錶"
-        },
-        "stack": 1,
-        "material": ["GB004", "BM008"],
-        "def0": 18,
-        "cool1": 0.1,
-        "atk_spd1": 0.6
-      },
-      {
         "id": "PB010",
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1x87pKVCxaDKckg3PknXQYkFs83jOdT8f",
@@ -2316,7 +2303,7 @@
           "cn": "南丁格爾"
         },
         "stack": 1,
-        "material": ["GB004", "BM008"],
+        "material": ["GB004", "PM004"],
         "atk0": 20,
         "hp0": 160,
         "heal_up1": 0.15
@@ -2362,6 +2349,26 @@
         "cool1": 0.12
       },
       {
+        "id": "PB014",
+        "sort": "bracelet",
+        "img": "https://lh3.google.com/u/0/d/1VZDbvfIbRis7Be-ZvUZ7z4HWN0rtxTeq",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "레이더",
+          "en": "Radar",
+          "ja": "レーダー",
+          "cn": "雷達"
+        },
+        "stack": 1,
+        "material": ["BB008", "BM004"],
+        "cri_rate1": 0.24,
+        "def0": 20,
+        "atk_spd1": 0.3
+      },
+      {
         "id": "YB001",
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1-qXpYpPXgtB_zZBTMVKHr7z1hTvRDRe2",
@@ -2376,12 +2383,12 @@
           "cn": "絲卡蒂手鐲"
         },
         "stack": 1,
-        "material": ["BB004", "PM003"],
-        "skill0": 24,
+        "material": ["BB004", "PM008"],
+        "skill1": 0.22,
         "hp0": 100,
         "mp0": 250,
         "mp_reg0": 1.2,
-        "uniq029": {
+        "uniq034": {
           "detail": {
             "kr": [
               "스킬 공격에 적중당한 적은 1초간 이동속도 20% 감소",
@@ -2404,26 +2411,6 @@
         }
       },
       {
-        "id": "YB002",
-        "sort": "bracelet",
-        "img": "https://lh3.google.com/u/0/d/1VZDbvfIbRis7Be-ZvUZ7z4HWN0rtxTeq",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "레이더",
-          "en": "Radar",
-          "ja": "レーダー",
-          "cn": "雷達"
-        },
-        "stack": 1,
-        "material": ["PB004", "BM004"],
-        "cri_rate1": 0.24,
-        "def0": 20,
-        "atk_spd1": 0.4
-      },
-      {
         "id": "YB003",
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1nXhUziyOlP8kWJq1hqe5qrN1oGPrklWH",
@@ -2438,7 +2425,7 @@
           "cn": "自動臂"
         },
         "stack": 1,
-        "material": ["GB003", "PM002"],
+        "material": ["GB003", "PM009"],
         "atk0": 45,
         "def0": 35,
         "hp_reg1": 0.5,
@@ -2488,9 +2475,9 @@
           "cn": "銀河腕錶"
         },
         "stack": 1,
-        "material": ["GB004", "PM002"],
-        "def0": 25,
-        "atk_spd1": 0.3,
+        "material": ["GB004", "PM009"],
+        "def0": 15,
+        "atk_spd1": 0.4,
         "move_spd0": 0.12,
         "cool1": 0.15,
         "uniq004": {
@@ -2518,6 +2505,47 @@
           },
           "value": 1
         }
+      },
+      {
+        "id": "YB006",
+        "sort": "bracelet",
+        "img": "https://lh3.google.com/u/0/d/1kw2a95W4mTEQbOkYzEV5UJilLuc0dmBn",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "미스릴 방패",
+          "en": "Mithril Shield",
+          "ja": "ミスリル盾",
+          "cn": "秘銀盾"
+        },
+        "stack": 1,
+        "material": ["GB001", "PM002"],
+        "atk0": 30,
+        "def0": 30,
+        "atk_spd1": 0.2,
+        "move_spd0": 0.1
+      },
+      {
+        "id": "YB007",
+        "sort": "bracelet",
+        "img": "https://lh3.google.com/u/0/d/1XURL7sTshcqj31HOvpqQDuCrY_XSQBQg",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "큐브 워치",
+          "en": "Cube Watch",
+          "ja": "キューブウォッチ",
+          "cn": "召喚手錶"
+        },
+        "stack": 1,
+        "material": ["GB004", "PM004"],
+        "def0": 18,
+        "cool1": 0.1,
+        "atk_spd1": 0.6
       }
     ]
   },
@@ -2596,7 +2624,7 @@
         "sort": "shoes",
         "img": "https://lh3.google.com/u/0/d/1qBTtaMoq0bPt3KQbx8BNjZNIJ9NxJWyl",
         "location": false,
-        "tobe": ["PS002", "PS003"],
+        "tobe": ["YS008", "PS003"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2719,7 +2747,7 @@
         "sort": "shoes",
         "img": "https://lh3.google.com/u/0/d/1rEfmrDjS3yzXVyRyuPYyb-tbT1S5IwH8",
         "location": false,
-        "tobe": ["YS001"],
+        "tobe": ["PS010"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2779,7 +2807,7 @@
         "sort": "shoes",
         "img": "https://lh3.google.com/u/0/d/1VUa9GQtbFLsrx5L1GGX7npxxD8peUflo",
         "location": false,
-        "tobe": ["PS008"],
+        "tobe": ["YS001"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2812,26 +2840,6 @@
         "hp_reg1": 0.25,
         "atk_spd1": 0.3,
         "move_spd0": 0.32
-      },
-      {
-        "id": "PS002",
-        "sort": "shoes",
-        "img": "https://lh3.google.com/u/0/d/1b5cMWgT3qxsaXfd4yEZ40AS4aMJEEcwI",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "미스릴 부츠",
-          "en": "Mithril Boots",
-          "ja": "ミスリルブーツ",
-          "cn": "秘銀靴"
-        },
-        "stack": 1,
-        "material": ["GS002", "BM006"],
-        "def0": 15,
-        "atk_spd1": 0.32,
-        "move_spd0": 0.42
       },
       {
         "id": "PS003",
@@ -2960,25 +2968,6 @@
         }
       },
       {
-        "id": "PS008",
-        "sort": "shoes",
-        "img": "https://lh3.google.com/u/0/d/1JpCPWA1z3m-Syx0aziELWDL4jP9FDrmw",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "아이언 메이든",
-          "en": "Iron Maiden",
-          "ja": "アイアンメイデン",
-          "cn": "劍齒虎"
-        },
-        "stack": 1,
-        "material": ["BS006", "BM007"],
-        "move_spd0": 0.35,
-        "penet1": 0.1
-      },
-      {
         "id": "PS009",
         "sort": "shoes",
         "img": "https://lh3.google.com/u/0/d/14_KUWgbkCg-4pP_MeyhynD-yqxz1KYpT",
@@ -2993,7 +2982,7 @@
         "vamp_all1": 0.1
       },
       {
-        "id": "YS001",
+        "id": "PS010",
         "sort": "shoes",
         "img": "https://lh3.google.com/u/0/d/1zcCqMEd3ovPM7XceLh6kutogGL04czXw",
         "location": false,
@@ -3015,6 +3004,25 @@
         "trap_def1": 0.1
       },
       {
+        "id": "YS001",
+        "sort": "shoes",
+        "img": "https://lh3.google.com/u/0/d/1JpCPWA1z3m-Syx0aziELWDL4jP9FDrmw",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "아이언 메이든",
+          "en": "Iron Maiden",
+          "ja": "アイアンメイデン",
+          "cn": "劍齒虎"
+        },
+        "stack": 1,
+        "material": ["BS006", "PM003"],
+        "move_spd0": 0.35,
+        "penet1": 0.1
+      },
+      {
         "id": "YS002",
         "sort": "shoes",
         "img": "https://lh3.google.com/u/0/d/1nRvbTfP54Q-rsH4Vvb9sVjYkLiHw8Tav",
@@ -3029,7 +3037,7 @@
           "cn": "萬年冰鞋"
         },
         "stack": 1,
-        "material": ["GS005", "PM003"],
+        "material": ["GS005", "PM008"],
         "mp_reg0": 1.2,
         "mp_reg1": 1,
         "move_spd0": 0.35,
@@ -3051,7 +3059,7 @@
           "cn": "荷米斯之靴"
         },
         "stack": 1,
-        "material": ["GS004", "PM002"],
+        "material": ["GS004", "PM009"],
         "def0": 32,
         "move_spd0": 0.42,
         "uniq011": {
@@ -3102,18 +3110,38 @@
           "cn": "生化推進器"
         },
         "stack": 1,
-        "material": ["GS007", "BF027"],
+        "material": ["GS007", "PM001"],
         "move_spd0": 0.4,
-        "hp0": 175,
-        "uniq010": {
+        "cool1": 0.22,
+        "uniq007": {
           "detail": {
-            "kr": ["+20%"],
-            "en": ["+20%"],
-            "ja": ["+20%"],
-            "cn": ["+20%"]
+            "kr": ["+10%"],
+            "en": ["+10%"],
+            "ja": ["+10%"],
+            "cn": ["+10%"]
           },
-          "value": 0.2
+          "value": 0.1
         }
+      },
+      {
+        "id": "YS008",
+        "sort": "shoes",
+        "img": "https://lh3.google.com/u/0/d/1b5cMWgT3qxsaXfd4yEZ40AS4aMJEEcwI",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "미스릴 부츠",
+          "en": "Mithril Boots",
+          "ja": "ミスリルブーツ",
+          "cn": "秘銀靴"
+        },
+        "stack": 1,
+        "material": ["GS002", "PM002"],
+        "def0": 15,
+        "atk_spd1": 0.32,
+        "move_spd0": 0.42
       }
     ]
   },
@@ -3144,31 +3172,11 @@
         "stack": 1
       },
       {
-        "id": "WA002",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1ZJyCBaDxV82Qvpw5fZWVfSeisJFmy5fG",
-        "location": ["A005", "A007", "A011", "A012"],
-        "tobe": [
-          "BWA001",
-          "BWJ002",
-          "PWU002",
-          "BC006",
-          "BB006",
-          "GA002",
-          "GF010",
-          "BD005"
-        ],
-        "pickup": 1,
-        "limit": 1,
-        "name": { "kr": "꽃", "en": "Flower", "ja": "花", "cn": "花" },
-        "stack": 1
-      },
-      {
         "id": "WA003",
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/12Pqiw3JvRsNTOR8PSudiD7LUPZcBRWGF",
         "location": ["A005", "A011", "A015"],
-        "tobe": ["BC003", "GA004", "GA011", "PA005"],
+        "tobe": ["BC003", "GA004", "GA011", "YA010"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "리본", "en": "Ribbon", "ja": "リボン", "cn": "緞帶" },
@@ -3217,7 +3225,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1oQQaHSLmRhitzMNuXBbG7_VhR3YkcypS",
         "location": ["A009"],
-        "tobe": ["PWB003", "PWT002", "BWV002", "GA001"],
+        "tobe": ["PWB003", "BWV002", "GA001"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3237,6 +3245,7 @@
           "PWB004",
           "PWE002",
           "PWI006",
+          "PWT002",
           "GWJ004",
           "GC009",
           "PH011",
@@ -3284,7 +3293,7 @@
         },
         "stack": 1,
         "material": ["WA008", "WA007"],
-        "basic_atk0": 8,
+        "atk0": 8,
         "hp_reg1": 0.5
       },
       {
@@ -3310,7 +3319,7 @@
           "cn": "命運之花"
         },
         "stack": 1,
-        "material": ["WA002", "WWJ002"],
+        "material": ["WM026", "WWJ002"],
         "cri_rate1": 0.15,
         "cool1": 0.08
       },
@@ -3381,7 +3390,7 @@
         },
         "stack": 1,
         "material": ["WC002", "WA005"],
-        "skill1": 0.09,
+        "skill1": 0.08,
         "cool1": 0.05
       },
       {
@@ -3389,7 +3398,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1yeD5VZ7RUYbgVEeAxeFCZnfIoGK3rnNr",
         "location": false,
-        "tobe": ["BA005", "PA004"],
+        "tobe": ["BA005", "YA009"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "화살통", "en": "Quiver", "ja": "矢筒", "cn": "箭袋" },
@@ -3449,7 +3458,7 @@
         },
         "stack": 1,
         "material": ["WA004", "WM020"],
-        "skill0": 8,
+        "skill1": 0.1,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -3548,15 +3557,15 @@
         },
         "stack": 1,
         "material": ["GA009", "WA001"],
-        "skill0": 14,
+        "skill1": 0.14,
         "uniq009": {
           "detail": {
-            "kr": ["+0.06"],
-            "en": ["+0.06"],
-            "ja": ["+0.06"],
-            "cn": ["+0.06"]
+            "kr": ["+0.04"],
+            "en": ["+0.04"],
+            "ja": ["+0.04"],
+            "cn": ["+0.04"]
           },
-          "value": 0.06
+          "value": 0.04
         },
         "uniq014": {
           "detail": {
@@ -3591,8 +3600,8 @@
         },
         "stack": 1,
         "material": ["GA004", "WA004"],
-        "skill0": 17,
-        "vamp1": 0.14,
+        "skill1": 0.1,
+        "vamp_all1": 0.08,
         "mp_reg1": 0.7
       },
       {
@@ -3606,8 +3615,7 @@
         "name": { "kr": "탄창", "en": "Magazine", "ja": "弾倉", "cn": "彈匣" },
         "stack": 1,
         "material": ["WA006", "GM010"],
-        "hp0": 110,
-        "basic_atk_def0": 4
+        "hp0": 110
       },
       {
         "id": "BA005",
@@ -3672,8 +3680,7 @@
         },
         "stack": 1,
         "material": ["WA006", "BM002"],
-        "skill0": 4,
-        "hp0": 180,
+        "hp0": 190,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -3707,8 +3714,8 @@
         },
         "stack": 1,
         "material": ["GA006", "GA001"],
-        "basic_atk0": 12,
-        "skill1": 0.1,
+        "atk0": 8,
+        "skill1": 0.08,
         "cool1": 0.08,
         "active003": {
           "detail": {
@@ -3794,7 +3801,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1-YMWs7o1dYKzwEkTVQ3iVCMaajdLvyE4",
         "location": false,
-        "tobe": ["YWC001"],
+        "tobe": ["PWC006"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3854,7 +3861,7 @@
         "stack": 1,
         "material": ["BA004", "GC004"],
         "hp0": 200,
-        "basic_atk_def0": 12
+        "def0": 12
       },
       {
         "id": "BA014",
@@ -3967,148 +3974,6 @@
         }
       },
       {
-        "id": "PA003",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1SlvvEm-8UFLWlUQ0xbiab2O1Hf5gQ6lI",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "요명월",
-          "en": "Lunar Embrace",
-          "ja": "邀明月",
-          "cn": "邀明月"
-        },
-        "stack": 1,
-        "material": ["BD001", "BM008"],
-        "atk0": 10,
-        "def0": 10,
-        "mp_reg1": 1,
-        "vision0": 2,
-        "active004": {
-          "detail": {
-            "kr": [
-              "사용 시 적용",
-              "블레싱:코스믹파워 버프 획득",
-              "쿨다운: 16초"
-            ],
-            "en": ["Activate to gain <Cosmic Efflux>", "Cooldown: 16s"],
-            "ja": [
-              "アイテムを使用すると、＜コスモパワー＞を獲得",
-              "クールダウン:16秒"
-            ],
-            "cn": ["Activate to gain <Cosmic Efflux>", "Cooldown: 16s"]
-          },
-          "value": 0.6
-        },
-        "buff005": {
-          "detail": {
-            "kr": ["공격력: 16% 증가", "방어력: 16% 증가", "지속시간: 6초"],
-            "en": ["Attack Power: +16%", "Defense: +16%", "Duration: 6s"],
-            "ja": ["攻撃力:+16%", "防御力:+16%", "6秒間"],
-            "cn": ["Attack Power: +16%", "Defense: +16%", "Duration: 6s"]
-          },
-          "value": 0.16
-        }
-      },
-      {
-        "id": "PA004",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/12yYectARccvAXVQwl7hCUt570h-mBt82",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "미스릴 퀴버",
-          "en": "Mithril Quiver",
-          "ja": "ミスリルクイーバー",
-          "cn": "秘銀箭袋"
-        },
-        "stack": 1,
-        "material": ["GA007", "BM006"],
-        "def0": 12,
-        "atk_spd1": 0.33,
-        "move_spd0": 0.1,
-        "uniq008": {
-          "detail": {
-            "kr": ["+0.65"],
-            "en": ["+0.65"],
-            "ja": ["+0.65"],
-            "cn": ["+0.65"]
-          },
-          "value": 0.65
-        }
-      },
-      {
-        "id": "PA005",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1Ejnv77PsbAQh9a3tauDVgGuDZpFjKNeE",
-        "location": false,
-        "tobe": ["PWG004"],
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "달빛 펜던트",
-          "en": "Moonlight Pendant",
-          "ja": "月光ペンダント",
-          "cn": "月光吊墜"
-        },
-        "stack": 1,
-        "material": ["WA003", "BM008"],
-        "atk0": 26,
-        "vamp_all1": 0.15,
-        "vision0": 1
-      },
-      {
-        "id": "PA006",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/10JwIfFDdpO06cAlAldkqbKcY5EXeFQ7_",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "호루스의 눈",
-          "en": "Eye of Horus",
-          "ja": "ホルスの目",
-          "cn": "荷魯斯之眼"
-        },
-        "stack": 1,
-        "material": ["WM008", "BM009"],
-        "grow_skill1": 0.01,
-        "vision0": 1.5,
-        "uniq001": {
-          "detail": {
-            "kr": [
-              "스킬 사용 후, 4초 이내에 다음 기본 공격은 추가 피해",
-              "피해량: 스킬 증폭의 2.5배(근)/1.5배(원)",
-              "쿨다운: 2초"
-            ],
-            "en": [
-              "Using a skill causes a Biotic Infusion",
-              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
-              "Cooldown: 2s"
-            ],
-            "ja": [
-              "スキルを使用すると意念をチャージ",
-              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
-              "ダメージ:スキル増幅*2.5(近)/1.5(遠)",
-              "クールダウン:2秒"
-            ],
-            "cn": [
-              "Using a skill causes a Biotic Infusion",
-              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
-              "Cooldown: 2s"
-            ]
-          },
-          "value": 2.5
-        }
-      },
-      {
         "id": "YA001",
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1npbktDP2HEcPDtaAKqs7vD5z44Hq_AhC",
@@ -4123,7 +3988,7 @@
           "cn": "翡翠石板"
         },
         "stack": 1,
-        "material": ["GA002", "PM002"],
+        "material": ["GA002", "PM009"],
         "atk0": 24,
         "cri_rate1": 0.15,
         "cri_atk1": 0.12,
@@ -4207,7 +4072,7 @@
           "cn": "昆德拉"
         },
         "stack": 1,
-        "material": ["BM006", "BM008"],
+        "material": ["PM002", "PM004"],
         "only": {
           "kr": "솔로 모드",
           "en": "Solo",
@@ -4262,7 +4127,7 @@
           "cn": "昆德拉Mk2"
         },
         "stack": 1,
-        "material": ["BM006", "BM008"],
+        "material": ["PM002", "PM004"],
         "only": {
           "kr": "듀오, 스쿼드 모드",
           "en": "Duo, Squad",
@@ -4315,7 +4180,7 @@
           "cn": "蘇丹箭袋"
         },
         "stack": 1,
-        "material": ["BA005", "BM008"],
+        "material": ["BA005", "PM004"],
         "only": {
           "kr": "솔로 모드",
           "en": "Solo",
@@ -4381,7 +4246,7 @@
           "cn": "蘇丹箭袋Mk2"
         },
         "stack": 1,
-        "material": ["BA005", "BM008"],
+        "material": ["BA005", "PM004"],
         "only": {
           "kr": "듀오, 스쿼드 모드",
           "en": "Duo, Squad",
@@ -4441,7 +4306,7 @@
           "cn": "極光陀螺"
         },
         "stack": 1,
-        "material": ["BM009", "WM016"],
+        "material": ["PM006", "WM016"],
         "only": {
           "kr": "듀오, 스쿼드 모드",
           "en": "Duo, Squad",
@@ -4470,6 +4335,148 @@
               "Activate to put the user in stasis for 2.5 second",
               "Making them invulnerable unable to perform any other actions as well",
               "Cooldown: 55s"
+            ]
+          },
+          "value": 2.5
+        }
+      },
+      {
+        "id": "YA008",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1SlvvEm-8UFLWlUQ0xbiab2O1Hf5gQ6lI",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "요명월",
+          "en": "Lunar Embrace",
+          "ja": "邀明月",
+          "cn": "邀明月"
+        },
+        "stack": 1,
+        "material": ["BD001", "PM004"],
+        "atk0": 10,
+        "def0": 10,
+        "mp_reg1": 1,
+        "vision0": 2,
+        "active004": {
+          "detail": {
+            "kr": [
+              "사용 시 적용",
+              "블레싱:코스믹파워 버프 획득",
+              "쿨다운: 16초"
+            ],
+            "en": ["Activate to gain <Cosmic Efflux>", "Cooldown: 16s"],
+            "ja": [
+              "アイテムを使用すると、＜コスモパワー＞を獲得",
+              "クールダウン:16秒"
+            ],
+            "cn": ["Activate to gain <Cosmic Efflux>", "Cooldown: 16s"]
+          },
+          "value": 0.6
+        },
+        "buff005": {
+          "detail": {
+            "kr": ["공격력: 16% 증가", "방어력: 16% 증가", "지속시간: 6초"],
+            "en": ["Attack Power: +16%", "Defense: +16%", "Duration: 6s"],
+            "ja": ["攻撃力:+16%", "防御力:+16%", "6秒間"],
+            "cn": ["Attack Power: +16%", "Defense: +16%", "Duration: 6s"]
+          },
+          "value": 0.16
+        }
+      },
+      {
+        "id": "YA009",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/12yYectARccvAXVQwl7hCUt570h-mBt82",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "미스릴 퀴버",
+          "en": "Mithril Quiver",
+          "ja": "ミスリルクイーバー",
+          "cn": "秘銀箭袋"
+        },
+        "stack": 1,
+        "material": ["GA007", "PM002"],
+        "def0": 12,
+        "atk_spd1": 0.33,
+        "move_spd0": 0.1,
+        "uniq008": {
+          "detail": {
+            "kr": ["+0.65"],
+            "en": ["+0.65"],
+            "ja": ["+0.65"],
+            "cn": ["+0.65"]
+          },
+          "value": 0.65
+        }
+      },
+      {
+        "id": "YA010",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1Ejnv77PsbAQh9a3tauDVgGuDZpFjKNeE",
+        "location": false,
+        "tobe": ["YWG002"],
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "달빛 펜던트",
+          "en": "Moonlight Pendant",
+          "ja": "月光ペンダント",
+          "cn": "月光吊墜"
+        },
+        "stack": 1,
+        "material": ["WA003", "PM004"],
+        "atk0": 26,
+        "vamp_all1": 0.15,
+        "vision0": 1
+      },
+      {
+        "id": "YA011",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/10JwIfFDdpO06cAlAldkqbKcY5EXeFQ7_",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "호루스의 눈",
+          "en": "Eye of Horus",
+          "ja": "ホルスの目",
+          "cn": "荷魯斯之眼"
+        },
+        "stack": 1,
+        "material": ["WM008", "PM006"],
+        "grow_skill1": 0.01,
+        "vision0": 1.5,
+        "uniq001": {
+          "detail": {
+            "kr": [
+              "스킬 사용 후, 4초 이내에 다음 기본 공격은 추가 피해",
+              "피해량: 스킬 증폭의 2.5배(근)/1.5배(원)",
+              "쿨다운: 2초"
+            ],
+            "en": [
+              "Using a skill causes a Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
+              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Cooldown: 2s"
+            ],
+            "ja": [
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:スキル増幅*2.5(近)/1.5(遠)",
+              "クールダウン:2秒"
+            ],
+            "cn": [
+              "Using a skill causes a Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
+              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Cooldown: 2s"
             ]
           },
           "value": 2.5

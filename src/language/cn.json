@@ -26,8 +26,9 @@
     "commonDrop1": "樹枝, 石頭: 收集",
     "commonDrop2": "肉: 雞, 野豬, 狼, 熊",
     "commonDrop3": "皮革: 雞, 野狗, 狼, 熊",
-    "commonDrop4": "醫藥箱, VF血液樣本: 維克萊恩",
-    "commonDrop5": "卡德摩斯的召喚: 厄喀翁",
+    "commonDrop4": "VF血液樣本: 維克萊恩",
+    "commonDrop5": "醫藥箱: 傳喚無人機配送",
+    "commonDrop6": "卡德摩斯的召喚: 厄喀翁",
     "map": "地圖",
     "manual": "小貼士"
   },

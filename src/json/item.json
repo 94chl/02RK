@@ -32,7 +32,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1jtEKbpRsEoXIuW7BkBl-O3TWJdaSaxpN",
         "location": ["A000"],
-        "tobe": ["GH005", "BS006", "GA003", "GM006", "GM012", "BM008"],
+        "tobe": ["GH005", "BS006", "GA003", "GM006", "GM012", "PM004"],
         "pickup": 2,
         "limit": 3,
         "name": { "kr": "돌멩이", "en": "Stone", "ja": "石ころ", "cn": "石頭" },
@@ -98,7 +98,7 @@
           "WWV001",
           "GWB001",
           "BWK006",
-          "PM004",
+          "PM007",
           "GM003",
           "GM007",
           "GM012",
@@ -156,7 +156,7 @@
           "BC009",
           "BH003",
           "GA010",
-          "PA005"
+          "YA011"
         ],
         "pickup": 1,
         "limit": 3,
@@ -173,7 +173,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/13qnlpmPDlE9sypfW20QpahtIrHjsuKHU",
         "location": ["A003", "A008", "A010"],
-        "tobe": ["GM005", "GM008", "BT005"],
+        "tobe": ["BWH002", "GWT002", "GM008", "BM005", "BT005"],
         "pickup": 1,
         "limit": 3,
         "name": {
@@ -367,7 +367,7 @@
           "GM008",
           "GM014",
           "GT003",
-          "BT002"
+          "PT005"
         ],
         "pickup": 1,
         "limit": 3,
@@ -420,7 +420,6 @@
           "GWA001",
           "GWF001",
           "BWJ004",
-          "YWS001",
           "GC004",
           "GH002",
           "GS007",
@@ -441,6 +440,26 @@
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "분필", "en": "Chalk", "ja": "チョーク", "cn": "粉筆" },
+        "stack": 1
+      },
+      {
+        "id": "WM026",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1ZJyCBaDxV82Qvpw5fZWVfSeisJFmy5fG",
+        "location": ["A005", "A007", "A011", "A012"],
+        "tobe": [
+          "BWA001",
+          "BWJ002",
+          "PWU002",
+          "BC006",
+          "BB006",
+          "GA002",
+          "GF010",
+          "BD005"
+        ],
+        "pickup": 1,
+        "limit": 1,
+        "name": { "kr": "꽃", "en": "Flower", "ja": "花", "cn": "花" },
         "stack": 1
       },
       {
@@ -476,7 +495,7 @@
         "tobe": [
           "PWE006",
           "BWG003",
-          "PWH005",
+          "YWH002",
           "PWL001",
           "BC010",
           "GS006",
@@ -498,7 +517,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1-7heKhZfxmqblZPgY5R15bsL7QmnKRR8",
         "location": false,
-        "tobe": ["YWN001", "BF001", "BF013", "BF015", "BF017", "BF022"],
+        "tobe": ["PWN005", "BF001", "BF013", "BF015", "BF017", "BF022"],
         "pickup": 2,
         "limit": 3,
         "name": {
@@ -521,23 +540,6 @@
         "name": { "kr": "루비", "en": "Ruby", "ja": "ルビー", "cn": "紅寶石" },
         "stack": 1,
         "material": ["WWP001", "WM013"]
-      },
-      {
-        "id": "GM005",
-        "sort": "material",
-        "img": "https://lh3.google.com/u/0/d/1wKGnbIq_TOOTt10irpTjeNpykxwtkXQ0",
-        "location": false,
-        "tobe": ["BWH002", "GWT002", "BM005"],
-        "pickup": 1,
-        "limit": 3,
-        "name": {
-          "kr": "방전 전지",
-          "en": "Dead Battery",
-          "ja": "放電電池",
-          "cn": "廢電池"
-        },
-        "stack": 1,
-        "material": ["WM009", "WD002"]
       },
       {
         "id": "GM006",
@@ -592,9 +594,11 @@
         "tobe": [
           "PWG002",
           "PWM007",
+          "BWN003",
           "BWO003",
           "PWS003",
           "PH003",
+          "BB008",
           "PB011",
           "BM003",
           "BM001"
@@ -729,7 +733,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1qZpgKRWnA-PyBorfRHz6KQ06rnBQL88U",
         "location": false,
-        "tobe": ["BB006", "BS006"],
+        "tobe": ["PWV001", "BB006", "BS006"],
         "pickup": 1,
         "limit": 3,
         "name": {
@@ -746,7 +750,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1tszZTpdU2D7640lJI70b5ZdWaSJWFwH4",
         "location": false,
-        "tobe": ["PWU004", "PB004", "PS007", "YT002"],
+        "tobe": ["PWU004", "PS007", "YT002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -775,15 +779,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1KXDXvHC-HpGVH6VrEMfJbuf_XTI0gq5R",
         "location": false,
-        "tobe": [
-          "PWA003",
-          "PWC005",
-          "PWN001",
-          "PWR002",
-          "PS005",
-          "PS009",
-          "BA014"
-        ],
+        "tobe": ["PWA003", "PWC005", "PWR002", "PS005", "PS009", "BA014"],
         "pickup": 1,
         "limit": 3,
         "name": { "kr": "모터", "en": "Motor", "ja": "モーター", "cn": "馬達" },
@@ -795,7 +791,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1HMacz_-DI3NDIVY8fQB63EzaI2iphmbm",
         "location": false,
-        "tobe": ["PWG005", "PWN003", "PC001", "YB002"],
+        "tobe": ["PWG005", "PWN003", "PC001", "PB014"],
         "pickup": 1,
         "limit": 3,
         "name": {
@@ -822,118 +818,7 @@
           "cn": "鋰離子電池"
         },
         "stack": 1,
-        "material": ["GM005", "WD006"]
-      },
-      {
-        "id": "BM006",
-        "sort": "material",
-        "img": "https://lh3.google.com/u/0/d/1cxEFd5tBoqm61J_mBClkcQhIfc2u8O5t",
-        "location": ["A002", "A008", "A011"],
-        "tobe": [
-          "PWS005",
-          "PWQ001",
-          "YWW002",
-          "PC003",
-          "PC015",
-          "PH001",
-          "PB003",
-          "PS002",
-          "PA004",
-          "YA003",
-          "YA004",
-          "BT002",
-          "BF028"
-        ],
-        "pickup": 1,
-        "limit": 3,
-        "name": {
-          "kr": "미스릴",
-          "en": "Mithril",
-          "ja": "ミスリル",
-          "cn": "秘銀"
-        },
-        "stack": 1
-      },
-      {
-        "id": "BM007",
-        "sort": "material",
-        "img": "https://lh3.google.com/u/0/d/1eSTA2RX_DG85o9yMa0CG4lwaqJQw0Mus",
-        "location": ["A002", "A004", "A005", "A008", "A015"],
-        "tobe": [
-          "YWB003",
-          "YWW008",
-          "PWJ008",
-          "PWM001",
-          "PWS004",
-          "PWT005",
-          "YC002",
-          "YH004",
-          "BM008",
-          "PM002"
-        ],
-        "pickup": 1,
-        "limit": 3,
-        "name": { "kr": "운석", "en": "Meteorite", "ja": "隕石", "cn": "隕石" },
-        "stack": 1
-      },
-      {
-        "id": "BM008",
-        "sort": "material",
-        "img": "https://lh3.google.com/u/0/d/1Z92IKABPSijOPt1qBj3aBPO5XgvUfmbN",
-        "location": false,
-        "tobe": [
-          "PWD002",
-          "PWH005",
-          "PWK006",
-          "YWO001",
-          "PWP004",
-          "PWQ003",
-          "PWV005",
-          "PB009",
-          "PB010",
-          "PA003",
-          "PA005",
-          "YA003",
-          "YA004",
-          "YA005",
-          "YA006",
-          "BD011"
-        ],
-        "pickup": 1,
-        "limit": 3,
-        "name": {
-          "kr": "문스톤",
-          "en": "Moonstone",
-          "ja": "ムーンストーン",
-          "cn": "月亮石"
-        },
-        "stack": 1,
-        "material": ["BM007", "WM002"]
-      },
-      {
-        "id": "BM009",
-        "sort": "material",
-        "img": "https://lh3.google.com/u/0/d/1Du9vS4jRwaXG5QuTSZRAcRQ-q_uzzjfM",
-        "location": ["A007", "A012", "A014", "A006"],
-        "tobe": [
-          "YWD002",
-          "YWW005",
-          "PM003",
-          "PM004",
-          "PA005",
-          "YA007",
-          "PM002",
-          "PF003"
-        ],
-        "pickup": 1,
-        "limit": 3,
-        "name": {
-          "kr": "생명의 나무",
-          "en": "Tree of Life",
-          "ja": "生命の木",
-          "cn": "生命樹枝"
-        },
-        "stack": 1
+        "material": ["WM009", "WD006"]
       },
       {
         "id": "PM001",
@@ -955,6 +840,7 @@
           "YH003",
           "YB004",
           "YS004",
+          "YS005",
           "YA002"
         ],
         "pickup": 1,
@@ -970,64 +856,117 @@
       {
         "id": "PM002",
         "sort": "material",
-        "img": "https://lh3.google.com/u/0/d/1w4HiSiOKdEEDpFAOSIKTaNkQkk-rouOO",
-        "location": false,
+        "img": "https://lh3.google.com/u/0/d/1cxEFd5tBoqm61J_mBClkcQhIfc2u8O5t",
+        "location": ["A002", "A008", "A011"],
         "tobe": [
-          "YWA001",
-          "YWK02",
-          "YWM001",
-          "YWJ001",
-          "YWL001",
-          "YWI001",
-          "YWG001",
-          "YWF001",
-          "YWN002",
-          "YWD001",
-          "YWW003",
-          "YWW006",
-          "YWW009",
-          "YWU001",
-          "YH002",
-          "YC004",
+          "YWS002",
+          "YWQ003",
+          "YWW002",
           "YC006",
-          "YS003",
-          "YB003",
-          "YB005",
-          "YA001",
-          "YT001"
+          "YC009",
+          "YH005",
+          "YB006",
+          "YS008",
+          "YA009",
+          "YA003",
+          "YA004",
+          "PT005",
+          "BF028"
         ],
         "pickup": 1,
         "limit": 3,
         "name": {
-          "kr": "포스 코어",
-          "en": "Force Core",
-          "ja": "フォースコアー",
-          "cn": "能源晶石"
+          "kr": "미스릴",
+          "en": "Mithril",
+          "ja": "ミスリル",
+          "cn": "秘銀"
         },
-        "stack": 1,
-        "material": ["BM009", "BM007"]
+        "stack": 1
       },
       {
         "id": "PM003",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1A1E33NXpnTLAsfDJstG0mIbNcB29IDBV",
-        "location": false,
-        "tobe": ["PWJ004", "YWB004", "YWV005", "YB001", "YS002", "YWE002"],
+        "sort": "material",
+        "img": "https://lh3.google.com/u/0/d/1eSTA2RX_DG85o9yMa0CG4lwaqJQw0Mus",
+        "location": ["A002", "A004", "A005", "A008", "A015"],
+        "tobe": [
+          "YWB003",
+          "YWW008",
+          "YWJ003",
+          "YWM002",
+          "PWS004",
+          "PWT005",
+          "YC002",
+          "YH004",
+          "PM004",
+          "PM009"
+        ],
         "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "만년빙",
-          "en": "Glacial Ice",
-          "ja": "万年氷",
-          "cn": "萬年冰"
-        },
-        "stack": 1,
-        "material": ["BM009", "WD003"],
-        "skill0": 18,
-        "mp_reg1": 1
+        "limit": 3,
+        "name": { "kr": "운석", "en": "Meteorite", "ja": "隕石", "cn": "隕石" },
+        "stack": 1
       },
       {
         "id": "PM004",
+        "sort": "material",
+        "img": "https://lh3.google.com/u/0/d/1Z92IKABPSijOPt1qBj3aBPO5XgvUfmbN",
+        "location": false,
+        "tobe": [
+          "YWD003",
+          "YWH002",
+          "YWK003",
+          "YWO001",
+          "YWP002",
+          "YWQ004",
+          "YWV002",
+          "YB007",
+          "PB010",
+          "YA008",
+          "YA010",
+          "YA003",
+          "YA004",
+          "YA005",
+          "YA006",
+          "BD011"
+        ],
+        "pickup": 1,
+        "limit": 3,
+        "name": {
+          "kr": "문스톤",
+          "en": "Moonstone",
+          "ja": "ムーンストーン",
+          "cn": "月亮石"
+        },
+        "stack": 1,
+        "material": ["PM003", "WM002"]
+      },
+      {
+        "id": "PM006",
+        "sort": "material",
+        "img": "https://lh3.google.com/u/0/d/1Du9vS4jRwaXG5QuTSZRAcRQ-q_uzzjfM",
+        "location": ["A007", "A012", "A014", "A006"],
+        "tobe": [
+          "YWD002",
+          "YWS001",
+          "YWW005",
+          "PM008",
+          "PM007",
+          "YA011",
+          "YA007",
+          "PM009",
+          "PF003"
+        ],
+        "pickup": 1,
+        "limit": 3,
+        "name": {
+          "kr": "생명의 나무",
+          "en": "Tree of Life",
+          "ja": "生命の木",
+          "cn": "生命樹枝"
+        },
+        "stack": 1
+      },
+      {
+        "id": "PM007",
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1ZnU7GleuOkMDgmAqwfe25dSTu0OVJSKY",
         "location": false,
@@ -1049,10 +988,64 @@
           "cn": "三昧真火"
         },
         "stack": 1,
-        "material": ["BM009", "WM006"],
-        "atk0": 10,
-        "def0": 10,
-        "basic_atk0": 15
+        "material": ["PM006", "WM006"]
+      },
+      {
+        "id": "PM008",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1A1E33NXpnTLAsfDJstG0mIbNcB29IDBV",
+        "location": false,
+        "tobe": ["PWJ004", "YWB004", "YWV001", "YB001", "YS002", "YWE002"],
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "만년빙",
+          "en": "Glacial Ice",
+          "ja": "万年氷",
+          "cn": "萬年冰"
+        },
+        "stack": 1,
+        "material": ["PM006", "WD003"]
+      },
+      {
+        "id": "PM009",
+        "sort": "material",
+        "img": "https://lh3.google.com/u/0/d/1w4HiSiOKdEEDpFAOSIKTaNkQkk-rouOO",
+        "location": false,
+        "tobe": [
+          "YWA001",
+          "YWK002",
+          "YWM001",
+          "YWJ001",
+          "YWL001",
+          "YWI001",
+          "YWG001",
+          "YWF001",
+          "YWN002",
+          "YWD001",
+          "YWW003",
+          "YWW006",
+          "YWW009",
+          "YWU001",
+          "YH002",
+          "YC004",
+          "YC008",
+          "YS003",
+          "YB003",
+          "YB005",
+          "YA001",
+          "YT001"
+        ],
+        "pickup": 1,
+        "limit": 3,
+        "name": {
+          "kr": "포스 코어",
+          "en": "Force Core",
+          "ja": "フォースコアー",
+          "cn": "能源晶石"
+        },
+        "stack": 1,
+        "material": ["PM006", "PM003"]
       }
     ]
   },
@@ -1300,29 +1293,12 @@
         "sort": "trap",
         "img": "https://lh3.google.com/u/0/d/1SgFAO7z2GHWIelMbaaxPj7BTosQOsRN_",
         "location": false,
-        "tobe": ["PWI002", "PWL004", "PT001", "PT002", "YT002"],
+        "tobe": ["BWI007", "PWL004", "PT001", "PT002", "YT002"],
         "pickup": 1,
         "limit": 5,
         "name": { "kr": "RDX", "en": "RDX", "ja": "RDX", "cn": "RDX 高能炸藥" },
         "stack": 1,
         "material": ["GT003", "WM005"]
-      },
-      {
-        "id": "BT002",
-        "sort": "trap",
-        "img": "https://lh3.google.com/u/0/d/11aGiQd7Zvo83IW1mBudemDJnyBF_a8Hm",
-        "location": false,
-        "tobe": ["PWE008", "PWF004"],
-        "pickup": 2,
-        "limit": 5,
-        "name": {
-          "kr": "미스릴 실",
-          "en": "Mithril String",
-          "ja": "ミスリル糸",
-          "cn": "秘銀細線"
-        },
-        "stack": 2,
-        "material": ["WM021", "BM006"]
       },
       {
         "id": "BT003",
@@ -1468,6 +1444,23 @@
         "material": ["BT004", "GT008"]
       },
       {
+        "id": "PT005",
+        "sort": "trap",
+        "img": "https://lh3.google.com/u/0/d/11aGiQd7Zvo83IW1mBudemDJnyBF_a8Hm",
+        "location": false,
+        "tobe": ["YWE003", "YWF002"],
+        "pickup": 2,
+        "limit": 5,
+        "name": {
+          "kr": "미스릴 실",
+          "en": "Mithril String",
+          "ja": "ミスリル糸",
+          "cn": "秘銀細線"
+        },
+        "stack": 2,
+        "material": ["WM021", "PM002"]
+      },
+      {
         "id": "YT001",
         "sort": "trap",
         "img": "https://lh3.google.com/u/0/d/1lZ6TEbqvsEB5E2HdUgAwhwFTuyquasC2",
@@ -1482,7 +1475,7 @@
           "cn": "遙控地雷"
         },
         "stack": 3,
-        "material": ["GT002", "PM002"]
+        "material": ["GT002", "PM009"]
       },
       {
         "id": "YT002",
@@ -1635,7 +1628,7 @@
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1HaSwKv5Tx-vg8A_Yw0kKXzkd5XtqOrB4",
         "location": ["A004", "A005", "A012"],
-        "tobe": ["GF010", "BF023", "BD008"],
+        "tobe": ["GF010", "BF023"],
         "pickup": 1,
         "limit": 6,
         "name": {
@@ -1685,7 +1678,7 @@
         "img": "https://lh3.google.com/u/0/d/1RhbRK5w23_aHrOgA_OkQsERyWWPZgkUT",
         "location": false,
         "tobe": false,
-        "pickup": 1,
+        "pickup": 2,
         "limit": 6,
         "name": {
           "kr": "대구 간 통조림",
@@ -1702,7 +1695,7 @@
         "img": "https://lh3.google.com/u/0/d/1KeDbF5ktfW-1j3fWo2y_ITPtDQ36WZB8",
         "location": false,
         "tobe": false,
-        "pickup": 2,
+        "pickup": 3,
         "limit": 6,
         "name": {
           "kr": "마늘빵",
@@ -1731,7 +1724,7 @@
         "img": "https://lh3.google.com/u/0/d/1lMc2eJMJ41_vr78JdQSptOFla8sEY9Yq",
         "location": false,
         "tobe": false,
-        "pickup": 1,
+        "pickup": 6,
         "limit": 6,
         "name": {
           "kr": "붕어빵",
@@ -1769,7 +1762,7 @@
         "limit": 6,
         "name": { "kr": "난초", "en": "Orchid", "ja": "ハーブ", "cn": "藥草" },
         "stack": 2,
-        "material": ["WF011", "WA002"]
+        "material": ["WF011", "WM026"]
       },
       {
         "id": "GF012",
@@ -1777,7 +1770,7 @@
         "img": "https://lh3.google.com/u/0/d/1rPwlbz2JjvHQ4ZI7FroMMMlZHFZnhYhr",
         "location": false,
         "tobe": false,
-        "pickup": 1,
+        "pickup": 2,
         "limit": 6,
         "name": {
           "kr": "마늘 베이컨 말이",
@@ -1794,7 +1787,7 @@
         "img": "https://lh3.google.com/u/0/d/1kA_DD8xsdb7UKqk9YIXAMsTYh_N_B19j",
         "location": false,
         "tobe": false,
-        "pickup": 1,
+        "pickup": 2,
         "limit": 6,
         "name": { "kr": "번", "en": "Bun", "ja": "バン", "cn": "小麵包" },
         "stack": 1,
@@ -1823,7 +1816,7 @@
         "img": "https://lh3.google.com/u/0/d/15juczNCcHjjUtpxXYetRuRnaq4RleAgO",
         "location": false,
         "tobe": false,
-        "pickup": 1,
+        "pickup": 2,
         "limit": 6,
         "name": {
           "kr": "달걀 생선 필레",
@@ -1874,7 +1867,7 @@
         "img": "https://lh3.google.com/u/0/d/1rQCqTrXHoALD8UoUtmiiifMV2cYBO_Y2",
         "location": false,
         "tobe": false,
-        "pickup": 2,
+        "pickup": 3,
         "limit": 6,
         "name": {
           "kr": "계란빵",
@@ -1891,7 +1884,7 @@
         "img": "https://lh3.google.com/u/0/d/1i9_eLHkFSvbIrnX_jC9HGrMNsuZbLtmu",
         "location": false,
         "tobe": false,
-        "pickup": 2,
+        "pickup": 3,
         "limit": 6,
         "name": {
           "kr": "초코 아이스크림",
@@ -2294,22 +2287,6 @@
         "material": ["GF018", "WF009"]
       },
       {
-        "id": "BF027",
-        "sort": "food",
-        "img": "https://lh3.google.com/u/0/d/1uQN5_9tWUVAtgsI2jE4p__gYpTkf2Bsu",
-        "location": ["A000"],
-        "tobe": false,
-        "pickup": 1,
-        "limit": 6,
-        "name": {
-          "kr": "구급상자",
-          "en": "First Aid Kit",
-          "ja": "救急箱",
-          "cn": "醫藥箱"
-        },
-        "stack": 1
-      },
-      {
         "id": "BF028",
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1V1DD-760k6micv2E04Snh-jXGViJTx9d",
@@ -2324,7 +2301,7 @@
           "cn": "聖水"
         },
         "stack": 3,
-        "material": ["BM006", "WD002"]
+        "material": ["PM002", "WD002"]
       },
       {
         "id": "PF001",
@@ -2375,7 +2352,23 @@
           "cn": "大還丹"
         },
         "stack": 3,
-        "material": ["BM009", "WA005"]
+        "material": ["PM006", "WA005"]
+      },
+      {
+        "id": "PF004",
+        "sort": "food",
+        "img": "https://lh3.google.com/u/0/d/1uQN5_9tWUVAtgsI2jE4p__gYpTkf2Bsu",
+        "location": ["A000"],
+        "tobe": false,
+        "pickup": 1,
+        "limit": 6,
+        "name": {
+          "kr": "구급상자",
+          "en": "First Aid Kit",
+          "ja": "救急箱",
+          "cn": "醫藥箱"
+        },
+        "stack": 1
       }
     ]
   },
@@ -2399,7 +2392,6 @@
         "img": "https://lh3.google.com/u/0/d/1oBJ2fniH9jpU1gUoI2QD1UY32xdS6GMU",
         "location": ["A004", "A005", "A007", "A009", "A012", "A014", "A015"],
         "tobe": [
-          "GM005",
           "BM002",
           "GD001",
           "GD003",
@@ -2422,7 +2414,7 @@
         "tobe": [
           "GWV002",
           "PWE004",
-          "PM003",
+          "PM008",
           "GF024",
           "GD006",
           "GD015",
@@ -2560,7 +2552,7 @@
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1VXwJrFKSJSO3A2-2qCUwUDy0txQnVS1X",
         "location": false,
-        "tobe": ["BD002", "BD005", "BD008"],
+        "tobe": ["BD002", "BD005"],
         "pickup": 1,
         "limit": 6,
         "name": { "kr": "백주", "en": "Baijiu", "ja": "白酒", "cn": "白酒" },
@@ -2783,7 +2775,7 @@
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1wOHBrr_jGdLr2num3xBHvD74XbWThfEF",
         "location": false,
-        "tobe": ["PWV002", "PC012", "PA003"],
+        "tobe": ["PWV002", "PC012", "YA008"],
         "pickup": 2,
         "limit": 6,
         "name": {
@@ -2801,7 +2793,7 @@
         "img": "https://lh3.google.com/u/0/d/1SCYN2spmWvf3qA0bHCYz3JVqGYH2JDZ1",
         "location": false,
         "tobe": false,
-        "pickup": 3,
+        "pickup": 6,
         "limit": 6,
         "name": {
           "kr": "고량주",
@@ -2861,7 +2853,7 @@
           "cn": "花酒"
         },
         "stack": 5,
-        "material": ["GD004", "WA002"]
+        "material": ["GD004", "WM026"]
       },
       {
         "id": "BD006",
@@ -2898,29 +2890,12 @@
         "material": ["GD001", "WD005"]
       },
       {
-        "id": "BD008",
-        "sort": "drink",
-        "img": "https://lh3.google.com/u/0/d/1vDAbT9Em08nbrBXe7mrY2u2Akhh5RAJt",
-        "location": false,
-        "tobe": false,
-        "pickup": 3,
-        "limit": 6,
-        "name": {
-          "kr": "약주",
-          "en": "Herbal Liquor",
-          "ja": "薬酒",
-          "cn": "藥酒"
-        },
-        "stack": 3,
-        "material": ["GD004", "WF011"]
-      },
-      {
         "id": "BD009",
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1w4JlEDYyAWBYcwVexFif_EmS0BkRdJrK",
         "location": false,
         "tobe": false,
-        "pickup": 5,
+        "pickup": 6,
         "limit": 6,
         "name": {
           "kr": "위스키 콕",
@@ -2963,7 +2938,7 @@
           "cn": "塞勒涅之淚"
         },
         "stack": 3,
-        "material": ["BM008", "WD002"]
+        "material": ["PM004", "WD002"]
       }
     ]
   }

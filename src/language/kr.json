@@ -26,8 +26,9 @@
     "commonDrop1": "나뭇가지, 돌멩이: 채집",
     "commonDrop2": "고기: 닭, 멧돼지, 늑대, 곰",
     "commonDrop3": "가죽: 닭, 들개, 늑대, 곰",
-    "commonDrop4": "구급상자, VF 혈액샘플: 위클라인",
-    "commonDrop5": "카드모스의 부름: 에키온 패시브 스킬",
+    "commonDrop4": "VF 혈액샘플: 위클라인",
+    "commonDrop5": "구급상자: 전송 콘솔",
+    "commonDrop6": "카드모스의 부름: 에키온 패시브 스킬",
     "map": "지도",
     "manual": "사용팁"
   },

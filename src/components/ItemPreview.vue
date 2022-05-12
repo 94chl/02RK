@@ -272,9 +272,10 @@
         return itemInfo;
       },
       cartItemOptions() {
-        return Object.keys(this.cartItem).filter(
+        const cartItemOptions = Object.keys(this.cartItem).filter(
           (option) => !this.necessaryOptions.includes(option)
         );
+        return cartItemOptions;
       },
       recommendRoutes() {
         return this.$store.state.recommendRoutes;

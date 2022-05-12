@@ -667,12 +667,6 @@ export const itemOptions = {
     ja: "行動妨害耐性",
     cn: "負面效果抵禦",
   },
-  uniq012: {
-    kr: "불꽃 결계",
-    en: "Flame Barrier",
-    ja: "炎の結界",
-    cn: "熾焰",
-  },
   uniq013: {
     kr: "치유방해(기본공격)",
     en: "Healing Reduction: Basic Attack",
@@ -704,10 +698,10 @@ export const itemOptions = {
     cn: "逆流 - 血之契約",
   },
   uniq018: {
-    kr: "신속 - 산들바람",
-    en: "Streamlined: Zephyr",
-    ja: "迅速 - そよ風",
-    cn: "神速 - 微風",
+    kr: "세컨드 윈드-공방일체",
+    en: "Second Wind: Quick Guard",
+    ja: "セカンドウインド - 攻防一体",
+    cn: "逆流 - 攻防一體",
   },
   uniq019: {
     kr: "신속 - 플라즈마",
@@ -722,10 +716,10 @@ export const itemOptions = {
     cn: "神速 - 魯德拉的短劍",
   },
   uniq021: {
-    kr: "최후의 한발 - 마탄",
-    en: "Conclusion: Last Word",
-    ja: "最後の一発 - 魔弾",
-    cn: "最後一發 - 魔彈",
+    kr: "신속 - 산들바람",
+    en: "Streamlined: Zephyr",
+    ja: "迅速 - そよ風",
+    cn: "神速 - 微風",
   },
   uniq022: {
     kr: "최후의 한발 - 더블 탭",
@@ -734,16 +728,10 @@ export const itemOptions = {
     cn: "最後一發 - 煞尾",
   },
   uniq023: {
-    kr: "독사의 맹독",
-    en: "Necrosis",
-    ja: "毒蛇の猛毒",
-    cn: "猛毒",
-  },
-  uniq024: {
-    kr: "VF제어 강화",
-    en: "VF Control Enhancement",
-    ja: "VF制御強化",
-    cn: "VF支配 強化",
+    kr: "최후의 한발 - 마탄",
+    en: "Conclusion: Last Word",
+    ja: "最後の一発 - 魔弾",
+    cn: "最後一發 - 魔彈",
   },
   uniq025: {
     kr: "차지드 스트라이크",
@@ -763,17 +751,41 @@ export const itemOptions = {
     ja: "チャージ - 閃光",
     cn: "充能 - 闪光",
   },
-  uniq028: {
+  uniq030: {
+    kr: "불꽃 결계",
+    en: "Flame Barrier",
+    ja: "炎の結界",
+    cn: "熾焰",
+  },
+  uniq031: {
+    kr: "발화",
+    en: "Smolder",
+    ja: "発火",
+    cn: "起火",
+  },
+  uniq033: {
     kr: "토납",
     en: "Tranquility",
     ja: "吐納",
     cn: "吐息",
   },
-  uniq029: {
+  uniq034: {
     kr: "한파",
     en: "Lich's Grasp",
     ja: "寒波",
     cn: "寒波",
+  },
+  uniq040: {
+    kr: "독사의 맹독",
+    en: "Necrosis",
+    ja: "毒蛇の猛毒",
+    cn: "猛毒",
+  },
+  uniq041: {
+    kr: "VF제어 강화",
+    en: "VF Control Enhancement",
+    ja: "VF制御強化",
+    cn: "VF支配 強化",
   },
   buff001: {
     kr: "신속 - 루드라의 단검",

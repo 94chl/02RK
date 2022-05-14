@@ -12,7 +12,6 @@
           "WWV001",
           "GWI002",
           "GA003",
-          "GM013",
           "BF021",
           "GD003",
           "GD004"
@@ -32,7 +31,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1jtEKbpRsEoXIuW7BkBl-O3TWJdaSaxpN",
         "location": ["A000"],
-        "tobe": ["GH005", "BS006", "GA003", "GM006", "GM012", "PM004"],
+        "tobe": ["GH005", "BS001", "GA003", "GM006", "GM012", "PM004"],
         "pickup": 2,
         "limit": 3,
         "name": { "kr": "돌멩이", "en": "Stone", "ja": "石ころ", "cn": "石頭" },
@@ -325,7 +324,8 @@
           "GB001",
           "GB003",
           "BB001",
-          "BS003"
+          "BS003",
+          "GM013"
         ],
         "pickup": 1,
         "limit": 3,
@@ -338,7 +338,6 @@
         "img": "https://lh3.google.com/u/0/d/11pAGMhFCBCgT6qLLpClORhWia3ysAi2l",
         "location": ["A003", "A008", "A016"],
         "tobe": [
-          "PWD001",
           "BWG001",
           "BWI005",
           "BWK001",
@@ -384,7 +383,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1hr1xVCG2UJKYiQp88zZmutR6pmYpyoz4",
         "location": ["A003", "A011", "A015"],
-        "tobe": ["GWA002", "GWA003", "GWI003", "GWJ002", "GM009"],
+        "tobe": ["GWA002", "GWI003", "GWJ002", "GM009"],
         "pickup": 1,
         "limit": 2,
         "name": {
@@ -400,7 +399,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1k6O37KCJKredVkmJ_BBypBKBOYzAJO23",
         "location": ["A005", "A007", "A012", "A013"],
-        "tobe": ["GWC001", "GM011"],
+        "tobe": ["GWC001", "GWD001", "GM011"],
         "pickup": 1,
         "limit": 2,
         "name": {
@@ -726,7 +725,7 @@
           "cn": "精裝"
         },
         "stack": 1,
-        "material": ["WM015", "WM001"]
+        "material": ["WM015", "WM019"]
       },
       {
         "id": "GM014",
@@ -897,6 +896,7 @@
           "PWT005",
           "YC002",
           "YH004",
+          "YS001",
           "PM004",
           "PM009"
         ],
@@ -919,7 +919,6 @@
           "YWQ004",
           "YWV002",
           "YB007",
-          "PB010",
           "YA008",
           "YA010",
           "YA003",
@@ -1102,7 +1101,7 @@
         "img": "https://lh3.google.com/u/0/d/1zjI8wdNc5EEp_SN_NZeBI5wpw2EffOb_",
         "location": false,
         "material": ["WT003", "WM020"],
-        "tobe": ["PWA004", "PWH001", "PH008", "BB004", "PT001"],
+        "tobe": ["PWD001", "PWA004", "PWH001", "PH008", "BB004", "PT001"],
         "pickup": 2,
         "limit": 5,
         "name": {
@@ -1135,7 +1134,7 @@
         "sort": "trap",
         "img": "https://lh3.google.com/u/0/d/1F90nUmywtr8ZNjoeoloi0bCT2vR_P-k7",
         "location": false,
-        "tobe": ["BWM004", "BT001"],
+        "tobe": ["BWM004", "BT001", "YWJ002"],
         "pickup": 1,
         "limit": 5,
         "name": {
@@ -1505,7 +1504,7 @@
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1eJ3QoVFoZyXaFNadrxjgbSTw4q4tqsbL",
         "location": ["A002", "A004", "A005"],
-        "tobe": ["BF001", "BF003", "BF012", "BF025"],
+        "tobe": ["BF001", "BF003", "BF012"],
         "pickup": 2,
         "limit": 6,
         "name": {
@@ -1521,7 +1520,7 @@
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1LslpdOkDe_OEGVRDZat9j2ncBn5imdnL",
         "location": ["A010", "A011", "A013"],
-        "tobe": ["GF001", "GF002", "GF017", "BF009", "BF010", "BF015"],
+        "tobe": ["GF001", "GF002", "BF009", "BF010", "BF015"],
         "pickup": 2,
         "limit": 6,
         "name": { "kr": "대구", "en": "Cod", "ja": "タラ", "cn": "鱈魚" },
@@ -1532,7 +1531,7 @@
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1QgBXhy5zCstLKKbcCLG1MaDRGfJrRPHE",
         "location": ["A005", "A007", "A012"],
-        "tobe": ["GF006", "BF004"],
+        "tobe": ["GF017", "GF006", "BF004"],
         "pickup": 2,
         "limit": 6,
         "name": { "kr": "붕어", "en": "Carp", "ja": "鮒", "cn": "鯉魚" },
@@ -1826,7 +1825,7 @@
           "cn": "蛋煎魚片"
         },
         "stack": 1,
-        "material": ["WF002", "WF009"]
+        "material": ["WF003", "WF009"]
       },
       {
         "id": "GF018",
@@ -2190,7 +2189,7 @@
         "sort": "food",
         "img": "https://lh3.google.com/u/0/d/1McVaReYdfhNzfm7daU_iPEwDG6TsCQjq",
         "location": false,
-        "tobe": false,
+        "tobe": ["PB010"],
         "pickup": 2,
         "limit": 6,
         "name": {
@@ -2381,7 +2380,7 @@
         "sort": "drink",
         "img": "https://lh3.google.com/u/0/d/1ZkKcOqJmGpPea9v5TfqAOQYHMAHxGqMn",
         "location": ["A002", "A003", "A012"],
-        "tobe": ["GF001", "GF020", "GD009", "GD011", "GD014", "BD004"],
+        "tobe": ["GF001", "GF020", "GD009", "GD011", "GD014", "BD004", "BF025"],
         "pickup": 2,
         "limit": 6,
         "name": { "kr": "꿀", "en": "Honey", "ja": "はちみつ", "cn": "蜂蜜" },

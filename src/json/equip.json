@@ -148,7 +148,7 @@
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1dpvxx4xBrLGuWkaA3VbCGoj34_4ONwRJ",
         "location": false,
-        "tobe": ["BC006", "PC010"],
+        "tobe": ["BC006", "PC010", "YC003"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -730,7 +730,7 @@
           "cn": "餘暉鎧甲"
         },
         "stack": 1,
-        "material": ["GC001", "GM004"],
+        "material": ["BC002", "GM004"],
         "def0": 23,
         "hp0": 220,
         "vision0": 1
@@ -1129,7 +1129,7 @@
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1JRxsC281oQk5_rZyB-tDmYz-RqSV8i02",
         "location": false,
-        "tobe": ["BH003", "YH001", "YH002"],
+        "tobe": ["BH003", "PH010", "YH001", "YH002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1928,7 +1928,7 @@
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1xPLwO9Y_nF-O0RkPfYEsin_UBaAXLQ3g",
         "location": false,
-        "tobe": ["PB005"],
+        "tobe": ["PB005", "PB010"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2303,7 +2303,7 @@
           "cn": "南丁格爾"
         },
         "stack": 1,
-        "material": ["GB004", "PM004"],
+        "material": ["GB002", "BF021"],
         "atk0": 20,
         "hp0": 160,
         "heal_up1": 0.15
@@ -2701,7 +2701,7 @@
         "sort": "shoes",
         "img": "https://lh3.google.com/u/0/d/1EYQih02n4U--OjFljtSBifJX4xfpPpLJ",
         "location": false,
-        "tobe": ["BS003"],
+        "tobe": ["BS003", "PS010"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "부츠", "en": "Boots", "ja": "ブーツ", "cn": "靴子" },
@@ -3379,7 +3379,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/109IZynIb6W7Ny1mm05wIZX5ag_S-R0Z3",
         "location": false,
-        "tobe": ["PWE005", "PWP005", "PWT007", "BA009"],
+        "tobe": ["BA009", "PWD005", "PWE005", "PWP005", "PWT007"],
         "pickup": 1,
         "limit": 1,
         "name": {

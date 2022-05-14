@@ -8,7 +8,7 @@
         "sort": "dagger",
         "img": "https://lh3.google.com/u/0/d/1vfOpH94inv5xPx409K7WM1fbTQ3_01GQ",
         "location": ["A002", "A006", "A015"],
-        "tobe": ["BWA002", "BWT003", "GC006", "GC007", "GH003"],
+        "tobe": ["BWA002", "BWT003", "GWD001", "GC006", "GC007", "GH003"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -24,15 +24,7 @@
         "sort": "dagger",
         "img": "https://lh3.google.com/u/0/d/1CWaccytlbfcaGI2f-cJMvKRo6rFKbCUg",
         "location": ["A004", "A010", "A014"],
-        "tobe": [
-          "WWD001",
-          "GWA001",
-          "GWD001",
-          "BWQ001",
-          "BA010",
-          "GT007",
-          "BWV003"
-        ],
+        "tobe": ["WWD001", "GWA001", "GWA003", "BWQ001", "BA010", "BWV003"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -90,7 +82,7 @@
           "cn": "拳刃"
         },
         "stack": 1,
-        "material": ["WM022", "WWE001"],
+        "material": ["WWA003", "WWE001"],
         "atk0": 15
       },
       {
@@ -356,8 +348,8 @@
           "GWB002",
           "BWB001",
           "BWB004",
-          "GWD001",
-          "GA010"
+          "GA010",
+          "GT007"
         ],
         "pickup": 1,
         "limit": 1,
@@ -689,7 +681,7 @@
           "cn": "極光長劍"
         },
         "stack": 1,
-        "material": ["BWB006", "PM003"],
+        "material": ["GWB002", "PM003"],
         "atk0": 67,
         "atk_spd1": 0.38,
         "vision0": 2,
@@ -813,7 +805,7 @@
         "sort": "axe",
         "img": "https://lh3.google.com/u/0/d/1WEvf9j3iU1GgbrLNuEt-uouLsLm2BBOE",
         "location": false,
-        "tobe": ["BWC001", "BWC003"],
+        "tobe": ["BWC001", "BWC003", "YWC002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1124,7 +1116,7 @@
           "cn": "盤古斧"
         },
         "stack": 1,
-        "material": ["BWC003", "BA012"],
+        "material": ["GWC002", "PM009"],
         "atk0": 115,
         "atk_spd1": 0.2,
         "uniq011": {
@@ -1186,7 +1178,7 @@
         "sort": "dual",
         "img": "https://lh3.google.com/u/0/d/1Te0dxzBaH68JI7XmtsMGIEwEvVjlplB_",
         "location": false,
-        "tobe": ["PWD001"],
+        "tobe": ["PWD001", "PWD005"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1339,7 +1331,7 @@
           "cn": "羅伊格爾＆扎爾"
         },
         "stack": 1,
-        "material": ["BWD002", "GM007"],
+        "material": ["BWD002", "PM006"],
         "atk0": 35,
         "grow_skill1": 0.02,
         "uniq006": {
@@ -1419,7 +1411,7 @@
         "sort": "glove",
         "img": "https://lh3.google.com/u/0/d/1uFitslBawi6QRMLDtKOQJBaxmmY-z6RQ",
         "location": ["A007", "A012"],
-        "tobe": ["GWA003", "GWE002"],
+        "tobe": ["GWE002", "GWA003"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2945,7 +2937,7 @@
         "sort": "throw",
         "img": "https://lh3.google.com/u/0/d/1lIvMiHPHNONseQXpsIw_f0IS-ymaxhLn",
         "location": false,
-        "tobe": ["PWI001"],
+        "tobe": ["PWI001", "PWI009"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3228,7 +3220,7 @@
           "cn": "黏性炸彈"
         },
         "stack": 1,
-        "material": ["PWI001", "GWI001"],
+        "material": ["BWI003", "GWI001"],
         "load0": 28,
         "atk0": 68,
         "atk_spd1": 0.2,
@@ -3277,7 +3269,7 @@
           "cn": "魔導稜鏡"
         },
         "stack": 1,
-        "material": ["BWI003", "PM009"],
+        "material": ["GWI003", "PM009"],
         "load0": 50,
         "atk0": 103,
         "atk_spd1": 0.33
@@ -3405,7 +3397,7 @@
         "sort": "shuriken",
         "img": "https://lh3.google.com/u/0/d/19-Vl18Zr2M2-vUZF-QHSQqkuSXh6OQ7p",
         "location": false,
-        "tobe": ["BWJ004"],
+        "tobe": ["BWJ004", "PWJ005"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3443,7 +3435,7 @@
         "sort": "shuriken",
         "img": "https://lh3.google.com/u/0/d/1sdYu25Iwf9OVHcBYil_Q2DL3v2IhuwML",
         "location": false,
-        "tobe": ["PWJ003", "PWJ005"],
+        "tobe": ["PWJ003"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3670,7 +3662,7 @@
           "cn": "蔚藍匕首"
         },
         "stack": 1,
-        "material": ["BWJ004", "BM002"],
+        "material": ["BWJ002", "BM002"],
         "load0": 50,
         "atk0": 34,
         "skill1": 0.2,
@@ -3774,7 +3766,6 @@
         "material": ["PWJ004", "GT003"],
         "load0": 4,
         "atk0": 75,
-        "cri_atk1": 0.25,
         "basic_atk0": 110,
         "skill1": 0.19
       },
@@ -6089,7 +6080,7 @@
         "sort": "rapier",
         "img": "https://lh3.google.com/u/0/d/1qo4OiCQiuV3FZydGro3X98ScVoOsDI2D",
         "location": false,
-        "tobe": ["PWS002", "PWS003", "PWS004"],
+        "tobe": ["PWS002", "PWS003", "YWS003"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -6212,44 +6203,6 @@
         "cool1": 0.08
       },
       {
-        "id": "PWS004",
-        "sort": "rapier",
-        "img": "https://lh3.google.com/u/0/d/1fNYtxi1O8usIfnQjbNSoHFq1Ek6nJrwA",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "유성검",
-          "en": "Meteor Claymore",
-          "ja": "流星剣",
-          "cn": "隕星重劍"
-        },
-        "stack": 1,
-        "material": ["BWS001", "PM003"],
-        "atk0": 49,
-        "cool1": 0.12,
-        "cri_atk1": 0.12,
-        "uniq025": {
-          "detail": {
-            "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 3초"],
-            "en": [
-              "Your next basic attack gains a bonus critical strike chance",
-              "Cooldown: 3s"
-            ],
-            "ja": [
-              "次の基本攻撃が100%の致命打確率ボーナスを獲得",
-              "クールダウン:3秒"
-            ],
-            "cn": [
-              "Your next basic attack gains a bonus critical strike chance",
-              "Cooldown: 3s"
-            ]
-          },
-          "value": 1
-        }
-      },
-      {
         "id": "PWS006",
         "sort": "rapier",
         "img": "https://lh3.google.com/u/0/d/1wbz5pUCwABqVK5NdDZfVWtbNOmgO_8IN",
@@ -6344,6 +6297,44 @@
         "cri_rate1": 0.1,
         "cri_atk1": 0.12,
         "move_spd0": 0.1
+      },
+      {
+        "id": "YWS003",
+        "sort": "rapier",
+        "img": "https://lh3.google.com/u/0/d/1fNYtxi1O8usIfnQjbNSoHFq1Ek6nJrwA",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "유성검",
+          "en": "Meteor Claymore",
+          "ja": "流星剣",
+          "cn": "隕星重劍"
+        },
+        "stack": 1,
+        "material": ["BWS001", "PM003"],
+        "atk0": 49,
+        "cool1": 0.12,
+        "cri_atk1": 0.12,
+        "uniq025": {
+          "detail": {
+            "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 3초"],
+            "en": [
+              "Your next basic attack gains a bonus critical strike chance",
+              "Cooldown: 3s"
+            ],
+            "ja": [
+              "次の基本攻撃が100%の致命打確率ボーナスを獲得",
+              "クールダウン:3秒"
+            ],
+            "cn": [
+              "Your next basic attack gains a bonus critical strike chance",
+              "Cooldown: 3s"
+            ]
+          },
+          "value": 1
+        }
       }
     ]
   },
@@ -6739,7 +6730,7 @@
         "sort": "camera",
         "img": "https://lh3.google.com/u/0/d/1JLju5XQm8NDqJGvN-6f2btE716mz7lEO",
         "location": false,
-        "tobe": ["GWU001"],
+        "tobe": ["GWU001", "BWU001"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "렌즈", "en": "Lens", "ja": "レンズ", "cn": "鏡頭" },
@@ -6780,7 +6771,7 @@
           "cn": "數位相機"
         },
         "stack": 1,
-        "material": ["GWU001", "GT011"],
+        "material": ["WWU001", "GT011"],
         "atk0": 24,
         "vision0": 1
       },

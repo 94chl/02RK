@@ -893,7 +893,7 @@
           "YWW008",
           "YWJ003",
           "YWM002",
-          "PWS004",
+          "YWS003",
           "PWT005",
           "YC002",
           "YH004",
@@ -1014,6 +1014,7 @@
         "location": false,
         "tobe": [
           "YWA001",
+          "YWC002",
           "YWK002",
           "YWM001",
           "YWJ001",
@@ -1212,7 +1213,7 @@
           "cn": "斷頭台"
         },
         "stack": 1,
-        "material": ["WT003", "WWA003"]
+        "material": ["WT003", "WWB001"]
       },
       {
         "id": "GT008",

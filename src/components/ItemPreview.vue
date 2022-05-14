@@ -391,6 +391,7 @@
         border-radius: 5px;
 
         &.uniqueOption > div {
+          display: flex;
           flex-direction: column;
           align-items: flex-start;
 
@@ -404,7 +405,7 @@
             display: block;
             max-width: 100%;
             ul {
-              list-style: disc outside;
+              list-style: disc inside;
               padding: 0 4px;
 
               .optionDetail {
@@ -417,7 +418,8 @@
 
         > div {
           width: 100%;
-          display: flex;
+          display: grid;
+          grid-template-columns: auto 1fr;
           column-gap: 5px;
           text-indent: 0;
           align-items: center;
@@ -435,6 +437,7 @@
             line-height: 20px;
             border: none;
             font-size: 0.9em;
+            width: fit-content;
           }
         }
 

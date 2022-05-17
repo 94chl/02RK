@@ -844,6 +844,7 @@
         ],
         "pickup": 1,
         "limit": 3,
+        "transferConsole": 100,
         "name": {
           "kr": "VF 혈액 샘플",
           "en": "VF Blood Sample",
@@ -874,6 +875,7 @@
         ],
         "pickup": 1,
         "limit": 3,
+        "transferConsole": 60,
         "name": {
           "kr": "미스릴",
           "en": "Mithril",
@@ -902,6 +904,7 @@
         ],
         "pickup": 1,
         "limit": 3,
+        "transferConsole": 55,
         "name": { "kr": "운석", "en": "Meteorite", "ja": "隕石", "cn": "隕石" },
         "stack": 1
       },
@@ -956,6 +959,7 @@
         ],
         "pickup": 1,
         "limit": 3,
+        "transferConsole": 55,
         "name": {
           "kr": "생명의 나무",
           "en": "Tree of Life",
@@ -966,7 +970,7 @@
       },
       {
         "id": "PM007",
-        "sort": "accessory",
+        "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1ZnU7GleuOkMDgmAqwfe25dSTu0OVJSKY",
         "location": false,
         "tobe": [
@@ -991,7 +995,7 @@
       },
       {
         "id": "PM008",
-        "sort": "accessory",
+        "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1A1E33NXpnTLAsfDJstG0mIbNcB29IDBV",
         "location": false,
         "tobe": ["PWJ004", "YWB004", "YWV001", "YB001", "YS002", "YWE002"],
@@ -1045,6 +1049,7 @@
           "cn": "能源晶石"
         },
         "stack": 1,
+        "transferConsole": 80,
         "material": ["PM006", "PM003"]
       }
     ]
@@ -2362,6 +2367,7 @@
         "tobe": false,
         "pickup": 1,
         "limit": 6,
+        "transferConsole": 20,
         "name": {
           "kr": "구급상자",
           "en": "First Aid Kit",

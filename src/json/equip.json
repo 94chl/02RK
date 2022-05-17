@@ -887,6 +887,7 @@
         "stack": 1,
         "material": ["BC003", "PM001"],
         "atk0": 27,
+        "def0": 10,
         "vamp1": 0.2,
         "move_spd0": 0.1,
         "uniq016": {
@@ -1714,30 +1715,30 @@
         },
         "stack": 1,
         "material": ["GH002", "PM007"],
-        "atk0": 16,
+        "atk0": 21,
         "def0": 18,
         "mp0": 500,
         "uniq031": {
           "detail": {
             "kr": [
               "기본 공격 시 상대를 불태워 매 초 자신의 레벨에 비례한 고정 피해를 입힘",
-              "피해량: 착용자 레벨*5(근)/*4(원)",
+              "피해량: 착용자 레벨*3.5(근)/*2.5(원)",
               "지속시간: 2초",
               "최대 1스택"
             ],
             "en": [
               "Basic attacks apply Smoldering and deal true damage to each 1 second",
-              "Damage: Character Level * 5(Melee)/4(Ranged)",
+              "Damage: Character Level * 3.5(Melee)/2.5(Ranged)",
               "Duration: 2s"
             ],
             "ja": [
               "基本攻撃対象に燃え1秒ごとに対象に固定ダメージ",
-              "ダメージ:キャラクターレベル*5(近)/4(遠)",
+              "ダメージ:キャラクターレベル*3.5(近)/2.5(遠)",
               "2秒間"
             ],
             "cn": [
               "Basic attacks apply Smoldering and deal true damage to each 1 second",
-              "Damage: Character Level * 5(Melee)/4(Ranged)",
+              "Damage: Character Level * 3.5(Melee)/2.5(Ranged)",
               "Duration: 2s"
             ]
           },
@@ -1808,7 +1809,7 @@
         },
         "stack": 1,
         "material": ["GH001", "PM001"],
-        "atk0": 20,
+        "atk0": 25,
         "vamp_all1": 0.2,
         "def0": 20,
         "mp0": 200,
@@ -3458,7 +3459,7 @@
         },
         "stack": 1,
         "material": ["WA004", "WM020"],
-        "skill1": 0.1,
+        "skill1": 0.08,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -3557,7 +3558,7 @@
         },
         "stack": 1,
         "material": ["GA009", "WA001"],
-        "skill1": 0.14,
+        "skill1": 0.11,
         "uniq009": {
           "detail": {
             "kr": ["+0.04"],
@@ -4013,7 +4014,7 @@
         "cool1": 0.12,
         "uniq014": {
           "detail": {
-            "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
+            "kr": ["스킬 공격 시, 대상의 치유 효과가 60%(근)/50%(원) 감소"],
             "en": [
               "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
             ],

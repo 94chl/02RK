@@ -601,6 +601,18 @@ export const itemOptions = {
     ja: "専用",
     cn: "專用",
   },
+  transferDrone: {
+    kr: "원격 전송 드론",
+    en: "Transfer Drone",
+    ja: "遠隔転送ドローン",
+    cn: "無人機配送",
+  },
+  transferConsole: {
+    kr: "전송 콘솔",
+    en: "Transfer Console",
+    ja: "転送コンソール",
+    cn: "傳送裝置",
+  },
   uniq001: {
     kr: "의념",
     en: "Biotic Infusion",

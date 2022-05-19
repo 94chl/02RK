@@ -712,7 +712,7 @@
         "material": ["BC004", "BD005"],
         "atk0": 15,
         "def0": 10,
-        "atk_spd1": 0.42,
+        "atk_spd1": 0.37,
         "mp_reg0": 2
       },
       {

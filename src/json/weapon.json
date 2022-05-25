@@ -565,7 +565,7 @@
         "material": ["BWB002", "WA008"],
         "atk0": 53,
         "grow_atk0": 1,
-        "atk_spd1": 0.3
+        "atk_spd1": 0.25
       },
       {
         "id": "PWB005",
@@ -1037,6 +1037,7 @@
             "en": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 8%",
+              "Duration: 5s",
               "At 3 stacks, you gain extra 20 Attack Power and 0.2 Movement speed"
             ],
             "ja": [
@@ -1047,6 +1048,7 @@
             "cn": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 8%",
+              "Duration: 5s",
               "At 3 stacks, you gain extra 20 Attack Power and 0.2 Movement speed"
             ]
           },
@@ -1547,7 +1549,7 @@
         "stack": 1,
         "material": ["BWE001", "WM018"],
         "atk0": 32,
-        "grow_basic_atk1": 0.01
+        "basic_atk1": 0.1
       },
       {
         "id": "BWE005",
@@ -1624,8 +1626,8 @@
         },
         "stack": 1,
         "material": ["BWE004", "WA008"],
-        "atk0": 45,
-        "grow_basic_atk1": 0.015
+        "atk0": 49,
+        "basic_atk1": 0.15
       },
       {
         "id": "PWE003",
@@ -1703,7 +1705,7 @@
         },
         "stack": 1,
         "material": ["BWE003", "GM002"],
-        "atk0": 47,
+        "atk0": 42,
         "def0": 10,
         "hp_reg1": 0.6,
         "mp_reg0": 1.2,
@@ -1744,16 +1746,19 @@
             "en": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 10%",
+              "Duration: 5s",
               "At 4 stacks, you gain extra 10 Attack Power"
             ],
             "ja": [
               "重畳された情熱スタックにつき",
               "攻撃速度:+10%",
+              "5秒間",
               "最大3重畳すると、10の攻撃力を追加"
             ],
             "cn": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 10%",
+              "Duration: 5s",
               "At 4 stacks, you gain extra 10 Attack Power"
             ]
           },
@@ -3526,7 +3531,7 @@
         "load0": 52,
         "atk0": 39,
         "cri_rate1": 0.15,
-        "cri_atk1": 0.15,
+        "cri_atk1": 0.1,
         "atk_spd1": 0.4
       },
       {
@@ -4400,7 +4405,7 @@
         "stack": 1,
         "material": ["BWL001", "BT001"],
         "atk0": 61,
-        "grow_basic_atk1": 0.02
+        "grow_basic_atk1": 0.017
       },
       {
         "id": "YWL001",
@@ -4418,7 +4423,8 @@
         },
         "stack": 1,
         "material": ["GWL002", "PM009"],
-        "atk0": 116,
+        "atk0": 112,
+        "atk_spd1": 0.2,
         "vision0": 2.5,
         "uniq003": {
           "detail": {
@@ -4645,7 +4651,7 @@
         "material": ["BWM003", "GM001"],
         "load0": 8,
         "atk0": 72,
-        "vamp1": 0.22,
+        "vamp1": 0.18,
         "atk_spd1": 0.25,
         "move_spd0": 0.06
       },
@@ -4780,16 +4786,19 @@
             "en": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 8%",
+              "Duration: 5s",
               "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
             ],
             "ja": [
               "重畳された情熱スタックにつき",
               "攻撃速度:+8%",
+              "5秒間",
               "最大3重畳すると、15の攻撃力と0.1の移動速度を追加"
             ],
             "cn": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 8%",
+              "Duration: 5s",
               "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
             ]
           },
@@ -6197,7 +6206,7 @@
         "stack": 1,
         "material": ["BWS001", "GM008"],
         "atk0": 38,
-        "cri_rate1": 0.25,
+        "cri_rate1": 0.2,
         "atk_spd1": 0.4,
         "cool1": 0.08
       },
@@ -6478,7 +6487,7 @@
         "sort": "guitar",
         "img": "https://lh3.google.com/u/0/d/1hbSH7_x7xqgHqoh9hU6DRn-su9bOaOGA",
         "location": false,
-        "tobe": ["PWT005", "PWT006"],
+        "tobe": ["YWT001", "PWT006"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -6599,77 +6608,7 @@
         "material": ["BWT004", "WM008"],
         "atk0": 51,
         "vamp1": 0.22,
-        "atk_spd1": 0.15
-      },
-      {
-        "id": "PWT005",
-        "sort": "guitar",
-        "img": "https://lh3.google.com/u/0/d/1dJEwn86_t9EmyIVZo5oDV9uyh2XLz8Am",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "원더풀 투나잇",
-          "en": "Wonderful Tonight",
-          "ja": "ワンダフルトゥナイト",
-          "cn": "絕色之夜"
-        },
-        "stack": 1,
-        "material": ["BWT005", "PM003"],
-        "atk0": 75,
-        "uniq002": {
-          "detail": {
-            "kr": [
-              "1스택 당 효과 적용",
-              "기본 공격이 적 실험체에게 명중하면 발동",
-              "현재 체력의 6%의 고유피해",
-              "열정 버프 1스택 획득"
-            ],
-            "en": [
-              "Hitting a test subject with a basic attack deals",
-              "Damage equal to 6% of the target’s current HP",
-              "Grants you a stack of Vigor for 5 seconds"
-            ],
-            "ja": [
-              "基本攻撃が敵実験体に的中する時",
-              "敵実験体の現在体力の6%のダメージ",
-              "5秒間情熱スタックを獲得"
-            ],
-            "cn": [
-              "Hitting a test subject with a basic attack deals",
-              "Damage equal to 6% of the target’s current HP",
-              "Grants you a stack of Vigor for 5 seconds"
-            ]
-          },
-          "value": 0.06
-        },
-        "buff004": {
-          "detail": {
-            "kr": [
-              "공격 속도: 8% 증가",
-              "지속 시간: 5초",
-              "최대 4스택",
-              "최대 스택: 공격력 +15, 이동속도 +0.1"
-            ],
-            "en": [
-              "Each stack of Vigor",
-              "Increases your Attack Speed by 8%",
-              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
-            ],
-            "ja": [
-              "重畳された情熱スタックにつき",
-              "攻撃速度:+8%",
-              "最大3重畳すると、15の攻撃力と0.1の移動速度を追加"
-            ],
-            "cn": [
-              "Each stack of Vigor",
-              "Increases your Attack Speed by 8%",
-              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
-            ]
-          },
-          "value": 0.08
-        }
+        "atk_spd1": 0.3
       },
       {
         "id": "PWT006",
@@ -6716,6 +6655,80 @@
             "cn": ["+0.35"]
           },
           "value": 0.35
+        }
+      },
+      {
+        "id": "YWT001",
+        "sort": "guitar",
+        "img": "https://lh3.google.com/u/0/d/1dJEwn86_t9EmyIVZo5oDV9uyh2XLz8Am",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "원더풀 투나잇",
+          "en": "Wonderful Tonight",
+          "ja": "ワンダフルトゥナイト",
+          "cn": "絕色之夜"
+        },
+        "stack": 1,
+        "material": ["BWT005", "PM003"],
+        "atk0": 75,
+        "atk_spd1": 0.2,
+        "uniq002": {
+          "detail": {
+            "kr": [
+              "1스택 당 효과 적용",
+              "기본 공격이 적 실험체에게 명중하면 발동",
+              "현재 체력의 6%의 고유피해",
+              "열정 버프 1스택 획득"
+            ],
+            "en": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 6% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds"
+            ],
+            "ja": [
+              "基本攻撃が敵実験体に的中する時",
+              "敵実験体の現在体力の6%のダメージ",
+              "5秒間情熱スタックを獲得"
+            ],
+            "cn": [
+              "Hitting a test subject with a basic attack deals",
+              "Damage equal to 6% of the target’s current HP",
+              "Grants you a stack of Vigor for 5 seconds"
+            ]
+          },
+          "value": 0.06
+        },
+        "buff004": {
+          "detail": {
+            "kr": [
+              "공격 속도: 8% 증가",
+              "지속 시간: 7초",
+              "최대 4스택",
+              "최대 스택: 공격력 +15, 이동속도 +0.1"
+            ],
+            "en": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 8%",
+              "Duration: 7s",
+              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
+            ],
+            "ja": [
+              "重畳された情熱スタックにつき",
+              "攻撃速度:+8%",
+              "7秒間",
+              "最大3重畳すると、15の攻撃力と0.1の移動速度を追加"
+            ],
+            "cn": [
+              "Each stack of Vigor",
+              "Increases your Attack Speed by 8%",
+              "Duration: 7s",
+              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
+            ]
+          },
+          "value": 0.08
         }
       }
     ]

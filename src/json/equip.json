@@ -710,7 +710,7 @@
         },
         "stack": 1,
         "material": ["BC004", "BD005"],
-        "atk0": 15,
+        "atk0": 12,
         "def0": 10,
         "atk_spd1": 0.37,
         "mp_reg0": 2
@@ -812,7 +812,7 @@
         },
         "stack": 1,
         "material": ["GC005", "PM001"],
-        "def0": 40,
+        "def0": 35,
         "hp_reg1": 1,
         "cool1": 0.3,
         "uniq007": {
@@ -842,8 +842,8 @@
         "stack": 1,
         "material": ["GC009", "PM009"],
         "atk0": 25,
-        "hp0": 225,
-        "cri_def1": 0.05,
+        "def0": 20,
+        "hp0": 120,
         "uniq004": {
           "detail": {
             "kr": [
@@ -944,7 +944,7 @@
         },
         "stack": 1,
         "material": ["GC001", "PM002"],
-        "def0": 5,
+        "def0": 50,
         "atk_spd1": 0.22,
         "move_spd0": 0.1
       },
@@ -976,19 +976,19 @@
           "detail": {
             "kr": [
               "전투에 돌입하면 매 초마다 2.5m 이내의 적에게 피해를 입힘",
-              "피해량: 착용자 최대 체력의 5.5%(근)/4%(원)"
+              "피해량: 착용자 최대 체력의 5%(근)/4%(원)"
             ],
             "en": [
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
-              "Damage: 5.5%(Melee)/4%(Ranged) of User's Max HP"
+              "Damage: 5%(Melee)/4%(Ranged) of User's Max HP"
             ],
             "ja": [
               "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージ",
-              "ダメージ:最大体力の5.5%(近)/4%(遠)"
+              "ダメージ:最大体力の5%(近)/4%(遠)"
             ],
             "cn": [
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
-              "Damage: 5.5%(Melee)/4%(Ranged) of User's Max HP"
+              "Damage: 5%(Melee)/4%(Ranged) of User's Max HP"
             ]
           },
           "value": 0.055
@@ -1427,8 +1427,9 @@
         },
         "stack": 1,
         "material": ["BH003", "GA003"],
+        "cri_atk1": 0.05,
         "cri_rate1": 0.2,
-        "def0": 24,
+        "def0": 18,
         "mp0": 400
       },
       {
@@ -1618,7 +1619,7 @@
         },
         "stack": 1,
         "material": ["GH002", "BB006"],
-        "atk0": 20,
+        "atk0": 18,
         "def0": 15,
         "cool1": 0.12,
         "mp0": 270
@@ -1761,7 +1762,7 @@
         },
         "stack": 1,
         "material": ["GH002", "PM009"],
-        "atk0": 25,
+        "atk0": 20,
         "def0": 40,
         "mp0": 300,
         "uniq001": {
@@ -1809,7 +1810,7 @@
         },
         "stack": 1,
         "material": ["GH001", "PM001"],
-        "atk0": 25,
+        "atk0": 22,
         "vamp_all1": 0.2,
         "def0": 20,
         "mp0": 200,
@@ -1852,7 +1853,7 @@
         },
         "stack": 1,
         "material": ["GH004", "PM002"],
-        "def0": 38,
+        "def0": 33,
         "atk_spd1": 0.3,
         "cool1": 0.15,
         "move_spd0": 0.1
@@ -2065,8 +2066,8 @@
         },
         "stack": 1,
         "material": ["GB001", "GM001"],
-        "atk0": 20,
-        "def0": 20
+        "atk0": 15,
+        "def0": 15
       },
       {
         "id": "BB006",
@@ -2325,9 +2326,9 @@
         },
         "stack": 1,
         "material": ["BB005", "GM008"],
-        "atk0": 20,
-        "def0": 20,
-        "atk_spd1": 0.28
+        "atk0": 18,
+        "def0": 18,
+        "atk_spd1": 0.24
       },
       {
         "id": "PB013",
@@ -2427,7 +2428,7 @@
         },
         "stack": 1,
         "material": ["GB003", "PM009"],
-        "atk0": 45,
+        "atk0": 40,
         "def0": 35,
         "hp_reg1": 0.5,
         "cri_def1": 0.08
@@ -2523,9 +2524,9 @@
         },
         "stack": 1,
         "material": ["GB001", "PM002"],
-        "atk0": 30,
+        "atk0": 25,
         "def0": 30,
-        "atk_spd1": 0.2,
+        "atk_spd1": 0.25,
         "move_spd0": 0.1
       },
       {
@@ -3061,7 +3062,7 @@
         },
         "stack": 1,
         "material": ["GS004", "PM009"],
-        "def0": 32,
+        "def0": 27,
         "move_spd0": 0.42,
         "uniq011": {
           "detail": {
@@ -3091,7 +3092,7 @@
         },
         "stack": 1,
         "material": ["GS003", "PM001"],
-        "atk0": 25,
+        "atk0": 20,
         "vamp_all1": 0.15,
         "mp_reg0": 1,
         "move_spd0": 0.42
@@ -3990,7 +3991,7 @@
         },
         "stack": 1,
         "material": ["GA002", "PM009"],
-        "atk0": 24,
+        "atk0": 19,
         "cri_rate1": 0.15,
         "cri_atk1": 0.12,
         "cool1": 0.12
@@ -4033,25 +4034,25 @@
             "kr": [
               "이동 시 스택 충전(최대 20m)",
               "충전 스택에 따라 최대 0.15의 이동속도 추가",
-              "다음 기본 공격 시 스택을 모두 소모하여 최대 200의 고유피해",
+              "다음 기본 공격 시 스택을 모두 소모하여 최대 150의 고유피해",
               "근거리 실험체는 최대 스택 공격 시 2초간 상대의 이동 속도 30% 감소"
             ],
             "en": [
               "Gain a stack every move, up to 20m",
               "Your movement speed will increase by up to 0.15, based on how many stacks you have",
-              "Basic attacks consume all stacks, dealing up to 200 cellular damage",
+              "Basic attacks consume all stacks, dealing up to 150 cellular damage",
               "Melee: At max stacks, your next basic attack slows enemies by 30% for 2 seconds"
             ],
             "ja": [
               "移動するたびに[軽い足取り]を最大20mまで重畳して獲得",
               "重畳によって移動速度が最大0.15まで増加します",
-              "基本攻撃ダメージを与える場合、重畳をすべて消費して最大200の固有ダメージを与えます",
+              "基本攻撃ダメージを与える場合、重畳をすべて消費して最大150の固有ダメージを与えます",
               "近距離:最大重畳状態でダメージを受けた対象の移動速度を2秒間25%減少させます"
             ],
             "cn": [
               "Gain a stack every move, up to 20m",
               "Your movement speed will increase by up to 0.15, based on how many stacks you have",
-              "Basic attacks consume all stacks, dealing up to 200 cellular damage",
+              "Basic attacks consume all stacks, dealing up to 150 cellular damage",
               "Melee: At max stacks, your next basic attack slows enemies by 30% for 2 seconds"
             ]
           },
@@ -4315,7 +4316,7 @@
           "cn": "雙人,三人"
         },
         "atk0": 18,
-        "def0": 18,
+        "def0": 8,
         "active005": {
           "detail": {
             "kr": [

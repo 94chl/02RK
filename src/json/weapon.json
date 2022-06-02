@@ -502,7 +502,7 @@
         "stack": 1,
         "material": ["BWB004", "GC003"],
         "atk0": 67,
-        "def0": 22,
+        "def0": 19,
         "cool1": 0.08
       },
       {
@@ -523,7 +523,7 @@
         "material": ["BWB005", "GA003"],
         "atk0": 44,
         "cri_rate1": 0.23,
-        "hp0": 130,
+        "hp0": 110,
         "cri_atk1": 0.1
       },
       {
@@ -4423,7 +4423,7 @@
         },
         "stack": 1,
         "material": ["GWL002", "PM009"],
-        "atk0": 112,
+        "atk0": 102,
         "atk_spd1": 0.2,
         "vision0": 2.5,
         "uniq003": {

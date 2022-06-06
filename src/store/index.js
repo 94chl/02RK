@@ -186,7 +186,10 @@ const store = createStore({
       state.bagEquip = { ...state.bagEquip, weapon: initialWeapon };
     },
     onToggleModal(state, modalState) {
-      ampl.log("Toggle modal", modalState);
+      ampl.log("toggle modal", {
+        name: Object.keys(modalState)[0],
+        open: Object.values(modalState)[0],
+      });
 
       state.toggleModal = { ...state.toggleModal, ...modalState };
     },

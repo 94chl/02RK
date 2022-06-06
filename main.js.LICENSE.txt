@@ -1,3 +1,9 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
 /*!
   * @intlify/core-base v9.1.9
   * (c) 2021 kazuya kawaguchi

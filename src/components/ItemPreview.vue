@@ -185,6 +185,8 @@
 </template>
 
 <script>
+  import { onUpdated, ref } from "vue";
+  import { useStore } from "vuex";
   import {
     categoryName,
     searchById,
@@ -192,8 +194,7 @@
     itemOptions,
   } from "~/utils/itemTable";
   import { disassembleWD } from "~/utils/disassemble";
-  import { onUpdated, ref } from "vue";
-  import { useStore } from "vuex";
+  import ampl from "~/utils/amplitude.js";
 
   export default {
     setup() {
@@ -293,6 +294,7 @@
         const selectedItem = searchById(
           e.target.closest(".matInfoBtn").dataset.itemid
         );
+        ampl.log("select item in Preview", selectedItem);
         this.$store.dispatch("setCart", selectedItem);
       },
       findRecommendPath() {
@@ -327,8 +329,11 @@
         const target =
           this.recommendRoutes[e.target.closest("li").dataset.routeIndex];
 
-        if (window.confirm(this.$t("noti.applyRoute")))
+        if (window.confirm(this.$t("noti.applyRoute"))) {
+          ampl.log("set recommend route in Preview");
+
           this.$store.dispatch("setRoute", target);
+        }
       },
     },
     watch: {

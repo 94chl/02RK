@@ -18,6 +18,7 @@
       "WWW002"
     ],
     "adjacent": [],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": false
   },
@@ -32,6 +33,7 @@
     },
     "drop": [],
     "adjacent": [],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": false
   },
@@ -81,6 +83,7 @@
       "A015",
       "A016"
     ],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": true
   },
@@ -127,6 +130,7 @@
       "A015",
       "A016"
     ],
+    "transferConsole": true,
     "resurrection": false,
     "hyperloop": true
   },
@@ -175,6 +179,7 @@
       "A015",
       "A016"
     ],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": true
   },
@@ -210,6 +215,7 @@
       "PM003"
     ],
     "adjacent": ["A003", "A004", "A006"],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": false
   },
@@ -255,6 +261,7 @@
       "A015",
       "A016"
     ],
+    "transferConsole": true,
     "resurrection": false,
     "hyperloop": true
   },
@@ -288,6 +295,7 @@
       "WF009"
     ],
     "adjacent": ["A006", "A008", "A009"],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": false
   },
@@ -336,6 +344,7 @@
       "A015",
       "A016"
     ],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": true
   },
@@ -382,6 +391,7 @@
       "A015",
       "A016"
     ],
+    "transferConsole": true,
     "resurrection": false,
     "hyperloop": true
   },
@@ -415,6 +425,7 @@
       "WF010"
     ],
     "adjacent": ["A008", "A009", "A011"],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": false
   },
@@ -464,6 +475,7 @@
       "A015",
       "A016"
     ],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": true
   },
@@ -499,6 +511,7 @@
       "WF011"
     ],
     "adjacent": ["A003", "A009", "A011", "A013", "A014", "A015"],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": false
   },
@@ -530,6 +543,7 @@
       "WF002"
     ],
     "adjacent": ["A011", "A012", "A014"],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": false
   },
@@ -578,6 +592,7 @@
       "A015",
       "A016"
     ],
+    "transferConsole": true,
     "resurrection": false,
     "hyperloop": true
   },
@@ -611,6 +626,7 @@
       "PM003"
     ],
     "adjacent": ["A002", "A003", "A012", "A016"],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": false
   },
@@ -641,6 +657,7 @@
       "WF012"
     ],
     "adjacent": ["A002", "A014", "A015"],
+    "transferConsole": false,
     "resurrection": false,
     "hyperloop": false
   }

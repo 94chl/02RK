@@ -98,6 +98,7 @@
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
   import { checkNeedsWithBags } from "~/utils/pathFinder";
+  import ampl from "~/utils/amplitude.js";
 
   export default {
     data() {
@@ -161,6 +162,9 @@
     },
     methods: {
       toggleArea(e) {
+        this.areaInfo[e.target.closest("li").dataset.areaid].show
+          ? ampl.log("close area in Area")
+          : ampl.log("open area in Area");
         this.areaInfo[e.target.closest("li").dataset.areaid].show =
           !this.areaInfo[e.target.closest("li").dataset.areaid].show;
       },
@@ -181,13 +185,18 @@
               acc.push({ id: areaId, name: this.areaInfo[pickedAreaId].name });
             return acc;
           }, []);
+
+          ampl.log("remove area in Area");
           this.$store.dispatch("setRoute", newRoute);
         } else {
+          ampl.log("add area in Area");
           this.$store.dispatch("addRoute", pickedArea);
         }
       },
       getItem(e) {
-        this.$store.dispatch("getItem", e.target.closest("li").dataset.itemid);
+        ampl.log("get item in Area");
+        const newItemInfo = searchById(e.target.closest("li").dataset.itemid);
+        this.$store.dispatch("getItem", newItemInfo);
         this.$store.dispatch("updateAssemblable");
         document.querySelector(".bagBtn").classList.toggle("gotDrops");
         setTimeout(
@@ -199,7 +208,12 @@
         this.$store.dispatch("onToggleModal", "map");
       },
       toggleCommonDropsInfo() {
-        if (!this.commonDropsInfo) this.areaInfo.A000.show = true;
+        if (!this.commonDropsInfo) {
+          this.areaInfo.A000.show = true;
+          ampl.log("open common drop info");
+        } else {
+          ampl.log("close common drop info");
+        }
         this.commonDropsInfo = !this.commonDropsInfo;
       },
     },

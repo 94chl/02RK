@@ -247,6 +247,11 @@
         this.$store.dispatch("onChangeShowItemImg");
       },
       changeCraftDept(e) {
+        ampl.log("change dept", {
+          from: this.selectedDept,
+          to: e.target.closest("button").dataset.dept,
+        });
+
         this.selectedDept = e.target.closest("button").dataset.dept;
         this.categoryArr = database[`${this.selectedOptions.dept}Data`].map(
           (category) => ({
@@ -260,12 +265,21 @@
         )[0].items;
       },
       changeCraftCategory(e) {
+        ampl.log("change category", {
+          from: this.selectedCategory,
+          to: e.target.value,
+        });
+
         this.selectedCategory = e.target.value;
         this.itemArr = this.categoryArr.filter(
           (category) => category.category === this.selectedOptions.category
         )[0].items;
       },
       changeGrade(e) {
+        ampl.log("change grade", {
+          from: this.selectedGrade,
+          to: e.target.value,
+        });
         this.selectedGrade = e.target.value;
       },
       searchItem() {
@@ -304,6 +318,8 @@
       },
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
+        ampl.log("select item in Craft", selectedItem);
+
         this.$store.dispatch("setCart", selectedItem);
         this.minimize = true;
       },

@@ -36,6 +36,7 @@
 <script>
   import { areaData, searchById } from "~/utils/itemTable.js";
   import { disassembleWD } from "~/utils/disassemble";
+  import ampl from "~/utils/amplitude.js";
 
   export default {
     data() {
@@ -156,8 +157,10 @@
     },
     methods: {
       removeAllRoute() {
-        if (window.confirm(this.$t("noti.clearRoute")))
+        if (window.confirm(this.$t("noti.clearRoute"))) {
+          ampl.log("clear custom route");
           this.$store.dispatch("setRoute", []);
+        }
       },
       toggleCraftModal() {
         this.$store.dispatch("onToggleModal", "craft");

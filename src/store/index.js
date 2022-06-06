@@ -3,6 +3,7 @@ import { disassembleGD, disassembleAllWD } from "~/utils/disassemble";
 import { searchById, equippable, weaponSort } from "~/utils/itemTable";
 import { pathFinder } from "~/utils/pathFinder";
 import { setSessionStorage } from "~/utils/useSessionStorage";
+import ampl from "~/utils/amplitude.js";
 
 const store = createStore({
   state() {
@@ -103,8 +104,12 @@ const store = createStore({
     },
     onChangeShowItemImg(state) {
       state.showItemImg = !state.showItemImg;
+      state.showItemImg
+        ? ampl.log("show item as img")
+        : ampl.log("show item as text");
     },
     setCart(state, item) {
+      ampl.log("set cart", item);
       state.cart = item;
     },
     setTargetItems(state, newTargetItems) {
@@ -121,6 +126,8 @@ const store = createStore({
       state.bagEquip = newBagEquip;
     },
     dropEquip(state, droppedBag) {
+      ampl.log("drop equip");
+
       const newBagEquip = {
         ...state.bagEquip,
         [droppedBag]: { id: false },
@@ -128,6 +135,8 @@ const store = createStore({
       state.bagEquip = newBagEquip;
     },
     clearEquip(state) {
+      ampl.log("clear equip");
+
       state.bagEquip = {
         weapon: { id: false },
         clothes: { id: false },
@@ -145,6 +154,8 @@ const store = createStore({
       state.bagInventory = newBagInventory;
     },
     dropInventory(state, droppedBag) {
+      ampl.log("drop inventory");
+
       const newBagInventory = {
         ...state.bagInventory,
         [droppedBag]: { id: false },
@@ -152,6 +163,8 @@ const store = createStore({
       state.bagInventory = newBagInventory;
     },
     clearInventory(state) {
+      ampl.log("clear inventory");
+
       state.bagInventory = {
         pocket0: { id: false },
         pocket1: { id: false },
@@ -169,12 +182,12 @@ const store = createStore({
       state.assemblable = newAssemblable;
     },
     setInitialWeapon(state, initialWeapon) {
+      ampl.log("set initial weapon", initialWeapon);
       state.bagEquip = { ...state.bagEquip, weapon: initialWeapon };
     },
     onToggleModal(state, modalState) {
-      state.toggleModal = { ...state.toggleModal, ...modalState };
-    },
-    showModal(state, modalState) {
+      ampl.log("Toggle modal", modalState);
+
       state.toggleModal = { ...state.toggleModal, ...modalState };
     },
     setRecommendRoutes(state, routesInfo) {
@@ -187,6 +200,7 @@ const store = createStore({
       }
     },
     setSelectedLanguage(state, newLanguage) {
+      ampl.log("language change", { from: state.language, to: newLanguage });
       state.language = newLanguage;
     },
     setLoading(state, newLoadingState) {
@@ -204,14 +218,16 @@ const store = createStore({
       commit("onChangeShowItemImg");
     },
     setCart({ commit }, item) {
-      const itemInfo = searchById(item.id);
-      commit("setCart", itemInfo);
+      commit("setCart", item);
     },
     addTargetItems({ commit, state }, newItem) {
       // 녹색, 드랍템 수준의 재료정보 추가(이후 중복재료 체크를 위해)
       const newItemDetails = { ...newItem, ...disassembleGD([newItem.id]) };
 
       const newTargetItems = [...state.targetItems, newItemDetails];
+
+      ampl.log("add item to target", newItem);
+
       setSessionStorage("02RK_targetItems", newTargetItems);
       commit("setTargetItems", newTargetItems);
       commit("getMatGDs");
@@ -234,8 +250,7 @@ const store = createStore({
       setSessionStorage("02RK_customRoute", newRoute);
       commit("setRoute", newRoute);
     },
-    getItem({ commit, state }, newItemId) {
-      const newItemInfo = searchById(newItemId);
+    getItem({ commit, state }, newItemInfo) {
       const newItem = {
         id: newItemInfo.id,
         sort: weaponSort.includes(newItemInfo.sort)
@@ -313,7 +328,11 @@ const store = createStore({
       }
     },
     clearBag({ commit }, bag) {
-      bag === "equip" ? commit("clearEquip") : commit("clearInventory");
+      if (bag === "equip") {
+        commit("clearEquip");
+      } else {
+        commit("clearInventory");
+      }
     },
     moveItem({ commit, state }, fromTo) {
       const from = equippable.includes(fromTo.from.bag)
@@ -384,6 +403,7 @@ const store = createStore({
         }
       });
 
+      ampl.log("update assemblable");
       commit("updateAssemblable", newAssemblable);
     },
     getAssemble({ commit, state }, newAssemble) {
@@ -429,6 +449,9 @@ const store = createStore({
         !state.bagEquip[assembledInfo.sort].id
       ) {
         assembledInfo.location = assembledInfo.sort;
+
+        ampl.log("make assmeble to Equip", assembledInfo);
+
         commit("setEquip", assembledInfo);
 
         return;
@@ -452,6 +475,9 @@ const store = createStore({
         if (bagSpace < 0) return;
 
         assembledInfo.location = `pocket${bagSpace}`;
+
+        ampl.log("make assmeble to Inventory", assembledInfo);
+
         commit("setInventory", assembledInfo);
       } else {
         const targetPocket = state.bagInventory[`pocket${bagSpace}`];
@@ -473,10 +499,15 @@ const store = createStore({
           if (bagSpace < 0) return;
 
           remains.location = `pocket${bagSpace}`;
+
+          ampl.log("make assmeble to Inventory", assembledInfo);
+
           commit("setInventory", remains);
         } else {
           targetPocket.count += assembledInfo.count;
         }
+
+        ampl.log("make assmeble to Inventory", assembledInfo);
 
         commit("setInventory", targetPocket);
       }
@@ -500,10 +531,6 @@ const store = createStore({
     onToggleModal({ commit, state }, modal) {
       const modalState = { [modal]: !state.toggleModal[modal] };
       commit("onToggleModal", modalState);
-    },
-    showModal({ commit }, modal) {
-      const modalState = { [modal]: true };
-      commit("showModal", modalState);
     },
     findRecommendPath({ commit, state }, needDropsInfo) {
       const { needDrops, total } = needDropsInfo;
@@ -538,8 +565,10 @@ const store = createStore({
       const routes = pathFinder(customRoute, needDrops, bagTotal);
       // commit("setLoading", false);
       if (routes.length > 0) {
+        ampl.log("path finder works", { routes: routes.length, total });
         commit("setRecommendRoutes", { routes, total });
       } else {
+        ampl.log("path finder cannot find routes");
         throw { message: "cannotFindRoute" };
       }
     },

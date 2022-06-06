@@ -73,8 +73,14 @@
 </template>
 
 <script>
-  import { database, categoryName, itemOptions } from "~/utils/itemTable";
+  import {
+    searchById,
+    database,
+    categoryName,
+    itemOptions,
+  } from "~/utils/itemTable";
   import ItemPreview from "~/components/ItemPreview";
+  import ampl from "~/utils/amplitude.js";
 
   export default {
     data() {
@@ -98,6 +104,8 @@
     },
     methods: {
       changeDept(e) {
+        ampl.log("change dept", { from: this.selectDept, to: e.target.value });
+
         this.selectDept = e.target.value;
         this.categoryArr = database[`${this.selectDept}Data`].map((category) => ({
           ...category,
@@ -110,6 +118,11 @@
         this.$store.dispatch("setCart", this.itemArr[0]);
       },
       changeCategory(e) {
+        ampl.log("change category", {
+          from: this.selectCategory,
+          to: e.target.value,
+        });
+
         this.selectCategory = e.target.value;
         this.itemArr = this.categoryArr.filter(
           (category) => category.category === this.selectCategory
@@ -120,7 +133,9 @@
         const selectedItem = this.itemArr.filter(
           (item) => item.id === e.target.value
         )[0];
-        this.$store.dispatch("setCart", selectedItem);
+        const selectedItemInfo = searchById(selectedItem.id);
+        ampl.log("select item in Select", selectedItemInfo);
+        this.$store.dispatch("setCart", selectedItemInfo);
       },
       addItem() {
         this.$store.dispatch("addTargetItems", this.$store.state.cart);

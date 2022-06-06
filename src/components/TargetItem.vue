@@ -3,7 +3,7 @@
     <div class="tabName">
       <h3>{{ $t("section.targetItem") }}</h3>
       <div class="buttonBox">
-        <button class="reamoveAllBtn" @click="removeAllTargetItem">
+        <button class="reamoveAllBtn" @click="clearTargetItem">
           <i class="fas fa-trash-alt"></i>
         </button>
         <button @click="togglePathFinderModal" class="pathFinderBtn">
@@ -58,16 +58,22 @@
           const newTargetItems = this.targetItems.filter(
             (_, index) => index != e.target.closest("li").dataset.index
           );
+          ampl.log("remove target item");
+
           this.$store.dispatch("removeTargetItems", newTargetItems);
         }
       },
-      removeAllTargetItem() {
-        if (window.confirm(this.$t("noti.removeAllTargetItems"))) {
+      clearTargetItem() {
+        if (window.confirm(this.$t("noti.clearTargetItems"))) {
+          ampl.log("clear target item");
+
           this.$store.dispatch("removeTargetItems", []);
         }
       },
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
+        ampl.log("select item in Target", selectedItem);
+
         this.$store.dispatch("setCart", selectedItem);
       },
       togglePathFinderModal() {

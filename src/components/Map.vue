@@ -12,22 +12,26 @@
     </div>
     <div class="map">
       <div class="mapGuideBox">
-        <svg class="area a002" @click="setRoute">
+        <svg class="area">
           <g>
             <circle class="hyperloop" cx="10" cy="10" r="4" />
-            <text x="20" y="15">{{ $t("mapModal.hyperLoop") }}</text>
+            <text x="20" y="14">{{ $t("mapModal.hyperLoop") }}</text>
           </g>
           <g>
-            <circle class="lifeTree" cx="10" cy="26" r="4" />
-            <text x="20" y="31">{{ $t("mapModal.lifeTree") }}</text>
+            <circle class="transferConsole" cx="10" cy="26" r="4" />
+            <text x="20" y="30">{{ $t("mapModal.transferConsole") }}</text>
           </g>
           <g>
-            <circle class="meteor" cx="10" cy="42" r="4" />
-            <text x="20" y="47">{{ $t("mapModal.meteor") }}</text>
+            <circle class="lifeTree" cx="10" cy="42" r="4" />
+            <text x="20" y="46">{{ $t("mapModal.lifeTree") }}</text>
           </g>
           <g>
-            <circle class="alphaOmega" cx="10" cy="58" r="4" />
-            <text x="20" y="63">{{ $t("mapModal.alphaOmega") }}</text>
+            <circle class="meteor" cx="10" cy="58" r="4" />
+            <text x="20" y="62">{{ $t("mapModal.meteor") }}</text>
+          </g>
+          <g>
+            <circle class="alphaOmega" cx="10" cy="74" r="4" />
+            <text x="20" y="78">{{ $t("mapModal.alphaOmega") }}</text>
           </g>
         </svg>
       </div>
@@ -58,7 +62,7 @@
               points="0,0 72,0 72,24 96,24 96,96 72,96 72,48 0,48"
             />
             <circle class="hyperloop" cx="15" cy="10" r="4" />
-            <circle class="meteor" cx="15" cy="30" r="4" />
+            <circle class="meteor" cx="15" cy="25" r="4" />
             <circle class="alphaOmega" cx="90" cy="60" r="4" />
             <text class="areaName" x="25" y="-10">
               {{ $t("mapModal.alley") }}
@@ -75,6 +79,7 @@
               points="48,0 120,0 120,72 24,72 24,48 0,48 0,24 48,24"
             />
             <circle class="hyperloop" cx="90" cy="50" r="4" />
+            <circle class="transferConsole" cx="65" cy="20" r="4" />
             <text class="areaName" x="60" y="-40">
               {{ $t("mapModal.avenue") }}
             </text>
@@ -119,6 +124,7 @@
               points="0,0 72,0 72,48 0,48"
             />
             <circle class="hyperloop" cx="65" cy="22" r="4" />
+            <circle class="transferConsole" cx="15" cy="35" r="4" />
             <circle class="lifeTree" cx="65" cy="10" r="4" />
             <circle class="alphaOmega" cx="45" cy="15" r="4" />
             <text class="areaName" x="25" y="0">
@@ -168,6 +174,7 @@
               points="0,0 48,0 48,72 0,72"
             />
             <circle class="hyperloop" cx="40" cy="30" r="4" />
+            <circle class="transferConsole" cx="25" cy="50" r="4" />
             <circle class="meteor" cx="10" cy="60" r="4" />
             <text class="areaName" x="25" y="15">
               {{ $t("mapModal.chapel") }}
@@ -246,6 +253,7 @@
               points="0,0 72,0 72,72 24,72 24,48 0,48"
             />
             <circle class="hyperloop" cx="30" cy="10" r="4" />
+            <circle class="transferConsole" cx="50" cy="40" r="4" />
             <circle class="lifeTree" cx="40" cy="55" r="4" />
             <circle class="alphaOmega" cx="60" cy="40" r="4" />
             <text class="areaName" x="30" y="5">
@@ -312,6 +320,7 @@
 
 <script>
   import { areaData } from "~/utils/itemTable.js";
+  import ampl from "~/utils/amplitude.js";
 
   export default {
     data() {
@@ -416,8 +425,10 @@
           const newRoute = this.customRoute.filter(
             (area) => area !== pickedAreaId
           );
+          ampl.log("remove area in Map");
           this.$store.dispatch("setRoute", newRoute);
         } else {
+          ampl.log("add area in Map");
           this.$store.dispatch("addRoute", pickedArea);
         }
       },
@@ -429,6 +440,11 @@
   @mixin mapObjIcon() {
     &.hyperloop {
       fill: #63edff;
+    }
+
+    &.transferConsole {
+      fill: #fffb00;
+      stroke: #000;
     }
 
     &.lifeTree {
@@ -450,7 +466,7 @@
     overflow: visible;
 
     g {
-      filter: contrast(70%);
+      /* filter: contrast(70%); */
       cursor: pointer;
       fill: rgba(153, 153, 153, 0.2);
 
@@ -557,7 +573,6 @@
 
         g {
           circle {
-            filter: contrast(70%);
             @include mapObjIcon;
           }
 

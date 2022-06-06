@@ -22,6 +22,7 @@
   import CustomRoute from "~/components/CustomRoute";
   import Modals from "~/components/Modals";
   import Footer from "~/components/Footer";
+  import ampl from "~/utils/amplitude.js";
 
   import {
     getSessionStorage,
@@ -55,10 +56,13 @@
       ) {
         this.$store.dispatch("setTargetItems", targetItems);
         this.$store.dispatch("setRoute", customRoute);
+        ampl.log("load previous data");
       } else {
         removeSessionStorage("02RK_targetItems");
         removeSessionStorage("02RK_customRoute");
+        ampl.log("reset previous data");
       }
+      ampl.log("start app");
     },
   };
 </script>

@@ -36,6 +36,7 @@
     "webpack-dev-server": "^4.3.0"
   },
   "dependencies": {
+    "amplitude-js": "^8.18.4",
     "file-loader": "^6.2.0",
     "i18next": "^21.6.16",
     "vue": "^3.2.19",

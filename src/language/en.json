@@ -60,6 +60,7 @@
   },
   "mapModal": {
     "hyperLoop": "Hyperloop",
+    "transferConsole": "Transfer Console",
     "lifeTree": "Tree of Life",
     "meteor": "Meteorite",
     "alphaOmega": "Alpha,Omega",
@@ -91,7 +92,7 @@
     "clearRoute": "Clear the route?",
     "changeWeapon": "Equipped weapon will be changed",
     "removeTargetItem": "Remove this item?",
-    "removeAllTargetItems": "Remove all items?",
+    "clearTargetItems": "Remove all items?",
     "loadPreviousData": "There is a previous data in progress. Do you want to continue?"
   }
 }

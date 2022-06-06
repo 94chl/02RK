@@ -58,21 +58,21 @@
           const newTargetItems = this.targetItems.filter(
             (_, index) => index != e.target.closest("li").dataset.index
           );
-          ampl.log("remove target item");
+          ampl.log("remove", { target: "target item" });
 
           this.$store.dispatch("removeTargetItems", newTargetItems);
         }
       },
       clearTargetItem() {
         if (window.confirm(this.$t("noti.clearTargetItems"))) {
-          ampl.log("clear target item");
+          ampl.log("clear", { target: "target item" });
 
           this.$store.dispatch("removeTargetItems", []);
         }
       },
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
-        ampl.log("select item in Target", selectedItem);
+        ampl.log("select item", { tab: "Target", ...selectedItem });
 
         this.$store.dispatch("setCart", selectedItem);
       },

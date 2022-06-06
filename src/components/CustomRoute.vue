@@ -158,7 +158,7 @@
     methods: {
       removeAllRoute() {
         if (window.confirm(this.$t("noti.clearRoute"))) {
-          ampl.log("clear custom route");
+          ampl.log("clear", { target: "custom route" });
           this.$store.dispatch("setRoute", []);
         }
       },

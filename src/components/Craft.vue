@@ -247,7 +247,9 @@
         this.$store.dispatch("onChangeShowItemImg");
       },
       changeCraftDept(e) {
-        ampl.log("change dept", {
+        ampl.log("change", {
+          tab: "CRAFT",
+          target: "dept",
           from: this.selectedDept,
           to: e.target.closest("button").dataset.dept,
         });
@@ -265,7 +267,9 @@
         )[0].items;
       },
       changeCraftCategory(e) {
-        ampl.log("change category", {
+        ampl.log("change", {
+          tab: "CRAFT",
+          target: "category",
           from: this.selectedCategory,
           to: e.target.value,
         });
@@ -276,7 +280,9 @@
         )[0].items;
       },
       changeGrade(e) {
-        ampl.log("change grade", {
+        ampl.log("change", {
+          tab: "CRAFT",
+          target: "grade",
           from: this.selectedGrade,
           to: e.target.value,
         });
@@ -318,7 +324,7 @@
       },
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
-        ampl.log("select item in Craft", selectedItem);
+        ampl.log("select item", { tab: "CRAFT", ...selectedItem });
 
         this.$store.dispatch("setCart", selectedItem);
         this.minimize = true;

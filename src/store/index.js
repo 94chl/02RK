@@ -105,8 +105,8 @@ const store = createStore({
     onChangeShowItemImg(state) {
       state.showItemImg = !state.showItemImg;
       state.showItemImg
-        ? ampl.log("show item as img")
-        : ampl.log("show item as text");
+        ? ampl.log("show item", { to: "img" })
+        : ampl.log("show item", { to: "text" });
     },
     setCart(state, item) {
       ampl.log("set cart", item);
@@ -126,7 +126,7 @@ const store = createStore({
       state.bagEquip = newBagEquip;
     },
     dropEquip(state, droppedBag) {
-      ampl.log("drop equip");
+      ampl.log("drop", { target: "equip" });
 
       const newBagEquip = {
         ...state.bagEquip,
@@ -135,7 +135,7 @@ const store = createStore({
       state.bagEquip = newBagEquip;
     },
     clearEquip(state) {
-      ampl.log("clear equip");
+      ampl.log("clear", { target: "equip" });
 
       state.bagEquip = {
         weapon: { id: false },
@@ -154,7 +154,7 @@ const store = createStore({
       state.bagInventory = newBagInventory;
     },
     dropInventory(state, droppedBag) {
-      ampl.log("drop inventory");
+      ampl.log("drop", { target: "inventory" });
 
       const newBagInventory = {
         ...state.bagInventory,
@@ -163,7 +163,7 @@ const store = createStore({
       state.bagInventory = newBagInventory;
     },
     clearInventory(state) {
-      ampl.log("clear inventory");
+      ampl.log("clear", { target: "inventory" });
 
       state.bagInventory = {
         pocket0: { id: false },
@@ -229,7 +229,7 @@ const store = createStore({
 
       const newTargetItems = [...state.targetItems, newItemDetails];
 
-      ampl.log("add item to target", newItem);
+      ampl.log("add target item", newItem);
 
       setSessionStorage("02RK_targetItems", newTargetItems);
       commit("setTargetItems", newTargetItems);
@@ -453,7 +453,7 @@ const store = createStore({
       ) {
         assembledInfo.location = assembledInfo.sort;
 
-        ampl.log("make assmeble to Equip", assembledInfo);
+        ampl.log("make assmeble", { to: "Equip", ...assembledInfo });
 
         commit("setEquip", assembledInfo);
 
@@ -479,7 +479,7 @@ const store = createStore({
 
         assembledInfo.location = `pocket${bagSpace}`;
 
-        ampl.log("make assmeble to Inventory", assembledInfo);
+        ampl.log("make assmeble", { to: "Inventory", ...assembledInfo });
 
         commit("setInventory", assembledInfo);
       } else {
@@ -508,7 +508,7 @@ const store = createStore({
           targetPocket.count += assembledInfo.count;
         }
 
-        ampl.log("make assmeble to Inventory", assembledInfo);
+        ampl.log("make assmeble", { to: "Inventory", ...assembledInfo });
 
         commit("setInventory", targetPocket);
       }

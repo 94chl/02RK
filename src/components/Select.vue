@@ -104,7 +104,12 @@
     },
     methods: {
       changeDept(e) {
-        ampl.log("change dept", { from: this.selectDept, to: e.target.value });
+        ampl.log("change", {
+          tab: "SELECT",
+          target: "dept",
+          from: this.selectDept,
+          to: e.target.value,
+        });
 
         this.selectDept = e.target.value;
         this.categoryArr = database[`${this.selectDept}Data`].map((category) => ({
@@ -118,7 +123,9 @@
         this.$store.dispatch("setCart", this.itemArr[0]);
       },
       changeCategory(e) {
-        ampl.log("change category", {
+        ampl.log("change", {
+          tab: "SELECT",
+          target: "category",
           from: this.selectCategory,
           to: e.target.value,
         });
@@ -134,7 +141,7 @@
           (item) => item.id === e.target.value
         )[0];
         const selectedItemInfo = searchById(selectedItem.id);
-        ampl.log("select item in Select", selectedItemInfo);
+        ampl.log("select item", { tab: "SELECT", ...selectedItemInfo });
         this.$store.dispatch("setCart", selectedItemInfo);
       },
       addItem() {

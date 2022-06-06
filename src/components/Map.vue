@@ -425,10 +425,10 @@
           const newRoute = this.customRoute.filter(
             (area) => area !== pickedAreaId
           );
-          ampl.log("remove area in Map");
+          ampl.log("remove area", { tab: "MAP" });
           this.$store.dispatch("setRoute", newRoute);
         } else {
-          ampl.log("add area in Map");
+          ampl.log("add area", { tab: "MAP" });
           this.$store.dispatch("addRoute", pickedArea);
         }
       },

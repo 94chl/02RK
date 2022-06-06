@@ -294,7 +294,7 @@
         const selectedItem = searchById(
           e.target.closest(".matInfoBtn").dataset.itemid
         );
-        ampl.log("select item in Preview", selectedItem);
+        ampl.log("select item", { tab: "Preview", ...selectedItem });
         this.$store.dispatch("setCart", selectedItem);
       },
       findRecommendPath() {
@@ -330,7 +330,7 @@
           this.recommendRoutes[e.target.closest("li").dataset.routeIndex];
 
         if (window.confirm(this.$t("noti.applyRoute"))) {
-          ampl.log("set recommend route in Preview");
+          ampl.log("set recommend route", { tab: "PREVIEW" });
 
           this.$store.dispatch("setRoute", target);
         }

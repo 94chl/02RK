@@ -129,7 +129,7 @@
           this.totalRecommendRoutes[e.target.closest("li").dataset.routeIndex];
 
         if (window.confirm(this.$t("noti.applyRoute"))) {
-          ampl.log("set recommend route in Total Path Finder");
+          ampl.log("set recommend route", { tab: "TOTAL" });
 
           this.$store.dispatch("setRoute", target);
         }

@@ -162,9 +162,8 @@
     },
     methods: {
       toggleArea(e) {
-        this.areaInfo[e.target.closest("li").dataset.areaid].show
-          ? ampl.log("close area in Area")
-          : ampl.log("open area in Area");
+        this.areaInfo[e.target.closest("li").dataset.areaid].show &&
+          ampl.log("open area in Area", { target: "area drops" });
         this.areaInfo[e.target.closest("li").dataset.areaid].show =
           !this.areaInfo[e.target.closest("li").dataset.areaid].show;
       },
@@ -186,15 +185,15 @@
             return acc;
           }, []);
 
-          ampl.log("remove area in Area");
+          ampl.log("remove area", { tab: "AREA" });
           this.$store.dispatch("setRoute", newRoute);
         } else {
-          ampl.log("add area in Area");
+          ampl.log("add area", { tab: "AREA" });
           this.$store.dispatch("addRoute", pickedArea);
         }
       },
       getItem(e) {
-        ampl.log("get item in Area");
+        ampl.log("get item", { tab: "AREA" });
         const newItemInfo = searchById(e.target.closest("li").dataset.itemid);
         this.$store.dispatch("getItem", newItemInfo);
         this.$store.dispatch("updateAssemblable");
@@ -210,9 +209,7 @@
       toggleCommonDropsInfo() {
         if (!this.commonDropsInfo) {
           this.areaInfo.A000.show = true;
-          ampl.log("open common drop info");
-        } else {
-          ampl.log("close common drop info");
+          ampl.log("open", { target: "common drop info" });
         }
         this.commonDropsInfo = !this.commonDropsInfo;
       },

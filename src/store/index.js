@@ -500,8 +500,6 @@ const store = createStore({
 
           remains.location = `pocket${bagSpace}`;
 
-          ampl.log("make assmeble to Inventory", assembledInfo);
-
           commit("setInventory", remains);
         } else {
           targetPocket.count += assembledInfo.count;

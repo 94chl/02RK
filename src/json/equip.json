@@ -327,7 +327,7 @@
         },
         "stack": 1,
         "material": ["WC004", "GM001"],
-        "def0": 28,
+        "def0": 20,
         "hp0": 50
       },
       {
@@ -501,7 +501,7 @@
         "stack": 1,
         "material": ["BC005", "GA001"],
         "atk0": 18,
-        "def0": 30,
+        "def0": 25,
         "hp0": 50,
         "hp_reg1": 0.75
       },
@@ -898,7 +898,7 @@
               "1.5초간 (150 + 레벨당  10)의 보호막 획득",
               "8초 동안 공격력 10 증가",
               "8초 동안 받는 회복 15%(근)/8%(원) 증가",
-              "쿨다운: 70초"
+              "쿨다운: 50초"
             ],
             "en": [
               "When dropping below 40% HP after taking damage from an enemy player",
@@ -906,7 +906,7 @@
               "You gain a (150 + Character Level*10) HP shield for 1.5 seconds",
               "10 Attack Power for 8 seconds",
               "HP Recovery on you is (M: 15%, R: 8%) more effective for 8 seconds",
-              "Cooldown: 70s"
+              "Cooldown: 50s"
             ],
             "ja": [
               "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
@@ -914,7 +914,7 @@
               "1.5秒間150+キャラクターレベル*10のシールドを獲得",
               "8秒間攻撃力が10増加",
               "15%(近)/8%(遠)の受ける回復量が増加",
-              "クールダウン:70秒"
+              "クールダウン:50秒"
             ],
             "cn": [
               "When dropping below 40% HP after taking damage from an enemy player",
@@ -922,7 +922,7 @@
               "You gain a (150 + Character Level*10) HP shield for 1.5 seconds",
               "10 Attack Power for 8 seconds",
               "HP Recovery on you is (M: 15%, R: 8%) more effective for 8 seconds",
-              "Cooldown: 70s"
+              "Cooldown: 50s"
             ]
           },
           "value": 150
@@ -944,7 +944,7 @@
         },
         "stack": 1,
         "material": ["GC001", "PM002"],
-        "def0": 50,
+        "def0": 45,
         "atk_spd1": 0.22,
         "move_spd0": 0.1
       },
@@ -1042,8 +1042,8 @@
           "ja": "マイだけが制作できる。",
           "cn": "只有梅才能製作"
         },
-        "def0": 65,
-        "atk_spd1": 0.28,
+        "def0": 60,
+        "atk_spd1": 0.15,
         "uniq009": {
           "detail": {
             "kr": ["+0.2"],
@@ -1349,48 +1349,11 @@
         "vision0": 2
       },
       {
-        "id": "BH007",
-        "sort": "helmet",
-        "img": "https://lh3.google.com/u/0/d/1ns2ZhbnHXotfTUGgJk2zGfAS7SKTUqBI",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "로빈",
-          "en": "Virtuous Outlaw",
-          "ja": "ロビンハット",
-          "cn": "羅賓帽"
-        },
-        "stack": 1,
-        "material": ["BA016", "WM012"],
-        "atk0": 12,
-        "cool1": 0.12,
-        "uniq008": {
-          "detail": {
-            "kr": ["+0.25"],
-            "en": ["+0.25"],
-            "ja": ["+0.25"],
-            "cn": ["+0.25"]
-          },
-          "value": 0.25
-        },
-        "uniq009": {
-          "detail": {
-            "kr": ["+0.06"],
-            "en": ["+0.06"],
-            "ja": ["+0.06"],
-            "cn": ["+0.06"]
-          },
-          "value": 0.06
-        }
-      },
-      {
         "id": "BH009",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1cBfMBJ8jEK3Xu3cuWt4UKtmpupb5vQEc",
         "location": false,
-        "tobe": ["PH012"],
+        "tobe": ["PH015"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1646,27 +1609,27 @@
           "detail": {
             "kr": [
               "적 실험체에게 피해를 받아 체력이 40% 이하가 될 때 발동",
-              "1.5초간 (135 + 캐릭터 레벨*8)의 보호막 획득",
+              "1.5초간 (100 + 캐릭터 레벨*9)의 보호막 획득",
               "6초 동안 스킬 증폭이 12% 증가",
-              "쿨다운: 80초"
+              "쿨다운: 50초"
             ],
             "en": [
               "When dropping below 40% HP after taking damage from an enemy player",
-              "You gain a (135 + Character Level*8) HP shield for 1.5 seconds",
+              "You gain a (100 + Character Level*9) HP shield for 1.5 seconds",
               "Your skill amplification is increased by 12% for 6 seconds",
-              "Cooldown: 80s"
+              "Cooldown: 50s"
             ],
             "ja": [
               "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
-              "1.5秒間135+キャラクターレベル*8のシールドを獲得",
+              "1.5秒間100+キャラクターレベル*9のシールドを獲得",
               "6秒間スキル増幅が12%増加",
-              "クールダウン:80秒"
+              "クールダウン:50秒"
             ],
             "cn": [
               "When dropping below 40% HP after taking damage from an enemy player",
-              "You gain a (135 + Character Level*8) HP shield for 1.5 seconds",
+              "You gain a (100 + Character Level*9) HP shield for 1.5 seconds",
               "Your skill amplification is increased by 12% for 6 seconds",
-              "Cooldown: 80s"
+              "Cooldown: 50s"
             ]
           },
           "value": 135
@@ -1674,6 +1637,59 @@
       },
       {
         "id": "PH012",
+        "sort": "helmet",
+        "img": "https://lh3.google.com/u/0/d/1ns2ZhbnHXotfTUGgJk2zGfAS7SKTUqBI",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "로빈",
+          "en": "Virtuous Outlaw",
+          "ja": "ロビンハット",
+          "cn": "羅賓帽"
+        },
+        "stack": 1,
+        "material": ["BA016", "WM012"],
+        "atk0": 15,
+        "cool1": 0.12,
+        "uniq009": {
+          "detail": {
+            "kr": ["+0.06"],
+            "en": ["+0.06"],
+            "ja": ["+0.06"],
+            "cn": ["+0.06"]
+          },
+          "value": 0.06
+        },
+        "uniq035": {
+          "detail": {
+            "kr": [
+              "이동 스킬 사용 시, 다음 기본 공격의 사거리가 0.5 증가합니다. ",
+              "최대 2스택",
+              "쿨다운 8초"
+            ],
+            "en": [
+              "Increases the range of your next basic attack by 0.5 when casting movement skills.",
+              "Max 2 stacks",
+              "Cooldown 8s"
+            ],
+            "ja": [
+              "移動スキル使用時、次の基本攻撃の射程距離が0.5増加します。",
+              "最大2スタック",
+              "クールダウン 8秒"
+            ],
+            "cn": [
+              "Increases the range of your next basic attack by 0.5 when casting movement skills.",
+              "Max 2 stacks",
+              "Cooldown 8s"
+            ]
+          },
+          "value": 0.5
+        }
+      },
+      {
+        "id": "PH015",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/16UMs7avUY4i-Hza7JA7L3YH0Ce8uAayZ",
         "location": false,
@@ -1719,32 +1735,7 @@
         "atk0": 21,
         "def0": 18,
         "mp0": 500,
-        "uniq031": {
-          "detail": {
-            "kr": [
-              "기본 공격 시 상대를 불태워 매 초 자신의 레벨에 비례한 고정 피해를 입힘",
-              "피해량: 착용자 레벨*3.5(근)/*2.5(원)",
-              "지속시간: 2초",
-              "최대 1스택"
-            ],
-            "en": [
-              "Basic attacks apply Smoldering and deal true damage to each 1 second",
-              "Damage: Character Level * 3.5(Melee)/2.5(Ranged)",
-              "Duration: 2s"
-            ],
-            "ja": [
-              "基本攻撃対象に燃え1秒ごとに対象に固定ダメージ",
-              "ダメージ:キャラクターレベル*3.5(近)/2.5(遠)",
-              "2秒間"
-            ],
-            "cn": [
-              "Basic attacks apply Smoldering and deal true damage to each 1 second",
-              "Damage: Character Level * 3.5(Melee)/2.5(Ranged)",
-              "Duration: 2s"
-            ]
-          },
-          "value": 5
-        }
+        "cool1": 0.12
       },
       {
         "id": "YH002",
@@ -2104,7 +2095,8 @@
         },
         "stack": 1,
         "material": ["WWE002", "BM002"],
-        "atk0": 21,
+        "def0": 15,
+        "skill1": 0.12,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -3021,7 +3013,7 @@
         },
         "stack": 1,
         "material": ["BS006", "PM003"],
-        "move_spd0": 0.35,
+        "move_spd0": 0.37,
         "penet1": 0.1
       },
       {
@@ -3602,7 +3594,7 @@
         },
         "stack": 1,
         "material": ["GA004", "WA004"],
-        "skill1": 0.1,
+        "skill1": 0.12,
         "vamp_all1": 0.08,
         "mp_reg1": 0.7
       },
@@ -3952,7 +3944,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1ot2BJ4RLKgOIvTETwE-BfQGm7jihprLk",
         "location": false,
-        "tobe": ["PWA005", "PWH004", "BH007"],
+        "tobe": ["PWA005", "PWH004", "PH012"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -4193,12 +4185,12 @@
         "atk_spd1": 0.33,
         "uniq009": {
           "detail": {
-            "kr": ["+0.04"],
-            "en": ["+0.04"],
-            "ja": ["+0.04"],
-            "cn": ["+0.04"]
+            "kr": ["+0.08"],
+            "en": ["+0.08"],
+            "ja": ["+0.08"],
+            "cn": ["+0.08"]
           },
-          "value": 0.04
+          "value": 0.08
         },
         "active001": {
           "detail": {

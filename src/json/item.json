@@ -223,7 +223,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/184v1Fo8WRrp61H2p1zQ_613p-C7MYt-o",
         "location": ["A003", "A004", "A014"],
-        "tobe": ["GC006", "GC009", "BH007", "GS005", "GA004"],
+        "tobe": ["GC006", "GC009", "PH012", "GS005", "GA004"],
         "pickup": 1,
         "limit": 3,
         "name": { "kr": "옷감", "en": "Cloth", "ja": "生地", "cn": "布" },

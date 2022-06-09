@@ -182,7 +182,7 @@
         "stack": 1,
         "material": ["BWA001", "GM007"],
         "atk0": 35,
-        "skill1": 0.19,
+        "skill1": 0.15,
         "cool1": 0.1,
         "move_spd0": 0.1
       },
@@ -223,7 +223,7 @@
         "stack": 1,
         "material": ["BWA002", "GT001"],
         "atk0": 56,
-        "hp0": 200,
+        "hp0": 170,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
@@ -633,7 +633,7 @@
               "방해효과 저항 50%",
               "8초 동안 공격력 15 증가",
               "8초 동안 받는 회복 15% 증가",
-              "쿨다운: 80초"
+              "쿨다운: 50초"
             ],
             "en": [
               "When dropping below 40% HP after taking damage from an enemy player",
@@ -642,7 +642,7 @@
               "50% Tenacity for 8 seconds",
               "15 Attack Power for 8 seconds",
               "HP Recovery on you is 15% more effective for 8 seconds",
-              "Cooldown: 80s"
+              "Cooldown: 50s"
             ],
             "ja": [
               "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
@@ -651,7 +651,7 @@
               "50%の行動妨害耐性を獲得",
               "8秒間攻撃力が15増加",
               "受ける回復量が15%増加",
-              "クールダウン:80秒"
+              "クールダウン:50秒"
             ],
             "cn": [
               "When dropping below 40% HP after taking damage from an enemy player",
@@ -660,7 +660,7 @@
               "50% Tenacity for 8 seconds",
               "15 Attack Power for 8 seconds",
               "HP Recovery on you is 15% more effective for 8 seconds",
-              "Cooldown: 80s"
+              "Cooldown: 50s"
             ]
           },
           "value": 150
@@ -1801,7 +1801,7 @@
         },
         "stack": 1,
         "material": ["GWE001", "PM007"],
-        "atk0": 30,
+        "atk0": 52,
         "grow_basic_atk1": 0.02
       },
       {
@@ -1861,7 +1861,7 @@
         },
         "stack": 1,
         "material": ["PT005", "GWE001"],
-        "atk0": 78,
+        "atk0": 79,
         "move_spd0": 0.1
       }
     ]
@@ -2116,21 +2116,21 @@
             "kr": [
               "단일 실험체에게 4초 안에 기본 공격 또는 개별의 피해를 입히는 스킬(무기, 아이템 스킬 제외)을 2회 적중 시 <산들바람> 상태가 됩니다",
               "기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급",
-              "쿨다운: 7초"
+              "쿨다운: 12초"
             ],
             "en": [
               "Hitting a single enemy with a basic attack or skill 2 times within 4 seconds grants you <Zephyr>",
               "Excludes multiple hit effects",
-              "Cooldown: 7s"
+              "Cooldown: 12s"
             ],
             "ja": [
               "4秒以内に2回の個別ダメージを加えると＜そよ風＞になります。",
-              "クールダウン:7秒"
+              "クールダウン:12秒"
             ],
             "cn": [
               "Hitting a single enemy with a basic attack or skill 2 times within 4 seconds grants you <Zephyr>",
               "Excludes multiple hit effects",
-              "Cooldown: 7s"
+              "Cooldown: 12s"
             ]
           },
           "value": 1
@@ -2139,24 +2139,24 @@
           "detail": {
             "kr": [
               "공격 속도: 40% 증가",
-              "보호막: 200",
+              "보호막: 150",
               "이동 속도: 20% 증가",
               "지속 시간: 3초"
             ],
             "en": [
-              "Shield: 200",
+              "Shield: 150",
               "Movement speed: +20%",
               "Attack speed: 40%",
               "Duration: 3 seconds"
             ],
             "ja": [
+              "150のシールドを獲得",
               "移動速度:40%増加",
               "攻撃速度:20%増加",
-              "200のシールドを獲得",
               "3秒間"
             ],
             "cn": [
-              "Shield: 200",
+              "Shield: 150",
               "Movement speed: +20%",
               "Attack speed: 40%",
               "Duration: 3 seconds"
@@ -2779,7 +2779,7 @@
         },
         "stack": 1,
         "material": ["GM002", "PM004"],
-        "atk0": 69,
+        "atk0": 65,
         "atk_spd1": 0.12,
         "uniq001": {
           "detail": {
@@ -3790,14 +3790,14 @@
         "stack": 1,
         "material": ["BWJ001", "PM003"],
         "load0": 20,
-        "atk0": 73,
+        "atk0": 70,
         "skill1": 0.1,
         "uniq006": {
           "detail": {
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 100 + 스킬 증폭*1.25",
+              "피해량: 75 + 스킬 증폭*1.25",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
@@ -3805,7 +3805,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 100 + Skill Amplification*1.25",
+              "Damage: 75 + Skill Amplification*1.25",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -3813,7 +3813,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:100+スキル増幅*1.25",
+              "ダメージ:75+スキル増幅*1.25",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -3821,7 +3821,7 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 100 + Skill Amplification*1.25",
+              "Damage: 75 + Skill Amplification*1.25",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -5060,7 +5060,7 @@
         "stack": 1,
         "material": ["GWN001", "PM009"],
         "load0": 120,
-        "atk0": 95,
+        "atk0": 90,
         "penet1": 0.12,
         "grow_basic_atk1": 0.015
       }
@@ -5787,7 +5787,7 @@
               "방해효과 저항 50%",
               "8초 동안 공격력 15 증가",
               "8초 동안 받는 회복 15% 증가",
-              "쿨다운: 70초"
+              "쿨다운: 50초"
             ],
             "en": [
               "When dropping below 40% HP after taking damage from an enemy player",
@@ -5796,7 +5796,7 @@
               "50% Tenacity for 8 seconds",
               "15 Attack Power for 8 seconds",
               "HP Recovery on you is 15% more effective for 8 seconds",
-              "Cooldown: 70s"
+              "Cooldown: 50s"
             ],
             "ja": [
               "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
@@ -5805,7 +5805,7 @@
               "50%の行動妨害耐性を獲得",
               "8秒間攻撃力が15増加",
               "受ける回復量が15%増加",
-              "クールダウン:70秒"
+              "クールダウン:50秒"
             ],
             "cn": [
               "When dropping below 40% HP after taking damage from an enemy player",
@@ -5814,7 +5814,7 @@
               "50% Tenacity for 8 seconds",
               "15 Attack Power for 8 seconds",
               "HP Recovery on you is 15% more effective for 8 seconds",
-              "Cooldown: 70s"
+              "Cooldown: 50s"
             ]
           },
           "value": 150
@@ -6137,7 +6137,7 @@
         },
         "stack": 1,
         "material": ["GWS001", "BC009"],
-        "atk0": 25,
+        "atk0": 28,
         "cri_atk1": 0.15,
         "skill1": 0.15,
         "hp_reg1": 0.75,
@@ -6219,14 +6219,14 @@
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "레드 펜서",
+          "kr": "레드 팬서",
           "en": "Red Panther",
           "ja": "レッドパンサー",
           "cn": "赤豹"
         },
         "stack": 1,
         "material": ["BWS002", "BB004"],
-        "atk0": 45,
+        "atk0": 43,
         "skill0": 17,
         "hp0": 120,
         "mp_reg1": 0.8
@@ -6276,7 +6276,7 @@
         },
         "stack": 1,
         "material": ["PWS001", "PM006"],
-        "atk0": 30,
+        "atk0": 35,
         "cri_atk1": 0.15,
         "skill1": 0.25,
         "hp_reg1": 0.75,

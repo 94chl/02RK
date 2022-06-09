@@ -787,6 +787,12 @@ export const itemOptions = {
     ja: "寒波",
     cn: "寒波",
   },
+  uniq035: {
+    kr: "연날리기",
+    en: "Smooth Walker",
+    ja: "スムース·ウォーカー",
+    cn: "風箏",
+  },
   uniq040: {
     kr: "독사의 맹독",
     en: "Necrosis",

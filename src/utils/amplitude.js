@@ -1,6 +1,6 @@
 import amplitude from "amplitude-js";
 
-const INSTANCE_KEY = "1c9f7a53b4e08b5e6e804476a013d299";
+const INSTANCE_KEY = "2ef45bc5ea003c6f10c25a5f22440b0b";
 
 const lastUpdated = "2022-06-06";
 

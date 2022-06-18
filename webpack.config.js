@@ -66,6 +66,7 @@ module.exports = (_, argv) => {
       new Webpack.DefinePlugin({
         __VUE_OPTIONS_API__: true,
         __VUE_PROD_DEVTOOLS__: true,
+        isDev: isDev,
       }),
       new Webpack.EnvironmentPlugin({
         NODE_ENV: "development",

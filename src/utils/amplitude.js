@@ -16,7 +16,6 @@ class Amplitude {
   }
 
   log(key, props) {
-    console.log("isDev", isDev);
     if (!isDev) {
       this.ampl.logEvent(key, props);
     }

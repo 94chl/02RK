@@ -16,6 +16,7 @@ class Amplitude {
   }
 
   log(key, props) {
+    console.log("ENV", process.env.NODE_ENV);
     if (process.env.NODE_ENV !== "development") {
       this.ampl.logEvent(key, props);
     }

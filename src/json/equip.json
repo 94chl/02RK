@@ -1651,7 +1651,7 @@
         },
         "stack": 1,
         "material": ["BA016", "WM012"],
-        "atk0": 15,
+        "atk0": 22,
         "cool1": 0.12,
         "uniq009": {
           "detail": {

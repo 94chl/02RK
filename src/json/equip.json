@@ -542,7 +542,7 @@
         "stack": 1,
         "material": ["BC004", "GC003"],
         "atk0": 15,
-        "def0": 15,
+        "def0": 10,
         "mp_reg1": 1,
         "cool1": 0.1,
         "uniq008": {
@@ -712,7 +712,7 @@
         "material": ["BC004", "BD005"],
         "atk0": 12,
         "def0": 10,
-        "atk_spd1": 0.37,
+        "atk_spd1": 0.33,
         "mp_reg0": 2
       },
       {
@@ -1582,7 +1582,7 @@
         },
         "stack": 1,
         "material": ["GH002", "BB006"],
-        "atk0": 18,
+        "atk0": 15,
         "def0": 15,
         "cool1": 0.12,
         "mp0": 270
@@ -1667,22 +1667,22 @@
             "kr": [
               "이동 스킬 사용 시, 다음 기본 공격의 사거리가 0.5 증가합니다. ",
               "최대 2스택",
-              "쿨다운 8초"
+              "쿨다운 6초"
             ],
             "en": [
               "Increases the range of your next basic attack by 0.5 when casting movement skills.",
               "Max 2 stacks",
-              "Cooldown 8s"
+              "Cooldown 6s"
             ],
             "ja": [
               "移動スキル使用時、次の基本攻撃の射程距離が0.5増加します。",
               "最大2スタック",
-              "クールダウン 8秒"
+              "クールダウン 6秒"
             ],
             "cn": [
               "Increases the range of your next basic attack by 0.5 when casting movement skills.",
               "Max 2 stacks",
-              "Cooldown 8s"
+              "Cooldown 6s"
             ]
           },
           "value": 0.5
@@ -1732,10 +1732,10 @@
         },
         "stack": 1,
         "material": ["GH002", "PM007"],
-        "atk0": 21,
+        "atk0": 27,
         "def0": 18,
         "mp0": 500,
-        "cool1": 0.12
+        "cool1": 0.15
       },
       {
         "id": "YH002",
@@ -2080,41 +2080,6 @@
         "cool1": 0.07
       },
       {
-        "id": "BB007",
-        "sort": "bracelet",
-        "img": "https://lh3.google.com/u/0/d/1nc7-l-OQe91aH3W6Ei8y9aNwUWF_qP_O",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "포이즌드",
-          "en": "Corrupting Touch",
-          "ja": "ポイズン手袋",
-          "cn": "巨人手套"
-        },
-        "stack": 1,
-        "material": ["WWE002", "BM002"],
-        "def0": 15,
-        "skill1": 0.12,
-        "uniq014": {
-          "detail": {
-            "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
-            "en": [
-              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
-            ],
-            "ja": [
-              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
-              "40%/(近)30%(遠)"
-            ],
-            "cn": [
-              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
-            ]
-          },
-          "value": 0.4
-        }
-      },
-      {
         "id": "BB008",
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1nyF3x64osxWoskArFQaYzNuBRZcyt3eZ",
@@ -2361,6 +2326,41 @@
         "cri_rate1": 0.24,
         "def0": 20,
         "atk_spd1": 0.3
+      },
+      {
+        "id": "PB015",
+        "sort": "bracelet",
+        "img": "https://lh3.google.com/u/0/d/1nc7-l-OQe91aH3W6Ei8y9aNwUWF_qP_O",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "포이즌드",
+          "en": "Corrupting Touch",
+          "ja": "ポイズン手袋",
+          "cn": "巨人手套"
+        },
+        "stack": 1,
+        "material": ["WWE002", "BM002"],
+        "def0": 15,
+        "skill1": 0.12,
+        "uniq014": {
+          "detail": {
+            "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "40%/(近)30%(遠)"
+            ],
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
+          },
+          "value": 0.4
+        }
       },
       {
         "id": "YB001",
@@ -3299,6 +3299,7 @@
           "PWC004",
           "BWP003",
           "BWS001",
+          "PWR004",
           "PWV003",
           "BA015",
           "BA016",
@@ -4396,7 +4397,7 @@
         },
         "stack": 1,
         "material": ["GA007", "PM002"],
-        "def0": 12,
+        "def0": 13,
         "atk_spd1": 0.33,
         "move_spd0": 0.1,
         "uniq008": {
@@ -4474,6 +4475,40 @@
             ]
           },
           "value": 2.5
+        }
+      },
+      {
+        "id": "YA012",
+        "sort": "accessory",
+        "img": "https://drive.google.com/file/d/1N1Eefy2s6teHlhRGikGEVJk4BxTQZp2a/view?usp=sharing",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "네크로노미콘",
+          "en": "Necronomicon",
+          "ja": "ネクロノミコン",
+          "cn": "死靈之書"
+        },
+        "stack": 1,
+        "material": ["GM013", "PM001"],
+        "skill1": 0.3,
+        "uniq014": {
+          "detail": {
+            "kr": ["스킬 공격 시, 대상의 치유 효과가 60%(근)/50%(원) 감소"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "40%/(近)30%(遠)"
+            ],
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
+          },
+          "value": 0.4
         }
       }
     ]

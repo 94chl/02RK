@@ -715,7 +715,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1Vds5Xhui9VV4g7Z8Q4IfCSKy7QNckFfv",
         "location": false,
-        "tobe": ["BA015"],
+        "tobe": ["BA015", "YA012"],
         "pickup": 1,
         "limit": 3,
         "name": {
@@ -766,7 +766,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/16h67ciZC0a7rOwhpXZfu1F8zj-U61YgV",
         "location": false,
-        "tobe": ["BWJ005", "PWJ005", "BB007", "BA008"],
+        "tobe": ["BWJ005", "PWJ005", "PB015", "BA008"],
         "pickup": 1,
         "limit": 3,
         "name": { "kr": "독약", "en": "Poison", "ja": "毒薬", "cn": "毒藥" },
@@ -840,7 +840,8 @@
           "YB004",
           "YS004",
           "YS005",
-          "YA002"
+          "YA002",
+          "YA012"
         ],
         "pickup": 1,
         "limit": 3,

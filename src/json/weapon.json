@@ -122,7 +122,7 @@
         "stack": 1,
         "material": ["GWA002", "WWA001"],
         "atk0": 23,
-        "hp0": 100
+        "hp0": 80
       },
       {
         "id": "BWA003",
@@ -223,7 +223,7 @@
         "stack": 1,
         "material": ["BWA002", "GT001"],
         "atk0": 56,
-        "hp0": 170,
+        "hp0": 140,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40% 감소"],
@@ -604,7 +604,7 @@
         "stack": 1,
         "material": ["GWB001", "PM007"],
         "atk0": 62,
-        "grow_basic_atk1": 0.018
+        "grow_basic_atk1": 0.02
       },
       {
         "id": "YWB002",
@@ -789,7 +789,7 @@
         },
         "stack": 1,
         "material": ["WM023", "WWR001"],
-        "atk0": 50,
+        "atk0": 43,
         "uniq008": {
           "detail": {
             "kr": ["+0.2"],
@@ -816,7 +816,7 @@
         },
         "stack": 1,
         "material": ["WWC002", "WWF001"],
-        "atk0": 47
+        "atk0": 40
       },
       {
         "id": "BWC001",
@@ -834,7 +834,7 @@
         },
         "stack": 1,
         "material": ["GWC002", "WA001"],
-        "atk0": 61,
+        "atk0": 54,
         "move_spd0": 0.04
       },
       {
@@ -853,7 +853,7 @@
         },
         "stack": 1,
         "material": ["GWC001", "WWG001"],
-        "atk0": 70,
+        "atk0": 63,
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
@@ -880,7 +880,7 @@
         },
         "stack": 1,
         "material": ["GWC002", "GM001"],
-        "atk0": 88,
+        "atk0": 81,
         "move_spd0": -0.06
       },
       {
@@ -899,7 +899,7 @@
         },
         "stack": 1,
         "material": ["BWC003", "WM007"],
-        "atk0": 82,
+        "atk0": 75,
         "grow_atk0": 2,
         "vision0": 3
       },
@@ -919,7 +919,7 @@
         },
         "stack": 1,
         "material": ["BWC002", "GM004"],
-        "atk0": 90,
+        "atk0": 83,
         "hp0": 200,
         "uniq008": {
           "detail": {
@@ -947,7 +947,7 @@
         },
         "stack": 1,
         "material": ["BWC002", "GM011"],
-        "atk0": 92,
+        "atk0": 85,
         "grow_skill1": 0.02,
         "uniq008": {
           "detail": {
@@ -975,7 +975,7 @@
         },
         "stack": 1,
         "material": ["BWC001", "GA002"],
-        "atk0": 98,
+        "atk0": 91,
         "cri_rate1": 0.12,
         "cool1": 0.15,
         "move_spd0": 0.06
@@ -996,7 +996,7 @@
         },
         "stack": 1,
         "material": ["BWC001", "BM003"],
-        "atk0": 72,
+        "atk0": 65,
         "atk_spd1": 0.2,
         "move_spd0": 0.04,
         "range0": -0.2,
@@ -1071,7 +1071,7 @@
         },
         "stack": 1,
         "material": ["BWC003", "BA012"],
-        "atk0": 88,
+        "atk0": 81,
         "vamp1": 0.2,
         "uniq003": {
           "detail": {
@@ -1119,7 +1119,7 @@
         },
         "stack": 1,
         "material": ["GWC002", "PM009"],
-        "atk0": 115,
+        "atk0": 108,
         "atk_spd1": 0.2,
         "uniq011": {
           "detail": {
@@ -1429,7 +1429,7 @@
         "sort": "glove",
         "img": "https://lh3.google.com/u/0/d/1YR4c1dfLr7cjT2KQU1AHJgpvMSFuarWy",
         "location": ["A006", "A014"],
-        "tobe": ["GWE001", "BWE001", "BB007"],
+        "tobe": ["GWE001", "BWE001", "PB015"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2672,7 +2672,7 @@
         "atk0": 53,
         "skill1": 0.12,
         "grow_skill1": 0.01,
-        "atk_spd1": 0.12
+        "atk_spd1": 0.1
       },
       {
         "id": "PWH004",
@@ -5103,7 +5103,7 @@
         "stack": 1,
         "material": ["WWO001", "WM007"],
         "atk0": 40,
-        "vision0": 1.5
+        "vision0": 1
       },
       {
         "id": "BWO001",
@@ -5122,7 +5122,7 @@
         "stack": 1,
         "material": ["GWO001", "WWQ001"],
         "atk0": 60,
-        "vision0": 2
+        "vision0": 1.5
       },
       {
         "id": "BWO002",
@@ -5142,7 +5142,7 @@
         "material": ["GWO001", "GM011"],
         "atk0": 50,
         "skill1": 0.18,
-        "vision0": 1.5
+        "vision0": 1
       },
       {
         "id": "BWO003",
@@ -5162,7 +5162,7 @@
         "material": ["GWO001", "GM008"],
         "atk0": 65,
         "atk_spd1": 0.2,
-        "vision0": 2
+        "vision0": 1
       },
       {
         "id": "PWO001",
@@ -5184,7 +5184,7 @@
         "atk0": 74,
         "grow_atk0": 2,
         "vamp1": 0.18,
-        "vision0": 2
+        "vision0": 1.5
       },
       {
         "id": "PWO002",
@@ -5206,14 +5206,14 @@
         "atk0": 80,
         "uniq008": {
           "detail": {
-            "kr": ["+1"],
-            "en": ["+1"],
-            "ja": ["+1"],
-            "cn": ["+1"]
+            "kr": ["+0.5"],
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
-          "value": 1
+          "value": 0.5
         },
-        "vision0": 3
+        "vision0": 2
       },
       {
         "id": "PWO003",
@@ -5232,7 +5232,7 @@
         "stack": 1,
         "material": ["BWO002", "GM010"],
         "load0": 1,
-        "atk0": 62,
+        "atk0": 64,
         "skill1": 0.18,
         "vision0": 1.5
       },
@@ -5254,9 +5254,9 @@
         "material": ["BWO003", "GM006"],
         "load0": 4,
         "atk0": 87,
-        "atk_spd1": 0.18,
+        "atk_spd1": 0.2,
         "grow_atk_spd1": 0.02,
-        "vision0": 2
+        "vision0": 1
       },
       {
         "id": "YWO001",
@@ -5275,9 +5275,9 @@
         "stack": 1,
         "material": ["BWO002", "PM004"],
         "load0": 2,
-        "atk0": 80,
+        "atk0": 78,
         "skill1": 0.28,
-        "vision0": 2.5
+        "vision0": 2
       },
       {
         "id": "YWO002",
@@ -5886,7 +5886,7 @@
         "sort": "nunchaku",
         "img": "https://lh3.google.com/u/0/d/1vas4b4WQSwonfA9vSEl0-r6t6O0s9Zp6",
         "location": false,
-        "tobe": ["BWR001", "BWR002", "PWR003"],
+        "tobe": ["BWR001", "BWR002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -5904,7 +5904,7 @@
         "sort": "nunchaku",
         "img": "https://lh3.google.com/u/0/d/1OHsURkV6GHJI9N-_BlgTYfLe7sdF0fMO",
         "location": false,
-        "tobe": ["PWR001", "PWR003"],
+        "tobe": ["PWR001", "PWR004"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -5931,7 +5931,7 @@
         "sort": "nunchaku",
         "img": "https://lh3.google.com/u/0/d/1yz9tIvCyGdxpl4x9Eg_Tf09ew43Bf0_Q",
         "location": false,
-        "tobe": ["PWR002", "YWR001"],
+        "tobe": ["PWR002", "PWR003", "YWR001"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -6006,7 +6006,7 @@
           "cn": "刻耳柏洛斯"
         },
         "stack": 1,
-        "material": ["BWR001", "GWR001"],
+        "material": ["BWR002", "GWR001"],
         "atk0": 33,
         "grow_atk0": 2,
         "uniq013": {
@@ -6026,6 +6026,35 @@
             "cn": ["+0.5"]
           },
           "value": 0.5
+        }
+      },
+      {
+        "id": "PWR004",
+        "sort": "nunchaku",
+        "img": "https://drive.google.com/file/d/1Z3ACFMVwbBKTkusvhOzcrw8jsxeXDKu0/view?usp=sharing",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "블루3",
+          "en": "Blue 3",
+          "ja": "Blue 3",
+          "cn": "Blue 3"
+        },
+        "stack": 1,
+        "material": ["BWR002", "GA002"],
+        "atk0": 50,
+        "cri_rate1": 0.26,
+        "cool1": 0.1,
+        "uniq013": {
+          "detail": {
+            "kr": ["기본 공격 시, 대상의 치유 효과가 40% 감소"],
+            "en": ["Basic attacks reduce target's healing received by 40%"],
+            "ja": ["基本攻撃を受けた対象の治癒効果が減少:40%"],
+            "cn": ["Basic attacks reduce target's healing received by 40%"]
+          },
+          "value": 0.4
         }
       },
       {
@@ -6607,7 +6636,7 @@
         "stack": 1,
         "material": ["BWT004", "WM008"],
         "atk0": 51,
-        "vamp1": 0.22,
+        "vamp1": 0.18,
         "atk_spd1": 0.3
       },
       {
@@ -6680,26 +6709,26 @@
             "kr": [
               "1스택 당 효과 적용",
               "기본 공격이 적 실험체에게 명중하면 발동",
-              "현재 체력의 6%의 고유피해",
+              "현재 체력의 4%의 고유피해",
               "열정 버프 1스택 획득"
             ],
             "en": [
               "Hitting a test subject with a basic attack deals",
-              "Damage equal to 6% of the target’s current HP",
+              "Damage equal to 4% of the target’s current HP",
               "Grants you a stack of Vigor for 5 seconds"
             ],
             "ja": [
               "基本攻撃が敵実験体に的中する時",
-              "敵実験体の現在体力の6%のダメージ",
+              "敵実験体の現在体力の4%のダメージ",
               "5秒間情熱スタックを獲得"
             ],
             "cn": [
               "Hitting a test subject with a basic attack deals",
-              "Damage equal to 6% of the target’s current HP",
+              "Damage equal to 4% of the target’s current HP",
               "Grants you a stack of Vigor for 5 seconds"
             ]
           },
-          "value": 0.06
+          "value": 0.04
         },
         "buff004": {
           "detail": {
@@ -6707,25 +6736,25 @@
               "공격 속도: 8% 증가",
               "지속 시간: 7초",
               "최대 4스택",
-              "최대 스택: 공격력 +15, 이동속도 +0.1"
+              "최대 스택: 공격력 +10, 이동속도 +0.1"
             ],
             "en": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 8%",
               "Duration: 7s",
-              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
+              "At 3 stacks, you gain extra 10 Attack Power and 0.1 Movement speed"
             ],
             "ja": [
               "重畳された情熱スタックにつき",
               "攻撃速度:+8%",
               "7秒間",
-              "最大3重畳すると、15の攻撃力と0.1の移動速度を追加"
+              "最大3重畳すると、10の攻撃力と0.1の移動速度を追加"
             ],
             "cn": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 8%",
               "Duration: 7s",
-              "At 3 stacks, you gain extra 15 Attack Power and 0.1 Movement speed"
+              "At 3 stacks, you gain extra 10 Attack Power and 0.1 Movement speed"
             ]
           },
           "value": 0.08

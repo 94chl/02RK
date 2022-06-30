@@ -841,6 +841,12 @@ export const itemOptions = {
     ja: "呪い",
     cn: "詛咒",
   },
+  buff015: {
+    kr: "롤링썬더",
+    en: "",
+    ja: "",
+    cn: "",
+  },
   active001: {
     kr: "가속",
     en: "Sprint",
@@ -870,6 +876,18 @@ export const itemOptions = {
     en: "Respite",
     ja: "停止",
     cn: "靜止",
+  },
+  active015: {
+    kr: "롤링썬더",
+    en: "Rolling Thunder",
+    ja: "ローリング·サンダー",
+    cn: "滾雷",
+  },
+  active016: {
+    kr: "중력장",
+    en: "Gravitational Field",
+    ja: "重力場",
+    cn: "重力場",
   },
 };
 

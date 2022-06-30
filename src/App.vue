@@ -57,12 +57,13 @@
         this.$store.dispatch("setTargetItems", targetItems);
         this.$store.dispatch("setRoute", customRoute);
         ampl.log("load previous data");
+        ampl.log("start app");
       } else {
         removeSessionStorage("02RK_targetItems");
         removeSessionStorage("02RK_customRoute");
         ampl.log("reset previous data");
+        ampl.log("start app");
       }
-      ampl.log("start app");
     },
   };
 </script>

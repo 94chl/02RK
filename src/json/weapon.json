@@ -750,6 +750,54 @@
           },
           "value": 0.99
         }
+      },
+      {
+        "id": "YWB021",
+        "sort": "twoHand",
+        "img": "https://lh3.google.com/u/0/d/1dRTqB54BDbcQC4fZA0KP6yC4O4PxCYuW",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "레바테인 Mk2",
+          "en": "Laevateinn Mk2",
+          "ja": "レーヴァテインMk2",
+          "cn": "災厄之杖Mk2"
+        },
+        "stack": 1,
+        "only": {
+          "kr": "코발트 프로토콜",
+          "en": "Cobalt Protocol",
+          "ja": "コバルト·プロトコル",
+          "cn": "鈷協議"
+        },
+        "atk0": 48,
+        "uniq031": {
+          "detail": {
+            "kr": [
+              "기본 공격 시, 매초 최대 체력의 1%의 고정 피해를 입히는 디버프를 부여",
+              "4초 지속",
+              "최대 4스택"
+            ],
+            "en": [
+              "Each basic applies a stack of Smolder, dealing 1% of the enemy’s max HP as true damage.",
+              "4s Duration",
+              "Max 4 Stacks"
+            ],
+            "ja": [
+              "基本攻撃時、毎秒最大体力1%の固定ダメージを与えるデバフを付与します。",
+              "4秒間持続",
+              "最大4スタック"
+            ],
+            "cn": [
+              "Each basic applies a stack of Smolder, dealing 1% of the enemy’s max HP as true damage.",
+              "4s Duration",
+              "Max 4 Stacks"
+            ]
+          },
+          "value": 0.01
+        }
       }
     ]
   },
@@ -1863,6 +1911,54 @@
         "material": ["PT005", "GWE001"],
         "atk0": 79,
         "move_spd0": 0.1
+      },
+      {
+        "id": "YWE021",
+        "sort": "glove",
+        "img": "https://lh3.google.com/u/0/d/1QztdycvTSUXIntszi5q_VgXclC0VDjV6",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "주작자문 Mk2",
+          "en": "Mark of the Phoenix Mk2",
+          "ja": "朱雀刺紋Mk2",
+          "cn": "朱雀之紋Mk2"
+        },
+        "stack": 1,
+        "only": {
+          "kr": "코발트 프로토콜",
+          "en": "Cobalt Protocol",
+          "ja": "コバルト·プロトコル",
+          "cn": "鈷協議"
+        },
+        "atk0": 40,
+        "uniq031": {
+          "detail": {
+            "kr": [
+              "기본 공격 시, 매초 최대 체력의 1%의 고정 피해를 입히는 디버프를 부여",
+              "4초 지속",
+              "최대 4스택"
+            ],
+            "en": [
+              "Each basic applies a stack of Smolder, dealing 1% of the enemy’s max HP as true damage.",
+              "4s Duration",
+              "Max 4 Stacks"
+            ],
+            "ja": [
+              "基本攻撃時、毎秒最大体力1%の固定ダメージを与えるデバフを付与します。",
+              "4秒間持続",
+              "最大4スタック"
+            ],
+            "cn": [
+              "Each basic applies a stack of Smolder, dealing 1% of the enemy’s max HP as true damage.",
+              "4s Duration",
+              "Max 4 Stacks"
+            ]
+          },
+          "value": 0.01
+        }
       }
     ]
   },
@@ -4032,7 +4128,7 @@
         },
         "stack": 1,
         "material": ["BWK003", "WWF001"],
-        "atk0": 74,
+        "atk0": 72,
         "grow_basic_atk1": 0.012
       },
       {
@@ -4129,7 +4225,7 @@
         },
         "stack": 1,
         "material": ["BWK004", "BA005"],
-        "atk0": 70,
+        "atk0": 64,
         "atk_spd1": 0.33,
         "move_spd0": 0.06
       },
@@ -5858,6 +5954,54 @@
         "material": ["BWQ001", "PM004"],
         "atk0": 108,
         "grow_atk_spd1": 0.02
+      },
+      {
+        "id": "YWQ021",
+        "sort": "spear",
+        "img": "https://lh3.google.com/u/0/d/102aOdiXmQu5_PWHAKwcKgznXGw4VxmQc",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "화첨창 Mk2",
+          "en": "Blazing Lance Mk2",
+          "ja": "火尖槍Mk2",
+          "cn": "烈日之矛Mk2"
+        },
+        "stack": 1,
+        "only": {
+          "kr": "코발트 프로토콜",
+          "en": "Cobalt Protocol",
+          "ja": "コバルト·プロトコル",
+          "cn": "鈷協議"
+        },
+        "atk0": 60,
+        "uniq031": {
+          "detail": {
+            "kr": [
+              "기본 공격 시, 매초 최대 체력의 1%의 고정 피해를 입히는 디버프를 부여",
+              "4초 지속",
+              "최대 4스택"
+            ],
+            "en": [
+              "Each basic applies a stack of Smolder, dealing 1% of the enemy’s max HP as true damage.",
+              "4s Duration",
+              "Max 4 Stacks"
+            ],
+            "ja": [
+              "基本攻撃時、毎秒最大体力1%の固定ダメージを与えるデバフを付与します。",
+              "4秒間持続",
+              "最大4スタック"
+            ],
+            "cn": [
+              "Each basic applies a stack of Smolder, dealing 1% of the enemy’s max HP as true damage.",
+              "4s Duration",
+              "Max 4 Stacks"
+            ]
+          },
+          "value": 0.01
+        }
       }
     ]
   },
@@ -6031,7 +6175,7 @@
       {
         "id": "PWR004",
         "sort": "nunchaku",
-        "img": "https://drive.google.com/file/d/1Z3ACFMVwbBKTkusvhOzcrw8jsxeXDKu0/view?usp=sharing",
+        "img": "https://lh3.google.com/u/0/d/1Z3ACFMVwbBKTkusvhOzcrw8jsxeXDKu0=w1013-h910-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -6044,7 +6188,7 @@
         },
         "stack": 1,
         "material": ["BWR002", "GA002"],
-        "atk0": 50,
+        "atk0": 44,
         "cri_rate1": 0.26,
         "cool1": 0.1,
         "uniq013": {

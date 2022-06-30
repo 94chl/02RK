@@ -1053,6 +1053,31 @@
           },
           "value": 0.2
         }
+      },
+      {
+        "id": "YC034",
+        "sort": "clothes",
+        "img": "https://lh3.google.com/u/0/d/1hOmsAAYHk4v6lSCCrxMRg-_iyEmDqKnh",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "성법의 Mk2",
+          "en": "Holy Orders Mk2",
+          "ja": "聖法衣Mk2",
+          "cn": "神職法衣Mk2"
+        },
+        "stack": 1,
+        "only": {
+          "kr": "코발트 프로토콜",
+          "en": "Cobalt Protocol",
+          "ja": "コバルト·プロトコル",
+          "cn": "鈷協議"
+        },
+        "atk0": 45,
+        "def0": 30,
+        "hp0": 200
       }
     ]
   },
@@ -1141,7 +1166,7 @@
         },
         "stack": 1,
         "material": ["WH001", "WM024"],
-        "def0": 14,
+        "def0": 10,
         "mp0": 270
       },
       {
@@ -1281,7 +1306,7 @@
         },
         "stack": 1,
         "material": ["GH002", "WM008"],
-        "def0": 16,
+        "def0": 12,
         "mp0": 400
       },
       {
@@ -1392,7 +1417,7 @@
         "material": ["BH003", "GA003"],
         "cri_atk1": 0.05,
         "cri_rate1": 0.2,
-        "def0": 18,
+        "def0": 14,
         "mp0": 400
       },
       {
@@ -3617,7 +3642,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1wO9gyp-HsczMzFJQ2J8BZ2vCZJn-wCVi",
         "location": false,
-        "tobe": ["PWK005", "YA005", "YA006"],
+        "tobe": ["PWK005", "YA015", "YA016"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -4053,289 +4078,6 @@
         }
       },
       {
-        "id": "YA003",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1NQmwXJMjAuqlaF8G6nK62s0q1wrQbyD9",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "쿤달라",
-          "en": "Kundala",
-          "ja": "クンダーラ",
-          "cn": "昆德拉"
-        },
-        "stack": 1,
-        "material": ["PM002", "PM004"],
-        "only": {
-          "kr": "솔로 모드",
-          "en": "Solo",
-          "ja": "ソロモード",
-          "cn": "單人"
-        },
-        "hp0": 120,
-        "skill1": 0.17,
-        "vision0": 1.5,
-        "move_spd0": 0.1,
-        "uniq001": {
-          "detail": {
-            "kr": [
-              "스킬 사용 후, 4초 이내에 다음 기본 공격은 추가 피해",
-              "피해량: 스킬 증폭의 2.5배(근)/1.5배(원)",
-              "쿨다운: 2초"
-            ],
-            "en": [
-              "Using a skill causes a Biotic Infusion",
-              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
-              "Cooldown: 2s"
-            ],
-            "ja": [
-              "スキルを使用すると意念をチャージ",
-              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
-              "ダメージ:スキル増幅*2.5(近)/1.5(遠)",
-              "クールダウン:2秒"
-            ],
-            "cn": [
-              "Using a skill causes a Biotic Infusion",
-              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
-              "Cooldown: 2s"
-            ]
-          },
-          "value": 0.1
-        }
-      },
-      {
-        "id": "YA004",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1NQmwXJMjAuqlaF8G6nK62s0q1wrQbyD9",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "쿤달라 Mk2",
-          "en": "Kundala Mk2",
-          "ja": "クンダーラMk2",
-          "cn": "昆德拉Mk2"
-        },
-        "stack": 1,
-        "material": ["PM002", "PM004"],
-        "only": {
-          "kr": "듀오, 스쿼드 모드",
-          "en": "Duo, Squad",
-          "ja": "デュオ,スクワッド",
-          "cn": "雙人,三人"
-        },
-        "def0": 10,
-        "skill1": 0.25,
-        "vision0": 1.5,
-        "move_spd0": 0.1,
-        "active002": {
-          "detail": {
-            "kr": [
-              "사용 시 적용",
-              "자신에게 걸린 해로운 상태 이상이 해제됩니다",
-              "에어본, 넉백, 붙잡힘은 해제불가",
-              "쿨다운: 45초"
-            ],
-            "en": [
-              "Activate to instantly cleanse debuffs or crowd control effects on you",
-              "This excludes Airborne, Knockback, and Grab",
-              "Cooldown: 45s"
-            ],
-            "ja": [
-              "アイテムを使用すると、自分にかかったデバフがすぐに解除",
-              "エアボーン、ノックバック、捕まりは解除",
-              "クールダウン:45秒"
-            ],
-            "cn": [
-              "Activate to instantly cleanse debuffs or crowd control effects on you",
-              "This excludes Airborne, Knockback, and Grab",
-              "Cooldown: 45s"
-            ]
-          },
-          "value": 45
-        }
-      },
-      {
-        "id": "YA005",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1g65XFrak9yewQ_wBpT0FEW6DC3Fb3Xmz",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "살라딘의 화살통",
-          "en": "Sultan Adorned",
-          "ja": "スルタンの矢筒",
-          "cn": "蘇丹箭袋"
-        },
-        "stack": 1,
-        "material": ["BA005", "PM004"],
-        "only": {
-          "kr": "솔로 모드",
-          "en": "Solo",
-          "ja": "ソロモード",
-          "cn": "單人"
-        },
-        "atk0": 12,
-        "atk_spd1": 0.33,
-        "uniq009": {
-          "detail": {
-            "kr": ["+0.08"],
-            "en": ["+0.08"],
-            "ja": ["+0.08"],
-            "cn": ["+0.08"]
-          },
-          "value": 0.08
-        },
-        "active001": {
-          "detail": {
-            "kr": [
-              "사용 시 적용",
-              "이동 속도가 0.5(근)/0.3(원) 증가",
-              "다른 대상과 충돌하지 않음",
-              "지속시간: 2.5초",
-              "이동 외 다른 행동 시 효과 종료",
-              "쿨다운: 30초"
-            ],
-            "en": [
-              "Activate to increase your movement speed by 0.5(Melee)/0.3(Ranged) for 2.5 seconds",
-              "Ignore unit collision",
-              "Performing an action other than moving cancels this effect",
-              "Cooldown: 30s"
-            ],
-            "ja": [
-              "アイテムを使用すると、移動速度が0.5(近)/0.3(遠)だけ増加",
-              "他の対象と衝突しません。",
-              "移動以外の行動時に終了",
-              "2.5秒間",
-              "クールダウン:30秒"
-            ],
-            "cn": [
-              "Activate to increase your movement speed by 0.5(Melee)/0.3(Ranged) for 2.5 seconds",
-              "Ignore unit collision",
-              "Performing an action other than moving cancels this effect",
-              "Cooldown: 30s"
-            ]
-          },
-          "value": 1
-        }
-      },
-      {
-        "id": "YA006",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1g65XFrak9yewQ_wBpT0FEW6DC3Fb3Xmz",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "살라딘의 화살통 Mk2",
-          "en": "Sultan Adorned Mk2",
-          "ja": "スルタンの矢筒Mk2",
-          "cn": "蘇丹箭袋Mk2"
-        },
-        "stack": 1,
-        "material": ["BA005", "PM004"],
-        "only": {
-          "kr": "듀오, 스쿼드 모드",
-          "en": "Duo, Squad",
-          "ja": "デュオ,スクワッド",
-          "cn": "雙人,三人"
-        },
-        "atk0": 12,
-        "atk_spd1": 0.33,
-        "uniq009": {
-          "detail": {
-            "kr": ["+0.06"],
-            "en": ["+0.06"],
-            "ja": ["+0.06"],
-            "cn": ["+0.06"]
-          },
-          "value": 0.06
-        },
-        "active002": {
-          "detail": {
-            "kr": [
-              "사용 시 적용",
-              "자신에게 걸린 해로운 상태 이상이 해제됩니다",
-              "에어본, 넉백, 붙잡힘은 해제불가",
-              "쿨다운: 45초"
-            ],
-            "en": [
-              "Activate to instantly cleanse debuffs or crowd control effects on you",
-              "This excludes Airborne, Knockback, and Grab",
-              "Cooldown: 45s"
-            ],
-            "ja": [
-              "アイテムを使用すると、自分にかかったデバフがすぐに解除",
-              "エアボーン、ノックバック、捕まりは解除",
-              "クールダウン:45秒"
-            ],
-            "cn": [
-              "Activate to instantly cleanse debuffs or crowd control effects on you",
-              "This excludes Airborne, Knockback, and Grab",
-              "Cooldown: 45s"
-            ]
-          },
-          "value": 45
-        }
-      },
-      {
-        "id": "YA007",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1KNtmo1_Iwcsm8UH5fiY2UPh42OErZ0bu",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "아티팩트",
-          "en": "Totem",
-          "ja": "アーティファクト",
-          "cn": "極光陀螺"
-        },
-        "stack": 1,
-        "material": ["PM006", "WM016"],
-        "only": {
-          "kr": "듀오, 스쿼드 모드",
-          "en": "Duo, Squad",
-          "ja": "デュオ,スクワッド",
-          "cn": "雙人,三人"
-        },
-        "atk0": 18,
-        "def0": 8,
-        "active005": {
-          "detail": {
-            "kr": [
-              "사용 시 적용",
-              "2.5간 경직 상태에 빠집니다",
-              "쿨다운: 55초"
-            ],
-            "en": [
-              "Activate to put the user in stasis for 2.5 second",
-              "Making them invulnerable unable to perform any other actions as well",
-              "Cooldown: 55s"
-            ],
-            "ja": [
-              "アイテムを使用すると、2.5秒間硬直状態になり、いかなる行動もできません。",
-              "クールダウン:55秒"
-            ],
-            "cn": [
-              "Activate to put the user in stasis for 2.5 second",
-              "Making them invulnerable unable to perform any other actions as well",
-              "Cooldown: 55s"
-            ]
-          },
-          "value": 2.5
-        }
-      },
-      {
         "id": "YA008",
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1SlvvEm-8UFLWlUQ0xbiab2O1Hf5gQ6lI",
@@ -4480,7 +4222,7 @@
       {
         "id": "YA012",
         "sort": "accessory",
-        "img": "https://drive.google.com/file/d/1N1Eefy2s6teHlhRGikGEVJk4BxTQZp2a/view?usp=sharing",
+        "img": "https://lh3.google.com/u/0/d/1N1Eefy2s6teHlhRGikGEVJk4BxTQZp2a=w1411-h910-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4509,6 +4251,455 @@
             ]
           },
           "value": 0.4
+        }
+      },
+      {
+        "id": "YA013",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1NQmwXJMjAuqlaF8G6nK62s0q1wrQbyD9",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "쿤달라",
+          "en": "Kundala",
+          "ja": "クンダーラ",
+          "cn": "昆德拉"
+        },
+        "stack": 1,
+        "material": ["PM002", "PM004"],
+        "only": {
+          "kr": "솔로 모드",
+          "en": "Solo",
+          "ja": "ソロモード",
+          "cn": "單人"
+        },
+        "hp0": 120,
+        "skill1": 0.17,
+        "vision0": 1.5,
+        "move_spd0": 0.1,
+        "uniq001": {
+          "detail": {
+            "kr": [
+              "스킬 사용 후, 4초 이내에 다음 기본 공격은 추가 피해",
+              "피해량: 스킬 증폭의 2.5배(근)/1.5배(원)",
+              "쿨다운: 2초"
+            ],
+            "en": [
+              "Using a skill causes a Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
+              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Cooldown: 2s"
+            ],
+            "ja": [
+              "スキルを使用すると意念をチャージ",
+              "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
+              "ダメージ:スキル増幅*2.5(近)/1.5(遠)",
+              "クールダウン:2秒"
+            ],
+            "cn": [
+              "Using a skill causes a Biotic Infusion",
+              "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
+              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Cooldown: 2s"
+            ]
+          },
+          "value": 0.1
+        }
+      },
+      {
+        "id": "YA014",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1NQmwXJMjAuqlaF8G6nK62s0q1wrQbyD9",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "쿤달라 Mk2",
+          "en": "Kundala Mk2",
+          "ja": "クンダーラMk2",
+          "cn": "昆德拉Mk2"
+        },
+        "stack": 1,
+        "material": ["PM002", "PM004"],
+        "only": {
+          "kr": "듀오, 스쿼드 모드",
+          "en": "Duo, Squad",
+          "ja": "デュオ,スクワッド",
+          "cn": "雙人,三人"
+        },
+        "def0": 10,
+        "skill1": 0.25,
+        "vision0": 1.5,
+        "move_spd0": 0.1,
+        "active002": {
+          "detail": {
+            "kr": [
+              "사용 시 적용",
+              "자신에게 걸린 해로운 상태 이상이 해제됩니다",
+              "에어본, 넉백, 붙잡힘은 해제불가",
+              "쿨다운: 45초"
+            ],
+            "en": [
+              "Activate to instantly cleanse debuffs or crowd control effects on you",
+              "This excludes Airborne, Knockback, and Grab",
+              "Cooldown: 45s"
+            ],
+            "ja": [
+              "アイテムを使用すると、自分にかかったデバフがすぐに解除",
+              "エアボーン、ノックバック、捕まりは解除",
+              "クールダウン:45秒"
+            ],
+            "cn": [
+              "Activate to instantly cleanse debuffs or crowd control effects on you",
+              "This excludes Airborne, Knockback, and Grab",
+              "Cooldown: 45s"
+            ]
+          },
+          "value": 45
+        }
+      },
+      {
+        "id": "YA015",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1g65XFrak9yewQ_wBpT0FEW6DC3Fb3Xmz",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "살라딘의 화살통",
+          "en": "Sultan Adorned",
+          "ja": "スルタンの矢筒",
+          "cn": "蘇丹箭袋"
+        },
+        "stack": 1,
+        "material": ["BA005", "PM004"],
+        "only": {
+          "kr": "솔로 모드",
+          "en": "Solo",
+          "ja": "ソロモード",
+          "cn": "單人"
+        },
+        "atk0": 12,
+        "atk_spd1": 0.33,
+        "uniq009": {
+          "detail": {
+            "kr": ["+0.08"],
+            "en": ["+0.08"],
+            "ja": ["+0.08"],
+            "cn": ["+0.08"]
+          },
+          "value": 0.08
+        },
+        "active001": {
+          "detail": {
+            "kr": [
+              "사용 시 적용",
+              "이동 속도가 0.5(근)/0.3(원) 증가",
+              "다른 대상과 충돌하지 않음",
+              "지속시간: 2.5초",
+              "이동 외 다른 행동 시 효과 종료",
+              "쿨다운: 30초"
+            ],
+            "en": [
+              "Activate to increase your movement speed by 0.5(Melee)/0.3(Ranged) for 2.5 seconds",
+              "Ignore unit collision",
+              "Performing an action other than moving cancels this effect",
+              "Cooldown: 30s"
+            ],
+            "ja": [
+              "アイテムを使用すると、移動速度が0.5(近)/0.3(遠)だけ増加",
+              "他の対象と衝突しません。",
+              "移動以外の行動時に終了",
+              "2.5秒間",
+              "クールダウン:30秒"
+            ],
+            "cn": [
+              "Activate to increase your movement speed by 0.5(Melee)/0.3(Ranged) for 2.5 seconds",
+              "Ignore unit collision",
+              "Performing an action other than moving cancels this effect",
+              "Cooldown: 30s"
+            ]
+          },
+          "value": 1
+        }
+      },
+      {
+        "id": "YA016",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1g65XFrak9yewQ_wBpT0FEW6DC3Fb3Xmz",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "살라딘의 화살통 Mk2",
+          "en": "Sultan Adorned Mk2",
+          "ja": "スルタンの矢筒Mk2",
+          "cn": "蘇丹箭袋Mk2"
+        },
+        "stack": 1,
+        "material": ["BA005", "PM004"],
+        "only": {
+          "kr": "듀오, 스쿼드 모드",
+          "en": "Duo, Squad",
+          "ja": "デュオ,スクワッド",
+          "cn": "雙人,三人"
+        },
+        "atk0": 12,
+        "atk_spd1": 0.33,
+        "uniq009": {
+          "detail": {
+            "kr": ["+0.06"],
+            "en": ["+0.06"],
+            "ja": ["+0.06"],
+            "cn": ["+0.06"]
+          },
+          "value": 0.06
+        },
+        "active002": {
+          "detail": {
+            "kr": [
+              "사용 시 적용",
+              "자신에게 걸린 해로운 상태 이상이 해제됩니다",
+              "에어본, 넉백, 붙잡힘은 해제불가",
+              "쿨다운: 45초"
+            ],
+            "en": [
+              "Activate to instantly cleanse debuffs or crowd control effects on you",
+              "This excludes Airborne, Knockback, and Grab",
+              "Cooldown: 45s"
+            ],
+            "ja": [
+              "アイテムを使用すると、自分にかかったデバフがすぐに解除",
+              "エアボーン、ノックバック、捕まりは解除",
+              "クールダウン:45秒"
+            ],
+            "cn": [
+              "Activate to instantly cleanse debuffs or crowd control effects on you",
+              "This excludes Airborne, Knockback, and Grab",
+              "Cooldown: 45s"
+            ]
+          },
+          "value": 45
+        }
+      },
+      {
+        "id": "YA017",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1KNtmo1_Iwcsm8UH5fiY2UPh42OErZ0bu",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "아티팩트",
+          "en": "Totem",
+          "ja": "アーティファクト",
+          "cn": "極光陀螺"
+        },
+        "stack": 1,
+        "material": ["PM006", "WM016"],
+        "only": {
+          "kr": "듀오, 스쿼드 모드",
+          "en": "Duo, Squad",
+          "ja": "デュオ,スクワッド",
+          "cn": "雙人,三人"
+        },
+        "atk0": 18,
+        "def0": 8,
+        "active005": {
+          "detail": {
+            "kr": [
+              "사용 시 적용",
+              "2.5간 경직 상태에 빠집니다",
+              "쿨다운: 55초"
+            ],
+            "en": [
+              "Activate to put the user in stasis for 2.5 second",
+              "Making them invulnerable unable to perform any other actions as well",
+              "Cooldown: 55s"
+            ],
+            "ja": [
+              "アイテムを使用すると、2.5秒間硬直状態になり、いかなる行動もできません。",
+              "クールダウン:55秒"
+            ],
+            "cn": [
+              "Activate to put the user in stasis for 2.5 second",
+              "Making them invulnerable unable to perform any other actions as well",
+              "Cooldown: 55s"
+            ]
+          },
+          "value": 2.5
+        }
+      },
+      {
+        "id": "YA018",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1KNtmo1_Iwcsm8UH5fiY2UPh42OErZ0bu",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "아티팩트 Mk2",
+          "en": "Totem Mk2",
+          "ja": "アーティファクトMk2",
+          "cn": "極光陀螺Mk2"
+        },
+        "stack": 1,
+        "only": {
+          "kr": "코발트 프로토콜",
+          "en": "Cobalt Protocol",
+          "ja": "コバルト·プロトコル",
+          "cn": "鈷協議"
+        },
+        "atk0": 20,
+        "def0": 20,
+        "atk_spd1": 0.15,
+        "skill1": 0.12,
+        "active005": {
+          "detail": {
+            "kr": [
+              "사용 시 적용",
+              "2.5간 경직 상태에 빠집니다",
+              "쿨다운: 55초"
+            ],
+            "en": [
+              "Activate to put the user in stasis for 2.5 second",
+              "Making them invulnerable unable to perform any other actions as well",
+              "Cooldown: 55s"
+            ],
+            "ja": [
+              "アイテムを使用すると、2.5秒間硬直状態になり、いかなる行動もできません。",
+              "クールダウン:55秒"
+            ],
+            "cn": [
+              "Activate to put the user in stasis for 2.5 second",
+              "Making them invulnerable unable to perform any other actions as well",
+              "Cooldown: 55s"
+            ]
+          },
+          "value": 2.5
+        }
+      },
+      {
+        "id": "YA019",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1Gdk2snkwFki6bRV1X_Nc4lrEIr2PeCPC=w1411-h910-iv1",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "코발트 블루",
+          "en": "Cobalt Blue",
+          "ja": "コバルトブルー",
+          "cn": "鈷藍"
+        },
+        "stack": 1,
+        "only": {
+          "kr": "코발트 프로토콜",
+          "en": "Cobalt Protocol",
+          "ja": "コバルト·プロトコル",
+          "cn": "鈷協議"
+        },
+        "atk0": 20,
+        "def0": 20,
+        "hp0": 200,
+        "active015": {
+          "detail": {
+            "kr": [
+              "아이템 사용 시 0.5초 후 아군 모두에게 [롤링썬더] 상태를 부여",
+              "쿨다운: 55초"
+            ],
+            "en": [
+              "0.5 seconds after activation, buff all allies with [Rolling Thunder]",
+              "Cooldown: 55s"
+            ],
+            "ja": [
+              "アイテム使用時、0.5秒後味方全員に[ローリング·サンダー]状態を付与します。",
+              "クールダウン:55秒"
+            ],
+            "cn": [
+              "0.5 seconds after activation, buff all allies with [Rolling Thunder]",
+              "Cooldown: 55s"
+            ]
+          },
+          "value": 0.5
+        },
+        "buff015": {
+          "detail": {
+            "kr": [
+              "점진적으로 이동속도가 100% 증가",
+              "처음 충돌한 적에게 300의 고유피해 + 넉백",
+              "지속시간: 4.5초"
+            ],
+            "en": [
+              "Propelled by a wave of thunder, your Movement Speed gradually increases by 100%.",
+              "Colliding with an enemy knocks them back and deals 300 cellular damage.",
+              "Duration: 4.5s"
+            ],
+            "ja": [
+              "体に嵐のバリアを貼って移動速度が100%だけ漸進的に増加し、初めて衝突した敵に300の固有ダメージを与えてノックバックさせます。",
+              "4.5秒間"
+            ],
+            "cn": [
+              "Propelled by a wave of thunder, your Movement Speed gradually increases by 100%.",
+              "Colliding with an enemy knocks them back and deals 300 cellular damage.",
+              "Duration: 4.5s"
+            ]
+          },
+          "value": 300
+        }
+      },
+      {
+        "id": "YA020",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1vr_TrK7I8rS3ACCfBmUrEh7UMbCZn1zX=w1013-h910-iv1",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "미니어쳐 솔라시스템",
+          "en": "Solar System Miniature",
+          "ja": "ミニチュアソーラーシステム",
+          "cn": "微型太陽系統"
+        },
+        "stack": 1,
+        "material": ["PM006", "WM016"],
+        "only": {
+          "kr": "코발트 프로토콜",
+          "en": "Cobalt Protocol",
+          "ja": "コバルト·プロトコル",
+          "cn": "鈷協議"
+        },
+        "atk0": 20,
+        "def0": 20,
+        "active005": {
+          "detail": {
+            "kr": [
+              "사용 시 3.75m 범위 내 모든 적 실험체를 자신 주변까지 당겨온 후, 1.45초간 기절 시키고 300의 고정피해",
+              "쿨다운: 65초"
+            ],
+            "en": [
+              "Pull all enemy test subjects within 3.75m towards the caster, dealing 300 true damage and stunning them for 1.45 seconds.",
+              "Cooldown: 65s"
+            ],
+            "ja": [
+              "アイテム使用時、 3.75m範囲内のすべての敵実験体を自分の近くまで引っ張って、1.45秒間気絶300の固定ダメージを与えます。",
+              "クールダウン:65秒"
+            ],
+            "cn": [
+              "Pull all enemy test subjects within 3.75m towards the caster, dealing 300 true damage and stunning them for 1.45 seconds.",
+              "Cooldown: 65s"
+            ]
+          },
+          "value": 1.45
         }
       }
     ]

@@ -267,7 +267,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1cIwxbTTNCKyrGzaWkKgPG3NO_C4lLn-g",
         "location": ["A007", "A012", "A014"],
-        "tobe": ["GWE002", "GWS001", "GM001", "GT002", "YA007"],
+        "tobe": ["GWE002", "GWS001", "GM001", "GT002", "YA017"],
         "pickup": 3,
         "limit": 3,
         "name": {
@@ -869,8 +869,8 @@
           "YB006",
           "YS008",
           "YA009",
-          "YA003",
-          "YA004",
+          "YA013",
+          "YA014",
           "PT005",
           "BF028"
         ],
@@ -925,10 +925,10 @@
           "YB007",
           "YA008",
           "YA010",
-          "YA003",
-          "YA004",
-          "YA005",
-          "YA006",
+          "YA013",
+          "YA014",
+          "YA015",
+          "YA016",
           "BD011"
         ],
         "pickup": 1,
@@ -954,7 +954,7 @@
           "PM008",
           "PM007",
           "YA011",
-          "YA007",
+          "YA017",
           "PM009",
           "PF003"
         ],

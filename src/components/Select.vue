@@ -104,13 +104,6 @@
     },
     methods: {
       changeDept(e) {
-        ampl.log("change", {
-          tab: "SELECT",
-          target: "dept",
-          from: this.selectDept,
-          to: e.target.value,
-        });
-
         this.selectDept = e.target.value;
         this.categoryArr = database[`${this.selectDept}Data`].map((category) => ({
           ...category,
@@ -123,13 +116,6 @@
         this.$store.dispatch("setCart", this.itemArr[0]);
       },
       changeCategory(e) {
-        ampl.log("change", {
-          tab: "SELECT",
-          target: "category",
-          from: this.selectCategory,
-          to: e.target.value,
-        });
-
         this.selectCategory = e.target.value;
         this.itemArr = this.categoryArr.filter(
           (category) => category.category === this.selectCategory

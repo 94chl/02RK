@@ -129,7 +129,7 @@
           this.totalRecommendRoutes[e.target.closest("li").dataset.routeIndex];
 
         if (window.confirm(this.$t("noti.applyRoute"))) {
-          ampl.log("set recommend route", { tab: "TOTAL" });
+          ampl.log("set recommend route", { tab: "TOTAL", target });
 
           this.$store.dispatch("setRoute", target);
         }

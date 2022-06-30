@@ -109,7 +109,6 @@ const store = createStore({
         : ampl.log("show item", { to: "text" });
     },
     setCart(state, item) {
-      ampl.log("set cart", item);
       state.cart = item;
     },
     setTargetItems(state, newTargetItems) {
@@ -566,7 +565,11 @@ const store = createStore({
       const routes = pathFinder(customRoute, needDrops, bagTotal);
       // commit("setLoading", false);
       if (routes.length > 0) {
-        ampl.log("path finder works", { routes: routes.length, total });
+        ampl.log("path finder works", {
+          routes: routes.length,
+          target: total ? state.targetItems : state.cart,
+          total,
+        });
         commit("setRecommendRoutes", { routes, total });
       } else {
         ampl.log("path finder cannot find routes");

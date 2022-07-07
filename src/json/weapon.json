@@ -203,7 +203,7 @@
         "stack": 1,
         "material": ["GWA002", "BM003"],
         "atk0": 50,
-        "atk_spd1": 0.5,
+        "atk_spd1": 0.4,
         "move_spd0": 0.1
       },
       {
@@ -622,8 +622,8 @@
         },
         "stack": 1,
         "material": ["BWB001", "PM001"],
-        "atk0": 90,
-        "vamp1": 0.25,
+        "atk0": 87,
+        "vamp1": 0.2,
         "uniq017": {
           "detail": {
             "kr": [
@@ -1305,7 +1305,7 @@
         },
         "stack": 1,
         "material": ["GWD001", "BM005"],
-        "atk0": 40,
+        "atk0": 45,
         "atk_spd1": 0.35
       },
       {
@@ -1354,7 +1354,7 @@
         },
         "stack": 1,
         "material": ["WWD001", "PM009"],
-        "atk0": 65,
+        "atk0": 68,
         "atk_spd1": 0.18,
         "uniq008": {
           "detail": {
@@ -1447,7 +1447,7 @@
         },
         "stack": 1,
         "material": ["WWD001", "PM004"],
-        "atk0": 55,
+        "atk0": 58,
         "atk_spd1": 0.45
       }
     ]
@@ -2140,7 +2140,7 @@
         },
         "stack": 1,
         "material": ["BWF001", "PM009"],
-        "atk0": 63,
+        "atk0": 58,
         "def0": 8,
         "uniq006": {
           "detail": {
@@ -2204,7 +2204,7 @@
         },
         "stack": 1,
         "material": ["GWF001", "PT005"],
-        "atk0": 58,
+        "atk0": 53,
         "def0": 8,
         "move_spd0": 0.1,
         "uniq021": {
@@ -2513,7 +2513,7 @@
         },
         "stack": 1,
         "material": ["BWG004", "GC003"],
-        "atk0": 34,
+        "atk0": 40,
         "grow_skill1": 0.01,
         "cool1": 0.08,
         "uniq006": {
@@ -2521,7 +2521,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 50 + 스킬 증폭*1.35",
+              "피해량: 45 + 스킬 증폭*1",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
@@ -2529,7 +2529,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 50 + Skill Amplification*1.35",
+              "Damage: 45 + Skill Amplification*1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -2537,7 +2537,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:50+スキル増幅*1.35",
+              "ダメージ:45+スキル増幅*1",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -2545,13 +2545,13 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 50 + Skill Amplification*1.35",
+              "Damage: 45 + Skill Amplification*1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ]
           },
-          "value": 50
+          "value": 45
         },
         "buff006": {
           "detail": {
@@ -2745,7 +2745,7 @@
         },
         "stack": 1,
         "material": ["BWH002", "WM007"],
-        "atk0": 65,
+        "atk0": 60,
         "atk_spd1": 0.4,
         "vision0": 1.5
       },
@@ -3844,7 +3844,7 @@
         },
         "stack": 1,
         "material": ["GWJ003", "PM009"],
-        "atk0": 90,
+        "atk0": 85,
         "skill1": 0.25,
         "vision0": 2
       },
@@ -7309,7 +7309,7 @@
         "material": ["BWV004", "GM014"],
         "atk0": 59,
         "vision0": 1,
-        "cool1": 0.1,
+        "cool1": 0.08,
         "skill1": 0.15
       },
       {

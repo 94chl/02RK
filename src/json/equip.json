@@ -275,7 +275,7 @@
         },
         "stack": 1,
         "material": ["GC001", "WWR001"],
-        "def0": 28
+        "def0": 19
       },
       {
         "id": "BC003",
@@ -445,8 +445,7 @@
         "material": ["GC008", "BM004"],
         "atk0": 10,
         "cri_rate1": 0.24,
-        "def0": 18,
-        "skill_def1": 0.1
+        "def0": 18
       },
       {
         "id": "PC002",
@@ -521,7 +520,7 @@
         },
         "stack": 1,
         "material": ["BC005", "GC007"],
-        "def0": 28,
+        "def0": 20,
         "hp0": 105,
         "skill_def1": 0.17
       },
@@ -572,7 +571,7 @@
         "stack": 1,
         "material": ["BC002", "GM011"],
         "skill1": 0.2,
-        "def0": 28
+        "def0": 24
       },
       {
         "id": "PC008",
@@ -793,7 +792,7 @@
         "stack": 1,
         "material": ["PC007", "PM003"],
         "skill1": 0.22,
-        "def0": 40,
+        "def0": 36,
         "vision0": 1
       },
       {
@@ -1017,7 +1016,7 @@
           "cn": "只有梅才能製作"
         },
         "atk0": 50,
-        "def0": 65,
+        "def0": 50,
         "mp_reg1": 1
       },
       {
@@ -2207,7 +2206,7 @@
         },
         "stack": 1,
         "material": ["BB005", "GB002"],
-        "atk0": 25,
+        "atk0": 22,
         "cri_atk1": 0.15,
         "def0": 22,
         "hp_reg1": 0.45
@@ -2228,7 +2227,7 @@
         },
         "stack": 1,
         "material": ["BB001", "GM004"],
-        "atk0": 35,
+        "atk0": 32,
         "hp0": 120
       },
       {
@@ -3839,29 +3838,29 @@
             "kr": [
               "이동 시 스택 충전(최대 20m)",
               "충전 스택에 따라 최대 0.06의 추가 이동속도 증가",
-              "다음 기본 공격 시 스택을 모두 소모하여 최대 100의 고유피해",
+              "다음 기본 공격 시 스택을 모두 소모하여 최대 80의 고유피해",
               "근거리 실험체는 최대 스택 공격 시 2초간 상대의 이동 속도 20% 감소"
             ],
             "en": [
               "Gain a stack every move, up to 20m",
               "Your movement speed will increase by up to 0.06, based on how many stacks you have",
-              "Basic attacks consume all stacks, dealing up to 100 cellular damage",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage",
               "Melee: At max stacks, your next basic attack slows enemies by 20% for 2 seconds"
             ],
             "ja": [
               "移動するたびに[軽い足取り]を最大20mまで重畳して獲得",
               "重畳によって移動速度が最大0.06まで増加します",
-              "基本攻撃ダメージを与える場合、重畳をすべて消費して最大100の固有ダメージを与えます",
+              "基本攻撃ダメージを与える場合、重畳をすべて消費して最大80の固有ダメージを与えます",
               "近距離:最大重畳状態でダメージを受けた対象の移動速度を2秒間20%減少させます"
             ],
             "cn": [
               "Gain a stack every move, up to 20m",
               "Your movement speed will increase by up to 0.06, based on how many stacks you have",
-              "Basic attacks consume all stacks, dealing up to 100 cellular damage",
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage",
               "Melee: At max stacks, your next basic attack slows enemies by 20% for 2 seconds"
             ]
           },
-          "value": 100
+          "value": 80
         }
       },
       {
@@ -4235,7 +4234,7 @@
         },
         "stack": 1,
         "material": ["GM013", "PM001"],
-        "skill1": 0.3,
+        "skill1": 0.2,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 60%(근)/50%(원) 감소"],

@@ -2060,7 +2060,7 @@
         },
         "stack": 1,
         "material": ["BWF001", "GM009"],
-        "atk0": 62,
+        "atk0": 60,
         "vamp_all1": 0.09
       },
       {
@@ -2080,7 +2080,7 @@
         "stack": 1,
         "material": ["BWF002", "WM003"],
         "atk0": 45,
-        "def0": 18,
+        "def0": 13,
         "hp_reg1": 0.7,
         "uniq018": {
           "detail": {
@@ -6189,7 +6189,7 @@
         "stack": 1,
         "material": ["BWR002", "GA002"],
         "atk0": 44,
-        "cri_rate1": 0.26,
+        "cri_rate1": 0.23,
         "cool1": 0.1,
         "uniq013": {
           "detail": {

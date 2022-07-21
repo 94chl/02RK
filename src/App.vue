@@ -107,6 +107,11 @@
     background: #ffee00;
     color: #ff0000;
   }
+  .valueR {
+    border: 1px solid #ffee00;
+    background: #ff0000;
+    color: #fff;
+  }
 
   div,
   li,

@@ -790,6 +790,12 @@ export const itemOptions = {
   uniq035: {
     kr: "연날리기",
     en: "Smooth Walker",
+    ja: "電撃",
+    cn: "電擊",
+  },
+  uniq037: {
+    kr: "전자기 충격",
+    en: "Electric Shock",
     ja: "スムース·ウォーカー",
     cn: "風箏",
   },

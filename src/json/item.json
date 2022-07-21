@@ -2946,6 +2946,28 @@
         },
         "stack": 3,
         "material": ["PM004", "WD002"]
+      },
+      {
+        "id": "YD010",
+        "sort": "drink",
+        "img": "https://lh3.google.com/u/0/d/1cJigA2yJrdCtQK1F-u9Vlj4Vy2-223kb",
+        "location": false,
+        "tobe": false,
+        "pickup": 2,
+        "limit": 6,
+        "name": {
+          "kr": "컴뱃 에피네프린",
+          "en": "Combat Epinephrine",
+          "ja": "コンバット·エピネフリン",
+          "cn": "等離子血清"
+        },
+        "stack": 2,
+        "only": {
+          "kr": "코발트 프로토콜",
+          "en": "Cobalt Protocol",
+          "ja": "コバルト·プロトコル",
+          "cn": "鈷協議"
+        }
       }
     ]
   }

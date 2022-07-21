@@ -52,7 +52,7 @@
         "stack": 1,
         "material": ["WWA003", "WM024"],
         "atk0": 14,
-        "move_spd0": 0.06
+        "move_spd0": 0.04
       },
       {
         "id": "GWA002",
@@ -103,7 +103,7 @@
         "material": ["GWA001", "WM026"],
         "atk0": 20,
         "cool1": 0.08,
-        "move_spd0": 0.08
+        "move_spd0": 0.04
       },
       {
         "id": "BWA002",
@@ -163,7 +163,7 @@
         "grow_atk0": 2,
         "hp_reg1": 0.6,
         "cool1": 0.08,
-        "move_spd0": 0.08
+        "move_spd0": 0.06
       },
       {
         "id": "PWA002",
@@ -184,7 +184,7 @@
         "atk0": 35,
         "skill1": 0.15,
         "cool1": 0.1,
-        "move_spd0": 0.1
+        "move_spd0": 0.06
       },
       {
         "id": "PWA003",
@@ -204,7 +204,7 @@
         "material": ["GWA002", "BM003"],
         "atk0": 50,
         "atk_spd1": 0.4,
-        "move_spd0": 0.1
+        "move_spd0": 0.06
       },
       {
         "id": "PWA004",
@@ -311,7 +311,7 @@
         "stack": 1,
         "material": ["GWA001", "PM009"],
         "atk0": 82,
-        "move_spd0": 0.12,
+        "move_spd0": 0.1,
         "uniq025": {
           "detail": {
             "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 4초"],
@@ -837,7 +837,7 @@
         },
         "stack": 1,
         "material": ["WM023", "WWR001"],
-        "atk0": 43,
+        "atk0": 38,
         "uniq008": {
           "detail": {
             "kr": ["+0.2"],
@@ -864,7 +864,7 @@
         },
         "stack": 1,
         "material": ["WWC002", "WWF001"],
-        "atk0": 40
+        "atk0": 35
       },
       {
         "id": "BWC001",
@@ -882,7 +882,7 @@
         },
         "stack": 1,
         "material": ["GWC002", "WA001"],
-        "atk0": 54,
+        "atk0": 49,
         "move_spd0": 0.04
       },
       {
@@ -901,7 +901,7 @@
         },
         "stack": 1,
         "material": ["GWC001", "WWG001"],
-        "atk0": 63,
+        "atk0": 58,
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
@@ -928,7 +928,7 @@
         },
         "stack": 1,
         "material": ["GWC002", "GM001"],
-        "atk0": 81,
+        "atk0": 76,
         "move_spd0": -0.06
       },
       {
@@ -947,7 +947,7 @@
         },
         "stack": 1,
         "material": ["BWC003", "WM007"],
-        "atk0": 75,
+        "atk0": 70,
         "grow_atk0": 2,
         "vision0": 3
       },
@@ -967,7 +967,7 @@
         },
         "stack": 1,
         "material": ["BWC002", "GM004"],
-        "atk0": 83,
+        "atk0": 78,
         "hp0": 200,
         "uniq008": {
           "detail": {
@@ -995,7 +995,7 @@
         },
         "stack": 1,
         "material": ["BWC002", "GM011"],
-        "atk0": 85,
+        "atk0": 80,
         "grow_skill1": 0.02,
         "uniq008": {
           "detail": {
@@ -1023,7 +1023,7 @@
         },
         "stack": 1,
         "material": ["BWC001", "GA002"],
-        "atk0": 91,
+        "atk0": 86,
         "cri_rate1": 0.12,
         "cool1": 0.15,
         "move_spd0": 0.06
@@ -1044,7 +1044,7 @@
         },
         "stack": 1,
         "material": ["BWC001", "BM003"],
-        "atk0": 65,
+        "atk0": 60,
         "atk_spd1": 0.2,
         "move_spd0": 0.04,
         "range0": -0.2,
@@ -1119,7 +1119,7 @@
         },
         "stack": 1,
         "material": ["BWC003", "BA012"],
-        "atk0": 81,
+        "atk0": 76,
         "vamp1": 0.2,
         "uniq003": {
           "detail": {
@@ -1167,7 +1167,7 @@
         },
         "stack": 1,
         "material": ["GWC002", "PM009"],
-        "atk0": 108,
+        "atk0": 103,
         "atk_spd1": 0.2,
         "uniq011": {
           "detail": {
@@ -1674,7 +1674,7 @@
         },
         "stack": 1,
         "material": ["BWE004", "WA008"],
-        "atk0": 49,
+        "atk0": 51,
         "basic_atk1": 0.15
       },
       {
@@ -1735,7 +1735,7 @@
         "material": ["BWE006", "GA006"],
         "atk0": 40,
         "skill1": 0.15,
-        "cool1": 0.15
+        "cool1": 0.1
       },
       {
         "id": "PWE006",
@@ -1849,7 +1849,7 @@
         },
         "stack": 1,
         "material": ["GWE001", "PM007"],
-        "atk0": 52,
+        "atk0": 54,
         "grow_basic_atk1": 0.02
       },
       {
@@ -1909,7 +1909,7 @@
         },
         "stack": 1,
         "material": ["PT005", "GWE001"],
-        "atk0": 79,
+        "atk0": 81,
         "move_spd0": 0.1
       },
       {
@@ -6175,7 +6175,7 @@
       {
         "id": "PWR004",
         "sort": "nunchaku",
-        "img": "https://lh3.google.com/u/0/d/1Z3ACFMVwbBKTkusvhOzcrw8jsxeXDKu0=w1013-h910-iv1",
+        "img": "https://lh3.google.com/u/0/d/1Z3ACFMVwbBKTkusvhOzcrw8jsxeXDKu0",
         "location": false,
         "tobe": false,
         "pickup": 1,

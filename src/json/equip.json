@@ -1099,9 +1099,30 @@
           "ja": "コバルト·プロトコル",
           "cn": "鈷協議"
         },
-        "atk0": 20,
+        "atk0": 30,
         "def0": 30,
-        "vamp_all1": 0.12
+        "vamp_all1": 0.12,
+        "uniq060": {
+          "detail": {
+            "kr": [
+              "피해를 입은 적의 체력이 11%(근거리)/8.5%(원거리) 이하라면 즉시 처형합니다.",
+              "쿨다운 30초"
+            ],
+            "en": [
+              "Dealing damage to a test subject with 11%(Melee)/8.5%(Ranged) or less HP remaining kills them instantly.",
+              "Cooldown: 30s"
+            ],
+            "ja": [
+              "ダメージを受けた敵の体力が11%(近距離)/8.5%(遠距離) 以下の場合、即時処置します。",
+              "クールダウン:30秒"
+            ],
+            "cn": [
+              "Dealing damage to a test subject with 11%(Melee)/8.5%(Ranged) or less HP remaining kills them instantly.",
+              "Cooldown: 30s"
+            ]
+          },
+          "value": 0.2
+        }
       }
     ]
   },
@@ -1913,7 +1934,7 @@
           "cn": "戰術面罩"
         },
         "stack": 1,
-        "atk0": 18,
+        "atk0": 10,
         "def0": 18,
         "cool1": 0.12,
         "vision0": 1,

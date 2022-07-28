@@ -2477,7 +2477,7 @@
         },
         "stack": 1,
         "material": ["BWG004", "BM004"],
-        "atk0": 84,
+        "atk0": 80,
         "uniq025": {
           "detail": {
             "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 3초"],
@@ -4519,7 +4519,7 @@
         },
         "stack": 1,
         "material": ["GWL002", "PM009"],
-        "atk0": 102,
+        "atk0": 98,
         "atk_spd1": 0.2,
         "vision0": 2.5,
         "uniq003": {
@@ -6420,7 +6420,7 @@
         },
         "stack": 1,
         "material": ["BWS002", "GA012"],
-        "atk0": 68,
+        "atk0": 53,
         "cri_rate1": 0.24,
         "mp_reg0": 1,
         "uniq008": {

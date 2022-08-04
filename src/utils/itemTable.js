@@ -811,6 +811,12 @@ export const itemOptions = {
     ja: "VF制御強化",
     cn: "VF支配 強化",
   },
+  uniq060: {
+    kr: "선고",
+    en: "VF Control Enhancement",
+    ja: "VF制御強化",
+    cn: "VF支配 強化",
+  },
   buff001: {
     kr: "신속 - 루드라의 단검",
     en: "Streamlined: Rudra Embodied",

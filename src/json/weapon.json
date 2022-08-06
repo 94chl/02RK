@@ -7404,7 +7404,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 50 + 스킬 증폭*1.75",
+              "피해량: 50 + 스킬 증폭*1.5",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간이 1초 감소",
               "쿨다운: 2초"
@@ -7412,7 +7412,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 50 + Skill Amplification*1.75",
+              "Damage: 50 + Skill Amplification*1.5",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -7420,7 +7420,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:50+スキル増幅*1.75",
+              "ダメージ:50+スキル増幅*1.5",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -7428,7 +7428,7 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 50 + Skill Amplification*1.75",
+              "Damage: 50 + Skill Amplification*1.5",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"

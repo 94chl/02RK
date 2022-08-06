@@ -4174,71 +4174,6 @@
         }
       },
       {
-        "id": "RC034",
-        "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1xcVRKyHFu5n1VBVb369qqe9XeQgtljyS",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "파초선 Mk2",
-          "en": "Sanguine Gunbai Mk2",
-          "ja": "芭蕉扇Mk2",
-          "cn": "芭蕉扇Mk2"
-        },
-        "stack": 1,
-        "cool1": 0.12,
-        "uniq014": {
-          "detail": {
-            "kr": ["스킬 공격 시, 대상의 치유 효과가 60%(근)/50%(원) 감소"],
-            "en": [
-              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
-            ],
-            "ja": [
-              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
-              "40%/(近)30%(遠)"
-            ],
-            "cn": [
-              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
-            ]
-          },
-          "value": 0.4
-        },
-        "active001": {
-          "detail": {
-            "kr": [
-              "사용 시 적용",
-              "이동 속도가 0.65(근)/0.45(원) 증가",
-              "다른 대상과 충돌하지 않음",
-              "지속시간: 3초",
-              "이동 외 다른 행동 시 효과 종료",
-              "쿨다운: 8초"
-            ],
-            "en": [
-              "Activate to increase your movement speed by 0.65(Melee)/0.45(Ranged) for 3 seconds",
-              "Ignore unit collision",
-              "Performing an action other than moving cancels this effect",
-              "Cooldown: 8s"
-            ],
-            "ja": [
-              "アイテムを使用すると、移動速度が0.65(近)/0.45(遠)だけ増加",
-              "他の対象と衝突しません。",
-              "移動以外の行動時に終了",
-              "3秒間",
-              "クールダウン:8秒"
-            ],
-            "cn": [
-              "Activate to increase your movement speed by 0.65(Melee)/0.45(Ranged) for 3 seconds",
-              "Ignore unit collision",
-              "Performing an action other than moving cancels this effect",
-              "Cooldown: 8s"
-            ]
-          },
-          "value": 1
-        }
-      },
-      {
         "id": "YA008",
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1SlvvEm-8UFLWlUQ0xbiab2O1Hf5gQ6lI",
@@ -4860,6 +4795,71 @@
             ]
           },
           "value": 1.45
+        }
+      },
+      {
+        "id": "RA034",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1xcVRKyHFu5n1VBVb369qqe9XeQgtljyS",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "파초선 Mk2",
+          "en": "Sanguine Gunbai Mk2",
+          "ja": "芭蕉扇Mk2",
+          "cn": "芭蕉扇Mk2"
+        },
+        "stack": 1,
+        "cool1": 0.12,
+        "uniq014": {
+          "detail": {
+            "kr": ["스킬 공격 시, 대상의 치유 효과가 60%(근)/50%(원) 감소"],
+            "en": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
+            "ja": [
+              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
+              "40%/(近)30%(遠)"
+            ],
+            "cn": [
+              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
+          },
+          "value": 0.4
+        },
+        "active001": {
+          "detail": {
+            "kr": [
+              "사용 시 적용",
+              "이동 속도가 0.65(근)/0.45(원) 증가",
+              "다른 대상과 충돌하지 않음",
+              "지속시간: 3초",
+              "이동 외 다른 행동 시 효과 종료",
+              "쿨다운: 8초"
+            ],
+            "en": [
+              "Activate to increase your movement speed by 0.65(Melee)/0.45(Ranged) for 3 seconds",
+              "Ignore unit collision",
+              "Performing an action other than moving cancels this effect",
+              "Cooldown: 8s"
+            ],
+            "ja": [
+              "アイテムを使用すると、移動速度が0.65(近)/0.45(遠)だけ増加",
+              "他の対象と衝突しません。",
+              "移動以外の行動時に終了",
+              "3秒間",
+              "クールダウン:8秒"
+            ],
+            "cn": [
+              "Activate to increase your movement speed by 0.65(Melee)/0.45(Ranged) for 3 seconds",
+              "Ignore unit collision",
+              "Performing an action other than moving cancels this effect",
+              "Cooldown: 8s"
+            ]
+          },
+          "value": 1
         }
       }
     ]

@@ -41,6 +41,7 @@
 
 <script>
   import { searchById } from "~/utils/itemTable";
+  import ampl from "~/utils/amplitude.js";
 
   export default {
     components: {},

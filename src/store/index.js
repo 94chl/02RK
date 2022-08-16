@@ -95,6 +95,8 @@ const store = createStore({
         manual: false,
       },
       loading: false,
+      selectedCharacterId: 0,
+      selectedCharacter: null,
     };
   },
   getters: {},
@@ -207,6 +209,10 @@ const store = createStore({
     },
     setLoading(state, newLoadingState) {
       state.loading = newLoadingState;
+    },
+    setSelectedCharacter(state, newSelectedCharacter) {
+      state.selectedCharacterId = newSelectedCharacter.code;
+      state.selectedCharacter = newSelectedCharacter.stats;
     },
   },
   actions: {
@@ -575,6 +581,9 @@ const store = createStore({
         ampl.log("path finder cannot find routes");
         throw { message: "cannotFindRoute" };
       }
+    },
+    selectCharacter({ commit }, newCharacter) {
+      commit("setSelectedCharacter", newCharacter);
     },
   },
 });

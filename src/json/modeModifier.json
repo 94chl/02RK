@@ -1,0 +1,3362 @@
+[
+  {
+    "code": 2,
+    "characterCode": 1,
+    "weaponType": "Axe",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 7,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 2,
+      "cobaltPreventModeDamageRatio": 12,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 3,
+    "characterCode": 1,
+    "weaponType": "OneHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 7,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 7,
+      "squadPreventModeDamageRatio": 8,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -2,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 4,
+    "characterCode": 1,
+    "weaponType": "TwoHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 7,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 3,
+      "squadPreventModeDamageRatio": 8,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -4,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 5,
+    "characterCode": 1,
+    "weaponType": "DualSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 5,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 3,
+      "squadPreventModeDamageRatio": 7,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 8,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 7,
+    "characterCode": 2,
+    "weaponType": "Pistol",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -4,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -12,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -5,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 8,
+    "characterCode": 2,
+    "weaponType": "AssaultRifle",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -6,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -13,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -14,
+      "cobaltPreventModeDamageRatio": 0,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": -8,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 9,
+    "characterCode": 2,
+    "weaponType": "SniperRifle",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -7,
+      "duoPreventModeDamageRatio": -2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -10,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -16,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 11,
+    "characterCode": 3,
+    "weaponType": "Rapier",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 6,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 3,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 11,
+      "cobaltPreventModeDamageRatio": 4,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 12,
+    "characterCode": 3,
+    "weaponType": "TwoHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 10,
+      "duoPreventModeDamageRatio": 4,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 10,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 7,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 13,
+    "characterCode": 3,
+    "weaponType": "Spear",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 9,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 4,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 7,
+      "cobaltPreventModeDamageRatio": 9,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 15,
+    "characterCode": 4,
+    "weaponType": "Bat",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 4,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -3,
+      "squadPreventModeDamageRatio": 6,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 4,
+      "cobaltPreventModeDamageRatio": 7,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 30,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 16,
+    "characterCode": 4,
+    "weaponType": "Hammer",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -3,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -9,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -4,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 30,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 18,
+    "characterCode": 5,
+    "weaponType": "HighAngleFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 1,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -5,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -5,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 19,
+    "characterCode": 5,
+    "weaponType": "DirectFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -5,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -12,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -8,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 21,
+    "characterCode": 6,
+    "weaponType": "Bow",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -8,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -15,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -11,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 22,
+    "characterCode": 6,
+    "weaponType": "CrossBow",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -9,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -9,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 24,
+    "characterCode": 7,
+    "weaponType": "Glove",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 2,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 2,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 25,
+    "characterCode": 7,
+    "weaponType": "Tonfa",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -2,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -7,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 27,
+    "characterCode": 8,
+    "weaponType": "Guitar",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 5,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 5,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -2,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 29,
+    "characterCode": 9,
+    "weaponType": "Pistol",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 7,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 2,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -11,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 10,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 30,
+    "characterCode": 9,
+    "weaponType": "AssaultRifle",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -2,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -13,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -18,
+      "cobaltPreventModeDamageRatio": 0,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 10,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 32,
+    "characterCode": 10,
+    "weaponType": "Glove",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 4,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 6,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 6,
+      "cobaltPreventModeDamageRatio": 7,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 33,
+    "characterCode": 10,
+    "weaponType": "Nunchaku",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 4,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 35,
+    "characterCode": 11,
+    "weaponType": "TwoHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -3,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -8,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -12,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 36,
+    "characterCode": 11,
+    "weaponType": "DualSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 4,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -5,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -10,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 38,
+    "characterCode": 12,
+    "weaponType": "Bow",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -7,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -17,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -12,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 39,
+    "characterCode": 12,
+    "weaponType": "DirectFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -6,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -18,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -10,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 41,
+    "characterCode": 13,
+    "weaponType": "Spear",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -5,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -12,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -18,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 42,
+    "characterCode": 13,
+    "weaponType": "OneHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -3,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -12,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -18,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 44,
+    "characterCode": 14,
+    "weaponType": "Rapier",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": -2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -3,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -3,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 46,
+    "characterCode": 15,
+    "weaponType": "DirectFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -10,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -18,
+      "squadPreventModeDamageRatio": -2,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -12,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 10,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 47,
+    "characterCode": 15,
+    "weaponType": "HighAngleFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -2,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -10,
+      "squadPreventModeDamageRatio": -2,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -13,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 10,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 49,
+    "characterCode": 16,
+    "weaponType": "Pistol",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 5,
+      "duoPreventModeDamageRatio": 5,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -6,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 25,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 40,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 51,
+    "characterCode": 17,
+    "weaponType": "HighAngleFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -11,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -15,
+      "squadPreventModeDamageRatio": -2,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -9,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 53,
+    "characterCode": 18,
+    "weaponType": "OneHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 12,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 12,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 11,
+      "cobaltPreventModeDamageRatio": 4,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 55,
+    "characterCode": 19,
+    "weaponType": "DirectFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 9,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 8,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 4,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 57,
+    "characterCode": 20,
+    "weaponType": "Whip",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -6,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 59,
+    "characterCode": 21,
+    "weaponType": "Pistol",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 3,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 61,
+    "characterCode": 22,
+    "weaponType": "Bat",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 30,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 63,
+    "characterCode": 23,
+    "weaponType": "OneHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -5,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -7,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -2,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 65,
+    "characterCode": 24,
+    "weaponType": "Rapier",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -9,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -6,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -6,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 10,
+      "cobaltIncreaseModeSpRegenRatio": 10
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 67,
+    "characterCode": 25,
+    "weaponType": "SniperRifle",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -3,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -11,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -7,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 69,
+    "characterCode": 26,
+    "weaponType": "Bat",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -2,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -5,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": -7,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 71,
+    "characterCode": 27,
+    "weaponType": "Tonfa",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -11,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -13,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -10,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 72,
+    "characterCode": 27,
+    "weaponType": "TwoHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -11,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -13,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -10,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 73,
+    "characterCode": 27,
+    "weaponType": "DirectFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -11,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -13,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -10,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 74,
+    "characterCode": 27,
+    "weaponType": "Pistol",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -11,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -13,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -10,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 76,
+    "characterCode": 28,
+    "weaponType": "Hammer",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 2,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 78,
+    "characterCode": 29,
+    "weaponType": "Glove",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -3,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 25,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 80,
+    "characterCode": 30,
+    "weaponType": "Bat",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 81,
+    "characterCode": 30,
+    "weaponType": "Hammer",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -14,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -16,
+      "squadPreventModeDamageRatio": 1,
+      "squadIncreaseModeHealRatio": -10,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -12,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 83,
+    "characterCode": 31,
+    "weaponType": "Bow",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -5,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -16,
+      "squadPreventModeDamageRatio": -4,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -15,
+      "cobaltPreventModeDamageRatio": -2,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 85,
+    "characterCode": 32,
+    "weaponType": "HighAngleFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 4,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -8,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -6,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 30,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 87,
+    "characterCode": 33,
+    "weaponType": "Glove",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -3,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -6,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -3,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 89,
+    "characterCode": 34,
+    "weaponType": "Camera",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 14,
+      "duoPreventModeDamageRatio": 3,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 9,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -3,
+      "cobaltPreventModeDamageRatio": 6,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 91,
+    "characterCode": 35,
+    "weaponType": "Glove",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 5,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 10,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 6,
+      "cobaltPreventModeDamageRatio": 6,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 30,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 92,
+    "characterCode": 35,
+    "weaponType": "Tonfa",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 0,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 94,
+    "characterCode": 36,
+    "weaponType": "HighAngleFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -10,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -17,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -18,
+      "cobaltPreventModeDamageRatio": -2,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 0,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 96,
+    "characterCode": 37,
+    "weaponType": "OneHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 12,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 15,
+      "squadPreventModeDamageRatio": -2,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 6,
+      "cobaltPreventModeDamageRatio": 7,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 30,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 98,
+    "characterCode": 38,
+    "weaponType": "Pistol",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -3,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 0,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 10,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 100,
+    "characterCode": 39,
+    "weaponType": "DualSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 2,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 12,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 10,
+      "cobaltIncreaseModeSpRegenRatio": 10
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 102,
+    "characterCode": 40,
+    "weaponType": "DirectFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -2,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 2,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -9,
+      "cobaltPreventModeDamageRatio": 0,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 10,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 104,
+    "characterCode": 41,
+    "weaponType": "Arcana",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -7,
+      "squadPreventModeDamageRatio": -5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 0,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": -8,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": -25,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 106,
+    "characterCode": 42,
+    "weaponType": "Arcana",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -14,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": -10,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -20,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": -12,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -15,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 108,
+    "characterCode": 43,
+    "weaponType": "HighAngleFire",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -8,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -11,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 13,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 0,
+      "cobaltIncreaseModeMaxSpRatio": 15,
+      "cobaltIncreaseModeSpRegenRatio": 15
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 110,
+    "characterCode": 44,
+    "weaponType": "VFArm",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -3,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": -10,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 0,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 112,
+    "characterCode": 45,
+    "weaponType": "Whip",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -5,
+      "duoPreventModeDamageRatio": -4,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -8,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 20,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 20,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 114,
+    "characterCode": 46,
+    "weaponType": "TwoHandSword",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 9,
+      "duoPreventModeDamageRatio": 2,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 10,
+      "squadPreventModeDamageRatio": 5,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 7,
+      "cobaltPreventModeDamageRatio": 8,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 30,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 116,
+    "characterCode": 47,
+    "weaponType": "Whip",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 3,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 10,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 7,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 118,
+    "characterCode": 48,
+    "weaponType": "Bat",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -10,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -14,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -8,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 15,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 120,
+    "characterCode": 49,
+    "weaponType": "Spear",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 6,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 6,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 5,
+      "cobaltPreventModeDamageRatio": 7,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 40,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 122,
+    "characterCode": 50,
+    "weaponType": "Rapier",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -2,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -2,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 2,
+      "cobaltPreventModeDamageRatio": 6,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 124,
+    "characterCode": 51,
+    "weaponType": "Guitar",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 10,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 0,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -6,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": -12,
+      "cobaltIncreaseModeUltCooldownRatio": 10,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 126,
+    "characterCode": 52,
+    "weaponType": "Arcana",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -6,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -10,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": -8,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 0,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 128,
+    "characterCode": 53,
+    "weaponType": "Axe",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 7,
+      "duoPreventModeDamageRatio": 3,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 5,
+      "squadPreventModeDamageRatio": 6,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 6,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 25,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 130,
+    "characterCode": 54,
+    "weaponType": "CrossBow",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 2,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 2,
+      "cobaltPreventModeDamageRatio": 5,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 132,
+    "characterCode": 55,
+    "weaponType": "Axe",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": -2,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": -2,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 3,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 20,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 134,
+    "characterCode": 56,
+    "weaponType": "Nunchaku",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 2,
+      "duoPreventModeDamageRatio": 5,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 6,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 7,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 0,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 136,
+    "characterCode": 57,
+    "weaponType": "Camera",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 0,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 0,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  },
+  {
+    "code": 138,
+    "characterCode": 58,
+    "weaponType": "AssaultRifle",
+    "Solo": {
+      "soloIncreaseModeDamageRatio": 0,
+      "soloPreventModeDamageRatio": 0,
+      "soloIncreaseModeHealRatio": 0,
+      "soloIncreaseModeShieldRatio": 0
+    },
+    "Duo": {
+      "duoIncreaseModeDamageRatio": 0,
+      "duoPreventModeDamageRatio": 0,
+      "duoIncreaseModeHealRatio": 0,
+      "duoIncreaseModeHealerGiveHealRatio": 0,
+      "duoIncreaseModeShieldRatio": 0,
+      "duoIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Squad": {
+      "squadIncreaseModeDamageRatio": 0,
+      "squadPreventModeDamageRatio": 3,
+      "squadIncreaseModeHealRatio": 0,
+      "squadIncreaseModeHealerGiveHealRatio": 0,
+      "squadIncreaseModeShieldRatio": 0,
+      "squadIncreaseModeHealerGiveShieldRatio": 0
+    },
+    "Cobalt": {
+      "cobaltIncreaseModeDamageRatio": 0,
+      "cobaltPreventModeDamageRatio": 0,
+      "cobaltIncreaseModeHealRatio": 0,
+      "cobaltIncreaseModeHealerGiveHealRatio": 0,
+      "cobaltIncreaseModeShieldRatio": 0,
+      "cobaltIncreaseModeHealerGiveShieldRatio": 0,
+      "cobaltIncreaseModeUltCooldownRatio": 0,
+      "cobaltIncreaseModeMaxSpRatio": 0,
+      "cobaltIncreaseModeSpRegenRatio": 0
+    },
+    "soloIncreaseModeDamageToMonsterRatio": 0,
+    "duoIncreaseModeDamageToMonsterRatio": 0,
+    "squadIncreaseModeDamageToMonsterRatio": 0,
+    "cobaltIncreaseModeDamageToMonsterRatio": 0
+  }
+]

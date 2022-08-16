@@ -18,6 +18,7 @@
     "initialWeapon": "スタート武器",
     "bagMakable": "製作できる",
     "equip": "装備",
+    "character": "キャラクター",
     "status": "ステータス",
     "recommendRoute": "推奨ルート",
     "recommendFuncInfo": "をクリックして目標アイテム全ての最短ルートを探索",

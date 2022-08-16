@@ -17,7 +17,8 @@
         @click="onToggleModal"
         data-modal="status"
       >
-        <i class="fas fa-tshirt"></i>
+        <i class="fa-solid fa-user"></i>
+        <!-- <i class="fas fa-tshirt"></i> -->
       </button>
       <button
         @click="onToggleModal"

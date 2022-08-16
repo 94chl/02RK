@@ -48,22 +48,22 @@
     methods: {},
     mounted() {
       this.$store.dispatch("selectLanguage", this.$i18n.locale);
-      const targetItems = getSessionStorage("02RK_targetItems", []);
-      const customRoute = getSessionStorage("02RK_customRoute", []);
-      if (
-        (targetItems.length || customRoute.length) &&
-        window.confirm(this.$t("noti.loadPreviousData"))
-      ) {
-        this.$store.dispatch("setTargetItems", targetItems);
-        this.$store.dispatch("setRoute", customRoute);
-        ampl.log("load previous data");
-        ampl.log("start app");
-      } else {
-        removeSessionStorage("02RK_targetItems");
-        removeSessionStorage("02RK_customRoute");
-        ampl.log("reset previous data");
-        ampl.log("start app");
-      }
+      // const targetItems = getSessionStorage("02RK_targetItems", []);
+      // const customRoute = getSessionStorage("02RK_customRoute", []);
+      // if (
+      //   (targetItems.length || customRoute.length) &&
+      //   window.confirm(this.$t("noti.loadPreviousData"))
+      // ) {
+      //   this.$store.dispatch("setTargetItems", targetItems);
+      //   this.$store.dispatch("setRoute", customRoute);
+      //   ampl.log("load previous data");
+      //   ampl.log("start app");
+      // } else {
+      //   removeSessionStorage("02RK_targetItems");
+      //   removeSessionStorage("02RK_customRoute");
+      //   ampl.log("reset previous data");
+      //   ampl.log("start app");
+      // }
     },
   };
 </script>

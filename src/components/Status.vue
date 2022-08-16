@@ -1,5 +1,16 @@
 <template>
   <div :class="`status ${toggleModal.status ? 'active' : 'hide'}`">
+    <div class="header">
+      <h2 class="tabName">{{ $t("modal.status") }}</h2>
+      <div class="buttonBox">
+        <button @click="toggleStatusModal">
+          <span>
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+    <Character />
     <div class="status_equip">
       <div class="tabName">
         <h3>{{ $t("modal.equip") }}</h3>
@@ -42,12 +53,6 @@
               </button>
             </div>
           </div>
-
-          <button @click="toggleStatusModal">
-            <span>
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
         </div>
       </div>
 
@@ -103,7 +108,35 @@
     </div>
 
     <div class="status_info">
-      <h3 class="tabName">{{ $t("modal.status") }}</h3>
+      <h3 class="tabName">
+        {{ `${$t("modal.character")}-${$t("modal.status")}` }}
+      </h3>
+      <div class="optionBox" v-if="selectedCharacter">
+        <ul>
+          <li v-for="optionKey in statusKey" :key="optionKey" class="option">
+            <div class="optionInfo">
+              <span class="optionInfo_name">
+                {{
+                  `${statusOptions[optionKey][language]}${
+                    optionKey === "attackSpeed"
+                      ? `(${selectedCharacter?.attackSpeedMin} ~ ${selectedCharacter?.attackSpeedLimit})`
+                      : ""
+                  } :`
+                }}</span
+              >
+              <span class="optionInfo_value">
+                {{ `${selectedCharacter?.[optionKey]}` }}</span
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="status_info">
+      <h3 class="tabName">
+        {{ `${$t("modal.equip")}-${$t("modal.status")}` }}
+      </h3>
       <div class="optionBox">
         <ul>
           <li
@@ -114,39 +147,33 @@
             class="option"
           >
             <div v-if="optionId.match(/(only)/g)" class="optionInfo">
-              <div class="optionInfo_name">
+              <span class="optionInfo_name">
                 {{ `[${itemOptions[optionId][language]}] : ` }}
-              </div>
-              <div class="optionInfo_value">
+              </span>
+              <span class="optionInfo_value">
                 <span>{{ optionValue[language] }}</span>
-              </div>
+              </span>
             </div>
             <div
               v-else-if="!optionId.match(/(active)|(buff)|(uniq)/g)"
               class="optionInfo"
             >
-              <div class="optionInfo_name">
+              <span class="optionInfo_name">
                 {{ `${itemOptions[optionId][language]} : ` }}
-              </div>
-              <div class="optionInfo_value">
+              </span>
+              <span class="optionInfo_value">
                 <span>{{
                   optionId.match(/[1]/g)
                     ? `${Math.round(optionValue * 1000) / 10}%`
                     : optionValue
                 }}</span>
-              </div>
+              </span>
             </div>
-          </li>
-          <li
-            v-for="[optionId, optionValue] in Object.entries(equipOptions)"
-            :key="optionId"
-            class="option"
-          >
             <div
               v-if="optionId.match(/(active)|(buff)|(uniq)/g)"
               class="optionInfo unique"
             >
-              <div class="optionInfo_name">
+              <span class="optionInfo_name">
                 {{
                   `[${
                     optionId.match(/(uniq)/g)
@@ -158,8 +185,8 @@
                       : ""
                   }] ${itemOptions[optionId][language]}`
                 }}
-              </div>
-              <div class="optionInfo_values">
+              </span>
+              <span class="optionInfo_values">
                 <ul class="uniqueOptions">
                   <li
                     v-for="uniqueOption in optionValue.detail[language]"
@@ -169,7 +196,7 @@
                     {{ uniqueOption }}
                   </li>
                 </ul>
-              </div>
+              </span>
             </div>
           </li>
         </ul>
@@ -180,6 +207,8 @@
 
 <script>
   import { searchById, itemOptions } from "~/utils/itemTable";
+  import { statusOptions } from "~/utils/characterTable";
+  import Character from "./Character.vue";
 
   export default {
     data() {
@@ -199,9 +228,24 @@
         ],
         itemOptions,
         statusData: "targetItems",
+        statusKey: [
+          "maxHp",
+          "maxSp",
+          "attackPower",
+          "defense",
+          "criticalStrikeChance",
+          "hpRegen",
+          "spRegen",
+          "attackSpeed",
+          // "attackSpeedLimit",
+          // "attackSpeedMin",
+          "moveSpeed",
+          "sightRange",
+        ],
+        statusOptions,
       };
     },
-    components: {},
+    components: { Character },
     computed: {
       language() {
         return this.$store.state.language;
@@ -248,6 +292,12 @@
 
         return equipOptions;
       },
+      selectedCharacterId() {
+        return this.$store.state.selectedCharacterId;
+      },
+      selectedCharacter() {
+        return this.$store.state.selectedCharacter;
+      },
     },
     methods: {
       onChangeShowItemImg() {
@@ -272,7 +322,7 @@
 
 <style lang="scss" scoped>
   .status {
-    border-radius: 5px;
+    border-radius: 16px;
     border: 2px solid $color3;
     box-sizing: border-box;
     background: $color2;
@@ -281,15 +331,46 @@
       @include active();
     }
 
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px;
+
+      .buttonBox {
+        display: flex;
+        align-items: center;
+
+        button {
+          background: none;
+          color: $color3;
+          border-radius: 5px;
+          @include fasIcon(25px);
+          margin-right: 5px;
+          &:last-child {
+            margin: 0;
+          }
+          &:hover {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
+          }
+          &.selected {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+
     .tabName {
       color: $color2;
-      height: 25px;
-      line-height: 25px;
       margin: 5px 0;
       padding: 0 5px;
     }
 
     &_equip {
+      border-radius: 12px;
+      border: none;
+      border-top: 2px solid $color3;
+      border-bottom: 2px solid $color3;
+      margin-top: 8px;
       .tabName {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -333,6 +414,9 @@
       .targetItems {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        max-height: 96px;
+        overflow-y: hidden;
+
         @media screen and (max-width: 720px) {
           grid-template-columns: repeat(3, 1fr);
         }
@@ -394,14 +478,24 @@
     }
 
     &_info {
+      border-radius: 12px;
+      border: none;
+      border-top: 2px solid $color3;
+      border-bottom: 2px solid $color3;
+      margin-top: 8px;
       .optionBox {
         border-radius: 5px;
+        > ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
         .option {
+          background: $color3;
           .optionInfo {
             display: flex;
-            background: $color3;
             color: $color2;
-            padding: 5px;
+            padding: 12px 6px;
             &.unique {
               display: block;
             }

@@ -3,7 +3,7 @@
     <div class="tabName">
       <h3>{{ $t("section.neededDropItem") }}</h3>
     </div>
-    <div>
+    <div v-if="Object.keys(needDrops).length > 0">
       <ul class="needDrops_list">
         <li
           v-for="matId in Object.keys(needDrops)"

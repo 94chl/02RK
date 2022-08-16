@@ -18,6 +18,7 @@
     "initialWeapon": "選擇武器",
     "bagMakable": "可製作",
     "equip": "裝備",
+    "character": "實驗體",
     "status": "統計",
     "recommendRoute": "推薦路徑",
     "recommendFuncInfo": ":寻找最短的路径。",

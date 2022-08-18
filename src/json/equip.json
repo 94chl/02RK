@@ -83,7 +83,7 @@
         },
         "stack": 1,
         "material": ["WC004", "WM019"],
-        "def0": 15
+        "def0": 13
       },
       {
         "id": "GC002",
@@ -102,7 +102,7 @@
         "stack": 1,
         "material": ["WC001", "WM019"],
         "atk0": 8,
-        "def0": 7
+        "def0": 6
       },
       {
         "id": "GC003",
@@ -120,7 +120,7 @@
         },
         "stack": 1,
         "material": ["WC002", "WM003"],
-        "def0": 10,
+        "def0": 9,
         "cool1": 0.07
       },
       {
@@ -140,7 +140,7 @@
         "stack": 1,
         "material": ["WC001", "WM024"],
         "atk0": 4,
-        "def0": 10,
+        "def0": 7,
         "hp0": 30
       },
       {
@@ -180,7 +180,7 @@
         "stack": 1,
         "material": ["WM012", "WWA001"],
         "atk0": 8,
-        "def0": 8,
+        "def0": 7,
         "mp_reg1": 0.8
       },
       {
@@ -199,8 +199,8 @@
         },
         "stack": 1,
         "material": ["WC003", "WWA001"],
-        "def0": 6,
-        "skill_def1": 0.08
+        "def0": 5,
+        "skill_def1": 0.04
       },
       {
         "id": "GC008",
@@ -218,15 +218,15 @@
         },
         "stack": 1,
         "material": ["WC003", "WM004"],
-        "def0": 10,
-        "skill_def1": 0.06
+        "def0": 9,
+        "skill_def1": 0.05
       },
       {
         "id": "GC009",
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1C0ifPnGyzETN2O9PLPhUH1I-SQRPkCRg",
         "location": false,
-        "tobe": ["BC010", "YC004"],
+        "tobe": ["PC016", "YC004"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -237,7 +237,7 @@
         },
         "stack": 1,
         "material": ["WA008", "WM012"],
-        "atk0": 8,
+        "skill0": 15,
         "hp0": 80
       },
       {
@@ -257,7 +257,7 @@
         "stack": 1,
         "material": ["GC002", "WWR001"],
         "atk0": 15,
-        "def0": 10
+        "def0": 9
       },
       {
         "id": "BC002",
@@ -275,7 +275,7 @@
         },
         "stack": 1,
         "material": ["GC001", "WWR001"],
-        "def0": 19
+        "def0": 16
       },
       {
         "id": "BC003",
@@ -289,7 +289,7 @@
         "stack": 1,
         "material": ["GC002", "WA003"],
         "atk0": 10,
-        "vamp1": 0.15
+        "vamp1": 0.1
       },
       {
         "id": "BC004",
@@ -308,7 +308,7 @@
         "stack": 1,
         "material": ["GC006", "WWJ001"],
         "atk0": 10,
-        "def0": 10,
+        "def0": 9,
         "mp_reg1": 1
       },
       {
@@ -327,8 +327,8 @@
         },
         "stack": 1,
         "material": ["WC004", "GM001"],
-        "def0": 20,
-        "hp0": 50
+        "def0": 17,
+        "hp0": 20
       },
       {
         "id": "BC006",
@@ -341,7 +341,7 @@
         "name": { "kr": "한복", "en": "Hanbok", "ja": "韓服", "cn": "韓服" },
         "stack": 1,
         "material": ["GC005", "WM026"],
-        "def0": 12,
+        "def0": 10,
         "hp_reg1": 0.35,
         "cool1": 0.1
       },
@@ -361,7 +361,7 @@
         },
         "stack": 1,
         "material": ["GC004", "GM010"],
-        "def0": 22,
+        "def0": 18,
         "hp0": 70
       },
       {
@@ -380,7 +380,7 @@
         },
         "stack": 1,
         "material": ["BC006", "WM008"],
-        "def0": 12,
+        "def0": 10,
         "hp_reg1": 0.45,
         "cool1": 0.12,
         "vision0": 1,
@@ -407,27 +407,6 @@
         }
       },
       {
-        "id": "BC010",
-        "sort": "clothes",
-        "img": "https://lh3.google.com/u/0/d/1y7LiFq9_JOGxOeUpFHv67qNiuQ_1vRnJ",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "고위 사제복",
-          "en": "Cardinal Robes",
-          "ja": "高位司祭服",
-          "cn": "主教長袍"
-        },
-        "stack": 1,
-        "material": ["GC009", "GM002"],
-        "atk0": 12,
-        "def0": 10,
-        "hp0": 140,
-        "hp_reg1": 0.45
-      },
-      {
         "id": "PC001",
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1eilB-WFpFSkzdaqPV8qKLbOYSXR8n11m",
@@ -443,9 +422,9 @@
         },
         "stack": 1,
         "material": ["GC008", "BM004"],
-        "atk0": 10,
+        "atk0": 18,
         "cri_rate1": 0.24,
-        "def0": 18
+        "def0": 10
       },
       {
         "id": "PC002",
@@ -464,8 +443,8 @@
         "stack": 1,
         "material": ["BC001", "GT006"],
         "atk0": 22,
-        "def0": 11,
-        "non_combat_move_spd0": 0.1,
+        "def0": 9,
+        "non_combat_move_spd0": 0.08,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -520,9 +499,9 @@
         },
         "stack": 1,
         "material": ["BC005", "GC007"],
-        "def0": 20,
+        "def0": 17,
         "hp0": 105,
-        "skill_def1": 0.17
+        "skill_def1": 0.12
       },
       {
         "id": "PC006",
@@ -540,19 +519,10 @@
         },
         "stack": 1,
         "material": ["BC004", "GC003"],
-        "atk0": 15,
-        "def0": 10,
+        "atk0": 25,
+        "def0": 9,
         "mp_reg1": 1,
-        "cool1": 0.1,
-        "uniq008": {
-          "detail": {
-            "kr": ["+0.5"],
-            "en": ["+0.5"],
-            "ja": ["+0.5"],
-            "cn": ["+0.5"]
-          },
-          "value": 0.5
-        }
+        "cool1": 0.12
       },
       {
         "id": "PC007",
@@ -570,8 +540,8 @@
         },
         "stack": 1,
         "material": ["BC002", "GM011"],
-        "skill1": 0.2,
-        "def0": 24
+        "skill0": 55,
+        "def0": 20
       },
       {
         "id": "PC008",
@@ -617,10 +587,10 @@
         },
         "stack": 1,
         "material": ["BC007", "GC008"],
-        "def0": 33,
+        "def0": 20,
         "hp0": 70,
-        "skill_def1": 0.08,
-        "cri_def1": 0.08
+        "skill_def1": 0.04,
+        "basic_atk_def1": 0.05
       },
       {
         "id": "PC010",
@@ -638,7 +608,7 @@
         },
         "stack": 1,
         "material": ["BC007", "GC005"],
-        "def0": 30,
+        "def0": 25,
         "hp0": 115,
         "hp_reg1": 0.6,
         "cool1": 0.1
@@ -660,7 +630,7 @@
         "stack": 1,
         "material": ["BC003", "GC006"],
         "atk0": 12,
-        "def0": 20,
+        "def0": 10,
         "vamp_all1": 0.12
       },
       {
@@ -679,7 +649,7 @@
         },
         "stack": 1,
         "material": ["BC006", "BD001"],
-        "def0": 20,
+        "def0": 17,
         "hp_reg1": 0.5,
         "mp_reg1": 0.85,
         "cool1": 0.15,
@@ -710,7 +680,7 @@
         "stack": 1,
         "material": ["BC004", "BD005"],
         "atk0": 12,
-        "def0": 10,
+        "def0": 9,
         "atk_spd1": 0.33,
         "mp_reg0": 2
       },
@@ -730,9 +700,30 @@
         },
         "stack": 1,
         "material": ["BC002", "GM004"],
-        "def0": 23,
-        "hp0": 220,
+        "def0": 22,
+        "hp0": 170,
         "vision0": 1
+      },
+      {
+        "id": "PC016",
+        "sort": "clothes",
+        "img": "https://lh3.google.com/u/0/d/1y7LiFq9_JOGxOeUpFHv67qNiuQ_1vRnJ",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "고위 사제복",
+          "en": "Cardinal Robes",
+          "ja": "高位司祭服",
+          "cn": "主教長袍"
+        },
+        "stack": 1,
+        "material": ["GC009", "GM002"],
+        "skill0": 35,
+        "def0": 9,
+        "hp0": 130,
+        "mp_reg1": 0.5
       },
       {
         "id": "YC001",
@@ -750,8 +741,8 @@
         },
         "stack": 1,
         "material": ["GC006", "PM007"],
-        "atk0": 16,
-        "def0": 30,
+        "atk0": 14,
+        "def0": 25,
         "mp_reg1": 1,
         "uniq030": {
           "detail": {
@@ -791,8 +782,8 @@
         },
         "stack": 1,
         "material": ["PC007", "PM003"],
-        "skill1": 0.22,
-        "def0": 36,
+        "skill0": 90,
+        "def0": 22,
         "vision0": 1
       },
       {
@@ -811,7 +802,7 @@
         },
         "stack": 1,
         "material": ["GC005", "PM001"],
-        "def0": 35,
+        "def0": 29,
         "hp_reg1": 1,
         "cool1": 0.3,
         "uniq007": {
@@ -841,7 +832,8 @@
         "stack": 1,
         "material": ["GC009", "PM009"],
         "atk0": 25,
-        "def0": 20,
+        "skill0": 25,
+        "def0": 17,
         "hp0": 120,
         "uniq004": {
           "detail": {
@@ -886,7 +878,7 @@
         "stack": 1,
         "material": ["BC003", "PM001"],
         "atk0": 27,
-        "def0": 10,
+        "def0": 9,
         "vamp1": 0.2,
         "move_spd0": 0.1,
         "uniq016": {
@@ -943,8 +935,8 @@
         },
         "stack": 1,
         "material": ["GC001", "PM002"],
-        "def0": 45,
-        "atk_spd1": 0.22,
+        "def0": 38,
+        "atk_spd1": 0.25,
         "move_spd0": 0.1
       },
       {
@@ -969,8 +961,8 @@
           "ja": "マイだけが制作できる。",
           "cn": "只有梅才能製作"
         },
-        "atk0": 20,
-        "def0": 30,
+        "atk0": 18,
+        "def0": 25,
         "uniq030": {
           "detail": {
             "kr": [
@@ -1016,7 +1008,8 @@
           "cn": "只有梅才能製作"
         },
         "atk0": 50,
-        "def0": 50,
+        "skill0": 30,
+        "def0": 41,
         "mp_reg1": 1
       },
       {
@@ -1041,7 +1034,7 @@
           "ja": "マイだけが制作できる。",
           "cn": "只有梅才能製作"
         },
-        "def0": 60,
+        "def0": 50,
         "atk_spd1": 0.15,
         "uniq009": {
           "detail": {
@@ -1075,7 +1068,8 @@
           "cn": "鈷協議"
         },
         "atk0": 45,
-        "def0": 30,
+        "skill0": 30,
+        "def0": 25,
         "hp0": 200
       },
       {
@@ -1100,7 +1094,8 @@
           "cn": "鈷協議"
         },
         "atk0": 30,
-        "def0": 30,
+        "def0": 17,
+        "skill0": 25,
         "vamp_all1": 0.12,
         "uniq060": {
           "detail": {
@@ -1177,13 +1172,13 @@
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/15q-MYHvuF3Bbx5d6F8Aayz2oDMmUIACV",
         "location": false,
-        "tobe": ["BH005", "YH003"],
+        "tobe": ["BH005", "YH003", "YH006"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "가면", "en": "Mask", "ja": "仮面", "cn": "面具" },
         "stack": 1,
         "material": ["WH001", "WA001"],
-        "def0": 10,
+        "def0": 9,
         "mp0": 150,
         "uniq009": {
           "detail": {
@@ -1211,7 +1206,7 @@
         },
         "stack": 1,
         "material": ["WH001", "WM024"],
-        "def0": 10,
+        "def0": 9,
         "mp0": 270
       },
       {
@@ -1230,9 +1225,8 @@
         },
         "stack": 1,
         "material": ["WH002", "WWA001"],
-        "def0": 10,
-        "hp0": 45,
-        "cool1": 0.07
+        "def0": 8,
+        "cool1": 0.06
       },
       {
         "id": "GH004",
@@ -1250,8 +1244,8 @@
         },
         "stack": 1,
         "material": ["WH002", "WWR001"],
-        "def0": 14,
-        "cool1": 0.06
+        "def0": 12,
+        "cool1": 0.04
       },
       {
         "id": "GH005",
@@ -1294,7 +1288,8 @@
         },
         "def0": 10,
         "mp0": 170,
-        "skill1": 0.05
+        "skill0": 5,
+        "grow_skill0": 1
       },
       {
         "id": "BH001",
@@ -1312,7 +1307,7 @@
         },
         "stack": 1,
         "material": ["GH003", "WH003"],
-        "def0": 15,
+        "def0": 13,
         "hp0": 90,
         "cool1": 0.08
       },
@@ -1351,7 +1346,7 @@
         },
         "stack": 1,
         "material": ["GH002", "WM008"],
-        "def0": 12,
+        "def0": 10,
         "mp0": 400
       },
       {
@@ -1365,9 +1360,10 @@
         "name": { "kr": "왕관", "en": "Crown", "ja": "王冠", "cn": "王冠" },
         "stack": 1,
         "material": ["GH003", "GM011"],
-        "skill1": 0.08,
-        "def0": 16,
-        "hp0": 90
+        "skill0": 30,
+        "grow_skill0": 1,
+        "def0": 11,
+        "cool1": 0.08
       },
       {
         "id": "BH005",
@@ -1385,9 +1381,9 @@
         },
         "stack": 1,
         "material": ["GH004", "GH001"],
-        "def0": 15,
+        "def0": 13,
         "mp0": 200,
-        "cool1": 0.07,
+        "cool1": 0.06,
         "uniq009": {
           "detail": {
             "kr": ["+0.06"],
@@ -1440,9 +1436,10 @@
           "ja": "プリヤだけが装備できる。",
           "cn": "只有普里亞才能裝備"
         },
-        "def0": 20,
-        "mp0": 200,
-        "skill1": 0.1
+        "skill0": 20,
+        "grow_skill0": 2,
+        "def0": 17,
+        "mp0": 200
       },
       {
         "id": "PH002",
@@ -1461,8 +1458,8 @@
         "stack": 1,
         "material": ["BH003", "GA003"],
         "cri_atk1": 0.05,
-        "cri_rate1": 0.2,
-        "def0": 14,
+        "cri_rate1": 0.23,
+        "def0": 12,
         "mp0": 400
       },
       {
@@ -1481,11 +1478,10 @@
         },
         "stack": 1,
         "material": ["BH001", "GM008"],
-        "def0": 15,
+        "def0": 13,
         "hp0": 115,
-        "cool1": 0.08,
-        "atk_spd1": 0.23,
-        "vision0": 1
+        "cool1": 0.1,
+        "atk_spd1": 0.23
       },
       {
         "id": "PH004",
@@ -1503,10 +1499,10 @@
         },
         "stack": 1,
         "material": ["BH005", "WM004"],
-        "def0": 2,
-        "skill_def1": 0.13,
+        "def0": 17,
+        "skill_def1": 0.08,
         "mp0": 200,
-        "cool1": 0.1,
+        "cool1": 0.06,
         "uniq009": {
           "detail": {
             "kr": ["+0.08"],
@@ -1533,10 +1529,10 @@
         },
         "stack": 1,
         "material": ["BH004", "WM013"],
-        "skill1": 0.11,
-        "def0": 25,
-        "hp0": 140,
-        "mp0": 500
+        "skill0": 50,
+        "def0": 15,
+        "mp0": 500,
+        "cool1": 0.1
       },
       {
         "id": "PH006",
@@ -1554,10 +1550,10 @@
         },
         "stack": 1,
         "material": ["BH005", "GM011"],
-        "skill1": 0.14,
-        "def0": 15,
+        "skill0": 50,
+        "def0": 13,
         "mp0": 400,
-        "cool1": 0.1,
+        "cool1": 0.06,
         "uniq009": {
           "detail": {
             "kr": ["+0.06"],
@@ -1673,32 +1669,32 @@
         },
         "stack": 1,
         "material": ["BH004", "WA008"],
-        "def0": 23,
+        "def0": 20,
         "atk0": 5,
         "uniq015": {
           "detail": {
             "kr": [
               "적 실험체에게 피해를 받아 체력이 40% 이하가 될 때 발동",
               "1.5초간 (100 + 캐릭터 레벨*9)의 보호막 획득",
-              "6초 동안 스킬 증폭이 12% 증가",
+              "6초 동안 스킬 증폭이 25 증가",
               "쿨다운: 50초"
             ],
             "en": [
               "When dropping below 40% HP after taking damage from an enemy player",
               "You gain a (100 + Character Level*9) HP shield for 1.5 seconds",
-              "Your skill amplification is increased by 12% for 6 seconds",
+              "Your skill amplification is increased by 25 for 6 seconds",
               "Cooldown: 50s"
             ],
             "ja": [
               "着用者が敵実験体にダメージを受け、体力が40%以下になる時",
               "1.5秒間100+キャラクターレベル*9のシールドを獲得",
-              "6秒間スキル増幅が12%増加",
+              "6秒間スキル増幅が25増加",
               "クールダウン:50秒"
             ],
             "cn": [
               "When dropping below 40% HP after taking damage from an enemy player",
               "You gain a (100 + Character Level*9) HP shield for 1.5 seconds",
-              "Your skill amplification is increased by 12% for 6 seconds",
+              "Your skill amplification is increased by 25 for 6 seconds",
               "Cooldown: 50s"
             ]
           },
@@ -1780,10 +1776,10 @@
           "ja": "プリヤだけが装備できる。",
           "cn": "只有普里亞才能裝備"
         },
-        "def0": 30,
+        "def0": 25,
         "mp0": 300,
-        "skill1": 0.1,
-        "grow_skill1": 0.01,
+        "skill0": 35,
+        "grow_skill0": 3,
         "cool1": 0.1
       },
       {
@@ -1803,7 +1799,7 @@
         "stack": 1,
         "material": ["GH002", "PM007"],
         "atk0": 27,
-        "def0": 18,
+        "def0": 17,
         "mp0": 500,
         "cool1": 0.15
       },
@@ -1823,8 +1819,8 @@
         },
         "stack": 1,
         "material": ["GH002", "PM009"],
-        "atk0": 20,
-        "def0": 40,
+        "atk0": 18,
+        "def0": 33,
         "mp0": 300,
         "uniq001": {
           "detail": {
@@ -1872,8 +1868,9 @@
         "stack": 1,
         "material": ["GH001", "PM001"],
         "atk0": 25,
-        "vamp_all1": 0.2,
-        "def0": 20,
+        "skill0": 65,
+        "vamp_all1": 0.25,
+        "def0": 15,
         "mp0": 200,
         "move_spd0": 0.1
       },
@@ -1893,9 +1890,9 @@
         },
         "stack": 1,
         "material": ["PH002", "PM003"],
-        "cri_rate1": 0.24,
+        "cri_rate1": 0.29,
         "cri_atk1": 0.12,
-        "def0": 28,
+        "def0": 21,
         "mp0": 500
       },
       {
@@ -1922,6 +1919,36 @@
       {
         "id": "YH006",
         "sort": "helmet",
+        "img": "https://lh3.google.com/u/0/d/1AnoQPWf5hgAUAauI1Lzqy1joAXWyIEg7",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "페르소나",
+          "en": "Persona",
+          "ja": "ペルソナ",
+          "cn": "幽靈面具"
+        },
+        "stack": 1,
+        "material": ["GH001", "PM009"],
+        "skill0": 75,
+        "def0": 15,
+        "move_spd0": 0.1,
+        "mp0": 400,
+        "uniq012": {
+          "detail": {
+            "kr": ["스킬 증폭 +15%"],
+            "en": ["Skill Amplification +15%"],
+            "ja": ["スキル増幅 +15%"],
+            "cn": ["Skill Amplification +15%"]
+          },
+          "value": 0.15
+        }
+      },
+      {
+        "id": "YH056",
+        "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1VDzFZYZK2fK6KMlncgfoyciiRe9KDh4z",
         "location": false,
         "tobe": false,
@@ -1935,7 +1962,7 @@
         },
         "stack": 1,
         "atk0": 10,
-        "def0": 18,
+        "def0": 15,
         "cool1": 0.12,
         "vision0": 1,
         "range0": 0.5,
@@ -2011,7 +2038,7 @@
         "stack": 1,
         "material": ["WM003", "WM019"],
         "atk0": 5,
-        "def0": 15
+        "def0": 13
       },
       {
         "id": "GB002",
@@ -2048,7 +2075,7 @@
         },
         "stack": 1,
         "material": ["WB002", "WM019"],
-        "def0": 13,
+        "def0": 11,
         "hp_reg1": 0.3
       },
       {
@@ -2098,7 +2125,7 @@
         },
         "stack": 1,
         "material": ["WB003", "GM011"],
-        "skill0": 0.12,
+        "skill0": 25,
         "mp0": 220
       },
       {
@@ -2117,7 +2144,8 @@
         },
         "stack": 1,
         "material": ["GB003", "GM010"],
-        "def0": 28
+        "def0": 10,
+        "basic_atk_def1": 0.02
       },
       {
         "id": "BB004",
@@ -2155,7 +2183,7 @@
         "stack": 1,
         "material": ["GB001", "GM001"],
         "atk0": 15,
-        "def0": 15
+        "def0": 13
       },
       {
         "id": "BB006",
@@ -2192,7 +2220,7 @@
         },
         "stack": 1,
         "material": ["GM008", "WB001"],
-        "def0": 15,
+        "def0": 13,
         "atk_spd1": 0.4
       },
       {
@@ -2211,7 +2239,8 @@
         },
         "stack": 1,
         "material": ["BB003", "WM020"],
-        "def0": 27,
+        "def0": 17,
+        "basic_atk_def1": 0.05,
         "uniq005": {
           "detail": {
             "kr": [
@@ -2258,9 +2287,9 @@
         },
         "stack": 1,
         "material": ["BB002", "GB003"],
-        "skill1": 0.19,
-        "def0": 15,
-        "hp_reg1": 0.4,
+        "skill0": 50,
+        "def0": 13,
+        "hp_reg1": 0.3,
         "mp0": 240
       },
       {
@@ -2281,7 +2310,7 @@
         "material": ["BB005", "GB002"],
         "atk0": 22,
         "cri_atk1": 0.15,
-        "def0": 22,
+        "def0": 18,
         "hp_reg1": 0.45
       },
       {
@@ -2320,9 +2349,9 @@
         "stack": 1,
         "material": ["BB004", "GB001"],
         "mp0": 300,
-        "hp0": 175,
+        "hp0": 170,
         "atk0": 8,
-        "def0": 25
+        "def0": 21
       },
       {
         "id": "PB008",
@@ -2340,8 +2369,8 @@
         },
         "stack": 1,
         "material": ["BB002", "GB004"],
-        "mp0": 240,
-        "skill1": 0.16,
+        "mp0": 300,
+        "skill0": 40,
         "cool1": 0.12
       },
       {
@@ -2381,7 +2410,7 @@
         "stack": 1,
         "material": ["BB005", "GM008"],
         "atk0": 18,
-        "def0": 18,
+        "def0": 15,
         "atk_spd1": 0.24
       },
       {
@@ -2401,7 +2430,7 @@
         "stack": 1,
         "material": ["BB006", "GM009"],
         "atk0": 30,
-        "vamp1": 0.06,
+        "vamp1": 0.1,
         "cool1": 0.12
       },
       {
@@ -2420,8 +2449,8 @@
         },
         "stack": 1,
         "material": ["BB008", "BM004"],
-        "cri_rate1": 0.24,
-        "def0": 20,
+        "cri_rate1": 0.2,
+        "def0": 17,
         "atk_spd1": 0.3
       },
       {
@@ -2440,8 +2469,8 @@
         },
         "stack": 1,
         "material": ["WWE002", "BM002"],
-        "def0": 15,
-        "skill1": 0.12,
+        "def0": 13,
+        "skill0": 40,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -2475,7 +2504,7 @@
         },
         "stack": 1,
         "material": ["BB004", "PM008"],
-        "skill1": 0.22,
+        "skill0": 85,
         "hp0": 100,
         "mp0": 250,
         "mp_reg0": 1.2,
@@ -2518,9 +2547,10 @@
         "stack": 1,
         "material": ["GB003", "PM009"],
         "atk0": 40,
-        "def0": 35,
+        "def0": 29,
         "hp_reg1": 0.5,
-        "cri_def1": 0.08
+        "skill0": 20,
+        "basic_atk_def1": 0.05
       },
       {
         "id": "YB004",
@@ -2567,7 +2597,7 @@
         },
         "stack": 1,
         "material": ["GB004", "PM009"],
-        "def0": 15,
+        "def0": 13,
         "atk_spd1": 0.4,
         "move_spd0": 0.12,
         "cool1": 0.15,
@@ -2615,6 +2645,7 @@
         "material": ["GB001", "PM002"],
         "atk0": 23,
         "def0": 30,
+        "skill0": 10,
         "atk_spd1": 0.25,
         "move_spd0": 0.1
       },
@@ -2634,7 +2665,7 @@
         },
         "stack": 1,
         "material": ["GB004", "PM004"],
-        "def0": 18,
+        "def0": 15,
         "atk_spd1": 0.45,
         "uniq037": {
           "detail": {
@@ -2732,7 +2763,7 @@
         "stack": 1,
         "material": ["WS003", "WM014"],
         "def0": 5,
-        "move_spd0": 0.13
+        "move_spd0": 0.14
       },
       {
         "id": "GS002",
@@ -2750,8 +2781,8 @@
         },
         "stack": 1,
         "material": ["WS003", "WWR001"],
-        "def0": 10,
-        "move_spd0": 0.11
+        "def0": 3,
+        "move_spd0": 0.13
       },
       {
         "id": "GS003",
@@ -2769,8 +2800,8 @@
         },
         "stack": 1,
         "material": ["WS001", "WM005"],
-        "mp_reg0": 0.8,
-        "move_spd0": 0.14
+        "atk0": 3,
+        "move_spd0": 0.13
       },
       {
         "id": "GS004",
@@ -2788,8 +2819,18 @@
         },
         "stack": 1,
         "material": ["WS002", "WWI001"],
-        "move_spd0": 0.06,
-        "non_combat_move_spd0": 0.17
+        "move_spd0": 0.13,
+        "uniq011": {
+          "detail": {
+            "kr": ["군중제어 효과 지속 시간 5% 감소"],
+            "en": ["Reduces crowd control effects by 5%"],
+            "ja": [
+              "制圧、エアボーン、ノックバック、捕まりを除外したデバフの持続時間が5%減少"
+            ],
+            "cn": ["Reduces crowd control effects by 5%"]
+          },
+          "value": 0.05
+        }
       },
       {
         "id": "GS005",
@@ -2807,8 +2848,7 @@
         },
         "stack": 1,
         "material": ["WS001", "WM012"],
-        "mp_reg0": 0.5,
-        "mp_reg1": 0.3,
+        "mp_reg1": 0.5,
         "move_spd0": 0.13
       },
       {
@@ -2822,9 +2862,8 @@
         "name": { "kr": "부츠", "en": "Boots", "ja": "ブーツ", "cn": "靴子" },
         "stack": 1,
         "material": ["WS002", "GM002"],
-        "hp_reg1": 0.15,
-        "atk_spd1": 0.02,
-        "move_spd0": 0.17
+        "hp_reg1": 0.1,
+        "move_spd0": 0.13
       },
       {
         "id": "GS007",
@@ -2837,7 +2876,7 @@
         "name": { "kr": "나막신", "en": "Clogs", "ja": "木靴", "cn": "木鞋" },
         "stack": 1,
         "material": ["WM024", "WT002"],
-        "move_spd0": 0.12
+        "move_spd0": 0.13
       },
       {
         "id": "BS001",
@@ -2855,7 +2894,7 @@
         },
         "stack": 1,
         "material": ["GS007", "WM002"],
-        "move_spd0": 0.29
+        "move_spd0": 0.27
       },
       {
         "id": "BS002",
@@ -2873,8 +2912,8 @@
         },
         "stack": 1,
         "material": ["GS001", "GM001"],
-        "def0": 10,
-        "move_spd0": 0.21
+        "def0": 5,
+        "move_spd0": 0.18
       },
       {
         "id": "BS003",
@@ -2914,8 +2953,7 @@
         "material": ["GS003", "GA003"],
         "atk0": 5,
         "cri_rate1": 0.1,
-        "mp_reg0": 0.8,
-        "move_spd0": 0.19
+        "move_spd0": 0.18
       },
       {
         "id": "BS006",
@@ -2933,7 +2971,7 @@
         },
         "stack": 1,
         "material": ["WM005", "GM014"],
-        "move_spd0": 0.29,
+        "move_spd0": 0.27,
         "penet1": 0.06
       },
       {
@@ -2953,8 +2991,8 @@
         "stack": 1,
         "material": ["BS003", "WA001"],
         "hp_reg1": 0.25,
-        "atk_spd1": 0.3,
-        "move_spd0": 0.32
+        "atk_spd1": 0.32,
+        "move_spd0": 0.27
       },
       {
         "id": "PS003",
@@ -2975,8 +3013,7 @@
         "atk0": 5,
         "def0": 5,
         "cri_rate1": 0.2,
-        "mp_reg0": 1,
-        "move_spd0": 0.3
+        "move_spd0": 0.27
       },
       {
         "id": "PS004",
@@ -2995,8 +3032,8 @@
         "stack": 1,
         "material": ["BS003", "WM020"],
         "hp_reg1": 0.2,
-        "atk_spd1": 0.15,
-        "move_spd0": 0.29,
+        "atk_spd1": 0.05,
+        "move_spd0": 0.27,
         "uniq013": {
           "detail": {
             "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -3027,8 +3064,8 @@
         },
         "stack": 1,
         "material": ["GS001", "BM003"],
-        "def0": 10,
-        "move_spd0": 0.3,
+        "def0": 5,
+        "move_spd0": 0.27,
         "cool1": 0.08
       },
       {
@@ -3047,10 +3084,9 @@
         },
         "stack": 1,
         "material": ["GS005", "GM007"],
-        "skill1": 0.07,
-        "mp_reg0": 0.5,
-        "mp_reg1": 0.5,
-        "move_spd0": 0.29
+        "skill0": 10,
+        "mp_reg1": 1,
+        "move_spd0": 0.27
       },
       {
         "id": "PS007",
@@ -3069,7 +3105,7 @@
         "stack": 1,
         "material": ["GS004", "BM001"],
         "atk0": 15,
-        "move_spd0": 0.32,
+        "move_spd0": 0.27,
         "uniq011": {
           "detail": {
             "kr": ["군중제어 효과 지속 시간 15% 감소"],
@@ -3093,8 +3129,8 @@
         "name": { "kr": "SCV", "en": "SCV", "ja": "SCV", "cn": "SCV" },
         "stack": 1,
         "material": ["GM009", "BM003"],
-        "move_spd0": 0.32,
-        "vamp_all1": 0.1
+        "move_spd0": 0.27,
+        "vamp_all1": 0.14
       },
       {
         "id": "PS010",
@@ -3112,10 +3148,9 @@
         },
         "stack": 1,
         "material": ["GS006", "BS002"],
-        "def0": 15,
+        "def0": 10,
         "hp_reg1": 0.4,
-        "mp_reg0": 0.5,
-        "move_spd0": 0.32,
+        "move_spd0": 0.27,
         "trap_def1": 0.1
       },
       {
@@ -3134,8 +3169,8 @@
         },
         "stack": 1,
         "material": ["BS006", "PM003"],
-        "move_spd0": 0.37,
-        "penet1": 0.12
+        "move_spd0": 0.32,
+        "penet1": 0.13
       },
       {
         "id": "YS002",
@@ -3153,11 +3188,10 @@
         },
         "stack": 1,
         "material": ["GS005", "PM008"],
-        "mp_reg0": 1.2,
-        "mp_reg1": 1,
+        "mp_reg1": 2,
         "move_spd0": 0.37,
-        "skill0": 14,
-        "grow_skill1": 0.01
+        "skill0": 15,
+        "grow_skill0": 1
       },
       {
         "id": "YS003",
@@ -3175,8 +3209,8 @@
         },
         "stack": 1,
         "material": ["GS004", "PM009"],
-        "def0": 25,
-        "move_spd0": 0.42,
+        "def0": 20,
+        "move_spd0": 0.35,
         "uniq011": {
           "detail": {
             "kr": ["군중제어 효과 지속 시간 25% 감소"],
@@ -3205,10 +3239,9 @@
         },
         "stack": 1,
         "material": ["GS003", "PM001"],
-        "atk0": 20,
+        "atk0": 22,
         "vamp_all1": 0.15,
-        "mp_reg0": 1,
-        "move_spd0": 0.42
+        "move_spd0": 0.35
       },
       {
         "id": "YS005",
@@ -3226,8 +3259,8 @@
         },
         "stack": 1,
         "material": ["GS007", "PM001"],
-        "move_spd0": 0.42,
-        "cool1": 0.22,
+        "move_spd0": 0.35,
+        "cool1": 0.27,
         "uniq007": {
           "detail": {
             "kr": ["+10%"],
@@ -3255,8 +3288,8 @@
         "stack": 1,
         "material": ["GS002", "PM002"],
         "def0": 15,
-        "atk_spd1": 0.32,
-        "move_spd0": 0.42
+        "atk_spd1": 0.37,
+        "move_spd0": 0.35
       }
     ]
   },
@@ -3444,7 +3477,15 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1V_YjHcOlg8IJnsvOCNWg7dfDjl_uN-Kr",
         "location": false,
-        "tobe": ["PWB002", "BWE005", "PWI008", "PH002", "BS005", "BM004"],
+        "tobe": [
+          "PWB002",
+          "PWP005",
+          "BWE005",
+          "PWI008",
+          "PH002",
+          "BS005",
+          "BM004"
+        ],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3488,14 +3529,14 @@
         "stack": 1,
         "material": ["WM007", "WA009"],
         "atk0": 8,
-        "vision0": 2.5
+        "vision0": 1.5
       },
       {
         "id": "GA006",
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/109IZynIb6W7Ny1mm05wIZX5ag_S-R0Z3",
         "location": false,
-        "tobe": ["BA009", "PWD005", "PWE005", "PWP005", "PWT007"],
+        "tobe": ["BA009", "PWD005", "PWE005", "PWT007"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3506,7 +3547,7 @@
         },
         "stack": 1,
         "material": ["WC002", "WA005"],
-        "skill1": 0.08,
+        "skill0": 12,
         "cool1": 0.05
       },
       {
@@ -3536,7 +3577,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/18iTVZte3WUklCsNs4EIIBmKrnueKyquV",
         "location": false,
-        "tobe": ["PWM002", "PC008", "BA012"],
+        "tobe": ["PC008", "BA012"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3574,7 +3615,7 @@
         },
         "stack": 1,
         "material": ["WA004", "WM020"],
-        "skill1": 0.08,
+        "skill0": 12,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -3609,7 +3650,7 @@
         "stack": 1,
         "material": ["WWB001", "WM008"],
         "atk0": 5,
-        "skill1": 0.08
+        "skill0": 12
       },
       {
         "id": "GA011",
@@ -3646,16 +3687,7 @@
         },
         "stack": 1,
         "material": ["WWL001", "WWN001"],
-        "atk0": 8,
-        "uniq008": {
-          "detail": {
-            "kr": ["+0.25"],
-            "en": ["+0.25"],
-            "ja": ["+0.25"],
-            "cn": ["+0.25"]
-          },
-          "value": 0.25
-        }
+        "atk0": 8
       },
       {
         "id": "BA001",
@@ -3673,7 +3705,7 @@
         },
         "stack": 1,
         "material": ["GA009", "WA001"],
-        "skill1": 0.11,
+        "skill0": 20,
         "uniq009": {
           "detail": {
             "kr": ["+0.04"],
@@ -3716,7 +3748,7 @@
         },
         "stack": 1,
         "material": ["GA004", "WA004"],
-        "skill1": 0.12,
+        "skill0": 25,
         "vamp_all1": 0.08,
         "mp_reg1": 0.7
       },
@@ -3777,8 +3809,8 @@
         },
         "stack": 1,
         "material": ["GA010", "GM009"],
-        "atk0": 15,
-        "skill1": 0.15
+        "atk0": 10,
+        "skill0": 30
       },
       {
         "id": "BA008",
@@ -3831,7 +3863,7 @@
         "stack": 1,
         "material": ["GA006", "GA001"],
         "atk0": 8,
-        "skill1": 0.08,
+        "skill0": 22,
         "cool1": 0.08,
         "active003": {
           "detail": {
@@ -3900,16 +3932,31 @@
         },
         "stack": 1,
         "material": ["GA012", "GA005"],
-        "atk0": 13,
-        "vision0": 2,
-        "uniq008": {
+        "atk0": 15,
+        "vision0": 1,
+        "uniq035": {
           "detail": {
-            "kr": ["+0.35"],
-            "en": ["+0.35"],
-            "ja": ["+0.35"],
-            "cn": ["+0.35"]
+            "kr": [
+              "6초마다 [연날리기 충전]을 1개씩 최대 2개까지 획득합니다",
+              "이동 기술을 사용하면 충전을 1개 소모하여, 다음 기본 공격의 사거리가 1 증가합니다."
+            ],
+            "en": [
+              "Grants up to 2 Smooth Walker stacks every 6 seconds",
+              "Casting a movement skill consumes a stack and gives the caster the Smooth Walker buff",
+              "Smooth Walker Mode increases the attack range of your next basic attack by 1"
+            ],
+            "ja": [
+              "6秒ごとに[スムース·ウォーカーチャージ]を1つずつ、最大2つまで獲得します。",
+              "移動スキルを使用すると、チャージを1つ消耗して[スムース·ウォーカー]を獲得します。",
+              "[スムース·ウォーカー]は次の基本攻撃まで固有基本攻撃射程距離を1増加させます。"
+            ],
+            "cn": [
+              "Increases the range of your next basic attack by 1 when casting movement skills.",
+              "Max 2 stacks",
+              "Cooldown 6s"
+            ]
           },
-          "value": 0.35
+          "value": 1
         }
       },
       {
@@ -3977,7 +4024,7 @@
         "stack": 1,
         "material": ["BA004", "GC004"],
         "hp0": 200,
-        "def0": 12
+        "def0": 10
       },
       {
         "id": "BA014",
@@ -4019,7 +4066,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 45 + 스킬 증폭*1",
+              "피해량: 40 + 스킬 증폭*0.15",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
@@ -4027,7 +4074,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 45 + Skill Amplification*1",
+              "Damage: 40 + Skill Amplification*0.15",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -4035,7 +4082,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:45+スキル増幅*1",
+              "ダメージ:40+スキル増幅*0.15",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -4043,22 +4090,22 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 45 + Skill Amplification*1",
+              "Damage: 40 + Skill Amplification*0.15",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ]
           },
-          "value": 45
+          "value": 40
         },
         "buff006": {
           "detail": {
-            "kr": ["이동속도: 6% 감소", "지속시간: 4초"],
-            "en": ["Slowing by 6%", "Duration: 4s"],
-            "ja": ["移動速度:6%減少", "4秒間"],
-            "cn": ["Slowing by 6%", "Duration: 4s"]
+            "kr": ["이동속도: 4% 감소", "지속시간: 4초"],
+            "en": ["Slowing by 4%", "Duration: 4s"],
+            "ja": ["移動速度:4%減少", "4秒間"],
+            "cn": ["Slowing by 4%", "Duration: 4s"]
           },
-          "value": 0.06
+          "value": 0.04
         }
       },
       {
@@ -4127,6 +4174,15 @@
         "stack": 1,
         "material": ["GA009", "PM001"],
         "cool1": 0.12,
+        "uniq012": {
+          "detail": {
+            "kr": ["스킬 증폭 +15%"],
+            "en": ["Skill Amplification +15%"],
+            "ja": ["スキル増幅 +15%"],
+            "cn": ["Skill Amplification +15%"]
+          },
+          "value": 0.15
+        },
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 60%(근)/50%(원) 감소"],
@@ -4190,7 +4246,7 @@
         "stack": 1,
         "material": ["BD001", "PM004"],
         "atk0": 10,
-        "def0": 10,
+        "def0": 9,
         "mp_reg1": 1,
         "vision0": 2,
         "active004": {
@@ -4235,17 +4291,37 @@
         },
         "stack": 1,
         "material": ["GA007", "PM002"],
-        "def0": 13,
+        "def0": 11,
         "atk_spd1": 0.33,
         "move_spd0": 0.1,
-        "uniq008": {
+        "uniq003": {
           "detail": {
-            "kr": ["+0.65"],
-            "en": ["+0.65"],
-            "ja": ["+0.65"],
-            "cn": ["+0.65"]
+            "kr": [
+              "0.2m 이동할 때마다 스택 충전(최대 100회)",
+              "충전 스택에 따라 최대 0.06의 이동속도 추가",
+              "다음 기본 공격 시 스택을 모두 소모하여 최대 120의 고유피해",
+              "최대 스택으로 기본 공격 시 2초간 상대의 이동 속도 25% 감소"
+            ],
+            "en": [
+              "Gain a stack of Swift Strides every 0.2m you move, up to 100 times",
+              "Your movement speed will increase by up to 0.06 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 120 cellular damage",
+              "At max stacks, your next basic attack slows enemies by 25% for 2 seconds"
+            ],
+            "ja": [
+              "0.2m移動するたびに[軽い足取り]を最大100回まで重畳して獲得",
+              "重畳によって移動速度が最大0.06まで増加します",
+              "基本攻撃ダメージを与える場合、重畳をすべて消費して最大120の固有ダメージを与えます",
+              "最大重畳状態でダメージを受けた対象の移動速度を2秒間25%減少させます"
+            ],
+            "cn": [
+              "Gain a stack of Swift Strides every 0.2m you move, up to 100 times",
+              "Your movement speed will increase by up to 0.06 based on how many stacks you have",
+              "Basic attacks consume all stacks, dealing up to 120 cellular damage",
+              "At max stacks, your next basic attack slows enemies by 25% for 2 seconds"
+            ]
           },
-          "value": 0.65
+          "value": 120
         }
       },
       {
@@ -4284,35 +4360,35 @@
         },
         "stack": 1,
         "material": ["WM008", "PM006"],
-        "grow_skill1": 0.01,
-        "vision0": 1.5,
+        "skill0": 25,
+        "vision0": 1,
         "uniq001": {
           "detail": {
             "kr": [
               "스킬 사용 후, 4초 이내에 다음 기본 공격은 추가 피해",
-              "피해량: 스킬 증폭의 2.5배(근)/1.5배(원)",
+              "피해량: 스킬 증폭*0.2(근)/0.15(원)",
               "쿨다운: 2초"
             ],
             "en": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Damage: equivalent to Skill Amplification*0.2(Melee)/0.15(Ranged)",
               "Cooldown: 2s"
             ],
             "ja": [
               "スキルを使用すると意念をチャージ",
               "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
-              "ダメージ:スキル増幅*2.5(近)/1.5(遠)",
+              "ダメージ:スキル増幅*0.2(近)/0.15(遠)",
               "クールダウン:2秒"
             ],
             "cn": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Damage: equivalent to Skill Amplification*0.2(Melee)/0.15(Ranged)",
               "Cooldown: 2s"
             ]
           },
-          "value": 2.5
+          "value": 0.2
         }
       },
       {
@@ -4331,7 +4407,16 @@
         },
         "stack": 1,
         "material": ["GM013", "PM001"],
-        "skill1": 0.2,
+        "skill0": 50,
+        "uniq012": {
+          "detail": {
+            "kr": ["스킬 증폭 +15%"],
+            "en": ["Skill Amplification +15%"],
+            "ja": ["スキル増幅 +15%"],
+            "cn": ["Skill Amplification +15%"]
+          },
+          "value": 0.15
+        },
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 60%(근)/50%(원) 감소"],
@@ -4371,37 +4456,37 @@
           "ja": "ソロモード",
           "cn": "單人"
         },
-        "hp0": 120,
-        "skill1": 0.19,
-        "vision0": 1.5,
+        "hp0": 80,
+        "skill0": 65,
+        "vision0": 1,
         "move_spd0": 0.1,
         "uniq001": {
           "detail": {
             "kr": [
               "스킬 사용 후, 4초 이내에 다음 기본 공격은 추가 피해",
-              "피해량: 스킬 증폭의 2.5배(근)/1.5배(원)",
+              "피해량: 스킬 증폭*0.35(근)/0.3(원)",
               "쿨다운: 2초"
             ],
             "en": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Damage: equivalent to Skill Amplification*0.35(Melee)/0.3(Ranged)",
               "Cooldown: 2s"
             ],
             "ja": [
               "スキルを使用すると意念をチャージ",
               "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
-              "ダメージ:スキル増幅*2.5(近)/1.5(遠)",
+              "ダメージ:スキル増幅*0.35(近)/0.3(遠)",
               "クールダウン:2秒"
             ],
             "cn": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to Skill Amplification*2.5(Melee)/1.5(Ranged)",
+              "Damage: equivalent to Skill Amplification*0.35(Melee)/0.3(Ranged)",
               "Cooldown: 2s"
             ]
           },
-          "value": 0.1
+          "value": 0.35
         }
       },
       {
@@ -4426,9 +4511,9 @@
           "ja": "デュオ,スクワッド",
           "cn": "雙人,三人"
         },
-        "def0": 10,
-        "skill1": 0.25,
-        "vision0": 1.5,
+        "def0": 9,
+        "skill0": 75,
+        "vision0": 1,
         "move_spd0": 0.1,
         "active002": {
           "detail": {
@@ -4606,7 +4691,8 @@
           "cn": "雙人,三人"
         },
         "atk0": 18,
-        "def0": 8,
+        "def0": 7,
+        "skill0": 25,
         "active005": {
           "detail": {
             "kr": [
@@ -4633,18 +4719,18 @@
         }
       },
       {
-        "id": "YA018",
+        "id": "RA020",
         "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1KNtmo1_Iwcsm8UH5fiY2UPh42OErZ0bu",
+        "img": "https://lh3.google.com/u/0/d/1vr_TrK7I8rS3ACCfBmUrEh7UMbCZn1zX=w1013-h910-iv1",
         "location": false,
         "tobe": false,
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "아티팩트 Mk2",
-          "en": "Totem Mk2",
-          "ja": "アーティファクトMk2",
-          "cn": "極光陀螺Mk2"
+          "kr": "미니어쳐 솔라시스템",
+          "en": "Solar System Miniature",
+          "ja": "ミニチュアソーラーシステム",
+          "cn": "微型太陽系統"
         },
         "stack": 1,
         "only": {
@@ -4655,35 +4741,30 @@
         },
         "atk0": 20,
         "def0": 20,
-        "atk_spd1": 0.15,
-        "skill1": 0.12,
         "active005": {
           "detail": {
             "kr": [
-              "사용 시 적용",
-              "2.5간 경직 상태에 빠집니다",
-              "쿨다운: 55초"
+              "사용 시 3.75m 범위 내 모든 적 실험체를 자신 주변까지 당겨온 후, 1.45초간 기절 시키고 300의 고정피해",
+              "쿨다운: 65초"
             ],
             "en": [
-              "Activate to put the user in stasis for 2.5 second",
-              "Making them invulnerable unable to perform any other actions as well",
-              "Cooldown: 55s"
+              "Pull all enemy test subjects within 3.75m towards the caster, dealing 300 true damage and stunning them for 1.45 seconds.",
+              "Cooldown: 65s"
             ],
             "ja": [
-              "アイテムを使用すると、2.5秒間硬直状態になり、いかなる行動もできません。",
-              "クールダウン:55秒"
+              "アイテム使用時、 3.75m範囲内のすべての敵実験体を自分の近くまで引っ張って、1.45秒間気絶300の固定ダメージを与えます。",
+              "クールダウン:65秒"
             ],
             "cn": [
-              "Activate to put the user in stasis for 2.5 second",
-              "Making them invulnerable unable to perform any other actions as well",
-              "Cooldown: 55s"
+              "Pull all enemy test subjects within 3.75m towards the caster, dealing 300 true damage and stunning them for 1.45 seconds.",
+              "Cooldown: 65s"
             ]
           },
-          "value": 2.5
+          "value": 1.45
         }
       },
       {
-        "id": "YA019",
+        "id": "RA019",
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1Gdk2snkwFki6bRV1X_Nc4lrEIr2PeCPC=w1411-h910-iv1",
         "location": false,
@@ -4753,18 +4834,18 @@
         }
       },
       {
-        "id": "YA020",
+        "id": "RA018",
         "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1vr_TrK7I8rS3ACCfBmUrEh7UMbCZn1zX=w1013-h910-iv1",
+        "img": "https://lh3.google.com/u/0/d/1KNtmo1_Iwcsm8UH5fiY2UPh42OErZ0bu",
         "location": false,
         "tobe": false,
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "미니어쳐 솔라시스템",
-          "en": "Solar System Miniature",
-          "ja": "ミニチュアソーラーシステム",
-          "cn": "微型太陽系統"
+          "kr": "아티팩트 Mk2",
+          "en": "Totem Mk2",
+          "ja": "アーティファクトMk2",
+          "cn": "極光陀螺Mk2"
         },
         "stack": 1,
         "only": {
@@ -4775,26 +4856,31 @@
         },
         "atk0": 20,
         "def0": 20,
+        "atk_spd1": 0.15,
+        "skill0": 30,
         "active005": {
           "detail": {
             "kr": [
-              "사용 시 3.75m 범위 내 모든 적 실험체를 자신 주변까지 당겨온 후, 1.45초간 기절 시키고 300의 고정피해",
-              "쿨다운: 65초"
+              "사용 시 적용",
+              "2.5간 경직 상태에 빠집니다",
+              "쿨다운: 55초"
             ],
             "en": [
-              "Pull all enemy test subjects within 3.75m towards the caster, dealing 300 true damage and stunning them for 1.45 seconds.",
-              "Cooldown: 65s"
+              "Activate to put the user in stasis for 2.5 second",
+              "Making them invulnerable unable to perform any other actions as well",
+              "Cooldown: 55s"
             ],
             "ja": [
-              "アイテム使用時、 3.75m範囲内のすべての敵実験体を自分の近くまで引っ張って、1.45秒間気絶300の固定ダメージを与えます。",
-              "クールダウン:65秒"
+              "アイテムを使用すると、2.5秒間硬直状態になり、いかなる行動もできません。",
+              "クールダウン:55秒"
             ],
             "cn": [
-              "Pull all enemy test subjects within 3.75m towards the caster, dealing 300 true damage and stunning them for 1.45 seconds.",
-              "Cooldown: 65s"
+              "Activate to put the user in stasis for 2.5 second",
+              "Making them invulnerable unable to perform any other actions as well",
+              "Cooldown: 55s"
             ]
           },
-          "value": 1.45
+          "value": 2.5
         }
       },
       {

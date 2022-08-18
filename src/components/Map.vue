@@ -94,6 +94,7 @@
               "
               points="24,0 48,0 48,96 0,96 0,24 24,24"
             />
+            <circle class="lifeTree" cx="30" cy="35" r="4" />
             <circle class="hyperloop" cx="40" cy="10" r="4" />
             <circle class="meteor" cx="15" cy="75" r="4" />
             <text class="areaName" x="40" y="25">
@@ -254,7 +255,6 @@
             />
             <circle class="hyperloop" cx="30" cy="10" r="4" />
             <circle class="transferConsole" cx="50" cy="40" r="4" />
-            <circle class="lifeTree" cx="40" cy="55" r="4" />
             <circle class="alphaOmega" cx="60" cy="40" r="4" />
             <text class="areaName" x="30" y="5">
               {{ $t("mapModal.hotel") }}

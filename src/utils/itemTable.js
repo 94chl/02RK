@@ -397,6 +397,12 @@ export const itemOptions = {
     ja: "基本攻撃ダメージ減少",
     cn: "承受普攻傷害減少",
   },
+  basic_atk_def1: {
+    kr: "기본 공격 피해 감소",
+    en: "Defense from Basic Attacks",
+    ja: "基本攻撃ダメージ減少",
+    cn: "承受普攻傷害減少",
+  },
   cool1: {
     kr: "쿨다운 감소",
     en: "Cooldown Reduction",
@@ -679,6 +685,12 @@ export const itemOptions = {
     ja: "行動妨害耐性",
     cn: "負面效果抵禦",
   },
+  uniq012: {
+    kr: "스킬 증폭",
+    en: "Skill Amplification",
+    ja: "スキル増幅",
+    cn: "技能增幅",
+  },
   uniq013: {
     kr: "치유방해(기본공격)",
     en: "Healing Reduction: Basic Attack",
@@ -790,8 +802,8 @@ export const itemOptions = {
   uniq035: {
     kr: "연날리기",
     en: "Smooth Walker",
-    ja: "電撃",
-    cn: "電擊",
+    ja: "スムース·ウォーカー",
+    cn: "風箏",
   },
   uniq037: {
     kr: "전자기 충격",

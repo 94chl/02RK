@@ -73,12 +73,7 @@
 </template>
 
 <script>
-  import {
-    searchById,
-    database,
-    categoryName,
-    itemOptions,
-  } from "~/utils/itemTable";
+  import { searchById, database, categoryName } from "~/utils/itemTable";
   import ItemPreview from "~/components/ItemPreview";
   import ampl from "~/utils/amplitude.js";
 

@@ -75,7 +75,12 @@
                 class="itemInfo_img"
               />
             </button>
-            <div>{{ item.name[language] }}</div>
+            <div class="itemTextBox">
+              <span>{{ item.name[language] }}</span>
+              <button @click="removeTargetItem" class="removeBtn">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
           </li>
         </ul>
 
@@ -108,40 +113,129 @@
     </div>
 
     <div class="status_info">
-      <h3 class="tabName">
-        {{ `${$t("modal.character")}-${$t("modal.status")}` }}
-      </h3>
-      <div class="optionBox" v-if="selectedCharacter">
+      <div class="optionBox total" v-if="selectedCharacter">
         <ul>
-          <li v-for="optionKey in statusKey" :key="optionKey" class="option">
+          <li
+            v-for="optionKey in totalOption.optionKeys"
+            :key="optionKey"
+            class="option"
+          >
             <div class="optionInfo">
               <span class="optionInfo_name">
                 {{
-                  `${statusOptions[optionKey][language]}${
-                    optionKey === "attackSpeed"
+                  `${statusOptions?.[optionKey]?.[language]}${
+                    optionKey === "atk_spd1"
                       ? `(${selectedCharacter?.attackSpeedMin} ~ ${selectedCharacter?.attackSpeedLimit})`
                       : ""
                   } :`
                 }}</span
               >
-              <span class="optionInfo_value">
-                {{ `${selectedCharacter?.[optionKey]}` }}</span
-              >
+              <div class="optionInfo_extra">
+                <span> {{ totalOption.character?.[optionKey] || 0 }}</span>
+                <span>{{
+                  totalOption.level?.[optionKey]
+                    ? totalOption.level?.[optionKey] < 0
+                      ? totalOption.level?.[optionKey]
+                      : `+${totalOption.level?.[optionKey]}`
+                    : "+0"
+                }}</span>
+                <span>{{
+                  totalOption.mastery?.[optionKey]
+                    ? totalOption.mastery?.[optionKey] < 0
+                      ? totalOption.mastery?.[optionKey]
+                      : `+${totalOption.mastery?.[optionKey]}`
+                    : "+0"
+                }}</span>
+                <span>{{
+                  totalOption.equip?.[optionKey]
+                    ? totalOption.equip?.[optionKey] < 0
+                      ? totalOption.equip?.[optionKey]
+                      : `+${totalOption.equip?.[optionKey]}`
+                    : "+0"
+                }}</span>
+              </div>
             </div>
           </li>
         </ul>
+        <div class="characterImage">
+          <div class="header">
+            <div v-if="selectedCharacter" class="inputBox">
+              <div class="level">
+                <span>Level</span>
+                <div>
+                  <button @click="changeLevel(-1, 'characterLevel')">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input
+                    type="text"
+                    name="characterLevel"
+                    id="characterLevel"
+                    :value="characterLevel"
+                    @input="changeLevel($event, 'characterLevel')"
+                  />
+                  <button @click="changeLevel(1, 'characterLevel')">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="level">
+                <span>Mastery</span>
+                <div>
+                  <button @click="changeLevel(-1, 'masteryLevel')">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input
+                    type="text"
+                    name="masteryLevel"
+                    id="masteryLevel"
+                    :value="masteryLevel"
+                    @input="changeLevel($event, 'masteryLevel')"
+                  />
+                  <button @click="changeLevel(1, 'masteryLevel')">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            :src="
+              require(`~/img/character/half/${selectedCharacter?.code}.webp`)
+            "
+            :alt="`${selectedCharacter.name}_img`"
+            :title="`${selectedCharacter.name}_img`"
+            v-if="showItemImg"
+          />
+          <div class="weaponGroup">
+            <div class="imageBox">
+              <button
+                v-for="(mastery, index) in selectedCharacter?.mastery || []"
+                :key="mastery?.code"
+                :class="mastery?.code === selectedMastery?.code && 'selected'"
+                :data-index="index"
+                @click="changeWeaponGroup"
+              >
+                <img
+                  :src="require(`~/img/weaponGroup/${mastery.type}.webp`)"
+                  :alt="`${mastery.type}_img`"
+                  :title="`${mastery.type}_img`"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="status_info">
       <h3 class="tabName">
-        {{ `${$t("modal.equip")}-${$t("modal.status")}` }}
+        {{ $t("modal.equip") }}
       </h3>
-      <div class="optionBox">
+      <div class="optionBox" v-if="equipOption.uniq">
         <ul>
           <li
             v-for="[optionId, optionValue] in Object.entries(
-              equipOptions
+              equipOption.uniq
             ).sort()"
             :key="optionId"
             class="option"
@@ -155,22 +249,7 @@
               </span>
             </div>
             <div
-              v-else-if="!optionId.match(/(active)|(buff)|(uniq)/g)"
-              class="optionInfo"
-            >
-              <span class="optionInfo_name">
-                {{ `${itemOptions[optionId][language]} : ` }}
-              </span>
-              <span class="optionInfo_value">
-                <span>{{
-                  optionId.match(/[1]/g)
-                    ? `${Math.round(optionValue * 1000) / 10}%`
-                    : optionValue
-                }}</span>
-              </span>
-            </div>
-            <div
-              v-if="optionId.match(/(active)|(buff)|(uniq)/g)"
+              v-else-if="optionId.match(/(active)|(buff)|(uniq)/g)"
               class="optionInfo unique"
             >
               <span class="optionInfo_name">
@@ -206,8 +285,9 @@
 </template>
 
 <script>
+  import { toFloat, toPercent } from "~/utils/utils";
   import { searchById, itemOptions } from "~/utils/itemTable";
-  import { statusOptions } from "~/utils/characterTable";
+  import { statusOptions, optionDictionary } from "~/utils/characterTable";
   import Character from "./Character.vue";
 
   export default {
@@ -229,20 +309,63 @@
         itemOptions,
         statusData: "targetItems",
         statusKey: [
-          "maxHp",
-          "maxSp",
-          "attackPower",
-          "defense",
-          "criticalStrikeChance",
-          "hpRegen",
-          "spRegen",
-          "attackSpeed",
-          // "attackSpeedLimit",
-          // "attackSpeedMin",
-          "moveSpeed",
-          "sightRange",
+          "atk0",
+          "atk_spd1",
+          "basic_atk0",
+          "basic_atk_def0",
+          "basic_atk_def1",
+          "cool1",
+          "cri_atk1",
+          "cri_def1",
+          "cri_rate1",
+          "def0",
+          "grow_atk0",
+          "grow_atk_spd1",
+          "grow_basic_atk0",
+          "grow_basic_atk1",
+          "grow_defense0",
+          "grow_hp0",
+          "grow_skill0",
+          "grow_skill1",
+          "heal_up1",
+          "hp0",
+          "hp_reg0",
+          "hp_reg1",
+          "load0",
+          "move_spd0",
+          "mp0",
+          "mp_reg0",
+          "mp_reg1",
+          "non_combat_move_spd0",
+          "penet1",
+          "range0",
+          "skill0",
+          "skill1",
+          "skill_def0",
+          "skill_def1",
+          "trap_def1",
+          "vamp1",
+          "vamp_all1",
+          "vision0",
         ],
+        // [
+        //   "maxHp",
+        //   "maxSp",
+        //   "attackPower",
+        //   "defense",
+        //   "criticalStrikeChance",
+        //   "hpRegen",
+        //   "spRegen",
+        //   "attackSpeed",
+        //   // "attackSpeedLimit",
+        //   // "attackSpeedMin",
+        //   "moveSpeed",
+        //   "sightRange",
+        // ],
         statusOptions,
+        selectedMasteryIndex: 0,
+        characterLevel: 1,
+        masteryLevel: 1,
       };
     },
     components: { Character },
@@ -262,21 +385,20 @@
       bagItems() {
         return this.$store.state.bagEquip;
       },
-      equipOptions() {
+      equipOption() {
         const equipData =
           this.statusData === "targetItems" ? this.targetItems : this.bagItems;
-        const equipOptions = Object.values(equipData).reduce(
+        const equipOption = {};
+        const uniqOption = {};
+        const commonOptions = Object.values(equipData).reduce(
           (itemOptions, item) => {
             if (item.id) {
               const itemInfo = searchById(item.id);
               Object.entries(itemInfo).forEach(([optionId, optionValue]) => {
                 if (!this.commonOptions.includes(optionId)) {
-                  if (optionId.match(/(active)|(buff)|(uniq)/g)) {
-                    itemOptions[optionId] = !itemOptions[optionId]
-                      ? optionValue
-                      : optionValue > itemOptions[optionId]
-                      ? optionValue
-                      : itemOptions[optionId];
+                  if (optionId.match(/(active)|(buff)|(uniq)|(only)/g)) {
+                    uniqOption[optionId] =
+                      Math.max(uniqOption[optionId], optionValue) || optionValue;
                   } else {
                     itemOptions[optionId] = !itemOptions[optionId]
                       ? optionValue
@@ -289,14 +411,123 @@
           },
           {}
         );
-
-        return equipOptions;
-      },
-      selectedCharacterId() {
-        return this.$store.state.selectedCharacterId;
+        equipOption.uniq = uniqOption;
+        equipOption.common = commonOptions;
+        return equipOption;
       },
       selectedCharacter() {
         return this.$store.state.selectedCharacter;
+      },
+      selectedMastery() {
+        const {
+          characterCode,
+          code,
+          option1,
+          option2,
+          option3,
+          optionValue1,
+          optionValue2,
+          optionValue3,
+          type,
+        } = this.$store.state.selectedMastery;
+        const mastery = {
+          code,
+          characterCode,
+          type,
+          [option1]: optionValue1,
+          [option2]: optionValue2,
+          [option3]: optionValue3,
+        };
+        return mastery;
+      },
+      totalOption() {
+        const totalOption = {
+          character: {},
+          level: {},
+          mastery: {},
+          equip: {},
+          optionKeys: [],
+        };
+        const optionKeys = new Set();
+        Object.entries(this.selectedCharacter).forEach((option) => {
+          const [key, value] = option;
+          const optionKey = optionDictionary?.[key];
+          if (optionKey) {
+            if (!optionKeys.has(optionKey)) {
+              optionKeys.add(optionKey);
+            }
+            const fixedValue =
+              optionKey[optionKey.length - 1] === "0"
+                ? toFloat(value)
+                : toPercent(value);
+            totalOption.character[optionKey] =
+              totalOption.character[optionKey] + fixedValue || fixedValue;
+          }
+        });
+        Object.entries(this.selectedCharacter?.levelUpStats || []).forEach(
+          (option) => {
+            const [key, value] = option;
+            const optionKey = optionDictionary?.[key];
+            if (optionKey) {
+              if (!optionKeys.has(optionKey)) {
+                optionKeys.add(optionKey);
+              }
+              const fixedValue = toFloat(toFloat(value) * this.characterLevel);
+
+              if (optionKey[optionKey.length - 1] === "0") {
+                totalOption.level[optionKey] =
+                  totalOption.level[optionKey] + fixedValue || fixedValue;
+              } else {
+                const percentValue = toPercent(fixedValue);
+                const prevValue = totalOption.level[optionKey] || "0%";
+                const nextValue = `${
+                  parseFloat(prevValue.slice(0, prevValue.length - 1)) +
+                  percentValue
+                }%`;
+
+                totalOption.level[optionKey] = nextValue;
+              }
+            }
+          }
+        );
+        Object.entries(this.selectedMastery).forEach((option) => {
+          const [key, value] = option;
+          const optionKey = optionDictionary?.[key];
+          if (optionKey) {
+            if (!optionKeys.has(optionKey)) {
+              optionKeys.add(optionKey);
+            }
+            const fixedValue = toFloat(toFloat(value) * this.masteryLevel);
+
+            if (optionKey[optionKey.length - 1] === "0") {
+              totalOption.mastery[optionKey] =
+                totalOption.mastery[optionKey] + fixedValue || fixedValue;
+            } else {
+              const percentValue = toPercent(fixedValue);
+              const prevValue = totalOption.mastery[optionKey] || "0%";
+              const nextValue = `${
+                parseFloat(prevValue.slice(0, prevValue.length - 1)) +
+                percentValue
+              }%`;
+              totalOption.mastery[optionKey] = nextValue;
+            }
+          }
+        });
+        Object.entries(this.equipOption.common).forEach((option) => {
+          const [key, value] = option;
+          if (typeof value === "number") {
+            if (!optionKeys.has(key)) {
+              optionKeys.add(key);
+            }
+            const fixedValue =
+              key[key.length - 1] === "0" ? toFloat(value) : toPercent(value);
+            totalOption.equip[key] =
+              totalOption.equip[key] + fixedValue || fixedValue;
+          }
+        });
+        totalOption.optionKeys = Array.from(optionKeys);
+
+        return totalOption;
       },
     },
     methods: {
@@ -315,6 +546,41 @@
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
         this.$store.dispatch("setCart", selectedItem);
+      },
+      removeTargetItem(e) {
+        if (window.confirm(this.$t("noti.removeTargetItem"))) {
+          const newTargetItems = this.targetItems.filter(
+            (_, index) => index != e.target.closest("li").dataset.index
+          );
+
+          this.$store.dispatch("removeTargetItems", newTargetItems);
+        }
+      },
+      changeWeaponGroup(e) {
+        const selectedIndex = e.target.closest("button").dataset.index;
+        const newMastery = this.selectedCharacter.mastery[selectedIndex];
+        this.$store.dispatch("selectMastery", newMastery);
+      },
+      changeLevel(value, category) {
+        switch (typeof value) {
+          case "number":
+            const calculated = this[category] + value;
+            const nextLevel =
+              calculated > 20 ? 20 : calculated < 1 ? 1 : calculated;
+            this[category] = nextLevel;
+            return;
+          default:
+            if (typeof Number(value.target.value) !== "number") {
+              value.target.value = this[category];
+            } else {
+              const calculated = Number(value.target.value);
+              const nextLevel =
+                calculated > 20 ? 20 : calculated < 1 ? 1 : calculated;
+              this[category] = nextLevel;
+              value.target.value = nextLevel;
+            }
+            return;
+        }
       },
     },
   };
@@ -437,6 +703,19 @@
             padding: 5px;
             text-align: center;
           }
+          .itemTextBox {
+            display: flex;
+            justify-content: center;
+            .removeBtn {
+              text-align: center;
+              color: #ff0000;
+              background: none;
+              &:hover {
+                font-weight: 700;
+                background: rgba(0, 0, 0, 0.1);
+              }
+            }
+          }
         }
       }
 
@@ -458,7 +737,6 @@
           .itemInfo {
             @include fasIcon(25px);
             width: 100%;
-            overflow: hidden;
             font-size: 0.8em;
             border: none;
 
@@ -483,24 +761,82 @@
       border-top: 2px solid $color3;
       border-bottom: 2px solid $color3;
       margin-top: 8px;
+
+      .optionBox.total {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        > ul {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .tabName {
+          width: fit-content;
+        }
+
+        .inputBox {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .level {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            color: $color3;
+            input,
+            button {
+              border: none;
+              background: none;
+              padding: 0;
+            }
+
+            input {
+              width: 24px;
+              text-align: center;
+            }
+
+            button {
+              border-radius: 4px;
+              padding: 2px;
+              &:hover {
+                box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+              }
+            }
+          }
+        }
+      }
       .optionBox {
         border-radius: 5px;
         > ul {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 4px;
+          background: $color3;
+          border-radius: 5px;
+          padding: 4px;
         }
 
         .option {
-          background: $color3;
           .optionInfo {
             display: flex;
+            flex-direction: column;
+            gap: 8px;
             color: $color2;
-            padding: 12px 6px;
+            padding: 4px;
+
             &.unique {
               display: block;
             }
             &_name {
               font-weight: 700;
+            }
+            &_extra {
+              text-align: end;
             }
             &_value {
               margin-left: 4px;
@@ -516,6 +852,42 @@
                   margin: 4px 0;
                 }
               }
+            }
+          }
+        }
+
+        .characterImage {
+          position: relative;
+          .weaponGroup {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            .imageBox {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              button {
+                padding: 4px;
+                background: $color2;
+                border: 1px solid $color1;
+                border-radius: 50%;
+
+                &.selected {
+                  background: $color1;
+                }
+                &:hover {
+                  box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+                }
+
+                img {
+                  height: 32px;
+                  width: fit-content;
+                  object-fit: contain;
+                }
+              }
+            }
+            .inputBox {
+              display: none;
             }
           }
         }

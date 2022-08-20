@@ -509,7 +509,7 @@ export const itemOptions = {
     kr: "장탄수",
     en: "Max Charges",
     ja: "最大チャージ数",
-    cn: "",
+    cn: "Max Charges",
   },
   move_spd0: {
     kr: "이동 속도",

@@ -223,7 +223,7 @@
         },
         "stack": 1,
         "material": ["BWA002", "GT001"],
-        "atk0": 56,
+        "atk0": 52,
         "hp0": 140,
         "uniq014": {
           "detail": {
@@ -4367,7 +4367,7 @@
         "sort": "crossbow",
         "img": "https://lh3.google.com/u/0/d/1_XMpma2R06U8JWCs61GAru9HN2iw6yIt",
         "location": false,
-        "tobe": ["BWL001", "BWL003", "YWL002"],
+        "tobe": ["BWL003", "YWL002"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -4397,24 +4397,6 @@
         "stack": 1,
         "material": ["WWL001", "WWF001"],
         "atk0": 30
-      },
-      {
-        "id": "BWL001",
-        "sort": "crossbow",
-        "img": "https://lh3.google.com/u/0/d/1NP-7Y9dCUULJjEWaJvtdrKhG6afwlBVM",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "노",
-          "en": "Power Crossbow",
-          "ja": "連弩",
-          "cn": "連弩"
-        },
-        "stack": 1,
-        "material": ["GWL001", "WM004"],
-        "atk0": 42
       },
       {
         "id": "BWL002",
@@ -4525,12 +4507,12 @@
         "atk0": 71,
         "uniq008": {
           "detail": {
-            "kr": ["+0.75"],
-            "en": ["+0.75"],
-            "ja": ["+0.75"],
-            "cn": ["+0.75"]
+            "kr": ["+0.5"],
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
-          "value": 0.75
+          "value": 0.5
         },
         "vision0": 1.5
       },
@@ -6904,26 +6886,26 @@
             "kr": [
               "1스택 당 효과 적용",
               "기본 공격이 적 실험체에게 명중하면 발동",
-              "현재 체력의 4%의 고유피해",
+              "현재 체력의 3%의 고유피해",
               "열정 버프 1스택 획득"
             ],
             "en": [
               "Hitting a test subject with a basic attack deals",
-              "Damage equal to 4% of the target’s current HP",
+              "Damage equal to 3% of the target’s current HP",
               "Grants you a stack of Vigor for 5 seconds"
             ],
             "ja": [
               "基本攻撃が敵実験体に的中する時",
-              "敵実験体の現在体力の4%のダメージ",
+              "敵実験体の現在体力の3%のダメージ",
               "5秒間情熱スタックを獲得"
             ],
             "cn": [
               "Hitting a test subject with a basic attack deals",
-              "Damage equal to 4% of the target’s current HP",
+              "Damage equal to 3% of the target’s current HP",
               "Grants you a stack of Vigor for 5 seconds"
             ]
           },
-          "value": 0.04
+          "value": 0.03
         },
         "buff004": {
           "detail": {

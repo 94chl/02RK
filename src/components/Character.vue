@@ -43,7 +43,7 @@
             :key="`${character.code}-${index}`"
             :data-characterIndex="index"
             :class="`option ${
-              selectedCharacterId === character.code && 'selected'
+              selectedCharacter?.code === character.code && 'selected'
             }`"
           >
             <button class="optionInfo" @click="selectCharacter">
@@ -67,7 +67,11 @@
 </template>
 
 <script>
-  import { characterData, statusOptions } from "~/utils/characterTable";
+  import {
+    characterData,
+    statusOptions,
+    masteryData,
+  } from "~/utils/characterTable";
 
   export default {
     data() {
@@ -84,11 +88,11 @@
       showItemImg() {
         return this.$store.state.showItemImg;
       },
-      selectedCharacterId() {
-        return this.$store.state.selectedCharacterId;
-      },
       characterData() {
         return characterData;
+      },
+      selectedCharacter() {
+        return this.$store.state.selectedCharacter;
       },
     },
     methods: {
@@ -101,15 +105,16 @@
       selectCharacter(e) {
         const characterIndex = e.target.closest("li").dataset.characterindex;
         const selectedCharacter = characterData.stats[characterIndex];
-        const filteredCharacterData = {};
-        Object.keys(selectedCharacter).forEach((key) => {
-          if (statusOptions[key])
-            filteredCharacterData[key] = selectedCharacter[key];
-        });
-        this.$store.dispatch("selectCharacter", {
-          code: selectedCharacter.code,
-          stats: filteredCharacterData,
-        });
+        const levelUpStats = characterData.levelUp[characterIndex];
+        const characterMastery = masteryData.filter(
+          (mastery) => mastery.characterCode === selectedCharacter.code
+        );
+        selectedCharacter.mastery = characterMastery;
+        selectedCharacter.levelUpStats = levelUpStats;
+        // levelUp.criticalChance === stats.criticalStrikeChance
+        // 일단 유효한 값을 가진 캐릭이 없으니 넘어가자
+
+        this.$store.dispatch("selectCharacter", selectedCharacter);
       },
     },
   };

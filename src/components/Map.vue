@@ -76,7 +76,7 @@
                 customRouteId.includes('A003') &&
                 `selected ${customRoute[0] === 'A003' && 'startPoint'}`
               "
-              points="48,0 120,0 120,72 24,72 24,48 0,48 0,24 48,24"
+              points="48,0 120,0 120,72 24,72 24,48 8,48 8,24 48,24"
             />
             <circle class="hyperloop" cx="90" cy="50" r="4" />
             <circle class="transferConsole" cx="65" cy="20" r="4" />
@@ -94,9 +94,9 @@
               "
               points="24,0 48,0 48,96 0,96 0,24 24,24"
             />
-            <circle class="lifeTree" cx="30" cy="35" r="4" />
+            <circle class="lifeTree" cx="40" cy="85" r="4" />
             <circle class="hyperloop" cx="40" cy="10" r="4" />
-            <circle class="meteor" cx="15" cy="75" r="4" />
+            <circle class="meteor" cx="15" cy="85" r="4" />
             <text class="areaName" x="40" y="25">
               {{ $t("mapModal.temple") }}
             </text>
@@ -221,7 +221,7 @@
                 customRouteId.includes('A012') &&
                 `selected ${customRoute[0] === 'A012' && 'startPoint'}`
               "
-              points="0,0 72,0 72,24 48,24, 48, 96, 0, 96"
+              points="0,0 80,0 80,24 48,24, 48, 96, 0, 96"
             />
             <circle class="lifeTree" cx="20" cy="65" r="4" />
             <text class="areaName" x="40" y="20">

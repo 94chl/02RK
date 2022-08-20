@@ -95,8 +95,8 @@ const store = createStore({
         manual: false,
       },
       loading: false,
-      selectedCharacterId: 0,
       selectedCharacter: null,
+      selectedMastery: null,
     };
   },
   getters: {},
@@ -211,8 +211,10 @@ const store = createStore({
       state.loading = newLoadingState;
     },
     setSelectedCharacter(state, newSelectedCharacter) {
-      state.selectedCharacterId = newSelectedCharacter.code;
-      state.selectedCharacter = newSelectedCharacter.stats;
+      state.selectedCharacter = newSelectedCharacter;
+    },
+    setSelectedMastery(state, newSelectedMastery) {
+      state.selectedMastery = newSelectedMastery;
     },
   },
   actions: {
@@ -584,6 +586,10 @@ const store = createStore({
     },
     selectCharacter({ commit }, newCharacter) {
       commit("setSelectedCharacter", newCharacter);
+      commit("setSelectedMastery", newCharacter.mastery[0]);
+    },
+    selectMastery({ commit }, newMastery) {
+      commit("setSelectedMastery", newMastery);
     },
   },
 });

@@ -85,18 +85,23 @@ const store = createStore({
       recommendRoutes: [],
       totalRecommendRoutes: [],
       isActivatedTotalPathFinder: false,
-      toggleModal: {
-        bag: false,
-        totalPathFinder: false,
+      modal: {
+        bag: { show: false, zIndex: 30 },
+        totalPathFinder: { show: false, zIndex: 30 },
+        status: { show: false, zIndex: 30 },
+        craft: { show: false, zIndex: 30 },
+        map: { show: false, zIndex: 30 },
+        manual: { show: false, zIndex: 30 },
+        zIndex: 30,
+      },
+      dropDown: {
         initialWeapon: true,
-        status: false,
-        craft: false,
-        map: false,
-        manual: false,
+        characterSelect: true,
       },
       loading: false,
       selectedCharacter: null,
       selectedMastery: null,
+      statusEquipKey: "targetItems",
     };
   },
   getters: {},
@@ -192,7 +197,14 @@ const store = createStore({
         open: Object.values(modalState)[0],
       });
 
-      state.toggleModal = { ...state.toggleModal, ...modalState };
+      state.modal = {
+        ...state.modal,
+        ...modalState,
+        zIndex: state.modal.zIndex + 1,
+      };
+    },
+    onToggleDropDown(state, dropDownState) {
+      state.dropDown = { ...state.dropDown, ...dropDownState };
     },
     setRecommendRoutes(state, routesInfo) {
       const { routes, total } = routesInfo;
@@ -215,6 +227,9 @@ const store = createStore({
     },
     setSelectedMastery(state, newSelectedMastery) {
       state.selectedMastery = newSelectedMastery;
+    },
+    setStatusEquipKey(state, newStatusEquipKey) {
+      state.statusEquipKey = newStatusEquipKey;
     },
   },
   actions: {
@@ -537,8 +552,17 @@ const store = createStore({
       commit("setInitialWeapon", initialWeapon);
     },
     onToggleModal({ commit, state }, modal) {
-      const modalState = { [modal]: !state.toggleModal[modal] };
+      const modalState = {
+        [modal]: {
+          show: !state.modal[modal].show,
+          zIndex: state.modal.zIndex + 1,
+        },
+      };
       commit("onToggleModal", modalState);
+    },
+    onToggleDropDown({ commit, state }, dropDown) {
+      const dropDownState = { [dropDown]: !state.dropDown[dropDown] };
+      commit("onToggleDropDown", dropDownState);
     },
     findRecommendPath({ commit, state }, needDropsInfo) {
       const { needDrops, total } = needDropsInfo;
@@ -590,6 +614,9 @@ const store = createStore({
     },
     selectMastery({ commit }, newMastery) {
       commit("setSelectedMastery", newMastery);
+    },
+    selectStatusEquipKey({ commit }, newStatusEquipKey) {
+      commit("setStatusEquipKey", newStatusEquipKey);
     },
   },
 });

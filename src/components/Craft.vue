@@ -1,15 +1,15 @@
 <template>
   <div
     :class="`craft ${
-      toggleModal.craft ? (minimize ? 'minimize' : 'active') : ''
+      modal.craft.show ? (minimize ? 'minimize' : 'active') : ''
     }`"
   >
-    <div v-if="toggleModal.craft && minimize">
+    <div v-if="modal.craft.show && minimize">
       <button @click="maximizeModal">
         <i class="fas fa-angle-double-down"></i>
       </button>
     </div>
-    <div v-else-if="toggleModal.craft && !minimize">
+    <div v-else-if="modal.craft.show && !minimize">
       <div class="craft_select">
         <div class="tabName">
           <h3>{{ $t("modal.craft") }}</h3>
@@ -166,8 +166,8 @@
           grade: this.selectedGrade,
         };
       },
-      toggleModal() {
-        return this.$store.state.toggleModal;
+      modal() {
+        return this.$store.state.modal;
       },
       showItemImg() {
         return this.$store.state.showItemImg;
@@ -301,7 +301,7 @@
       },
       toggleCraftModal() {
         this.$store.dispatch("onToggleModal", "craft");
-        this.minimize = this.$store.state.toggleModal.craft ? false : true;
+        this.minimize = this.$store.state.modal.craft.show ? false : true;
       },
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
@@ -337,6 +337,7 @@
 
     &.active {
       @include active();
+      z-index: inherit;
       border-radius: 5px;
       border: 2px solid $color5;
       box-sizing: border-box;
@@ -347,6 +348,7 @@
 
     &.minimize {
       @include active();
+      z-index: inherit;
       border-radius: 5px;
       border: 2px solid $color5;
       box-sizing: border-box;

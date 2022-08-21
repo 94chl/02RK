@@ -5,7 +5,7 @@
         <h3>
           {{ $t("modal.character") }}
         </h3>
-        <div class="buttonBox">
+        <div class="buttonBox" data-dropDown="characterSelect">
           <button
             :class="`changeShowItemImgBtn ${!showItemImg && 'selected'}`"
             @click="onChangeShowItemImg"
@@ -23,7 +23,7 @@
             </span>
           </button>
           <button
-            @click="toggleCharacterSelect"
+            @click="onToggleDropDown"
             :class="`toggleSelectBtn ${
               characterSelectOpen ? 'opened' : 'closed'
             }`"
@@ -41,12 +41,11 @@
           <li
             v-for="(character, index) in characterData.stats"
             :key="`${character.code}-${index}`"
-            :data-characterIndex="index"
             :class="`option ${
               selectedCharacter?.code === character.code && 'selected'
             }`"
           >
-            <button class="optionInfo" @click="selectCharacter">
+            <button class="optionInfo" @click="selectCharacter(index)">
               <img
                 :src="require(`~/img/character/mini/${character.code}.webp`)"
                 :alt="`${character.name}_img`"
@@ -67,23 +66,16 @@
 </template>
 
 <script>
-  import {
-    characterData,
-    statusOptions,
-    masteryData,
-  } from "~/utils/characterTable";
+  import { characterData, masteryData } from "~/utils/characterTable";
 
   export default {
-    data() {
-      return {
-        characterSelectOpen: true,
-        statusOptions,
-      };
-    },
     components: {},
     computed: {
       language() {
         return this.$store.state.language;
+      },
+      characterSelectOpen() {
+        return this.$store.state.dropDown.characterSelect;
       },
       showItemImg() {
         return this.$store.state.showItemImg;
@@ -99,13 +91,16 @@
       onChangeShowItemImg() {
         this.$store.dispatch("onChangeShowItemImg");
       },
-      toggleCharacterSelect() {
-        this.characterSelectOpen = !this.characterSelectOpen;
+      onToggleDropDown(e) {
+        this.$store.dispatch(
+          "onToggleDropDown",
+          e.target.closest("div").dataset.dropdown
+        );
       },
       selectCharacter(e) {
-        const characterIndex = e.target.closest("li").dataset.characterindex;
+        const characterIndex = e;
         const selectedCharacter = characterData.stats[characterIndex];
-        const levelUpStats = characterData.levelUp[characterIndex];
+        const levelUpStats = characterData.levelUpStats[characterIndex];
         const characterMastery = masteryData.filter(
           (mastery) => mastery.characterCode === selectedCharacter.code
         );
@@ -116,6 +111,9 @@
 
         this.$store.dispatch("selectCharacter", selectedCharacter);
       },
+    },
+    mounted() {
+      if (!this.selectedCharacter) this.selectCharacter(0);
     },
   };
 </script>
@@ -129,10 +127,6 @@
     box-sizing: border-box;
     background: $color2;
     overflow: hidden;
-
-    &.active {
-      @include active();
-    }
 
     .tabName {
       color: $color2;

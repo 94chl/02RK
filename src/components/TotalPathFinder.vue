@@ -1,7 +1,7 @@
 <template>
   <div
     :class="`totalPathFinderModal ${
-      toggleModal.totalPathFinder ? 'active' : ''
+      modal.totalPathFinder.show ? 'active' : ''
     }`"
   >
     <div class="tabName">
@@ -18,12 +18,9 @@
       </div>
     </div>
     <div class="routesInfo">
-      <div
-        class="initialMessgae"
-        v-if="!isActivatedTotalPathFinder && !error.message"
-      >
+      <div class="initialMessgae">
         <span><i class="fas fa-map-marked-alt"></i></span>
-        {{ $t("modal.recommendFuncInfo") }}
+        <span>{{ $t("modal.recommendFuncInfo") }}</span>
       </div>
       <div
         class="routes"
@@ -89,8 +86,8 @@
       language() {
         return this.$store.state.language;
       },
-      toggleModal() {
-        return this.$store.state.toggleModal;
+      modal() {
+        return this.$store.state.modal;
       },
       dropMats() {
         return this.$store.state.matGDs.dropMatObj;
@@ -155,7 +152,7 @@
 
     &.active {
       @include active();
-      z-index: 11;
+      z-index: inherit;
     }
 
     .tabName {
@@ -206,6 +203,10 @@
       }
 
       .initialMessgae {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 4px;
         .fas {
           color: $color3;
         }
@@ -224,19 +225,32 @@
           font-weight: 700;
         }
 
+        > ul {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+
         .route {
+          min-width: 100%;
           width: fit-content;
           word-break: keep-all;
           text-align: start;
           margin: 3px 0;
+          border-bottom: 1px solid $color3;
+          border-right: 1px solid $color3;
+          border-bottom-right-radius: 8px;
 
           .routeButton {
             background: none;
-            border-radius: 5px;
+            border-bottom-right-radius: 8px;
+            padding: 4px 0;
+            width: 100%;
+            text-align: start;
 
             &:hover,
             &:active {
-              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+              box-shadow: -3px -3px 8px 0px inset rgba(0, 0, 0, 0.2);
             }
             &_area {
               padding: 4px;

@@ -1,5 +1,5 @@
 <template>
-  <div :class="`bag ${toggleModal.bag ? 'active' : 'hide'}`">
+  <div :class="`bag ${modal.bag.show ? 'active' : 'hide'}`">
     <div class="tabName">
       <h3>{{ $t("modal.bag") }}</h3>
       <div class="buttonBox">
@@ -31,16 +31,16 @@
     <div data-modal="initialWeapon" class="bag_initialWeapon">
       <div class="tabName">
         <h3>{{ $t("modal.initialWeapon") }}</h3>
-        <div class="buttonBox">
-          <button @click="onToggleModal">
+        <div class="buttonBox" data-dropDown="initialWeapon">
+          <button @click="onToggleDropDown">
             <i
               :class="`fas fa-angle-double-down ${
-                toggleModal.initialWeapon ? 'hide' : ''
+                dropDown.initialWeapon ? 'hide' : ''
               }`"
             ></i>
             <i
               :class="`fas fa-angle-double-up ${
-                toggleModal.initialWeapon ? '' : 'hide'
+                dropDown.initialWeapon ? '' : 'hide'
               }`"
             ></i>
           </button>
@@ -207,8 +207,11 @@
       showItemImg() {
         return this.$store.state.showItemImg;
       },
-      toggleModal() {
-        return this.$store.state.toggleModal;
+      modal() {
+        return this.$store.state.modal;
+      },
+      dropDown() {
+        return this.$store.state.dropDown;
       },
       equip() {
         return this.$store.state.bagEquip;
@@ -318,6 +321,12 @@
           e.target.closest("div").dataset.modal
         );
       },
+      onToggleDropDown(e) {
+        this.$store.dispatch(
+          "onToggleDropDown",
+          e.target.closest("div").dataset.dropdown
+        );
+      },
       toggleBagModal() {
         this.$store.dispatch("onToggleModal", "bag");
       },
@@ -334,6 +343,7 @@
 
     &.active {
       @include active();
+      z-index: inherit;
     }
 
     .tabName {
@@ -406,7 +416,7 @@
             @include fasIcon(25px);
             width: 100%;
             overflow: hidden;
-            font-size: 0.8em;
+            font-size: 0.8rem;
             border: none;
 
             img {
@@ -417,7 +427,7 @@
 
           .empty {
             color: #999;
-            font-size: 0.7em;
+            font-size: 0.7rem;
             padding: 5px;
           }
           .removeBtn {
@@ -456,7 +466,7 @@
             width: 100%;
             text-align: center;
             position: relative;
-            font-size: 0.8em;
+            font-size: 0.8rem;
             border: none;
 
             img {
@@ -467,7 +477,7 @@
 
           .empty {
             color: #999;
-            font-size: 0.7em;
+            font-size: 0.7rem;
             padding: 5px;
           }
           .removeBtn {
@@ -482,7 +492,7 @@
             }
           }
           .itemCount {
-            font-size: 0.5em;
+            font-size: 0.5rem;
             font-weight: bold;
             position: absolute;
             top: 0;
@@ -520,7 +530,7 @@
               width: fit-content;
             }
             .itemCount {
-              font-size: 0.5em;
+              font-size: 0.5rem;
               font-weight: bold;
               position: absolute;
               top: 0;

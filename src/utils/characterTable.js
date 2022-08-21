@@ -1,247 +1,248 @@
 import character from "~/json/character.json";
+import levelUpStats from "~/json/levelUpStats.json";
 import mastery from "~/json/mastery.json";
 import modeModifier from "~/json/modeModifier.json";
 
-export const characterData = character;
+export const characterData = { stats: character, levelUpStats: levelUpStats };
 export const masteryData = mastery;
 export const modeModifierData = modeModifier;
 
 export const statusOptions = {
-  atk0: {
+  atk: {
     kr: "공격력",
     en: "Attack Power",
     ja: "攻撃力",
     cn: "攻擊力",
   },
-  atk_spd1: {
+  atk_spd: {
     kr: "공격 속도",
     en: "Attack Speed",
     ja: "攻撃速度",
     cn: "攻擊速度",
   },
-  basic_atk0: {
-    kr: "기본 공격 추가 피해",
-    en: "Extra Basic Attack Damage",
-    ja: "基本攻撃追加ダメージ",
-    cn: "普攻額外傷害",
+  basic_atk: {
+    kr: "기본 공격 증폭",
+    en: "Basic Attack Amplification",
+    ja: "基本攻撃増幅",
+    cn: "普攻增幅",
   },
-  basic_atk1: {
-    kr: "기본 공격 추가 피해",
-    en: "Extra Basic Attack Damage",
-    ja: "基本攻撃追加ダメージ",
-    cn: "普攻額外傷害",
+  basic_atk: {
+    kr: "기본 공격 증폭",
+    en: "Basic Attack Amplification",
+    ja: "基本攻撃増幅",
+    cn: "普攻增幅",
   },
-  basic_atk_def0: {
+  basic_atk_def: {
     kr: "기본 공격 피해 감소",
     en: "Defense from Basic Attacks",
     ja: "基本攻撃ダメージ減少",
     cn: "承受普攻傷害減少",
   },
-  basic_atk_def1: {
+  basic_atk_def: {
     kr: "기본 공격 피해 감소",
     en: "Defense from Basic Attacks",
     ja: "基本攻撃ダメージ減少",
     cn: "承受普攻傷害減少",
   },
-  cool1: {
+  cool: {
     kr: "쿨다운 감소",
     en: "Cooldown Reduction",
     ja: "クールダウン減少",
     cn: "冷卻縮減",
   },
-  cri_atk1: {
+  cri_atk: {
     kr: "치명타 피해량",
     en: "Critical Strike Damage",
     ja: "致命打ダメージ量",
     cn: "暴擊傷害量",
   },
-  cri_def1: {
+  cri_def: {
     kr: "치명타 피해량 감소",
     en: "Critical Damage Reduction",
     ja: "致命打ダメージ減少",
     cn: "承受暴擊傷害減少",
   },
-  cri_rate1: {
+  cri_rate: {
     kr: "치명타 확률",
     en: "Critical Strike Chance",
     ja: "致命打確率",
     cn: "暴擊率",
   },
-  def0: {
+  def: {
     kr: "방어력",
     en: "Defense",
     ja: "防御力",
     cn: "防禦力",
   },
-  grow_atk0: {
+  grow_atk: {
     kr: "레벨 당 공격력",
     en: "Attack Power per level",
     ja: "レベル比例攻撃力",
     cn: "每級別攻擊力",
   },
-  grow_atk_spd1: {
+  grow_atk_spd: {
     kr: "레벨 당 공격 속도",
     en: "Attack speed per level",
     ja: "レベル比例攻撃速度",
     cn: "每級別攻擊速度",
   },
-  grow_basic_atk0: {
-    kr: "레벨 당 기본 공격 추가 피해",
-    en: "Extra Basic Attack Damage per level",
-    ja: "レベル比例基本攻撃追加ダメージ",
-    cn: "每級別普攻額外傷害",
-  },
-  grow_basic_atk1: {
+  grow_basic_atk: {
     kr: "레벨 당 기본 공격 증폭",
     en: "Basic Attack Amplification per level",
     ja: "レベル比例基本攻撃増幅",
     cn: "每級別普攻增幅",
   },
-  grow_defense0: {
+  grow_basic_atk: {
+    kr: "레벨 당 기본 공격 증폭",
+    en: "Basic Attack Amplification per level",
+    ja: "レベル比例基本攻撃増幅",
+    cn: "每級別普攻增幅",
+  },
+  grow_defense: {
     kr: "레벨 당 방어력",
     en: "Defense per level",
     ja: "レベル比例防御力",
     cn: "每級別防禦力",
   },
-  grow_hp0: {
+  grow_hp: {
     kr: "레벨 당 최대 체력",
     en: "Max HP per level",
     ja: "レベル比例最大体力",
     cn: "每級別體力上限",
   },
-  grow_skill0: {
-    kr: "레벨 당 스킬 공격 추가 피해",
-    en: "Extra Skill Damage per level",
-    ja: "レベル比例スキル攻撃追加ダメージ",
-    cn: "每級別技能額外傷害",
-  },
-  grow_skill1: {
+  grow_skill: {
     kr: "레벨 당 스킬 증폭",
     en: "Skill Amplification per level",
     ja: "レベル比例スキル増幅",
     cn: "每級別技能增幅",
   },
-  heal_up1: {
+  grow_skill: {
+    kr: "레벨 당 스킬 증폭",
+    en: "Skill Amplification per level",
+    ja: "レベル比例スキル増幅",
+    cn: "每級別技能增幅",
+  },
+  heal_up: {
     kr: "주는 회복 증가",
     en: "Healing Power",
     ja: "与える回復増加",
     cn: "給予恢復",
   },
-  hp0: {
+  hp: {
     kr: "최대 체력",
     en: "Max HP",
     ja: "最大体力",
     cn: "體力上限",
   },
-  hp_reg0: {
+  hp_reg: {
     kr: "체력 재생",
     en: "Hp Regen",
     ja: "体力再生",
     cn: "體力值再生",
   },
-  hp_reg1: {
+  hp_reg: {
     kr: "체력 재생",
     en: "Hp Regen",
     ja: "体力再生",
     cn: "體力值再生",
   },
-  load0: {
+  load: {
     kr: "장탄수",
     en: "Max Charges",
     ja: "最大チャージ数",
     cn: "Max Charges",
   },
-  move_spd0: {
+  move_spd: {
     kr: "이동 속도",
     en: "Movement Speed",
     ja: "移動速度",
     cn: "移動速度",
   },
-  mp0: {
+  mp: {
     kr: "최대 스태미너",
     en: "Max SP",
     ja: "最大スタミナ",
     cn: "耐力上限",
   },
-  mp1: {
+  mp: {
     kr: "최대 스태미너",
     en: "Max SP",
     ja: "最大スタミナ",
     cn: "耐力上限",
   },
-  mp_reg0: {
+  mp_reg: {
     kr: "스태미너 재생",
     en: "SP Regen",
     ja: "スタミナ再生",
     cn: "耐力值再生",
   },
-  mp_reg1: {
+  mp_reg: {
     kr: "스태미너 재생",
     en: "SP Regen",
     ja: "スタミナ再生",
     cn: "耐力值再生",
   },
-  non_combat_move_spd0: {
+  non_combat_move_spd: {
     kr: "비 전투중 이동 속도",
     en: "Out Of Combat Movement Speed",
     ja: "非戦闘中の移動速度",
     cn: "非戰鬥狀態下移動速度",
   },
-  penet1: {
+  penet: {
     kr: "방어 관통",
     en: "Armor penetration",
     ja: "防御貫通",
     cn: "防禦穿透%",
   },
-  range0: {
+  range: {
     kr: "사거리",
     en: "Attack Range",
     ja: "基本攻撃射程距離",
     cn: "攻擊射程",
   },
-  skill0: {
-    kr: "스킬 공격 추가 피해",
-    en: "Extra Skill Damage",
-    ja: "スキル攻撃追加ダメージ",
-    cn: "技能額外傷害",
-  },
-  skill1: {
+  skill: {
     kr: "스킬 증폭",
     en: "Skill Amplification",
     ja: "スキル増幅",
     cn: "技能增幅",
   },
-  skill_def0: {
+  skill: {
+    kr: "스킬 증폭",
+    en: "Skill Amplification",
+    ja: "スキル増幅",
+    cn: "技能增幅",
+  },
+  skill_def: {
     kr: "스킬 피해 감소",
     en: "Skill Damage Reduction",
     ja: "スキルダメージ減少",
     cn: "承受技能傷害減少",
   },
-  skill_def1: {
+  skill_def: {
     kr: "스킬 피해 감소",
     en: "Skill Damage Reduction",
     ja: "スキルダメージ減少",
     cn: "承受技能傷害減少",
   },
-  trap_def1: {
+  trap_def: {
     kr: "트랩 피해 감소",
     en: "Trap Damage Reduction",
     ja: "トラップダメージ減少",
     cn: "陷阱傷害減少",
   },
-  vamp1: {
+  vamp: {
     kr: "생명력 흡수",
     en: "Life Steal",
     ja: "吸血",
     cn: "吸血",
   },
-  vamp_all1: {
+  vamp_all: {
     kr: "모든 피해 흡혈",
     en: "Omnisyphon",
     ja: "吸血‐すべてのダメージ",
     cn: "吸血 - 所有伤害",
   },
-  vision0: {
+  vision: {
     kr: "시야",
     en: "Vision Range",
     ja: "視界範囲",

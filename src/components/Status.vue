@@ -1,5 +1,5 @@
 <template>
-  <div :class="`status ${toggleModal.status ? 'active' : 'hide'}`">
+  <div :class="`status ${modal.status.show ? 'active' : 'hide'}`">
     <div class="header">
       <h2 class="tabName">{{ $t("modal.status") }}</h2>
       <div class="buttonBox">
@@ -11,112 +11,12 @@
       </div>
     </div>
     <Character />
-    <div class="status_equip">
-      <div class="tabName">
-        <h3>{{ $t("modal.equip") }}</h3>
-        <div class="buttonBox">
-          <div>
-            <div>
-              <button
-                :class="`changeStatusDataBtn ${
-                  statusData === 'targetItems' ? 'selected' : ''
-                }`"
-                @click="onChangeStatusData"
-              >
-                <span> <i class="fa-solid fa-crosshairs"></i> </span>
-              </button>
-              <button
-                :class="`changeStatusDataBtn ${
-                  statusData === 'bagItems' ? 'selected' : ''
-                }`"
-                @click="onChangeStatusData"
-              >
-                <span> <i class="fas fa-suitcase"></i> </span>
-              </button>
-            </div>
-            <div v-if="statusData === 'bagItems'">
-              <button
-                :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
-                @click="onChangeShowItemImg"
-              >
-                <span>
-                  <i class="fas fa-font"></i>
-                </span>
-              </button>
-              <button
-                :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
-                @click="onChangeShowItemImg"
-              >
-                <span>
-                  <i class="far fa-images"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <ul v-if="statusData === 'targetItems'" class="targetItems">
-          <li
-            class="itemInfo"
-            v-for="(item, index) in targetItems"
-            :key="`target${item.id}`"
-            :data-index="index"
-            :data-itemid="item.id"
-          >
-            <button
-              :class="`showItemInfoBtn value${item.id[0]}`"
-              @click="showItemInfo"
-            >
-              <img
-                :src="item.img"
-                :alt="item.name[language]"
-                class="itemInfo_img"
-              />
-            </button>
-            <div class="itemTextBox">
-              <span>{{ item.name[language] }}</span>
-              <button @click="removeTargetItem" class="removeBtn">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-          </li>
-        </ul>
-
-        <ul v-if="statusData === 'bagItems'" class="bagItems">
-          <li
-            v-for="pocket in Object.keys(bagItems)"
-            :key="pocket"
-            :data-bag="pocket"
-            :data-item="`${bagItems[pocket].id ? bagItems[pocket].id : ''}`"
-          >
-            <span v-if="bagItems[pocket].id">
-              <div :class="`itemInfo value${bagItems[pocket].id[0]}`">
-                <img
-                  :src="bagItems[pocket].img"
-                  :alt="`${bagItems[pocket].name[language]}_img`"
-                  :title="`${bagItems[pocket].name[language]}_img`"
-                  v-if="showItemImg"
-                />
-                <span v-else>{{ bagItems[pocket].name[language] }}</span>
-              </div>
-            </span>
-            <span v-else>
-              <div class="empty">
-                <span>{{ pocket }}</span>
-              </div>
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
 
     <div class="status_info">
       <div class="optionBox total" v-if="selectedCharacter">
         <ul>
           <li
-            v-for="optionKey in totalOption.optionKeys"
+            v-for="optionKey in totalOption.totalKeys"
             :key="optionKey"
             class="option"
           >
@@ -124,35 +24,88 @@
               <span class="optionInfo_name">
                 {{
                   `${statusOptions?.[optionKey]?.[language]}${
-                    optionKey === "atk_spd1"
+                    optionKey === "atk_spd"
                       ? `(${selectedCharacter?.attackSpeedMin} ~ ${selectedCharacter?.attackSpeedLimit})`
                       : ""
                   } :`
                 }}</span
               >
-              <div class="optionInfo_extra">
-                <span> {{ totalOption.character?.[optionKey] || 0 }}</span>
-                <span>{{
-                  totalOption.level?.[optionKey]
-                    ? totalOption.level?.[optionKey] < 0
-                      ? totalOption.level?.[optionKey]
-                      : `+${totalOption.level?.[optionKey]}`
-                    : "+0"
-                }}</span>
-                <span>{{
-                  totalOption.mastery?.[optionKey]
-                    ? totalOption.mastery?.[optionKey] < 0
-                      ? totalOption.mastery?.[optionKey]
-                      : `+${totalOption.mastery?.[optionKey]}`
-                    : "+0"
-                }}</span>
-                <span>{{
-                  totalOption.equip?.[optionKey]
-                    ? totalOption.equip?.[optionKey] < 0
-                      ? totalOption.equip?.[optionKey]
-                      : `+${totalOption.equip?.[optionKey]}`
-                    : "+0"
-                }}</span>
+              <div
+                class="optionInfo_total fixed"
+                v-if="totalOption.total?.[optionKey]?.[0]"
+              >
+                <div class="total">
+                  {{ totalOption.total?.[optionKey]?.[0] || 0 }}
+                </div>
+                <div class="extra">
+                  <span>
+                    {{
+                      `(${totalOption.character?.[`${optionKey}0`] || 0}`
+                    }}</span
+                  >
+                  <span>{{
+                    totalOption.level?.[`${optionKey}0`]
+                      ? totalOption.level?.[`${optionKey}0`] < 0
+                        ? totalOption.level?.[`${optionKey}0`]
+                        : `+${totalOption.level?.[`${optionKey}0`]}`
+                      : "+0"
+                  }}</span>
+                  <span>{{
+                    totalOption.mastery?.[`${optionKey}0`]
+                      ? totalOption.mastery?.[`${optionKey}0`] < 0
+                        ? totalOption.mastery?.[`${optionKey}0`]
+                        : `+${totalOption.mastery?.[`${optionKey}0`]}`
+                      : "+0"
+                  }}</span>
+                  <span>{{
+                    `${
+                      totalOption.equip?.[`${optionKey}0`]
+                        ? totalOption.equip?.[`${optionKey}0`] < 0
+                          ? totalOption.equip?.[`${optionKey}0`]
+                          : `+${totalOption.equip?.[`${optionKey}0`]}`
+                        : "+0"
+                    })`
+                  }}</span>
+                </div>
+              </div>
+
+              <div
+                class="optionInfo_total ratio"
+                v-if="totalOption.total?.[optionKey]?.[1]"
+              >
+                <div class="total">
+                  {{ `${totalOption.total?.[optionKey]?.[1] || 0}%` }}
+                </div>
+                <div class="extra">
+                  <span>
+                    {{
+                      `(${totalOption.character?.[`${optionKey}1`] || 0}`
+                    }}</span
+                  >
+                  <span>{{
+                    totalOption.level?.[`${optionKey}1`]
+                      ? totalOption.level?.[`${optionKey}1`] < 0
+                        ? totalOption.level?.[`${optionKey}1`]
+                        : `+${totalOption.level?.[`${optionKey}1`]}`
+                      : "+0"
+                  }}</span>
+                  <span>{{
+                    totalOption.mastery?.[`${optionKey}1`]
+                      ? totalOption.mastery?.[`${optionKey}1`] < 0
+                        ? totalOption.mastery?.[`${optionKey}1`]
+                        : `+${totalOption.mastery?.[`${optionKey}1`]}`
+                      : "+0"
+                  }}</span>
+                  <span>{{
+                    `${
+                      totalOption.equip?.[`${optionKey}1`]
+                        ? totalOption.equip?.[`${optionKey}1`] < 0
+                          ? totalOption.equip?.[`${optionKey}1`]
+                          : `+${totalOption.equip?.[`${optionKey}1`]}`
+                        : "+0"
+                    })`
+                  }}</span>
+                </div>
               </div>
             </div>
           </li>
@@ -204,7 +157,6 @@
             "
             :alt="`${selectedCharacter.name}_img`"
             :title="`${selectedCharacter.name}_img`"
-            v-if="showItemImg"
           />
           <div class="weaponGroup">
             <div class="imageBox">
@@ -227,16 +179,114 @@
       </div>
     </div>
 
-    <div class="status_info">
-      <h3 class="tabName">
-        {{ $t("modal.equip") }}
-      </h3>
-      <div class="optionBox" v-if="equipOption.uniq">
+    <div class="status_equip">
+      <div class="tabName">
+        <h3>{{ $t("modal.equip") }}</h3>
+        <div class="buttonBox">
+          <div>
+            <div>
+              <button
+                :class="`changeStatusEquipKeyBtn ${
+                  statusEquipKey === 'targetItems' ? 'selected' : ''
+                }`"
+                @click="onChangeStatusEquipKey"
+              >
+                <span> <i class="fa-solid fa-crosshairs"></i> </span>
+              </button>
+              <button
+                :class="`changeStatusEquipKeyBtn ${
+                  statusEquipKey === 'bagItems' ? 'selected' : ''
+                }`"
+                @click="onChangeStatusEquipKey"
+              >
+                <span> <i class="fas fa-suitcase"></i> </span>
+              </button>
+            </div>
+            <div v-if="statusEquipKey === 'bagItems'">
+              <button
+                :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
+                @click="onChangeShowItemImg"
+              >
+                <span>
+                  <i class="fas fa-font"></i>
+                </span>
+              </button>
+              <button
+                :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
+                @click="onChangeShowItemImg"
+              >
+                <span>
+                  <i class="far fa-images"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <ul v-if="statusEquipKey === 'targetItems'" class="targetItems">
+          <li
+            class="itemInfo"
+            v-for="(item, index) in targetItems"
+            :key="`target${item.id}`"
+            :data-index="index"
+            :data-itemid="item.id"
+          >
+            <button
+              :class="`showItemInfoBtn value${item.id[0]}`"
+              @click="showItemInfo"
+            >
+              <img
+                :src="item.img"
+                :alt="item.name[language]"
+                class="itemInfo_img"
+              />
+            </button>
+            <div class="itemTextBox">
+              <span>{{ item.name[language] }}</span>
+              <button @click="removeTargetItem" class="removeBtn">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+
+        <ul v-if="statusEquipKey === 'bagItems'" class="bagItems">
+          <li
+            v-for="pocket in Object.keys(bagItems)"
+            :key="pocket"
+            :data-bag="pocket"
+            :data-item="`${bagItems[pocket].id ? bagItems[pocket].id : ''}`"
+          >
+            <span v-if="bagItems[pocket].id">
+              <div :class="`itemInfo value${bagItems[pocket].id[0]}`">
+                <img
+                  :src="bagItems[pocket].img"
+                  :alt="`${bagItems[pocket].name[language]}_img`"
+                  :title="`${bagItems[pocket].name[language]}_img`"
+                  v-if="showItemImg"
+                />
+                <span v-else>{{ bagItems[pocket].name[language] }}</span>
+              </div>
+            </span>
+            <span v-else>
+              <div class="empty">
+                <span>{{ pocket }}</span>
+              </div>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="status_info" v-if="Object.keys(equipOption.uniq).length > 0">
+      <div class="optionBox">
         <ul>
           <li
             v-for="[optionId, optionValue] in Object.entries(
               equipOption.uniq
-            ).sort()"
+            ).sort((a, b) => b > a)"
             :key="optionId"
             class="option"
           >
@@ -265,7 +315,7 @@
                   }] ${itemOptions[optionId][language]}`
                 }}
               </span>
-              <span class="optionInfo_values">
+              <div class="optionInfo_values">
                 <ul class="uniqueOptions">
                   <li
                     v-for="uniqueOption in optionValue.detail[language]"
@@ -275,7 +325,7 @@
                     {{ uniqueOption }}
                   </li>
                 </ul>
-              </span>
+              </div>
             </div>
           </li>
         </ul>
@@ -293,7 +343,7 @@
   export default {
     data() {
       return {
-        commonOptions: [
+        systemOption: [
           "id",
           "sort",
           "img",
@@ -307,61 +357,6 @@
           "reload",
         ],
         itemOptions,
-        statusData: "targetItems",
-        statusKey: [
-          "atk0",
-          "atk_spd1",
-          "basic_atk0",
-          "basic_atk_def0",
-          "basic_atk_def1",
-          "cool1",
-          "cri_atk1",
-          "cri_def1",
-          "cri_rate1",
-          "def0",
-          "grow_atk0",
-          "grow_atk_spd1",
-          "grow_basic_atk0",
-          "grow_basic_atk1",
-          "grow_defense0",
-          "grow_hp0",
-          "grow_skill0",
-          "grow_skill1",
-          "heal_up1",
-          "hp0",
-          "hp_reg0",
-          "hp_reg1",
-          "load0",
-          "move_spd0",
-          "mp0",
-          "mp_reg0",
-          "mp_reg1",
-          "non_combat_move_spd0",
-          "penet1",
-          "range0",
-          "skill0",
-          "skill1",
-          "skill_def0",
-          "skill_def1",
-          "trap_def1",
-          "vamp1",
-          "vamp_all1",
-          "vision0",
-        ],
-        // [
-        //   "maxHp",
-        //   "maxSp",
-        //   "attackPower",
-        //   "defense",
-        //   "criticalStrikeChance",
-        //   "hpRegen",
-        //   "spRegen",
-        //   "attackSpeed",
-        //   // "attackSpeedLimit",
-        //   // "attackSpeedMin",
-        //   "moveSpeed",
-        //   "sightRange",
-        // ],
         statusOptions,
         selectedMasteryIndex: 0,
         characterLevel: 1,
@@ -373,8 +368,8 @@
       language() {
         return this.$store.state.language;
       },
-      toggleModal() {
-        return this.$store.state.toggleModal;
+      modal() {
+        return this.$store.state.modal;
       },
       showItemImg() {
         return this.$store.state.showItemImg;
@@ -385,34 +380,36 @@
       bagItems() {
         return this.$store.state.bagEquip;
       },
+      statusEquipKey() {
+        return this.$store.state.statusEquipKey;
+      },
       equipOption() {
         const equipData =
-          this.statusData === "targetItems" ? this.targetItems : this.bagItems;
+          this.statusEquipKey === "targetItems"
+            ? this.targetItems
+            : Object.values(this.bagItems);
+
         const equipOption = {};
         const uniqOption = {};
-        const commonOptions = Object.values(equipData).reduce(
-          (itemOptions, item) => {
-            if (item.id) {
-              const itemInfo = searchById(item.id);
-              Object.entries(itemInfo).forEach(([optionId, optionValue]) => {
-                if (!this.commonOptions.includes(optionId)) {
-                  if (optionId.match(/(active)|(buff)|(uniq)|(only)/g)) {
-                    uniqOption[optionId] =
-                      Math.max(uniqOption[optionId], optionValue) || optionValue;
-                  } else {
-                    itemOptions[optionId] = !itemOptions[optionId]
-                      ? optionValue
-                      : itemOptions[optionId] + optionValue;
-                  }
-                }
-              });
+        const commonOption = {};
+
+        Object.values(equipData).forEach((item) => {
+          if (!item.id) return;
+          if (this.statusEquipKey === "bagItems") item = searchById(item.id);
+          Object.entries(item).forEach(([key, value]) => {
+            if (!this.systemOption.includes(key) && itemOptions[key]) {
+              if (key.match(/(active)|(buff)|(uniq)|(only)/g)) {
+                uniqOption[key] = Math.max(uniqOption[key], value) || value;
+              } else {
+                commonOption[key] = !commonOption[key]
+                  ? value
+                  : toFloat(commonOption[key] + value);
+              }
             }
-            return itemOptions;
-          },
-          {}
-        );
+          });
+        }, {});
         equipOption.uniq = uniqOption;
-        equipOption.common = commonOptions;
+        equipOption.common = commonOption;
         return equipOption;
       },
       selectedCharacter() {
@@ -447,8 +444,11 @@
           mastery: {},
           equip: {},
           optionKeys: [],
+          total: {},
         };
         const optionKeys = new Set();
+        const totalKeys = new Set();
+
         Object.entries(this.selectedCharacter).forEach((option) => {
           const [key, value] = option;
           const optionKey = optionDictionary?.[key];
@@ -461,9 +461,33 @@
                 ? toFloat(value)
                 : toPercent(value);
             totalOption.character[optionKey] =
-              totalOption.character[optionKey] + fixedValue || fixedValue;
+              toFloat(totalOption.character[optionKey] + fixedValue) ||
+              fixedValue;
+          }
+          //
+          const totalKey = optionDictionary?.[key];
+          if (totalKey) {
+            const convertedKey = totalKey.slice(0, totalKey.length - 1);
+            if (!totalKeys.has(convertedKey)) {
+              totalKeys.add(convertedKey);
+            }
+            const category = totalKey[totalKey.length - 1];
+            let fixedValue = 0;
+            const nextValue = {
+              0: totalOption.total?.[convertedKey]?.[0] || 0,
+              1: totalOption.total?.[convertedKey]?.[1] || 0,
+            };
+
+            if (category === "0") {
+              fixedValue = toFloat(value);
+            } else {
+              fixedValue = toPercent(value);
+            }
+            nextValue[category] = toFloat(nextValue[category] + fixedValue);
+            totalOption.total[convertedKey] = nextValue;
           }
         });
+
         Object.entries(this.selectedCharacter?.levelUpStats || []).forEach(
           (option) => {
             const [key, value] = option;
@@ -476,20 +500,42 @@
 
               if (optionKey[optionKey.length - 1] === "0") {
                 totalOption.level[optionKey] =
-                  totalOption.level[optionKey] + fixedValue || fixedValue;
+                  toFloat(totalOption.level[optionKey] + fixedValue) ||
+                  fixedValue;
               } else {
                 const percentValue = toPercent(fixedValue);
-                const prevValue = totalOption.level[optionKey] || "0%";
-                const nextValue = `${
-                  parseFloat(prevValue.slice(0, prevValue.length - 1)) +
-                  percentValue
-                }%`;
-
+                const prevValue = totalOption.level[optionKey] || 0;
+                const nextValue = parseInt(prevValue) + percentValue;
                 totalOption.level[optionKey] = nextValue;
               }
             }
+            //
+            const totalKey = optionDictionary?.[key];
+            if (totalKey) {
+              const convertedKey = totalKey.slice(0, totalKey.length - 1);
+              if (!totalKeys.has(convertedKey)) {
+                totalKeys.add(convertedKey);
+              }
+              const category = totalKey[totalKey.length - 1];
+              let fixedValue = 0;
+              const nextValue = {
+                0: totalOption.total?.[convertedKey]?.[0] || 0,
+                1: totalOption.total?.[convertedKey]?.[1] || 0,
+              };
+
+              if (category === "0") {
+                fixedValue = toFloat(toFloat(value) * this.characterLevel);
+              } else {
+                fixedValue = toPercent(
+                  toFloat(toFloat(value) * this.characterLevel)
+                );
+              }
+              nextValue[category] = toFloat(nextValue[category] + fixedValue);
+              totalOption.total[convertedKey] = nextValue;
+            }
           }
         );
+
         Object.entries(this.selectedMastery).forEach((option) => {
           const [key, value] = option;
           const optionKey = optionDictionary?.[key];
@@ -501,18 +547,39 @@
 
             if (optionKey[optionKey.length - 1] === "0") {
               totalOption.mastery[optionKey] =
-                totalOption.mastery[optionKey] + fixedValue || fixedValue;
+                toFloat(totalOption.mastery[optionKey] + fixedValue) ||
+                fixedValue;
             } else {
               const percentValue = toPercent(fixedValue);
-              const prevValue = totalOption.mastery[optionKey] || "0%";
-              const nextValue = `${
-                parseFloat(prevValue.slice(0, prevValue.length - 1)) +
-                percentValue
-              }%`;
+              const prevValue = totalOption.mastery[optionKey] || 0;
+              const nextValue = parseInt(prevValue) + percentValue;
               totalOption.mastery[optionKey] = nextValue;
             }
           }
+          //
+          const totalKey = optionDictionary?.[key];
+          if (totalKey) {
+            const convertedKey = totalKey.slice(0, totalKey.length - 1);
+            if (!totalKeys.has(convertedKey)) {
+              totalKeys.add(convertedKey);
+            }
+            const category = totalKey[totalKey.length - 1];
+            let fixedValue = 0;
+            const nextValue = {
+              0: totalOption.total?.[convertedKey]?.[0] || 0,
+              1: totalOption.total?.[convertedKey]?.[1] || 0,
+            };
+
+            if (category === "0") {
+              fixedValue = toFloat(toFloat(value) * this.masteryLevel);
+            } else {
+              fixedValue = toPercent(toFloat(toFloat(value) * this.masteryLevel));
+            }
+            nextValue[category] = toFloat(nextValue[category] + fixedValue);
+            totalOption.total[convertedKey] = nextValue;
+          }
         });
+
         Object.entries(this.equipOption.common).forEach((option) => {
           const [key, value] = option;
           if (typeof value === "number") {
@@ -522,10 +589,41 @@
             const fixedValue =
               key[key.length - 1] === "0" ? toFloat(value) : toPercent(value);
             totalOption.equip[key] =
-              totalOption.equip[key] + fixedValue || fixedValue;
+              toFloat(totalOption.equip[key] + fixedValue) || fixedValue;
+
+            //
+            const totalKey = key;
+            if (totalKey) {
+              const convertedKey = totalKey.slice(0, totalKey.length - 1);
+              if (!totalKeys.has(convertedKey)) {
+                totalKeys.add(convertedKey);
+              }
+              const category = totalKey[totalKey.length - 1];
+              let fixedValue = 0;
+              const nextValue = {
+                0: totalOption.total?.[convertedKey]?.[0] || 0,
+                1: totalOption.total?.[convertedKey]?.[1] || 0,
+              };
+
+              if (category === "0") {
+                fixedValue = toFloat(value);
+              } else {
+                fixedValue = toPercent(value);
+              }
+              nextValue[category] = toFloat(nextValue[category] + fixedValue);
+              totalOption.total[convertedKey] = nextValue;
+            }
           }
         });
+
+        Object.entries(totalOption.total).forEach(([key, value]) => {
+          const fixed = value[0];
+          const ratio = value[1];
+          if (!(fixed + ratio)) totalKeys.delete(key);
+        });
+
         totalOption.optionKeys = Array.from(optionKeys);
+        totalOption.totalKeys = Array.from(totalKeys);
 
         return totalOption;
       },
@@ -537,11 +635,11 @@
       toggleStatusModal() {
         this.$store.dispatch("onToggleModal", "status");
       },
-      onChangeStatusData() {
-        const nextStatusData = ["targetItems", "bagItems"].filter(
-          (dataType) => this.statusData !== dataType
+      onChangeStatusEquipKey() {
+        const nextStatusEquipKey = ["targetItems", "bagItems"].filter(
+          (dataType) => this.statusEquipKey !== dataType
         )[0];
-        this.statusData = nextStatusData;
+        this.$store.dispatch("selectStatusEquipKey", nextStatusEquipKey);
       },
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
@@ -595,6 +693,7 @@
 
     &.active {
       @include active();
+      z-index: inherit;
     }
 
     .header {
@@ -626,7 +725,7 @@
     }
 
     .tabName {
-      color: $color2;
+      color: $color3;
       margin: 5px 0;
       padding: 0 5px;
     }
@@ -704,9 +803,11 @@
             text-align: center;
           }
           .itemTextBox {
-            display: flex;
-            justify-content: center;
+            position: relative;
             .removeBtn {
+              position: absolute;
+              top: 4px;
+              right: 4px;
               text-align: center;
               color: #ff0000;
               background: none;
@@ -737,7 +838,7 @@
           .itemInfo {
             @include fasIcon(25px);
             width: 100%;
-            font-size: 0.8em;
+            font-size: 0.8rem;
             border: none;
 
             img {
@@ -748,7 +849,7 @@
 
           .empty {
             color: #999;
-            font-size: 0.7em;
+            font-size: 0.7rem;
             padding: 5px;
           }
         }
@@ -825,18 +926,32 @@
           .optionInfo {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            justify-content: center;
+            gap: 4px;
             color: $color2;
-            padding: 4px;
 
             &.unique {
-              display: block;
+              display: flex;
+              flex-direction: column;
+              height: fit-content;
             }
             &_name {
               font-weight: 700;
+              padding: 4px;
             }
-            &_extra {
-              text-align: end;
+            &_total {
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              gap: 4px;
+              .total {
+                letter-spacing: 0.05rem;
+                font-size: 1rem;
+              }
+              .extra {
+                text-align: end;
+                line-height: 0.8rem;
+              }
             }
             &_value {
               margin-left: 4px;
@@ -846,10 +961,13 @@
 
               .uniqueOptions {
                 list-style: disc inside;
+                display: flex;
+                flex-direction: column;
                 padding: 4px;
 
                 li {
-                  margin: 4px 0;
+                  height: fit-content;
+                  padding: 4px;
                 }
               }
             }

@@ -7,9 +7,9 @@
       <NeedDrops></NeedDrops>
       <CustomRoute></CustomRoute>
       <Area></Area>
-      <Modals></Modals>
     </div>
     <Footer></Footer>
+    <Modals></Modals>
   </div>
 </template>
 
@@ -23,11 +23,6 @@
   import Modals from "~/components/Modals";
   import Footer from "~/components/Footer";
   import ampl from "~/utils/amplitude.js";
-
-  import {
-    getSessionStorage,
-    removeSessionStorage,
-  } from "~/utils/useSessionStorage";
 
   export default {
     components: {
@@ -62,8 +57,8 @@
       //   removeSessionStorage("02RK_targetItems");
       //   removeSessionStorage("02RK_customRoute");
       //   ampl.log("reset previous data");
-      //   ampl.log("start app");
       // }
+      ampl.log("start app");
     },
   };
 </script>
@@ -113,12 +108,6 @@
     color: #fff;
   }
 
-  div,
-  li,
-  label {
-    overflow: hidden;
-  }
-
   img {
     width: 100%;
   }
@@ -134,11 +123,40 @@
     background: #ffffff;
     position: relative;
     word-break: keep-all;
+    font-size: 1rem;
     @media screen and (max-width: 720px) {
       width: 100%;
     }
     @media screen and (min-width: 721px) {
       width: 720px;
+      font-size: 0.8rem;
+    }
+
+    .tabName {
+      height: 30px;
+      line-height: 30px;
+      text-indent: 5px;
+      font-weight: bold;
+      color: $color3;
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+      .toggleTabContentBtn {
+        @include fasIcon(30px);
+        .fa-angle-double-down {
+          display: none;
+        }
+        .fa-angle-double-up {
+          display: block;
+        }
+        &.closed {
+          .fa-angle-double-down {
+            display: block;
+          }
+          .fa-angle-double-up {
+            display: none;
+          }
+        }
+      }
     }
 
     .main {
@@ -153,33 +171,6 @@
         box-shadow: 0 1px 1px 0 $color1;
         &.modals {
           margin-bottom: 0;
-        }
-      }
-
-      .tabName {
-        height: 30px;
-        line-height: 30px;
-        text-indent: 5px;
-        font-weight: bold;
-        color: $color3;
-        font-size: 1.1em;
-        letter-spacing: 0.1em;
-        .toggleTabContentBtn {
-          @include fasIcon(30px);
-          .fa-angle-double-down {
-            display: none;
-          }
-          .fa-angle-double-up {
-            display: block;
-          }
-          &.closed {
-            .fa-angle-double-down {
-              display: block;
-            }
-            .fa-angle-double-up {
-              display: none;
-            }
-          }
         }
       }
     }

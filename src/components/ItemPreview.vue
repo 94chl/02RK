@@ -85,7 +85,7 @@
                 {{ areaData[areaId].name[language] }}
               </span>
             </span>
-            <span v-else class="attrValue">
+            <div v-else class="attrValue">
               <ul v-if="option.match(/(active)|(buff)|(uniq)/g)">
                 <li
                   v-for="uniqueOption in cartItem[option].detail[language]"
@@ -106,7 +106,7 @@
                     : cartItem[option]
                 }}
               </span>
-            </span>
+            </div>
           </div>
         </li>
       </ul>
@@ -314,7 +314,8 @@
         this.isShowPath = !this.isShowPath;
       },
       setEquip() {
-        this.$store.dispatch("getItem", this.cartItemId);
+        const itemInfo = searchById(this.cartItemId);
+        this.$store.dispatch("getItem", itemInfo);
         this.$store.dispatch("updateAssemblable");
         document.querySelector(".bagBtn").classList.toggle("gotDrops");
         setTimeout(
@@ -399,22 +400,23 @@
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          gap: 4px;
 
           .attrKey {
-            display: block;
             max-width: 100%;
             word-break: break-all;
           }
 
           .attrValue {
-            display: block;
             max-width: 100%;
             ul {
               list-style: disc inside;
               padding: 0 4px;
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
 
               .optionDetail {
-                margin: 4px 0;
                 word-break: break-all;
               }
             }
@@ -441,7 +443,7 @@
             height: 20px;
             line-height: 20px;
             border: none;
-            font-size: 0.9em;
+            font-size: 0.9rem;
             width: fit-content;
           }
         }
@@ -458,7 +460,7 @@
             border-radius: 5px;
             height: 20px;
             line-height: 20px;
-            font-size: 0.8em;
+            font-size: 0.8rem;
 
             &:hover {
               margin-top: -1px;

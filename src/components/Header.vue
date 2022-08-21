@@ -6,14 +6,14 @@
     <div class="header_title">02RK</div>
     <div class="header_btns" data-modal="bag">
       <button
-        :class="`bagBtn ${toggleModal.bag ? 'openedBtn' : ''}`"
+        :class="`bagBtn ${modal.bag.show ? 'openedBtn' : ''}`"
         @click="onToggleModal"
         data-modal="bag"
       >
         <i class="fas fa-suitcase"></i>
       </button>
       <button
-        :class="`statusBtn ${toggleModal.status ? 'openedBtn' : ''}`"
+        :class="`statusBtn ${modal.status.show ? 'openedBtn' : ''}`"
         @click="onToggleModal"
         data-modal="status"
       >
@@ -23,14 +23,14 @@
       <button
         @click="onToggleModal"
         :class="`totalPathFinderBtn ${
-          toggleModal.totalPathFinder ? 'openedBtn' : ''
+          modal.totalPathFinder.show ? 'openedBtn' : ''
         }`"
         data-modal="totalPathFinder"
       >
         <i class="fas fa-map-marked-alt"></i>
       </button>
       <button
-        :class="`manualBtn ${toggleModal.manual ? 'openedBtn' : ''}`"
+        :class="`manualBtn ${modal.manual.show ? 'openedBtn' : ''}`"
         data-modal="manual"
         @click="onToggleModal"
       >
@@ -49,8 +49,8 @@
     },
     components: {},
     computed: {
-      toggleModal() {
-        return this.$store.state.toggleModal;
+      modal() {
+        return this.$store.state.modal;
       },
     },
     methods: {
@@ -92,8 +92,8 @@
       margin: 10px 0;
       color: $color2;
       font-weight: bold;
-      font-size: 2.5em;
-      letter-spacing: 0.1em;
+      font-size: 2.5rem;
+      letter-spacing: 0.1rem;
       text-align: center;
     }
 

@@ -1,7 +1,5 @@
 <template>
-  <div
-    :class="`initialWeapon ${toggleModal.initialWeapon ? 'active' : 'hide'}`"
-  >
+  <div :class="`initialWeapon ${dropDown.initialWeapon ? 'active' : 'hide'}`">
     <ul>
       <li
         v-for="weapon in initialWeapon"
@@ -37,8 +35,8 @@
       language() {
         return this.$store.state.language;
       },
-      toggleModal() {
-        return this.$store.state.toggleModal;
+      dropDown() {
+        return this.$store.state.dropDown;
       },
       showItemImg() {
         return this.$store.state.showItemImg;
@@ -81,7 +79,7 @@
       li {
         height: 30px;
         min-width: 15%;
-        font-size: 0.8em;
+        font-size: 0.8rem;
 
         &.showItemImg {
           width: fit-content;

@@ -386,10 +386,16 @@ export const itemOptions = {
     cn: "攻擊速度",
   },
   basic_atk0: {
-    kr: "기본 공격 추가 피해",
-    en: "Extra Basic Attack Damage",
-    ja: "基本攻撃追加ダメージ",
-    cn: "普攻額外傷害",
+    kr: "기본 공격 증폭",
+    en: "Basic Attack Amplification",
+    ja: "基本攻撃増幅",
+    cn: "普攻增幅",
+  },
+  basic_atk1: {
+    kr: "기본 공격 증폭",
+    en: "Basic Attack Amplification",
+    ja: "基本攻撃増幅",
+    cn: "普攻增幅",
   },
   basic_atk_def0: {
     kr: "기본 공격 피해 감소",
@@ -446,10 +452,10 @@ export const itemOptions = {
     cn: "每級別攻擊速度",
   },
   grow_basic_atk0: {
-    kr: "레벨 당 기본 공격 추가 피해",
-    en: "Extra Basic Attack Damage per level",
-    ja: "レベル比例基本攻撃追加ダメージ",
-    cn: "每級別普攻額外傷害",
+    kr: "레벨 당 기본 공격 증폭",
+    en: "Basic Attack Amplification per level",
+    ja: "レベル比例基本攻撃増幅",
+    cn: "每級別普攻增幅",
   },
   grow_basic_atk1: {
     kr: "레벨 당 기본 공격 증폭",
@@ -470,10 +476,10 @@ export const itemOptions = {
     cn: "每級別體力上限",
   },
   grow_skill0: {
-    kr: "레벨 당 스킬 공격 추가 피해",
-    en: "Extra Skill Damage per level",
-    ja: "レベル比例スキル攻撃追加ダメージ",
-    cn: "每級別技能額外傷害",
+    kr: "레벨 당 스킬 증폭",
+    en: "Skill Amplification per level",
+    ja: "レベル比例スキル増幅",
+    cn: "每級別技能增幅",
   },
   grow_skill1: {
     kr: "레벨 당 스킬 증폭",
@@ -554,10 +560,10 @@ export const itemOptions = {
     cn: "攻擊射程",
   },
   skill0: {
-    kr: "스킬 공격 추가 피해",
-    en: "Extra Skill Damage",
-    ja: "スキル攻撃追加ダメージ",
-    cn: "技能額外傷害",
+    kr: "스킬 증폭",
+    en: "Skill Amplification",
+    ja: "スキル増幅",
+    cn: "技能增幅",
   },
   skill1: {
     kr: "스킬 증폭",

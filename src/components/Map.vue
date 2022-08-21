@@ -1,5 +1,5 @@
 <template>
-  <div :class="`mapModal ${toggleModal.map ? 'active' : 'hide'}`">
+  <div :class="`mapModal ${modal.map.show ? 'active' : 'hide'}`">
     <div class="tabName">
       <h3>{{ $t("modal.map") }}</h3>
       <div class="buttonBox">
@@ -391,8 +391,8 @@
     },
     components: {},
     computed: {
-      toggleModal() {
-        return this.$store.state.toggleModal;
+      modal() {
+        return this.$store.state.modal;
       },
       customRoute() {
         return this.$store.state.customRoute;
@@ -492,7 +492,7 @@
 
       .routeOrder {
         stroke: $color1;
-        font-size: 0.8em;
+        font-size: 0.8rem;
         letter-spacing: -1px;
       }
 

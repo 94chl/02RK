@@ -527,7 +527,7 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      padding: 5px 0;
+      padding: 4px;
       background: $color2;
 
       h3 {

@@ -95,8 +95,11 @@ const store = createStore({
         zIndex: 30,
       },
       dropDown: {
+        itemSelect: true,
         initialWeapon: true,
         characterSelect: true,
+        status: true,
+        unique: true,
       },
       loading: false,
       selectedCharacter: null,

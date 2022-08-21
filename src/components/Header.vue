@@ -13,14 +13,6 @@
         <i class="fas fa-suitcase"></i>
       </button>
       <button
-        :class="`statusBtn ${modal.status.show ? 'openedBtn' : ''}`"
-        @click="onToggleModal"
-        data-modal="status"
-      >
-        <i class="fa-solid fa-user"></i>
-        <!-- <i class="fas fa-tshirt"></i> -->
-      </button>
-      <button
         @click="onToggleModal"
         :class="`totalPathFinderBtn ${
           modal.totalPathFinder.show ? 'openedBtn' : ''

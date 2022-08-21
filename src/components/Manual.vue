@@ -53,8 +53,7 @@
       color: $color2;
       height: 25px;
       line-height: 25px;
-      margin: 5px 0;
-      padding: 0 5px;
+      padding: 4px;
       display: grid;
       grid-template-columns: auto 1fr;
       align-items: center;

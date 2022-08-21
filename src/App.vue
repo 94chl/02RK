@@ -1,20 +1,24 @@
 <template>
   <div class="app">
-    <Header></Header>
+    <Header />
     <div class="main" ref="main" :style="{ minHeight: `${200 + minHeight}px` }">
-      <Select></Select>
-      <TargetItem></TargetItem>
-      <NeedDrops></NeedDrops>
-      <CustomRoute></CustomRoute>
-      <Area></Area>
+      <Character />
+      <Status />
+      <TargetItem />
+      <Select />
+      <NeedDrops />
+      <CustomRoute />
+      <Area />
     </div>
-    <Footer></Footer>
-    <Modals></Modals>
+    <Footer />
+    <Modals />
   </div>
 </template>
 
 <script>
   import Header from "~/components/Header";
+  import Character from "~/components/Character";
+  import Status from "~/components/Status";
   import Select from "~/components/Select";
   import TargetItem from "~/components/TargetItem";
   import Area from "~/components/Area";
@@ -27,7 +31,9 @@
   export default {
     components: {
       Header,
+      Character,
       Select,
+      Status,
       TargetItem,
       CustomRoute,
       Area,
@@ -74,7 +80,7 @@
   }
 
   .hide {
-    display: none;
+    display: none !important;
   }
 
   .valueW {

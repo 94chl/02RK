@@ -396,28 +396,30 @@
         align-items: center;
         border-radius: 5px;
 
-        &.uniqueOption > div {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 4px;
+        &.uniqueOption {
+          > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
 
-          .attrKey {
-            max-width: 100%;
-            word-break: break-all;
-          }
+            .attrKey {
+              max-width: 100%;
+              word-break: break-all;
+            }
 
-          .attrValue {
-            max-width: 100%;
-            ul {
-              list-style: disc inside;
-              padding: 0 4px;
-              display: flex;
-              flex-direction: column;
-              gap: 4px;
+            .attrValue {
+              max-width: 100%;
+              ul {
+                list-style: disc inside;
+                padding: 0 4px;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
 
-              .optionDetail {
-                word-break: break-all;
+                .optionDetail {
+                  word-break: break-all;
+                }
               }
             }
           }

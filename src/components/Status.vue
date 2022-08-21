@@ -1,334 +1,274 @@
 <template>
-  <div :class="`status ${modal.status.show ? 'active' : 'hide'}`">
-    <div class="header">
-      <h2 class="tabName">{{ $t("modal.status") }}</h2>
-      <div class="buttonBox">
-        <button @click="toggleStatusModal">
-          <span>
-            <i class="fas fa-times"></i>
-          </span>
+  <div class="status">
+    <div class="tabName">
+      <h2>{{ $t("modal.status") }}</h2>
+      <div class="buttonBox" data-dropDown="status">
+        <div class="equipButtonBox">
+          <button
+            :class="`changeStatusEquipKeyBtn ${
+              statusEquipKey === 'targetItems' ? 'selected' : ''
+            }`"
+            @click="onChangeStatusEquipKey"
+          >
+            <i class="fa-solid fa-crosshairs"></i>
+          </button>
+          <button
+            :class="`changeStatusEquipKeyBtn ${
+              statusEquipKey === 'bagItems' ? 'selected' : ''
+            }`"
+            @click="onChangeStatusEquipKey"
+          >
+            <i class="fas fa-suitcase"></i>
+          </button>
+        </div>
+        <button
+          @click="onToggleDropDown"
+          :class="`toggleSelectBtn ${dropDown.status ? 'opened' : 'closed'}`"
+        >
+          <i class="fas fa-angle-double-down"></i>
+          <i class="fas fa-angle-double-up"></i>
         </button>
       </div>
     </div>
-    <Character />
-
-    <div class="status_info">
-      <div class="optionBox total" v-if="selectedCharacter">
-        <ul>
-          <li
-            v-for="optionKey in totalOption.totalKeys"
-            :key="optionKey"
-            class="option"
-          >
-            <div class="optionInfo">
-              <span class="optionInfo_name">
-                {{
-                  `${statusOptions?.[optionKey]?.[language]}${
-                    optionKey === "atk_spd"
-                      ? `(${selectedCharacter?.attackSpeedMin} ~ ${selectedCharacter?.attackSpeedLimit})`
-                      : ""
-                  } :`
-                }}</span
-              >
-              <div
-                class="optionInfo_total fixed"
-                v-if="totalOption.total?.[optionKey]?.[0]"
-              >
-                <div class="total">
-                  {{ totalOption.total?.[optionKey]?.[0] || 0 }}
-                </div>
-                <div class="extra">
-                  <span>
-                    {{
-                      `(${totalOption.character?.[`${optionKey}0`] || 0}`
-                    }}</span
-                  >
-                  <span>{{
-                    totalOption.level?.[`${optionKey}0`]
-                      ? totalOption.level?.[`${optionKey}0`] < 0
-                        ? totalOption.level?.[`${optionKey}0`]
-                        : `+${totalOption.level?.[`${optionKey}0`]}`
-                      : "+0"
-                  }}</span>
-                  <span>{{
-                    totalOption.mastery?.[`${optionKey}0`]
-                      ? totalOption.mastery?.[`${optionKey}0`] < 0
-                        ? totalOption.mastery?.[`${optionKey}0`]
-                        : `+${totalOption.mastery?.[`${optionKey}0`]}`
-                      : "+0"
-                  }}</span>
-                  <span>{{
-                    `${
-                      totalOption.equip?.[`${optionKey}0`]
-                        ? totalOption.equip?.[`${optionKey}0`] < 0
-                          ? totalOption.equip?.[`${optionKey}0`]
-                          : `+${totalOption.equip?.[`${optionKey}0`]}`
+    <div :class="`${dropDown.status ? '' : 'hide'}`">
+      <div class="status_info">
+        <div class="optionBox total" v-if="selectedCharacter">
+          <ul>
+            <li
+              v-for="optionKey in totalOption.totalKeys"
+              :key="optionKey"
+              class="option"
+            >
+              <div class="optionInfo">
+                <span class="optionInfo_name">
+                  {{
+                    `${statusOptions?.[optionKey]?.[language]}${
+                      optionKey === "atk_spd"
+                        ? `(${selectedCharacter?.attackSpeedMin} ~ ${selectedCharacter?.attackSpeedLimit})`
+                        : ""
+                    } :`
+                  }}</span
+                >
+                <div
+                  class="optionInfo_total fixed"
+                  v-if="totalOption.total?.[optionKey]?.[0]"
+                >
+                  <div class="total">
+                    {{ totalOption.total?.[optionKey]?.[0] || 0 }}
+                  </div>
+                  <div class="extra">
+                    <span>
+                      {{
+                        `(${totalOption.character?.[`${optionKey}0`] || 0}`
+                      }}</span
+                    >
+                    <span>{{
+                      totalOption.level?.[`${optionKey}0`]
+                        ? totalOption.level?.[`${optionKey}0`] < 0
+                          ? totalOption.level?.[`${optionKey}0`]
+                          : `+${totalOption.level?.[`${optionKey}0`]}`
                         : "+0"
-                    })`
-                  }}</span>
-                </div>
-              </div>
-
-              <div
-                class="optionInfo_total ratio"
-                v-if="totalOption.total?.[optionKey]?.[1]"
-              >
-                <div class="total">
-                  {{ `${totalOption.total?.[optionKey]?.[1] || 0}%` }}
-                </div>
-                <div class="extra">
-                  <span>
-                    {{
-                      `(${totalOption.character?.[`${optionKey}1`] || 0}`
-                    }}</span
-                  >
-                  <span>{{
-                    totalOption.level?.[`${optionKey}1`]
-                      ? totalOption.level?.[`${optionKey}1`] < 0
-                        ? totalOption.level?.[`${optionKey}1`]
-                        : `+${totalOption.level?.[`${optionKey}1`]}`
-                      : "+0"
-                  }}</span>
-                  <span>{{
-                    totalOption.mastery?.[`${optionKey}1`]
-                      ? totalOption.mastery?.[`${optionKey}1`] < 0
-                        ? totalOption.mastery?.[`${optionKey}1`]
-                        : `+${totalOption.mastery?.[`${optionKey}1`]}`
-                      : "+0"
-                  }}</span>
-                  <span>{{
-                    `${
-                      totalOption.equip?.[`${optionKey}1`]
-                        ? totalOption.equip?.[`${optionKey}1`] < 0
-                          ? totalOption.equip?.[`${optionKey}1`]
-                          : `+${totalOption.equip?.[`${optionKey}1`]}`
+                    }}</span>
+                    <span>{{
+                      totalOption.mastery?.[`${optionKey}0`]
+                        ? totalOption.mastery?.[`${optionKey}0`] < 0
+                          ? totalOption.mastery?.[`${optionKey}0`]
+                          : `+${totalOption.mastery?.[`${optionKey}0`]}`
                         : "+0"
-                    })`
-                  }}</span>
+                    }}</span>
+                    <span>{{
+                      `${
+                        totalOption.equip?.[`${optionKey}0`]
+                          ? totalOption.equip?.[`${optionKey}0`] < 0
+                            ? totalOption.equip?.[`${optionKey}0`]
+                            : `+${totalOption.equip?.[`${optionKey}0`]}`
+                          : "+0"
+                      })`
+                    }}</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="characterImage">
-          <div class="header">
-            <div v-if="selectedCharacter" class="inputBox">
-              <div class="level">
-                <span>Level</span>
-                <div>
-                  <button @click="changeLevel(-1, 'characterLevel')">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <input
-                    type="text"
-                    name="characterLevel"
-                    id="characterLevel"
-                    :value="characterLevel"
-                    @input="changeLevel($event, 'characterLevel')"
-                  />
-                  <button @click="changeLevel(1, 'characterLevel')">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="level">
-                <span>Mastery</span>
-                <div>
-                  <button @click="changeLevel(-1, 'masteryLevel')">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <input
-                    type="text"
-                    name="masteryLevel"
-                    id="masteryLevel"
-                    :value="masteryLevel"
-                    @input="changeLevel($event, 'masteryLevel')"
-                  />
-                  <button @click="changeLevel(1, 'masteryLevel')">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <img
-            :src="
-              require(`~/img/character/half/${selectedCharacter?.code}.webp`)
-            "
-            :alt="`${selectedCharacter.name}_img`"
-            :title="`${selectedCharacter.name}_img`"
-          />
-          <div class="weaponGroup">
-            <div class="imageBox">
-              <button
-                v-for="(mastery, index) in selectedCharacter?.mastery || []"
-                :key="mastery?.code"
-                :class="mastery?.code === selectedMastery?.code && 'selected'"
-                :data-index="index"
-                @click="changeWeaponGroup"
-              >
-                <img
-                  :src="require(`~/img/weaponGroup/${mastery.type}.webp`)"
-                  :alt="`${mastery.type}_img`"
-                  :title="`${mastery.type}_img`"
-                />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="status_equip">
-      <div class="tabName">
-        <h3>{{ $t("modal.equip") }}</h3>
-        <div class="buttonBox">
-          <div>
-            <div>
-              <button
-                :class="`changeStatusEquipKeyBtn ${
-                  statusEquipKey === 'targetItems' ? 'selected' : ''
-                }`"
-                @click="onChangeStatusEquipKey"
-              >
-                <span> <i class="fa-solid fa-crosshairs"></i> </span>
-              </button>
-              <button
-                :class="`changeStatusEquipKeyBtn ${
-                  statusEquipKey === 'bagItems' ? 'selected' : ''
-                }`"
-                @click="onChangeStatusEquipKey"
-              >
-                <span> <i class="fas fa-suitcase"></i> </span>
-              </button>
+                <div
+                  class="optionInfo_total ratio"
+                  v-if="totalOption.total?.[optionKey]?.[1]"
+                >
+                  <div class="total">
+                    {{ `${totalOption.total?.[optionKey]?.[1] || 0}%` }}
+                  </div>
+                  <div class="extra">
+                    <span>
+                      {{
+                        `(${totalOption.character?.[`${optionKey}1`] || 0}`
+                      }}</span
+                    >
+                    <span>{{
+                      totalOption.level?.[`${optionKey}1`]
+                        ? totalOption.level?.[`${optionKey}1`] < 0
+                          ? totalOption.level?.[`${optionKey}1`]
+                          : `+${totalOption.level?.[`${optionKey}1`]}`
+                        : "+0"
+                    }}</span>
+                    <span>{{
+                      totalOption.mastery?.[`${optionKey}1`]
+                        ? totalOption.mastery?.[`${optionKey}1`] < 0
+                          ? totalOption.mastery?.[`${optionKey}1`]
+                          : `+${totalOption.mastery?.[`${optionKey}1`]}`
+                        : "+0"
+                    }}</span>
+                    <span>{{
+                      `${
+                        totalOption.equip?.[`${optionKey}1`]
+                          ? totalOption.equip?.[`${optionKey}1`] < 0
+                            ? totalOption.equip?.[`${optionKey}1`]
+                            : `+${totalOption.equip?.[`${optionKey}1`]}`
+                          : "+0"
+                      })`
+                    }}</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="characterImage">
+            <div class="header">
+              <div v-if="selectedCharacter" class="inputBox">
+                <div class="level">
+                  <span>Level</span>
+                  <div>
+                    <button @click="changeLevel(-1, 'characterLevel')">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      type="text"
+                      name="characterLevel"
+                      id="characterLevel"
+                      :value="characterLevel"
+                      @input="changeLevel($event, 'characterLevel')"
+                    />
+                    <button @click="changeLevel(1, 'characterLevel')">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="level">
+                  <span>Mastery</span>
+                  <div>
+                    <button @click="changeLevel(-1, 'masteryLevel')">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      type="text"
+                      name="masteryLevel"
+                      id="masteryLevel"
+                      :value="masteryLevel"
+                      @input="changeLevel($event, 'masteryLevel')"
+                    />
+                    <button @click="changeLevel(1, 'masteryLevel')">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div v-if="statusEquipKey === 'bagItems'">
-              <button
-                :class="`changeShowItemImgBtn ${showItemImg ? '' : 'selected'}`"
-                @click="onChangeShowItemImg"
-              >
-                <span>
-                  <i class="fas fa-font"></i>
-                </span>
-              </button>
-              <button
-                :class="`changeShowItemImgBtn ${showItemImg ? 'selected' : ''}`"
-                @click="onChangeShowItemImg"
-              >
-                <span>
-                  <i class="far fa-images"></i>
-                </span>
-              </button>
+            <img
+              :src="
+                require(`~/img/character/half/${selectedCharacter?.code}.webp`)
+              "
+              :alt="`${selectedCharacter.name}_img`"
+              :title="`${selectedCharacter.name}_img`"
+            />
+            <div class="weaponGroup">
+              <div class="imageBox">
+                <button
+                  v-for="(mastery, index) in selectedCharacter?.mastery || []"
+                  :key="mastery?.code"
+                  :class="mastery?.code === selectedMastery?.code && 'selected'"
+                  :data-index="index"
+                  @click="changeWeaponGroup"
+                >
+                  <img
+                    :src="require(`~/img/weaponGroup/${mastery.type}.webp`)"
+                    :alt="`${mastery.type}_img`"
+                    :title="`${mastery.type}_img`"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div>
-        <ul v-if="statusEquipKey === 'targetItems'" class="targetItems">
-          <li
-            class="itemInfo"
-            v-for="(item, index) in targetItems"
-            :key="`target${item.id}`"
-            :data-index="index"
-            :data-itemid="item.id"
-          >
+      <div class="status_info" v-if="Object.keys(equipOption.uniq).length > 0">
+        <div class="tabName">
+          <h3>
+            {{
+              `${$t("itemPreviewSection.optionUniq")}/${$t(
+                "itemPreviewSection.optionbuff"
+              )}/${$t("itemPreviewSection.optionActive")}`
+            }}
+          </h3>
+          <div class="buttonBox" data-dropDown="unique">
             <button
-              :class="`showItemInfoBtn value${item.id[0]}`"
-              @click="showItemInfo"
+              @click="onToggleDropDown"
+              :class="`toggleSelectBtn ${
+                dropDown.unique ? 'opened' : 'closed'
+              }`"
             >
-              <img
-                :src="item.img"
-                :alt="item.name[language]"
-                class="itemInfo_img"
-              />
+              <i class="fas fa-angle-double-down"></i>
+              <i class="fas fa-angle-double-up"></i>
             </button>
-            <div class="itemTextBox">
-              <span>{{ item.name[language] }}</span>
-              <button @click="removeTargetItem" class="removeBtn">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
 
-        <ul v-if="statusEquipKey === 'bagItems'" class="bagItems">
-          <li
-            v-for="pocket in Object.keys(bagItems)"
-            :key="pocket"
-            :data-bag="pocket"
-            :data-item="`${bagItems[pocket].id ? bagItems[pocket].id : ''}`"
-          >
-            <span v-if="bagItems[pocket].id">
-              <div :class="`itemInfo value${bagItems[pocket].id[0]}`">
-                <img
-                  :src="bagItems[pocket].img"
-                  :alt="`${bagItems[pocket].name[language]}_img`"
-                  :title="`${bagItems[pocket].name[language]}_img`"
-                  v-if="showItemImg"
-                />
-                <span v-else>{{ bagItems[pocket].name[language] }}</span>
-              </div>
-            </span>
-            <span v-else>
-              <div class="empty">
-                <span>{{ pocket }}</span>
-              </div>
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="status_info" v-if="Object.keys(equipOption.uniq).length > 0">
-      <div class="optionBox">
-        <ul>
-          <li
-            v-for="[optionId, optionValue] in Object.entries(
-              equipOption.uniq
-            ).sort((a, b) => b > a)"
-            :key="optionId"
-            class="option"
-          >
-            <div v-if="optionId.match(/(only)/g)" class="optionInfo">
-              <span class="optionInfo_name">
-                {{ `[${itemOptions[optionId][language]}] : ` }}
-              </span>
-              <span class="optionInfo_value">
-                <span>{{ optionValue[language] }}</span>
-              </span>
-            </div>
-            <div
-              v-else-if="optionId.match(/(active)|(buff)|(uniq)/g)"
-              class="optionInfo unique"
+        <div class="optionBox" v-if="dropDown.unique">
+          <ul>
+            <li
+              v-for="[optionId, optionValue] in Object.entries(
+                equipOption.uniq
+              ).sort((a, b) => b > a)"
+              :key="optionId"
+              class="option"
             >
-              <span class="optionInfo_name">
-                {{
-                  `[${
-                    optionId.match(/(uniq)/g)
-                      ? $t("itemPreviewSection.optionUniq")
-                      : optionId.match(/(buff)/g)
-                      ? $t("itemPreviewSection.optionbuff")
-                      : optionId.match(/(active)/g)
-                      ? $t("itemPreviewSection.optionActive")
-                      : ""
-                  }] ${itemOptions[optionId][language]}`
-                }}
-              </span>
-              <div class="optionInfo_values">
-                <ul class="uniqueOptions">
-                  <li
-                    v-for="uniqueOption in optionValue.detail[language]"
-                    :key="optionValue + uniqueOption"
-                    class="uniqueOption"
-                  >
-                    {{ uniqueOption }}
-                  </li>
-                </ul>
+              <div v-if="optionId.match(/(only)/g)" class="optionInfo">
+                <span class="optionInfo_name">
+                  {{ `[${itemOptions[optionId][language]}] : ` }}
+                </span>
+                <span class="optionInfo_value">
+                  <span>{{ optionValue[language] }}</span>
+                </span>
               </div>
-            </div>
-          </li>
-        </ul>
+              <div
+                v-else-if="optionId.match(/(active)|(buff)|(uniq)/g)"
+                class="optionInfo unique"
+              >
+                <span class="optionInfo_name">
+                  {{
+                    `[${
+                      optionId.match(/(uniq)/g)
+                        ? $t("itemPreviewSection.optionUniq")
+                        : optionId.match(/(buff)/g)
+                        ? $t("itemPreviewSection.optionbuff")
+                        : optionId.match(/(active)/g)
+                        ? $t("itemPreviewSection.optionActive")
+                        : ""
+                    }] ${itemOptions[optionId][language]}`
+                  }}
+                </span>
+                <div class="optionInfo_values">
+                  <ul class="uniqueOptions">
+                    <li
+                      v-for="uniqueOption in optionValue.detail[language]"
+                      :key="optionValue + uniqueOption"
+                      class="uniqueOption"
+                    >
+                      {{ uniqueOption }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -368,11 +308,8 @@
       language() {
         return this.$store.state.language;
       },
-      modal() {
-        return this.$store.state.modal;
-      },
-      showItemImg() {
-        return this.$store.state.showItemImg;
+      dropDown() {
+        return this.$store.state.dropDown;
       },
       targetItems() {
         return this.$store.state.targetItems;
@@ -464,7 +401,7 @@
               toFloat(totalOption.character[optionKey] + fixedValue) ||
               fixedValue;
           }
-          //
+
           const totalKey = optionDictionary?.[key];
           if (totalKey) {
             const convertedKey = totalKey.slice(0, totalKey.length - 1);
@@ -509,7 +446,7 @@
                 totalOption.level[optionKey] = nextValue;
               }
             }
-            //
+
             const totalKey = optionDictionary?.[key];
             if (totalKey) {
               const convertedKey = totalKey.slice(0, totalKey.length - 1);
@@ -556,7 +493,7 @@
               totalOption.mastery[optionKey] = nextValue;
             }
           }
-          //
+
           const totalKey = optionDictionary?.[key];
           if (totalKey) {
             const convertedKey = totalKey.slice(0, totalKey.length - 1);
@@ -591,7 +528,6 @@
             totalOption.equip[key] =
               toFloat(totalOption.equip[key] + fixedValue) || fixedValue;
 
-            //
             const totalKey = key;
             if (totalKey) {
               const convertedKey = totalKey.slice(0, totalKey.length - 1);
@@ -629,21 +565,17 @@
       },
     },
     methods: {
-      onChangeShowItemImg() {
-        this.$store.dispatch("onChangeShowItemImg");
-      },
-      toggleStatusModal() {
-        this.$store.dispatch("onToggleModal", "status");
+      onToggleDropDown(e) {
+        this.$store.dispatch(
+          "onToggleDropDown",
+          e.target.closest("div").dataset.dropdown
+        );
       },
       onChangeStatusEquipKey() {
         const nextStatusEquipKey = ["targetItems", "bagItems"].filter(
           (dataType) => this.statusEquipKey !== dataType
         )[0];
         this.$store.dispatch("selectStatusEquipKey", nextStatusEquipKey);
-      },
-      showItemInfo(e) {
-        const selectedItem = searchById(e.target.closest("li").dataset.itemid);
-        this.$store.dispatch("setCart", selectedItem);
       },
       removeTargetItem(e) {
         if (window.confirm(this.$t("noti.removeTargetItem"))) {
@@ -687,8 +619,6 @@
 <style lang="scss" scoped>
   .status {
     border-radius: 16px;
-    border: 2px solid $color3;
-    box-sizing: border-box;
     background: $color2;
 
     &.active {
@@ -696,10 +626,11 @@
       z-index: inherit;
     }
 
-    .header {
+    .tabName {
       display: flex;
       justify-content: space-between;
-      padding: 4px;
+      color: $color3;
+      margin: 4px;
 
       .buttonBox {
         display: flex;
@@ -711,6 +642,26 @@
           border-radius: 5px;
           @include fasIcon(25px);
           margin-right: 5px;
+          &.toggleSelectBtn {
+            margin: 0;
+
+            &.opened {
+              .fa-angle-double-down {
+                display: none;
+              }
+              .fa-angle-double-up {
+                display: block;
+              }
+            }
+            &.closed {
+              .fa-angle-double-down {
+                display: block;
+              }
+              .fa-angle-double-up {
+                display: none;
+              }
+            }
+          }
           &:last-child {
             margin: 0;
           }
@@ -724,144 +675,9 @@
       }
     }
 
-    .tabName {
-      color: $color3;
-      margin: 5px 0;
-      padding: 0 5px;
-    }
-
-    &_equip {
-      border-radius: 12px;
-      border: none;
-      border-top: 2px solid $color3;
-      border-bottom: 2px solid $color3;
-      margin-top: 8px;
-      .tabName {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-        h3 {
-          color: $color3;
-          height: 25px;
-          line-height: 25px;
-          padding: 0;
-          margin: 0;
-        }
-        .buttonBox {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-
-          > div {
-            display: flex;
-          }
-
-          button {
-            background: none;
-            color: $color3;
-            border-radius: 5px;
-            @include fasIcon(25px);
-            margin-right: 5px;
-            &:last-child {
-              margin: 0;
-            }
-            &:hover {
-              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
-            }
-            &.selected {
-              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
-            }
-          }
-        }
-      }
-
-      .targetItems {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        max-height: 96px;
-        overflow-y: hidden;
-
-        @media screen and (max-width: 720px) {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        .itemInfo {
-          background: #fff;
-          border-radius: 5px;
-          margin: 5px;
-
-          .showItemInfoBtn {
-            border-radius: 5px;
-            &:hover {
-              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
-            }
-          }
-
-          div {
-            padding: 5px;
-            text-align: center;
-          }
-          .itemTextBox {
-            position: relative;
-            .removeBtn {
-              position: absolute;
-              top: 4px;
-              right: 4px;
-              text-align: center;
-              color: #ff0000;
-              background: none;
-              &:hover {
-                font-weight: 700;
-                background: rgba(0, 0, 0, 0.1);
-              }
-            }
-          }
-        }
-      }
-
-      .bagItems {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
-        background: $color3;
-        border-radius: 5px;
-        padding: 5px;
-        li {
-          height: 25px;
-          line-height: 25px;
-          position: relative;
-          background: #fff;
-          border-radius: 5px;
-
-          .itemInfo {
-            @include fasIcon(25px);
-            width: 100%;
-            font-size: 0.8rem;
-            border: none;
-
-            img {
-              height: 100%;
-              width: fit-content;
-            }
-          }
-
-          .empty {
-            color: #999;
-            font-size: 0.7rem;
-            padding: 5px;
-          }
-        }
-      }
-    }
-
     &_info {
       border-radius: 12px;
       border: none;
-      border-top: 2px solid $color3;
-      border-bottom: 2px solid $color3;
-      margin-top: 8px;
 
       .optionBox.total {
         display: grid;
@@ -912,13 +728,13 @@
         }
       }
       .optionBox {
-        border-radius: 5px;
         > ul {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           gap: 4px;
           background: $color3;
-          border-radius: 5px;
+          border-bottom-right-radius: 12px;
+          border-bottom-left-radius: 12px;
           padding: 4px;
         }
 
@@ -965,8 +781,9 @@
                 flex-direction: column;
                 padding: 4px;
 
-                li {
+                .uniqueOption {
                   height: fit-content;
+                  line-height: 1rem;
                   padding: 4px;
                 }
               }

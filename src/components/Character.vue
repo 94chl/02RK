@@ -6,22 +6,24 @@
           {{ $t("modal.character") }}
         </h3>
         <div class="buttonBox" data-dropDown="characterSelect">
-          <button
-            :class="`changeShowItemImgBtn ${!showItemImg && 'selected'}`"
-            @click="onChangeShowItemImg"
-          >
-            <span>
-              <i class="fas fa-font"></i>
-            </span>
-          </button>
-          <button
-            :class="`changeShowItemImgBtn ${showItemImg && 'selected'}`"
-            @click="onChangeShowItemImg"
-          >
-            <span>
-              <i class="far fa-images"></i>
-            </span>
-          </button>
+          <div class="imgTextButtonBox">
+            <button
+              :class="`${!showItemImg && 'selected'}`"
+              @click="onChangeShowItemImg"
+            >
+              <span>
+                <i class="fas fa-font"></i>
+              </span>
+            </button>
+            <button
+              :class="`${showItemImg && 'selected'}`"
+              @click="onChangeShowItemImg"
+            >
+              <span>
+                <i class="far fa-images"></i>
+              </span>
+            </button>
+          </div>
           <button
             @click="onToggleDropDown"
             :class="`toggleSelectBtn ${
@@ -122,9 +124,6 @@
   .character {
     border-radius: 12px;
     border: none;
-    border-top: 2px solid $color3;
-    border-bottom: 2px solid $color3;
-    box-sizing: border-box;
     background: $color2;
     overflow: hidden;
 
@@ -132,14 +131,13 @@
       color: $color2;
       height: 25px;
       line-height: 25px;
-      margin: 5px 0;
-      padding: 0 5px;
+      padding: 4px;
+      padding-right: 0;
     }
 
     &_header {
       .tabName {
-        display: grid;
-        grid-template-columns: auto 1fr;
+        display: flex;
         align-items: center;
         h3 {
           color: $color3;
@@ -152,7 +150,7 @@
           width: 100%;
           display: flex;
           align-items: center;
-          justify-content: flex-start;
+          justify-content: space-between;
 
           > div {
             display: flex;

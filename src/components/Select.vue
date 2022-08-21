@@ -1,74 +1,87 @@
 <template>
-  <div class="select">
+  <div>
     <div class="tabName">
       <h3>{{ $t("section.selectItem") }}</h3>
-    </div>
-
-    <div class="select_dept">
-      <form @change="changeDept">
-        <input
-          type="radio"
-          :value="dept"
-          :id="`select${dept}`"
-          class="deptRadio"
-          :name="dept"
-          v-for="dept in deptArr"
-          :key="dept"
-          :checked="dept === selectDept"
-        />
-        <label
-          :for="`select${dept}`"
-          v-for="dept in deptArr"
-          :key="`deptArr${dept}`"
-          :class="`select${dept} ${dept == selectDept ? 'selected' : ''}`"
+      <div class="buttonBox" data-dropDown="itemSelect">
+        <button
+          @click="onToggleDropDown"
+          :class="`toggleSelectBtn ${
+            dropDown.itemSelect ? 'opened' : 'closed'
+          }`"
         >
-          {{ $t(`selectSection.${dept}`) }}
-        </label>
-      </form>
+          <i class="fas fa-angle-double-down"></i>
+          <i class="fas fa-angle-double-up"></i>
+        </button>
+      </div>
     </div>
 
-    <div class="select_category">
-      <select class="select_category_select" @change="changeCategory">
-        <option
-          v-for="category in categoryArr"
-          :value="category.category"
-          :selected="category.category === selectCategory"
-          :key="`categoryArr${category.category}`"
-        >
-          {{ category.nameInfo[language] }}
-        </option>
-      </select>
-    </div>
+    <div :class="`select ${dropDown.itemSelect ? '' : 'hide'}`">
+      <div class="select_dept">
+        <form @change="changeDept">
+          <input
+            type="radio"
+            :value="dept"
+            :id="`select${dept}`"
+            class="deptRadio"
+            :name="dept"
+            v-for="dept in deptArr"
+            :key="dept"
+            :checked="dept === selectDept"
+          />
+          <label
+            :for="`select${dept}`"
+            v-for="dept in deptArr"
+            :key="`deptArr${dept}`"
+            :class="`select${dept} ${dept == selectDept ? 'selected' : ''}`"
+          >
+            {{ $t(`selectSection.${dept}`) }}
+          </label>
+        </form>
+      </div>
 
-    <div class="select_item">
-      <select class="select_item_select" @change="changeItem">
-        <option
-          v-for="item in itemArr"
-          :value="item.id"
-          :selected="item.id === selectItem.id"
-          :key="`itemArr${item.id}`"
-        >
-          {{ item.name[language] }}
-        </option>
-      </select>
-    </div>
+      <div class="select_category">
+        <select class="select_category_select" @change="changeCategory">
+          <option
+            v-for="category in categoryArr"
+            :value="category.category"
+            :selected="category.category === selectCategory"
+            :key="`categoryArr${category.category}`"
+          >
+            {{ category.nameInfo[language] }}
+          </option>
+        </select>
+      </div>
 
-    <div class="select_btns">
-      <!-- <button
+      <div class="select_item">
+        <select class="select_item_select" @change="changeItem">
+          <option
+            v-for="item in itemArr"
+            :value="item.id"
+            :selected="item.id === selectItem.id"
+            :key="`itemArr${item.id}`"
+          >
+            {{ item.name[language] }}
+          </option>
+        </select>
+      </div>
+
+      <div class="select_btns">
+        <!-- <button
         :class="`search_btn ${itemOptionSearchModal && 'active'}`"
         @click="openItemOptionSearchModal"
       >
         <i class="fas fa-search"></i>
       </button> -->
-      <button class="add_btn" @click="addItem">
-        <i class="fas fa-plus"></i>
-      </button>
-    </div>
+        <button class="add_btn" @click="addItem">
+          <i class="fa-solid fa-crosshairs"></i>
+        </button>
+      </div>
 
-    <!-- <div v-if="!itemOptionSearchModal" class="itemOptionSearchModal">
+      <!-- <div v-if="!itemOptionSearchModal" class="itemOptionSearchModal">
       아이템 옵션 검색 테스트
     </div> -->
-    <ItemPreview></ItemPreview>
+      <ItemPreview></ItemPreview>
+    </div>
   </div>
 </template>
 
@@ -93,11 +106,20 @@
       language() {
         return this.$store.state.language;
       },
+      dropDown() {
+        return this.$store.state.dropDown;
+      },
       selectItem() {
         return this.$store.state.cart;
       },
     },
     methods: {
+      onToggleDropDown(e) {
+        this.$store.dispatch(
+          "onToggleDropDown",
+          e.target.closest("div").dataset.dropdown
+        );
+      },
       changeDept(e) {
         this.selectDept = e.target.value;
         this.categoryArr = database[`${this.selectDept}Data`].map((category) => ({
@@ -149,6 +171,57 @@
 </script>
 
 <style lang="scss" scoped>
+  .tabName {
+    grid-column: 1 / 4;
+    text-indent: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    .buttonBox {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      > div {
+        display: flex;
+      }
+
+      button {
+        background: none;
+        color: $color3;
+        border-radius: 5px;
+        @include fasIcon(25px);
+        margin-right: 5px;
+        &.toggleSelectBtn {
+          margin: 0;
+
+          &.opened {
+            .fa-angle-double-down {
+              display: none;
+            }
+            .fa-angle-double-up {
+              display: block;
+            }
+          }
+          &.closed {
+            .fa-angle-double-down {
+              display: block;
+            }
+            .fa-angle-double-up {
+              display: none;
+            }
+          }
+        }
+
+        &:hover,
+        &.selected {
+          box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
   .select {
     display: grid;
     grid-template-columns: 25% auto minmax(70px, 25%);
@@ -156,9 +229,8 @@
     padding: 0 5px;
     overflow: visible;
 
-    .tabName {
-      grid-column: 1 / 4;
-      text-indent: 0;
+    &.hide {
+      display: none;
     }
 
     &_dept {

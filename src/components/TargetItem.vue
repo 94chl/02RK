@@ -3,16 +3,38 @@
     <div class="tabName">
       <h3>{{ $t("section.targetItem") }}</h3>
       <div class="buttonBox">
-        <button class="reamoveAllBtn" @click="clearTargetItem">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-        <button @click="togglePathFinderModal" class="pathFinderBtn">
-          <i class="fas fa-map-marked-alt"></i>
-        </button>
+        <div>
+          <button
+            :class="`changeStatusEquipKeyBtn ${
+              statusEquipKey === 'targetItems' ? 'selected' : ''
+            }`"
+            @click="onChangeStatusEquipKey('targetItems')"
+          >
+            <i class="fa-solid fa-crosshairs"></i>
+          </button>
+          <button
+            :class="`changeStatusEquipKeyBtn ${
+              statusEquipKey === 'bagItems' ? 'selected' : ''
+            }`"
+            @click="onChangeStatusEquipKey('bagItems')"
+          >
+            <i class="fas fa-suitcase"></i>
+          </button>
+          <button
+            class="reamoveAllBtn"
+            @click="clearTargetItem"
+            v-if="statusEquipKey === 'targetItems'"
+          >
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
       </div>
     </div>
+
     <div>
-      <ul class="targetItem">
+      <ul
+        :class="`targetItem ${statusEquipKey === 'targetItems' ? '' : 'hide'}`"
+      >
         <li
           class="itemInfo"
           v-for="(item, index) in targetItems"
@@ -30,9 +52,36 @@
               class="itemInfo_img"
             />
           </button>
-          <button @click="removeTargetItem" class="removeBtn">
-            <i class="fas fa-times"></i>
-          </button>
+          <div class="itemTextBox">
+            <span>{{ item.name[language] }}</span>
+            <button @click="removeTargetItem" class="removeBtn">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+
+      <ul :class="`bagItems ${statusEquipKey === 'bagItems' ? '' : 'hide'}`">
+        <li
+          v-for="pocket in Object.keys(bagItems)"
+          :key="pocket"
+          :data-bag="pocket"
+          :data-item="`${bagItems[pocket].id ? bagItems[pocket].id : ''}`"
+        >
+          <span v-if="bagItems[pocket].id">
+            <div :class="`itemInfo value${bagItems[pocket].id[0]}`">
+              <img
+                :src="bagItems[pocket].img"
+                :alt="`${bagItems[pocket].name[language]}_img`"
+                :title="`${bagItems[pocket].name[language]}_img`"
+              />
+            </div>
+          </span>
+          <span v-else>
+            <div class="empty">
+              <span>{{ pocket }}</span>
+            </div>
+          </span>
         </li>
       </ul>
     </div>
@@ -44,6 +93,11 @@
   import ampl from "~/utils/amplitude.js";
 
   export default {
+    data() {
+      return {
+        statusEquipKey: "targetItems",
+      };
+    },
     components: {},
     computed: {
       language() {
@@ -51,6 +105,9 @@
       },
       targetItems() {
         return this.$store.state.targetItems;
+      },
+      bagItems() {
+        return this.$store.state.bagEquip;
       },
     },
     methods: {
@@ -71,14 +128,14 @@
           this.$store.dispatch("removeTargetItems", []);
         }
       },
+      onChangeStatusEquipKey(target) {
+        this.statusEquipKey = target;
+      },
       showItemInfo(e) {
         const selectedItem = searchById(e.target.closest("li").dataset.itemid);
         ampl.log("select item", { tab: "Target", ...selectedItem });
 
         this.$store.dispatch("setCart", selectedItem);
-      },
-      togglePathFinderModal() {
-        this.$store.dispatch("onToggleModal", "totalPathFinder");
       },
     },
   };
@@ -98,9 +155,24 @@
           width: fit-content;
           padding: 0;
 
+          &.changeStatusEquipKeyBtn,
+          &.removeAllBtn {
+            @include fasIcon(25px);
+            background: none;
+            .fas,
+            i {
+              color: $color3;
+            }
+            &:hover {
+              box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+            }
+          }
+          &.selected {
+            box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
+          }
           .fas {
             color: $color3;
-            @include fasIcon(30px);
+            @include fasIcon(25px);
           }
           &:hover {
             box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
@@ -112,6 +184,9 @@
     .targetItem {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
+      max-height: 96px;
+      overflow-y: hidden;
+
       @media screen and (max-width: 720px) {
         grid-template-columns: repeat(3, 1fr);
       }
@@ -128,27 +203,60 @@
           }
         }
 
-        .removeBtn {
+        div {
+          padding: 5px;
           text-align: center;
-          color: #ff0000;
-          background: none;
-          width: 100%;
-          &:hover {
-            font-weight: 700;
-            background: rgba(0, 0, 0, 0.1);
+        }
+        .itemTextBox {
+          position: relative;
+          .removeBtn {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            text-align: center;
+            color: #ff0000;
+            background: none;
+            &:hover {
+              font-weight: 700;
+              background: rgba(0, 0, 0, 0.1);
+            }
           }
         }
       }
     }
 
-    .reamoveAllBtn {
-      @include fasIcon(30px);
-      background: none;
-      .fas {
-        color: $color3;
-      }
-      &:hover {
-        box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+    .bagItems {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      background: $color3;
+      border-radius: 5px;
+      padding: 5px;
+      li {
+        height: 25px;
+        line-height: 25px;
+        position: relative;
+        background: #fff;
+        border-radius: 5px;
+
+        .itemInfo {
+          @include fasIcon(25px);
+          width: 100%;
+          font-size: 0.8rem;
+          border: none;
+
+          img {
+            height: 100%;
+            width: fit-content;
+          }
+        }
+
+        .empty {
+          color: #999;
+          font-size: 0.7rem;
+          padding: 5px;
+        }
       }
     }
   }

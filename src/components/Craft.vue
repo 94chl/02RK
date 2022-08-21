@@ -371,8 +371,7 @@
         color: $color3;
         height: 25px;
         line-height: 25px;
-        margin: 5px 0;
-        padding: 0 5px;
+        padding: 4px;
       }
       .buttonBox {
         width: 100%;

@@ -12,10 +12,6 @@
       <Bag />
     </div>
 
-    <div v-if="modal.status.show" class="statusModal">
-      <Status />
-    </div>
-
     <div v-if="modal.craft.show" class="craftModal">
       <Craft />
     </div>
@@ -28,14 +24,13 @@
 
 <script>
   import Bag from "~/components/Bag";
-  import Status from "~/components/Status";
   import Map from "~/components/Map";
   import Craft from "~/components/Craft";
   import TotalPathFinder from "~/components/TotalPathFinder";
   import Manual from "~/components/Manual";
 
   export default {
-    components: { Bag, Status, Map, Craft, TotalPathFinder, Manual },
+    components: { Bag, Map, Craft, TotalPathFinder, Manual },
     computed: {
       modal() {
         return this.$store.state.modal;
@@ -48,7 +43,6 @@
           "--z-index": this.modal.zIndex,
           "--z-index-bag": this.modal.bag.zIndex,
           "--z-index-totalPathFinder": this.modal.totalPathFinder.zIndex,
-          "--z-index-status": this.modal.status.zIndex,
           "--z-index-craft": this.modal.craft.zIndex,
           "--z-index-map": this.modal.map.zIndex,
           "--z-index-manual": this.modal.manual.zIndex,
@@ -71,10 +65,6 @@
 
     .bagModal {
       z-index: var(--z-index-bag, 30) !important;
-    }
-
-    .statusModal {
-      z-index: var(--z-index-status, 30) !important;
     }
 
     .craftModal {

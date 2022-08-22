@@ -33,6 +33,76 @@
     <div :class="`${dropDown.status ? '' : 'hide'}`">
       <div class="status_info">
         <div class="optionBox total" v-if="selectedCharacter">
+          <div class="characterImage">
+            <div class="header">
+              <div v-if="selectedCharacter" class="inputBox">
+                <div class="level">
+                  <span>Level</span>
+                  <div>
+                    <button @click="changeLevel(-1, 'characterLevel')">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      type="text"
+                      name="characterLevel"
+                      id="characterLevel"
+                      :value="characterLevel"
+                      @input="changeLevel($event, 'characterLevel')"
+                    />
+                    <button @click="changeLevel(1, 'characterLevel')">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="level">
+                  <span>Mastery</span>
+                  <div>
+                    <button @click="changeLevel(-1, 'masteryLevel')">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      type="text"
+                      name="masteryLevel"
+                      id="masteryLevel"
+                      :value="masteryLevel"
+                      @input="changeLevel($event, 'masteryLevel')"
+                    />
+                    <button @click="changeLevel(1, 'masteryLevel')">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img
+                :src="
+                  require(`~/img/character/half/${selectedCharacter?.code}.webp`)
+                "
+                :alt="`${selectedCharacter.name}_img`"
+                :title="`${selectedCharacter.name}_img`"
+              />
+              <div class="weaponGroup">
+                <div class="imageBox">
+                  <button
+                    v-for="(mastery, index) in selectedCharacter?.mastery || []"
+                    :key="mastery?.code"
+                    :class="
+                      mastery?.code === selectedMastery?.code && 'selected'
+                    "
+                    :data-index="index"
+                    @click="changeWeaponGroup"
+                  >
+                    <img
+                      :src="require(`~/img/weaponGroup/${mastery.type}.webp`)"
+                      :alt="`${mastery.type}_img`"
+                      :title="`${mastery.type}_img`"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <ul>
             <li
               v-for="optionKey in totalOption.totalKeys"
@@ -129,72 +199,6 @@
               </div>
             </li>
           </ul>
-          <div class="characterImage">
-            <div class="header">
-              <div v-if="selectedCharacter" class="inputBox">
-                <div class="level">
-                  <span>Level</span>
-                  <div>
-                    <button @click="changeLevel(-1, 'characterLevel')">
-                      <i class="fas fa-minus"></i>
-                    </button>
-                    <input
-                      type="text"
-                      name="characterLevel"
-                      id="characterLevel"
-                      :value="characterLevel"
-                      @input="changeLevel($event, 'characterLevel')"
-                    />
-                    <button @click="changeLevel(1, 'characterLevel')">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="level">
-                  <span>Mastery</span>
-                  <div>
-                    <button @click="changeLevel(-1, 'masteryLevel')">
-                      <i class="fas fa-minus"></i>
-                    </button>
-                    <input
-                      type="text"
-                      name="masteryLevel"
-                      id="masteryLevel"
-                      :value="masteryLevel"
-                      @input="changeLevel($event, 'masteryLevel')"
-                    />
-                    <button @click="changeLevel(1, 'masteryLevel')">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img
-              :src="
-                require(`~/img/character/half/${selectedCharacter?.code}.webp`)
-              "
-              :alt="`${selectedCharacter.name}_img`"
-              :title="`${selectedCharacter.name}_img`"
-            />
-            <div class="weaponGroup">
-              <div class="imageBox">
-                <button
-                  v-for="(mastery, index) in selectedCharacter?.mastery || []"
-                  :key="mastery?.code"
-                  :class="mastery?.code === selectedMastery?.code && 'selected'"
-                  :data-index="index"
-                  @click="changeWeaponGroup"
-                >
-                  <img
-                    :src="require(`~/img/weaponGroup/${mastery.type}.webp`)"
-                    :alt="`${mastery.type}_img`"
-                    :title="`${mastery.type}_img`"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -680,53 +684,60 @@
       border: none;
 
       .optionBox.total {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+        display: flex;
+        flex-direction: row-reverse;
+        @media screen and (max-width: 720px) {
+          flex-direction: column;
+        }
         > ul {
           grid-template-columns: 1fr 1fr;
+          width: 100%;
         }
-      }
-      .header {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        .tabName {
-          width: fit-content;
-        }
-
-        .inputBox {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-          .level {
+        .characterImage {
+          .header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 8px;
-            color: $color3;
-            input,
-            button {
-              border: none;
-              background: none;
-              padding: 0;
+            justify-content: flex-end;
+
+            .tabName {
+              width: fit-content;
             }
 
-            input {
-              width: 24px;
-              text-align: center;
-            }
+            .inputBox {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              .level {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 8px;
+                color: $color3;
+                input,
+                button {
+                  border: none;
+                  background: none;
+                  padding: 0;
+                }
 
-            button {
-              border-radius: 4px;
-              padding: 2px;
-              &:hover {
-                box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+                input {
+                  width: 24px;
+                  text-align: center;
+                }
+
+                button {
+                  border-radius: 4px;
+                  padding: 2px;
+                  &:hover {
+                    box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
+                  }
+                }
               }
             }
           }
         }
       }
+
       .optionBox {
         > ul {
           display: grid;
@@ -736,6 +747,10 @@
           border-bottom-right-radius: 12px;
           border-bottom-left-radius: 12px;
           padding: 4px;
+
+          @media screen and (max-width: 720px) {
+            grid-template-columns: 1fr;
+          }
         }
 
         .option {
@@ -793,6 +808,20 @@
 
         .characterImage {
           position: relative;
+          @media screen and (max-width: 720px) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            justify-content: space-between;
+          }
+          > div {
+            img {
+              height: 240px;
+              width: fit-content;
+              object-fit: contain;
+            }
+          }
+
           .weaponGroup {
             position: absolute;
             bottom: 4px;
@@ -806,6 +835,8 @@
                 background: $color2;
                 border: 1px solid $color1;
                 border-radius: 50%;
+                width: 40px;
+                height: 40px;
 
                 &.selected {
                   background: $color1;

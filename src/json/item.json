@@ -267,7 +267,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1cIwxbTTNCKyrGzaWkKgPG3NO_C4lLn-g",
         "location": ["A007", "A012", "A014"],
-        "tobe": ["GWE002", "GWS001", "GM001", "GT002", "YA017"],
+        "tobe": ["GWE002", "GWS001", "PH009", "GM001", "GT002", "YA017"],
         "pickup": 3,
         "limit": 3,
         "name": {
@@ -779,7 +779,15 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1KXDXvHC-HpGVH6VrEMfJbuf_XTI0gq5R",
         "location": false,
-        "tobe": ["PWA003", "PWC005", "PWR002", "PS005", "PS009", "BA014"],
+        "tobe": [
+          "PWA003",
+          "PWC005",
+          "PWR002",
+          "PH001",
+          "PS005",
+          "PS009",
+          "BA014"
+        ],
         "pickup": 1,
         "limit": 3,
         "name": { "kr": "모터", "en": "Motor", "ja": "モーター", "cn": "馬達" },
@@ -1128,7 +1136,7 @@
         "sort": "trap",
         "img": "https://lh3.google.com/u/0/d/1krl_DSsio7iLvbCb-vH8vzZ1KICpu1vh",
         "location": false,
-        "tobe": ["PH009", "BT006", "YT001"],
+        "tobe": ["BT006", "YT001"],
         "pickup": 2,
         "limit": 5,
         "name": {

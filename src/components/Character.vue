@@ -68,9 +68,18 @@
 </template>
 
 <script>
-  import { characterData, masteryData } from "~/utils/characterTable";
+  import { masteryData, generateCharacterData } from "~/utils/characterTable";
+  import {
+    getSessionStorage,
+    setSessionStorage,
+  } from "~/utils/useSessionStorage";
 
   export default {
+    data() {
+      return {
+        characterData: [],
+      };
+    },
     components: {},
     computed: {
       language() {
@@ -81,9 +90,6 @@
       },
       showItemImg() {
         return this.$store.state.showItemImg;
-      },
-      characterData() {
-        return characterData;
       },
       selectedCharacter() {
         return this.$store.state.selectedCharacter;
@@ -101,8 +107,8 @@
       },
       selectCharacter(e) {
         const characterIndex = e;
-        const selectedCharacter = characterData.stats[characterIndex];
-        const levelUpStats = characterData.levelUpStats[characterIndex];
+        const selectedCharacter = this.characterData.stats[characterIndex];
+        const levelUpStats = this.characterData.levelUpStats[characterIndex];
         const characterMastery = masteryData.filter(
           (mastery) => mastery.characterCode === selectedCharacter.code
         );
@@ -114,7 +120,14 @@
         this.$store.dispatch("selectCharacter", selectedCharacter);
       },
     },
-    mounted() {
+    async mounted() {
+      const cachedCharacterData = getSessionStorage("02RK_characterData", null);
+      if (!cachedCharacterData) {
+        this.characterData = await generateCharacterData();
+        setSessionStorage("02RK_characterData", this.characterData);
+      } else {
+        this.characterData = cachedCharacterData;
+      }
       if (!this.selectedCharacter) this.selectCharacter(0);
     },
   };

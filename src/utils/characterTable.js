@@ -1,9 +1,13 @@
-import character from "~/json/character.json";
-import levelUpStats from "~/json/levelUpStats.json";
 import mastery from "~/json/mastery.json";
 import modeModifier from "~/json/modeModifier.json";
+import { callApi } from "./utils";
 
-export const characterData = { stats: character, levelUpStats: levelUpStats };
+export const generateCharacterData = async () => {
+  const stats = await callApi("data/Character");
+  const levelUpStats = await callApi("data/CharacterLevelUpStat");
+  return { stats, levelUpStats };
+};
+
 export const masteryData = mastery;
 export const modeModifierData = modeModifier;
 

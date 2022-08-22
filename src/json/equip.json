@@ -422,7 +422,7 @@
         },
         "stack": 1,
         "material": ["GC008", "BM004"],
-        "atk0": 18,
+        "atk0": 15,
         "cri_rate1": 0.24,
         "def0": 10
       },
@@ -559,7 +559,7 @@
         },
         "stack": 1,
         "material": ["BC003", "GA008"],
-        "atk0": 27,
+        "atk0": 23,
         "vamp1": 0.18,
         "uniq009": {
           "detail": {
@@ -720,9 +720,9 @@
         },
         "stack": 1,
         "material": ["GC009", "GM002"],
-        "skill0": 35,
+        "skill0": 50,
         "def0": 9,
-        "hp0": 130,
+        "hp0": 100,
         "mp_reg1": 0.5
       },
       {
@@ -741,7 +741,7 @@
         },
         "stack": 1,
         "material": ["GC006", "PM007"],
-        "atk0": 14,
+        "atk0": 10,
         "def0": 25,
         "mp_reg1": 1,
         "uniq030": {
@@ -1252,7 +1252,7 @@
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1o8NdqyV_LDQJgzGE8y71bd8SP1EYtHYv",
         "location": false,
-        "tobe": ["BH002", "BH006"],
+        "tobe": ["BH002", "PH001"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1395,26 +1395,6 @@
         }
       },
       {
-        "id": "BH006",
-        "sort": "helmet",
-        "img": "https://lh3.google.com/u/0/d/1I7FDWluLE67oC07XbDOgT2j4-kd-hNcO",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "오토바이 헬멧",
-          "en": "Motorcycle Helmet",
-          "ja": "バイクヘルメット",
-          "cn": "全罩安全帽"
-        },
-        "stack": 1,
-        "material": ["GH005", "GA005"],
-        "atk0": 10,
-        "hp0": 200,
-        "vision0": 2
-      },
-      {
         "id": "BH009",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1cBfMBJ8jEK3Xu3cuWt4UKtmpupb5vQEc",
@@ -1440,6 +1420,26 @@
         "grow_skill0": 2,
         "def0": 17,
         "mp0": 200
+      },
+      {
+        "id": "PH001",
+        "sort": "helmet",
+        "img": "https://lh3.google.com/u/0/d/1I7FDWluLE67oC07XbDOgT2j4-kd-hNcO",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "오토바이 헬멧",
+          "en": "Motorcycle Helmet",
+          "ja": "バイクヘルメット",
+          "cn": "全罩安全帽"
+        },
+        "stack": 1,
+        "material": ["GH005", "GA005"],
+        "skill0": 40,
+        "hp0": 100,
+        "atk_spd1": 0.23
       },
       {
         "id": "PH002",
@@ -1627,10 +1627,11 @@
           "cn": "戰隊頭盔"
         },
         "stack": 1,
-        "material": ["BH002", "GT002"],
-        "hp0": 175,
-        "skill_def1": 0.07,
-        "mp_reg1": 0.65
+        "material": ["BH002", "WM016"],
+        "def0": 14,
+        "hp0": 130,
+        "mp_reg1": 0.65,
+        "skill0": 30
       },
       {
         "id": "PH010",
@@ -2045,7 +2046,7 @@
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1xPLwO9Y_nF-O0RkPfYEsin_UBaAXLQ3g",
         "location": false,
-        "tobe": ["PB005", "PB010"],
+        "tobe": ["PB005"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2083,7 +2084,7 @@
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1C9mqwUM50K8M52C3-uVhuTcxygfmXeP8",
         "location": false,
-        "tobe": ["BWU002", "PB008", "YB007", "PB010", "YB005"],
+        "tobe": ["BWU002", "PB008", "YB007", "YB005"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2388,9 +2389,9 @@
           "cn": "南丁格爾"
         },
         "stack": 1,
-        "material": ["GB002", "BF021"],
-        "atk0": 20,
-        "hp0": 160,
+        "material": ["WB002", "BF021"],
+        "skill0": 45,
+        "hp0": 120,
         "heal_up1": 0.15
       },
       {
@@ -3084,7 +3085,7 @@
         },
         "stack": 1,
         "material": ["GS005", "GM007"],
-        "skill0": 10,
+        "skill0": 15,
         "mp_reg1": 1,
         "move_spd0": 0.27
       },
@@ -3190,7 +3191,7 @@
         "material": ["GS005", "PM008"],
         "mp_reg1": 2,
         "move_spd0": 0.37,
-        "skill0": 15,
+        "skill0": 25,
         "grow_skill0": 1
       },
       {
@@ -3517,7 +3518,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1THqdnlEjlvf3oMjmKQHEhH3GGo89Gk3I",
         "location": false,
-        "tobe": ["PWL003", "BWT002", "BWU002", "BH006", "BA011"],
+        "tobe": ["PWL003", "BWT002", "BWU002", "BA011"],
         "pickup": 1,
         "limit": 1,
         "name": {

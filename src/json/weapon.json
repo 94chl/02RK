@@ -311,7 +311,7 @@
         },
         "stack": 1,
         "material": ["GWA001", "PM002"],
-        "atk0": 72,
+        "atk0": 68,
         "move_spd0": 0.1,
         "uniq025": {
           "detail": {
@@ -1300,7 +1300,7 @@
         },
         "stack": 1,
         "material": ["BWD001", "GT001"],
-        "atk0": 35,
+        "atk0": 33,
         "vamp1": 0.12,
         "atk_spd1": 0.2,
         "uniq013": {
@@ -1383,12 +1383,12 @@
         "atk_spd1": 0.18,
         "uniq008": {
           "detail": {
-            "kr": ["+1"],
-            "en": ["+1"],
-            "ja": ["+1"],
-            "cn": ["+1"]
+            "kr": ["+0.75"],
+            "en": ["+0.75"],
+            "ja": ["+0.75"],
+            "cn": ["+0.75"]
           },
-          "value": 1
+          "value": 0.75
         }
       },
       {
@@ -1473,7 +1473,7 @@
         },
         "stack": 1,
         "material": ["WWD001", "PM004"],
-        "atk0": 58,
+        "atk0": 56,
         "atk_spd1": 0.45
       }
     ]
@@ -2620,7 +2620,7 @@
         },
         "stack": 1,
         "material": ["GWG001", "PM009"],
-        "atk0": 115,
+        "atk0": 110,
         "atk_spd1": 0.1,
         "uniq008": {
           "detail": {
@@ -3249,7 +3249,7 @@
         "material": ["BWI002", "GD009"],
         "load0": 30,
         "atk0": 73,
-        "atk_spd1": 0.4
+        "atk_spd1": 0.3
       },
       {
         "id": "PWI005",
@@ -3918,7 +3918,7 @@
         "material": ["PWJ004", "GT003"],
         "load0": 4,
         "atk0": 75,
-        "basic_atk0": 110,
+        "basic_atk0": 75,
         "skill0": 50,
         "grow_skill0": 2
       },
@@ -4173,7 +4173,7 @@
         },
         "stack": 1,
         "material": ["BWK003", "WWF001"],
-        "atk0": 72,
+        "atk0": 70,
         "grow_basic_atk1": 0.012
       },
       {
@@ -5172,7 +5172,7 @@
         "load0": 30,
         "atk0": 70,
         "atk_spd1": 0.25,
-        "grow_basic_atk1": 0.015
+        "grow_basic_atk1": 0.011
       },
       {
         "id": "YWN002",
@@ -5385,7 +5385,7 @@
         "stack": 1,
         "material": ["BWO003", "GM006"],
         "load0": 4,
-        "atk0": 87,
+        "atk0": 82,
         "atk_spd1": 0.2,
         "grow_atk_spd1": 0.02,
         "vision0": 1
@@ -6879,7 +6879,7 @@
         },
         "stack": 1,
         "material": ["BWT005", "PM003"],
-        "atk0": 75,
+        "atk0": 72,
         "atk_spd1": 0.2,
         "uniq002": {
           "detail": {

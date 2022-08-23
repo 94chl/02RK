@@ -349,7 +349,7 @@
         "stack": 1,
         "material": ["GWA003", "PM009"],
         "atk0": 45,
-        "skill0": 110,
+        "skill0": 100,
         "grow_skill0": 2,
         "move_spd0": 0.1
       }
@@ -7078,9 +7078,9 @@
         },
         "stack": 1,
         "material": ["BWU002", "WM026"],
-        "atk0": 48,
+        "atk0": 35,
         "cool1": 0.15,
-        "vision0": 4,
+        "vision0": 1.5,
         "uniq007": {
           "detail": {
             "kr": ["+5%"],

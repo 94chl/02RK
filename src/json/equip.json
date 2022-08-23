@@ -741,29 +741,29 @@
         },
         "stack": 1,
         "material": ["GC006", "PM007"],
-        "atk0": 10,
+        "atk0": 13,
         "def0": 25,
         "mp_reg1": 1,
         "uniq030": {
           "detail": {
             "kr": [
               "전투에 돌입하면 매 초마다 2.5m 이내의 적에게 피해를 입힘",
-              "피해량: 착용자 최대 체력의 4.5%(근)/3%(원)"
+              "피해량: 착용자 최대 체력의 3.5%(근)/3%(원)"
             ],
             "en": [
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
-              "Damage: 4.5%(Melee)/3%(Ranged) of User's Max HP"
+              "Damage: 3.5%(Melee)/3%(Ranged) of User's Max HP"
             ],
             "ja": [
               "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージ",
-              "ダメージ:最大体力の4.5%(近)/3%(遠)"
+              "ダメージ:最大体力の3.5%(近)/3%(遠)"
             ],
             "cn": [
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
-              "Damage: 4.5%(Melee)/3%(Ranged) of User's Max HP"
+              "Damage: 3.5%(Melee)/3%(Ranged) of User's Max HP"
             ]
           },
-          "value": 0.045
+          "value": 0.035
         }
       },
       {
@@ -831,8 +831,7 @@
         },
         "stack": 1,
         "material": ["GC009", "PM009"],
-        "atk0": 25,
-        "skill0": 25,
+        "skill0": 75,
         "def0": 17,
         "hp0": 120,
         "uniq004": {
@@ -1437,7 +1436,7 @@
         },
         "stack": 1,
         "material": ["GH005", "GA005"],
-        "skill0": 40,
+        "skill0": 45,
         "hp0": 100,
         "atk_spd1": 0.23
       },
@@ -1505,12 +1504,12 @@
         "cool1": 0.06,
         "uniq009": {
           "detail": {
-            "kr": ["+0.08"],
-            "en": ["+0.08"],
-            "ja": ["+0.08"],
-            "cn": ["+0.08"]
+            "kr": ["+0.06"],
+            "en": ["+0.06"],
+            "ja": ["+0.06"],
+            "cn": ["+0.06"]
           },
-          "value": 0.08
+          "value": 0.06
         }
       },
       {
@@ -1670,7 +1669,7 @@
         },
         "stack": 1,
         "material": ["BH004", "WA008"],
-        "def0": 20,
+        "def0": 18,
         "atk0": 5,
         "uniq015": {
           "detail": {
@@ -2371,7 +2370,7 @@
         "stack": 1,
         "material": ["BB002", "GB004"],
         "mp0": 300,
-        "skill0": 40,
+        "skill0": 50,
         "cool1": 0.12
       },
       {
@@ -2598,10 +2597,10 @@
         },
         "stack": 1,
         "material": ["GB004", "PM009"],
+        "skill0": 70,
         "def0": 13,
-        "atk_spd1": 0.4,
+        "atk_spd1": 0.3,
         "move_spd0": 0.12,
-        "cool1": 0.15,
         "uniq004": {
           "detail": {
             "kr": [
@@ -4024,8 +4023,8 @@
         },
         "stack": 1,
         "material": ["BA004", "GC004"],
-        "hp0": 200,
-        "def0": 10
+        "hp0": 180,
+        "def0": 9
       },
       {
         "id": "BA014",

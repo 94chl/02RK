@@ -235,7 +235,7 @@
         "img": "https://lh3.google.com/u/0/d/106URsy0Xgi_RaHP_UZvLXoNSph_ZR9e4",
         "location": ["A004", "A005", "A012", "A013"],
         "tobe": ["BWB003", "GM004", "GM011", "PH005"],
-        "pickup": 1,
+        "pickup": 2,
         "limit": 3,
         "name": { "kr": "원석", "en": "Gemstone", "ja": "原石", "cn": "原石" },
         "stack": 1

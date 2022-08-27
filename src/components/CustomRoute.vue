@@ -24,7 +24,10 @@
               :key="`complete${item.id}`"
               :class="`value${item.id[0]}`"
             >
-              <img :src="item.img" :alt="`${item.name[language]}_img`" />
+              <img
+                :src="require(`~/img/item/${item.sort}/${item.name.en}.webp`)"
+                :alt="`${item.name[language]}_img`"
+              />
             </li>
           </ul>
         </div>
@@ -142,6 +145,7 @@
                 name: item.name,
                 id: item.id,
                 img: item.img,
+                sort: item.sort,
               });
             } else {
               remainTargetItems.push(item);
@@ -177,7 +181,7 @@
         display: flex;
         button {
           background: none;
-          border-radius: 5px;
+          border-radius: 4px;
           width: fit-content;
           padding: 0;
 
@@ -195,7 +199,7 @@
     .routesBox {
       display: grid;
       grid-template-columns: repeat(5, minmax(min-content, 1fr));
-      border-radius: 5px;
+      border-radius: 4px;
       background: $color3;
       @media screen and (max-width: 720px) {
         grid-template-columns: repeat(3, minmax(min-content, 1fr));
@@ -203,7 +207,7 @@
       > div {
         display: flex;
         justify-content: space-around;
-        padding: 5px 0;
+        padding: 4px 0;
         color: $color2;
 
         &::after {
@@ -222,14 +226,14 @@
           }
           > ul {
             max-width: 90px;
-            margin-top: 5px;
+            margin-top: 4px;
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
+            gap: 4px;
 
             li {
               width: fit-content;
-              border-radius: 5px;
+              border-radius: 4px;
               img {
                 width: 64px;
               }

@@ -143,7 +143,7 @@
     min-width: 35px;
     max-height: 50vh;
     text-align: right;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid $color3;
     box-sizing: border-box;
     position: relative;
@@ -175,7 +175,7 @@
         justify-content: space-between;
         button {
           background: none;
-          border-radius: 5px;
+          border-radius: 4px;
           width: fit-content;
           padding: 0;
 
@@ -193,7 +193,7 @@
 
     .routesInfo {
       max-height: calc(50vh - 80px);
-      padding: 10px 5px;
+      padding: 10px 4px;
       overflow-y: scroll;
 
       -ms-overflow-style: none;
@@ -216,10 +216,10 @@
         text-align: initial;
       }
       .routes {
-        padding: 5px;
+        padding: 4px;
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 4px;
 
         .routesResult {
           font-weight: 700;
@@ -269,7 +269,7 @@
         }
       }
       .noRoutes {
-        padding: 5px;
+        padding: 4px;
         white-space: pre-line;
       }
     }

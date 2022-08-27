@@ -112,6 +112,27 @@
       selectItem() {
         return this.$store.state.cart;
       },
+      testImages() {
+        const test = Object.values(database).reduce((acc, cur) => {
+          cur.forEach((data) => {
+            if (data.items) {
+              data.items.forEach((item) => {
+                if (item.name.en.includes("'s")) {
+                  acc.push({
+                    ...item,
+                    name: { ...item.name, en: item.name.en.replace("'s", "_s") },
+                  });
+                } else {
+                  acc.push(item);
+                }
+              });
+            }
+          });
+          return acc;
+        }, []);
+
+        return test;
+      },
     },
     methods: {
       onToggleDropDown(e) {
@@ -190,9 +211,9 @@
       button {
         background: none;
         color: $color3;
-        border-radius: 5px;
+        border-radius: 4px;
         @include fasIcon(25px);
-        margin-right: 5px;
+        margin-right: 4px;
         &.toggleSelectBtn {
           margin: 0;
 
@@ -225,8 +246,8 @@
   .select {
     display: grid;
     grid-template-columns: 25% auto minmax(70px, 25%);
-    gap: 5px;
-    padding: 0 5px;
+    gap: 4px;
+    padding: 0 4px;
     overflow: visible;
 
     &.hide {
@@ -244,10 +265,10 @@
       }
 
       label {
-        margin: 2.5px 5px;
+        margin: 2.5px 4px;
         box-shadow: 0 0 1px 1px $color1;
-        border-radius: 5px;
-        padding: 0 5px;
+        border-radius: 4px;
+        padding: 0 4px;
         cursor: pointer;
 
         &.selected {
@@ -273,7 +294,7 @@
         width: 100%;
         height: 100%;
         border: none;
-        border-radius: 5px;
+        border-radius: 4px;
       }
     }
 
@@ -288,7 +309,7 @@
         width: 100%;
         height: 100%;
         border: none;
-        border-radius: 5px;
+        border-radius: 4px;
       }
     }
 
@@ -302,7 +323,7 @@
         height: 100%;
         background: $color2;
         color: $color3;
-        border-radius: 5px;
+        border-radius: 4px;
         box-shadow: 0 0 1px 1px $color1 inset;
 
         &:hover,

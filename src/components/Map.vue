@@ -516,7 +516,7 @@
     flex-direction: column;
     align-items: center;
     border: 2px solid $color3;
-    border-radius: 5px;
+    border-radius: 4px;
     box-sizing: border-box;
 
     &.hide {
@@ -540,13 +540,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-right: 5px;
+        margin-right: 4px;
         button {
           background: none;
           color: $color3;
-          border-radius: 5px;
+          border-radius: 4px;
           @include fasIcon(25px);
-          margin-right: 5px;
+          margin-right: 4px;
           &:last-child {
             margin: 0;
           }
@@ -597,7 +597,7 @@
             polyline {
               fill: transparent;
               stroke: orange;
-              stroke-width: 5px;
+              stroke-width: 4px;
               stroke-linecap: round;
               stroke-linejoin: round;
             }

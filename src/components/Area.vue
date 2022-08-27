@@ -227,7 +227,7 @@
         display: flex;
         button {
           background: none;
-          border-radius: 5px;
+          border-radius: 4px;
           width: fit-content;
           padding: 0;
 
@@ -246,10 +246,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      padding: 5px;
+      padding: 4px;
       > li {
         position: relative;
-        border-radius: 5px;
+        border-radius: 4px;
         min-height: 50px;
 
         &.areaA000 {
@@ -278,7 +278,7 @@
             right: 25px;
             background: $color4;
             padding: 4px;
-            border-radius: 5px;
+            border-radius: 4px;
 
             &.closed {
               display: none;
@@ -291,10 +291,10 @@
 
             button {
               position: absolute;
-              top: 5px;
-              right: 5px;
+              top: 4px;
+              right: 4px;
               background: none;
-              border-radius: 5px;
+              border-radius: 4px;
               &:active,
               &:hover {
                 box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
@@ -336,7 +336,7 @@
                 border-radius: 50%;
                 width: 15px;
                 height: 15px;
-                margin: 5px;
+                margin: 4px;
                 line-height: 15px;
               }
               &.resurrection {
@@ -384,9 +384,9 @@
             li {
               overflow: hidden;
               .getDropBtn {
-                padding: 5px;
+                padding: 4px;
                 background: none;
-                border-radius: 5px;
+                border-radius: 4px;
                 &:active {
                   box-shadow: 0px 0px 2px 1px #999 inset;
                 }

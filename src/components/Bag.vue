@@ -74,7 +74,13 @@
                 :class="`itemInfo value${equip[pocket].id[0]}`"
               >
                 <img
-                  :src="equip[pocket].img"
+                  :src="
+                    require(`~/img/item/${
+                      equip[pocket].sort === 'weapon'
+                        ? equip[pocket].sortDetail
+                        : equip[pocket].sort
+                    }/${equip[pocket].name.en}.webp`)
+                  "
                   :alt="`${equip[pocket].name[language]}_img`"
                   :title="`${equip[pocket].name[language]}_img`"
                   v-if="showItemImg"
@@ -127,7 +133,13 @@
                 :class="`itemInfo value${inventory[pocket].id[0]}`"
               >
                 <img
-                  :src="inventory[pocket].img"
+                  :src="
+                    require(`~/img/item/${
+                      inventory[pocket].sort === 'weapon'
+                        ? inventory[pocket].sortDetail
+                        : inventory[pocket].sort
+                    }/${inventory[pocket].name.en}.webp`)
+                  "
                   :alt="`${inventory[pocket].name[language]}_img`"
                   :title="`${inventory[pocket].name[language]}_img`"
                   v-if="showItemImg"
@@ -172,7 +184,13 @@
               @click="getAssemble"
             >
               <img
-                :src="assemble.img"
+                :src="
+                  require(`~/img/item/${
+                    assemble.sort === 'weapon'
+                      ? assemble.sortDetail
+                      : assemble.sort
+                  }/${assemble.name.en}.webp`)
+                "
                 :alt="`${assemble.name[language]}_img`"
                 :title="`${assemble.name[language]}_img`"
                 v-if="showItemImg"
@@ -336,7 +354,7 @@
 
 <style lang="scss" scoped>
   .bag {
-    border-radius: 5px;
+    border-radius: 4px;
     background: $color5;
     border: 2px solid $color5;
     box-sizing: border-box;
@@ -366,9 +384,9 @@
         button {
           background: none;
           color: $color2;
-          border-radius: 5px;
+          border-radius: 4px;
           @include fasIcon(25px);
-          margin-right: 5px;
+          margin-right: 4px;
           &:last-child {
             margin: 0;
           }
@@ -403,14 +421,14 @@
         grid-template-rows: repeat(2, 1fr);
         gap: 10px;
         background: $color4;
-        border-radius: 5px;
-        padding: 5px;
+        border-radius: 4px;
+        padding: 4px;
         li {
           height: 25px;
           line-height: 25px;
           position: relative;
           background: #fff;
-          border-radius: 5px;
+          border-radius: 4px;
 
           .itemInfo {
             @include fasIcon(25px);
@@ -428,7 +446,7 @@
           .empty {
             color: #999;
             font-size: 0.7rem;
-            padding: 5px;
+            padding: 4px;
           }
           .removeBtn {
             background: none;
@@ -450,16 +468,16 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 5px;
+        gap: 4px;
         background: $color4;
-        border-radius: 5px;
-        padding: 5px;
+        border-radius: 4px;
+        padding: 4px;
         li {
           position: relative;
           height: 25px;
           line-height: 25px;
           background: #fff;
-          border-radius: 5px;
+          border-radius: 4px;
 
           .itemInfo {
             height: 25px;
@@ -478,7 +496,7 @@
           .empty {
             color: #999;
             font-size: 0.7rem;
-            padding: 5px;
+            padding: 4px;
           }
           .removeBtn {
             background: none;
@@ -509,18 +527,18 @@
       ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 5px;
+        gap: 4px;
         background: $color4;
-        border-radius: 5px;
-        padding: 5px;
+        border-radius: 4px;
+        padding: 4px;
 
         li {
           .assembleBtn {
             width: 100%;
             height: 25px;
             line-height: 25px;
-            padding: 0 5px;
-            border-radius: 5px;
+            padding: 0 4px;
+            border-radius: 4px;
             box-shadow: 1px 1px 3px 1px #999;
             position: relative;
             overflow: hidden;

@@ -39,7 +39,7 @@
 
 <style lang="scss" scoped>
   .manual {
-    border-radius: 5px;
+    border-radius: 4px;
     border: 2px solid $color3;
     box-sizing: border-box;
     background: $color2;
@@ -77,9 +77,9 @@
         button {
           background: none;
           color: $color3;
-          border-radius: 5px;
+          border-radius: 4px;
           @include fasIcon(25px);
-          margin-right: 5px;
+          margin-right: 4px;
           &:hover {
             box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.3);
           }

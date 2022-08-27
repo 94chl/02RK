@@ -47,7 +47,7 @@
             @click="showItemInfo"
           >
             <img
-              :src="item.img"
+              :src="require(`~/img/item/${item.sort}/${item.name.en}.webp`)"
               :alt="item.name[language]"
               class="itemInfo_img"
             />
@@ -71,7 +71,13 @@
           <span v-if="bagItems[pocket].id">
             <div :class="`itemInfo value${bagItems[pocket].id[0]}`">
               <img
-                :src="bagItems[pocket].img"
+                :src="
+                  require(`~/img/item/${
+                    bagItems[pocket].sort === 'weapon'
+                      ? bagItems[pocket].sortDetail
+                      : bagItems[pocket].sort
+                  }/${bagItems[pocket].name.en}.webp`)
+                "
                 :alt="`${bagItems[pocket].name[language]}_img`"
                 :title="`${bagItems[pocket].name[language]}_img`"
               />
@@ -151,7 +157,7 @@
         display: flex;
         button {
           background: none;
-          border-radius: 5px;
+          border-radius: 4px;
           width: fit-content;
           padding: 0;
 
@@ -184,30 +190,42 @@
     .targetItem {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
+      gap: 4px;
+      padding: 0 4px;
       max-height: 96px;
-      overflow-y: hidden;
+      overflow-y: scroll;
 
       @media screen and (max-width: 720px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
       }
 
       .itemInfo {
         background: #fff;
-        border-radius: 5px;
-        margin: 5px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        height: 96px;
 
         .showItemInfoBtn {
-          border-radius: 5px;
+          border-radius: 6px;
+          height: calc(100% - 24px);
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          overflow: hidden;
           &:hover {
             box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
           }
-        }
 
-        div {
-          padding: 5px;
-          text-align: center;
+          img {
+            max-height: 100%;
+            width: fit-content;
+          }
         }
         .itemTextBox {
+          height: 24px;
+          padding: 4px;
+          text-align: center;
           position: relative;
           .removeBtn {
             position: absolute;
@@ -231,14 +249,14 @@
       grid-template-rows: repeat(2, 1fr);
       gap: 10px;
       background: $color3;
-      border-radius: 5px;
-      padding: 5px;
+      border-radius: 4px;
+      padding: 4px;
       li {
         height: 25px;
         line-height: 25px;
         position: relative;
         background: #fff;
-        border-radius: 5px;
+        border-radius: 4px;
 
         .itemInfo {
           @include fasIcon(25px);
@@ -255,7 +273,7 @@
         .empty {
           color: #999;
           font-size: 0.7rem;
-          padding: 5px;
+          padding: 4px;
         }
       }
     }

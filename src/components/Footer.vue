@@ -74,7 +74,7 @@
         select {
           height: 30px;
           border: none;
-          border-radius: 5px;
+          border-radius: 4px;
           cursor: pointer;
         }
       }

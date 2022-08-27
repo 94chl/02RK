@@ -10,3 +10,10 @@ export const callApi = async (api) => {
     .then((json) => json);
   return data;
 };
+
+export const corsApi = async (url) => {
+  const data = await fetch(`https://corsanywhere12345.herokuapp.com/${url}`, {
+    Accept: "*/*",
+  }).then((response) => response.text());
+  return data;
+};

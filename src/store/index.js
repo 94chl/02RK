@@ -284,6 +284,7 @@ const store = createStore({
         sort: weaponSort.includes(newItemInfo.sort)
           ? "weapon"
           : newItemInfo.sort,
+        sortDetail: newItemInfo.sort,
         name: newItemInfo.name,
         img: newItemInfo.img,
         count: parseInt(newItemInfo.pickup),
@@ -447,6 +448,7 @@ const store = createStore({
         sort: weaponSort.includes(newAssemble.sort)
           ? "weapon"
           : newAssemble.sort,
+        sortDetail: newAssemble.sort,
         name: newAssemble.name,
         img: newAssemble.img,
         count: parseInt(newAssemble.pickup),
@@ -544,6 +546,7 @@ const store = createStore({
       const initialWeapon = {
         id: initialWeaponInfo.id,
         sort: "weapon",
+        sortDetail: initialWeaponInfo.sort,
         name: initialWeaponInfo.name,
         img: initialWeaponInfo.img,
         count: parseInt(initialWeaponInfo.pickup),

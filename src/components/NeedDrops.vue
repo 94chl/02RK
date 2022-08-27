@@ -114,14 +114,14 @@
     &_list {
       display: flex;
       flex-wrap: wrap;
-      gap: 3px 5px;
-      padding: 5px;
+      gap: 3px 4px;
+      padding: 4px;
 
       li {
         width: fit-content;
         background: #fff;
-        border-radius: 5px;
-        padding: 5px;
+        border-radius: 4px;
+        padding: 4px;
 
         &.hadItem {
           text-decoration: line-through;

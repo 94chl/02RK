@@ -9,7 +9,7 @@
       >
         <button @click="setInitialWeapon" class="selectBtn">
           <img
-            :src="weapon.img"
+            :src="require(`~/img/item/${weapon.sort}/${weapon.name.en}.webp`)"
             :alt="`${weapon.name[language]}_icon`"
             :title="`${weapon.name[language]}_icon`"
             v-if="showItemImg"
@@ -61,7 +61,7 @@
 <style lang="scss" scoped>
   .initialWeapon {
     background: $color4;
-    border-radius: 5px;
+    border-radius: 4px;
 
     .tabName {
       color: $color2;
@@ -74,8 +74,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      gap: 3px 5px;
-      padding: 5px;
+      gap: 3px 4px;
+      padding: 4px;
       li {
         height: 30px;
         min-width: 15%;
@@ -89,7 +89,7 @@
           width: 100%;
           overflow: hidden;
           background: #fff;
-          padding: 0 5px;
+          padding: 0 4px;
           &:hover {
             box-shadow: 0 0 7px 2px inset rgba(0, 0, 0, 0.2);
           }
@@ -97,7 +97,7 @@
           img {
             height: 100%;
             width: fit-content;
-            border-radius: 5px;
+            border-radius: 4px;
           }
         }
       }

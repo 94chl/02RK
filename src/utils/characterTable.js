@@ -1,11 +1,31 @@
 import mastery from "~/json/mastery.json";
 import modeModifier from "~/json/modeModifier.json";
-import { callApi } from "./utils";
+import { callApi, corsApi } from "./utils";
 
 export const generateCharacterData = async () => {
   const stats = await callApi("data/Character");
   const levelUpStats = await callApi("data/CharacterLevelUpStat");
   return { stats, levelUpStats };
+};
+
+const langTest = async () => {
+  const { l10Path } = await callApi("l10n/Korean");
+  const language = await corsApi(l10Path);
+  const result = language.split("\r\n").reduce((acc, cur) => {
+    if (!cur.includes("┃")) {
+      return acc;
+    }
+    const [key, value] = cur.split("┃");
+    if (
+      key.includes("Character/") ||
+      key.includes("Skill/") ||
+      key.includes("Skills/") ||
+      key.includes("Trait")
+    ) {
+      acc[key] = value;
+    }
+    return acc;
+  }, {});
 };
 
 export const masteryData = mastery;

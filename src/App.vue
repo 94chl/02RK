@@ -84,34 +84,34 @@
   }
 
   .valueW {
-    border: 1px solid #000;
-    background: #fff;
-    color: #000;
+    border: 1px solid #000 !important;
+    background: #fff !important;
+    color: #000 !important;
   }
   .valueG {
-    border: 1px solid #55dd55;
-    background: #55dd55;
-    color: #fff;
+    border: 1px solid #55dd55 !important;
+    background: #55dd55 !important;
+    color: #fff !important;
   }
   .valueB {
-    border: 1px solid #4c70d4;
-    background: #4c70d4;
-    color: #fff;
+    border: 1px solid #4c70d4 !important;
+    background: #4c70d4 !important;
+    color: #fff !important;
   }
   .valueP {
-    border: 1px solid #ba70f7;
-    background: #ba70f7;
-    color: #ffee00;
+    border: 1px solid #ba70f7 !important;
+    background: #ba70f7 !important;
+    color: #ffee00 !important;
   }
   .valueY {
-    border: 1px solid #ffee00;
-    background: #ffee00;
-    color: #ff0000;
+    border: 1px solid #ffee00 !important;
+    background: #ffee00 !important;
+    color: #ff0000 !important;
   }
   .valueR {
-    border: 1px solid #ffee00;
-    background: #ff0000;
-    color: #fff;
+    border: 1px solid #ffee00 !important;
+    background: #ff0000 !important;
+    color: #fff !important;
   }
 
   img {
@@ -141,7 +141,7 @@
     .tabName {
       height: 30px;
       line-height: 30px;
-      text-indent: 5px;
+      text-indent: 4px;
       font-weight: bold;
       color: $color3;
       font-size: 1.2rem;
@@ -173,7 +173,7 @@
       > div {
         margin-bottom: 10px;
         background: $color2;
-        border-radius: 5px;
+        border-radius: 4px;
         box-shadow: 0 1px 1px 0 $color1;
         &.modals {
           margin-bottom: 0;

@@ -643,9 +643,9 @@
         button {
           background: none;
           color: $color3;
-          border-radius: 5px;
+          border-radius: 4px;
           @include fasIcon(25px);
-          margin-right: 5px;
+          margin-right: 4px;
           &.toggleSelectBtn {
             margin: 0;
 

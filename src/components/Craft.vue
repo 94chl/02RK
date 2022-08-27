@@ -115,7 +115,9 @@
                     }}</span>
                     <img
                       :class="showItemImg ? '' : 'hide'"
-                      :src="item.img"
+                      :src="
+                        require(`~/img/item/${item.sort}/${item.name.en}.webp`)
+                      "
                       :alt="`${item.name[language]}_img`"
                     />
                   </button>
@@ -288,6 +290,7 @@
                   name: item.name,
                   id: item.id,
                   img: item.img,
+                  sort: item.sort,
                 });
               } else {
                 remainTargetItems.push(item);
@@ -338,7 +341,7 @@
     &.active {
       @include active();
       z-index: inherit;
-      border-radius: 5px;
+      border-radius: 4px;
       border: 2px solid $color5;
       box-sizing: border-box;
       background: $color2;
@@ -349,7 +352,7 @@
     &.minimize {
       @include active();
       z-index: inherit;
-      border-radius: 5px;
+      border-radius: 4px;
       border: 2px solid $color5;
       box-sizing: border-box;
       background: $color2;
@@ -381,9 +384,9 @@
         button {
           background: none;
           color: $color3;
-          border-radius: 5px;
+          border-radius: 4px;
           @include fasIcon(25px);
-          margin-right: 5px;
+          margin-right: 4px;
           &:last-child {
             margin: 0;
           }
@@ -400,8 +403,8 @@
     .selectBox {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
-      padding: 5px;
+      gap: 4px;
+      padding: 4px;
       overflow: visible;
 
       .tabName {
@@ -416,10 +419,10 @@
         align-items: center;
 
         .deptButton {
-          margin: 2.5px 5px;
+          margin: 2.5px 4px;
           box-shadow: 0 0 1px 1px $color1;
-          border-radius: 5px;
-          padding: 5px 10px;
+          border-radius: 4px;
+          padding: 4px 10px;
           background: none;
           cursor: pointer;
 
@@ -446,7 +449,7 @@
           width: 100%;
           height: 100%;
           border: none;
-          border-radius: 5px;
+          border-radius: 4px;
         }
       }
 
@@ -456,13 +459,13 @@
           width: 100%;
           height: 100%;
           border: none;
-          border-radius: 5px;
+          border-radius: 4px;
         }
       }
 
       &_searchItem {
         height: 30px;
-        border-radius: 5px;
+        border-radius: 4px;
         box-shadow: 0 0 1px 1px $color1;
         &_btn {
           width: 100%;
@@ -483,17 +486,17 @@
         color: $color3;
         height: 25px;
         line-height: 25px;
-        margin: 5px 0;
-        padding: 0 5px;
+        margin: 4px 0;
+        padding: 0 4px;
       }
 
       .routesBox {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        border-radius: 5px;
+        gap: 4px;
+        border-radius: 4px;
         background: $color3;
-        padding: 5px 0;
+        padding: 4px 0;
 
         .area {
           display: grid;
@@ -509,32 +512,30 @@
             flex-direction: column;
             color: $color2;
             align-items: center;
-
-            div {
-              height: 100%;
-            }
+            justify-content: center;
 
             &::after {
-              height: 100%;
               content: "\2193";
             }
           }
 
           &_items {
             > ul {
-              margin-top: 5px;
+              margin-top: 4px;
               display: flex;
               flex-wrap: wrap;
-              gap: 5px;
+              gap: 4px;
 
               li {
                 width: fit-content;
-                border-radius: 5px;
+                border-radius: 6px;
 
                 .showItemInfoBtn {
+                  overflow: hidden;
+                  border-radius: 6px;
                   span {
                     display: block;
-                    padding: 5px;
+                    padding: 4px;
                   }
 
                   img {
@@ -544,6 +545,10 @@
 
                   .hide {
                     display: none;
+                  }
+
+                  &:hover {
+                    box-shadow: 0 0 12px 2px inset rgba(0, 0, 0, 0.2);
                   }
                 }
               }

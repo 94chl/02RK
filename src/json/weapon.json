@@ -2517,7 +2517,7 @@
         },
         "stack": 1,
         "material": ["BWG004", "BM004"],
-        "atk0": 80,
+        "atk0": 76,
         "uniq025": {
           "detail": {
             "kr": ["다음 기본 공격이 치명타로 적중", "쿨다운: 3초"],
@@ -2620,7 +2620,7 @@
         },
         "stack": 1,
         "material": ["GWG001", "PM009"],
-        "atk0": 110,
+        "atk0": 105,
         "atk_spd1": 0.1,
         "uniq008": {
           "detail": {
@@ -3420,7 +3420,7 @@
         "material": ["GWI003", "BT007"],
         "load0": 50,
         "atk0": 15,
-        "skill0": 62,
+        "skill0": 55,
         "grow_skill0": 3
       }
     ]
@@ -4485,7 +4485,7 @@
         "stack": 1,
         "material": ["BWL003", "WWQ001"],
         "atk0": 43,
-        "skill0": 47,
+        "skill0": 51,
         "grow_skill0": 2
       },
       {
@@ -4576,9 +4576,9 @@
           "cn": "靈光金龜神機弩"
         },
         "stack": 1,
-        "material": ["", ""],
+        "material": ["GWL001", "PM004"],
         "atk0": 51,
-        "skill0": 80,
+        "skill0": 85,
         "grow_skill0": 2
       }
     ]
@@ -5092,7 +5092,7 @@
         "load0": 30,
         "atk0": 32,
         "atk_spd1": 0.1,
-        "grow_basic_atk1": 0.012
+        "grow_basic_atk1": 0.008
       },
       {
         "id": "PWN002",

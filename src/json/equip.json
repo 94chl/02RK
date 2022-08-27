@@ -1438,7 +1438,7 @@
         "material": ["GH005", "GA005"],
         "skill0": 45,
         "hp0": 100,
-        "atk_spd1": 0.23
+        "atk_spd1": 0.28
       },
       {
         "id": "PH002",
@@ -1820,7 +1820,7 @@
         "stack": 1,
         "material": ["GH002", "PM009"],
         "atk0": 18,
-        "def0": 33,
+        "def0": 30,
         "mp0": 300,
         "uniq001": {
           "detail": {

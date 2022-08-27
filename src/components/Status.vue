@@ -282,6 +282,7 @@
   import { toFloat, toPercent } from "~/utils/utils";
   import { searchById, itemOptions } from "~/utils/itemTable";
   import { statusOptions, optionDictionary } from "~/utils/characterTable";
+  import ampl from "~/utils/amplitude.js";
   import Character from "./Character.vue";
 
   export default {
@@ -602,6 +603,7 @@
             const nextLevel =
               calculated > 20 ? 20 : calculated < 1 ? 1 : calculated;
             this[category] = nextLevel;
+            ampl.log("change level", { target: `${category} : ${nextLevel}` });
             return;
           default:
             if (typeof Number(value.target.value) !== "number") {
@@ -612,6 +614,7 @@
                 calculated > 20 ? 20 : calculated < 1 ? 1 : calculated;
               this[category] = nextLevel;
               value.target.value = nextLevel;
+              ampl.log("change level", { target: `${category} : ${nextLevel}` });
             }
             return;
         }

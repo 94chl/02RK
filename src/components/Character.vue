@@ -73,6 +73,7 @@
     getSessionStorage,
     setSessionStorage,
   } from "~/utils/useSessionStorage";
+  import ampl from "~/utils/amplitude.js";
 
   export default {
     data() {
@@ -117,6 +118,9 @@
         // levelUp.criticalChance === stats.criticalStrikeChance
         // 일단 유효한 값을 가진 캐릭이 없으니 넘어가자
 
+        if (!this.selectedCharacter) {
+          ampl.log("select character", { target: selectedCharacter.name });
+        }
         this.$store.dispatch("selectCharacter", selectedCharacter);
       },
     },

@@ -2573,7 +2573,7 @@
         "img": "https://lh3.google.com/u/0/d/1VXwJrFKSJSO3A2-2qCUwUDy0txQnVS1X",
         "location": false,
         "tobe": ["BD002", "BD005"],
-        "pickup": 3,
+        "pickup": 2,
         "limit": 6,
         "name": { "kr": "백주", "en": "Baijiu", "ja": "白酒", "cn": "白酒" },
         "stack": 1,

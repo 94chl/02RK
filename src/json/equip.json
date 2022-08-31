@@ -161,6 +161,7 @@
         "material": ["WC002", "WB002"],
         "def0": 5,
         "hp_reg1": 0.35,
+        "skill0": 10,
         "cool1": 0.07
       },
       {
@@ -343,6 +344,7 @@
         "material": ["GC005", "WM026"],
         "def0": 10,
         "hp_reg1": 0.35,
+        "skill0": 20,
         "cool1": 0.1
       },
       {
@@ -382,29 +384,9 @@
         "material": ["BC006", "WM008"],
         "def0": 10,
         "hp_reg1": 0.45,
+        "skill0": 25,
         "cool1": 0.12,
-        "vision0": 1,
-        "uniq033": {
-          "detail": {
-            "kr": [
-              "휴식을 2초 이상 지속시 보호막 적용",
-              "보호막: 45 + 캐릭터 레벨*6(근)/4.5(원)"
-            ],
-            "en": [
-              "Resting for 2 seconds grants a HP shield",
-              "Shield: 45 + Character Level*6(Melee)/4.5(Ranged)"
-            ],
-            "ja": [
-              "2秒間休息状態を続ける時",
-              "45+キャラクターレベル*6(近)/4.5(遠)のシールドを獲得"
-            ],
-            "cn": [
-              "Resting for 2 seconds grants a HP shield",
-              "Shield: 45 + Character Level*6(Melee)/4.5(Ranged)"
-            ]
-          },
-          "value": 45
-        }
+        "vision0": 1
       },
       {
         "id": "PC001",
@@ -609,8 +591,9 @@
         "stack": 1,
         "material": ["BC007", "GC005"],
         "def0": 25,
-        "hp0": 115,
+        "hp0": 105,
         "hp_reg1": 0.6,
+        "skill0": 10,
         "cool1": 0.1
       },
       {
@@ -649,9 +632,10 @@
         },
         "stack": 1,
         "material": ["BC006", "BD001"],
-        "def0": 17,
+        "def0": 10,
         "hp_reg1": 0.5,
         "mp_reg1": 0.85,
+        "skill0": 25,
         "cool1": 0.15,
         "uniq007": {
           "detail": {
@@ -802,8 +786,9 @@
         },
         "stack": 1,
         "material": ["GC005", "PM001"],
-        "def0": 29,
+        "def0": 25,
         "hp_reg1": 1,
+        "skill0": 40,
         "cool1": 0.3,
         "uniq007": {
           "detail": {
@@ -960,28 +945,28 @@
           "ja": "マイだけが制作できる。",
           "cn": "只有梅才能製作"
         },
-        "atk0": 18,
+        "atk0": 23,
         "def0": 25,
         "uniq030": {
           "detail": {
             "kr": [
               "전투에 돌입하면 매 초마다 2.5m 이내의 적에게 피해를 입힘",
-              "피해량: 착용자 최대 체력의 5%(근)/4%(원)"
+              "피해량: 착용자 최대 체력의 4.5%(근)/3.5%(원)"
             ],
             "en": [
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
-              "Damage: 5%(Melee)/4%(Ranged) of User's Max HP"
+              "Damage: 4.5%(Melee)/3.5%(Ranged) of User's Max HP"
             ],
             "ja": [
               "戦闘に突入すると1秒ごとに周り2.5mの敵に固有ダメージ",
-              "ダメージ:最大体力の5%(近)/4%(遠)"
+              "ダメージ:最大体力の4.5%(近)/3.5%(遠)"
             ],
             "cn": [
               "Deals cellular damage to enemies in a 2.5m range every 1second when in combat",
-              "Damage: 5%(Melee)/4%(Ranged) of User's Max HP"
+              "Damage: 4.5%(Melee)/3.5%(Ranged) of User's Max HP"
             ]
           },
-          "value": 0.055
+          "value": 0.045
         }
       },
       {
@@ -2991,7 +2976,7 @@
         "stack": 1,
         "material": ["BS003", "WA001"],
         "hp_reg1": 0.25,
-        "atk_spd1": 0.32,
+        "atk_spd1": 0.28,
         "move_spd0": 0.27
       },
       {
@@ -3241,7 +3226,20 @@
         "material": ["GS003", "PM001"],
         "atk0": 22,
         "vamp_all1": 0.15,
-        "move_spd0": 0.35
+        "move_spd0": 0.35,
+        "uniq013": {
+          "detail": {
+            "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
+            "en": [
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
+            "ja": ["基本攻撃を受けた対象の治癒効果が減少:40%(近)/30%(遠)"],
+            "cn": [
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
+          },
+          "value": 0.4
+        }
       },
       {
         "id": "YS005",
@@ -3705,7 +3703,7 @@
         },
         "stack": 1,
         "material": ["GA009", "WA001"],
-        "skill0": 20,
+        "skill0": 17,
         "uniq009": {
           "detail": {
             "kr": ["+0.04"],
@@ -3810,7 +3808,7 @@
         "stack": 1,
         "material": ["GA010", "GM009"],
         "atk0": 10,
-        "skill0": 30
+        "skill0": 32
       },
       {
         "id": "BA008",
@@ -3863,7 +3861,7 @@
         "stack": 1,
         "material": ["GA006", "GA001"],
         "atk0": 8,
-        "skill0": 22,
+        "skill0": 24,
         "cool1": 0.08,
         "active003": {
           "detail": {
@@ -4023,7 +4021,7 @@
         },
         "stack": 1,
         "material": ["BA004", "GC004"],
-        "hp0": 180,
+        "hp0": 160,
         "def0": 9
       },
       {
@@ -4042,8 +4040,33 @@
         },
         "stack": 1,
         "material": ["WA006", "BM003"],
-        "hp0": 175,
-        "atk_spd1": 0.2
+        "hp0": 130,
+        "atk_spd1": 0.28,
+        "uniq037": {
+          "detail": {
+            "kr": [
+              "매 기본 공격마다 5초 동안 전자기 충격 스택을 얻습니다(최대 2회 충전)",
+              "최대 충전된 상태로 기본 공격하거나, 보호막이 있는 대상을 기본 공격할 때 추가 고유 피해를 입히고 모든 전자기 충격 스택을 잃습니다",
+              "피해량: 적 최대 체력의 2%(근)/1.5%(원)+20~58(캐릭터 레벨 비례)"
+            ],
+            "en": [
+              "Grants a stack of Electric Shock for 5 seconds per basic attack. (Maximum 2 times)",
+              "Basic attacks with maximum stacks or towards a shielded enemy deal additional cellular damage and remove all your Electric Shock stacks.",
+              "Damage: 2%(Melee)/1.5%(Ranged) Enemy’s Max HP+20~58(Proportional to Character Level)"
+            ],
+            "ja": [
+              "基本攻撃するたびに5秒間電撃スタックを獲得します。(最大2回までチャージ)",
+              "最大チャージされた状態で基本攻撃したり、シールドがある対象を基本攻撃すると、追加固有ダメージを与え、すべての電撃スタックは消滅します。",
+              "ダメージ量: 敵最大体力の2%(近)/1.5%(遠)+20~58(キャラクターレベル比例)"
+            ],
+            "cn": [
+              "Grants a stack of Electric Shock for 5 seconds per basic attack. (Maximum 2 times)",
+              "Basic attacks with maximum stacks or towards a shielded enemy deal additional cellular damage and remove all your Electric Shock stacks.",
+              "Damage: 2%(Melee)/1.5%(Ranged) Enemy’s Max HP+20~58(Proportional to Character Level)"
+            ]
+          },
+          "value": 58
+        }
       },
       {
         "id": "BA015",
@@ -4360,7 +4383,7 @@
         },
         "stack": 1,
         "material": ["WM008", "PM006"],
-        "skill0": 25,
+        "skill0": 35,
         "vision0": 1,
         "uniq001": {
           "detail": {

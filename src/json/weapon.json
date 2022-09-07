@@ -625,7 +625,7 @@
         },
         "stack": 1,
         "material": ["BWB004", "PM007"],
-        "atk0": 62,
+        "atk0": 59,
         "grow_basic_atk1": 0.02
       },
       {
@@ -3248,7 +3248,7 @@
         "stack": 1,
         "material": ["BWI002", "GD009"],
         "load0": 30,
-        "atk0": 73,
+        "atk0": 70,
         "atk_spd1": 0.3
       },
       {
@@ -3698,7 +3698,7 @@
         "material": ["BWJ001", "GM011"],
         "load0": 20,
         "atk0": 44,
-        "skill0": 38,
+        "skill0": 31,
         "grow_skill0": 2,
         "uniq006": {
           "detail": {
@@ -3765,7 +3765,7 @@
         "material": ["BWJ004", "WM010"],
         "load0": 50,
         "atk0": 41,
-        "skill0": 30,
+        "skill0": 34,
         "grow_skill0": 2,
         "cool1": 0.15,
         "uniq007": {
@@ -3817,7 +3817,7 @@
         "material": ["BWJ002", "BM002"],
         "load0": 50,
         "atk0": 30,
-        "skill0": 30,
+        "skill0": 36,
         "grow_skill0": 2,
         "cool1": 0.08,
         "uniq014": {
@@ -3898,7 +3898,7 @@
         },
         "stack": 1,
         "material": ["GWJ003", "PM009"],
-        "atk0": 80,
+        "atk0": 74,
         "uniq002": {
           "detail": {
             "kr": [
@@ -3995,7 +3995,7 @@
         "material": ["BWJ001", "PM003"],
         "load0": 20,
         "atk0": 63,
-        "skill0": 70,
+        "skill0": 65,
         "grow_skill0": 2,
         "uniq006": {
           "detail": {
@@ -4587,7 +4587,7 @@
         },
         "stack": 1,
         "material": ["GWL001", "PM004"],
-        "atk0": 98,
+        "atk0": 92,
         "atk_spd1": 0.2,
         "vision0": 1.5,
         "uniq003": {
@@ -5932,7 +5932,7 @@
         },
         "stack": 1,
         "material": ["GWQ001", "PM007"],
-        "atk0": 95,
+        "atk0": 91,
         "grow_basic_atk1": 0.02
       },
       {

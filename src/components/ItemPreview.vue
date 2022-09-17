@@ -3,7 +3,11 @@
     <div class="itemPreview_info">
       <div class="imgInfo">
         <img
-          :src="require(`~/img/item/${cartItem.sort}/${cartItem.name.en}.webp`)"
+          :src="
+            require(`~/img/item/${cartItem.sort}/${(
+              cartItem.name.en || ''
+            ).replace('\'', '_')}.webp`)
+          "
           :alt="`${cartItem.name[language]}_img`"
           :title="`${cartItem.name[language]}_img`"
         />

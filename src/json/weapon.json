@@ -349,7 +349,7 @@
         "stack": 1,
         "material": ["GWA003", "PM009"],
         "atk0": 45,
-        "skill0": 95,
+        "skill0": 90,
         "grow_skill0": 2,
         "move_spd0": 0.1
       }
@@ -468,7 +468,7 @@
         },
         "stack": 1,
         "material": ["BWB001", "WM013"],
-        "atk0": 50
+        "atk0": 43
       },
       {
         "id": "BWB004",
@@ -486,7 +486,7 @@
         },
         "stack": 1,
         "material": ["GM001", "WWB001"],
-        "atk0": 45
+        "atk0": 38
       },
       {
         "id": "BWB005",
@@ -711,22 +711,22 @@
           "detail": {
             "kr": [
               "기본 공격 적중 시, 대상에게 80의 고유 피해 ",
-              "대상은 2초간 30% 둔화",
+              "대상은 1.5초간 35% 둔화",
               "쿨다운: 6초"
             ],
             "en": [
               "Your next basic attack deals 80 extra cellular damage",
-              "Slows your target by 30% for 2 seconds",
+              "Slows your target by 35% for 1.5 seconds",
               "Cooldown: 6s"
             ],
             "ja": [
               "次に加える基本攻撃が80の追加固有ダメージ",
-              "2秒間移動速度を30%だけ減少",
+              "1.5秒間移動速度を35%だけ減少",
               "クールダウン:6秒"
             ],
             "cn": [
               "Your next basic attack deals 80 extra cellular damage",
-              "Slows your target by 30% for 2 seconds",
+              "Slows your target by 35% for 1.5 seconds",
               "Cooldown: 6s"
             ]
           },
@@ -1104,24 +1104,24 @@
               "공격 속도: 8% 증가",
               "지속 시간: 5초",
               "최대 3스택",
-              "최대 스택: 공격력 +20, 이동속도 +0.2"
+              "최대 스택: 공격력 +10, 이동속도 +0.1"
             ],
             "en": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 8%",
               "Duration: 5s",
-              "At 3 stacks, you gain extra 20 Attack Power and 0.2 Movement speed"
+              "At 3 stacks, you gain extra 10 Attack Power and 0.1 Movement speed"
             ],
             "ja": [
               "重畳された情熱スタックにつき",
               "攻撃速度:+8%",
-              "最大3重畳すると、20の攻撃力と0.2の移動速度を追加"
+              "最大3重畳すると、10の攻撃力と0.1の移動速度を追加"
             ],
             "cn": [
               "Each stack of Vigor",
               "Increases your Attack Speed by 8%",
               "Duration: 5s",
-              "At 3 stacks, you gain extra 20 Attack Power and 0.2 Movement speed"
+              "At 3 stacks, you gain extra 10 Attack Power and 0.1 Movement speed"
             ]
           },
           "value": 0.08
@@ -1192,7 +1192,7 @@
         "stack": 1,
         "material": ["GWC002", "PM009"],
         "atk0": 103,
-        "atk_spd1": 0.2,
+        "atk_spd1": 0.35,
         "uniq011": {
           "detail": {
             "kr": ["군중제어 효과 지속 시간 30% 감소"],
@@ -1264,7 +1264,7 @@
         "stack": 1,
         "material": ["WWD001", "GM009"],
         "atk0": 28,
-        "vamp1": 0.1
+        "vamp1": 0.07
       },
       {
         "id": "BWD002",
@@ -1282,7 +1282,7 @@
         },
         "stack": 1,
         "material": ["WWD001", "BB001"],
-        "atk0": 35
+        "atk0": 28
       },
       {
         "id": "PWD001",
@@ -1415,7 +1415,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 80 + 스킬 증폭*0.2",
+              "피해량: 85 + 스킬 증폭*0.15",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간이 1초 감소",
               "쿨다운: 2초"
@@ -1423,7 +1423,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 80 + Skill Amplification*0.2",
+              "Damage: 85 + Skill Amplification*0.15",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -1431,7 +1431,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:80+スキル増幅*0.2",
+              "ダメージ:85+スキル増幅*0.15",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -1439,22 +1439,13 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 80 + Skill Amplification*0.2",
+              "Damage: 85 + Skill Amplification*0.15",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ]
           },
           "value": 80
-        },
-        "buff006": {
-          "detail": {
-            "kr": ["이동속도: 4% 감소", "지속시간: 4초"],
-            "en": ["Slowing by 4%", "Duration: 4s"],
-            "ja": ["移動速度:4%減少", "4秒間"],
-            "cn": ["Slowing by 4%", "Duration: 4s"]
-          },
-          "value": 0.04
         }
       },
       {
@@ -1783,7 +1774,6 @@
         "atk0": 42,
         "def0": 4,
         "hp_reg1": 0.6,
-        "mp_reg0": 1.2,
         "uniq002": {
           "detail": {
             "kr": [
@@ -1936,7 +1926,7 @@
           "cn": "天蠶手套"
         },
         "stack": 1,
-        "material": ["PT005", "GWE001"],
+        "material": ["PT010", "GWE001"],
         "atk0": 81,
         "move_spd0": 0.1
       },
@@ -2183,7 +2173,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 80 + 스킬 증폭*0.2",
+              "피해량: 85 + 스킬 증폭*0.15",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간이 1초 감소",
               "쿨다운: 2초"
@@ -2191,7 +2181,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 80 + Skill Amplification*0.2",
+              "Damage: 85 + Skill Amplification*0.15",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -2199,7 +2189,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:80+スキル増幅*0.2",
+              "ダメージ:85+スキル増幅*0.15",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -2207,22 +2197,13 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 80 + Skill Amplification*0.2",
+              "Damage: 85 + Skill Amplification*0.15",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ]
           },
           "value": 80
-        },
-        "buff006": {
-          "detail": {
-            "kr": ["이동속도: 4% 감소", "지속시간: 4초"],
-            "en": ["Slowing by 4%", "Duration: 4s"],
-            "ja": ["移動速度:4%減少", "4秒間"],
-            "cn": ["Slowing by 4%", "Duration: 4s"]
-          },
-          "value": 0.04
         }
       },
       {
@@ -2240,7 +2221,7 @@
           "cn": "風行者"
         },
         "stack": 1,
-        "material": ["GWF001", "PT005"],
+        "material": ["GWF001", "PT010"],
         "atk0": 42,
         "skill0": 60,
         "grow_skill0": 2,
@@ -2481,7 +2462,6 @@
         "stack": 1,
         "material": ["BWG002", "GM007"],
         "atk0": 48,
-        "mp_reg0": 0.8,
         "skill0": 35,
         "grow_skill0": 2,
         "uniq014": {
@@ -2562,7 +2542,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 40 + 스킬 증폭*0.15",
+              "피해량: 45 + 스킬 증폭*0.1",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
@@ -2570,7 +2550,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 40 + Skill Amplification*0.15",
+              "Damage: 45 + Skill Amplification*0.1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -2578,7 +2558,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:40+スキル増幅*0.15",
+              "ダメージ:45+スキル増幅*0.1",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -2586,22 +2566,13 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 40 + Skill Amplification*0.15",
+              "Damage: 45 + Skill Amplification*0.1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ]
           },
           "value": 40
-        },
-        "buff006": {
-          "detail": {
-            "kr": ["이동속도: 4% 감소", "지속시간: 4초"],
-            "en": ["Slowing by 4%", "Duration: 4s"],
-            "ja": ["移動速度:4%減少", "4秒間"],
-            "cn": ["Slowing by 4%", "Duration: 4s"]
-          },
-          "value": 0.04
         }
       },
       {
@@ -2740,7 +2711,7 @@
         "stack": 1,
         "material": ["GWH002", "WM009"],
         "atk0": 35,
-        "atk_spd1": 0.15
+        "atk_spd1": 0.1
       },
       {
         "id": "PWH001",
@@ -3042,7 +3013,7 @@
         },
         "stack": 1,
         "material": ["WWI002", "WM022"],
-        "atk0": 30
+        "atk0": 14
       },
       {
         "id": "BWI001",
@@ -3705,7 +3676,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 40 + 스킬 증폭*0.15",
+              "피해량: 45 + 스킬 증폭*0.1",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
@@ -3713,7 +3684,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 40 + Skill Amplification*0.15",
+              "Damage: 45 + Skill Amplification*0.1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -3721,7 +3692,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:40+スキル増幅*0.15",
+              "ダメージ:45+スキル増幅*0.1",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -3729,22 +3700,13 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 40 + Skill Amplification*0.15",
+              "Damage: 45 + Skill Amplification*0.1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ]
           },
           "value": 40
-        },
-        "buff006": {
-          "detail": {
-            "kr": ["이동속도: 4% 감소", "지속시간: 4초"],
-            "en": ["Slowing by 4%", "Duration: 4s"],
-            "ja": ["移動速度:4%減少", "4秒間"],
-            "cn": ["Slowing by 4%", "Duration: 4s"]
-          },
-          "value": 0.04
         }
       },
       {
@@ -4002,7 +3964,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 80 + 스킬 증폭*0.2",
+              "피해량: 85 + 스킬 증폭*0.15",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간이 1초 감소",
               "쿨다운: 2초"
@@ -4010,7 +3972,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 80 + Skill Amplification*0.2",
+              "Damage: 85 + Skill Amplification*0.15",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -4018,7 +3980,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:80+スキル増幅*0.2",
+              "ダメージ:85+スキル増幅*0.15",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -4026,22 +3988,13 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 80 + Skill Amplification*0.2",
+              "Damage: 85 + Skill Amplification*0.15",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ]
           },
           "value": 80
-        },
-        "buff006": {
-          "detail": {
-            "kr": ["이동속도: 4% 감소", "지속시간: 4초"],
-            "en": ["Slowing by 4%", "Duration: 4s"],
-            "ja": ["移動速度:4%減少", "4秒間"],
-            "cn": ["Slowing by 4%", "Duration: 4s"]
-          },
-          "value": 0.04
         }
       }
     ]
@@ -4090,7 +4043,7 @@
         "name": { "kr": "장궁", "en": "Longbow", "ja": "長弓", "cn": "長弓" },
         "stack": 1,
         "material": ["WWK001", "WM004"],
-        "atk0": 25
+        "atk0": 17
       },
       {
         "id": "BWK001",
@@ -4135,7 +4088,7 @@
         },
         "stack": 1,
         "material": ["GWK001", "WM011"],
-        "atk0": 35
+        "atk0": 30
       },
       {
         "id": "BWK003",
@@ -4191,7 +4144,8 @@
         },
         "stack": 1,
         "material": ["GWK001", "GM012"],
-        "atk0": 55
+        "atk0": 35,
+        "cool1": 0.06
       },
       {
         "id": "BWK006",
@@ -4488,7 +4442,7 @@
         },
         "stack": 1,
         "material": ["GWL001", "GM001"],
-        "atk0": 55
+        "atk0": 40
       },
       {
         "id": "BWL004",
@@ -4519,7 +4473,7 @@
         },
         "stack": 1,
         "material": ["BWL004", "GM002"],
-        "atk0": 63,
+        "atk0": 58,
         "hp_reg1": 0.9,
         "atk_spd1": 0.4
       },
@@ -4559,7 +4513,7 @@
         },
         "stack": 1,
         "material": ["BWL002", "GA005"],
-        "atk0": 71,
+        "atk0": 65,
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
@@ -4728,7 +4682,7 @@
         },
         "stack": 1,
         "material": ["GWM001", "WWM001"],
-        "atk0": 30,
+        "atk0": 22,
         "atk_spd1": 0.1,
         "move_spd0": 0.04
       },
@@ -4770,7 +4724,7 @@
         "stack": 1,
         "material": ["WWM001", "GT003"],
         "load0": 2,
-        "atk0": 50,
+        "atk0": 40,
         "move_spd0": 0.04
       },
       {
@@ -4811,11 +4765,10 @@
           "cn": "電子光束槍"
         },
         "stack": 1,
-        "material": ["GWM002", "BM005"],
+        "material": ["GWM002", "BM001"],
         "load0": 12,
-        "atk0": 51,
-        "grow_basic_atk1": 0.012,
-        "atk_spd1": 0.35,
+        "atk0": 74,
+        "atk_spd1": 0.4,
         "move_spd0": 0.06
       },
       {
@@ -5073,7 +5026,7 @@
         "sort": "rifle",
         "img": "https://lh3.google.com/u/0/d/1Y1Xxj3ngmnnGMq0kGPLzBcuz8Ueho1N0",
         "location": ["A008", "A011", "A014"],
-        "tobe": ["GWN001", "BWU003", "GA012"],
+        "tobe": ["GWN001", "GWU002", "GA012"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -6185,7 +6138,7 @@
         "stack": 1,
         "material": ["BWR001", "GM007"],
         "atk0": 37,
-        "skill0": 35,
+        "skill0": 40,
         "grow_skill0": 2,
         "uniq014": {
           "detail": {
@@ -6213,7 +6166,7 @@
         },
         "stack": 1,
         "material": ["BWR002", "BM003"],
-        "atk0": 55,
+        "atk0": 59,
         "atk_spd1": 0.5
       },
       {
@@ -6232,7 +6185,7 @@
         },
         "stack": 1,
         "material": ["BWR002", "GA002"],
-        "atk0": 44,
+        "atk0": 47,
         "cri_rate1": 0.23,
         "cool1": 0.1,
         "uniq013": {
@@ -6283,7 +6236,7 @@
         },
         "stack": 1,
         "material": ["GWR001", "PM009"],
-        "atk0": 80,
+        "atk0": 85,
         "uniq008": {
           "detail": {
             "kr": ["+0.5"],
@@ -6292,6 +6245,15 @@
             "cn": ["+0.5"]
           },
           "value": 0.5
+        },
+        "uniq013": {
+          "detail": {
+            "kr": ["기본 공격 시, 대상의 치유 효과가 4초간 40% 감소"],
+            "en": ["Basic attacks reduce target's healing received by 40%"],
+            "ja": ["基本攻撃を受けた対象の治癒効果が40%減少"],
+            "cn": ["Basic attacks reduce target's healing received by 40%"]
+          },
+          "value": 0.4
         }
       }
     ]
@@ -6495,9 +6457,8 @@
         },
         "stack": 1,
         "material": ["BWS002", "GA012"],
-        "atk0": 53,
+        "atk0": 54,
         "cri_rate1": 0.24,
-        "mp_reg0": 1,
         "uniq008": {
           "detail": {
             "kr": ["+0.6"],
@@ -7005,7 +6966,7 @@
         "sort": "camera",
         "img": "https://lh3.google.com/u/0/d/1Z6aIZEc0UQOXRtbmX-eObP1QntSWpU7K",
         "location": false,
-        "tobe": ["BWU001", "BWU003", "PWU004", "YWU001"],
+        "tobe": ["BWU001", "PWU004", "YWU001"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -7017,6 +6978,34 @@
         "stack": 1,
         "material": ["WWU001", "WWM001"],
         "atk0": 19,
+        "vision0": 1
+      },
+      {
+        "id": "GWU002",
+        "sort": "camera",
+        "img": "https://lh3.google.com/u/0/d/1hTOavCinSuV_xRF4VCmNqQHYJCcaBYvM",
+        "location": false,
+        "tobe": ["YWU002"],
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "카메라 라이플",
+          "en": "Carbine Camera",
+          "ja": "カメラライフル",
+          "cn": "狙擊攝影機"
+        },
+        "stack": 1,
+        "material": ["WWU001", "WWN001"],
+        "atk0": 25,
+        "uniq008": {
+          "detail": {
+            "kr": ["+0.5"],
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
+          },
+          "value": 0.5
+        },
         "vision0": 1
       },
       {
@@ -7054,37 +7043,9 @@
         },
         "stack": 1,
         "material": ["GA005", "GB004"],
-        "atk0": 40,
+        "atk0": 20,
         "cool1": 0.06,
-        "vision0": 2
-      },
-      {
-        "id": "BWU003",
-        "sort": "camera",
-        "img": "https://lh3.google.com/u/0/d/1hTOavCinSuV_xRF4VCmNqQHYJCcaBYvM",
-        "location": false,
-        "tobe": ["PWU003"],
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "카메라 라이플",
-          "en": "Carbine Camera",
-          "ja": "カメラライフル",
-          "cn": "狙擊攝影機"
-        },
-        "stack": 1,
-        "material": ["GWU001", "WWN001"],
-        "atk0": 40,
-        "uniq008": {
-          "detail": {
-            "kr": ["+0.5"],
-            "en": ["+0.5"],
-            "ja": ["+0.5"],
-            "cn": ["+0.5"]
-          },
-          "value": 0.5
-        },
-        "vision0": 2
+        "vision0": 1
       },
       {
         "id": "PWU001",
@@ -7160,35 +7121,6 @@
           },
           "value": 1
         }
-      },
-      {
-        "id": "PWU003",
-        "sort": "camera",
-        "img": "https://lh3.google.com/u/0/d/1-GzihPARX9jeOqHKh3ermYihbO5D5t4x",
-        "location": false,
-        "tobe": false,
-        "pickup": 1,
-        "limit": 1,
-        "name": {
-          "kr": "카메라 캐논",
-          "en": "Cannon Camera",
-          "ja": "カメラキャノン",
-          "cn": "高倍望遠大砲"
-        },
-        "stack": 1,
-        "material": ["BWU003", "BA004"],
-        "atk0": 45,
-        "uniq008": {
-          "detail": {
-            "kr": ["+1"],
-            "en": ["+1"],
-            "ja": ["+1"],
-            "cn": ["+1"]
-          },
-          "value": 1
-        },
-        "hp0": 200,
-        "vision0": 3.5
       },
       {
         "id": "PWU004",
@@ -7286,6 +7218,34 @@
           },
           "value": 0.35
         }
+      },
+      {
+        "id": "YWU002",
+        "sort": "camera",
+        "img": "https://lh3.google.com/u/0/d/1-GzihPARX9jeOqHKh3ermYihbO5D5t4x",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "카메라 캐논",
+          "en": "Cannon Camera",
+          "ja": "カメラキャノン",
+          "cn": "高倍望遠大砲"
+        },
+        "stack": 1,
+        "material": ["GWU002", "PM006"],
+        "atk0": 80,
+        "uniq008": {
+          "detail": {
+            "kr": ["+0.5"],
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
+          },
+          "value": 0.5
+        },
+        "vision0": 1.5
       }
     ]
   },
@@ -7405,7 +7365,7 @@
         "stack": 1,
         "material": ["GWV002", "WWA003"],
         "atk0": 20,
-        "skill0": 22,
+        "skill0": 12,
         "cool1": 0.08,
         "move_spd0": 0.04
       },
@@ -7491,7 +7451,7 @@
         "stack": 1,
         "material": ["BWV003", "GA002"],
         "atk0": 25,
-        "skill0": 10,
+        "skill0": 15,
         "grow_skill0": 2,
         "hp0": 125,
         "move_spd0": 0.06,
@@ -7548,7 +7508,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 40 + 스킬 증폭*0.15",
+              "피해량: 45 + 스킬 증폭*0.1",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
@@ -7556,7 +7516,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 40 + Skill Amplification*0.15",
+              "Damage: 45 + Skill Amplification*0.1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -7564,7 +7524,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:40+スキル増幅*0.15",
+              "ダメージ:45+スキル増幅*0.1",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -7572,22 +7532,13 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 40 + Skill Amplification*0.15",
+              "Damage: 45 + Skill Amplification*0.1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ]
           },
           "value": 40
-        },
-        "buff006": {
-          "detail": {
-            "kr": ["이동속도: 4% 감소", "지속시간: 4초"],
-            "en": ["Slowing by 4%", "Duration: 4s"],
-            "ja": ["移動速度:4%減少", "4秒間"],
-            "cn": ["Slowing by 4%", "Duration: 4s"]
-          },
-          "value": 0.04
         }
       },
       {
@@ -7768,7 +7719,7 @@
         },
         "stack": 1,
         "material": ["GWW001", "WWW001"],
-        "atk0": 35,
+        "atk0": 33,
         "vamp_all1": 0.1
       },
       {
@@ -7891,7 +7842,7 @@
         },
         "stack": 1,
         "material": ["BWW002", "WWW002"],
-        "atk0": 55,
+        "atk0": 50,
         "grow_hp0": 9,
         "vamp_all1": 0.12
       },
@@ -8172,7 +8123,7 @@
         },
         "stack": 1,
         "material": ["PWW002", "PM001"],
-        "atk0": 73,
+        "atk0": 71,
         "grow_hp0": 11,
         "vamp_all1": 0.17,
         "uniq010": {
@@ -8201,7 +8152,7 @@
         },
         "stack": 1,
         "material": ["PWW002", "PM006"],
-        "atk0": 63,
+        "atk0": 58,
         "grow_hp0": 11,
         "vamp_all1": 0.12,
         "uniq030": {
@@ -8246,7 +8197,7 @@
         },
         "stack": 1,
         "material": ["PWW002", "PM009"],
-        "atk0": 69,
+        "atk0": 67,
         "grow_hp0": 11,
         "vamp_all1": 0.17,
         "uniq011": {

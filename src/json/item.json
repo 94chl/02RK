@@ -6,7 +6,7 @@
         "id": "WM001",
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1iLBZzaRrz7-54oUzRG4H_XspDN37f7lc",
-        "location": ["A003", "A009", "A010"],
+        "location": ["A003", "A009", "A010", "A013"],
         "tobe": [
           "WWU001",
           "WWV001",
@@ -171,7 +171,7 @@
         "id": "WM009",
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/13qnlpmPDlE9sypfW20QpahtIrHjsuKHU",
-        "location": ["A003", "A008", "A010"],
+        "location": ["A003", "A008", "A010", "A014"],
         "tobe": ["BWH002", "GWT002", "GM008", "BM005", "BT005"],
         "pickup": 1,
         "limit": 3,
@@ -366,7 +366,7 @@
           "GM008",
           "GM014",
           "GT003",
-          "PT005"
+          "PT010"
         ],
         "pickup": 1,
         "limit": 3,
@@ -750,7 +750,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1tszZTpdU2D7640lJI70b5ZdWaSJWFwH4",
         "location": false,
-        "tobe": ["PWU004", "PS007", "YT002"],
+        "tobe": ["PWM003", "PWU004", "PS007", "PT005"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -786,7 +786,8 @@
           "PH001",
           "PS005",
           "PS009",
-          "BA014"
+          "BA014",
+          "BA017"
         ],
         "pickup": 1,
         "limit": 3,
@@ -816,7 +817,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1E2Gm8uU9-RCRwCG_hM97xeGbp-x93cZ1",
         "location": false,
-        "tobe": ["BWI003", "PWD003", "PWJ001", "PWM003", "PWP003", "PWQ002"],
+        "tobe": ["BWI003", "PWD003", "PWJ001", "PWP003", "PWQ002"],
         "pickup": 1,
         "limit": 3,
         "name": {
@@ -874,14 +875,15 @@
           "YWQ003",
           "YWW002",
           "YC006",
-          "YC009",
+          "YC019",
           "YH005",
+          "YH007",
           "YB006",
           "YS008",
           "YA009",
           "YA013",
           "YA014",
-          "PT005",
+          "PT010",
           "BF028"
         ],
         "pickup": 1,
@@ -961,11 +963,13 @@
         "tobe": [
           "YWD002",
           "YWS001",
+          "YWU002",
           "YWW005",
-          "PM008",
-          "PM007",
+          "YH008",
           "YA011",
           "YA017",
+          "PM008",
+          "PM007",
           "PM009",
           "PF003"
         ],
@@ -992,8 +996,9 @@
           "YWI002",
           "YWQ001",
           "YC001",
-          "YC007",
-          "YH001"
+          "YC017",
+          "YH001",
+          "YH009"
         ],
         "pickup": 1,
         "limit": 1,
@@ -1047,7 +1052,7 @@
           "YWU001",
           "YH002",
           "YC004",
-          "YC008",
+          "YC018",
           "YS003",
           "YB003",
           "YB005",
@@ -1312,7 +1317,7 @@
         "sort": "trap",
         "img": "https://lh3.google.com/u/0/d/1SgFAO7z2GHWIelMbaaxPj7BTosQOsRN_",
         "location": false,
-        "tobe": ["BWI007", "PT001", "PT002", "YT002"],
+        "tobe": ["BWI007", "PT001", "PT002", "PT005"],
         "pickup": 1,
         "limit": 5,
         "name": { "kr": "RDX", "en": "RDX", "ja": "RDX", "cn": "RDX 高能炸藥" },
@@ -1465,6 +1470,23 @@
       {
         "id": "PT005",
         "sort": "trap",
+        "img": "https://lh3.google.com/u/0/d/1_Kc3zLMG8IuenZgK02n_srj2Cb97P0LR",
+        "location": false,
+        "tobe": false,
+        "pickup": 2,
+        "limit": 5,
+        "name": {
+          "kr": "스마트 폭탄",
+          "en": "Smart Bomb",
+          "ja": "スマート爆弾",
+          "cn": "智能炸彈"
+        },
+        "stack": 2,
+        "material": ["BT001", "BM001"]
+      },
+      {
+        "id": "PT010",
+        "sort": "trap",
         "img": "https://lh3.google.com/u/0/d/11aGiQd7Zvo83IW1mBudemDJnyBF_a8Hm",
         "location": false,
         "tobe": ["YWE003", "YWF002"],
@@ -1495,23 +1517,6 @@
         },
         "stack": 3,
         "material": ["GT002", "PM009"]
-      },
-      {
-        "id": "YT002",
-        "sort": "trap",
-        "img": "https://lh3.google.com/u/0/d/1_Kc3zLMG8IuenZgK02n_srj2Cb97P0LR",
-        "location": false,
-        "tobe": false,
-        "pickup": 2,
-        "limit": 5,
-        "name": {
-          "kr": "스마트 폭탄",
-          "en": "Smart Bomb",
-          "ja": "スマート爆弾",
-          "cn": "智能炸彈"
-        },
-        "stack": 2,
-        "material": ["BT001", "BM001"]
       }
     ]
   },
@@ -2573,7 +2578,7 @@
         "img": "https://lh3.google.com/u/0/d/1VXwJrFKSJSO3A2-2qCUwUDy0txQnVS1X",
         "location": false,
         "tobe": ["BD002", "BD005"],
-        "pickup": 2,
+        "pickup": 1,
         "limit": 6,
         "name": { "kr": "백주", "en": "Baijiu", "ja": "白酒", "cn": "白酒" },
         "stack": 1,
@@ -2966,7 +2971,7 @@
         "img": "https://lh3.google.com/u/0/d/1cJigA2yJrdCtQK1F-u9Vlj4Vy2-223kb",
         "location": false,
         "tobe": false,
-        "pickup": 3,
+        "pickup": 1,
         "limit": 6,
         "name": {
           "kr": "컴뱃 에피네프린",

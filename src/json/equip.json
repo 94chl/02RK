@@ -169,7 +169,7 @@
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/12rCFPvA1aujQjRctOeB8TzZfBAkRhP9C",
         "location": false,
-        "tobe": ["BC004", "PC011", "YC001", "YC008"],
+        "tobe": ["BC004", "PC011", "YC001", "YC018"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -189,7 +189,7 @@
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1H38g-T7vGGQOsFhzpP3l2NTYFwmHXLXy",
         "location": false,
-        "tobe": ["PC005", "YC009"],
+        "tobe": ["PC005", "YC019"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -246,7 +246,7 @@
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1zJXwpJNHhHqE4cY_2mfxpnZufZg1cxJ1",
         "location": false,
-        "tobe": ["PC002", "YC007"],
+        "tobe": ["PC002", "YC017"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -329,7 +329,7 @@
         "stack": 1,
         "material": ["WC004", "GM001"],
         "def0": 17,
-        "hp0": 20
+        "hp0": 50
       },
       {
         "id": "BC006",
@@ -382,9 +382,9 @@
         },
         "stack": 1,
         "material": ["BC006", "WM008"],
-        "def0": 10,
+        "def0": 15,
         "hp_reg1": 0.45,
-        "skill0": 25,
+        "skill0": 30,
         "cool1": 0.12,
         "vision0": 1
       },
@@ -427,18 +427,15 @@
         "atk0": 22,
         "def0": 9,
         "non_combat_move_spd0": 0.08,
-        "uniq014": {
+        "uniq013": {
           "detail": {
-            "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
+            "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
             "en": [
-              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
             ],
-            "ja": [
-              "スキル攻撃のダメージを受けた対象の治癒効果が減少",
-              "40%(近)/30%(遠)"
-            ],
+            "ja": ["基本攻撃を受けた対象の治癒効果が減少:40%(近)/30%(遠)"],
             "cn": [
-              "Skills reduce target's healing received by 40%(Melee)/30%(Ranged)"
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
             ]
           },
           "value": 0.4
@@ -482,7 +479,7 @@
         "stack": 1,
         "material": ["BC005", "GC007"],
         "def0": 17,
-        "hp0": 105,
+        "hp0": 150,
         "skill_def1": 0.06
       },
       {
@@ -558,7 +555,7 @@
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1JJUve1pFR0PzSeuLJrEBfYLzO6iR88HS",
         "location": false,
-        "tobe": false,
+        "tobe": ["YC007"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -570,7 +567,7 @@
         "stack": 1,
         "material": ["BC007", "GC008"],
         "def0": 20,
-        "hp0": 70,
+        "hp0": 110,
         "skill_def1": 0.04,
         "basic_atk_def1": 0.05
       },
@@ -632,7 +629,7 @@
         },
         "stack": 1,
         "material": ["BC006", "BD001"],
-        "def0": 10,
+        "def0": 12,
         "hp_reg1": 0.5,
         "mp_reg1": 0.85,
         "skill0": 25,
@@ -665,8 +662,8 @@
         "material": ["BC004", "BD005"],
         "atk0": 12,
         "def0": 9,
-        "atk_spd1": 0.33,
-        "mp_reg0": 2
+        "atk_spd1": 0.28,
+        "mp_reg1": 1.5
       },
       {
         "id": "PC014",
@@ -684,8 +681,8 @@
         },
         "stack": 1,
         "material": ["BC002", "GM004"],
-        "def0": 22,
-        "hp0": 170,
+        "def0": 25,
+        "hp0": 200,
         "vision0": 1
       },
       {
@@ -706,7 +703,7 @@
         "material": ["GC009", "GM002"],
         "skill0": 50,
         "def0": 9,
-        "hp0": 100,
+        "hp0": 130,
         "mp_reg1": 0.5
       },
       {
@@ -766,7 +763,7 @@
         },
         "stack": 1,
         "material": ["PC007", "PM003"],
-        "skill0": 90,
+        "skill0": 85,
         "def0": 22,
         "vision0": 1
       },
@@ -926,6 +923,27 @@
       {
         "id": "YC007",
         "sort": "clothes",
+        "img": "https://lh3.google.com/u/0/d/1DukRe1hOS2nR1QO4_RJDHe8oC75Rigmu",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "가디언 슈트",
+          "en": "Guardian Suit",
+          "ja": "ガーディアンスーツ",
+          "cn": "守衛套裝"
+        },
+        "stack": 1,
+        "material": ["PC009", "PM009"],
+        "def0": 30,
+        "hp0": 150,
+        "skill_def1": 0.1,
+        "basic_atk_def1": 0.08
+      },
+      {
+        "id": "YC017",
+        "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1aDTO3SKs6MTdwsLhVZSowMSdSILvJJlI",
         "location": false,
         "tobe": false,
@@ -970,7 +988,7 @@
         }
       },
       {
-        "id": "YC008",
+        "id": "YC018",
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1g8aoJvI8ntuZ6M6xzg-E4rvttvtGd_aX",
         "location": false,
@@ -997,7 +1015,7 @@
         "mp_reg1": 1
       },
       {
-        "id": "YC009",
+        "id": "YC019",
         "sort": "clothes",
         "img": "https://lh3.google.com/u/0/d/1HTxr7By237HFN7zt_7Q8zRuxLKuOwo6a",
         "location": false,
@@ -1112,7 +1130,7 @@
         "id": "WH001",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1o_dmAKmRufs1-k_awigGI5GOUJGmx8X_",
-        "location": ["A003", "A004", "A007"],
+        "location": ["A003", "A004", "A007", "A011"],
         "tobe": ["GH001", "GH002"],
         "pickup": 1,
         "limit": 1,
@@ -1311,7 +1329,7 @@
         },
         "stack": 1,
         "material": ["GH005", "GD001"],
-        "hp0": 140,
+        "hp0": 120,
         "mp_reg1": 0.5
       },
       {
@@ -1410,7 +1428,7 @@
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1I7FDWluLE67oC07XbDOgT2j4-kd-hNcO",
         "location": false,
-        "tobe": false,
+        "tobe": ["YH007"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1443,7 +1461,7 @@
         "material": ["BH003", "GA003"],
         "cri_atk1": 0.05,
         "cri_rate1": 0.23,
-        "def0": 12,
+        "def0": 14,
         "mp0": 400
       },
       {
@@ -1451,7 +1469,7 @@
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1AjORQLZFcUcUIxft70FF-XYVFED1ecY-",
         "location": false,
-        "tobe": false,
+        "tobe": ["YH009"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1523,7 +1541,7 @@
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1BrIqUJ3UFbk0OFvoPALceA2kBu8A-BFV",
         "location": false,
-        "tobe": false,
+        "tobe": ["YH008"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1534,7 +1552,7 @@
         },
         "stack": 1,
         "material": ["BH005", "GM011"],
-        "skill0": 50,
+        "skill0": 60,
         "def0": 13,
         "mp0": 400,
         "cool1": 0.06,
@@ -1805,7 +1823,7 @@
         "stack": 1,
         "material": ["GH002", "PM009"],
         "atk0": 18,
-        "def0": 30,
+        "def0": 27,
         "mp0": 300,
         "uniq001": {
           "detail": {
@@ -1917,7 +1935,7 @@
         },
         "stack": 1,
         "material": ["GH001", "PM009"],
-        "skill0": 75,
+        "skill0": 70,
         "def0": 15,
         "move_spd0": 0.1,
         "mp0": 400,
@@ -1932,7 +1950,57 @@
         }
       },
       {
-        "id": "YH056",
+        "id": "YH007",
+        "sort": "helmet",
+        "img": "https://lh3.google.com/u/0/d/1k1kehLcspjdq1cRO4vuGLcfWDclYTCNw",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "레이싱 헬멧",
+          "en": "Racing Helmet",
+          "ja": "レーシングヘルメット",
+          "cn": "賽車安全帽"
+        },
+        "stack": 1,
+        "material": ["PH001", "PM002"],
+        "skill0": 65,
+        "hp0": 170,
+        "atk_spd1": 0.28
+      },
+      {
+        "id": "YH008",
+        "sort": "helmet",
+        "img": "https://lh3.google.com/u/0/d/1kyyBBxAit8DcXpqvShjbvbJHkvjVwFz5",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "예언자의 터번",
+          "en": "Sultan's Turban",
+          "ja": "預言者のターバン",
+          "cn": "先知頭巾"
+        },
+        "stack": 1,
+        "material": ["PH006", "PM006"],
+        "skill0": 90,
+        "def0": 13,
+        "mp0": 400,
+        "cool1": 0.06,
+        "uniq009": {
+          "detail": {
+            "kr": ["+0.06"],
+            "en": ["+0.06"],
+            "ja": ["+0.06"],
+            "cn": ["+0.06"]
+          },
+          "value": 0.06
+        }
+      },
+      {
+        "id": "YH009",
         "sort": "helmet",
         "img": "https://lh3.google.com/u/0/d/1VDzFZYZK2fK6KMlncgfoyciiRe9KDh4z",
         "location": false,
@@ -1946,17 +2014,11 @@
           "cn": "戰術面罩"
         },
         "stack": 1,
-        "atk0": 10,
+        "material": ["PH003", "PM007"],
         "def0": 15,
-        "cool1": 0.12,
-        "vision0": 1,
-        "range0": 0.5,
-        "only": {
-          "kr": "코발트 프로토콜",
-          "en": "Cobalt Protocol",
-          "ja": "コバルト·プロトコル",
-          "cn": "鈷協議"
-        }
+        "atk_spd1": 0.38,
+        "hp0": 125,
+        "cool1": 0.1
       }
     ]
   },
@@ -2129,7 +2191,7 @@
         },
         "stack": 1,
         "material": ["GB003", "GM010"],
-        "def0": 10,
+        "def0": 15,
         "basic_atk_def1": 0.02
       },
       {
@@ -2272,7 +2334,7 @@
         },
         "stack": 1,
         "material": ["BB002", "GB003"],
-        "skill0": 50,
+        "skill0": 53,
         "def0": 13,
         "hp_reg1": 0.3,
         "mp0": 240
@@ -2315,7 +2377,8 @@
         "stack": 1,
         "material": ["BB001", "GM004"],
         "atk0": 32,
-        "hp0": 120
+        "hp0": 120,
+        "penet1": 0.06
       },
       {
         "id": "PB007",
@@ -2334,7 +2397,7 @@
         "stack": 1,
         "material": ["BB004", "GB001"],
         "mp0": 300,
-        "hp0": 170,
+        "hp0": 200,
         "atk0": 8,
         "def0": 21
       },
@@ -2355,7 +2418,7 @@
         "stack": 1,
         "material": ["BB002", "GB004"],
         "mp0": 300,
-        "skill0": 50,
+        "skill0": 53,
         "cool1": 0.12
       },
       {
@@ -2374,7 +2437,7 @@
         },
         "stack": 1,
         "material": ["WB002", "BF021"],
-        "skill0": 45,
+        "skill0": 50,
         "hp0": 120,
         "heal_up1": 0.15
       },
@@ -2416,7 +2479,7 @@
         "material": ["BB006", "GM009"],
         "atk0": 30,
         "vamp1": 0.1,
-        "cool1": 0.12
+        "cool1": 0.15
       },
       {
         "id": "PB014",
@@ -2435,7 +2498,7 @@
         "stack": 1,
         "material": ["BB008", "BM004"],
         "cri_rate1": 0.2,
-        "def0": 17,
+        "def0": 15,
         "atk_spd1": 0.3
       },
       {
@@ -2489,10 +2552,10 @@
         },
         "stack": 1,
         "material": ["BB004", "PM008"],
-        "skill0": 85,
+        "skill0": 80,
         "hp0": 100,
         "mp0": 250,
-        "mp_reg0": 1.2,
+        "mp_reg1": 1,
         "uniq034": {
           "detail": {
             "kr": [
@@ -2555,6 +2618,7 @@
         "material": ["BB004", "PM001"],
         "hp0": 215,
         "mp0": 250,
+        "skill0": 35,
         "cool1": 0.25,
         "uniq007": {
           "detail": {
@@ -2657,22 +2721,22 @@
             "kr": [
               "매 기본 공격마다 5초 동안 전자기 충격 스택을 얻습니다(최대 2회 충전)",
               "최대 충전된 상태로 기본 공격하거나, 보호막이 있는 대상을 기본 공격할 때 추가 고유 피해를 입히고 모든 전자기 충격 스택을 잃습니다",
-              "피해량: 적 최대 체력의 4%(근)/3%(원)+30~78(캐릭터 레벨 비례)"
+              "피해량: 적 최대 체력의 4%(근)/3%(원)+30~106(캐릭터 레벨 비례)"
             ],
             "en": [
               "Grants a stack of Electric Shock for 5 seconds per basic attack. (Maximum 2 times)",
               "Basic attacks with maximum stacks or towards a shielded enemy deal additional cellular damage and remove all your Electric Shock stacks.",
-              "Damage: 4%(Melee)/3%(Ranged) Enemy’s Max HP+30~78(Proportional to Character Level)"
+              "Damage: 4%(Melee)/3%(Ranged) Enemy’s Max HP+30~106(Proportional to Character Level)"
             ],
             "ja": [
               "基本攻撃するたびに5秒間電撃スタックを獲得します。(最大2回までチャージ)",
               "最大チャージされた状態で基本攻撃したり、シールドがある対象を基本攻撃すると、追加固有ダメージを与え、すべての電撃スタックは消滅します。",
-              "ダメージ量: 敵最大体力の4%(近)/3%(遠)+30~78(キャラクターレベル比例)"
+              "ダメージ量: 敵最大体力の4%(近)/3%(遠)+30~106(キャラクターレベル比例)"
             ],
             "cn": [
               "Grants a stack of Electric Shock for 5 seconds per basic attack. (Maximum 2 times)",
               "Basic attacks with maximum stacks or towards a shielded enemy deal additional cellular damage and remove all your Electric Shock stacks.",
-              "Damage: 4%(Melee)/3%(Ranged) Enemy’s Max HP+30~78(Proportional to Character Level)"
+              "Damage: 4%(Melee)/3%(Ranged) Enemy’s Max HP+30~106(Proportional to Character Level)"
             ]
           },
           "value": 78
@@ -2997,7 +3061,7 @@
         "material": ["BS005", "GS002"],
         "atk0": 5,
         "def0": 5,
-        "cri_rate1": 0.2,
+        "cri_rate1": 0.16,
         "move_spd0": 0.27
       },
       {
@@ -3016,7 +3080,7 @@
         },
         "stack": 1,
         "material": ["BS003", "WM020"],
-        "hp_reg1": 0.2,
+        "hp_reg1": 0.25,
         "atk_spd1": 0.05,
         "move_spd0": 0.27,
         "uniq013": {
@@ -3089,7 +3153,7 @@
         },
         "stack": 1,
         "material": ["GS004", "BM001"],
-        "atk0": 15,
+        "atk0": 18,
         "move_spd0": 0.27,
         "uniq011": {
           "detail": {
@@ -3134,7 +3198,7 @@
         "stack": 1,
         "material": ["GS006", "BS002"],
         "def0": 10,
-        "hp_reg1": 0.4,
+        "hp_reg1": 0.5,
         "move_spd0": 0.27,
         "trap_def1": 0.1
       },
@@ -3467,7 +3531,7 @@
         },
         "stack": 1,
         "material": ["WM026", "WWJ002"],
-        "cri_rate1": 0.15,
+        "cri_rate1": 0.07,
         "cool1": 0.08
       },
       {
@@ -3507,7 +3571,7 @@
         "name": { "kr": "인형", "en": "Doll", "ja": "人形", "cn": "娃娃" },
         "stack": 1,
         "material": ["WA003", "WM012"],
-        "vamp1": 0.12,
+        "vamp1": 0.06,
         "mp_reg1": 0.5
       },
       {
@@ -3527,7 +3591,7 @@
         "stack": 1,
         "material": ["WM007", "WA009"],
         "atk0": 8,
-        "vision0": 1.5
+        "vision0": 1
       },
       {
         "id": "GA006",
@@ -3747,7 +3811,7 @@
         "stack": 1,
         "material": ["GA004", "WA004"],
         "skill0": 25,
-        "vamp_all1": 0.08,
+        "vamp_all1": 0.1,
         "mp_reg1": 0.7
       },
       {
@@ -3755,7 +3819,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1VVI4bSoZvIiuMav_ApoAsCPRdiP2FBVT",
         "location": false,
-        "tobe": ["PWN004", "PWU003", "BA013"],
+        "tobe": ["PWN004", "BA013"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "탄창", "en": "Magazine", "ja": "弾倉", "cn": "彈匣" },
@@ -3827,6 +3891,7 @@
         "stack": 1,
         "material": ["WA006", "BM002"],
         "hp0": 190,
+        "skill0": 7,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -3930,7 +3995,7 @@
         },
         "stack": 1,
         "material": ["GA012", "GA005"],
-        "atk0": 15,
+        "atk0": 18,
         "vision0": 1,
         "uniq035": {
           "detail": {
@@ -4089,7 +4154,7 @@
             "kr": [
               "스킬 공격을 가하면 적에게 <저주> 디버프를 부여",
               "<저주> 상태가 해제될 때, 고정 피해를 입힘",
-              "피해량: 40 + 스킬 증폭*0.15",
+              "피해량: 45 + 스킬 증폭*0.1",
               "한 번 <저주> 효과를 받은 적은 8초간 같은 효과를 받지 않음",
               "기본 공격 시 저주 대기시간 1초 감소",
               "쿨다운: 2초"
@@ -4097,7 +4162,7 @@
             "en": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 40 + Skill Amplification*0.15",
+              "Damage: 45 + Skill Amplification*0.1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
@@ -4105,7 +4170,7 @@
             "ja": [
               "スキル攻撃を加えると敵が＜呪い＞の状態になります。",
               "＜呪い＞の状態から解除されると固定ダメージ",
-              "ダメージ:40+スキル増幅*0.15",
+              "ダメージ:45+スキル増幅*0.1",
               "一度＜呪い＞の状態になると8秒間再び＜呪い＞の状態になりません。",
               "基本攻撃時1秒減少",
               "クールダウン:2秒"
@@ -4113,22 +4178,13 @@
             "cn": [
               "Hitting an enemy with a skill hexes them",
               "Dealing true damage when the hex expires",
-              "Damage: 40 + Skill Amplification*0.15",
+              "Damage: 45 + Skill Amplification*0.1",
               "Targets cannot be hexed again for 8 seconds",
               "Basic attacks reduce this cooldown by 1s",
               "Cooldown: 2s"
             ]
           },
           "value": 40
-        },
-        "buff006": {
-          "detail": {
-            "kr": ["이동속도: 4% 감소", "지속시간: 4초"],
-            "en": ["Slowing by 4%", "Duration: 4s"],
-            "ja": ["移動速度:4%減少", "4秒間"],
-            "cn": ["Slowing by 4%", "Duration: 4s"]
-          },
-          "value": 0.04
         }
       },
       {
@@ -4151,12 +4207,44 @@
         "cool1": 0.1,
         "uniq009": {
           "detail": {
-            "kr": ["+0.08"],
-            "en": ["+0.08"],
-            "ja": ["+0.08"],
-            "cn": ["+0.08"]
+            "kr": ["+0.06"],
+            "en": ["+0.06"],
+            "ja": ["+0.06"],
+            "cn": ["+0.06"]
           },
-          "value": 0.08
+          "value": 0.06
+        }
+      },
+      {
+        "id": "BA017",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1_Sob0chkn4U1DhNOhF6ZmJ1xLFlBVatv",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "파일벙커",
+          "en": "Pile Bunker",
+          "ja": "パイルバンカー",
+          "cn": "打樁機"
+        },
+        "stack": 1,
+        "material": ["BM003", "WM020"],
+        "atk0": 14,
+        "atk_spd1": 0.1,
+        "uniq013": {
+          "detail": {
+            "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
+            "en": [
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
+            "ja": ["基本攻撃を受けた対象の治癒効果が減少:40%(近)/30%(遠)"],
+            "cn": [
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
+          },
+          "value": 0.4
         }
       },
       {
@@ -4314,9 +4402,9 @@
         },
         "stack": 1,
         "material": ["GA007", "PM002"],
-        "def0": 11,
+        "def0": 9,
         "atk_spd1": 0.33,
-        "move_spd0": 0.1,
+        "move_spd0": 0.08,
         "uniq003": {
           "detail": {
             "kr": [
@@ -4879,8 +4967,8 @@
         },
         "atk0": 20,
         "def0": 20,
-        "atk_spd1": 0.15,
-        "skill0": 30,
+        "atk_spd1": 0.18,
+        "skill0": 35,
         "active005": {
           "detail": {
             "kr": [
@@ -4921,7 +5009,8 @@
           "cn": "芭蕉扇Mk2"
         },
         "stack": 1,
-        "cool1": 0.12,
+        "skill0": 25,
+        "cool1": 0.08,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 60%(근)/50%(원) 감소"],
@@ -4942,27 +5031,27 @@
           "detail": {
             "kr": [
               "사용 시 적용",
-              "이동 속도가 0.65(근)/0.45(원) 증가",
+              "이동 속도가 0.75(근)/0.5(원) 증가",
               "다른 대상과 충돌하지 않음",
               "지속시간: 3초",
               "이동 외 다른 행동 시 효과 종료",
               "쿨다운: 8초"
             ],
             "en": [
-              "Activate to increase your movement speed by 0.65(Melee)/0.45(Ranged) for 3 seconds",
+              "Activate to increase your movement speed by 0.75(Melee)/0.5(Ranged) for 3 seconds",
               "Ignore unit collision",
               "Performing an action other than moving cancels this effect",
               "Cooldown: 8s"
             ],
             "ja": [
-              "アイテムを使用すると、移動速度が0.65(近)/0.45(遠)だけ増加",
+              "アイテムを使用すると、移動速度が0.75(近)/0.5(遠)だけ増加",
               "他の対象と衝突しません。",
               "移動以外の行動時に終了",
               "3秒間",
               "クールダウン:8秒"
             ],
             "cn": [
-              "Activate to increase your movement speed by 0.65(Melee)/0.45(Ranged) for 3 seconds",
+              "Activate to increase your movement speed by 0.75(Melee)/0.5(Ranged) for 3 seconds",
               "Ignore unit collision",
               "Performing an action other than moving cancels this effect",
               "Cooldown: 8s"

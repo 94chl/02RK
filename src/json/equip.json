@@ -180,7 +180,7 @@
         },
         "stack": 1,
         "material": ["WM012", "WWA001"],
-        "atk0": 8,
+        "atk0": 3,
         "def0": 7,
         "mp_reg1": 0.8
       },
@@ -308,7 +308,7 @@
         },
         "stack": 1,
         "material": ["GC006", "WWJ001"],
-        "atk0": 10,
+        "atk0": 5,
         "def0": 9,
         "mp_reg1": 1
       },
@@ -2268,7 +2268,7 @@
         "stack": 1,
         "material": ["GM008", "WB001"],
         "def0": 13,
-        "atk_spd1": 0.4
+        "atk_spd1": 0.22
       },
       {
         "id": "PB001",
@@ -2849,7 +2849,7 @@
         },
         "stack": 1,
         "material": ["WS001", "WM005"],
-        "atk0": 3,
+        "atk0": 2,
         "move_spd0": 0.13
       },
       {
@@ -3133,7 +3133,7 @@
         },
         "stack": 1,
         "material": ["GS005", "GM007"],
-        "skill0": 15,
+        "skill0": 20,
         "mp_reg1": 1,
         "move_spd0": 0.27
       },
@@ -3179,6 +3179,7 @@
         "stack": 1,
         "material": ["GM009", "BM003"],
         "move_spd0": 0.27,
+        "skill0": 10,
         "vamp_all1": 0.14
       },
       {
@@ -3239,7 +3240,7 @@
         "material": ["GS005", "PM008"],
         "mp_reg1": 2,
         "move_spd0": 0.37,
-        "skill0": 25,
+        "skill0": 30,
         "grow_skill0": 1
       },
       {
@@ -4149,6 +4150,7 @@
         },
         "stack": 1,
         "material": ["GA002", "GM013"],
+        "skill0": 8,
         "uniq006": {
           "detail": {
             "kr": [

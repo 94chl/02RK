@@ -704,7 +704,7 @@
         },
         "stack": 1,
         "material": ["GWB002", "PM003"],
-        "atk0": 67,
+        "atk0": 71,
         "atk_spd1": 0.38,
         "vision0": 2,
         "uniq027": {
@@ -1048,7 +1048,7 @@
         "stack": 1,
         "material": ["BWC001", "GA002"],
         "atk0": 86,
-        "cri_rate1": 0.12,
+        "cri_rate1": 0.18,
         "cool1": 0.15,
         "move_spd0": 0.06
       },
@@ -1143,7 +1143,7 @@
         },
         "stack": 1,
         "material": ["BWC003", "BA012"],
-        "atk0": 76,
+        "atk0": 79,
         "vamp1": 0.2,
         "uniq003": {
           "detail": {
@@ -1191,7 +1191,7 @@
         },
         "stack": 1,
         "material": ["GWC002", "PM009"],
-        "atk0": 103,
+        "atk0": 106,
         "atk_spd1": 0.35,
         "uniq011": {
           "detail": {
@@ -1329,7 +1329,7 @@
         },
         "stack": 1,
         "material": ["GWD001", "BM005"],
-        "atk0": 45,
+        "atk0": 47,
         "atk_spd1": 0.35
       },
       {
@@ -1348,8 +1348,8 @@
         },
         "stack": 1,
         "material": ["BWD001", "GA006"],
-        "atk0": 29,
-        "skill0": 32,
+        "atk0": 31,
+        "skill0": 37,
         "grow_skill0": 2,
         "vamp_all1": 0.07,
         "cool1": 0.12,
@@ -1408,7 +1408,7 @@
         "stack": 1,
         "material": ["BWD002", "PM006"],
         "atk0": 31,
-        "skill0": 70,
+        "skill0": 75,
         "grow_skill0": 2,
         "uniq006": {
           "detail": {
@@ -1670,8 +1670,8 @@
         },
         "stack": 1,
         "material": ["BWE003", "GA004"],
-        "atk0": 40,
-        "def0": 8,
+        "atk0": 45,
+        "def0": 6,
         "mp_reg1": 0.5,
         "vamp_all1": 0.22
       },
@@ -2223,7 +2223,7 @@
         "stack": 1,
         "material": ["GWF001", "PT010"],
         "atk0": 42,
-        "skill0": 60,
+        "skill0": 70,
         "grow_skill0": 2,
         "def0": 8,
         "move_spd0": 0.1,
@@ -2256,26 +2256,26 @@
             "kr": [
               "공격 속도: 40% 증가",
               "보호막: 150",
-              "이동 속도: 20% 증가",
-              "지속 시간: 3초"
+              "이동 속도: 10% 증가",
+              "지속 시간: 2초"
             ],
             "en": [
               "Shield: 150",
-              "Movement speed: +20%",
+              "Movement speed: +10%",
               "Attack speed: 40%",
-              "Duration: 3 seconds"
+              "Duration: 2 seconds"
             ],
             "ja": [
               "150のシールドを獲得",
               "移動速度:40%増加",
-              "攻撃速度:20%増加",
-              "3秒間"
+              "攻撃速度:10%増加",
+              "2秒間"
             ],
             "cn": [
               "Shield: 150",
-              "Movement speed: +20%",
+              "Movement speed: +10%",
               "Attack speed: 40%",
-              "Duration: 3 seconds"
+              "Duration: 2 seconds"
             ]
           },
           "value": 0.4
@@ -3779,7 +3779,7 @@
         "material": ["BWJ002", "BM002"],
         "load0": 50,
         "atk0": 30,
-        "skill0": 36,
+        "skill0": 40,
         "grow_skill0": 2,
         "cool1": 0.08,
         "uniq014": {
@@ -5142,7 +5142,7 @@
         "stack": 1,
         "material": ["BWN001", "BM004"],
         "load0": 30,
-        "atk0": 76,
+        "atk0": 79,
         "cri_rate1": 0.22,
         "cri_atk1": 0.05
       },
@@ -5158,7 +5158,7 @@
         "stack": 1,
         "material": ["BWN002", "BA004"],
         "load0": 30,
-        "atk0": 69,
+        "atk0": 72,
         "hp0": 200
       },
       {
@@ -5372,7 +5372,7 @@
         "material": ["BWO002", "GM010"],
         "load0": 1,
         "atk0": 51,
-        "skill0": 47,
+        "skill0": 50,
         "grow_skill0": 2,
         "vision0": 1
       },
@@ -5651,7 +5651,7 @@
         },
         "stack": 1,
         "material": ["BWP002", "PM001"],
-        "atk0": 120,
+        "atk0": 115,
         "vamp_all1": 0.1,
         "penet1": 0.12
       },
@@ -6414,7 +6414,7 @@
         },
         "stack": 1,
         "material": ["BWS001", "GM008"],
-        "atk0": 38,
+        "atk0": 40,
         "cri_rate1": 0.2,
         "atk_spd1": 0.4,
         "cool1": 0.08
@@ -6511,7 +6511,7 @@
         "stack": 1,
         "material": ["GWS001", "PM002"],
         "atk0": 66,
-        "atk_spd1": 0.3,
+        "atk_spd1": 0.4,
         "cri_rate1": 0.1,
         "cri_atk1": 0.12,
         "move_spd0": 0.1

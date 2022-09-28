@@ -74,13 +74,7 @@
                 :class="`itemInfo value${equip[pocket].id[0]}`"
               >
                 <img
-                  :src="
-                    require(`~/img/item/${
-                      equip[pocket].sort === 'weapon'
-                        ? equip[pocket].sortDetail
-                        : equip[pocket].sort
-                    }/${equip[pocket].name.en}.webp`)
-                  "
+                  :src="equip[pocket].img"
                   :alt="`${equip[pocket].name[language]}_img`"
                   :title="`${equip[pocket].name[language]}_img`"
                   v-if="showItemImg"
@@ -133,13 +127,7 @@
                 :class="`itemInfo value${inventory[pocket].id[0]}`"
               >
                 <img
-                  :src="
-                    require(`~/img/item/${
-                      inventory[pocket].sort === 'weapon'
-                        ? inventory[pocket].sortDetail
-                        : inventory[pocket].sort
-                    }/${inventory[pocket].name.en}.webp`)
-                  "
+                  :src="inventory[pocket].img"
                   :alt="`${inventory[pocket].name[language]}_img`"
                   :title="`${inventory[pocket].name[language]}_img`"
                   v-if="showItemImg"
@@ -184,13 +172,7 @@
               @click="getAssemble"
             >
               <img
-                :src="
-                  require(`~/img/item/${
-                    assemble.sort === 'weapon'
-                      ? assemble.sortDetail
-                      : assemble.sort
-                  }/${assemble.name.en}.webp`)
-                "
+                :src="assemble.img"
                 :alt="`${assemble.name[language]}_img`"
                 :title="`${assemble.name[language]}_img`"
                 v-if="showItemImg"

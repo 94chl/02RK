@@ -585,7 +585,7 @@
         },
         "stack": 1,
         "material": ["BWB002", "WA008"],
-        "atk0": 53,
+        "atk0": 51,
         "grow_atk0": 1,
         "atk_spd1": 0.25
       },
@@ -913,7 +913,7 @@
         "sort": "axe",
         "img": "https://lh3.google.com/u/0/d/1REWGOJ_GUpBSzfkH5-a3oRgOi_dBnWdg",
         "location": false,
-        "tobe": ["PWC002", "PWC003"],
+        "tobe": ["PWC002", "PWC003", "YWC003"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -950,7 +950,7 @@
           "cn": "大斧"
         },
         "stack": 1,
-        "material": ["GWC002", "GM001"],
+        "material": ["GWC002", "WM005"],
         "atk0": 76,
         "move_spd0": -0.06
       },
@@ -1048,7 +1048,7 @@
         "stack": 1,
         "material": ["BWC001", "GA002"],
         "atk0": 86,
-        "cri_rate1": 0.18,
+        "cri_rate1": 0.22,
         "cool1": 0.15,
         "move_spd0": 0.06
       },
@@ -1203,6 +1203,35 @@
             "cn": ["Reduces crowd control effects by 30%"]
           },
           "value": 0.3
+        }
+      },
+      {
+        "id": "YWC003",
+        "sort": "axe",
+        "img": "",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "낙원의 낫",
+          "en": "Paradise Lost",
+          "ja": "楽園の鎌",
+          "cn": "失樂園"
+        },
+        "stack": 1,
+        "material": ["BWC002", "PM008"],
+        "atk0": 65,
+        "skill0": 85,
+        "grow_skill0": 2,
+        "uniq008": {
+          "detail": {
+            "kr": ["+0.75"],
+            "en": ["+0.75"],
+            "ja": ["+0.75"],
+            "cn": ["+0.75"]
+          },
+          "value": 0.75
         }
       }
     ]
@@ -1670,7 +1699,7 @@
         },
         "stack": 1,
         "material": ["BWE003", "GA004"],
-        "atk0": 45,
+        "atk0": 48,
         "def0": 6,
         "mp_reg1": 0.5,
         "vamp_all1": 0.22
@@ -1730,8 +1759,8 @@
         },
         "stack": 1,
         "material": ["BWE006", "WD003"],
-        "atk0": 28,
-        "skill0": 45,
+        "atk0": 32,
+        "skill0": 50,
         "grow_skill0": 2
       },
       {
@@ -1927,7 +1956,8 @@
         },
         "stack": 1,
         "material": ["PT010", "GWE001"],
-        "atk0": 81,
+        "atk0": 78,
+        "atk_spd1": 0.2,
         "move_spd0": 0.1
       },
       {
@@ -2223,7 +2253,7 @@
         "stack": 1,
         "material": ["GWF001", "PT010"],
         "atk0": 42,
-        "skill0": 70,
+        "skill0": 60,
         "grow_skill0": 2,
         "def0": 8,
         "move_spd0": 0.1,
@@ -3198,7 +3228,7 @@
         "stack": 1,
         "material": ["BWI001", "GA001"],
         "load0": 50,
-        "atk0": 62,
+        "atk0": 65,
         "grow_atk0": 2,
         "hp_reg1": 0.8
       },
@@ -3219,7 +3249,7 @@
         "stack": 1,
         "material": ["BWI002", "GD009"],
         "load0": 30,
-        "atk0": 70,
+        "atk0": 73,
         "atk_spd1": 0.3
       },
       {
@@ -3289,7 +3319,7 @@
         "stack": 1,
         "material": ["BWI006", "GA003"],
         "load0": 28,
-        "atk0": 54,
+        "atk0": 58,
         "cri_rate1": 0.24,
         "cri_atk1": 0.06,
         "uniq008": {
@@ -3371,7 +3401,7 @@
         "material": ["GWI003", "PM009"],
         "load0": 50,
         "atk0": 103,
-        "atk_spd1": 0.33
+        "atk_spd1": 0.4
       },
       {
         "id": "YWI002",
@@ -4125,8 +4155,7 @@
         },
         "stack": 1,
         "material": ["GWK002", "WM018"],
-        "atk0": 35,
-        "grow_basic_atk1": 0.007
+        "atk0": 35
       },
       {
         "id": "BWK005",
@@ -4455,7 +4484,7 @@
         "name": { "kr": "철궁", "en": "Steel Bow", "ja": "鉄弓", "cn": "鋼弩" },
         "stack": 1,
         "material": ["GWL002", "GM010"],
-        "atk0": 52
+        "atk0": 45
       },
       {
         "id": "PWL001",
@@ -4549,25 +4578,25 @@
             "kr": [
               "이동 시 스택 충전(최대 24m)",
               "충전 스택에 따라 최대 0.12의 이동속도 추가",
-              "다음 기본 공격 시 스택을 모두 소모하여 최대 120의 고유피해"
+              "다음 기본 공격 시 스택을 모두 소모하여 최대 80의 고유피해"
             ],
             "en": [
               "Gain a stack every move, up to 24m",
               "Your movement speed will increase by up to 0.12, based on how many stacks you have",
-              "Basic attacks consume all stacks, dealing up to 120 cellular damage"
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage"
             ],
             "ja": [
               "移動するたびに[軽い足取り]を最大24mまで重畳して獲得",
               "重畳によって移動速度が最大0.12まで増加します",
-              "基本攻撃ダメージを与える場合、重畳をすべて消費して最大120の固有ダメージを与えます"
+              "基本攻撃ダメージを与える場合、重畳をすべて消費して最大80の固有ダメージを与えます"
             ],
             "cn": [
               "Gain a stack every move, up to 24m",
               "Your movement speed will increase by up to 0.12, based on how many stacks you have",
-              "Basic attacks consume all stacks, dealing up to 120 cellular damage"
+              "Basic attacks consume all stacks, dealing up to 80 cellular damage"
             ]
           },
-          "value": 120
+          "value": 80
         }
       },
       {
@@ -5073,7 +5102,7 @@
         "sort": "rifle",
         "img": "https://lh3.google.com/u/0/d/1hoKlB6tw8Iv5Teni5FA2RxbBotnjWjrj",
         "location": false,
-        "tobe": ["PWN004"],
+        "tobe": ["PWN004", "YWN004"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "M16A1", "en": "M16A1", "ja": "M16A1", "cn": "M16A1" },
@@ -5086,7 +5115,7 @@
         "sort": "rifle",
         "img": "https://lh3.google.com/u/0/d/1zK2JS2jB2JkTnQixkHDLBE60xtS_H9z9",
         "location": false,
-        "tobe": ["PWN005"],
+        "tobe": ["PWN005", "PWN006"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -5099,8 +5128,7 @@
         "material": ["GWN001", "GM008"],
         "load0": 30,
         "atk0": 32,
-        "atk_spd1": 0.1,
-        "grow_basic_atk1": 0.008
+        "atk_spd1": 0.1
       },
       {
         "id": "PWN002",
@@ -5144,7 +5172,7 @@
         "load0": 30,
         "atk0": 79,
         "cri_rate1": 0.22,
-        "cri_atk1": 0.05
+        "cri_atk1": 0.08
       },
       {
         "id": "PWN004",
@@ -5156,10 +5184,20 @@
         "limit": 1,
         "name": { "kr": "XCR", "en": "XCR", "ja": "XCR", "cn": "XCR" },
         "stack": 1,
-        "material": ["BWN002", "BA004"],
+        "material": ["BWN002", "GM007"],
         "load0": 30,
-        "atk0": 72,
-        "hp0": 200
+        "atk0": 50,
+        "skill0": 39,
+        "grow_skill0": 2,
+        "uniq014": {
+          "detail": {
+            "kr": ["스킬 공격 시, 대상의 치유 효과가 30% 감소"],
+            "en": ["Skills reduce target's healing received by 30%"],
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30%減少"],
+            "cn": ["Skills reduce target's healing received by 30%"]
+          },
+          "value": 0.3
+        }
       },
       {
         "id": "PWN005",
@@ -5177,6 +5215,27 @@
         },
         "stack": 1,
         "material": ["BWN003", "GM003"],
+        "load0": 30,
+        "atk0": 70,
+        "atk_spd1": 0.25,
+        "grow_basic_atk1": 0.011
+      },
+      {
+        "id": "PWN006",
+        "sort": "rifle",
+        "img": "",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "골드 러시",
+          "en": "Gold Rush",
+          "ja": "ゴールドラッシュ",
+          "cn": "黃金加特林"
+        },
+        "stack": 1,
+        "material": ["BWN003", "GM011"],
         "load0": 30,
         "atk0": 70,
         "atk_spd1": 0.25,
@@ -5202,6 +5261,36 @@
         "atk0": 90,
         "penet1": 0.12,
         "grow_basic_atk1": 0.015
+      },
+      {
+        "id": "YWN004",
+        "sort": "rifle",
+        "img": "",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "피안화",
+          "en": "Black Widow",
+          "ja": "彼岸花",
+          "cn": "彼岸花"
+        },
+        "stack": 1,
+        "material": ["BWN002", "PM007"],
+        "load0": 30,
+        "atk0": 50,
+        "skill0": 39,
+        "grow_skill0": 2,
+        "uniq014": {
+          "detail": {
+            "kr": ["스킬 공격 시, 대상의 치유 효과가 30% 감소"],
+            "en": ["Skills reduce target's healing received by 30%"],
+            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30%減少"],
+            "cn": ["Skills reduce target's healing received by 30%"]
+          },
+          "value": 0.3
+        }
       }
     ]
   },
@@ -5611,7 +5700,7 @@
         },
         "stack": 1,
         "material": ["BWP002", "BM005"],
-        "atk0": 80,
+        "atk0": 84,
         "atk_spd1": 0.3
       },
       {
@@ -5630,9 +5719,9 @@
         },
         "stack": 1,
         "material": ["BWP003", "GA003"],
-        "atk0": 75,
+        "atk0": 77,
         "cri_rate1": 0.22,
-        "cri_atk1": 0.06,
+        "cri_atk1": 0.08,
         "cool1": 0.12
       },
       {
@@ -5815,9 +5904,9 @@
         "stack": 1,
         "material": ["BWQ001", "BWQ002"],
         "atk0": 66,
-        "skill0": 39,
+        "skill0": 42,
         "grow_skill0": 2,
-        "cool1": 0.05
+        "cool1": 0.08
       },
       {
         "id": "PWQ005",
@@ -5864,8 +5953,7 @@
         },
         "stack": 1,
         "material": ["BWQ003", "GM010"],
-        "atk0": 98,
-        "move_spd0": -0.05,
+        "atk0": 95,
         "hp0": 120,
         "grow_hp0": 5
       },
@@ -5964,8 +6052,8 @@
         },
         "stack": 1,
         "material": ["GWQ001", "PM002"],
-        "atk0": 96,
-        "atk_spd1": 0.25,
+        "atk0": 93,
+        "atk_spd1": 0.4,
         "move_spd0": 0.12
       },
       {
@@ -6185,7 +6273,7 @@
         },
         "stack": 1,
         "material": ["BWR002", "GA002"],
-        "atk0": 47,
+        "atk0": 50,
         "cri_rate1": 0.23,
         "cool1": 0.1,
         "uniq013": {
@@ -6414,7 +6502,7 @@
         },
         "stack": 1,
         "material": ["BWS001", "GM008"],
-        "atk0": 40,
+        "atk0": 43,
         "cri_rate1": 0.2,
         "atk_spd1": 0.4,
         "cool1": 0.08
@@ -6436,9 +6524,9 @@
         "stack": 1,
         "material": ["BWS002", "BB004"],
         "atk0": 35,
-        "skill0": 20,
+        "skill0": 30,
         "grow_skill0": 2,
-        "hp0": 120,
+        "hp0": 100,
         "mp_reg1": 0.8
       },
       {
@@ -6457,7 +6545,7 @@
         },
         "stack": 1,
         "material": ["BWS002", "GA012"],
-        "atk0": 54,
+        "atk0": 57,
         "cri_rate1": 0.24,
         "uniq008": {
           "detail": {
@@ -7024,7 +7112,8 @@
         },
         "stack": 1,
         "material": ["WWU001", "GT011"],
-        "atk0": 24,
+        "atk0": 22,
+        "skill0": 5,
         "vision0": 1
       },
       {

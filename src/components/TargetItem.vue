@@ -47,7 +47,7 @@
             @click="showItemInfo"
           >
             <img
-              :src="require(`~/img/item/${item.sort}/${item.name.en}.webp`)"
+              :src="item.img"
               :alt="item.name[language]"
               class="itemInfo_img"
             />
@@ -71,13 +71,7 @@
           <span v-if="bagItems[pocket].id">
             <div :class="`itemInfo value${bagItems[pocket].id[0]}`">
               <img
-                :src="
-                  require(`~/img/item/${
-                    bagItems[pocket].sort === 'weapon'
-                      ? bagItems[pocket].sortDetail
-                      : bagItems[pocket].sort
-                  }/${bagItems[pocket].name.en}.webp`)
-                "
+                :src="bagItems[pocket].img"
                 :alt="`${bagItems[pocket].name[language]}_img`"
                 :title="`${bagItems[pocket].name[language]}_img`"
               />

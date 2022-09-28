@@ -24,10 +24,7 @@
               :key="`complete${item.id}`"
               :class="`value${item.id[0]}`"
             >
-              <img
-                :src="require(`~/img/item/${item.sort}/${item.name.en}.webp`)"
-                :alt="`${item.name[language]}_img`"
-              />
+              <img :src="item.img" :alt="`${item.name[language]}_img`" />
             </li>
           </ul>
         </div>

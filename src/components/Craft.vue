@@ -115,9 +115,7 @@
                     }}</span>
                     <img
                       :class="showItemImg ? '' : 'hide'"
-                      :src="
-                        require(`~/img/item/${item.sort}/${item.name.en}.webp`)
-                      "
+                      :src="item.img"
                       :alt="`${item.name[language]}_img`"
                     />
                   </button>

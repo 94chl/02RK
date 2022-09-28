@@ -70,6 +70,7 @@
         "img": "https://lh3.google.com/u/0/d/1gdcdOkNoyQYWnt3IGubVH4wyd7Jg0C2s",
         "location": ["A006", "A008", "A010", "A014"],
         "tobe": [
+          "BWC003",
           "GWR001",
           "GS003",
           "BS006",
@@ -468,7 +469,6 @@
         "location": false,
         "tobe": [
           "BWB004",
-          "BWC003",
           "BWE001",
           "BWG004",
           "BWJ007",
@@ -573,6 +573,7 @@
         "tobe": [
           "PWA002",
           "PWM002",
+          "PWN004",
           "BWE006",
           "PWG003",
           "PWR001",
@@ -680,6 +681,7 @@
           "PWJ002",
           "PWK002",
           "PWM006",
+          "PWN006",
           "BWO002",
           "GWT001",
           "PWU001",
@@ -716,7 +718,7 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1Vds5Xhui9VV4g7Z8Q4IfCSKy7QNckFfv",
         "location": false,
-        "tobe": ["BA015", "YA012"],
+        "tobe": ["BA015", "YA003", "YA012"],
         "pickup": 1,
         "limit": 3,
         "name": {
@@ -880,6 +882,7 @@
           "YH007",
           "YB006",
           "YS008",
+          "YA003",
           "YA009",
           "YA013",
           "YA014",
@@ -911,7 +914,9 @@
           "YWT001",
           "YC002",
           "YH004",
+          "YB008",
           "YS001",
+          "YS009",
           "PM004",
           "PM009"
         ],
@@ -995,6 +1000,7 @@
           "YWO002",
           "YWI002",
           "YWQ001",
+          "YWN004",
           "YC001",
           "YC017",
           "YH001",
@@ -1016,7 +1022,15 @@
         "sort": "material",
         "img": "https://lh3.google.com/u/0/d/1A1E33NXpnTLAsfDJstG0mIbNcB29IDBV",
         "location": false,
-        "tobe": ["PWJ004", "YWB004", "YWV001", "YB001", "YS002", "YWE002"],
+        "tobe": [
+          "YWC003",
+          "PWJ004",
+          "YWB004",
+          "YWV001",
+          "YB001",
+          "YS002",
+          "YWE002"
+        ],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -1439,7 +1453,7 @@
         "img": "https://lh3.google.com/u/0/d/1XBvEmH5EhDEJlWrPGBBGZtwOs_8I_KVb",
         "location": false,
         "tobe": false,
-        "pickup": 1,
+        "pickup": 2,
         "limit": 5,
         "name": {
           "kr": "더블 기요틴",
@@ -1456,7 +1470,7 @@
         "img": "https://lh3.google.com/u/0/d/1VHyjKSwAQ-u_EkNOxvESVZn_09HNukJy",
         "location": false,
         "tobe": false,
-        "pickup": 1,
+        "pickup": 2,
         "limit": 5,
         "name": {
           "kr": "크레모어",

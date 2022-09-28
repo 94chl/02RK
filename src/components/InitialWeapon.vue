@@ -9,7 +9,7 @@
       >
         <button @click="setInitialWeapon" class="selectBtn">
           <img
-            :src="require(`~/img/item/${weapon.sort}/${weapon.name.en}.webp`)"
+            :src="weapon.img"
             :alt="`${weapon.name[language]}_icon`"
             :title="`${weapon.name[language]}_icon`"
             v-if="showItemImg"

@@ -1829,25 +1829,25 @@
           "detail": {
             "kr": [
               "스킬 사용 후, 4초 이내에 다음 기본 공격은 추가 피해",
-              "피해량: 대상 최대 체력의 10%(근)/8%(원)",
+              "피해량: 대상 최대 체력의 9%(근)/7%(원)",
               "쿨다운: 2초"
             ],
             "en": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to 10%(Melee)/8%(Ranged) of the enemy's max HP",
+              "Damage: equivalent to 9%(Melee)/7%(Ranged) of the enemy's max HP",
               "Cooldown: 2s"
             ],
             "ja": [
               "スキルを使用すると意念をチャージ",
               "チャージした状態で次の4秒内の基本攻撃が追加固有ダメージ",
-              "ダメージ:敵最大体力の10%",
+              "ダメージ:敵最大体力の9%(近)/7%(遠)",
               "クールダウン:2秒"
             ],
             "cn": [
               "Using a skill causes a Biotic Infusion",
               "Biotic Infusion: your next basic attack within 4 seconds deals extra cellular damage",
-              "Damage: equivalent to 10%(Melee)/8%(Ranged) of the enemy's max HP",
+              "Damage: equivalent to 9%(Melee)/7%(Ranged) of the enemy's max HP",
               "Cooldown: 2s"
             ]
           },
@@ -1985,7 +1985,7 @@
         },
         "stack": 1,
         "material": ["PH006", "PM006"],
-        "skill0": 90,
+        "skill0": 85,
         "def0": 13,
         "mp0": 400,
         "cool1": 0.06,
@@ -2275,7 +2275,7 @@
         "sort": "bracelet",
         "img": "https://lh3.google.com/u/0/d/1T0u3u1U5dEtufVJehCAiDl1b04bblskA",
         "location": false,
-        "tobe": false,
+        "tobe": ["YB008"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -2337,7 +2337,7 @@
         "skill0": 53,
         "def0": 13,
         "hp_reg1": 0.3,
-        "mp0": 240
+        "mp0": 300
       },
       {
         "id": "PB005",
@@ -2518,7 +2518,7 @@
         "stack": 1,
         "material": ["WWE002", "BM002"],
         "def0": 13,
-        "skill0": 40,
+        "skill0": 37,
         "uniq014": {
           "detail": {
             "kr": ["스킬 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
@@ -2553,8 +2553,8 @@
         "stack": 1,
         "material": ["BB004", "PM008"],
         "skill0": 80,
-        "hp0": 100,
-        "mp0": 250,
+        "hp0": 120,
+        "mp0": 350,
         "mp_reg1": 1,
         "uniq034": {
           "detail": {
@@ -2617,8 +2617,8 @@
         "stack": 1,
         "material": ["BB004", "PM001"],
         "hp0": 215,
-        "mp0": 250,
-        "skill0": 35,
+        "mp0": 350,
+        "skill0": 38,
         "cool1": 0.25,
         "uniq007": {
           "detail": {
@@ -2740,6 +2740,54 @@
             ]
           },
           "value": 78
+        }
+      },
+      {
+        "id": "YB008",
+        "sort": "bracelet",
+        "img": "",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "가시지네 견갑",
+          "en": "Centipede's Pauldron",
+          "ja": "棘百足の肩甲",
+          "cn": "蜈蚣護肩"
+        },
+        "stack": 1,
+        "material": ["PB001", "PM003"],
+        "def0": 25,
+        "basic_atk_def1": 0.08,
+        "uniq005": {
+          "detail": {
+            "kr": [
+              "기본 공격 피해 반사 5%(고정 데미지)",
+              "피격시 4초간 상대의 치유 감소 40%(근)/30%(원)",
+              "4초간 600의 피해를 받을 경우 250의 고유피해",
+              "쿨다운: 2초"
+            ],
+            "en": [
+              "When hit by a basic attack, reflect 5% true damage to the attacker",
+              "Reduce their healing by 40%(Melee)/30%(Ranged) for 4 seconds",
+              "Taking 600 or more damage over 3 seconds causes 250 damage to nearby enemies",
+              "Cooldown: 2s"
+            ],
+            "ja": [
+              "基本攻撃から受けたダメージの5%を攻撃者に固定ダメージで返します。",
+              "40%(近)/30%(遠)の治癒減少効果",
+              "4秒間累積して600のダメージを受けると、周りに250のダメージ",
+              "クールダウン:2秒"
+            ],
+            "cn": [
+              "When hit by a basic attack, reflect 5% true damage to the attacker",
+              "Reduce their healing by 40%(Melee)/30%(Ranged) for 4 seconds",
+              "Taking 600 or more damage over 3 seconds causes 250 damage to nearby enemies",
+              "Cooldown: 2s"
+            ]
+          },
+          "value": 0.05
         }
       }
     ]
@@ -3069,7 +3117,7 @@
         "sort": "shoes",
         "img": "https://lh3.google.com/u/0/d/1esr9ZlO9X51ls1eSWEoibjDZXTmJ6igZ",
         "location": false,
-        "tobe": false,
+        "tobe": ["YS009"],
         "pickup": 1,
         "limit": 1,
         "name": {
@@ -3353,6 +3401,40 @@
         "def0": 15,
         "atk_spd1": 0.37,
         "move_spd0": 0.35
+      },
+      {
+        "id": "YS009",
+        "sort": "shoes",
+        "img": "",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "블레이드 부츠",
+          "en": "Blade Boots",
+          "ja": "ブレードブーツ",
+          "cn": "刀刃靴"
+        },
+        "stack": 1,
+        "material": ["PS004", "PM003"],
+        "hp_reg1": 0.25,
+        "atk0": 12,
+        "atk_spd1": 0.13,
+        "move_spd0": 0.32,
+        "uniq013": {
+          "detail": {
+            "kr": ["기본 공격 시, 대상의 치유 효과가 40%(근)/30%(원) 감소"],
+            "en": [
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ],
+            "ja": ["基本攻撃を受けた対象の治癒効果が減少:40%(近)/30%(遠)"],
+            "cn": [
+              "Basic attacks reduce target's healing received by 40%(Melee)/30%(Ranged)"
+            ]
+          },
+          "value": 0.4
+        }
       }
     ]
   },
@@ -3820,7 +3902,7 @@
         "sort": "accessory",
         "img": "https://lh3.google.com/u/0/d/1VVI4bSoZvIiuMav_ApoAsCPRdiP2FBVT",
         "location": false,
-        "tobe": ["PWN004", "BA013"],
+        "tobe": ["BA013"],
         "pickup": 1,
         "limit": 1,
         "name": { "kr": "탄창", "en": "Magazine", "ja": "弾倉", "cn": "彈匣" },
@@ -3936,25 +4018,25 @@
               "최대 체력의 6.5% 즉시 회복",
               "이후 3초간 초당 잃은 체력과 스태미너의 5.5% 회복",
               "피해를 입을 시 해제됩니다",
-              "쿨다운: 30초"
+              "쿨다운: 45초"
             ],
             "en": [
               "Activate to instantly heal 6.5% of your max HP",
               "Recover 5.5% of your missing HP & SP per second for 3 seconds",
               "Taking damage will end the effect",
-              "Cooldown: 30s"
+              "Cooldown: 45s"
             ],
             "ja": [
               "アイテムを使用すると、最大体力の6.5%を即時回復",
               "その後毎秒失った体力とスタミナの5.5%を3秒間回復",
               "ダメージを受けた場合、解除",
-              "クールダウン:30秒"
+              "クールダウン:45秒"
             ],
             "cn": [
               "Activate to instantly heal 6.5% of your max HP",
               "Recover 5.5% of your missing HP & SP per second for 3 seconds",
               "Taking damage will end the effect",
-              "Cooldown: 30s"
+              "Cooldown: 45s"
             ]
           },
           "value": 0.065
@@ -4252,16 +4334,16 @@
       {
         "id": "YA001",
         "sort": "accessory",
-        "img": "https://lh3.google.com/u/0/d/1npbktDP2HEcPDtaAKqs7vD5z44Hq_AhC",
+        "img": "",
         "location": false,
         "tobe": false,
         "pickup": 1,
         "limit": 1,
         "name": {
-          "kr": "에메랄드 타블렛",
-          "en": "Emerald Tablet",
-          "ja": "エメラルドタブレット",
-          "cn": "翡翠石板"
+          "kr": "운명의 주사위",
+          "en": "Dice of Destiny",
+          "ja": "運命のさいころ",
+          "cn": "命運之骰"
         },
         "stack": 1,
         "material": ["GA002", "PM009"],
@@ -4341,6 +4423,26 @@
           },
           "value": 200
         }
+      },
+      {
+        "id": "YA003",
+        "sort": "accessory",
+        "img": "https://lh3.google.com/u/0/d/1npbktDP2HEcPDtaAKqs7vD5z44Hq_AhC",
+        "location": false,
+        "tobe": false,
+        "pickup": 1,
+        "limit": 1,
+        "name": {
+          "kr": "에메랄드 타블렛",
+          "en": "Emerald Tablet",
+          "ja": "エメラルドタブレット",
+          "cn": "翡翠石板"
+        },
+        "stack": 1,
+        "material": ["GM013", "PM002"],
+        "skill0": 45,
+        "move_spd0": 0.06,
+        "cool1": 0.12
       },
       {
         "id": "YA008",
@@ -4473,7 +4575,7 @@
         },
         "stack": 1,
         "material": ["WM008", "PM006"],
-        "skill0": 35,
+        "skill0": 38,
         "vision0": 1,
         "uniq001": {
           "detail": {
@@ -4679,15 +4781,7 @@
         },
         "atk0": 12,
         "atk_spd1": 0.33,
-        "uniq009": {
-          "detail": {
-            "kr": ["+0.08"],
-            "en": ["+0.08"],
-            "ja": ["+0.08"],
-            "cn": ["+0.08"]
-          },
-          "value": 0.08
-        },
+        "move_spd0": 0.08,
         "active001": {
           "detail": {
             "kr": [
@@ -4745,15 +4839,7 @@
         },
         "atk0": 12,
         "atk_spd1": 0.33,
-        "uniq009": {
-          "detail": {
-            "kr": ["+0.06"],
-            "en": ["+0.06"],
-            "ja": ["+0.06"],
-            "cn": ["+0.06"]
-          },
-          "value": 0.06
-        },
+        "uniq009": 0.06,
         "active002": {
           "detail": {
             "kr": [

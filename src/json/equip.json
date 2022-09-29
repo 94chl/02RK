@@ -2745,7 +2745,7 @@
       {
         "id": "YB008",
         "sort": "bracelet",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1NyC5jSkC0Dul4peTqjemgZXvBBFePQe2",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -3405,7 +3405,7 @@
       {
         "id": "YS009",
         "sort": "shoes",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1HblXpAUHqAaAgh9ta7pX_8SE2YjIrzpt",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -4334,7 +4334,7 @@
       {
         "id": "YA001",
         "sort": "accessory",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/17YlskWYnyoHwIl9jNbY3G8ovqRgBgian",
         "location": false,
         "tobe": false,
         "pickup": 1,

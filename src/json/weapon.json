@@ -1208,7 +1208,7 @@
       {
         "id": "YWC003",
         "sort": "axe",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1FGUy42M7pxKLPwR5R7uNF5_wVi6YVJcn",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -5223,7 +5223,7 @@
       {
         "id": "PWN006",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1sU-rhy_B0cPam9_QHXuGiZBqnti0-P9F",
         "location": false,
         "tobe": false,
         "pickup": 1,
@@ -5265,7 +5265,7 @@
       {
         "id": "YWN004",
         "sort": "rifle",
-        "img": "",
+        "img": "https://lh3.google.com/u/0/d/1CY1QrArqULs-qpniXB792LS126pjYEqR",
         "location": false,
         "tobe": false,
         "pickup": 1,

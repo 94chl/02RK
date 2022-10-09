@@ -1437,7 +1437,7 @@
         "stack": 1,
         "material": ["BWD002", "PM006"],
         "atk0": 31,
-        "skill0": 75,
+        "skill0": 80,
         "grow_skill0": 2,
         "uniq006": {
           "detail": {
@@ -1896,7 +1896,7 @@
         "stack": 1,
         "material": ["GWE001", "PM007"],
         "atk0": 54,
-        "grow_basic_atk1": 0.02
+        "grow_basic_atk1": 0.017
       },
       {
         "id": "YWE002",
@@ -3319,17 +3319,17 @@
         "stack": 1,
         "material": ["BWI006", "GA003"],
         "load0": 28,
-        "atk0": 58,
+        "atk0": 55,
         "cri_rate1": 0.24,
         "cri_atk1": 0.06,
         "uniq008": {
           "detail": {
-            "kr": ["+0.75"],
-            "en": ["+0.75"],
-            "ja": ["+0.75"],
-            "cn": ["+0.75"]
+            "kr": ["+0.5"],
+            "en": ["+0.5"],
+            "ja": ["+0.5"],
+            "cn": ["+0.5"]
           },
-          "value": 0.75
+          "value": 0.5
         }
       },
       {
@@ -4523,7 +4523,7 @@
         "stack": 1,
         "material": ["BWL003", "WWQ001"],
         "atk0": 43,
-        "skill0": 51,
+        "skill0": 48,
         "grow_skill0": 2
       },
       {
@@ -5237,9 +5237,10 @@
         "stack": 1,
         "material": ["BWN003", "GM011"],
         "load0": 30,
-        "atk0": 70,
+        "atk0": 45,
         "atk_spd1": 0.25,
-        "grow_basic_atk1": 0.011
+        "skill0": 48,
+        "grow_basic_skill0": 2
       },
       {
         "id": "YWN002",
@@ -5279,18 +5280,10 @@
         "stack": 1,
         "material": ["BWN002", "PM007"],
         "load0": 30,
-        "atk0": 50,
-        "skill0": 39,
+        "atk0": 70,
+        "skill0": 82,
         "grow_skill0": 2,
-        "uniq014": {
-          "detail": {
-            "kr": ["스킬 공격 시, 대상의 치유 효과가 30% 감소"],
-            "en": ["Skills reduce target's healing received by 30%"],
-            "ja": ["スキル攻撃のダメージを受けた対象の治癒効果が30%減少"],
-            "cn": ["Skills reduce target's healing received by 30%"]
-          },
-          "value": 0.3
-        }
+        "atk_spd1": 0.3
       }
     ]
   },
@@ -6226,7 +6219,7 @@
         "stack": 1,
         "material": ["BWR001", "GM007"],
         "atk0": 37,
-        "skill0": 40,
+        "skill0": 35,
         "grow_skill0": 2,
         "uniq014": {
           "detail": {

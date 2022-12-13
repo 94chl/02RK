@@ -5,7 +5,7 @@ import { callApi, corsApi } from "./utils";
 export const generateCharacterData = async () => {
   const stats = await callApi("data/Character");
   const levelUpStats = await callApi("data/CharacterLevelUpStat");
-  return { stats, levelUpStats };
+  return { stats: stats.slice(0, 58), levelUpStats: levelUpStats.slice(0, 58) };
 };
 
 const langTest = async () => {
